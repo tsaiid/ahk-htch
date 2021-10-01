@@ -1,0 +1,118 @@
+﻿; My RegEx HotStrings
+#Include Lib\Hotstrings.ahk
+hotstrings("plsp(\d)(\d)\s", "plsp")
+hotstrings("pcsp(\d)(\d)\s", "pcsp")
+hotstrings("sb([rl])l(1[0-2](-\d+)?|[1-9](-\d+)?)\/(\d+)\s", "sbl")
+hotstrings("ca([1-9]|[1-8][0-9])\s", "ca")
+Return
+
+plsp:
+  start := $1
+  end := $2
+  if (end <= start && end != 1) {
+    return
+  }
+  ; L1~S1
+  if (start = 1 && start = end) {
+    range := "L1~S1"
+    cage := "L1-2, L2-3, L3-4, L4-5, L5-S1"
+  } else {
+    range = L%start%~
+  if (end = 1) {
+    range = %range%S1
+  } else {
+    range = %range%L%end%
+  }
+    cage = L%start%
+    Loop {
+      startStr = %start%
+      if (++start = end) {
+        cage = %cage%-%end%
+        break
+      } else {
+        if (end = 1 and start = 6) {
+          cage = %cage%-S1
+          break
+        } else {
+          endStr = %start%
+        }
+      }
+
+      cage = %cage%-%endStr%, L%endStr%
+    }
+  }
+  finalStr =
+(
+Post laminectomy, transpedicular screws, rods fixation at %range%.
+Post interbody cage placement at %cage%.
+)
+  Paste(finalStr)
+Return
+
+pcsp:
+  start := $1
+  end := $2
+  if (end <= start and end != 1)
+    return
+  if (start = 1 and start = end) { ; C1-T1
+    range := "C1~T1"
+    cage := "C1-2, C2-3, C3-4, C4-5, C5-6, C6-7, C7-T1"
+  } else {
+    range = C%start%~
+    if (end = 1) {
+      range = %range%T1
+    } else {
+      range = %range%C%end%
+    }
+    cage = C%start%
+    Loop {
+      startStr = %start%
+      if (++start = end) {
+        cage = %cage%-%end%
+        break
+      } else {
+        if (end = 1 and start = 8) {
+          cage = %cage%-T1
+          break
+        } else {
+          endStr = %start%
+        }
+      }
+
+      cage = %cage%-%endStr%, C%endStr%
+    }
+  }
+  rangeStr = Post anterior cervical plate fixation at %range%.
+  cageStr = Post interbody cage placement at %cage%.
+  SendInput, %rangeStr%
+  SendInput, {Enter}
+  SendInput, %cageStr%
+Return
+
+sbl:
+  laterality := ($1 == "r" ? "right" : "left")
+  oclock := $2
+  distance := $5
+
+  if (distance) {
+    finalStr =
+(
+at the %laterality% breast, %oclock%``/%distance%cm.
+)
+  } else {
+    finalStr =
+(
+at the %laterality% breast, %oclock%``/subareolar.
+)
+  }
+  Paste(finalStr)
+Return
+
+ca:
+  ca_degree := $1
+  finalStr =
+(
+Cobb angle: %ca_degree% degree.
+)
+  Paste(finalStr)
+Return
