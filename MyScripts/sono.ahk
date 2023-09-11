@@ -162,6 +162,7 @@ Return
 Return
 
 ;; Sono, Breast
+::Is::INDICATION: breast cancer, s/p OP, follow-up.
 ::pm::partial mastectomy
 ::tm::total mastectomy
 ::sbbsp::Scars at the bilateral breasts.
@@ -173,6 +174,7 @@ Return
 ::sbrspm::S/P previous right modified radical mastectomy without evidence of local recurrence.
 ::sblspm::S/P previous left modified radical mastectomy without evidence of local recurrence.
 ::sbbspm::S/P previous bilateral modified radical mastectomy without evidence of local recurrence.
+::sbbrlns::Slightly enlarged lymph nodes with preserved hilar structure at the bilateral axillae noted, probably reactive lymph nodes.
 ::sbrrln::A slightly enlarged lymph node with preserved hilar structure at the right axilla noted, probably a reactive lymph node.
 ::sblrln::A slightly enlarged lymph node with preserved hilar structure at the left axilla noted, probably a reactive lymph node.
 ::sbrrlns::Slightly enlarged lymph nodes with preserved hilar structure at the right axilla noted, probably reactive lymph nodes.
@@ -194,7 +196,8 @@ Return
 ::sbrhen::Several small hypoechoic nodular lesions at the right breast, probably benign.
 ::sbbcs::Several small anechoic or hypoechoic nodular lesions in the bilateral breasts, probably fibrocystic changes.
 ::sbbcs1::Several small anechoic or hypoechoic lesions in the bilateral breasts, probably fibrocysts and/or fibroadenomas.
-::sbbcs2::Fibrocystic changes over the bilateral breasts.
+::sbbcs2::Several small anechoic or hypoechoic lesions in the bilateral breasts, probably fibrocysts and/or fibroadenomas. The largest one is about `
+::sbbcs3::Fibrocystic changes over the bilateral breasts.
 ::sbbcsfas::Small fibrocysts and fibroadenomas in the bilateral breasts, size up to  cm.{Left 4}
 ::sblcsfas::Small fibrocysts and fibroadenomas in the left breast, size up to __ cm.
 ::sbrcsfas::Small fibrocysts and fibroadenomas in the right breast, size up to __ cm.
@@ -244,14 +247,39 @@ Return
 ::sbok::
   MyForm =
 (
-Preserved echogenicities of the fibroglandular tissue of bilateral breast parenchyma.
-No evident ductal dilatation.
-No significant lesion of bilateral breast parenchyma.
-
-According to the ACR-BIRADS (5th ed.), a category 1 report of the breast is considered.
-No dominant mass or suspicious calcification.
+- Breast composition: a. homogeneous - fat
+- Breast composition: b. homogeneous - fibroglandular
+- Breast composition: c. heterogeneous
+- Mass: no
+- Calcifications: no
+- Associated features: no
+- Associated features: architectural distortion, duct changes, skin thickening, skin retraction, edema, vascularity (absent, internal, rim), elasticity
+- Special cases: simple cyst, clustered microcysts, complicated cyst, mass in or on skin, foreign body (including implants), intramammary lymph node, AVM, Mondor disease, postsurgical fluid collection, fat necrosis.
 )
-  Paste(MyForm, false)
+  Paste(MyForm)
+Return
+
+::sbl::
+  MyForm =
+(
+- Breast composition: a. homogeneous - fat
+- Breast composition: b. homogeneous - fibroglandular
+- Breast composition: c. heterogeneous
+- Mass: no
+- Mass:
+  + shape: oval, round, irregular
+  + margin: circumscribed, indistinct, angular, microlobulated, spiculated
+  + orientation: parallel, not parallel
+  + echo pattern: anechoic, hyperechoic, complex cystic/solid, hypoechoic, isoechoic, heterogeneous
+  + posterior features: no features, enhancement, shadowing, combined pattern
+- Calcifications: no
+- Calcifications: in mass, outside mass, intraductal
+- Associated features: no
+- Associated features: architectural distortion, duct changes, skin thickening, skin retraction, edema, vascularity (absent, internal, rim), elasticity
+- Special cases: bilateral microcysts
+- Special cases: simple cyst, clustered microcysts, complicated cyst, mass in or on skin, foreign body (including implants), intramammary lymph node, AVM, Mondor disease, postsurgical fluid collection, fat necrosis.
+)
+  Paste(MyForm)
 Return
 
 ::plo::parallel orientation
@@ -356,7 +384,7 @@ Return
 ::suaok::
   MyForm =
 (
-No focal lesion in the liver, GB, spleen, kidney, visible pancreas, or paraaortic region.
+No focal lesion in the liver, GB, spleen, kidney, visible pancreas, and paraaortic region.
 )
   Paste(MyForm)
 Return
@@ -364,7 +392,7 @@ Return
 ::suaok0::
   MyForm =
 (
-No focal lesion in upper abdomen survey, including liver, GB, spleen, kidney or visible pancreas.
+No focal lesion in upper abdomen survey, including liver, GB, spleen, kidney, and visible pancreas.
 The sizes, surfaces and echo pattern of both kidneys are WNL.
 )
   Paste(MyForm)
@@ -373,7 +401,7 @@ Return
 ::suaok1::
   MyForm =
 (
-No focal lesion in the liver, GB, spleen, kidney, visible pancreas, or paraaortic region.
+No focal lesion in the liver, GB, spleen, kidney, visible pancreas, and paraaortic region.
 The sizes, surfaces and echo pattern of both kidneys are WNL.
 )
   Paste(MyForm)
@@ -622,4 +650,41 @@ Sono CDU Kideny:
 Good condition of the kidney graft.
 )
   Paste(MyForm)
+Return
+
+GetRecentMammo(accno) {
+  if (accno) {
+    r := WinHttpRequest("http://localhost:50000/recent-mammo/" + accno, InOutData := "", InOutHeaders := "", "Timeout: 15`nNO_AUTO_REDIRECT")
+    parsedResult := JSON.Load(InOutData)
+
+    If (debug) {
+      MsgBox % parsedResult.debug[1].patid
+    } Else If (parsedResult.report.accno) {
+      ;global prevExamDate, prevPatID
+      ;prevExamDate := StrSplit(parsedResult.report.examdate, A_Space)[1]
+      ;prevPatID := parsedResult.debug[1].patid
+      ;prevAccNo := parsedResult.report.accno
+
+      ;ControlGet, hFdEdit, Hwnd,, TMemo6
+      ;ControlGet, hImpEdit, Hwnd,, TMemo7
+      ;if (hFdEdit && hImpEdit) {
+      ;new_findings_text := Edit_GetText(hFdEdit) . parsedResult.report.findings
+      ;new_impression_text := Edit_GetText(hImpEdit) . parsedResult.report.impression
+
+      Return "date: " . parsedResult.report.examdate . "; impressions: `r`n" . parsedResult.report.impression
+      ;Edit_SetText(hFdEdit, new_findings_text)
+      ;Edit_SetText(hImpEdit, new_impression_text)
+    } Else {
+      Return "nil"
+    }
+  }
+}
+
+:c:MMG::
+  tmpClip := ClipboardAll
+  accno := GetAccNoFromRIS()
+  str := "MAMMOGRAPHY: " . GetRecentMammo(accno)
+  Paste(str)
+  Sleep 300
+  Clipboard := tmpClip
 Return

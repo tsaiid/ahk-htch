@@ -1,4 +1,9 @@
-﻿; Angio forms
+﻿; Angio
+;; Hotstrings
+:c:L::Lipiodol
+:c:G::Gelfoam
+
+;; Forms
 ::xac::
   MyForm =
 (
@@ -236,14 +241,14 @@ Celiac Angiography and TACE for HCC
 Operator: I-Ta Tsai
 Anesthesia: local
 Approach: right femoral artery
+Catheters: 4F sheath, 4F J-curve, 1.98F Masters Parkway
 Catheters: 4F sheath, 4F J-curve, 2.4F Direxion Bern shape
 Catheters: 4F sheath, 4F J-curve, 2.8F Renegade HI-FLO
 Catheters: 4F sheath, 4F J-curve, 2.7F Progreat
 Catheters: 4F sheath, 4F J-curve
 Catheters: 4F sheath, 4F SOS Omni Selective 2
-Embolizer: Mixture of Doxorubicin 20 mg + Lipiodol 4 ml = 6 ml, pure Lipiodol, Gelfoam slurry
-Embolizer: Mixture of Doxorubicin 40 mg + Lipiodol 6 ml = 9 ml, pure Lipiodol, Gelfoam slurry
-Embolizer: Doxorubicin, Lipiodol, Gelfoam slurry
+Embolizer: Emulsion of Doxorubicin 20 mg + Lipiodol 4 ml = 6 ml, pure Lipiodol, EGgel 350-560
+Embolizer: Emulsion of Doxorubicin 40 mg + Lipiodol 6 ml = 9 ml, pure Lipiodol, EGgel 350-560
 
 PROCEDURE AND FINDINGS:
 Angiography of superior mesenteric artery, celiac trunk, right inferior phrenic artery, common hepatic artery, and right hepatic artery were performed. DynaCT was used to check vascular territory.
@@ -255,10 +260,10 @@ The angiography of celiac trunk and common hepatic artery shows at least 4 tumor
 The main portal vein is patent in both celiac and superior mesenteric angiography.
 
 - Selective embolizations were performed:
-  + S7: 2 ml mixture, 0.5 ml Gelfoam.
-  + S8: 2 ml mixture, 0.5 ml Gelfoam.
+  + S7: 2 ml emulsion, 0.5 ml Gelfoam.
+  + S8: 2 ml emulsion, 0.5 ml Gelfoam.
   + RHA: 2 ml Lipiodol.
-  + S4: 2 ml mixture, 0.5 ml Gelfoam.
+  + S4: 2 ml emulsion, 0.5 ml Gelfoam.
 
 Superselective embolization of the S6 hepatic arterial branch was performed with mixture of 20 mg Doxorubicin and 10 ml Lipiodol, followed by Gelfoam slurry.
 Selective embolization of the superior and inferior branches of right hepatic artery, and left hepatic artery was performed with mixture of 20 mg Doxorubicin and 10 ml Lipiodol (RHA total 7 ml, LHA total 5 ml), followed by Gelfoam slurry.
@@ -269,6 +274,7 @@ The follow-up common hepatic angiography showed decreased right hepatic arterial
 The follow-up RHA angiography showed no more tumor stain.
 
 The angiocatheter and sheath were removed, and hemostasis of the puncture site was achieved by manual compression with a Coreleader Chitosan wound dressing.
+The angiocatheter and sheath were removed, and hemostasis of the puncture site was achieved by manual compression.
 
 RECOMMENDATION:
 - Sandbag compression on the puncture site for at least 2 hours and bed rest for 4 hour.
@@ -399,10 +405,14 @@ Post-embolization CT without IV contrast medium:
 Reconstruction planes: axial, coronal, and sagittal.
 
 FINDINGS:
-Lipiodol retention in the partial S6 of liver.
-Some parts of the tumor still have relative scarce Lipiodol retention.
-Cirrhosis.
-Splenomegaly.
+- Lipiodol retention in the partial S6 of liver.
+- Some parts of the tumor still have relative scarce Lipiodol retention.
+- Cirrhosis.
+- Splenomegaly.
+- Lipiodol retention in the gallbladder wall. Post embolization cholecystitis may occur. Suggest clinical correlation and follow-up.
+- High-attenuation in the atelectic lung, suspicious Lipiodol emnboli.
+- No obvious Lipiodol retention in the bilateral lower lungs.
+- No abnormal Lipiodol retention in the GI tract.
 )
   Paste(MyForm)
   SleepThenTab()
@@ -717,8 +727,9 @@ SUGGESTION:
   MyForm =
 (
 Antegrade double-J ureteral stent placement and PCN revision were successfully performed.
-PCN, ureteroplasty, and DBJ were successfully performed.
-AP, ureteroplasty, DBJ, and PCN revision were successfully performed.
+PCN, ureteroplasty, and antegrade DJS placement were successfully performed.
+AP, ureteroplasty, antegrade DJS placement, and PCN revision were successfully performed.
+Ureteroplasty, antegrade DJS placement, and PCN revision were successfully performed.
 )
   Paste(MyForm)
 Return
@@ -751,7 +762,7 @@ Return
   FormatTime, currDateStr, L1033, M/d tt
   MyForm =
 (
-Percutaneous nephrostomy was performed in %currDateStr%.
+Percutaneous nephrostomy (8F pigtail) was performed in %currDateStr%.
 )
   Paste(MyForm)
 Return
@@ -765,6 +776,9 @@ Operator: I-Ta Tsai
 Anesthesia: local
 Laterality: left
 Laterality: right
+Position: prone
+Position: left decubitus
+Position: right decubitus
 
 PROCEDURE:
 Under sonography guidance, the kidney was localized.
@@ -779,9 +793,9 @@ The whole procedure was smooth, the patient tolerated well, and no immediate com
   SleepThenTab()
   MyForm =
 (
-Left PCN was successfully performed.
-Right PCN was successfully performed.
-Bilateral PCN was successfully performed.
+Left PCN (8F pigtail) was successfully performed.
+Right PCN (8F pigtail) was successfully performed.
+Bilateral PCN (8F pigtail) was successfully performed.
 )
   Paste(MyForm)
 Return
@@ -840,6 +854,11 @@ Percutaneous retrieval of foreign body:
 
 Operator: I-Ta Tsai
 Anesthesia: general
+Approach: right femoral vein
+Device: Cook Gunther Tulip Vena Cava Filter Retrieval Set
+Retrieved foreign body: a broken catheter in the right brachiocephalic vein to SVC.
+
+
 Approach: endotracheal tube.
 Device: Cook Vascular Retrieval Forceps
 Retrieved foreign body: a broken catheter in the right bronchus.
@@ -1000,13 +1019,14 @@ Return
 (
 Percutaneous Transhepatic Cholangiography and Drainage
 
+Devices: 8 Fr Cholangio-Entero-Tube
 Devices: 8 Fr x 35 cm pigtail drain
 Devices: 8.3Fr ring catheter with 20 sideports
 Anesthesia: local
 Medication: Pethidine 25 mg IV
 
 Procedure and Findings:
-Under sonography and fluoroscopy guidance, right/left IHD was approached with Chiba needle.
+Under sonography and fluoroscopy guidance, right/left IHD was approached with 21G needle.
 PTC shows severe dilated IHD with obstruction level at the distal CBD.
 The guidewire successfully passed through the obstruction level, and then a 8-Fr pigtail with home-made side holes was placed with the tip in the duodenum.
 The drain was fixed with ___ at the 27-cm mark.
@@ -1029,6 +1049,7 @@ Return
 PTCD Revision
 
 Materials: 8 Fr x 25 cm pigtail drain
+Materials: 8 F Cholangio-Entero Tube
 
 Procedure and Findings:
 The fluoroscopy shows outward migration of the bilateral PTCD tubes.
@@ -1127,15 +1148,23 @@ Return
 (
 HAIC (hepatic arterial infusion chemotherapy) Catheter Placement and Port Implantation
 
-Operator: I-Ta Tsai
+Operator: I-Ta Tsai, CC Chen
 Anesthesia: local
-Approach: right femoral artery failed, shifted to right subclavian artery
-Catheters: 4F J-curve, 4F Yashiro, 2.4F Merit Maestro.
-Guide wires: Terumo .35, Fathom, V-18.
+Approach: right femoral artery
+Devices: 5F Shuttle sheath, Perclose ProGlide Closure System
 HAIC devices: Celsite port, Anthron P-U catheter.
 Embolizer: Microcoils
 
 PROCEDURE AND FINDINGS:
+- Right femoral artery was approached under US guidance.
+- Angiogram of celiac trunk was performed.
+- The gastroduodenal artery and left gastric artery were embolized.
+- A subcutaneous pocket was created at the right anterior thigh.
+- The Perclose ProGlide system was applied.
+- The Anthron P-U catheter was placed over the wire with tip in the proper hepatic artery.
+- The port was connected to the catheter with a 2-cm subcutaneous tunnel tract, and was fixed in the pocket.
+- The final angiography through the port confirmed its functionality, and 2000 IU/2 ml heparin was injected into the port.
+
 - Initially, right femoral artery was approached under US guidance. The angiography of celiac trunk shows patent CHA, PHA, RHA, and LHA.
 - The microcatheter could go forward to RHA and LHA 1st branch. However, the V-18 guide wire could not be steadily positioned, due to the acute angle of celiac trunk and tortuous CHA. Therefore, we shifted to right subclavian artery approach.
 - With subclavian approach, the V-18 guide wire could be steadily positioned with tip in the LHA. However, the Anthron P-U catheter could only advanced to the PHA. In order to prevent the side hole being located in the aorta, the catheter tip was placed in the splenic artery, while the side hole at proximal CHA or celiac trunk.
@@ -1162,7 +1191,7 @@ OTHERS:
   SleepThenTab()
   MyForm =
 (
-HAIC catheter was placed and port was implanted at right upper chest wall.
+A HAIC catheter was placed with tip at the CHA, and a port was implanted at the right anterior thigh.
 
 Single blood supply (blockage of SMA supply) for pancreatic cancer was achieved. HAIC catheter (tip at CHA) was placed, and port was implanted at the RLQ of abdomen.
 )

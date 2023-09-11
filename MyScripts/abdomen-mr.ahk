@@ -5,8 +5,8 @@
 ::amrfnh::A _ cm mass lesion at the S of liver, with arterial enhancement, mild persistent enhancement into delayed phase, fading toward background liver intensity on the delayed hepatobiliary phase, suggest focal nodular hyperplasia.
 ::amrhh::A _ cm nodule over S of liver, shows hyperintensity on T2WI, and the dynamic study shows discontinuous, nodular, peripheral enhancement, with progressive peripheral enhancement with centripetal fill in. Hepatic hemangioma is considered.
 ::amraps::A small wedge-shaped subcapsular arterial enhancement at S_ of liver with isointense in the portal venous and delay phases, in favor of AP shunting.
-::amrfl::Marked diffuse signal drop in the opposed-phase images, suggestive of hepatic steatosis.
-::amrmfl::Mild diffuse signal drop in the opposed-phase images, suggestive of mild hepatic steatosis.
+::amrfl::Marked diffuse signal drop of the liver parenchyma in the opposed-phase images, suggestive of hepatic steatosis.
+::amrmfl::Mild diffuse signal drop of the liver parenchyma in the opposed-phase images, suggestive of mild hepatic steatosis.
 ::amrgbsg::T1 hyperintensity material in the gallbladder with layering, in favor of GB sludge.
 ::dwil::* Due to susceptibility artifact from the rectal fecal material, the evaluation in DWI/ADC may be limited.
 ::amrbph::Enlarged transition zone with heterogeneous nodular signal intensity and an intact low signal pseudocapsule in the periphery, suggestive of benign prostatic hyperplasia.
@@ -14,6 +14,8 @@
 ::amrbok::No DWI (b=400) hyperintense bone lesion detected.
 ::amrhc::The liver shows diffuse T2 hypointensity, lower signal intensity on in-phase sequence, and higher signal intensity on out-of-phase sequence. Hemochromatosis may be suspected.
 ::pok::No space-occupying pancreatic lesion. No pancreatic duct dilatation.
+::pz::peripheral zone
+::jz::junctional zone
 
 ;; General
 ::amrpan::
@@ -187,7 +189,7 @@ SCANNING PROTOCOL:
 COMPARISON: no
 
 FINDINGS:
-Adrenals: No definite space-occupying lesion in the adrenal glands nor abnormal adrenal limb thickening.Unremarkable
+Adrenals: No definite space-occupying lesion in the adrenal glands nor abnormal adrenal limb thickening.
 Kidneys and ureters: Unremarkable.
 
 Liver: Unremarkable
@@ -374,29 +376,29 @@ Lesion 1:
 = PI-RADS 3
 
 * Peripheral Zone (PZ)
-- T2WI: Uniform hyperintense signal intensity (score 1)
-- T2WI: Linear, wedge-shaped, or diffuse mild hypointensity, usually indistinct margin. (score 2)
-- T2WI: Heterogeneous signal intensity or non-circumscribed, rounded, moderate hypointensity (score 3)
-- T2WI: Circumscribed, homogenous moderate hypointense focus/mass confined to prostate and <1.5 cm in greatest dimension (score 4)
-- T2WI: Same as 4 but >=1.5 cm in greatest dimension or definite extraprostatic extension/invasive behavior (score 5)
+- T2WI: Uniform hyperintense signal intensity. (score 1)
+- T2WI: Linear or wedge-shaped hypointensity, or diffuse mild hypointensity, usually indistinct margin. (score 2)
+- T2WI: Heterogeneous signal intensity or non-circumscribed, rounded, moderate hypointensity. (score 3)
+- T2WI: Circumscribed, homogenous moderate hypointense focus/mass confined to prostate and <1.5 cm in greatest dimension. (score 4)
+- T2WI: Same as 4 but >=1.5 cm in greatest dimension or definite extraprostatic extension/invasive behavior. (score 5)
 
 * Transition Zone (TZ)
-- T2WI: Homogeneous intermediate signal intensity (score 1)
-- T2WI: Circumscribed (arrows) hypointense or heterogeneous encapsulated nodule(s) (score 2)
-- T2WI: Heterogeneous signal intensity with obscured margins (score 3)
-- T2WI: Lenticular or non-circumscribed, homogeneous, moderately hypointense, and <1.5 cm in greatest dimension (score 4)
-- T2WI: Same as 4, but >=1.5 cm in greatest dimension or definite extraprostatic extension/invasive behavior (score 5)
+- T2WI: Normal appearing TZ (rare) or a round, completely encapsulated nodule. ("typical nodule") (score 1)
+- T2WI: A mostly encapsulated nodule OR a homogeneous circumscribed nodule without encapsulation. ("atypical nodule") OR a homogeneous mildly hypointense area between nodules. (score 2)
+- T2WI: Heterogeneous signal intensity with obscured margins. (score 3)
+- T2WI: Lenticular or non-circumscribed, homogeneous, moderately hypointense, and <1.5 cm in greatest dimension. (score 4)
+- T2WI: Same as 4, but >=1.5 cm in greatest dimension or definite extraprostatic extension/invasive behavior. (score 5)
 
 * DWI/ADC
 - DWI/ADC: No abnormality on ADC and high b-valueDWI (score 1)
-- DWI/ADC: Indistinct hypointense on ADC (score 2)
-- DWI/ADC: Focal mildly/moderately hypointense on ADC and isointense/mildly hyperintense on high b-value DWI (score 3)
-- DWI/ADC: Focal markedly hypointense on ADC and markedly hyperintense on high b-value DWI; <1.5 cm in greatest dimension (score 4)
-- DWI/ADC: Same as 4 but >=1.5 cm in greatest dimension or definite extraprostatic extension/invasive behavior (score 5)
+- DWI/ADC: Linear/wedge shaped hypointense on ADC and/or linear/wedge shaped hyperintense on high b-value DWI. (score 2)
+- DWI/ADC: Focal (discrete and different from the background) hypointense on ADC and/or focal hyperintense on high b-value DWI; may be markedly hypointense on ADC or markedly hyperintense on high b-value DWI, but not both. (score 3)
+- DWI/ADC: Focal markedly hypontense on ADC and markedly hyperintense on high b-value DWI; <1.5cm in greatest dimension. (score 4)
+- DWI/ADC: Same as 4 but ≥1.5cm in greatest dimension or definite extraprostatic extension/invasive behavior. (score 5)
 
 * DCE
-- DCE: no early enhancement, or diffuse enhancement not corresponding to a focal finding on T2W and/or DWI or focal enhancement corresponding to a lesion demonstrating features of BPH on T2WI (-)
-- DCE: focal, and; earlier than or contemporaneously with enhancement of adjacent normal prostatic tissues, and; corresponds to suspicious finding on T2W and/or DWI (+)
+- DCE: no early or contemporaneous enhancement; or diffuse multifocal enhancement NOT corresponding to a focal finding on T2W and/or DWI or focal enhancement corresponding to a lesion demonstrating features of BPH on T2WI (including features of extruded BPH in the PZ) (-)
+- DCE: focal,and; earlierthan or contemporaneously with enhancement ofadjacent normal prostatic tissues, and; corresponds to suspicious finding on T2Wand/orDWI (+)
 
 
 Lymphadenopathy:
@@ -417,7 +419,7 @@ Footnotes:
 T2WI = T2-weighted imaging; DWI = diffusion-weighted imaging; ADC = apparent diffusion coefficient; DCE = dynamic contrast enhanced.
 
 ----
-PI-RADS v2 Assessment Categories:
+PI-RADS v2.1 Assessment Categories:
 * PI-RADS 1 - Very low (clinically significant cancer is highly unlikely to be present)
 * PI-RADS 2 - Low (clinically significant cancer is unlikely to be present)
 * PI-RADS 3 - Intermediate (the presence of clinically significant cancer is equivocal)

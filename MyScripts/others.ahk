@@ -17,10 +17,10 @@
 ::smao::small to moderate amount of `
 ::mao::moderate amount of `
 ::lao::large amount of `
-::ntbd::nature to be determined.
-::stbd::significance to be determined.
-::ctbd::cause to be determined.
-::otbd::origin to be determined.
+::ntbd::nature to be determined
+::stbd::significance to be determined
+::ctbd::cause to be determined
+::otbd::origin to be determined
 ::het::heterogeneous `
 ::hom::homogenous `
 ::p::presence of `
@@ -34,6 +34,8 @@
 ::ec::enhancing `
 ::rec::recurrence
 ::ret::retention
+:c:imp::improvement
+::impd::improved
 ::w::with `
 ::wo::without `
 ::woo::without obvious `
@@ -102,7 +104,7 @@
 ::pii::previous ischemic insults
 ::ech::edematous change
 ::sps::spinal stenosis
-::sps0::mild indentation on anterior dural sac without obvious spinal stenosis
+::sps0::mild indentation on anterior dural sac
 ::csps::central spinal stenosis
 ::nfs::neuroforaminal stenosis
 ::snfs::spinal and neuroforaminal stenosis
@@ -124,6 +126,9 @@
 ::um::uterine myoma
 ::pbv::peribronchovascular
 ::ivd::intervertebral disc
+::vd::varying degree of `
+::vs::varying sized `
+::ltls::lower T- to L-spine
 
 ::pl::possibly `
 ::pb::probably `
@@ -131,7 +136,20 @@
 ::ll::less likely
 
 :c:f::findings
-:c:IND::INDICATION:
+
+;:c:IND::INDICATION:
+:c:IND::
+  tmpClip := ClipboardAll
+  str := "INDICATION: "
+  o := GetObjectiveFromRIS()
+  If (RegExMatch(o, "檢查目的：(.+)", SubPat)) {
+    str .= Trim(SubPat1)
+  }
+  Paste(str)
+  Sleep 300
+  Clipboard := tmpClip
+Return
+
 ;:c:CMP::COMPARISON: ^+1
 :c:CMP::
   splitted_date := SplitDate(prevExamDate)
@@ -140,6 +158,7 @@ Return
 :c:IMP::IMPRESSION:
 :c:SG::SUGGESTION:
 :c:FD::FINDINGS:
+::ci::clinical information: `
 
 ; recommendations
 ::sg::suggest
@@ -271,18 +290,27 @@ Return
 ::pvs::(Previously,  mm.){Left 5}
 ::abn::abnormal `
 ::sb::small bowel
+::div::diverticula
 ::elg::enlargement
 ::elgd::enlarged
 ::pci::postcontrast images
 ::bdl::borderline `
 ::bsmg::borderline splenomegaly
-::ls::luminal stenosis
+:c:ls::luminal stenosis
 ::ada::as detailed above
 ::ntn::not true nodule
 ::wofl::without focal lesion
 ::vrt::3D VRT reconstruction
-::oev::on extension view
-::ofv::on flexion view
+::iev::in the extension view
+::ifv::in the flexion view
+:c:Cs::C-spine
+:c:Ts::T-spine
+:c:Ls::L-spine
+::scsp::Straight C-spine.
+::lkup::upper portion of left kidney
+::lklp::lower portion of left kidney
+::rkup::upper portion of right kidney
+::rklp::lower portion of right kidney
 
 ::fn::FOOTNOTE:{Enter}[{^}1]: `
 
@@ -305,6 +333,7 @@ Return
 ::rrc::A -cm renal cyst at the right kidney.
 ::srcs::Some small renal cysts in both kidneys.
 ::shcs::Some small hepatic cysts.
+::fcs::fibrocysts
 
 ; 資源共享
 ::share::

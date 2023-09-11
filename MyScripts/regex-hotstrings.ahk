@@ -3,7 +3,9 @@
 hotstrings("plsp(\d)(\d)\s", "plsp")
 hotstrings("pcsp(\d)(\d)\s", "pcsp")
 hotstrings("sb([rl])l(1[0-2](-\d+)?|[1-9](-\d+)?)\/(\d+)\s", "sbl")
+hotstrings("([RL])(1[0-2](-\d+)?|[1-9](-\d+)?)\/(\d+)\s", "bl")
 hotstrings("ca([1-9]|[1-8][0-9])\s", "ca")
+hotstrings("([1-9]|[1][0-2])t([1-9]|[1][0-2])\s", "nr")
 Return
 
 plsp:
@@ -82,11 +84,12 @@ pcsp:
       cage = %cage%-%endStr%, C%endStr%
     }
   }
-  rangeStr = Post anterior cervical plate fixation at %range%.
-  cageStr = Post interbody cage placement at %cage%.
-  SendInput, %rangeStr%
-  SendInput, {Enter}
-  SendInput, %cageStr%
+  finalStr =
+(
+Post anterior cervical plate fixation at %range%.
+Post interbody cage placement at %cage%.
+)
+  Paste(finalStr)
 Return
 
 sbl:
@@ -108,11 +111,42 @@ at the %laterality% breast, %oclock%``/subareolar.
   Paste(finalStr)
 Return
 
+bl:
+  laterality := ($1 == "R" ? "Right" : "Left")
+  oclock := $2
+  distance := $5
+
+  if (distance) {
+    finalStr =
+(
+%laterality% %oclock%``/%distance%cm.
+)
+  } else {
+    finalStr =
+(
+%laterality% %oclock%``/subareolar.
+)
+  }
+  Paste(finalStr)
+Return
+
+
 ca:
   ca_degree := $1
   finalStr =
 (
 Cobb angle: %ca_degree% degree.
+)
+  Paste(finalStr)
+Return
+
+nr:
+  global ORDINAL_NUM_STR
+  n_start := ORDINAL_NUM_STR[$1]
+  n_end := ORDINAL_NUM_STR[$2]
+  finalStr =
+(
+%n_start% to %n_end%
 )
   Paste(finalStr)
 Return

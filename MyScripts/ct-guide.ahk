@@ -184,3 +184,25 @@ RFA for S8 hepatic tumor was performed.
 )
   Paste(MyForm)
 Return
+
+;; MWA
+::ctg-mwa::
+  MyForm =
+(
+Microwave albation of renal tumor(>3cm;<=5cm):
+
+Anesthesia: general
+Position: prone
+Device: ECO 16G ceramic antenna, 12 mm exposed tip, 15 cm shaft.
+Ablation parameter: 40W x 8 min, ablation zone: diameter 33 mm, length 47 mm.
+Tumor location and size: left kidney, 31 x 24 x 34 mm.
+Complication: nil.
+)
+  Paste(MyForm)
+  SleepThenTab()
+  MyForm =
+(
+MWA for left kidney RCC was performed.
+)
+  Paste(MyForm)
+Return

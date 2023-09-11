@@ -7,7 +7,7 @@
 ::b-ok::No osteolytic or osteoblastic lesion in the scanning range.
 ::book::No obvious bowel wall thickening or significant bowel dilatation.
 ::btok::No biliary tree dilatation.
-::btok2::No CBD or IHD dilatation.
+::btok1::No CBD or IHD dilatation.
 ::gbok::No distended gallbladder or GB wall thickening.
 ::pdok::No pancreatic duct dilatation.
 ::giok::No abnormal bowel wall thickening.
@@ -70,23 +70,30 @@
 ::lkuok::The left kidney and ureter are unremarkable.
 ::rkuok::The right kidney and ureter are unremarkable.
 ::ubok::No obvious urinary bladder wall thickening or perivesical fat stranding.
+::guok::No urinary obstruction. No definite high-attenuation urinary tract stone.
 ::ubgb::Gas bubbles in the urinary bladder, probably due to recent examination. Suggest clinical correlation.
 ::appok::the appendix is normal.
 ::appok1::No evidence of acute appendicitis.
 ::appok2::No evidence of acute appendicitis or other acute intraabdominal findings.
-::ntabdi::No evident traumatic intraabdominal injury.
-::ntthoi::No evident traumatic intrathoracic injury.
-::naabdf::No evident acute intraabdominal finding.
-::nathof::No evident acute intrathoracic finding.
+::ntti::No evident traumatic intrathoracic injury.
+::ntai::No evident traumatic intraabdominal injury.
+::nttai::No evident traumatic intrathoracic or intraabdominal injury.
+::naaf::No evident acute intraabdominal finding.
+::natf::No evident acute intrathoracic finding.
+::nataf::No evident acute intrathoracic or intraabdominal finding.
 ::nacraf::No evident acute intracranial finding.
 ::actapn::Edematous left renal parenchyma, with multifocal hypo-enhanced areas and perirenal fat stranding, suggestive of acute pyelonephritis.
 ::cdiv::colonic divertula
+::cdivs::colonic diverticulosis
+::actluo::Mild left perirenal fat stranding, probably due to urinary obstruction. DDx: superimposed pyelonephritis.
+::actruo::Mild right perirenal fat stranding, probably due to urinary obstruction. DDx: superimposed pyelonephritis.
+::acttrok::No liver, spleen, or kidney traumatic injury.
 ::livok::
   MyForm =
 (
 - No abnormal enhanced lesion or washout pattern noted.
-- No definite abnormal enhanced hepatic lesion with washout pattern noted.
-- No definite abnormal enhanced hepatic lesion with/without washout pattern noted.
+- No definite abnormal enhanced hepatic mass lesion with washout pattern noted.
+- No definite abnormal enhanced hepatic mass lesion with/without washout pattern noted.
 )
   Paste(MyForm)
 Return
@@ -247,6 +254,7 @@ No obvious ascites.
 Return
 
 ::lapok::No intrathoracic or intraabdominal lymphadenopathy.
+::metok::No apparent radiological sign of malignancy related lymphadenopathy or distant metastasis.
 
 ::actlapok::
   MyForm =
@@ -297,7 +305,7 @@ Small amount of ascites in the cul-de-sac.
 No obvious ascites is noted.
 No evidence of intraperitoneal free air.
 
-The liver, gallbladder, spleen, pancreas, adrenals, kidneys and urinary bladder are normal.
+The liver, gallbladder, spleen, pancreas, adrenals, kidneys, and urinary bladder are normal.
 No retroperitoneal or mesenteric lymphadenopathy.
 The lungs covered in the scanning range are unremarkable.
 )
@@ -377,7 +385,6 @@ Return
 TECHNIQUE:
 Non-contrast and contrast-enhanced abdominal CT scans.
 Scanning range: lower abdomen to symphysis, 5-mm contiguous scan.
-Contrast medium: Yes, 80 ml, 1-2 ml/sec, with 100 seconds scanning delay.
 
 Previous abdominal CT: none.
 
@@ -408,7 +415,6 @@ Return
 TECHNIQUE:
 Non-contrast and contrast-enhanced abdominal CT scans.
 Scanning range: lower abdomen to symphysis, 5-mm contiguous scan.
-Contrast medium: Yes, 80 ml, 1-2 ml/sec, with 100 seconds scanning delay.
 
 Previous abdominal CT: none.
 
@@ -980,7 +986,7 @@ FINDINGS:
 No evidence of intraperitoneal free air.
 No obvious ascites.
 
-- Lymph node enlargement > 1 cm: No mediastinal, retroperitoneal, or mesenteric lymphadenopathy.
+- Lymph node: No mediastinal, retroperitoneal, or mesenteric lymphadenopathy.
 
 - Bony structure: unremarkable
 
@@ -1337,7 +1343,7 @@ FINDINGS:
 No evidence of intraperitoneal free air.
 No obvious ascites.
 
-- Lymph node enlargement > 1 cm: No mediastinal, retroperitoneal, or mesenteric lymphadenopathy.
+- Lymph node: No mediastinal, retroperitoneal, or mesenteric lymphadenopathy.
 
 - Bony structure: unremarkable
 )

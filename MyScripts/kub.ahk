@@ -4,6 +4,7 @@
 ::/sk::Standing abdomen radiograph:{Enter 2}
 ::/kd::Decubitus view of the abdomen:{Enter 2}
 
+::nbp::Non-specific bowel gas pattern.
 ::k::The bowel gas pattern, bilateral kidney shadows and psoas muscle contours are unremarkable.
 ::kk::The bowel gas pattern is unremarkable.{Enter}No obvious bony lesion.+{Tab}The bowel gas pattern is unremarkable.
 ::k2::The bilateral kidney shadows are unremarkable.
@@ -15,6 +16,7 @@
 ::kb::the bowel gas pattern is unremarkable.
 ::kb1::the bowel gas pattern is normal.
 ::kob::The other bowel gas pattern is unremarkable.
+::kbok::No abnormal bowel dilatation.
 ::ks::Mottled gas pattern along colon course is noted, implying fecal residues retention.
 ::kp::Several small calcified nodules in the pelvic cavity are mostly due to phleboliths of the vein.
 ::kfn::Small oval nodules with egg-shell calcification in the pelvis, in favor of old fat necrosis.
@@ -37,8 +39,8 @@
 ::rfdl::On double-lumen catheter via right femoral vein.
 ::lfdl::On double-lumen catheter via left femoral vein.
 ::nfa::No evidence of subphrenic free air.
-::foley::s/p Foley catheterization.
-::foley1::s/p Foley catheterization. The urinary bladder is not distended enough, and the evaluation is limited.
+:c:F::s/p Foley catheterization.
+:c:F1::s/p Foley catheterization. The urinary bladder is not distended enough, and the evaluation is limited.
 ::spiud::s/p intrauterine device implantation.
 ::haicok::On HAIC. The tip position shows no migration as compared with previous angiography.
 ::spa::Surgical clips at RLQ of abdomen, in favor of post appendectomy.
@@ -77,7 +79,8 @@
 ::rabd::right side of abdomen
 ::labd::left side of abdomen
 ::uabd::upper abdomen
-::kis::Presence of inspissated fecal material in the rectum, probably stool impaction.
+::kis0::inspissated fecal materials
+::kis::Presence of inspissated fecal material in the rectum with gaseous dilated bowel loops, probably stool impaction.
 ::ks1::
   MyForm =
 (

@@ -200,12 +200,12 @@ Return
 ::rsdl::On double lumen catheter via right subclavian vein.
 ::lsdl::On double lumen catheter via left subclavian vein.
 ::sppok::s/p Port-A implantation, without immediate complication.
-::rport::On Port-A catheter via right subclavian vein.
-::rport1::On Port-A catheter via right subclavian vein.{ENTER}No pneumothorax is noted.
-::riport::On Port-A catheter via right internal jugular vein.
-::lport::On Port-A catheter via left subclavian vein.
-::lport1::On Port-A catheter via left subclavian vein.{ENTER}No pneumothorax is noted.
-::liport::On Port-A catheter via left internal jugular vein.
+::rport::s/p Port-A implantation via right subclavian vein.
+::rport1::s/p Port-A implantation via right subclavian vein with tip at the SVC.
+::riport::s/p Port-A implantation via right internal jugular vein.
+::lport::s/p Port-A implantation via left subclavian vein.
+::lport1::s/p Port-A implantation via left subclavian vein with tip at the SVC.
+::liport::s/p Port-A implantation via left internal jugular vein.
 ::lipport::s/p IP Port-A implantation at LUQ of abdomen.
 ::ripport::s/p IP Port-A implantation at RUQ of abdomen.
 ::rsperm::On Permcath via right subclavian vein.
@@ -246,6 +246,7 @@ Return
 ::msl0::Mild scoliosis of L-spine.
 ::msll::Mild scoliosis of L-spine with convexity to the left.
 ::mslr::Mild scoliosis of L-spine with convexity to the right.
+::mss0::Mild spondylosis and scoliosis.
 ::msst0::Mild spondylosis and scoliosis of T-spine.
 ::sst0::Spondylosis and scoliosis of T-spine.
 ::st0::Scoliosis of T-spine.
@@ -338,6 +339,7 @@ Return
 ::ate::atelectasis
 ::late::linear atelectasis
 ::sate::subsegmental atelectasis
+::spate::subpleural atelectasis
 ::bsate::subsegmental atelectasis of bilateral lower lungs.
 ::mrsoa::Mild OA change of right shoulder.
 ::mlsoa::Mild OA change of left shoulder.
@@ -346,8 +348,11 @@ Return
 ::lsoa::OA change of left shoulder.
 ::bsoa::OA change of bilateral shoulders.
 ::racjoa::OA change of right acromioclavicular joint.
+::mracjoa::Mild OA change of right acromioclavicular joint.
 ::lacjoa::OA change of left acromioclavicular joint.
+::mlacjoa::Mild OA change of left acromioclavicular joint.
 ::bacjoa::OA change of bilateral acromioclavicular joints.
+::mbacjoa::Mild OA change of bilateral acromioclavicular joints.
 ::blfgs::Few tiny dense nodules over bilateral lung fields, in favor of granulomas.
 ::rlfg::A small calcified nodule over right lung field, possibly a granuloma.
 ::rulfg::A small calcified nodule over right upper lung field, possibly a granuloma.

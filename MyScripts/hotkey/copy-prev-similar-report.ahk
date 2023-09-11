@@ -8,7 +8,7 @@
 CopyPrevSimilarReport(accno, debug=False) {
   if (accno) {
     ;r := WinHttpRequest("https://femh.tsai.it/ris/recent-similar-report/" + accno, InOutData := "", InOutHeaders := "", "Timeout: 1`nNO_AUTO_REDIRECT")
-    r := WinHttpRequest("http://localhost:5000/recent-similar-report/" + accno, InOutData := "", InOutHeaders := "", "Timeout: 15`nNO_AUTO_REDIRECT")
+    r := WinHttpRequest("http://localhost:50000/recent-similar-report/" + accno, InOutData := "", InOutHeaders := "", "Timeout: 15`nNO_AUTO_REDIRECT")
     ;MsgBox, % (r = -1) ? "successful" : (r = 0) ? "Timeout" : "No response"
     ;MsgBox, % InOutData
     ;MsgBox, % InOutHeaders

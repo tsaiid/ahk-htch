@@ -63,3 +63,27 @@ GetExamnameFromRIS()
     }
   }
 }
+
+GetContrastFromRIS()
+{
+  PossibleContrastEdits := ["TLabeledEdit3"]
+  For idx, box in PossibleContrastEdits {
+    ControlGetPos, x, y, w, h, %box%
+    if (x = 512 && y = 246) {
+      ControlGetText, t, %box%
+      Return t
+    }
+  }
+}
+
+GetObjectiveFromRIS()
+{
+  PossibleObjectiveEdits := ["TMemo4"]
+  For idx, box in PossibleObjectiveEdits {
+    ControlGetPos, x, y, w, h, %box%
+    if (x = 352 && y = 294) {
+      ControlGetText, t, %box%
+      Return t
+    }
+  }
+}

@@ -3,9 +3,14 @@
 ;; Hotstrings
 ::mrkok::The anterior cruciate ligament, posterior cruciate ligament, medial collateral ligament, lateral collateral ligament, medial meniscus, and lateral meniscus, quadricep tendon and patellar tendon are unremarkable.
 ::mrarok::No arthrographic evidence of full-thickness tear of rotator cuff or adhesive capsulitis.
+::pt::partial tear
+::ct::complete tear
 ::ftt::full-thickness tear `
 ::ptt::partial-thickness tear `
 ::je::joint effusion
+::be::bursal effusion
+::jbe::joint and bursal effusion
+::jbeok::No obviously increased joint or bursal effusion.
 ::bme::bone marrow edema
 ::mpp::mediopatellar plica
 ::mppok::Presence of mediopatellar plica. The adjacent patellar and femoral cartilages are normal.

@@ -34,8 +34,13 @@
 ::splc2::Spondylosis of C-spine with marginal osteophyte formation, disc space narrowing, and vacuum phenomenon.
 ::msplc1::Mild spondylosis of C-spine with marginal osteophyte formation and disc space narrowing.
 ::splt::Spondylosis of T-spine.
+::splt1::Spondylosis of T-spine with marginal osteophyte formation and disc space narrowing.
 ::spltl::Spondylosis of T- and L-spine.
+::spltl1::Spondylosis of lower T- to L-spine with marginal osteophyte formation and disc space narrowing.
 ::splctl::Spondylosis of C-, T- and L-spine.
+::splcl::Spondylosis of C- and L-spine.
+::splct::Spondylosis of C- and T-spine.
+::msplct::Mild spondylosis of C- and T-spine.
 ::msplc::Mild spondylosis of C-spine.
 ::mspll::Mild spondylosis of L-spine.
 ::msplt::Mild spondylosis of T-spine.
@@ -85,6 +90,7 @@
 ::acrsp::subacromial spur
 ::acrsp1::Presence of subacromial spur, which may be associated with impingement of the supraspinatus tendon.
 ::shok::No joint space narrowing, dislocation, or fracture.{Enter}No limitation in internal/external rotation of the shoulder.
+::rct0::Upward migration of the humeral head.
 ::rct1::Upward migration of the humeral head, narrowing the acromiohumeral distance, rotator cuff tear is suspected.
 ::pcsp::Post instrument fixation at cervical spine.
 ::mpvsts::Mild prevertebral soft tissue swelling.
@@ -96,6 +102,7 @@
 ::plsp0::Post laminectomy, transpedicular screws, rods fixation at L1-2, L2-3, L3-4, L4-5, L5-S1.{Enter}Post interbody cage placement at L1-2, L2-3, L3-4, L4-5, L5-S1.
 ::spok::No disc space narrowing, spondylolisthesis, or fracture.
 ::lspok::L-spine: No disc space narrowing, spondylolisthesis, or fracture.
+::wsplok::Normal cervical and lumbar lordotic curves.{Enter}Normal thoracic kyphotic curve.
 ::oaf::Joint space narrowing and marginal osteophyte formation, involving several DIP and PIP joints. These findings are consistent with osteoarthritis.
 ::oaf0::OA change of fingers.
 ::calsp::Presence of calcaneal spurs at the insertions of the Achilles tendon and the plantar fascia.
@@ -139,7 +146,7 @@
 ::ldcf::Left distal third clavicular fracture.
 ::rfnf::Right femoral neck fracture.
 ::lfnf::Left femoral neck fracture.
-::uspf::ulnar styloid process fracture.
+::uspf::ulnar styloid process fracture
 ::lhsf::left humeral shaft fracture.
 ::rhsf::right humeral shaft fracture.
 ::lphf::left proximal humeral fracture.
@@ -369,6 +376,7 @@ Return
 ::sii4::Complete fusion or ankylosis of the joint with or withoutsome residual sclerosis. Grade IV (ankylosis) sacroiliitis.
 
 ::djdc::DJD change of C-spine.
+::djdc1::DJD change of C-spine with spur formation.
 ::mdjdc::Mild DJD change of C-spine.
 ::mdjdc1::Mild DJD change of C-spine with spur formation.
 ::mdjdc2::Mild DJD change of C-spine with spur formation and facet joint hypertrophy.
@@ -497,6 +505,8 @@ REMARKES:
 The estimation of bone age is by the method of Greulich and Pyle.
 )
   Paste(MyForm)
+  ; Move to estimated bone age for input
+  Send, {Up 3}{End}{Space}
 Return
 
 ; Protocols

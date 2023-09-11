@@ -52,7 +52,7 @@ Return
 ^8::
   WinGetPos, X, Y, Width, Height, ahk_exe Report.exe
   ;MsgBox, %X% %Y% %Width% %Height%
-  WinMove, ahk_exe Report.exe, , 0, 100, 1026, 805
+  WinMove, ahk_exe Report.exe, , 10, 400, 1026, 805
 
 /*
   ;set date range
@@ -144,6 +144,23 @@ Return
   ;SendEvent {Home}+{End}^c
 Return
 
+;; Win + C
+;; Copy and combine Findings and Impressions
+#c::
+  ControlGetFocus, FocusedControl
+  If (FocusedControl = "TMemo6" || FocusedControl = "TMemo7") {
+    ControlGet, hEdit6, Hwnd,, TMemo6
+    ControlGet, hEdit7, Hwnd,, TMemo7
+    allText := Edit_GetText(hEdit6)
+    If (Edit_GetTextLength(hEdit7)) {
+      allText .= "`r`n`r`nIMPRESSION:`r`n" . Edit_GetText(hEdit7)
+    }
+    ;MsgBox, %allText%
+    Clipboard := allText
+  }
+Return
+
+
 StrPutVar(string, ByRef var, encoding)
 {
     ; Ensure capacity.
@@ -188,10 +205,37 @@ PasteExamname()
   }
 }
 
+PasteExamnameAndContrast()
+{
+  global CONTRAST_STR
+  If WinActive("ahk_exe Report.exe") {
+    ControlGetFocus, FocusedControl
+    If (FocusedControl = "TMemo6" || FocusedControl = "TMemo7") {
+      ControlGet, hFindingEdit, Hwnd,, TMemo6
+      Edit_GetSel(hFindingEdit, currStartSel, currEndSel)
+      examname := GetExamnameFromRIS()
+      contrast := GetContrastFromRIS()
+      If (examname) {
+        examname_text := Examname
+        If (contrast) {
+          examname_text .= CONTRAST_STR[contrast]
+        }
+        examname_text .= ":`r`n`r`n"
+        Edit_SetText(hFindingEdit, examname_text . Edit_GetText(hFindingEdit))
+        newStartSel := currStartSel + StrLen(examname_text)
+        newEndSel := currEndSel + StrLen(examname_text)
+        Edit_SetSel(hFindingEdit, newStartSel, newEndSel)
+      } Else {
+        MsgBox, No examname found.
+      }
+    }
+  }
+}
+
 ReplaceExamname()
 {
   If WinActive("ahk_exe Report.exe") {
-    ControlFocus, TMemo6  ; need to get focus. ReorderSeletedText() use focused edit.
+    ControlFocus, TMemo6  ; need to get focus. ReorderSelectedText() use focused edit.
     ControlGet, hEdit, Hwnd,, TMemo6
     endSel := Edit_FindText(hEdit, ".+show(s|ed)?[:\.\s]*|.+\R{1,2}", , , "RegEx", matchedText)
     If (endSel > -1) {
@@ -211,6 +255,16 @@ ReplaceExamname()
   PasteExamname()
 Return
 
+;; Ctrl + Alt + Shift + E
+;; Paste Examname with contrast informtion
+^!+e::
+  ; For RIS bug, check if not empty, clear findings and impressions first.
+  ClearRISBugFindingsImpressions()
+  PasteExamnameAndContrast()
+Return
+
+;; Ctrl + Alt + E
+;; Replace Examname
 ^!e::
   ; For RIS bug, check if not empty, clear findings and impressions first.
   ClearRISBugFindingsImpressions()
@@ -589,16 +643,19 @@ UnorderListForFindingsOfDxUs()
   examtype := GetExamTypeFromRIS()
   ;MsgBox, %examtype%
   If (examtype = "DX" || examtype = "US") {
-    ControlFocus, TMemo6  ; need to get focus. ReorderSeletedText() use focused edit.
+    ControlFocus, TMemo6  ; need to get focus. ReorderSelectedText() use focused edit.
     ControlGet, hEdit, Hwnd,, TMemo6
     ;startSel := Edit_FindText(hEdit, ":`r`n`r`n")
-    startSel := Edit_FindText(hEdit, ":\s*`r`n\s*`r`n", , , "RegEx", matchedText)
+    startSel := Edit_FindText(hEdit, "FINDINGS:`r`n", , , "RegEx", matchedText)
+    If (startSel == -1) {
+      startSel := Edit_FindText(hEdit, "FINDINGS:`r`n|:\s*`r`n\s*`r`n", , , "RegEx", matchedText)
+    }
     If (startSel > -1) {
       ;startSel += 5
       startSel += StrLen(matchedText)
       ;MsgBox % startSel
       Edit_SetSel(hEdit, startSel, -1)
-      ReorderSeletedText(false, false, "-")
+      ReorderSelectedText(false, false, "-")
     }
   }
 }
@@ -608,10 +665,11 @@ UnorderListForFindingsOfCtOrMr()
   examtype := GetExamTypeFromRIS()
   If (examtype = "CT" || examtype = "MR" || examtype = "MRI") {
     ControlGet, hEdit, Hwnd,, TMemo6
-    startSel := Edit_FindText(hEdit, "FINDINGS:`r`n")
+    startSel := Edit_FindText(hEdit, "FINDINGS:`r`n|The study shows:`r`n`r`n|show the following findings:`r`n`r`n|which revealed:`r`n`r`n", , , "RegEx", matchedText)
     ;startSel := Edit_FindText(hEdit, "(FINDINGS:`r`n|COMPARISON:)", , , "RegEx", matchedText)
     If (startSel > -1) {
-      startSel += 11
+      ;startSel += 11
+      startSel += StrLen(matchedText)
       Loop, 3 {
         newStartSel := startSel
         startText := Edit_GetTextRange(hEdit, newStartSel, newStartSel + 1)
@@ -633,9 +691,24 @@ UnorderListForFindingsOfCtOrMr()
       }
       Edit_SetFocus(hEdit)
       Edit_SetSel(hEdit, startSel, endSel)
-      ReorderSeletedText(false, true, "-")
+      ReorderSelectedText(false, true, "-")
       ;MsgBox % regex_out
     }
+  }
+}
+
+OrderListForFindings()
+{
+  ;ControlGetText, examtype, TLabeledEdit11
+  examtype := GetExamTypeFromRIS()
+  ;MsgBox, "%examtype%"
+  Switch examtype
+  {
+    case "CT", "MR", "MRI":
+      UnorderListForFindingsOfCtOrMr()
+
+    case "DX", "US":
+      UnorderListForFindingsOfDxUs()
   }
 }
 
@@ -654,25 +727,15 @@ OrderListForImpression()
     Edit_SetFocus(hEdit)
     Edit_SetSel(hEdit)
     If (CRLFCount > 1) {
-      ReorderSeletedText()
+      ReorderSelectedText()
     } Else {
-      ReorderSeletedText(true)
+      ReorderSelectedText(true)
     }
   }
 }
 
 ^6::
-  ;ControlGetText, examtype, TLabeledEdit11
-  examtype := GetExamTypeFromRIS()
-  ;MsgBox, "%examtype%"
-  Switch examtype
-  {
-    case "CT", "MR", "MRI":
-      UnorderListForFindingsOfCtOrMr()
-
-    case "DX", "US":
-      UnorderListForFindingsOfDxUs()
-  }
+  OrderListForFindings()
 Return
 
 ^7::

@@ -52,6 +52,7 @@
 
 ;; Breast
 ::fcd::fibrocystic disease
+::idp::intraductal papilloma
 
 ;; Vascular
 ::ivc::inferior vena cava
@@ -71,6 +72,7 @@
 ::ica::internal carotid artery
 
 ;; MSK
+::oa::osteoarthrosis
 ::msk::musculoskeletal
 ::pf::patellofemoral `
 ::pfj::patellofemoral joint
@@ -196,14 +198,20 @@
 ::bt::biliary tree
 ::haic::hepatic arterial infusion chemotherapy
 ::cds::cul-de-sac
+::rvp::rectovesical pouch
 ::cha::common hepatic artery
 ::pha::proper hepatic artery
 ::rha::right hepatic artery
+::rpha::right posterior hepatic artery
+::raha::right anterior hepatic artery
 ::lha::left hepatic artery
+::mha::middle hepatic artery
 ::lga::left gastric artery
 ::rga::right gastric artery
+::rgea::right gastroepiploic artery
 ::ev::esophageal varices
 ::pkd::polycystic kidney disease
+::bil::biliary `
 
 ;; Brain
 ::ich::intracranial hemorrhage
@@ -256,6 +264,7 @@
 ::cps::chronic paranasal sinusitis
 ::tao::thyroid-associated orbitopathy
 ::mng::multinodular goiter
+::nrg::nodular goiter
 ::zmc::zygomaticomaxillary complex
 ::m-s::maxillary sinus
 ::s-s::sphenoid sinus
@@ -318,6 +327,8 @@
 ::ner::no evidence of local recurrence.
 ::ner0::no evident of recurrence.
 ::ner1::no evidence of local recurrence or lymphadenopathy.
+::nerm::No evidence of recurrence or metastasis.
+::nerv::No evidence of recurrent or viable tumor.
 ::hx::history `
 ::sq::subcutaneous `
 ::afl::air-fluid level

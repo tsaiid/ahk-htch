@@ -6,20 +6,20 @@
 ::tacal::Atherosclerotic change and calcification of aortic wall.
 ::tacal1::Atherosclerotic change and calcification of aortic and branches walls.
 ::tacalt::Atherosclerotic change and calcification of aortic wall with aortic tortuosity.
-::macal::Mild calcification of aortic wall.
-::mtacal::Mild atherosclerotic change and calcification of aortic wall.
-::mtacalt::Mild atherosclerotic change and calcification of aortic wall with aortic tortuosity.
+::macal::mild calcification of aortic wall.
+::mtacal::mild atherosclerotic change and calcification of aortic wall.
+::mtacalt::mild atherosclerotic change and calcification of aortic wall with aortic tortuosity.
 ::accal::Atherosclerotic change of the aorta and coronary arteries.
 ::cctcad::Calcification of the coronary arteries, suspicious of coronary artery disease.
 ::cad0::calcification of the coronary arteries.
-::mcad0::Mild calcification of the coronary arteries.
+::mcad0::mild calcification of the coronary arteries.
 ::cad1::calcification of the coronary arteries, suspicious coronary artery disease.
-::amvcal::Aortic and mitral valves calcification.
-::avcal::Aortic valve calcification.
-::mvcal::Mitral valve calcification.
-::mamvcal::Mild aortic and mitral valves calcification.
-::mavcal::Mild aortic valve calcification.
-::mmvcal::Mild mitral valve calcification.
+::amvcal::aortic and mitral valves calcification.
+::avcal::aortic valve calcification.
+::mvcal::mitral valve calcification.
+::mamvcal::mild aortic and mitral valves calcification.
+::mavcal::mild aortic valve calcification.
+::mmvcal::mild mitral valve calcification.
 ::cctnc::*PS. The evaluation is limited especially for solid organs and vascular structure due to absence of contrast enhancement.
 ::cctnat::No abnormal air trapping in both inspiratory and expiratory phases.
 ::cadr0::CAD-RADS 0: Documented absence of CAD.
@@ -33,6 +33,9 @@
 ::ncldhc::a small hypodense nodular lesion in the liver, in favor of hepatic cyst.
 ::ncldhcs::small hypodense nodular lesions in the liver, in favor of hepatic cysts.
 ::cctpulhtn::Engorged pulmonary trunk with A/P ratio <1. Pulmonary hypertension may be suspected.
+::aook::No evidence of aortic dissection or aneurysm.
+::paok::No definite filling defect in the major pulmonary arteries.
+::ccttrok::No lung contusion, pneumorhorax, or hemothorax.
 ::cctlapok::
   MyForm =
 (

@@ -1,7 +1,8 @@
 ﻿; HotKey
 ;; Reordering the selected text
 
-ReorderSeletedText(deOrder = False, keepEmptyLine = False, itemChar = "", discardSeIm = True){
+ReorderSelectedText(deOrder = False, keepEmptyLine = False, itemChar = "", discardSeIm = True){
+  isSpine := false
   /*
   Clipboard := ""
   Send ^c
@@ -43,13 +44,27 @@ ReorderSeletedText(deOrder = False, keepEmptyLine = False, itemChar = "", discar
 
   If (StrLen(selectedText) > 0) {
     finalText := ""
-    currLineNo := 0
+    ; check if first chars are numbers, than use as start line no.
+    If (RegExMatch(selectedText, "^(\d+)", existLineNo)) {
+      startLineNo := existLineNo1
+    } Else {
+      startLineNo := 1
+    }
     Loop, Parse, selectedText, `n
     {
       If (!RegExMatch(A_LoopField, "^\s*$")) {
+        ; check if is a spine report
+        If (RegExMatch(A_LoopField, "^\s*[-\+\*]*\s*[Vv]arying degree")) {
+          isSpine := true
+        }
         If (!deOrder) {
-          orderChar := (StrLen(itemChar) > 0 ? itemChar : ++currLineNo . ".")
-          finalText .= orderChar . " "
+          orderChar := (StrLen(itemChar) > 0 ? itemChar : startLineNo++ . ".")
+          ; second order indentation if a spine level line
+          If (isSpine && RegExMatch(A_LoopField, "^\s*[-\+\*]*\s*[CcTtLl]\d{1,2}-")) {
+            finalText .= "  + "
+          } Else {
+            finalText .= orderChar . " "
+          }
         }
 
         tmpText := A_LoopField
@@ -60,7 +75,7 @@ ReorderSeletedText(deOrder = False, keepEmptyLine = False, itemChar = "", discar
         }
 
         ; remove unintended itemChar and uppercase the first char
-        finalText .= RegExReplace(tmpText, "^(\s*)((\d+\.)|([-\+\*>])|(\(?\d+\)))?(\s*)(\w?)(.*)", "$u7$8")
+        finalText .= RegExReplace(tmpText, "^(\s*)((\d+\.)|([-\+\*>=])|(\(?\d+\)))?(\s*)(\w?)(.*)", "$u7$8")
 
         If (A_Index < endLine || hadTrimmedRight) {
           finalText .= "`r`n"
@@ -86,8 +101,10 @@ ReorderSeletedText(deOrder = False, keepEmptyLine = False, itemChar = "", discar
     ;Edit_SetText(hEdit, leftText . finalText . rightText)
     ;Edit_SetSel(hEdit, currStartSel, currStartSel)
     Edit_ReplaceSel(hEdit, finalText)
+    Return 0
   } Else {
     ; No selection. Do nothing.
-    MsgBox, No content in the selection.
+    ;MsgBox, No content in the selection.
+    Return -1
   }
 }

@@ -1,6 +1,7 @@
 ﻿; Neuro Spine Forms
 ::rbf::retropulsed bone fragment
 ::paft::posterior annulus fibrosus tear
+::lclc::Loss of cervical lordotic curve.
 ::lllc::Loss of lumbar lordotic curve.
 ::pedf::prominent epidural fat
 ::aarst1::Atlantoaxial rotary subluxation is noted. The atlas is rotated on the odontoid with no anterior displacement, suggestive of Fielding and Hawkins type 1.
@@ -188,6 +189,17 @@ Cervical spondylosis and DDD, with mild spinal stenosis and neuroforaminal steno
   Paste(MyForm)
 Return
 
+::mrspcok::
+  MyForm =
+(
+No obvious spinal stenosis of the C-spine.
+No evidence of focal herniation of nucleus pulposus (HIVD) in the C-spine region noted.
+No evidence of abnormal signal intensity lesion within the spinal cord of the C-spine.
+No evidence of abnormal signal intensity tumor mass lesion over the spinal canal of the C-spine.
+)
+  Paste(MyForm)
+Return
+
 ;; MRSPT2
 ::mrspt2::
   MyForm =
@@ -294,6 +306,13 @@ SUGGESTION:
 )
   Paste(MyForm)
 Return
+
+::mrc1::Cervical spondylosis and degenerative disc disease, with spinal and neuroforaminal stenosis, as detailed above.
+::mrc2::Cervical spondylosis, spondylolisthesis, and degenerative disc disease, with spinal and neuroforaminal stenosis, as detailed above.
+
+::mrl1::Lumbar spondylosis and degenerative disc disease, with spinal and neuroforaminal stenosis, as detailed above.
+::mrl2::Lumbar spondylosis, spondylolisthesis, and degenerative disc disease, with spinal and neuroforaminal stenosis, as detailed above.
+::mrl3::Lumbar scoliosis, spondylosis, spondylolisthesis, and degenerative disc disease, with spinal and neuroforaminal stenosis, as detailed above.
 
 ;; MRSPL1
 ::mrspl1::
@@ -424,6 +443,19 @@ Bilateral/Right/Left hydronephrosis and hydroureter. The precise nature to be de
 Lumbar scoliosis, spondylosis, spondylolisthesis, and DDD, with spinal and neuroforaminal stenosis, as detailed above.
 Mild lumbar scoliosis, spondylosis, spondylolisthesis, and DDD, without significant spinal stenosis.
 
+)
+  Paste(MyForm)
+Return
+
+::mrsplok::
+  MyForm =
+(
+No significant spinal stenosis of the L-spine.
+No evidence of abnormal signal intensity mass lesion over the spinal canal of the lower T-spine and L-spine region noted.
+Postcontrast study shows no evidence of abnormal enhanced lesion over the spinal canal of the lower T-spine and L-spine region noted.
+No evidence of focal herniation of nucleus pulposus (HIVD) in the L-spine region noted.
+No evidence of signal intensity lesion over the spinal cord of the lower T-spine region noted.
+No evidence of abnormal signal intensity lesion noted over the conus medullaris region.
 )
   Paste(MyForm)
 Return

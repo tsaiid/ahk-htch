@@ -252,14 +252,16 @@ execute_shuttlepro(key,layer)
 
     If (WinActive("ahk_exe G3PACS.exe")) {
       If (key = 1) {
-        ;Send, w
+        Send, q
       } Else If (key = 2) {
         Send, 7
       } Else If (key = 3) {
         Send, 5
       } Else If (key = 4) {
         Send, 6
-      } Else If (key = 5) {		; move mouse to RIS finding edit
+      } Else If (key = 5) {
+				/*
+				; move mouse to RIS finding edit
 				If (WinExist("ahk_exe Report.exe")) {
 					WinGetPos, Xw, Yw, , , ahk_exe Report.exe
 					ControlGetPos, x, y, w, h, TMemo6, ahk_exe Report.exe
@@ -267,8 +269,10 @@ execute_shuttlepro(key,layer)
 					MouseMove, Xw + x + w/2, Yw + y + h/2
 					WinActivate
 				}
+				*/
+        Send, d
       } Else If (key = 6) {
-        ;Send, x
+				Send, l
       } Else If (key = 7) {
         Send, 1
       } Else If (key = 8) {
@@ -276,7 +280,7 @@ execute_shuttlepro(key,layer)
       } Else If (key = 9) {
         Send, 4
       } Else If (key = 10) {
-        ;Send, s
+        Send, x
       } Else If (key = 11) {
         ;Send, f
 				ToggleDiffExamSync()
@@ -286,7 +290,8 @@ execute_shuttlepro(key,layer)
         ;Send, w
 				ToggleSync()
       } Else If (key = 14) {
-        Send, {Up}
+        ;Send, {Up}
+				Send, o
       } Else If (key = 15) {
         Send, {Down}
       }
@@ -302,13 +307,16 @@ execute_shuttlepro(key,layer)
 						ControlFocus, TMemo6, ahk_exe Report.exe
 					}
 				}
-      } Else If (key = 5) { 	; move mouse to PACS window
+      } Else If (key = 5) {
+				/*
+				; move mouse to PACS window
 				If (WinExist("ahk_exe G3PACS.exe")) {
 					WinGetPos, x, y, w, h, ahk_exe G3PACS.exe
 					;MsgBox, Calculator is at %X%`,%Y%
 					MouseMove, x - w/2, y + h * 3/4
 					WinActivate
 				}
+				*/
 			}
     }
 

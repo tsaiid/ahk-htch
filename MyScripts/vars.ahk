@@ -38,6 +38,25 @@ ABD_CT_GENDER_SPECIFIC_STR := { M: "Prostate: Unremarkable"
                                ,F: "GYN organ: Unremarkable" }
 ABD_CT_GENDER_SPECIFIC_STR_WITH_LIST := { M: "- Prostate: Unremarkable"
                                          ,F: "- GYN organ: Unremarkable" }
+CONTRAST_STR := { X5A: " without contrast medium"
+                 ,X5B: " with contrast medium"
+                 ,X5C: " without and with contrast medium"
+                 ,X6A: " without contrast medium"
+                 ,X6B: " with contrast medium"
+                 ,X6C: " without and with contrast medium" }
+
+ORDINAL_NUM_STR := { 1:   "1st"
+                    ,2:   "2nd"
+                    ,3:   "3rd"
+                    ,4:   "4th"
+                    ,5:   "5th"
+                    ,6:   "6th"
+                    ,7:   "7th"
+                    ,8:   "8th"
+                    ,9:   "9th"
+                    ,10:  "10th"
+                    ,11:  "11th"
+                    ,12:  "12th"  }
 
 
 ;; Helios Related

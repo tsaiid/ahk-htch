@@ -1,7 +1,7 @@
 ﻿; Settings
 #NoEnv
 ;#Hotstring EndChars `t
-#Hotstring EndChars |
+#Hotstring EndChars \
 #Hotstring O
 #MaxHotkeysPerInterval 200
 SetBatchLines -1  ; better performance: http://scsnake.blogspot.tw/2016/03/hotstring.html
@@ -131,6 +131,14 @@ PRESERVE_CLIPBOARD := 0
 ;; The checking mechanism changed. No need to active current image before submitting since 2014-02.
 ;;#Include MyScripts\active-current-image-before-submit.ahk
 
+;#IfWinActive ahk_class SynergyDesk
+;#InputLevel 1
+;Tab::
+;  MsgBox, %A_PriorHotkey%
+;Return
+;#InputLevel 0
+;#IfWinActive
+
 ; Define hotkeys
 #IfWinActive ahk_group RIS
 
@@ -138,7 +146,7 @@ PRESERVE_CLIPBOARD := 0
 #InputLevel 1
 Tab::
   ;Send %A_PriorHotkey%
-  Send |
+  Send \
   ;Send %A_ThisHotkey% %A_PriorHotkey%
   ;MsgBox, %A_PriorHotkey%
 
@@ -162,37 +170,41 @@ Tab::|
 ^!o::
   ControlGetFocus, FocusedControl
   discardSeIm := (FocusedControl = "TMemo7")
-  ReorderSeletedText(, , , discardSeIm)
+  If (ReorderSelectedText(, , , discardSeIm) != 0) {
+    OrderListForImpression()
+  }
 Return
 
 ; Deorder Seleted Text
 ^!+o::
-  ReorderSeletedText(true)
+  ReorderSelectedText(true)
 Return
 
 ; Unorder Seleted Text
 ^+*::
-  ReorderSeletedText(false, true, "*")
+  ReorderSelectedText(false, true, "*")
 Return
 
 ^+-::
-  ReorderSeletedText(false, true, "-")
+  If (ReorderSelectedText(false, true, "-") != 0) {
+    OrderListForFindings()
+  }
 Return
 
 ^++::
-  ReorderSeletedText(false, true, "+")
+  ReorderSelectedText(false, true, "+")
 Return
 
 ^!*::
-  ReorderSeletedText(false, true, "  *")
+  ReorderSelectedText(false, true, "  *")
 Return
 
 ^!-::
-  ReorderSeletedText(false, true, "  -")
+  ReorderSelectedText(false, true, "  -")
 Return
 
 ^!+::
-  ReorderSeletedText(false, true, "  +")
+  ReorderSelectedText(false, true, "  +")
 Return
 #IfWinActive  ; ahk_group RIS
 
