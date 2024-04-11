@@ -1,12 +1,108 @@
-﻿#app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(6) {
-  height: 730px !important;
+﻿/* 報告區的最外框 */
+div[style*="height: 630px; width: 58.3333%; left: 41.6667%; top: 300px;"] {
+  height: 668px !important;
 }
+/* 報告區的內框 非 CT 用 */
+div[style*="height: 565px;"] {
+  height: 613px !important;
+}
+/* 報告區的內框 CT 用 */
+div[style*="height: 540px;"] {
+  height: 591px !important;
+}
+
 #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(6) > div.textarea-heightpercent84 {
   height: 90.5% !important;
 }
 #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(6) > div.textarea-heightpercent92 {
   height: 94% !important;
 }
+
+#app > main > main > div > div.flex-auto > div.h-10 {
+  /* height: 35px !important; */
+  height: unset !important;
+}
+
+
+
+/*
+ *      歷史報告
+ */
+
+/* 歷史報告區最外的 div */
+div[style*="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] {
+  height: 917px !important;
+}
+/* 歷史報告的外框 */
+div[style*="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] textarea[style*="height: 525px;"] {
+  height: 564px !important;
+}
+/* 歷史報告 儀器 checkbox 跑版 */
+#app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(5) > div > div:nth-child(3) > div.flex.items-center > div.flex.items-center.justify-end.text-12.ml-auto > label {
+  min-width: 4em;
+}
+/* 歷史報告查無資料時太大格 */
+#frameHistory > table > tbody > tr > td[colspan="99"] {
+  height: 14rem !important;
+}
+/* 因為日期時間加上分隔符號，要設最小寬度 */
+#frameHistory tbody tr td:nth-child(1) {
+  width: 8.5em;
+  min-width: 8em;
+  max-width: 9em;
+  text-align: left;
+  padding-left: 1em;
+}
+/* 檢查時間的寬度 */
+#frameHistory tbody tr td:nth-child(2) {
+  width: 6.5em;
+  min-width: 6em;
+  max-width: 7em;
+}
+/* 報告醫師的寬度 */
+#frameHistory tbody tr td:nth-child(4) {
+  width: 6em;
+  min-width: 5.5em;
+  max-width: 6.5em;
+}
+/* Highlight 相同檢查名稱 */
+.hl-sim-report {
+  color: rgb(250 219 43) !important;
+}
+.hl-same-report {
+  color: #EF8089 !important;
+}
+/* 儀器左右 padding */
+#frameHistory table > tbody > tr > td:nth-child(3) {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+/* 隱藏危急通報欄位 */
+#frameHistory table > thead > tr > td:nth-child(6),
+#frameHistory table > tbody > tr > td:nth-child(6) {
+  display: none;
+}
+/* 隱藏影像欄位 */
+#frameHistory table > thead > tr > td:nth-child(7),
+#frameHistory table > tbody > tr > td:nth-child(7) {
+  display: none;
+}
+/* 改歷史報告清單字體 */
+#frameHistory tbody {
+  font-family: "Source Code Pro";
+  font-size: 15px !important;
+  font-weight: 500;
+}
+#frameHistory tbody tr.text-secondary {
+  font-weight: 900;
+}
+#frameHistory tbody tr td:nth-child(5) {
+  font-size: 15px !important;
+  padding-left: 0.7em;
+}
+
+
+
 
 /* 把 檢查項目改成 align left */
 #app table > tbody > tr > td:nth-child(11) {
@@ -23,11 +119,14 @@
   height: 100%;
 }
 
+
+
 /* Highlight 共幾筆報告的數字 */
 div.page-button-next.mr-10 ~ div > span:nth-child(6) {
   color: #ffa500;
 }
 
+/* CT 報告的 4 個 radio button */
 #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(6) > div > div.flex.items-center.flex-wrap.text-16 {
   /*top: 96%;
   position: absolute;
@@ -35,69 +134,98 @@ div.page-button-next.mr-10 ~ div > span:nth-child(6) {
   padding-left: 3px;
 }
 
+/* 整個畫面，不含 footer */
 #app > main > main > div > div.flex-auto > main > div > div.main > div > div {
   height: 977px !important;
 }
-#app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(2) {
-  height: 890px;
+
+/* 改報告清單字體 */
+/*
+#app > main > main > div > div.flex-auto > div.px-5 > div.overflow-auto > table > tbody {
+  font-family: "Source Han Code JP";
+  font-weight: 300;
 }
-#app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(2) {
-  height: 917px !important;
+#app > main > main > div > div.flex-auto > div.px-5 > div.overflow-auto > table > tbody > tr > td:nth-child(6) {
+  min-width: 8em;
 }
-#app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(2) > div > div:nth-child(3) > textarea {
-  height: 551px !important;
-}
+?:
 
 /* 改 SOAP, 歷史報告字體 */
 textarea.textarea.text-16 {
   font-family: "Source Han Code JP";
-  font-size: 14px !important;
+  font-size: 15px !important;
   font-weight: 100;
   overflow: auto !important;
 }
 
-/* 改歷史報告清單字體 */
-#frameHistory tbody {
+
+
+
+
+
+/*
+ *      病理報告
+ */
+/* 改病理報告清單字體 */
+div[style='height: 870px; width: 41.6667%; left: 0%; top: 60px;'] table > tbody {
   font-family: "Source Code Pro";
   font-size: 15px !important;
   font-weight: 500;
 }
-#frameHistory tbody tr.text-secondary {
-  font-weight: 900;
+div[style='height: 870px; width: 41.6667%; left: 0%; top: 60px;'] table > tbody > tr > td:nth-child(1),
+div[style='height: 870px; width: 41.6667%; left: 0%; top: 60px;'] table > tbody > tr > td:nth-child(2) {
+  text-align: center;
 }
-#frameHistory tbody tr td:nth-child(5) {
-  font-size: 15px !important;
-  padding-left: 1em;
+div[style='height: 870px; width: 41.6667%; left: 0%; top: 60px;'] table > tbody > tr > td:nth-child(3),
+div[style='height: 870px; width: 41.6667%; left: 0%; top: 60px;'] table > tbody > tr > td:nth-child(5) {
+  padding-left: 0.7em;
 }
 
+/* 病理報告的外框 */
+div[style='height: 870px; width: 41.6667%; left: 0%; top: 60px;'] textarea[style*="height: 514px;"] {
+  height: 538px !important;
+}
+
+
+
+/*
+ *      Footer
+ */
 div.footer {
   font-size: 14px;
   padding-bottom: 3px;
   padding-top: 3px;
 }
 
-#app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div > div > div:nth-child(4) > div > input {
-  font-family: "Sofia Sans Extra Condensed";
-  font-weight: 600;
-  font-size: 19px !important;
-  width: 130px;
+#app > main > main > div > div.flex-auto > div.px-5 > div.overflow-auto > table tr {
+  height: 2.4em !important;
 }
-#app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div > div > div:nth-child(3) > div > input {
-  font-family: "Sofia Sans Condensed";
-  font-weight: 600;
-  font-size: 19px !important;
+tbody tr td button.btn-outline-danger {
+  font-size: 0.85em;
 }
 
-/* 改 "檢查日期" "檢查項目" 的顏色 */
-#app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div > div > div:nth-child(5) > div > input,
-#app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div > div > div:nth-child(11) > div > input {
+/* 改 "病患姓名" "檢查日期" "檢查項目" 的顏色 */
+#app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(2) > div > input,
+#app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(5) > div > input,
+#app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(11) > div > input {
   color: rgb(250 219 43) !important;
 }
 
+input[title="病歷號碼"] {
+  max-width: 6em !important;
+  font-family: "Sofia Sans Condensed";
+  font-weight: 600;
+  font-size: 20px !important;
+}
+input[title="檢查單號"] {
+  font-family: "Sofia Sans Extra Condensed";
+  font-weight: 600;
+  font-size: 20px !important;
+  max-width: 7.5em;
+}
 input[title="年齡"] {
   max-width: 100px !important;
 }
-
 input[title="來源"] {
   max-width: 150px !important;
 }
@@ -105,36 +233,84 @@ input[title="申請醫師"],
 input[title="主治醫師"] {
   max-width: 160px !important;
 }
+input[title="性別"] {
+  max-width: 3.5em !important;
+  text-align: center;
+}
+input[title="顯影劑"] {
+  max-width: 4.5em !important;
+  text-align: center !important;
+}
+input[title="檢查日期"] {
+  max-width: 130px !important;
+}
+input[title="檢查時間"] {
+  max-width: 110px !important;
+}
+input[title="執行放射師"] {
+  max-width: 110px !important;
+}
+
+/* 檢查日期上色 */
+.hl-examdate-0 { color: #CFCBFC !important; }
+.hl-examdate-1 { color: #D0FCFC !important; }
+.hl-examdate-2 { color: #CFFCCB !important; }
+.hl-examdate-3 { color: #FCF2D0 !important; }
+.hl-examdate-4 { color: #FCC7D1 !important; }
+.hl-examdate-5 { color: #FCD1C4 !important; }
+.hl-examdate-6 { color: #FCB69F !important; }
+
+/* 病患來源上色 */
+.hl-examorigin-adm { color: #A491D3 !important; }
+.hl-examorigin-er{ color: #EDAE49 !important; }
+.hl-examorigin-hc { color: #60A561 !important; }
+
+/* 病患姓名上色 */
+/* .hl-ptname-0 { color: #A491D3 !important; } */
+.hl-ptname-1 { color: #ADD8E6 !important; }
+.hl-ptname-2 { color: #FFA07A !important; }
+.hl-ptname-3 { color: #98FB98 !important; }
+.hl-ptname-4 { color: #D8BFD8 !important; }
+.hl-ptname-5 { color: #FFFFE0 !important; }
+.hl-ptname-6 { color: #FFB6C1 !important; }
+
+/* 同批檢查上色 */
+.hl-bundledexam-0 { color: #FCC7D1 !important; }
+.hl-bundledexam-1 { color: #ADD8E6 !important; }
+.hl-bundledexam-2 { color: #ADD8E6 !important; }
+
+/* 未完成報告變暗 */
+.dk-incompleted-report { color: #888888 !important; }
 
 /* 四個 finding radio button 改顏色 */
-    input[type='radio'][name='chfindcode']:after {
-        width: 15px;
-        height: 15px;
-        border-radius: 15px;
-        top: -5px;
-        left: -1px;
-        position: relative;
-        background-color: #d1d3d1;
-        content: '';
-        display: inline-block;
-        visibility: visible;
-        border: 2px solid white;
-    }
+input[type='radio'][name='chfindcode']:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -5px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
 
-    input[type='radio'][name='chfindcode']:checked:after {
-        width: 15px;
-        height: 15px;
-        border-radius: 15px;
-        top: -5px;
-        left: -1px;
-        position: relative;
-        background-color: #ffa500;
-        content: '';
-        display: inline-block;
-        visibility: visible;
-        border: 2px solid white;
-    }
+input[type='radio'][name='chfindcode']:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -5px;
+  left: -1px;
+  position: relative;
+  background-color: #ffa500;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
 
-   input[type='radio'][name='chfindcode']:checked ~ div {
-        color: #ffa500;
-    }
+input[type='radio'][name='chfindcode']:checked ~ div {
+  color: #ffa500;
+}
