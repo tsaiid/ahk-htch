@@ -181,11 +181,8 @@ Some small nonobstructive bilateral renal stones.
 
 The lower abdomen and pelvis are unremarkable.
 No retroperitoneal or mesenteric lymphadenopathy.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 Severe arterial wall calcification from abdominal aorta to feet.
 Because too small diameter of arteries and the severe calcification, the patency below the popliteal level is difficult to evaluate.
 )

@@ -10,6 +10,7 @@ SetTitleMatchMode, 2
 SetControlDelay -1  ; improve reliability for ControlClick, reduces interference from the user's physical movement of the mouse
 
 ; Group Control For RIS
+GroupAdd, RIS, WebRIS
 GroupAdd, RIS, 報告管理系統
 GroupAdd, RIS, ahk_exe AdmOrder1.EXE
 GroupAdd, Login, 報告管理系統
@@ -168,16 +169,12 @@ Tab::|
 
 ; Reorder Seleted Text
 ^!o::
-  ControlGetFocus, FocusedControl
-  discardSeIm := (FocusedControl = "TMemo7")
-  If (ReorderSelectedText(, , , discardSeIm) != 0) {
-    OrderListForImpression()
-  }
+  ReorderSelectedText()
 Return
 
 ; Deorder Seleted Text
 ^!+o::
-  ReorderSelectedText(true)
+  ReorderSelectedText(true, true)
 Return
 
 ; Unorder Seleted Text
@@ -186,9 +183,7 @@ Return
 Return
 
 ^+-::
-  If (ReorderSelectedText(false, true, "-") != 0) {
-    OrderListForFindings()
-  }
+  ReorderSelectedText(false, true, "-")
 Return
 
 ^++::
@@ -196,15 +191,15 @@ Return
 Return
 
 ^!*::
-  ReorderSelectedText(false, true, "  *")
+  ReorderSelectedText(false, true, "--*")
 Return
 
 ^!-::
-  ReorderSelectedText(false, true, "  -")
+  ReorderSelectedText(false, true, "---")
 Return
 
 ^!+::
-  ReorderSelectedText(false, true, "  +")
+  ReorderSelectedText(false, true, "--+")
 Return
 #IfWinActive  ; ahk_group RIS
 

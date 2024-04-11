@@ -26,11 +26,8 @@ The angiocatheter and sheath were removed, and hemostasis of puncture site was a
 
 POST-PROCEDURE CARE:
 Sandbag compression on the puncture site for at least 4 hours, and bed rest for 6 hours.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 No definite internal bleeding or pseudoaneurysm formation.
 )
   Paste(MyForm)
@@ -185,11 +182,8 @@ Then, sandbag compression for at least 4 hours, and bed rest for 8 hours.
 PLAN:
 Remove the right femoral sheath if no more bleeding after 24 hours.
 Then, sandbag compression for at least 4 hours, and bed rest for 8 hours.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 TAE was successfully performed.
 TAE for GI bleeding was successfully performed.
 TAE for HCC rupture was successfully performed.
@@ -248,10 +242,12 @@ Catheters: 4F sheath, 4F J-curve, 2.7F Progreat
 Catheters: 4F sheath, 4F J-curve
 Catheters: 4F sheath, 4F SOS Omni Selective 2
 Embolizer: Emulsion of Doxorubicin 20 mg + Lipiodol 4 ml = 6 ml, pure Lipiodol, EGgel 350-560
+Embolizer: Emulsion of Doxorubicin 20 mg + Lipiodol 4 ml = 6 ml, EGgel 350-560
 Embolizer: Emulsion of Doxorubicin 40 mg + Lipiodol 6 ml = 9 ml, pure Lipiodol, EGgel 350-560
+Embolizer: Emulsion of Doxorubicin 40 mg + Lipiodol 6 ml = 9 ml, EGgel 350-560
 
 PROCEDURE AND FINDINGS:
-Angiography of superior mesenteric artery, celiac trunk, right inferior phrenic artery, common hepatic artery, and right hepatic artery were performed. DynaCT was used to check vascular territory.
+Angiograms of superior mesenteric artery, celiac trunk, right inferior phrenic artery, common hepatic artery, and right hepatic artery were performed. DynaCT was used to check vascular territory.
 A small tumor vascular blush is noted at the right hepatic dome, supplied by S7-8 branch of right hepatic artery.
 
 The angiography of celiac trunk shows tumor stain at S6 of liver.
@@ -260,10 +256,10 @@ The angiography of celiac trunk and common hepatic artery shows at least 4 tumor
 The main portal vein is patent in both celiac and superior mesenteric angiography.
 
 - Selective embolizations were performed:
-  + S7: 2 ml emulsion, 0.5 ml Gelfoam.
-  + S8: 2 ml emulsion, 0.5 ml Gelfoam.
-  + RHA: 2 ml Lipiodol.
-  + S4: 2 ml emulsion, 0.5 ml Gelfoam.
+--+ S7: 2 ml emulsion, 0.5 ml Gelfoam.
+--+ S8: 2 ml emulsion, 0.5 ml Gelfoam.
+--+ RHA: 2 ml Lipiodol.
+--+ S4: 2 ml emulsion, 0.5 ml Gelfoam.
 
 Superselective embolization of the S6 hepatic arterial branch was performed with mixture of 20 mg Doxorubicin and 10 ml Lipiodol, followed by Gelfoam slurry.
 Selective embolization of the superior and inferior branches of right hepatic artery, and left hepatic artery was performed with mixture of 20 mg Doxorubicin and 10 ml Lipiodol (RHA total 7 ml, LHA total 5 ml), followed by Gelfoam slurry.
@@ -284,12 +280,10 @@ RECOMMENDATION:
 OTHERS:
 The liver was displaced medially, suggestive of ascites or hemoperitoneum.
 The tumor stain shows irregularity and venous pools at the inferior portion. Recent tumor rupture may be suspected.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
-TACE for HCC was performed.
+
+IMPRESSION:
+TACE for HCC was performed. (Doxorubicin 20 mg)
+
 )
   Paste(MyForm)
 Return
@@ -410,15 +404,46 @@ FINDINGS:
 - Cirrhosis.
 - Splenomegaly.
 - Lipiodol retention in the gallbladder wall. Post embolization cholecystitis may occur. Suggest clinical correlation and follow-up.
-- High-attenuation in the atelectic lung, suspicious Lipiodol emnboli.
+- High-attenuation in the atelectatic lung, suspicious Lipiodol emboli.
 - No obvious Lipiodol retention in the bilateral lower lungs.
 - No abnormal Lipiodol retention in the GI tract.
+
+IMPRESSION:
+HCC, s/p TACE.
 )
   Paste(MyForm)
-  SleepThenTab()
+Return
+
+
+::taerfa::
   MyForm =
 (
-HCC, s/p TACE.
+Celiac Angiography and Pre-RFA TAE for HCC
+
+Anesthesia: local
+Approach: right femoral artery
+Catheters: 4F sheath, 4F J-curve, 2.4F Direxion Bern shape
+Catheters: 4F sheath, 4F J-curve, 2.4F Progreat
+Embolizer: Lipiodol
+Embolizer: Lipiodol, Gelfoam slurry
+
+PROCEDURE AND FINDINGS:
+Angiography of celiac trunk, common hepatic artery, left hepatic artery, right hepatic artery were performed.
+
+A tumor vascular blush is noted in the left lobe of liver, supplied by left hepatic artery.
+
+DynaCT was used to check the amount of Lipiodol retention.
+
+- Selective embolization was performed:
+  + LHA: 3 + 2 ml of Lipiodol.
+
+The angiocatheter and sheath were removed, and hemostasis of the puncture site was achieved by manual compression with a Coreleader Chitosan wound dressing.
+The angiocatheter and sheath were removed, and hemostasis of the puncture site was achieved by manual compression.
+
+The patient was then transferred to CT room for RFA under general anesthesia.
+
+IMPRESSION:
+Pre-TAE for HCC was performed.
 )
   Paste(MyForm)
 Return
@@ -993,11 +1018,8 @@ Right lower extremity:
 - The left external iliac, superficial femoral, popliteal, anterior tibial, tibiofibular trunk, posterior tibial, peroneal, dorsalis pedis arteries are patent.
 - A focal luminal stenosis about 30`% is noted at the orifice of anterior tibial artery.
 - A focal hyperemic area is noted at the foot, just near the surgical staples, c/w DM foot.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 Peripheral arterial occlusive disease of left lower limb.
 
 Patent major left lower extremity arteries.
@@ -1021,24 +1043,28 @@ Percutaneous Transhepatic Cholangiography and Drainage
 
 Devices: 8 Fr Cholangio-Entero-Tube
 Devices: 8 Fr x 35 cm pigtail drain
+Devices: 8 Fr x 35 cm pigtail drain with string lock and homemade side holes
 Devices: 8.3Fr ring catheter with 20 sideports
 Anesthesia: local
 Medication: Pethidine 25 mg IV
 
 Procedure and Findings:
-Under sonography and fluoroscopy guidance, right/left IHD was approached with 21G needle.
-PTC shows severe dilated IHD with obstruction level at the distal CBD.
-The guidewire successfully passed through the obstruction level, and then a 8-Fr pigtail with home-made side holes was placed with the tip in the duodenum.
-The drain was fixed with ___ at the 27-cm mark.
-Bile was collected for laboratory examination.
+- Under sonography and fluoroscopy guidance, right/left IHD was approached with 21G needle.
+- PTC shows severe dilated IHD with obstruction level at the distal CBD.
+- By Seldinger technique, a 8-Fr pigtail drain with string lock was placed with the tip in the CBD.
+- The drain was fixed at the 22-cm mark.
+
+- The guidewire successfully passed through the obstruction level, and then a 8-Fr pigtail with home-made side holes was placed with the tip in the duodenum.
+- The drain was fixed with ___ at the 27-cm mark.
+- Bile was collected for laboratory examination.
 
 - Because the patient was uncooperative, marked abdominal motion, and intolerable to prolonged procedure, the right IHD could not be approached. Suggest another PTCD in a few days or consult ANES for general anesthesia procedure.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+Impression:
 PTCD was done.
+Left PTCD (8F pigtail with string lock, tip in the CBD) was done.
+Right PTCD (8F pigtail with string lock, tip in the CBD) was done.
+Right PTCD (8F pigtail with string lock and homemade side holes, tip in the duodenum) was done.
 )
   Paste(MyForm)
 Return
@@ -1056,11 +1082,8 @@ The fluoroscopy shows outward migration of the bilateral PTCD tubes.
 Leakage of contrast media into the peritoneal cavity is also noted.
 These tubes were revised with new 8F pigtail (right: 35 cm, left 25 cm; tips at the distal CBD.)
 The whole procedure was smooth, the patient tolerated well, and no immediate complication was noted.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 PTCD revision was done.
 Bilateral PTCD revisions were done.
 )
@@ -1118,24 +1141,21 @@ Return
 Venography to check Port-A:
 
 FINDINGS:
-- The Port-A had been implanted at the left upper chest wall, and the catheter goes through left subclavian vein with its tip at the SVC / brachiocephalic vein.
+- The chemoport had been implanted at the left upper chest wall, and the catheter goes through left subclavian vein with its tip at the SVC / brachiocephalic vein.
 - By smooth hand injection of contrast medium, the venography shows patent superior vena cava without leakage, stasis, or backflow of contrast medium.
 - However, no blood could be drawn.
 - After the examination, the port was flushed with heparinized saline.
 
-- The Port-A had been implanted at the left upper chest wall, and the catheter goes through left internal jugular vein with its tip at the SVC or in the RA.
+- The chemoport had been implanted at the left upper chest wall, and the catheter goes through left internal jugular vein with its tip at the SVC or in the RA.
 - By hand injection of contrast medium, initially, high resistence was encountered and no blood could be drawn. Under flouroscopy guidence, the Huber needle was adjusted. Then, the injection and blood drawing were smooth.
 - The venography shows patent Port-A catheter without stasis, backflow, or leakage of contrast medium.
 
-- The Port-A catheter forms a circle at the left internal jugular vein, with tip at the left innominate vein.
+- The chemoport catheter forms a circle at the left internal jugular vein, with tip at the left innominate vein.
 - The left innominate vein and superior vena cava are patent without stasis or backflow of contrast medium.
 
 - After the examination, the port was flushed with Heparin (1000 U in 10 ml).
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 Smooth injection into the venous access port system without leakage, stasis or backflow of contrast medium.
 Properly located and functioning Port-A catheter.
 After adjusting the Huber needle, the Port-A catheter functioned well.

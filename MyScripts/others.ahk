@@ -35,6 +35,7 @@
 ::rec::recurrence
 ::ret::retention
 :c:imp::improvement
+::imp2::As aforementioned.
 ::impd::improved
 ::w::with `
 ::wo::without `
@@ -110,10 +111,11 @@
 ::snfs::spinal and neuroforaminal stenosis
 ::lrn::lateral recess narrowing
 ::vp::vacuum phenomenon
-::smn::Schmorls node
+::smn::Schmorl's node
 ::att::attenuation
 ::d-::density
 ::pcm::parenchyma
+::pnb::pneumobilia
 ::sta::stationary
 ::gsta::grossly stationary
 ::oh::obstructive hydrocephalus
@@ -129,6 +131,10 @@
 ::vd::varying degree of `
 ::vs::varying sized `
 ::ltls::lower T- to L-spine
+::ije::increased joint effusion
+::mije::mildly increased joint effusion
+::ijbe::increased joint and bursal effusion
+::mijbe::mildly increased joint and bursal effusion
 
 ::pl::possibly `
 ::pb::probably `
@@ -137,26 +143,30 @@
 
 :c:f::findings
 
-;:c:IND::INDICATION:
+;:c:IND::INDICATION: `
 :c:IND::
-  tmpClip := ClipboardAll
-  str := "INDICATION: "
-  o := GetObjectiveFromRIS()
-  If (RegExMatch(o, "檢查目的：(.+)", SubPat)) {
-    str .= Trim(SubPat1)
-  }
-  Paste(str)
-  Sleep 300
-  Clipboard := tmpClip
+  Send INDICATION: ^!i
 Return
+;:c:IND::
+;  tmpClip := ClipboardAll
+;  str := "INDICATION: "
+;  o := GetObjectiveFromRIS()
+;  If (RegExMatch(o, "檢查目的：(.+)", SubPat)) {
+;    str .= Trim(SubPat1)
+;  }
+;  Paste(str)
+;  Sleep 300
+;  Clipboard := tmpClip
+;Return
 
-;:c:CMP::COMPARISON: ^+1
-:c:CMP::
-  splitted_date := SplitDate(prevExamDate)
-  Send, COMPARISON: %splitted_date%
-Return
-:c:IMP::IMPRESSION:
-:c:SG::SUGGESTION:
+:c:CMP::COMPARISON: `
+;:c:CMP::
+;  splitted_date := SplitDate(prevExamDate)
+;  Send, COMPARISON: %splitted_date%
+;Return
+:c:IM::IMPRESSION:`n
+:c:IM2::IMPRESSION:`nAs aforementioned.
+:c:SG::SUGGESTION:`n
 :c:FD::FINDINGS:
 ::ci::clinical information: `
 
@@ -270,8 +280,8 @@ Return
 ::fs::fat stranding
 ::hop::hollow organ perforation
 ::nrf::No remarkable finding.
-::ns::non-specific
-::nsf::non-specific finding
+::us::unspecific
+::usf::unspecific finding
 ::ol::obstruction level
 ::tz::transitional zone
 ::nobs::nonobstructive `
@@ -306,11 +316,12 @@ Return
 :c:Cs::C-spine
 :c:Ts::T-spine
 :c:Ls::L-spine
-::scsp::Straight C-spine.
+::stcs::Straight C-spine.
 ::lkup::upper portion of left kidney
 ::lklp::lower portion of left kidney
 ::rkup::upper portion of right kidney
 ::rklp::lower portion of right kidney
+::md::maximum diameter
 
 ::fn::FOOTNOTE:{Enter}[{^}1]: `
 

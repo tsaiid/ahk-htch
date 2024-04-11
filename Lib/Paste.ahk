@@ -7,14 +7,14 @@ Paste(text, convertCRLF = True) {
   global PRESERVE_CLIPBOARD
 
   If (convertCRLF) {
-    text := RegExReplace(text, "(?<!\r)\n", "`r`n")
+    text := RegExReplace(text, "(?<!\r)\n", "`n")
   }
 
   If (PRESERVE_CLIPBOARD) {
     ClipSaved := ClipboardAll
     Clipboard := text
     Send ^v
-    Sleep 300 ; Probably more than enough. Depends on the system.
+    Sleep 400 ; Probably more than enough. Depends on the system.
     Clipboard := ClipSaved
   } Else {
     Clipboard := text

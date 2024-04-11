@@ -157,6 +157,15 @@ Return
 :*:sg-ld::
   MyForm =
 (
+Percutaneons abscess drainage-PAD:
+
+Target: right subphrenic biloma.
+Drain: 8F one-step pigtail drain (with string lock), fixed at 17 cm.
+Image guide: sonography
+Anesthesia: local
+Specimen: brown serous fluid, about 600 ml aspirated.
+Complication: no
+
 Under sonography guidance, the hypoechoic lesion was localized at S4 of liver.
 The skin was prepared and the area was draped.
 After local anesthesia, a 6 Fr one-step pigtail catheter (without safety lock) was placed transhepatically into the abscess.
@@ -174,6 +183,7 @@ The whole procedure was smooth, the patient tolerated well, and no immediate com
   SleepThenTab()
   MyForm =
 (
+Percutaneous drain (8F pigtail) for right subphrenic biloma was performed.
 Percutaneous drain for liver abscess was performed.
 )
   Paste(MyForm)

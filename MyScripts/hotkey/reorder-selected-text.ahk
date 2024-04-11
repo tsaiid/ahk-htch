@@ -2,24 +2,21 @@
 ;; Reordering the selected text
 
 ReorderSelectedText(deOrder = False, keepEmptyLine = False, itemChar = "", discardSeIm = True){
-  isSpine := false
-  /*
-  Clipboard := ""
-  Send ^c
-  Sleep, 400
-  */
-  ControlGetFocus, FocusedControl
-  If (FocusedControl != "TMemo6" && FocusedControl != "TMemo7") {
-    MsgBox, %FocusedControl%
-    Return
-  }
+  global PRESERVE_CLIPBOARD
 
-  ; get selected text
-  ControlGet, hEdit, Hwnd,, %FocusedControl%
-  Edit_GetSel(hEdit, currStartSel, currEndSel)
-  selectedText := Edit_GetTextRange(hEdit, currStartSel, currEndSel - 1)
-  ;leftText := Edit_GetTextRange(hEdit, 0, currStartSel - 1)
-  ;rightText := Edit_GetTextRange(hEdit, currEndSel + 1, -1)
+  isSpine := false
+
+  If (PRESERVE_CLIPBOARD) {
+    ClipSaved := ClipboardAll
+    Clipboard := ""
+    Send ^c
+    Sleep 400 ; Probably more than enough. Depends on the system.
+  } Else {
+    Clipboard := ""
+    Send ^c
+    Sleep, 400
+  }
+  selectedText := Clipboard
 
   StringReplace, selectedText, selectedText, `r`n, `n, All
 
@@ -32,18 +29,12 @@ ReorderSelectedText(deOrder = False, keepEmptyLine = False, itemChar = "", disca
   StringSplit, txtAry, selectedText, `n
   endLine := txtAry0
 
-;  MsgBox, endLine = %endLine%, strRight = %ascStrRight%, ``n = %ascNewLine%
+  ;msgbox % selectedText
 
-/*
-  Loop, parse, clipboard, `n, `r
-  {
-    MsgBox, 4, , File number %A_Index% is %A_LoopField%.`n`nContinue?
-    IfMsgBox, No, break
-  }
-*/
-
+  ; get selected text
   If (StrLen(selectedText) > 0) {
     finalText := ""
+    isFirstLineEmpty := false
     ; check if first chars are numbers, than use as start line no.
     If (RegExMatch(selectedText, "^(\d+)", existLineNo)) {
       startLineNo := existLineNo1
@@ -52,6 +43,13 @@ ReorderSelectedText(deOrder = False, keepEmptyLine = False, itemChar = "", disca
     }
     Loop, Parse, selectedText, `n
     {
+      ;MsgBox, %A_Index%: "%A_Loopfield%"
+      ; check if first line is empty, than discard even lines.
+      If (A_Index == 1 && !StrLen(A_LoopField)) {
+        ;MsgBox, first line is empty.
+        isFirstLineEmpty := true
+      }
+      ;MsgBox % A_LoopField
       If (!RegExMatch(A_LoopField, "^\s*$")) {
         ; check if is a spine report
         If (RegExMatch(A_LoopField, "^\s*[-\+\*]*\s*[Vv]arying degree")) {
@@ -61,7 +59,7 @@ ReorderSelectedText(deOrder = False, keepEmptyLine = False, itemChar = "", disca
           orderChar := (StrLen(itemChar) > 0 ? itemChar : startLineNo++ . ".")
           ; second order indentation if a spine level line
           If (isSpine && RegExMatch(A_LoopField, "^\s*[-\+\*]*\s*[CcTtLl]\d{1,2}-")) {
-            finalText .= "  + "
+            finalText .= "--+ "
           } Else {
             finalText .= orderChar . " "
           }
@@ -82,25 +80,39 @@ ReorderSelectedText(deOrder = False, keepEmptyLine = False, itemChar = "", disca
         }
       } Else {
         ; use a para to control if all line is empty, ignore it, and do not append an \n
+        ; Workaround for copying from WebRIS report area. <p> causes doubling the newlines.
+        ; Keep only 1 newline
+        ;If (keepEmptyLine && ((isFirstLineEmpty && !Mod(A_Index, 2)) || (!isFirstLineEmpty && Mod(A_Index, 2)))) {
+        ;If (keepEmptyLine && Mod(A_Index, 2)) {
+        If (isFirstLineEmpty) {
+          If (A_Index == 1) {
+            finalText .= A_LoopField . "`n"
+          }
+        }
         If (keepEmptyLine) {
-          finalText .= A_LoopField . "`r`n"
+          If (isFirstLineEmpty) {
+            If (!Mod(A_Index, 2)) {
+              finalText .= A_LoopField . "`n"
+            }
+          } Else {
+            If (Mod(A_Index, 2)) {
+              finalText .= A_LoopField . "`n"
+            }
+          }
+          ;MsgBox, %A_Index%: empty line: "%A_LoopField%"
+          ;finalText .= A_LoopField . "`r`n"
         }
       }
     }
-    /*
-    If (isEndNewLine){
-      finalText .= "`n"
-    }
-    */
-
-    ;textRange.text := finalText
-    ;MsgBox % finalText
-    ;Clipboard := finalText
-    ;Send ^v
+    ;MsgBox, "%finalText%"
+    Clipboard := finalText
+    Send ^v
     ;MsgBox, %leftText%%finalText%%rightText%
     ;Edit_SetText(hEdit, leftText . finalText . rightText)
     ;Edit_SetSel(hEdit, currStartSel, currStartSel)
-    Edit_ReplaceSel(hEdit, finalText)
+    If (PRESERVE_CLIPBOARD) {
+      Clipboard := ClipSaved
+    }
     Return 0
   } Else {
     ; No selection. Do nothing.

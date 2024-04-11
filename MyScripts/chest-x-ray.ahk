@@ -18,16 +18,14 @@
 ::0::
   MyForm =
 (
-No abnormal patch opacity in the lung fields.
-No cardiomegaly.
+Chest film:
+Normal heart size.
+No active lung lesions.
+Normal hili.
+Normal bony thorax.
 
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
-No active lung lesion.
-
+Impression
+Normal heart and lungs. 胸部X光判讀正常.
 )
   Paste(MyForm)
 Return
@@ -35,41 +33,26 @@ Return
 ::1::
   MyForm =
 (
-The heart size is normal.
-No specific finding in the bilateral lung fields.
-Bilateral CP angles are clear and sharp.
-The thoracic cage and bones are generally intact.
+- The heart size is normal.
+- No specific finding in the bilateral lung fields.
+- Bilateral CP angles are clear and sharp.
+- The thoracic cage and bones are generally intact.
 
 )
 
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
-No active lung lesion.
-
-)
   Paste(MyForm)
 Return
 
 ::11::
   MyForm =
 (
-The heart size is normal.
-No specific finding in the bilateral lung fields.
-Bilateral CP angles are clear and sharp.
+- The heart size is normal.
+- No specific finding in the bilateral lung fields.
+- Bilateral CP angles are clear and sharp.
 
 )
 
   Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
-No active lung lesion.
-
-)
-  Paste(MyForm)
-  SleepThenTab(, false)
 Return
 
 ::111::
@@ -199,25 +182,26 @@ Return
 ::lidl::On double lumen catheter via left internal jugular vein.
 ::rsdl::On double lumen catheter via right subclavian vein.
 ::lsdl::On double lumen catheter via left subclavian vein.
-::sppok::s/p Port-A implantation, without immediate complication.
-::rport::s/p Port-A implantation via right subclavian vein.
-::rport1::s/p Port-A implantation via right subclavian vein with tip at the SVC.
-::riport::s/p Port-A implantation via right internal jugular vein.
-::lport::s/p Port-A implantation via left subclavian vein.
-::lport1::s/p Port-A implantation via left subclavian vein with tip at the SVC.
-::liport::s/p Port-A implantation via left internal jugular vein.
-::lipport::s/p IP Port-A implantation at LUQ of abdomen.
-::ripport::s/p IP Port-A implantation at RUQ of abdomen.
+::sppok::s/p chemo port implantation, without immediate complication.
+::rport::s/p chemo port implantation via right subclavian vein.
+::rport1::s/p chemo port implantation via right subclavian vein with tip at the SVC.
+::riport::s/p chemo port implantation via right internal jugular vein.
+::lport::s/p chemo port implantation via left subclavian vein.
+::lport1::s/p chemo port implantation via left subclavian vein with tip at the SVC.
+::liport::s/p chemo port implantation via left internal jugular vein.
+::lipport::s/p IP chemo port implantation at LUQ of abdomen.
+::ripport::s/p IP chemo port implantation at RUQ of abdomen.
 ::rsperm::On Permcath via right subclavian vein.
 ::lsperm::On Permcath catheter via left subclavian vein.
 ::riperm::On Permcath catheter via right internal jugular vein.
 ::liperm::On Permcath catheter via left internal jugular vein.
 ::rpicc::On PICC via right arm.
 ::lpicc::On PICC via left arm.
-::rppm::s/p PPM implantation at right upper chest with lead tips at RA and RV.
-::rsppm::s/p PPM implantation at right upper chest with lead tip RV.
-::lppm::s/p PPM implantation at left upper chest with lead tips at RA and RV.
-::lsppm::s/p PPM implantation at left upper chest with lead tip RV.
+::spppm::s/p PPM implantation.
+::rppm::s/p PPM implantation at right upper chest with lead tips in the RA and RV.
+::rsppm::s/p PPM implantation at right upper chest with lead tip in the RV.
+::lppm::s/p PPM implantation at left upper chest with lead tips in the RA and RV.
+::lsppm::s/p PPM implantation at left upper chest with lead tip in the RV.
 ::rppm0::s/p PPM implantation at right upper chest.
 ::rsppm0::s/p PPM implantation at right upper chest.
 ::lppm0::s/p PPM implantation at left upper chest.
@@ -305,29 +289,29 @@ Return
 ::ii::Exaggerated lung markings at bilateral lowers, may be due to insufficient inspiration.
 ::ii0::insufficient inspiration
 ::iir::insufficient inspiration related
-::rrf::Old fractures of right ribs.
-::rrf1::Fractures of right ribs.
-::lrf::Old fractures of left ribs.
-::lrf1::Fractures of left ribs.
-::brf::Old fractures of bilateral ribs.
-::brf1::Fractures of bilateral ribs.
+::rrf::Old fractures of the right ribs.
+::rrf1::Fractures of the right ribs.
+::lrf::Old fractures of the left ribs.
+::lrf1::Fractures of the left ribs.
+::brf::Old fractures of the bilateral ribs.
+::brf1::Fractures of the bilateral ribs.
 ::rok::No evident rib fracture.
-::rcf::Old fracture of right clavicle.
-::lcf::Old fracture of left clavicle.
-::sprcf::Previous fracture of right clavicle, s/p internal fixation.
-::splcf::Previous fracture of left clavicle, s/p internal fixation.
-::rdia::Elevation of right hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
-::rdia0::Elevation of right hemidiaphragm.
-::ldia::Elevation of left hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
-::ldia0::Elevation of left hemidiaphragm.
-::copd::Hyperinflation with flattening of bilateral hemidiaphragms, suggestive the possibility of COPD.
+::rcf::Old fracture of the right clavicle.
+::lcf::Old fracture of the left clavicle.
+::sprcf::Previous fracture of the right clavicle, s/p internal fixation.
+::splcf::Previous fracture of the left clavicle, s/p internal fixation.
+::rdia::Elevation of the right hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
+::rdia0::Elevation of the right hemidiaphragm.
+::ldia::Elevation of the left hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
+::ldia0::Elevation of the left hemidiaphragm.
+::copd::Hyperinflation with flattening of the bilateral hemidiaphragms, suggestive the possibility of COPD.
 ::tta::Tortuous thoracic descending aorta.
 ::mtta::Mild tortuous thoracic descending aorta.
-::bronchio::Increased linear opacity and peribronchial thickening over bilateral lung fields, r/o bronchiolitis.
+::bronchio::Increased linear opacity and peribronchial thickening over the bilateral lung fields, r/o bronchiolitis.
 ::ilo::increased linear opacity `
 ::ao::acinar opacity `
-::ldia::Elevation of left hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
-::rdia::Elevation of right hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
+::ldia::Elevation of the left hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
+::rdia::Elevation of the right hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
 ::id::ill-defined `
 ::wd::well-defined `
 ::luqd::A drain in the LUQ of abdomen.
@@ -340,26 +324,26 @@ Return
 ::late::linear atelectasis
 ::sate::subsegmental atelectasis
 ::spate::subpleural atelectasis
-::bsate::subsegmental atelectasis of bilateral lower lungs.
-::mrsoa::Mild OA change of right shoulder.
-::mlsoa::Mild OA change of left shoulder.
-::mbsoa::Mild OA change of bilateral shoulders.
-::rsoa::OA change of right shoulder.
-::lsoa::OA change of left shoulder.
-::bsoa::OA change of bilateral shoulders.
-::racjoa::OA change of right acromioclavicular joint.
-::mracjoa::Mild OA change of right acromioclavicular joint.
-::lacjoa::OA change of left acromioclavicular joint.
-::mlacjoa::Mild OA change of left acromioclavicular joint.
-::bacjoa::OA change of bilateral acromioclavicular joints.
-::mbacjoa::Mild OA change of bilateral acromioclavicular joints.
-::blfgs::Few tiny dense nodules over bilateral lung fields, in favor of granulomas.
-::rlfg::A small calcified nodule over right lung field, possibly a granuloma.
-::rulfg::A small calcified nodule over right upper lung field, possibly a granuloma.
-::rllfg::A small calcified nodule over right lower lung field, possibly a granuloma.
-::llfg::A small calcified nodule over left lung field, possibly a granuloma.
-::lulfg::A small calcified nodule over left upper lung field, possibly a granuloma.
-::lllfg::A small calcified nodule over left lower lung field, possibly a granuloma.
+::bsate::subsegmental atelectasis of the bilateral lower lungs.
+::mrsoa::Mild OA change of the right shoulder.
+::mlsoa::Mild OA change of the left shoulder.
+::mbsoa::Mild OA change of the bilateral shoulders.
+::rsoa::OA change of the right shoulder.
+::lsoa::OA change of the left shoulder.
+::bsoa::OA change of the bilateral shoulders.
+::racjoa::OA change of the right acromioclavicular joint.
+::mracjoa::Mild OA change of the right acromioclavicular joint.
+::lacjoa::OA change of the left acromioclavicular joint.
+::mlacjoa::Mild OA change of the left acromioclavicular joint.
+::bacjoa::OA change of the bilateral acromioclavicular joints.
+::mbacjoa::Mild OA change of the bilateral acromioclavicular joints.
+::blfgs::Few tiny dense nodules over the bilateral lung fields, in favor of granulomas.
+::rlfg::A small calcified nodule over the right lung field, possibly a granuloma.
+::rulfg::A small calcified nodule over the right upper lung field, possibly a granuloma.
+::rllfg::A small calcified nodule over the right lower lung field, possibly a granuloma.
+::llfg::A small calcified nodule over the left lung field, possibly a granuloma.
+::lulfg::A small calcified nodule over the left upper lung field, possibly a granuloma.
+::lllfg::A small calcified nodule over the left lower lung field, possibly a granuloma.
 ::plbok::Post lung biopsy, and no obvious pneumothorax is noted.
 ::aak::Atherosclerotic change of the aortic knob.
 ::maak::Mild atherosclerotic change of the aortic knob.
@@ -377,7 +361,7 @@ Return
 ::bns::Symmetrical small nodular opacities over bilateral lower lung fields, in favor of nipple shadows.
 ::lns::A small nodular opacity over left lower lung field, in favor of nipple shadow.
 ::rns::A small nodular opacity over right lower lung field, in favor of nipple shadow.
-::seg::segment `
+::seg::segment
 ::bapt::Bilateral apical pleural thickening, in favor of chronic inflammatory change.
 ::mbapt::Mild bilateral apical pleural thickening, in favor of chronic inflammatory change.
 ::rapt::Right apical pleural thickening, in favor of chronic inflammatory change.

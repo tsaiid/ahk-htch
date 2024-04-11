@@ -16,7 +16,7 @@
 ::actgbss::Several gallbladder stones without obvious GB distention or wall thickening.
 ::actgbsg::High-attenuation material in the gallbladder with layering, in favor of GB sludge.
 ::actgba::Hourglass configuration of the gallbladder, suggestive of segmental adenomyomatosis.
-::actok::The liver, spleen, pancreas, adrenals, kidneys, and bowels are normal.
+::actok::The liver, gallbladder, spleen, pancreas, adrenals, kidneys, and bowels are unremarkable.
 ::actncok::The liver, spleen, pancreas, adrenals, kidneys, and bowels are normal. Due to non-contrast study, the evaluation of solid organs is limited.
 ::bpleat::Bilateral pleural effusion with atelectasis of lower lungs.
 ::actaps::A small wedge-shaped subcapsular arterial hyperenhancement at S_ of liver with isoenhancement in the portal venous and delay phases, in favor of AP shunting.
@@ -42,15 +42,17 @@
 ::actlok::No definite liver tumor. No abnormal enhanced parenchymal lesion.
 ::actthad::Areas of liver parenchymal enhancement visible only during the hepatic artery phase, suggestive of transient hepatic attenuation differences (THAD).
 ::actfl::Diffusely decreased attenuation of the liver, suggestive of fatty liver.
-::actmfl::Diffusely mild decreased attenuation of the liver, suggestive of mild fatty liver.
-::actc::Irregular surface of the liver with nodularities, indicating cirrhosis.
-::mactc::Mild irregular surface of the liver with nodularities, suspicious mild cirrhosis.
+::actmfl::Diffusely mildly decreased attenuation of the liver, suggestive of mild fatty liver.
+::actc::Irregular surface of the liver with nodularity, indicating cirrhosis.
+::mactc::Mild irregular surface of the liver with nodularity, suspicious mild cirrhosis.
 ::actac::Wall thickening of the urinary bladder with perivesical fat stranding, suggestive of acute cystitis.
+::mactac::Mild wall thickening of the urinary bladder with perivesical fat stranding, suggestive of acute cystitis.
 ::actcc::Wall thickening of the urinary bladder with trabeculation without perivesical fat stranding, suggestive of chronic cystitis.
 ::mactcc::mild wall thickening of the urinary bladder without perivesical fat stranding, suggestive of mild chronic cystitis.
 ::actccdd::Wall thickening of the urinary bladder without perivesical fat stranding. DDx: chronic cystitis, insufficient UB distention related change.
 ::mactccdd::Mild wall thickening of the urinary bladder. DDx: chronic cystitis, insufficient UB distention related change.
 ::nifa::No evidence of intraperitoneal free air.
+::na::No obvious ascites.
 ::actuf::A calcified nodule in the uterus, in favor of degenerated uterine fibroid.
 ::actufs::Several calcified nodules in the uterus, in favor of degenerated uterine fibroids.
 ::sph0::S/P hysterectomy.
@@ -83,7 +85,7 @@
 ::nataf::No evident acute intrathoracic or intraabdominal finding.
 ::nacraf::No evident acute intracranial finding.
 ::actapn::Edematous left renal parenchyma, with multifocal hypo-enhanced areas and perirenal fat stranding, suggestive of acute pyelonephritis.
-::cdiv::colonic divertula
+::cdiv::colonic diverticula
 ::cdivs::colonic diverticulosis
 ::actluo::Mild left perirenal fat stranding, probably due to urinary obstruction. DDx: superimposed pyelonephritis.
 ::actruo::Mild right perirenal fat stranding, probably due to urinary obstruction. DDx: superimposed pyelonephritis.
@@ -97,6 +99,15 @@
 )
   Paste(MyForm)
 Return
+::mcbdd1::Mild CBD dilatation with maximum diameter of 10 mm.
+::pcal::Some calcifications in the prostate.
+::rra::right renal atrophy.
+::lra::left renal atrophy.
+::bra::bilateral renal atrophy.
+::mrra::mild right renal atrophy.
+::mlra::mild left renal atrophy.
+::mbra::mild bilateral renal atrophy.
+
 
 ;; forms
 ::act::
@@ -261,6 +272,7 @@ Return
 (
 No retroperitoneal or mesenteric lymphadenopathy.
 No pelvic, retroperitoneal or mesenteric lymphadenopathy.
+No obvious intraabdominal lymphadenopathy.
 )
   Paste(MyForm)
 Return

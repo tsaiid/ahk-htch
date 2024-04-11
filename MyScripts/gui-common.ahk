@@ -24,14 +24,13 @@ Lower limb length is measured between center of femoral head and center of super
 - Right lower limb length: %RtLL% cm
 - Left lower limb length: %LtLL% cm
 - Limb length discrepancy: %delta% cm
+
+IMPRESSION:
+%MeningfulLLD%
 )
   Gui, Destroy
   WinActivate, ahk_id %hParentWnd%
   Paste(MyForm)
-
-  ; fill impression
-  SleepThenTab()
-  Paste(MeningfulLLD)
 Return
 
 ;; for LLD form
@@ -183,10 +182,14 @@ PSCButtonOK:
   PrLength := Round(ProstateSizeCalFormLength / 10, 1)
   PrHeight := Round(ProstateSizeCalFormHeight / 10, 1)
   PrVol := Round(PrWidth * PrLength * PrHeight * 0.52, 1)
+;  MyForm =
+;(
+;- Size: %PrWidth% x %PrLength% x %PrHeight% cm
+;- Volume: %PrVol% ml (length x width x height x 0.52)
+;)
   MyForm =
 (
-- Size: %PrWidth% x %PrLength% x %PrHeight% cm
-- Volume: %PrVol% ml (length x width x height x 0.52)
+- Size: %PrWidth% x %PrLength% x %PrHeight% cm; Volume: %PrVol% ml (length x width x height x 0.52)
 )
   Gui, Destroy
   WinActivate, ahk_id %hParentWnd%

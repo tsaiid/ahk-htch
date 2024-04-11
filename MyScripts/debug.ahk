@@ -5,6 +5,23 @@
 
 #IfWinActive ahk_group RIS
 
+^9::
+  NextReportChkBoxPath := "4.1.1.4.3.1.1.3.2.1.3.1.1.1.8.2.6.1"
+  examNameObj := Acc_Get("Object", NextReportChkBoxPath, 0, "WebRIS")
+  MsgBox % examNameObj.accName(0)
+  ;Return examNameObj.accValue(0)
+Return
+
+^,::
+  url := "http://10.2.2.30/pkg_pacs/external_interface.aspx?LID=A60076&LPW=A60076&AN=A111208986992833&PID=U200660097"
+
+  wb := ComObjCreate("InternetExplorer.Application")
+  ; navigate an empty page including preloaded jQuery for further ajax use.
+  wb.Navigate(url)
+
+  ;MsgBox, a
+Return
+
 ::esoca::
 (
 Esophageal cancer

@@ -36,9 +36,11 @@
 ::bsm::Borderline splenomegaly, size about  cm.{Left 4}
 ::rllv::right lobe of liver
 ::lllv::left lobe of liver
+::bllv::bilateral lobes of liver
 ::rk::right kidney
 ::lk::left kidney
 ::lok::No evidence of liver metastasis.
+::aacp::Calcified plaques at the abdominal aorta, suspicious atherosclerosis.
 
 ;; Sono, Lower Abdomen
 ::s-foley::s/p Foley catheterization. The urinary bladder is not distended enough for evaluation.
@@ -134,7 +136,8 @@ Return
 (
 - The thyroid gland is slightly diffusely enlarged.
 - There is no abnormal flow pattern noted on color Doppler.
-- Several tiny cystic, spongiform, and solid nodules in the bilateral thyroid lobes. Because the sizes do not reach the lower limits in each TI-RADS category, FNA may not be recommended.
+- Several tiny cystic, spongiform, and solid nodules in the bilateral thyroid lobes.
+- A few small cystic or spongiform nodules in the bilateral thyroid lobes, probably benign.
 - No definite bulky neck lymphadenopathy is noted.
 )
   Paste(MyForm)
@@ -186,8 +189,8 @@ Return
 ::sbblnok2::No definite lymphadenopathy at both axillae noted.
 ::sbrs::A scar at the right breast.
 ::sbls::A scar at the left breast.
-::sbrc::Presence of an anechoic cyst at __ oclock position of right breast, measuring about __ cm in size. Fibrocystic disease considered.
-::sblc::Presence of an anechoic cyst at __ oclock position of left breast, measuring about __ cm in size. Fibrocystic disease considered.
+::sbrc::Presence of an anechoic cyst at __ o'clock position of right breast, measuring about __ cm in size. Fibrocystic disease considered.
+::sblc::Presence of an anechoic cyst at __ o'clock position of left breast, measuring about __ cm in size. Fibrocystic disease considered.
 ::sbrcs::Presence of several small anechoic cysts at right breast noted. Fibrocystic change considered.
 ::sblcs::Presence of several small anechoic cysts at left breast noted. Fibrocystic change considered.
 ;::sbbcs::Presence of several small anechoic cysts at bilateral breasts noted. Fibrocystic change considered.
@@ -212,8 +215,8 @@ Return
 ::sbb4c::ACR-BIRADS 5th ed., category 4c. Highly suspicious malignancy. Biopsy recommended.
 ::sbb5::ACR-BIRADS 5th ed., category 5. Highly suspicious malignancy. Biopsy recommended.
 ::sbb6::ACR-BIRADS 5th ed., category 6: Known biopsy-proven malignancy.
-::sbrfa::Presence of an oval, smooth-bordered, hypoechoic nodular lesion, measuring about __ x __ cm in size, at __ oclock position of right breast, __ cm from the nipple. More likely benign nature such as fibroadenoma.
-::sblfa::Presence of an oval, smooth-bordered, hypoechoic nodular lesion, measuring about __ x __ cm in size, at __ oclock position of left breast, __ cm from the nipple. More likely benign nature such as fibroadenoma.
+::sbrfa::Presence of an oval, smooth-bordered, hypoechoic nodular lesion, measuring about __ x __ cm in size, at __ o'clock position of right breast, __ cm from the nipple. More likely benign nature such as fibroadenoma.
+::sblfa::Presence of an oval, smooth-bordered, hypoechoic nodular lesion, measuring about __ x __ cm in size, at __ o'clock position of left breast, __ cm from the nipple. More likely benign nature such as fibroadenoma.
 ::sbrfas::Presence of several oval, smooth-bordered, hypoechoic nodular lesions, up to __ cm in size, in the right breast. More likely benign nature such as fibroadenomas.
 ::sblfas::Presence of several oval, smooth-bordered, hypoechoic nodular lesions, up to __ cm in size, in the left breast. More likely benign nature such as fibroadenomas.
 ::sbbfas::Presence of several oval, smooth-bordered, hypoechoic nodular lesions, up to __ cm in size, in the bilateral breasts. More likely benign nature such as fibroadenomas.
@@ -223,8 +226,8 @@ Return
 ::sblok1::No focal lesion in the left breast.
 ::sbrok1::No focal lesion in the right breast.
 ::sbbok1::No focal lesion in the bilateral breasts.
-::sbrl::at __ oclock position of right breast, __ cm from the nipple.
-::sbll::at __ oclock position of left breast, __ cm from the nipple.
+::sbrl::at __ o'clock position of right breast, __ cm from the nipple.
+::sbll::at __ o'clock position of left breast, __ cm from the nipple.
 ::sbrca::
   MyForm =
 (
@@ -267,11 +270,11 @@ Return
 - Breast composition: c. heterogeneous
 - Mass: no
 - Mass:
-  + shape: oval, round, irregular
-  + margin: circumscribed, indistinct, angular, microlobulated, spiculated
-  + orientation: parallel, not parallel
-  + echo pattern: anechoic, hyperechoic, complex cystic/solid, hypoechoic, isoechoic, heterogeneous
-  + posterior features: no features, enhancement, shadowing, combined pattern
+--+ shape: oval, round, irregular
+--+ margin: circumscribed, indistinct, angular, microlobulated, spiculated
+--+ orientation: parallel, not parallel
+--+ echo pattern: anechoic, hyperechoic, complex cystic/solid, hypoechoic, isoechoic, heterogeneous
+--+ posterior features: no features, enhancement, shadowing, combined pattern
 - Calcifications: no
 - Calcifications: in mass, outside mass, intraductal
 - Associated features: no
@@ -679,12 +682,3 @@ GetRecentMammo(accno) {
     }
   }
 }
-
-:c:MMG::
-  tmpClip := ClipboardAll
-  accno := GetAccNoFromRIS()
-  str := "MAMMOGRAPHY: " . GetRecentMammo(accno)
-  Paste(str)
-  Sleep 300
-  Clipboard := tmpClip
-Return

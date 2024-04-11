@@ -4,6 +4,8 @@ currExamDate := ""
 currAccNo := ""
 prevPatID := ""
 
+WebRISisInit := 0
+
 hParentWnd := 0
 hHeliosWnd := 0
 findingObj := 0

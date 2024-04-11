@@ -14,6 +14,7 @@
 ::cad0::calcification of the coronary arteries.
 ::mcad0::mild calcification of the coronary arteries.
 ::cad1::calcification of the coronary arteries, suspicious coronary artery disease.
+::mcad1::mild calcification of the coronary arteries, suspicious coronary artery disease.
 ::amvcal::aortic and mitral valves calcification.
 ::avcal::aortic valve calcification.
 ::mvcal::mitral valve calcification.

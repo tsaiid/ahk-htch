@@ -91,9 +91,8 @@ Return
 ::ks2::
   MyForm =
 (
-Mottled gas pattern along colon course is noted, implying fecal residues retention. Otherwise, the bowel gas pattern is unremarkable.
-
-Bilateral kidney shadows and psoas muscle contours are unremarkable.
+- Mottled gas pattern along colon course is noted, implying fecal residues retention. Otherwise, the bowel gas pattern is unremarkable.
+- Bilateral kidney shadows and psoas muscle contours are unremarkable.
 )
   Paste(MyForm)
 Return

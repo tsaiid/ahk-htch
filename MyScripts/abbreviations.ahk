@@ -112,6 +112,7 @@
 ::ddd::degenerative disc disease
 ::slap::superior labral anterior posterior
 ::lhbt::long head of biceps tendon
+::gt::greater tuberosity
 
 ;; Abdomen
 ::ln::lymph node
@@ -153,6 +154,7 @@
 ::rp::retrograde pyelography
 ::pv::portal vein
 ::pvt::portal vein thrombosis
+::pvtt::portal vein tumor thrombi
 ::abd::abdomen
 ::iabd::intraabdominal `
 ::intraabd::intraabdominal `
@@ -286,6 +288,7 @@
 ::ccz::central canal zone
 ::ky::kyphosis
 ::lod::lordosis
+::sci::spinal cord injury
 
 ;; Others
 ::dvt::deep vein thrombosis
@@ -302,7 +305,7 @@
 ::scm::sternocleidomastoid
 ::atfl::anterior tibiofibular ligament
 ::ptfl::posterior tibiofibular ligament
-::cfl::calcenofibular ligament
+::cfl::calcaneofibular ligament
 
 ;; General
 ::ant::anterior `
@@ -335,6 +338,7 @@
 ::bfl::blood-fluid level
 ::wnl::within normal limits
 ::prev::previous `
+::prevl::previously `
 ::htn::hypertension
 ::phtn::portal hypertension
 ::pulhtn::pulmonary hypertension

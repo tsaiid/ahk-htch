@@ -1,5 +1,5 @@
 ﻿; Neuro Spine Forms
-::rbf::retropulsed bone fragment
+::rpbf::retropulsed bone fragment
 ::paft::posterior annulus fibrosus tear
 ::lclc::Loss of cervical lordotic curve.
 ::lllc::Loss of lumbar lordotic curve.
@@ -55,21 +55,15 @@ Return
 ::ctcs2::
   MyForm =
 (
-Noncontrast CT of C-spine was performed with a multi-slice CT scanner:
-SCAN RANGE: axial plane performed from C1 to T1 with 2.5-mm continuous scan, and with sagittal and coronal reconstruction 2.5-mm continuous scan slice thickness
-
-Previous CT of C-spine: no
+SPINE Cervical CT without contrast medium:
 
 FINDINGS:
 - No obvious fracture-dislocation of the C-spine noted.
 - No evidence of the C1-C2 anterior and lateral subluxation noted.
 - No evident hyperdense hematoma in the prevertebral region and epidural space noted.
 - The lungs covered in the scanning range are normal.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 No obvious fracture-dislocation of the C-spine noted.
 )
   Paste(MyForm)

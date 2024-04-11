@@ -45,7 +45,9 @@ CopyPrevSimilarReport(accno, debug=False) {
         ;Run %pacs_api%
       }
     } Else {
-      MsgBox, No Similar Report. InOutData = "%InOutData%"
+      ; copy error data to clipboard and close msg box.
+      Clipboard := InOutData
+      MsgBox,,, No Similar Report., 0.5
     }
   }
 }

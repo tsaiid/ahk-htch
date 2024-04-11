@@ -1,0 +1,140 @@
+﻿#app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(6) {
+  height: 730px !important;
+}
+#app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(6) > div.textarea-heightpercent84 {
+  height: 90.5% !important;
+}
+#app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(6) > div.textarea-heightpercent92 {
+  height: 94% !important;
+}
+
+/* 把 檢查項目改成 align left */
+#app table > tbody > tr > td:nth-child(11) {
+  text-align: left !important;
+  padding-left: 1em;
+}
+
+/* 改 Quill Editor 字體 */
+#quillContainer,
+#quillContainer p span {
+  font-family: "Source Han Code JP";
+  font-size: 16px !important;
+  font-weight: 100;
+  height: 100%;
+}
+
+/* Highlight 共幾筆報告的數字 */
+div.page-button-next.mr-10 ~ div > span:nth-child(6) {
+  color: #ffa500;
+}
+
+#app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(6) > div > div.flex.items-center.flex-wrap.text-16 {
+  /*top: 96%;
+  position: absolute;
+  height: 24px; */
+  padding-left: 3px;
+}
+
+#app > main > main > div > div.flex-auto > main > div > div.main > div > div {
+  height: 977px !important;
+}
+#app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(2) {
+  height: 890px;
+}
+#app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(2) {
+  height: 917px !important;
+}
+#app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(2) > div > div:nth-child(3) > textarea {
+  height: 551px !important;
+}
+
+/* 改 SOAP, 歷史報告字體 */
+textarea.textarea.text-16 {
+  font-family: "Source Han Code JP";
+  font-size: 14px !important;
+  font-weight: 100;
+  overflow: auto !important;
+}
+
+/* 改歷史報告清單字體 */
+#frameHistory tbody {
+  font-family: "Source Code Pro";
+  font-size: 15px !important;
+  font-weight: 500;
+}
+#frameHistory tbody tr.text-secondary {
+  font-weight: 900;
+}
+#frameHistory tbody tr td:nth-child(5) {
+  font-size: 15px !important;
+  padding-left: 1em;
+}
+
+div.footer {
+  font-size: 14px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+
+#app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div > div > div:nth-child(4) > div > input {
+  font-family: "Sofia Sans Extra Condensed";
+  font-weight: 600;
+  font-size: 19px !important;
+  width: 130px;
+}
+#app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div > div > div:nth-child(3) > div > input {
+  font-family: "Sofia Sans Condensed";
+  font-weight: 600;
+  font-size: 19px !important;
+}
+
+/* 改 "檢查日期" "檢查項目" 的顏色 */
+#app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div > div > div:nth-child(5) > div > input,
+#app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div > div > div:nth-child(11) > div > input {
+  color: rgb(250 219 43) !important;
+}
+
+input[title="年齡"] {
+  max-width: 100px !important;
+}
+
+input[title="來源"] {
+  max-width: 150px !important;
+}
+input[title="申請醫師"],
+input[title="主治醫師"] {
+  max-width: 160px !important;
+}
+
+/* 四個 finding radio button 改顏色 */
+    input[type='radio'][name='chfindcode']:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -5px;
+        left: -1px;
+        position: relative;
+        background-color: #d1d3d1;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+
+    input[type='radio'][name='chfindcode']:checked:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -5px;
+        left: -1px;
+        position: relative;
+        background-color: #ffa500;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+
+   input[type='radio'][name='chfindcode']:checked ~ div {
+        color: #ffa500;
+    }

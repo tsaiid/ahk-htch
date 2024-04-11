@@ -1,12 +1,12 @@
-﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
-SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
-SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+﻿; REMOVED: #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+SendMode("Input")  ; Recommended for new scripts due to its superior speed and reliability.
+SetWorkingDir(A_ScriptDir)  ; Ensures a consistent starting directory.
 #SingleInstance force
-SetControlDelay -1  ; improve reliability for ControlClick, reduces interference from the user's physical movement of the mouse
-CoordMode, Mouse, Screen
+SetControlDelay(-1)  ; improve reliability for ControlClick, reduces interference from the user's physical movement of the mouse
+CoordMode("Mouse", "Screen")
 
 
-#Include <AHKHID>
+#Include "<AHKHIDv2>"
 
 AHKHID_UseConstants() ;Set up the constants
 
@@ -18,9 +18,12 @@ it doesn't have to be visible, though
 */
 
 
-Gui +LastFound -Resize -MaximizeBox -MinimizeBox
-Gui, Font, w700 s8, Courier New
-Gui, Add, ListBox, h300 w300 vlbxInput hwndhlbxInput,
+myGui := Gui()
+myGui.OnEvent("Close", GuiClose)
+myGui.Opt("+LastFound -Resize -MaximizeBox -MinimizeBox")
+myGui.SetFont("w700 s8", "Courier New")
+ogcListBoxlbxInput := myGui.Add("ListBox", "h300 w300 vlbxInput")
+hlbxInput := ogcListBoxlbxInput.hwnd
 
 
 GuiHandle := WinExist() ;Keep handle
@@ -82,29 +85,31 @@ shuttlepro_inverse_layermask_5:=~(shuttlepro_layermask_5_2|shuttlepro_layermask_
 
 
 ;Intercept WM_INPUT
-OnMessage(0xFF, "ShuttleProIntercept")
+OnMessage(0xFF, ShuttleProIntercept)
 
 
-Gui, Show
+myGui.Show()
 Return
 
 
-GuiClose:
-	ExitApp
+GuiClose(*)
+{ ; V1toV2: Added bracket
+	ExitApp()
 
 ;########## If Anything happens on the Shuttlepro, this function is called automagically from onMessage #####
+} ; V1toV2: Added bracket before function
 
-ShuttleProIntercept(wParam, lParam)
+ShuttleProIntercept(wParam, lParam, msg, hwnd)
 	{
 		local devicetype, hid_handle,length,vendor_id,product_id, layer
-		Critical
+		Critical()
 
 		r := AHKHID_GetInputInfo(lParam, 0) ;Get device type
 
 		If (r = RIM_TYPEHID) ; this is how the SHuttlepro identifies
 			{
 				hid_handle := AHKHID_GetInputInfo(lParam, 8) ; Handle to device
-				length := AHKHID_GetInputData(lParam, uData)-1 ; input length
+				length := AHKHID_GetInputData(lParam, &uData)-1 ; input length
 				Vendor_id:=AHKHID_GetDevInfo(hid_handle, DI_HID_VENDORID,     True)
 				product_id:=AHKHID_GetDevInfo(hid_handle, DI_HID_PRODUCTID,    True)
 
@@ -113,8 +118,8 @@ ShuttleProIntercept(wParam, lParam)
 						; shuttlepro 2
 
 						; get the data and convert to bytes
-						Loop, %length%
-								byte%A_Index%:=NumGet(uData,A_Index,"uchar")
+						Loop length
+								byte%A_Index%:=NumGet(uData, A_Index, "uchar")
 
 
 						; byte 1 : Outer ring goes 1-7 (right) and 249-255 (left)
@@ -175,14 +180,14 @@ ShuttleProIntercept(wParam, lParam)
 						; sort out the keys
 						; loops through the bytes and sets the variable shuttlepro%keynbumber% to true if the key was pressed
 						; byte 4 has 8 keys
-						Loop,8
+						Loop 8
 							{
 								shuttlepro%A_Index%:=byte4_new&1
 								byte4_new>>=1
 							}
 						; byte 5 has 7 keys
 						i:=9
-						Loop,7
+						Loop 7
 							{
 								shuttlepro%i%:=byte5_new&1
 								byte5_new>>=1
@@ -195,7 +200,7 @@ ShuttleProIntercept(wParam, lParam)
 
 
 						; byte 1: outer wheel reports 1-7 or -1 to -7 (signed byte)
-						If (byte1<>shuttlepro_speed_saved) { ; value has changed
+						If (byte1 != shuttlepro_speed_saved) { ; value has changed
                 stop_all_speed_timers()
 								execute_shuttlepro_speed(byte1,layer) ; execute function
             }
@@ -213,7 +218,7 @@ ShuttleProIntercept(wParam, lParam)
 
 						Else
 							{
-								If (byte2<>shuttlepro_shuttle_saved) ; value has changed
+								If (byte2 != shuttlepro_shuttle_saved) ; value has changed
 										execute_shuttlepro_shuttle(byte2,layer) ; execute function
 							}
 
@@ -221,19 +226,19 @@ ShuttleProIntercept(wParam, lParam)
 
 
 						;loop through 15 buttons
-						Loop, 15
+						Loop 15
 								If (shuttlepro%A_Index%)
 										execute_shuttlepro(A_Index,layer) ; replace accordingly if you don't want layers
 
 
 
 						; for demo, update the gui
-						GuiControl,, lbxInput, %a%
+						ogcListBoxlbxInput.Add([a])
 
 					}
 			}
-		SendMessage, 0x018B, 0, 0,, ahk_id %hlbxInput%
-		SendMessage, 0x0186, ErrorLevel - 1, 0,, ahk_id %hlbxInput%
+		ErrorLevel := SendMessage(0x018B, 0, 0, , "ahk_id " hlbxInput)
+		ErrorLevel := SendMessage(0x0186, ErrorLevel - 1, 0, , "ahk_id " hlbxInput)
 	}
 
 
@@ -247,66 +252,36 @@ execute_shuttlepro(key,layer)
 		; at the moment, just add to the global string
 
 		If (key = 12) {
-			Reload
+			Reload()
 		}
-		If (WinActive("ahk_exe WEBVIE~1.EXE")) {
+
+    If (WinActive("ahk_exe G3PACS.exe")) {
       If (key = 1) {
-        Send, q				; selection mode
+        ;Send, w
       } Else If (key = 2) {
-        Send, {F4}		; skull window
+        Send(7)
       } Else If (key = 3) {
-        Send, {F3}		; Bone window
+        Send(5)
       } Else If (key = 4) {
-        Send, {F1}		; Chest window
-      } Else If (key = 5) {
-      } Else If (key = 6) {
-      } Else If (key = 7) {
-      } Else If (key = 8) {
-        Send, {F5}		; Liver window
-      } Else If (key = 9) {
-        Send, {F2}		; Abdomen window
-      } Else If (key = 10) {
-				Send, ^{F12}	; 合併所有序列
-      } Else If (key = 11) {
-        Send, f				; Sync others
-      } Else If (key = 12) {
-				;Reload settings in global scale
-      } Else If (key = 13) {
-        Send, w				; Sync
-      } Else If (key = 14) {
-      } Else If (key = 15) {
-      }
-    } Else If (WinActive("ahk_exe G3PACS.exe")) {
-      If (key = 1) {
-        Send, q
-      } Else If (key = 2) {
-        Send, 7
-      } Else If (key = 3) {
-        Send, 5
-      } Else If (key = 4) {
-        Send, 6
-      } Else If (key = 5) {
-				/*
-				; move mouse to RIS finding edit
+        Send(6)
+      } Else If (key = 5) {		; move mouse to RIS finding edit
 				If (WinExist("ahk_exe Report.exe")) {
-					WinGetPos, Xw, Yw, , , ahk_exe Report.exe
-					ControlGetPos, x, y, w, h, TMemo6, ahk_exe Report.exe
+					WinGetPos(&Xw, &Yw, , , "ahk_exe Report.exe")
+					ControlGetPos(&x, &y, &w, &h, "TMemo6", "ahk_exe Report.exe")
 					;MsgBox, %Xw% %x% %w%`,%Yw% %y% %h%
-					MouseMove, Xw + x + w/2, Yw + y + h/2
-					WinActivate
+					MouseMove(Xw + x + w/2, Yw + y + h/2)
+					WinActivate()
 				}
-				*/
-        Send, d
       } Else If (key = 6) {
-				Send, l
+        ;Send, x
       } Else If (key = 7) {
-        Send, 1
+        Send(1)
       } Else If (key = 8) {
-        Send, 8
+        Send(8)
       } Else If (key = 9) {
-        Send, 4
+        Send(4)
       } Else If (key = 10) {
-        Send, x
+        ;Send, s
       } Else If (key = 11) {
         ;Send, f
 				ToggleDiffExamSync()
@@ -316,33 +291,29 @@ execute_shuttlepro(key,layer)
         ;Send, w
 				ToggleSync()
       } Else If (key = 14) {
-        ;Send, {Up}
-				Send, o
+        Send("{Up}")
       } Else If (key = 15) {
-        Send, {Down}
+        Send("{Down}")
       }
     } Else If (WinActive("ahk_exe Report.exe")) {
       If (key = 4) {	; Close prev exam list window
 				If (WinActive("查詢歷史報告")) {
-					ControlGet, isPopHisReport, Visible,, TBitBtn6
+					isPopHisReport := ControlGetVisible("TBitBtn6")
 					If (isPopHisReport) {
-						ControlClick, TBitBtn6
+						ControlClick("TBitBtn6")
 					} Else {
-						ControlClick, TBitBtn1
-						Sleep, 100
-						ControlFocus, TMemo6, ahk_exe Report.exe
+						ControlClick("TBitBtn1")
+						Sleep(100)
+						ControlFocus("TMemo6", "ahk_exe Report.exe")
 					}
 				}
-      } Else If (key = 5) {
-				/*
-				; move mouse to PACS window
+      } Else If (key = 5) { 	; move mouse to PACS window
 				If (WinExist("ahk_exe G3PACS.exe")) {
-					WinGetPos, x, y, w, h, ahk_exe G3PACS.exe
+					WinGetPos(&x, &y, &w, &h, "ahk_exe G3PACS.exe")
 					;MsgBox, Calculator is at %X%`,%Y%
-					MouseMove, x - w/2, y + h * 3/4
-					WinActivate
+					MouseMove(x - w/2, y + h * 3/4)
+					WinActivate()
 				}
-				*/
 			}
     }
 
@@ -369,10 +340,6 @@ execute_shuttlepro_speed(speed,layer)
       a .= "GEUV: "
       ; send the first key, because SetTimer will wait for the first period
 			set_scroll_speed(corrected_speed_saved, speed, 800, 600, 333, 200, 100, 50, 20)
-    } Else If (WinActive("ahk_exe WEBVIE~1.EXE")) {
-      a .= "EBM: "
-      ; send the first key, because SetTimer will wait for the first period
-			set_scroll_speed(corrected_speed_saved, speed, 800, 600, 333, 200, 100, 50, 20)
     } Else If (WinActive("ahk_exe XWinGEAWE32.exe")) {
       a .= "AWS: "
       ; send the first key, because SetTimer will wait for the first period
@@ -393,25 +360,25 @@ execute_shuttlepro_shuttle(shuttle_value,layer)
     If (WinActive("ahk_exe G3PACS.exe")) {
       a .= "GEUV "
       If (is_shuttle_clockwise(shuttle_value, shuttlepro_shuttle_saved)) {
-        Click, WheelDown
+        Click("WheelDown")
       } Else {
-        Click, WheelUp
+        Click("WheelUp")
       }
     } Else If (WinActive("ahk_exe XWinGEAWE32.exe")) {
       a .= "AWS "
       If (is_shuttle_clockwise(shuttle_value, shuttlepro_shuttle_saved)) {
-        Click, WheelDown
+        Click("WheelDown")
       } Else {
-        Click, WheelUp
+        Click("WheelUp")
       }
     } Else {
-			MouseGetPos, , , id
-			WinGetTitle, title, ahk_id %id%
-      a .= """" title """ "
+			MouseGetPos(, , &id)
+			title := WinGetTitle("ahk_id " id)
+      a .= '""' . title . '"" '
       If (is_shuttle_clockwise(shuttle_value, shuttlepro_shuttle_saved)) {
-        Click, WheelDown
+        Click("WheelDown")
       } Else {
-        Click, WheelUp
+        Click("WheelUp")
       }
     }
 
@@ -435,26 +402,26 @@ stop_all_speed_timers()
 {
   ;SetTimer, UpKey, Off
   ;SetTimer, DownKey, Off
-  SetTimer, UpScroll, Off
-  SetTimer, DownScroll, Off
+  SetTimer(UpScroll,0)
+  SetTimer(DownScroll,0)
 }
 
 UpKey:
-Send, {Up}
+Send("{Up}")
 return
 
 DownKey:
-Send, {Down}
+Send("{Down}")
 return
 
 set_scroll_speed(corrected_speed_saved, speed, s1, s2, s3, s4, s5, s6, s7)
 {
 	If (corrected_speed_saved < speed && speed > 0) {
 		;Send, {Down}
-		Click, WheelDown
+		Click("WheelDown")
 	} Else If (corrected_speed_saved > speed && speed < 0) {
 		;Send, {Up}
-		Click, WheelUp
+		Click("WheelUp")
 	}
 	If (speed < 0) {
 		scroll_direction := "UpScroll"
@@ -463,54 +430,56 @@ set_scroll_speed(corrected_speed_saved, speed, s1, s2, s3, s4, s5, s6, s7)
 	}
 	abs_speed := Abs(speed)
 	If (abs_speed = 1) {
-		SetTimer, %scroll_direction%, %s1%
+		SetTimer(scroll_direction,s1)
 	} Else If (abs_speed = 2) {
-		SetTimer, %scroll_direction%, %s2%
+		SetTimer(scroll_direction,s2)
 	} Else If (abs_speed = 3) {
-		SetTimer, %scroll_direction%, %s3%
+		SetTimer(scroll_direction,s3)
 	} Else If (abs_speed = 4) {
-		SetTimer, %scroll_direction%, %s4%
+		SetTimer(scroll_direction,s4)
 	} Else If (abs_speed = 5) {
-		SetTimer, %scroll_direction%, %s5%
+		SetTimer(scroll_direction,s5)
 	} Else If (abs_speed = 6) {
-		SetTimer, %scroll_direction%, %s6%
+		SetTimer(scroll_direction,s6)
 	} Else If (abs_speed = 7) {
-		SetTimer, %scroll_direction%, %s7%
+		SetTimer(scroll_direction,s7)
 	}
 }
 
-UpScroll:
-curr_hwnd := WinExist("A")
-;MsgBox % curr_hwnd
-;a .= "curr_hwnd: " . curr_hwnd
-If (curr_hwnd != timer_active_hwnd) {
-	SetTimer, UpScroll, Off
-} Else {
-	Click, WheelUp
+UpScroll()
+{
+	curr_hwnd := WinExist("A")
+	;MsgBox % curr_hwnd
+	;a .= "curr_hwnd: " . curr_hwnd
+	If (curr_hwnd != timer_active_hwnd) {
+		SetTimer(UpScroll,0)
+	} Else {
+		Click("WheelUp")
+	}
 }
-return
 
-DownScroll:
-curr_hwnd := WinExist("A")
-;MsgBox % timer_active_hwnd
-;a .= "curr_hwnd: " . curr_hwnd
-If (curr_hwnd != timer_active_hwnd) {
-	SetTimer, DownScroll, Off
-} Else {
-	Click, WheelDown
+DownScroll()
+{
+	curr_hwnd := WinExist("A")
+	;MsgBox % timer_active_hwnd
+	;a .= "curr_hwnd: " . curr_hwnd
+	If (curr_hwnd != timer_active_hwnd) {
+		SetTimer(DownScroll,0)
+	} Else {
+		Click("WheelDown")
+	}
 }
-return
 
 ToggleSync() {
-  ControlGetFocus, FocusedControl
-  WinGetTitle, OutputVar
+  FocusedControl := ControlGetClassNN(ControlGetFocus())
+  OutputVar := WinGetTitle()
 ;MsgBox, "%OutputVar%"
   If (OutputVar = "INFINITT PACS" && SubStr(FocusedControl, 1, 3) == "Afx") {
     DiffSyncBtns := ["Button1", "Button75"]
     For idx, btn in DiffSyncBtns {
-      ControlGetText, t, %btn%
+      t := ControlGetText(btn)
       if (t = "自動同步") {
-        ControlClick, %btn%
+        ControlClick(btn)
         Break
       }
     }
@@ -518,17 +487,25 @@ ToggleSync() {
 }
 
 ToggleDiffExamSync() {
-  ControlGetFocus, FocusedControl
-  WinGetTitle, OutputVar
+  FocusedControl := ControlGetClassNN(ControlGetFocus())
+  OutputVar := WinGetTitle()
 ;MsgBox, "%OutputVar%"
   If (OutputVar = "INFINITT PACS" && SubStr(FocusedControl, 1, 3) == "Afx") {
     DiffSyncBtns := ["Button2", "Button76", "Button91"]
     For idx, btn in DiffSyncBtns {
-      ControlGetText, t, %btn%
+      t := ControlGetText(btn)
       if (t = "不同檢查同步 ") {
-        ControlClick, %btn%
+        ControlClick(btn)
         Break
       }
     }
   }
 }
+
+
+
+
+
+
+
+

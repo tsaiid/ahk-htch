@@ -430,6 +430,7 @@ PI-RADS v2.1 Assessment Categories:
 Return
 
 ::prsz::
+  Sleep, 100
   ProstateSizeCalForm()
 Return
 

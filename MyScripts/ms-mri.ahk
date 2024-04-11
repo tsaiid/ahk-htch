@@ -1,7 +1,7 @@
 ﻿; MS MRI Forms
 
 ;; Hotstrings
-::mrkok::The anterior cruciate ligament, posterior cruciate ligament, medial collateral ligament, lateral collateral ligament, medial meniscus, and lateral meniscus, quadricep tendon and patellar tendon are unremarkable.
+::kmrok::The anterior cruciate ligament, posterior cruciate ligament, medial collateral ligament, lateral collateral ligament, medial meniscus, and lateral meniscus, quadricep tendon and patellar tendon are unremarkable.
 ::mrarok::No arthrographic evidence of full-thickness tear of rotator cuff or adhesive capsulitis.
 ::pt::partial tear
 ::ct::complete tear
@@ -25,6 +25,13 @@
 ::aclpt::Edematous change and increased signal intensity over the anterior cruciate ligament (ACL) with focally incontinuous fiber. Partial tear is considered.
 ::pclpt::Edematous change and increased signal intensity over the posterior cruciate ligament (PCL) with focally incontinuous fiber. Partial tear is considered.
 ::mrsab::Presence of Hill Sachs deformity manifesting an impaction lesion of the posterolateral aspect of the humeral head, and under MR-arthrogram, the anteroinferior labrum is frayed and absence that considered Bankart lesion, the findings c/w secondary to anterior glenohumeral dislocation.
+::ssftt::full-thickness tear of the supraspinatus.
+::isftt::full-thickness tear of the infraspinatus.
+::ssptt::partial-thickness tear of the supraspinatus.
+::isptt::partial-thickness tear of the infraspinatus.
+::sscptt::partial-thickness tear of the subscapularis.
+::mroa::marginal osteophyte formation, irregular joint space narrowing, cartilage loss, subchondral signal intensity change in the pancompartment of knee, especially the medial compartment, in favor of osteoarthrosis.
+::bb::bone bruise
 
 ;; MRI of Knee
 ::mrkr::

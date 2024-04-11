@@ -46,13 +46,17 @@
 ::msplt::Mild spondylosis of T-spine.
 ::mspltl::Mild spondylosis of T- and L-spine.
 ::msplctl::Mild spondylosis of C-, T- and L-spine.
-::oak0::Mild joint space narrowing at medial compartment of knee joint.
-::oak1a::Mild joint space narrowing, especially at medial compartment of knee joint, suggestive of mild osteoarthrosis.
-::oak1b::Mild joint space narrowing, marginal osteophyte formation, especially at medial compartment of knee joint, suggestive of mild osteoarthrosis.
-::oak1::Mild joint space narrowing, subchondral sclerosis, marginal osteophyte formation, especially at medial compartment of knee joint, suggestive of mild osteoarthrosis.
-::oak2::Joint space narrowing, subchondral sclerosis, marginal osteophyte formation, especially at medial compartment of knee joint, suggestive of osteoarthrosis.
-::oak2a::Joint space narrowing, marginal osteophyte formation, especially at medial compartment of knee joint, suggestive of osteoarthrosis.
-::oak3::Severe joint space narrowing, subchondral sclerosis, marginal osteophyte formation, at knee joint, suggestive of osteoarthrosis.
+::oak0::Mild joint space narrowing in the medial compartment of the knee.
+::oak1a::Mild joint space narrowing, especially in the medial compartment of the knee, suggestive of mild osteoarthrosis.
+::boak1a::Mild joint space narrowing, especially in the medial compartments of the bilateral knees, suggestive of mild osteoarthrosis.
+::oak1b::Mild joint space narrowing, marginal osteophyte formation, especially in the medial compartment of the knee, suggestive of mild osteoarthrosis.
+::boak1b::Mild joint space narrowing, marginal osteophyte formation, especially in the medial compartments of the bilateral knees, suggestive of mild osteoarthrosis.
+::oak1::Mild joint space narrowing, subchondral sclerosis, marginal osteophyte formation, especially in the medial compartment of the knee, suggestive of mild osteoarthrosis.
+::oak2::Joint space narrowing, subchondral sclerosis, marginal osteophyte formation, especially in the medial compartment of the knee, suggestive of osteoarthrosis.
+::boak2::Joint space narrowing, subchondral sclerosis, marginal osteophyte formation, especially in the medial compartments of the bilateral knees, suggestive of osteoarthrosis.
+::oak2a::Joint space narrowing, marginal osteophyte formation, especially in the medial compartment of the knee, suggestive of osteoarthrosis.
+::oak3::Severe joint space narrowing, subchondral sclerosis, marginal osteophyte formation, in the knee, suggestive of osteoarthrosis.
+::oak3a::Severe joint space narrowing, subchondral sclerosis, marginal osteophyte formation, especially in the medial compartment of the knee, suggestive of osteoarthrosis.
 ::oah::Superior joint space narrowing, subchondral sclerosis, subchondral cyst formation, osteophyte formation, in favor of osteoarthrosis of _ hip.
 ::scc::subchondral cyst
 ::scs::subchondral sclerosis
@@ -92,14 +96,14 @@
 ::shok::No joint space narrowing, dislocation, or fracture.{Enter}No limitation in internal/external rotation of the shoulder.
 ::rct0::Upward migration of the humeral head.
 ::rct1::Upward migration of the humeral head, narrowing the acromiohumeral distance, rotator cuff tear is suspected.
-::pcsp::Post instrument fixation at cervical spine.
+::pcsp::Post instrument fixation at the cervical spine.
 ::mpvsts::Mild prevertebral soft tissue swelling.
 ::pvsts::Prevertebral soft tissue swelling.
 ::pvsts1::Prevertebral soft tissue swelling, may be due to recent operation.
 ::ptsp::Post instrument fixation at thoracic spine.
-::ptlsp::Post instrument fixation at lower thoracic to lumbar spine.
-::plsp::Post instrument fixation at lumbar spine.
-::plsp0::Post laminectomy, transpedicular screws, rods fixation at L1-2, L2-3, L3-4, L4-5, L5-S1.{Enter}Post interbody cage placement at L1-2, L2-3, L3-4, L4-5, L5-S1.
+::ptlsp::Post instrument fixation at the lower thoracic to lumbar spine.
+::plsp::Post instrument fixation at the lumbar spine.
+::plsp0::Post laminectomy, transpedicular screws, rods fixation at the L1-2, L2-3, L3-4, L4-5, L5-S1.{Enter}Post interbody cage placement at the L1-2, L2-3, L3-4, L4-5, L5-S1.
 ::spok::No disc space narrowing, spondylolisthesis, or fracture.
 ::lspok::L-spine: No disc space narrowing, spondylolisthesis, or fracture.
 ::wsplok::Normal cervical and lumbar lordotic curves.{Enter}Normal thoracic kyphotic curve.
@@ -226,6 +230,7 @@
 ::mlwsts::Mild soft tissue swelling around left wrist.
 ::sijok::No evidence of blurring, sclerosis, or bone erosion over bilateral sacroiliac joints.
 ::wgd::wedge deformity
+::awgd::anterior wedge deformity
 ::opc::osteoporotic change
 ::gopc::Generalized osteoporotic change.
 ::dopc::Disuse osteoporotic change.
@@ -253,10 +258,10 @@
 ::cspok::
   MyForm =
 (
+No evidence of foreign body in the neck region.
 No disc space narrowing, spondylolisthesis, or fracture over C-spine.
 No abnormal widening of the prevertebral space.
 The epiglottis is normal.
-No evidence of foreign body in the neck region.
 )
   Paste(MyForm)
 Return
@@ -296,6 +301,9 @@ Return
 ::rwoa::OA change of right wrist.
 ::lwoa::OA change of left wrist.
 ::bwoa::OA change of bilateral wrists.
+::reoa::OA change of right elbow.
+::leoa::OA change of left elbow.
+::beoa::OA change of bilateral elbows.
 ::rsct::A linear calcification over the superolateral aspect of right shoulder, in favor of calcific tendinopathy.
 ::lsct::A linear calcification over the superolateral aspect of left shoulder, in favor of calcific tendinopathy.
 ::lasts::Soft tissue swelling over the left ankle region.
@@ -440,6 +448,7 @@ Triple film of lower extremities in standing AP projection :
 )
   ;Paste(MyForm)
   hParentWnd := WinExist("A")
+  Sleep, 100  ; let AHK to clear hotstring before showing GUI
   LLDForm()
 Return
 

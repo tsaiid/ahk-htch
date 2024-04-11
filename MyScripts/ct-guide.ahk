@@ -35,31 +35,25 @@ Under CT guide, tissue specimens were smoothly taken for pathology examination.
 
 1. Position:
 2. Target lesions
-   A. Location lobe:
-   B. Main lesion size:  mm
-   C. Cavity or central necrosis: Yes / No
-   D. Pleural distance:  mm
+---A. Location lobe:
+---B. Main lesion size:  mm
+---C. Cavity or central necrosis: Yes / No
+---D. Pleural distance:  mm
 3. Focal emphysema of lung parenchyma: No / Mild / Moderate / Severe
 4. Patient cooperation: good / fair / poor
 5. Complications:
-   A. Pneumothorax: No / Minimal / Mild / Moderate / Severe; Aspiration for pneumothorax: Yes / No
-   B. Focal hemorrhage: Yes, mild / No
-   C. Hemoptysis: No
-   D. Chest tightness: No
-   E. Asthma: No
+---A. Pneumothorax: No / Minimal / Mild / Moderate / Severe; Aspiration for pneumothorax: Yes / No
+---B. Focal hemorrhage: Yes, mild / No
+---C. Hemoptysis: No
+---D. Chest tightness: No
+---E. Asthma: No
 6. Specimen: (4 attempts to biopsy)
-   Formalin: x3; normal saline: x1 (part of one sample);
-   Bacterial culture swab: aerobic x1; anaerobic x1.
+---Formalin: x3; normal saline: x1 (part of one sample);
+---Bacterial culture swab: aerobic x1; anaerobic x1.
 
 The patient was sent back to the ward under stable condition without complaint.
 Recommend close f/u patient's vital signs, bed rest and compression for at least 4 hours.
 F/U CXR 6 hours later.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
-CT guide biopsy for __ lung tumor was successfully performed.
 )
   Paste(MyForm)
 Return
@@ -122,11 +116,8 @@ Under CT guide, tissue specimens were smoothly taken for pathology examination.
 6. Specimen: pus.
 
 The patient was sent back to the ward under stable condition without complaint.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 CT guide drainage for  was performed.
 )
   Paste(MyForm)
@@ -146,17 +137,13 @@ Under CT guide, tissue specimens were smoothly taken for pathology examination.
 3. Patient cooperation: good
 4. Complications: nil.
 5. Instrument: 18G Biopsy needle in 17G coaxial needle.
-6. Specimen:
-    Formalin: x4
+6. Specimen: Formalin: x4
 
 Gelfoam slurry was injected through the coaxial needle after biopsy.
 
 The patient was sent back to the ward under stable condition without complaint. Recommend close f/u patient's vital signs, bed rest and compression for at least 4 hours.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 CT guide biopsy for  was performed.
 )
   Paste(MyForm)
@@ -167,7 +154,7 @@ Return
 ::ctg-rfa::
   MyForm =
 (
-Radiofrequency albation of liver tumor(RFA<=3cm):
+Radiofrequency ablation of liver tumor(RFA<=3cm):
 
 Anesthesia: general
 Device: Medtronic Cool-tip RF ablation single, 15 cm x 3 cm.
@@ -175,11 +162,7 @@ Ablation session: 1
 Tumor location and size: S8, 2 cm.
 Complication: nil.
 
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+IMPRESSION:
 RFA for S8 hepatic tumor was performed.
 )
   Paste(MyForm)
@@ -189,7 +172,7 @@ Return
 ::ctg-mwa::
   MyForm =
 (
-Microwave albation of renal tumor(>3cm;<=5cm):
+Microwave ablation of renal tumor(>3cm;<=5cm):
 
 Anesthesia: general
 Position: prone
@@ -197,11 +180,8 @@ Device: ECO 16G ceramic antenna, 12 mm exposed tip, 15 cm shaft.
 Ablation parameter: 40W x 8 min, ablation zone: diameter 33 mm, length 47 mm.
 Tumor location and size: left kidney, 31 x 24 x 34 mm.
 Complication: nil.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 MWA for left kidney RCC was performed.
 )
   Paste(MyForm)
