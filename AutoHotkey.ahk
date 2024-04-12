@@ -1,7 +1,6 @@
 ﻿; Settings
 #NoEnv
-;#Hotstring EndChars `t
-#Hotstring EndChars \
+#Hotstring EndChars `t
 #Hotstring O
 #MaxHotkeysPerInterval 200
 SetBatchLines -1  ; better performance: http://scsnake.blogspot.tw/2016/03/hotstring.html
@@ -142,25 +141,6 @@ PRESERVE_CLIPBOARD := 0
 
 ; Define hotkeys
 #IfWinActive ahk_group RIS
-
-; Trigger hotstring by Tab key
-#InputLevel 1
-Tab::
-  ;Send %A_PriorHotkey%
-  Send \
-  ;Send %A_ThisHotkey% %A_PriorHotkey%
-  ;MsgBox, %A_PriorHotkey%
-
-  ;if (A_PriorHotkey = "Tab") {
-  ;  ; hotstring not triggered, clear | char
-  ;  Sleep, 500
-  ;  Send {BackSpace}
-  ;}
-Return
-/*
-Tab::|
-*/
-#InputLevel 0
 
 ; Delete current line
 ;^y::
