@@ -64,11 +64,8 @@ Right distal radial fracture
 - no involvement of the radioulnar joint
 - intra-articular fracture: (+)
 - other fracture: nil
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 Right Colles fracture, with intra-articular involvement.
 )
   Paste(MyForm)
@@ -124,11 +121,8 @@ Presence of engorged vessel with intraluminal filling defects, consistent with d
 Extent: left external iliac, common femoral, great saphenous vein (proximal part).
 
 The skeleton of lower limb is unremarkable.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 C/W DVT.
 )
   Paste(MyForm)
@@ -148,11 +142,8 @@ FINDINGS:
 - Mild bilateral genu varum is noted.
 - No obvious dislocation or fracture.
 - The visible intraabdominal organs are unremarkable.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 OA change of bilateral knees.
 )
   Paste(MyForm)

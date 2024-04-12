@@ -173,11 +173,8 @@ A slitlike syrinx cavity at C1-C2 level, in favor of a persistent central canal.
 
 Presence of a nodular lesion noted over the right/left side thyroid gland, diameter/size about 2.8cm, , nature to be determined, recommend thyroid sonography correlation.
 
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 Cervical spondylosis and DDD, with mild spinal stenosis and neuroforaminal stenosis. Details as above descriptions.
 )
   Paste(MyForm)
@@ -429,11 +426,8 @@ Bilateral renal cysts.
 
 Bilateral/Right/Left hydronephrosis and hydroureter. The precise nature to be determined. Suggest clinical correlation.
 
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 Lumbar scoliosis, spondylosis, spondylolisthesis, and DDD, with spinal and neuroforaminal stenosis, as detailed above.
 Mild lumbar scoliosis, spondylosis, spondylolisthesis, and DDD, without significant spinal stenosis.
 
@@ -482,11 +476,8 @@ No evidence of intraspinal hematoma noted over the L-spine region noted.
 
 No evidence of abnormal signal intensity lesion noted over the conus medullaris region.
 
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 No evidence of focal herniation of nucleus pulposus (HIVD) in the L-spine region noted.
 
 No evidence of abnormal signal intensity tumor mass lesion over the spinal canal of the L-spine noted.

@@ -324,11 +324,8 @@ Return
 No obvious dislocation or fracture.
 The paranasal sinuses are clear.
 The mastoid air cells are well-aerated.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 No obvious dislocation or fracture.
 )
   Paste(MyForm)
@@ -397,11 +394,8 @@ Return
 - Encroachment of neuroforamen:
 - Anterolisthesis: nil
 - Retrolisthesis: nil
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 DJD of C-spine.
 )
   Paste(MyForm)

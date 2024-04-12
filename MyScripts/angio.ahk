@@ -59,11 +59,8 @@ The angiocatheter and sheath were removed, and hemostasis of puncture site was a
 POST-PROCEDURE CARE:
 Sandbag compression on the puncture site for at least 2 hours, and bed rest for 3 hours.
 Follow up if bleeding or hematoma at the puncture site.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 A hypervascular tumor at the left kidney.
 No definite internal bleeding or pseudoaneurysm formation.
 )
@@ -207,11 +204,8 @@ PROCEDURE AND FINDINGS:
 
 PLAN:
 - Sandbag compression on the puncture site for at least 4 hours, and bed rest for additional 4 hours.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 Hemostasis of GI bleeding was achieved after Vasospasm TAE.
 )
   Paste(MyForm)
@@ -318,11 +312,8 @@ RECOMMENDATION:
 
 OTHERS:
 
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 DEB-TACE (TANDEM) for HCC was performed.
 )
   Paste(MyForm)
@@ -350,11 +341,8 @@ PROCEDURE AND FINDINGS:
 
 RECOMMENDATION:
 - Close follow up the vital signs and consciousness.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 TACE (transradial) for HCC was performed.
 )
   Paste(MyForm)
@@ -382,11 +370,8 @@ PROCEDURE AND FINDINGS:
 RECOMMENDATION:
 - Close follow up the vital signs and consciousness.
 - Follow up if any local complication at the puncture site.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 TACE (transradial, snuffbox access) for HCC was performed.
 )
   Paste(MyForm)
@@ -485,11 +470,8 @@ PROCEDURE AND FINDINGS:
 RECOMMENDATION:
 - Sandbag compression on the puncture site for at least 4 hours, and bed rest for 6 hours.
 - Close follow up the vital signs.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 HCC, S2, 2.6 cm.
 1. Cirrhosis.
 2. Multiple hepatic nodules in the bilateral lobes, size about 7 mm to 4.1 cm, suggestive of HCCs.
@@ -619,11 +601,8 @@ RECOMMENDATION:
 
 OTHERS:
 
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 The infusion catheter for HAIC was placed at the common hepatic artery.
 )
   Paste(MyForm)
@@ -651,11 +630,8 @@ RECOMMENDATION:
 
 OTHERS:
 
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 Embolization with Lipiodol through the HAIC catheter was performed, and the catheter was removed.
 )
   Paste(MyForm)
@@ -688,11 +664,8 @@ RECOMMENDATION:
 - If any oozing from the puncture wound, please check any migration of catheter by KUB.
 - Further embolization of the tumor with Lipiodol may be arranged after this HAIC session, according to clinical considerations.
 - After HAIC session and removal of the catheter, the hemostasis of puncture wound should be securely achieved.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 The infusion catheter for HAIC was exchanged.
 )
   Paste(MyForm)
@@ -746,11 +719,8 @@ The whole procedure was smooth, the patient tolerated well, and no immediate com
 
 SUGGESTION:
 - It may be better to remove the PCN under fluoroscopy guidance in a few days. If needed, please arrange antegrade pyelography to check its patency. Then, I will remove the PCND.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 Antegrade double-J ureteral stent placement and PCN revision were successfully performed.
 PCN, ureteroplasty, and antegrade DJS placement were successfully performed.
 AP, ureteroplasty, antegrade DJS placement, and PCN revision were successfully performed.
@@ -773,11 +743,8 @@ PROCEDURE AND FINDINGS:
 
 - The clinician had clamped the right PCND for a day. No discomfort or fever had developed. Under fluoroscopy, the right PCND was removed, and the puncture wound was covered with gauze.
 - The whole procedure was smooth, the patient tolerated well, and no immediate complication was noted.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 Patent ureteral stent and successful removal of PCND.
 )
   Paste(MyForm)
@@ -813,11 +780,8 @@ Clear light yellow urine was sampled, and sent back to ward for examination.
 Under fluoroscopy guidance and using Seldinger's technique, a 8Fr pigtail drain was placed into the renal pelvis.
 Its patency was confirmed, and then, the drain was fixed with Nylon at external mark 18 cm.
 The whole procedure was smooth, the patient tolerated well, and no immediate complication was noted.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 Left PCN (8F pigtail) was successfully performed.
 Right PCN (8F pigtail) was successfully performed.
 Bilateral PCN (8F pigtail) was successfully performed.
@@ -840,11 +804,8 @@ The skin was prepared and the area was draped.
 After local anesthesia, the PCND was revised using over-the-wire technique.
 The new PCND (8F) was fixed with Nylon at external mark of 13 cm.
 The whole procedure was smooth, the patient tolerated well, and no immediate complication was noted.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 PCN revision was successfully performed.
 )
   Paste(MyForm)
@@ -861,11 +822,8 @@ Laterality: right
 FINDINGS:
 No obvious pelvicalyceal dilatation.
 Patent ureter without urinary obstruction.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 No urinary obstruction is noted.
 )
   Paste(MyForm)
@@ -887,11 +845,8 @@ Retrieved foreign body: a broken catheter in the right brachiocephalic vein to S
 Approach: endotracheal tube.
 Device: Cook Vascular Retrieval Forceps
 Retrieved foreign body: a broken catheter in the right bronchus.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 Percutaneous retrieval of foreign body was successfully performed.
 )
   Paste(MyForm)
@@ -935,11 +890,8 @@ The PICC (peripherally inserted central venous catheter) is inserted from right/
 - tourniquet: applied
 - After sterilizing the puncture site and local anesthesia, a 4-Fr. single lumen close-end catheter is is introduced under sonography guidance using Seldinger technique and advanced with its tip at the superior vena cava.
 - The whole course is smooth and the patient stood the whole procedure well.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 1. The PICC was inserted from right/left arm.
 2. The internal catheter is 36 cm in length, and the external catheter is 5 cm in length.
 )
@@ -961,11 +913,8 @@ The PowerPICC is inserted from left arm:
 - After sterilizing the puncture site and local anesthesia, a 5F dual-lumen PowerPICC (cut to 42 cm in length) was introduced using Seldinger technique and advanced with its tip at the superior vena cava level.
 - The redrawing of blood and flushing of catheter were both smooth.
 - Then, the PowerPICC was fixed and the puncture site was drapped.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 1. The PICC is inserted from right/left arm.
 2. The internal catheter is 42 cm in length.
 )
@@ -1104,11 +1053,8 @@ Implantation technique: Seldinger
 Catheter tip location: SVC-RA junction.
 
 By sono-guided venous puncture and fluoro-guided catheter placement, the venography showed patent IJV, brachiocephalic vein, and SVC, and a venous access port was implanted at the left upper chest. A Huber needle was placed for use and the wound was covered with gauze and Tegaderm.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 A venous access port was implanted at the left upper chest.
 )
   Paste(MyForm)
@@ -1125,11 +1071,8 @@ Location of implantable port: right chest.
 Wound closure: 3-0 Nylon.
 
 The venography showed patent SVC. The venous port-catheter system was removed under fluoroscopic guidance.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 The venous access port-catheter system was completely removed.
 )
   Paste(MyForm)
@@ -1206,11 +1149,8 @@ RECOMMENDATION:
 - Wound care. Remove the sutures after the wounds heal.
 
 OTHERS:
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 A HAIC catheter was placed with tip at the CHA, and a port was implanted at the right anterior thigh.
 
 Single blood supply (blockage of SMA supply) for pancreatic cancer was achieved. HAIC catheter (tip at CHA) was placed, and port was implanted at the RLQ of abdomen.
@@ -1232,11 +1172,8 @@ The catheter with wire was advanced into proximal jejunum. However, the NG tube 
 A .35 balloon was tried to dilate the stenosis, but failed.
 The other .14 balloon could dilate the stenosis, but the NG tube still could not pass.
 A 6F long sheath could pass to duodenal 3rd portion level, and was kept as a feeding tube.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 The NG tube could not pass the pyloric stenosis. Instead, a 6F long sheath was placed to duodenal 3rd portion level as a feeding tube.
 )
   Paste(MyForm)
@@ -1265,11 +1202,8 @@ PROCEDURE AND FINDINGS:
 
 RECOMMENDATION:
 - Sandbag compression on the puncture site for at least 4 hours, and bed rest for 6 hours.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 Adjuvant TACI for HCC was performed.
 )
   Paste(MyForm)

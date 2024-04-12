@@ -320,11 +320,8 @@ No evidence of intraperitoneal free air.
 The liver, gallbladder, spleen, pancreas, adrenals, kidneys, and urinary bladder are normal.
 No retroperitoneal or mesenteric lymphadenopathy.
 The lungs covered in the scanning range are unremarkable.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 C/W acute appendicitis.
 Acute appendicitis.
 Acute appendicitis is suspected.
@@ -353,11 +350,8 @@ Small amount of turbid ascites in the rectovesical pouch is noted.
 The liver, spleen, pancreas, adrenals, and kidneys are normal.
 No retroperitoneal or mesenteric lymphadenopathy.
 The lungs covered in the scanning range are unremarkable.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 C/W acute appendicitis with rupture.
 )
   Paste(MyForm)
@@ -381,11 +375,8 @@ The liver, spleen, pancreas, adrenals, kidneys, and bowels are unremarkable.
 The lower abdomen and pelvis are unremarkable.
 No retroperitoneal or mesenteric lymphadenopathy.
 The lungs covered in the scanning range are unremarkable.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 Hollow organ perforation, suspicious perforated peptic ulcer.
 )
   Paste(MyForm)
@@ -411,11 +402,8 @@ FINDINGS:
 - The liver, gallbladder, spleen, pancreas, kidneys are unremarkable.
 - No retroperitoneal or mesenteric lymphadenopathy.
 - The lungs covered in the scanning range are unremarkable.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 Ascending colon diverticulitis, without rupture.
 )
   Paste(MyForm)
@@ -448,11 +436,8 @@ FINDINGS:
 - Mild fatty liver.
 - The gallbladder, spleen, pancreas, adrenals, kidneys are unremarkable.
 - The lungs covered in the scanning range are unremarkable.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 Acute diverticulitis of ascending colon, with perforation.
 Acute diverticulitis of sigmoid colon, with perforation and abscess formation.
 )
@@ -480,11 +465,8 @@ No obvious ascites.
 The liver, gallbladder, spleen, pancreas, adrenals, and kidneys are unremarkable.
 No retroperitoneal or mesenteric lymphadenopathy.
 The lungs covered in the scanning range are unremarkable.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 Epiploic appendagitis at the descending colon.
 )
   Paste(MyForm)
@@ -688,11 +670,8 @@ No retroperitoneal or mesenteric lymphadenopathy.
 No pelvic, retroperitoneal or mesenteric lymphadenopathy.
 
 Lower thorax: Unremarkable
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 Acute pancreatitis. Modified CTSI score:
 )
   Paste(MyForm)
@@ -825,11 +804,8 @@ No obvious ascites.
 
 Lower thorax: Unremarkable
 Skeleton: No osteolytic nor osteoblastic lesion
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 Right tubo-ovarian abscess is suspected. Suggest GYN check-up.
 )
   Paste(MyForm)
@@ -1004,11 +980,8 @@ No obvious ascites.
 
 REMARKS:
 * The evaluation is limited especially for solid organs and vascular structure due to absence of contrast enhancement.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 No evident acute intrathoracic or intraabdominal findings.
 No evident traumatic intrathoracic or intraabdominal injury.
 )
@@ -1077,11 +1050,8 @@ GI tract: Unremarkable
 No evident pelvic, retroperitoneal, or mesenteric lymphadenopathy identified.
 
 Lower thorax: Unremarkable
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 No obvious urinary bladder wall thickening or perivesical fat stranding. Gas bubbles in the urinary bladder, probably due to recent procedure. Suggest clinical correlation.
 )
   Paste(MyForm)
@@ -1272,11 +1242,8 @@ A relatively hypo-enhanced tubular lesion near the T9 right neuroforamen, probab
 The gallbladder, pancreas, kidneys, and urinary bladder are unremarkable.
 No evidence of intraperitoneal free air.
 No obvious ascites.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 Gastric cancer, prepyloric antrum, with regional lymphadenopathy, causing gastric outlet obstruction.
 )
   Paste(MyForm)
@@ -1358,11 +1325,8 @@ No obvious ascites.
 - Lymph node: No mediastinal, retroperitoneal, or mesenteric lymphadenopathy.
 
 - Bony structure: unremarkable
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 No evident acute intrathoracic or intraabdominal findings.
 No evident traumatic intrathoracic or intraabdominal injury.
 )
@@ -1393,11 +1357,8 @@ The liver, spleen, pancreas, adrenals, kidneys, and bowels are unremarkable.
 The lower abdomen and pelvis are unremarkable.
 No retroperitoneal or mesenteric lymphadenopathy.
 The lungs covered in the scanning range are unremarkable.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 C/W acute cholecystitis.
 C/W acute calculus cholecystitis.
 Early change of acute cholecystitis is suspected. Suggest correlate with sonography and Murphy sign.
@@ -1425,11 +1386,8 @@ On NG tube.
 The liver, spleen, pancreas, adrenals, kidneys are unremarkable.
 No retroperitoneal or mesenteric lymphadenopathy.
 Subsegmental atelectasis over bilateral lower lungs.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 Stercoral colitis. No evidence of perforation.
 )
   Paste(MyForm)
@@ -1455,11 +1413,8 @@ No obvious ascites.
 The liver, spleen, pancreas, adrenals, kidneys are unremarkable.
 No retroperitoneal or mesenteric lymphadenopathy.
 The lungs covered in the scanning range are unremarkable.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 1. Colitis, whole ascending and transverse colon. Ischemic colitis is suspected. DDx: inflammatory bowel disease.
 2. No evidence of hollow organ perforation.
 )
@@ -1494,11 +1449,8 @@ s/p Foley catheterization.
 Two thin-wall cystic lesions at the bilateral adnexa, size up to 6.5 cm. No mural nodule or thickened internal septum noted.
 
 Subsegmental atelectasis over bilateral lower lungs.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 1. Diffuse edematous change of the GI tract. DDx: Portal hypertensive gastropathy / enteropathy / colopathy, acute gastroenterocolitis, pseudomembranous colitis (may not involve stomach and small intestine). Suggest clinical correlation.
 2. Cirrhosis, splenomegaly, ascites. Suspicious portal hypertension.
 )
@@ -1530,11 +1482,8 @@ No intraperitoneal free air.
 The liver, gallbladder, spleen, pancreas, adrenals, kidneys, and urinary bladder are unremarkable.
 No retroperitoneal or mesenteric lymphadenopathy.
 The lungs covered in the scanning range are unremarkable.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 Paralytic ileus is suspected.
 Small bowel obstruction, at distal ileum, probably due to adhesion. No evident bowel perforation or ischemia.
 )

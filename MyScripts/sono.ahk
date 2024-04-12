@@ -645,11 +645,8 @@ Sono CDU Kideny:
 - Preserved corticomedullary differentiation.
 - No hydronephrosis or peri-graft fluid collection.
 - Preserved renal blood flow without significant abnormal waveform pattern noted.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 Good condition of the kidney graft.
 )
   Paste(MyForm)

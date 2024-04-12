@@ -101,11 +101,8 @@ Return
 Slightly enlarged cardiac shadow.
 Exaggerated lung markings at bilateral lowers, may be due to insufficient inspiration. Suggest clinical correlation.
 
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 Insufficient inspiration related findings.
 
 )
@@ -118,11 +115,8 @@ Return
 Slightly enlarged cardiac shadow.
 Exaggerated lung markings at bilateral lowers, may be due to insufficient inspiration and/or supine. Suggest clinical correlation.
 
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 Insufficient inspiration and/or supine related findings.
 
 )

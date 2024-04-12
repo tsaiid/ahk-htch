@@ -353,11 +353,8 @@ Return
 The study has been uploaded to our PACS system.
 Original report has been attached as a picture file.
 For second opinion, please submit a formal consultation request to our department.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
+
+IMPRESSION:
 The study has been uploaded to our PACS system.
 )
   Paste(MyForm)
