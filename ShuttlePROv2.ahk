@@ -275,6 +275,7 @@ execute_shuttlepro(key,layer)
         Send, w				; Sync
       } Else If (key = 14) {
       } Else If (key = 15) {
+        Send, ^!w			; Sync Window Center/Level
       }
     } Else If (WinActive("ahk_exe G3PACS.exe")) {
       If (key = 1) {

@@ -6,7 +6,7 @@
 ::pedf::prominent epidural fat
 ::aarst1::Atlantoaxial rotary subluxation is noted. The atlas is rotated on the odontoid with no anterior displacement, suggestive of Fielding and Hawkins type 1.
 ::mrspm::Presence of mild high signal intensity within the cervical cord at the C5 and C6 spine level on T2WI noted, probably due to the spinal stenosis and/or prior cord injury edema and/or prior cord insult with cord gliosis or small cystic change.
-::mrspsmn::Schmorl node (vertical intravertebral disc herniation) over the `
+::mrspsmn::Schmorl's node (vertical intravertebral disc herniation) over the `
 ::mrspma::Presence of metallic artifact may limit the evaluation in this area.
 ::mrspnom::No evidence of abnormal signal intensity lesion within the visible spinal cord.
 ::mrsppnc::Presence of several perineural cysts over the spinal canal of the upper sacrum level, the biggest one about 2cm.
@@ -301,6 +301,7 @@ Return
 ::mrc1::Cervical spondylosis and degenerative disc disease, with spinal and neuroforaminal stenosis, as detailed above.
 ::mrc2::Cervical spondylosis, spondylolisthesis, and degenerative disc disease, with spinal and neuroforaminal stenosis, as detailed above.
 
+::mrl0::Mild lumbar spondylosis and degenerative disc disease, without significant spinal stenosis.
 ::mrl1::Lumbar spondylosis and degenerative disc disease, with spinal and neuroforaminal stenosis, as detailed above.
 ::mrl2::Lumbar spondylosis, spondylolisthesis, and degenerative disc disease, with spinal and neuroforaminal stenosis, as detailed above.
 ::mrl3::Lumbar scoliosis, spondylosis, spondylolisthesis, and degenerative disc disease, with spinal and neuroforaminal stenosis, as detailed above.

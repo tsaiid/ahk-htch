@@ -159,11 +159,10 @@ Return
 ;  Clipboard := tmpClip
 ;Return
 
-:c:CMP::COMPARISON: `
-;:c:CMP::
-;  splitted_date := SplitDate(prevExamDate)
-;  Send, COMPARISON: %splitted_date%
-;Return
+;:c:CMP::COMPARISON: `
+:c:CMP::
+  Send COMPARISON: ^!d
+Return
 :c:IM::IMPRESSION:`n
 :c:IM2::IMPRESSION:`nAs aforementioned.
 :c:SG::SUGGESTION:`n

@@ -123,14 +123,16 @@ Return
 Return
 
 ;; Remap Kana Key
-;;; Formatting FINDINGS
+;;; Formatting IMPRESSION
+;;;; Reorder Seleted Text And Discard SeIm
 SC070::
-  ReorderSelectedText(false)
+  ReorderSelectedText()
 Return
 
-;;; Formatting IMPRESSION
+;;; Formatting FINDINGS
+;;;; Reorder Seleted Text And Keep SeIm
 SC079::
-  ReorderSelectedText(false, true, "-")
+  ReorderSelectedText(false, true, "-", false)
 Return
 #IfWinActive  ; end of WebRIS
 

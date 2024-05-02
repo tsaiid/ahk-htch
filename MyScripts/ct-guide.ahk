@@ -54,6 +54,10 @@ Under CT guide, tissue specimens were smoothly taken for pathology examination.
 The patient was sent back to the ward under stable condition without complaint.
 Recommend close f/u patient's vital signs, bed rest and compression for at least 4 hours.
 F/U CXR 6 hours later.
+
+IMPRESSION:
+CT guide lung biopsy of  tumor was performed.
+Mild pneumothorax was noted. Suggest follow-up.
 )
   Paste(MyForm)
 Return

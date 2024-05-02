@@ -147,14 +147,14 @@ PRESERVE_CLIPBOARD := 0
 ;  Send {Home}+{End}{Del}
 ;Return
 
-; Reorder Seleted Text
+; Reorder Seleted Text And Discard SeIm
 ^!o::
   ReorderSelectedText()
 Return
 
-; Deorder Seleted Text
+; Reorder Seleted Text And Keep SeIm
 ^!+o::
-  ReorderSelectedText(true, true)
+  ReorderSelectedText(,,, false)
 Return
 
 ; Unorder Seleted Text

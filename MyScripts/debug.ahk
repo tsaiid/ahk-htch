@@ -6,10 +6,15 @@
 #IfWinActive ahk_group RIS
 
 ^9::
+/*
+  ;SoundPlay *-1
+  SoundPlay, %A_WinDir%\money.wav
+  Send ^s
   NextReportChkBoxPath := "4.1.1.4.3.1.1.3.2.1.3.1.1.1.8.2.6.1"
   examNameObj := Acc_Get("Object", NextReportChkBoxPath, 0, "WebRIS")
   MsgBox % examNameObj.accName(0)
   ;Return examNameObj.accValue(0)
+*/
 Return
 
 ^,::

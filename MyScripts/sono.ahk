@@ -26,6 +26,7 @@
 ::sgbss1::Several echogenic lesions in GB with postural change and acoustic shadow, in favor gallstones.
 ::sgba::Comet tail artifacts from the gallbladder wall, adenomyomatosis should be considered.
 ::sgba1::Presence of tiny GB adenomyomatoses with RA (Rokitanski-Aschoff) sinus noted.
+::sgbcc::Mild gallbladder wall thickening, suspicious chronic cholecystitis.
 ::srbcs::Several renal cysts in the both kidneys, size up to  cm.{Left 4}
 ::srrc::A __-cm renal cyst in the right kidney.
 ::srrcs::Several renal cysts in the right kidney, size up to  cm.{Left 4}
