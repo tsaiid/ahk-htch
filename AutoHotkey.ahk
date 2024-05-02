@@ -52,7 +52,7 @@ PRESERVE_CLIPBOARD := 0
 ;; Bug: need to be included first ???
 #Include MyScripts\regex-hotstrings.ahk
 
-#Include MyScripts\private.ahk
+#Include *i MyScripts\private.ahk
 
 ;; My Own Lib
 #Include MyScripts\lib\frame-wait.ahk
