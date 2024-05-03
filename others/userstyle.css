@@ -1,14 +1,14 @@
 ﻿/* 報告區的最外框 */
 div[style*="height: 630px; width: 58.3333%; left: 41.6667%; top: 300px;"] {
-  height: 668px !important;
+  height: 600px !important;
 }
 /* 報告區的內框 非 CT 用 */
 div[style*="height: 565px;"] {
-  height: 613px !important;
+  height: 538px !important;
 }
 /* 報告區的內框 CT 用 */
 div[style*="height: 540px;"] {
-  height: 591px !important;
+  height: 514px !important;
 }
 
 #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(6) > div.textarea-heightpercent84 {
@@ -31,11 +31,11 @@ div[style*="height: 540px;"] {
 
 /* 歷史報告區最外的 div */
 div[style*="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] {
-  height: 917px !important;
+  height: 840px !important;
 }
 /* 歷史報告的外框 */
 div[style*="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] textarea[style*="height: 525px;"] {
-  height: 564px !important;
+  height: 507px !important;
 }
 /* 歷史報告 儀器 checkbox 跑版 */
 #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(5) > div > div:nth-child(3) > div.flex.items-center > div.flex.items-center.justify-end.text-12.ml-auto > label {
@@ -43,7 +43,7 @@ div[style*="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] textarea[styl
 }
 /* 歷史報告查無資料時太大格 */
 #frameHistory > table > tbody > tr > td[colspan="99"] {
-  height: 14rem !important;
+  height: 13rem !important;
 }
 /* 因為日期時間加上分隔符號，要設最小寬度 */
 #frameHistory tbody tr td:nth-child(1) {
@@ -135,9 +135,11 @@ div.page-button-next.mr-10 ~ div > span:nth-child(6) {
 }
 
 /* 整個畫面，不含 footer */
+/*
 #app > main > main > div > div.flex-auto > main > div > div.main > div > div {
   height: 977px !important;
 }
+*/
 
 /* 改報告清單字體 */
 /*
@@ -183,7 +185,7 @@ div[style='height: 870px; width: 41.6667%; left: 0%; top: 60px;'] table > tbody 
 
 /* 病理報告的外框 */
 div[style='height: 870px; width: 41.6667%; left: 0%; top: 60px;'] textarea[style*="height: 514px;"] {
-  height: 538px !important;
+  height: 481px !important;
 }
 
 
@@ -197,11 +199,17 @@ div.footer {
   padding-top: 3px;
 }
 
+
+/*
+ * 報告清單
+ */
+/* 讓報告清單可以在一頁顯示 20 列 */
 #app > main > main > div > div.flex-auto > div.px-5 > div.overflow-auto > table tr {
-  height: 2.4em !important;
+  height: 2.2em !important;
 }
+/* 把已逾期改小字一點 */
 tbody tr td button.btn-outline-danger {
-  font-size: 0.85em;
+  font-size: 0.7em;
 }
 
 /* 改 "病患姓名" "檢查日期" "檢查項目" 的顏色 */
@@ -215,12 +223,12 @@ input[title="病歷號碼"] {
   max-width: 6em !important;
   font-family: "Sofia Sans Condensed";
   font-weight: 600;
-  font-size: 20px !important;
+  font-size: 21px !important;
 }
 input[title="檢查單號"] {
   font-family: "Sofia Sans Extra Condensed";
   font-weight: 600;
-  font-size: 20px !important;
+  font-size: 21px !important;
   max-width: 7.5em;
 }
 input[title="年齡"] {
@@ -250,6 +258,11 @@ input[title="檢查時間"] {
 input[title="執行放射師"] {
   max-width: 110px !important;
 }
+
+
+/*
+ * 額外的上色
+ */
 
 /* 檢查日期上色 */
 .hl-examdate-0 { color: #CFCBFC !important; }
