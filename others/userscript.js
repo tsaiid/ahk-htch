@@ -19,6 +19,7 @@
     let userAgent = navigator.userAgent;
     let isEdge = /Edg/.test(userAgent);
     let prev_examdate = '';
+    let prev_examdate_pid = '';
 
     const CONTRAST_STR = {
         X5A: " without contrast medium",
@@ -86,6 +87,12 @@
             ev.preventDefault();
         }
 
+        // Ctrl+R: Disable reload page
+        if (ev.ctrlKey && ev.key === 'r') {
+            console.log("Ctrl+R: Disable reload page");
+            ev.preventDefault();
+        }
+
         // Ctrl+0: Copy report without opening images
         // Remap hotkey to Ctrl+Esc in AHK
         if (ev.ctrlKey && ev.key === '0') {
@@ -95,7 +102,8 @@
             // save prev report date into a var for further pasting
             const s = document.querySelector('tr.text-secondary td').textContent;
             prev_examdate = s.replace(/(\d{4})\/(\d{2})\/(\d{2})/, '$1-$2-$3');
-            console.log(prev_examdate);
+            prev_examdate_pid = document.querySelector('input[title="病歷號碼"]').value;
+            //console.log(prev_examdate);
         }
         // Ctrl+9: Copy report with opening images
         // Remap hotkey to Ctrl+Shift+Esc in AHK
@@ -133,7 +141,10 @@
         if (ev.ctrlKey && ev.altKey && ev.key === 'd') {
             console.log("Ctrl+Alt+D: Insert Prev Exam Date");
             //navigator.clipboard.writeText(prev_examdate);
-            document.execCommand('insertText', false, prev_examdate);
+            const curr_pid = document.querySelector('input[title="病歷號碼"]').value;
+            if (curr_pid === prev_examdate_pid) {
+                document.execCommand('insertText', false, prev_examdate);
+            }
         }
         // Ctrl+Alt+F: Insert Exam Name and Contrast
         // Remap hotkey to Ctrl+Alt+Shift+E in AHK
@@ -143,7 +154,7 @@
             if (i1) {
                 let examname = i1.value;
                 const i2 = document.querySelector('input[title="顯影劑"]');
-                if (i2 && i2.value) {
+                if (i2 && i2.value && CONTRAST_STR.hasOwnProperty(i2.value)) {
                     examname += CONTRAST_STR[i2.value];
                 }
                 document.execCommand('insertText', false, examname + ":\n\n");
@@ -227,7 +238,7 @@
         const currExamName = document.querySelector('input[title="檢查項目"]').value;
         //console.log(jNode[0]);
         const prevExamName = jNode[0].textContent;
-        if (prevExamName === currExamName) {
+        if (prevExamName === currExamName || prevExamName === currExamName.replace(/ /g, '')) {
             jNode.first().addClass('hl-same-report');
         } else if (isSimilarExam(prevExamName, currExamName)) {
             //console.log("檢查項目: " + currExamName);
@@ -268,7 +279,12 @@
                            'Scapula AP+Y view(R)', 'Shoulder AP(both)'],
         'Shoulder AP(L)': ['Shoulder internal+external(L)', 'Shoulder axial(L)', 'Scapula Y view(L)',
                            'Scapula AP+Y view(L)', 'Shoulder AP(both)'],
+        'Shoulder internal+external(R)': ['Shoulder AP(R)'],
         'Shoulder internal+external(L)': ['Shoulder AP(L)'],
+        'Elbow oblique(R)': ['Elbow AP+lateral(R)'],
+        'Elbow AP+lateral(R)': ['Elbow oblique(R)'],
+        'Elbow oblique(L)': ['Elbow AP+lateral(L)'],
+        'Elbow AP+lateral(L)': ['Elbow oblique(L)'],
         'Pelvis THR': ['Hip lateral(R)', 'Hip lateral(L)', 'KUB'],
         'Hip lateral(R)': ['Pelvis THR'],
         'Hip lateral(L)': ['Pelvis THR'],
@@ -276,10 +292,11 @@
         'Foot AP+oblique(L)': ['Foot lateral(L)', 'Foot AP+lateral(L)'],
 
         // ultrasound
+        'Sono Abdomen': ['腹部超音波，追蹤性', 'Abdominal ultrasound, for follow-up'],
         'Abdominal ultrasound, for follow-up': ['腹部超音波，追蹤性', 'Sono Abdomen'],
         'Sono CDU  Kideny': ['Abdominal ultrasound, for follow-up', 'Sono Abdomen'],
         'Sono Breasts': ['SonoBreasts', 'Breasts sono',
-                         'Mammography L&R', 'Mammography L&R(HPA)限45歲以上', 'MAMMOGRAPHY L&R'],
+                         'Mammography L&R', 'Mammography L&R(HPA)限45歲以上', 'Mammography L&R(HPA)', 'MAMMOGRAPHY L&R'],
 
         // CT
         'Abdomen to Pelvis CT': ['Abdomen  Liver Triple Phase CT', 'Abdomen  Liver 4 Phase CT', 'ABDOMEN Liver MRI'],
@@ -325,6 +342,9 @@
 
         // Breast
         'CHEST Breast MRI': ['Sono Breasts', 'SonoBreasts', 'Breasts sono'],
+
+        // Angio
+        'Lipiodol T.A.E.(trans-arterial embolization)-Lipiodol': ['血管阻塞術'],
     };
 
     function isSimilarExam(prevExamName, currExamName) {
@@ -385,7 +405,7 @@
         const nextTr = jNode.first().parent().next('tr');
         if (nextTr && nextTr.children().eq(4)) {
             const nextTrTrimmedAccno = nextTr.children().eq(4).text().slice(1, -2);
-            console.log(nextTrTrimmedAccno);
+            //console.log(nextTrTrimmedAccno);
             if (trimmedAccNo === nextTrTrimmedAccno) {
                 const hlClass = 'hl-bundledexam-' + (parseInt(trimmedAccNo) % 3);
                 jNode.first().addClass(hlClass);
