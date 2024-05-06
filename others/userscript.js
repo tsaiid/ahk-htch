@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      2024-03-04
+// @version      2024-05-06a
 // @description  try to take over the world!
 // @author       You
 // @match        http://10.2.2.160:8080/
