@@ -1,14 +1,42 @@
-﻿/* 報告區的最外框 */
-div[style*="height: 630px; width: 58.3333%; left: 41.6667%; top: 300px;"] {
-  height: 600px !important;
+﻿/* For 21:9 screen */
+@media (max-height:1070px) {
+
+    /* 報告區的最外框 */
+    div[style*="height: 630px; width: 58.3333%; left: 41.6667%; top: 300px;"] {
+      height: 600px !important;
+    }
+    /* 報告區的內框 非 CT 用 */
+    div[style*="height: 565px;"] {
+      height: 538px !important;
+    }
+    /* 報告區的內框 CT 用 */
+    div[style*="height: 540px;"] {
+      height: 514px !important;
+    }
+
 }
-/* 報告區的內框 非 CT 用 */
-div[style*="height: 565px;"] {
-  height: 538px !important;
-}
-/* 報告區的內框 CT 用 */
-div[style*="height: 540px;"] {
-  height: 514px !important;
+
+/* For 16:10 screen */
+@media (min-height:1071px) {
+
+    /* main 下面的 div */
+    div[style*="height: 930px;"] {
+        height: 968px !important;
+    }
+
+    /* 報告區的最外框 */
+    div[style*="height: 630px; width: 58.3333%; left: 41.6667%; top: 300px;"] {
+      height: 663px !important;
+    }
+    /* 報告區的內框 非 CT 用 */
+    div[style*="height: 565px;"] {
+      height: 606px !important;
+    }
+    /* 報告區的內框 CT 用 */
+    div[style*="height: 540px;"] {
+      height: 582px !important;
+    }
+
 }
 
 #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(6) > div.textarea-heightpercent84 {
@@ -28,15 +56,36 @@ div[style*="height: 540px;"] {
 /*
  *      歷史報告
  */
+/* For 21:9 screen */
+@media (max-height:1070px) {
 
-/* 歷史報告區最外的 div */
-div[style*="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] {
-  height: 840px !important;
+    /* 歷史報告區最外的 div */
+    div[style*="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] {
+      height: 840px !important;
+    }
+
+    /* 歷史報告的外框 */
+    div[style*="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] textarea[style*="height: 525px;"] {
+      height: 507px !important;
+    }
+
 }
-/* 歷史報告的外框 */
-div[style*="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] textarea[style*="height: 525px;"] {
-  height: 507px !important;
+
+/* For 16:10 screen */
+@media (min-height:1071px) {
+
+    /* 歷史報告區最外的 div */
+    div[style*="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] {
+      height: 908px !important;
+    }
+
+    /* 歷史報告的外框 */
+    div[style*="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] textarea[style*="height: 525px;"] {
+      height: 557px !important;
+    }
+
 }
+
 /* 歷史報告 儀器 checkbox 跑版 */
 #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(5) > div > div:nth-child(3) > div.flex.items-center > div.flex.items-center.justify-end.text-12.ml-auto > label {
   min-width: 4em;
