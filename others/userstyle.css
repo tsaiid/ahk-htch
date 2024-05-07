@@ -201,7 +201,7 @@ url-prefix("http://10.2.2.160:8080/") {
 #app > main > main > div > div.flex-auto > div.px-5 > div.overflow-auto > table > tbody > tr > td:nth-child(6) {
   min-width: 8em;
 }
-?:
+*/
 
 /* 改 SOAP, 歷史報告字體 */
     textarea.textarea.text-16 {
