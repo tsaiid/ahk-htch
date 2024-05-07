@@ -1,4 +1,11 @@
-﻿/* For 21:9 screen */
+﻿/* ==UserStyle==
+@name       EBM WebRIS Enhanced Style
+@version    20240507.1
+@namespace  ebm-webris-htch
+==/UserStyle== */
+
+@-moz-document url-prefix("https://hlwris.tzuchi.com.tw/webris/"), url-prefix("http://10.2.2.160:8080/") {
+/* For 21:9 screen */
 @media (max-height:1070px) {
 
     /* 報告區的最外框 */
@@ -375,4 +382,5 @@ input[type='radio'][name='chfindcode']:checked:after {
 
 input[type='radio'][name='chfindcode']:checked ~ div {
   color: #ffa500;
+}
 }
