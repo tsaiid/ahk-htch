@@ -1,7 +1,12 @@
 ﻿/* ==UserStyle==
-@name       EBM WebRIS Enhanced Style
-@version    20240507.3
-@namespace  ebm-webris-htch
+@name           EBM WebRIS Enhanced Style
+@version        20240507.4
+@namespace      ebm-webris-htch
+@description    Enhanced UI experience for EBM WebRIS
+@author         I-Ta Tsai
+@updateURL      https://raw.githubusercontent.com/tsaiid/ahk-htch/master/others/ebm-webris.user.styl
+@preprocessor   stylus
+@license        MIT
 ==/UserStyle== */
 @-moz-document url-prefix("https://hlwris.tzuchi.com.tw/webris/"),
 url-prefix("http://10.2.2.160:8080/") {
