@@ -1,6 +1,6 @@
 ﻿/* ==UserStyle==
 @name       EBM WebRIS Enhanced Style
-@version    20240507.1
+@version    20240507.3
 @namespace  ebm-webris-htch
 ==/UserStyle== */
 @-moz-document url-prefix("https://hlwris.tzuchi.com.tw/webris/"),
@@ -202,8 +202,7 @@ url-prefix("http://10.2.2.160:8080/") {
   min-width: 8em;
 }
 */
-
-/* 改 SOAP, 歷史報告字體 */
+    /* 改 SOAP, 歷史報告字體 */
     textarea.textarea.text-16 {
         font-family: "Source Han Code JP";
         font-size: 15px !important;
@@ -254,9 +253,19 @@ url-prefix("http://10.2.2.160:8080/") {
     /*************/
     /*  報告清單  */
     /*************/
-    /* 讓報告清單可以在一頁顯示 20 列 */
-    #app > main > main > div > div.flex-auto > div.px-5 > div.overflow-auto > table tr {
-        height: 2.2em !important;
+    /* For 21:9 screen */
+    @media (max-height:1070px) {
+        /* 讓報告清單可以在一頁顯示 20 列 */
+        #app > main > main > div > div.flex-auto > div.px-5 > div.overflow-auto > table tr {
+            height: 2.2em !important;
+        }
+    }
+    /* For 16:10 screen */
+    @media (min-height:1071px) {
+        /* 讓報告清單可以在一頁顯示 20 列 */
+        #app > main > main > div > div.flex-auto > div.px-5 > div.overflow-auto > table tr {
+            height: 2.5em !important;
+        }
     }
     /* 把已逾期改小字一點 */
     tbody tr td button.btn-outline-danger {
