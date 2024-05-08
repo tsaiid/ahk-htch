@@ -88,6 +88,10 @@ Return
   Send ^!d
 Return
 
+!p::
+  Send ^!p
+Return
+
 ;; Alt + E
 ;; Paste Examname
 !e::
