@@ -25,6 +25,7 @@
 ::hom::homogenous `
 ::p::presence of `
 ::h::however, `
+::t::tiny `
 ::r::residual `
 ::reg::regular `
 ::ireg::irregular `
