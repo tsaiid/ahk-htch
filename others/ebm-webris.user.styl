@@ -1,6 +1,6 @@
 ﻿/* ==UserStyle==
 @name           EBM WebRIS Enhanced Style
-@version        20240507.5
+@version        20240508.1
 @namespace      ebm-webris-htch
 @description    Enhanced UI experience for EBM WebRIS
 @author         I-Ta Tsai
@@ -12,7 +12,6 @@
 url-prefix("http://10.2.2.160:8080/") {
     /* For 21:9 screen */
     @media (max-height: 1070px) {
-
         /* 報告區的最外框 */
         div[style*="height: 630px; width: 58.3333%; left: 41.6667%; top: 300px;"] {
             height: 600px !important;
@@ -27,9 +26,29 @@ url-prefix("http://10.2.2.160:8080/") {
         }
     }
 
-    /* For 16:10 screen */
-    @media (min-height:1071px) {
+    /* For 4K 16:9 screen */
+    @media (min-height:1201px) {
+        /* main 下面的 div */
+        div[style*="height: 930px;"] {
+            height: 1218px !important;
+        }
 
+        /* 報告區的最外框 */
+        div[style*="height: 630px; width: 58.3333%; left: 41.6667%; top: 300px;"] {
+            height: 918px !important;
+        }
+        /* 報告區的內框 非 CT 用 */
+        div[style*="height: 565px;"] {
+            height: 850px !important;
+        }
+        /* 報告區的內框 CT 用 */
+        div[style*="height: 540px;"] {
+            height: 827px !important;
+        }
+    }
+
+    /* For 16:10 screen */
+    @media (min-height:1071px) and (max-height:1200px) {
         /* main 下面的 div */
         div[style*="height: 930px;"] {
             height: 968px !important;
@@ -68,7 +87,6 @@ url-prefix("http://10.2.2.160:8080/") {
     /***************/
     /* For 21:9 screen */
     @media (max-height:1070px) {
-
         /* 歷史報告區最外的 div */
         div[style*="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] {
             height: 840px !important;
@@ -81,8 +99,7 @@ url-prefix("http://10.2.2.160:8080/") {
     }
 
     /* For 16:10 screen */
-    @media (min-height:1071px) {
-
+    @media (min-height:1071px) and (max-height:1200px) {
         /* 歷史報告區最外的 div */
         div[style*="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] {
             height: 908px !important;
@@ -91,6 +108,19 @@ url-prefix("http://10.2.2.160:8080/") {
         /* 歷史報告的外框 */
         div[style*="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] textarea[style*="height: 525px;"] {
             height: 557px !important;
+        }
+    }
+
+    /* For 4K 16:9 screen */
+    @media (min-height:1201px) {
+        /* 歷史報告區最外的 div */
+        div[style*="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] {
+            height: 1158px !important;
+        }
+
+        /* 歷史報告的外框 */
+        div[style*="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] textarea[style*="height: 525px;"] {
+            height: 745px !important;
         }
     }
 
@@ -266,10 +296,17 @@ url-prefix("http://10.2.2.160:8080/") {
         }
     }
     /* For 16:10 screen */
-    @media (min-height:1071px) {
+    @media (min-height:1071px) and (max-height:1200px) {
         /* 讓報告清單可以在一頁顯示 20 列 */
         #app > main > main > div > div.flex-auto > div.px-5 > div.overflow-auto > table tr {
             height: 2.5em !important;
+        }
+    }
+    /* For 4K 16:9 screen */
+    @media (min-height:1201px) {
+        /* 讓報告清單可以在一頁顯示 20 列 */
+        #app > main > main > div > div.flex-auto > div.px-5 > div.overflow-auto > table tr {
+            height: 2.8em !important;
         }
     }
     /* 把已逾期改小字一點 */
