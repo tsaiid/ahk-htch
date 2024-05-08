@@ -1,9 +1,9 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      2024-05-07a
+// @version      20240508a
 // @description  try to take over the world!
-// @author       You
+// @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
 // @match        http://10.2.2.160:8080/risworklist/*
 // @match        http://10.2.2.160:8080/verworklist/*
@@ -138,6 +138,19 @@
             const s = document.querySelector('tr.text-secondary td').textContent;
             prev_examdate = s.replace(/(\d{4})(\d{2})(\d{2})/, '$1-$2-$3');
             console.log(prev_examdate);
+        }
+        // Ctrl+Alt+P: Insert Pathology Date And Report
+        // Remap hotkey to Alt+P in AHK
+        if (ev.ctrlKey && ev.altKey && ev.key === 'p') {
+            console.log("Ctrl+Alt+P: Insert Pathology Date And Report");
+            let pat_date = document.querySelector('tr.text-secondary td:nth-child(2)').textContent;
+            if (pat_date) {
+                pat_date = pat_date.replace(/(\d{4})\/(\d{2})\/(\d{2})/, '$1-$2-$3');
+                const full_pat_report = document.querySelector('div[style="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] textarea').value;
+                const pat_diagnosis = full_pat_report.replace(/.+檢驗後診斷名稱:\n(.+)\n\n報告內容.+$/s, '$1');
+                const formatted_str = `${pat_date}: ${pat_diagnosis}`;
+                document.execCommand('insertText', false, formatted_str);
+            }
         }
         // Ctrl+Alt+D: Insert Prev Exam Date
         // Remap hotkey to Alt+D in AHK
