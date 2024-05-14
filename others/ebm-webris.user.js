@@ -1,8 +1,8 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20240508a
-// @description  try to take over the world!
+// @version      20240514a
+// @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
 // @match        http://10.2.2.160:8080/risworklist/*
@@ -266,7 +266,8 @@
     const simExam = {
         // plain film
         'Chest': ['CHEST', 'Chest AP Portable', 'Chest PA+lateral(R)', 'Chest PA+lateral(L)', 'CHEST PA+Lat(L.R)'],
-        'Chest-Study': ['CHEST', 'Chest AP Portable', 'Chest PA+lateral(R)', 'Chest PA+lateral(L)', 'CHEST PA+Lat(L.R)'],
+        'Chest-Study': ['Chest', 'CHEST', 'Chest AP Portable', 'Chest PA+lateral(R)', 'Chest PA+lateral(L)',
+                        'CHEST PA+Lat(L.R)', 'Lung Low Dose CT-Study'],
         'Chest PA+lateral(L)': ['Chest', 'CHEST', 'Chest AP Portable'],
         'Chest PA+lateral(R)': ['Chest', 'CHEST', 'Chest AP Portable'],
         'Chest AP Portable': ['Chest', 'CHEST'],
@@ -287,7 +288,8 @@
             'LS spine lateral', 'T-L spine AP+Lat', 'TL spine AP+lateral'
         ],
         'LS spine dynamic': ['LS-spine dynamic', 'LS spine AP+lateral', 'LS spine AP'],
-        'LS spine AP': ['LS-spine dynamic', 'LS spine AP+lateral'],
+        'LS spine AP': ['LS-spine dynamic', 'LS spine AP+lateral', 'LS spine dynamic'],
+        'LS spine lateral': ['LS-spine dynamic', 'LS spine AP+lateral'],
         'Coccyx AP+lateral': ['Coccyx lateral'],
         'Whole spine lateral': ['Whole spine AP'],
         'Whole spine AP': ['Whole spine lateral'],
@@ -337,6 +339,7 @@
         'JOINT Shoulder CT': ['Shoulder internal+external(R)', 'Shoulder AP(R)',
                               'Shoulder internal+external(L)', 'Shoulder AP(L)',],
         'PELVIS  Hip  CT': ['Pelvis THR'],
+        'SPINE  Cervical  CT': ['SPINE Cervical MRI', 'C spine AP+ lateral', 'C spine dynamic', 'C spine AP'],
         'SPINE Lumbosacral CT': ['LS spine dynamic', 'LS spine AP', 'LS spine AP+lateral standing', 'LS spine AP+lateral',
                                  'LS spine lateral', 'TL spine AP+lateral standing', 'TL spine AP+lateral',
                                  'SPINE Lumbar  MRI', 'SPINE Lumbosacral MRI'],
@@ -348,7 +351,7 @@
         'SPINE Lumbar  MRI': ['LS spine dynamic', 'LS spine AP', 'LS spine AP+lateral standing', 'LS spine AP+lateral',
                               'LS spine lateral', 'TL spine AP+lateral standing', 'TL spine AP+lateral',
                               'SPINE Lumbosacral MRI'],
-        'SPINE Cervical MRI': ['C spine AP+ lateral', 'C spine dynamic', 'C spine AP'],
+        'SPINE Cervical MRI': ['SPINE  Cervical  CT', 'C spine AP+ lateral', 'C spine dynamic', 'C spine AP'],
         'JOINT Knee MRI': ['Knee AP+lateral standing(both)', 'Merchant view(both)',
                            'Knee AP+lateral standing(R)',
                            'Knee AP+lateral standing(L)'],
