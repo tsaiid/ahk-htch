@@ -55,6 +55,8 @@
 ::idp::intraductal papilloma
 
 ;; Vascular
+::a-a::ascending aorta
+::d-a::descending aorta
 ::ivc::inferior vena cava
 ::svc::superior vena cava
 ::pa::pulmonary artery
