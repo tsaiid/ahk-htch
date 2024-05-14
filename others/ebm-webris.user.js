@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20240514a
+// @version      20240514.2
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -393,19 +393,52 @@
         "#app > main > main > div > div.flex-auto > div.px-5 > div.overflow-auto > table > tbody > tr > td:nth-child(2)"
         , colorizeExamOrigin
     );
+    waitForKeyElements (
+        'div[style="height: 60px; width: 100%; left: 0%; top: 0px;"] input[title="來源"]'
+        , colorizeExamOrigin
+    );
 
     function colorizeExamOrigin(jNode) {
-        //console.log(jNode);
+        //console.log(jNode.get(0).nodeName);
+        //console.log(jNode[0].nodeType);
         //console.log(jNode.val());
-        switch (jNode[0].textContent) {
-            case '住院':
-                jNode.first().addClass('hl-examorigin-adm');
+        let examOriginStr;
+        switch (jNode.get(0).nodeName) {
+            case 'TD':
+                examOriginStr = jNode[0].textContent;
+                switch (examOriginStr) {
+                    case '住院':
+                        jNode.first().addClass('hl-examorigin-adm');
+                        break;
+                    case '急診':
+                        jNode.first().addClass('hl-examorigin-er');
+                        break;
+                    case '健檢':
+                        jNode.first().addClass('hl-examorigin-hc');
+                        break;
+                    case '門診':
+                        jNode.first().addClass('hl-examorigin-opd');
+                        break;
+                    default:
+                }
                 break;
-            case '急診':
-                jNode.first().addClass('hl-examorigin-er');
-                break;
-            case '健檢':
-                jNode.first().addClass('hl-examorigin-hc');
+            case 'INPUT':
+                examOriginStr = jNode[0].value;
+                switch (examOriginStr) {
+                    case '住院':
+                        jNode.first().css('style', 'color: #be99ff !important');
+                        break;
+                    case '急診':
+                        jNode.first().css('style', 'color: #ff62ac !important');
+                        break;
+                    case '健檢':
+                        jNode.first().css('style', 'color: #f0f0bb !important');
+                        break;
+                    case '門診':
+                        jNode.first().attr('style', 'color: #a9f0aa !important');
+                        break;
+                    default:
+                }
                 break;
             default:
         }
