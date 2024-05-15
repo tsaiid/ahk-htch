@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20240515.1
+// @version      20240515.2
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -390,7 +390,7 @@
 
     /* highlight origin */
     waitForKeyElements (
-        "#app > main > main > div > div.flex-auto > div.px-5 > div.overflow-auto > table > tbody > tr > td:nth-child(2)"
+        "main table > tbody > tr > td:nth-child(2)"
         , colorizeExamOrigin
     );
     waitForKeyElements (
