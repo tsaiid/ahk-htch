@@ -1,6 +1,6 @@
 ﻿/* ==UserStyle==
 @name           EBM WebRIS Enhanced Style
-@version        20240514.1
+@version        20240515.2
 @namespace      ebm-webris-htch
 @description    Enhanced UI experience for EBM WebRIS
 @author         I-Ta Tsai
@@ -17,12 +17,12 @@ url-prefix("http://10.2.2.160:8080/") {
             height: 600px !important;
         }
         /* 報告區的內框 非 CT 用 */
-        div[style*="height: 565px;"] {
-            height: 538px !important;
+        div[style*="height: 630px; width: 58.3333%; left: 41.6667%; top: 300px;"] div[style*="height: 565px;"] {
+            height: 551px !important;
         }
         /* 報告區的內框 CT 用 */
-        div[style*="height: 540px;"] {
-            height: 514px !important;
+        div[style*="height: 630px; width: 58.3333%; left: 41.6667%; top: 300px;"] div[style*="height: 540px;"] {
+            height: 530px !important;
         }
     }
 
@@ -38,11 +38,11 @@ url-prefix("http://10.2.2.160:8080/") {
             height: 918px !important;
         }
         /* 報告區的內框 非 CT 用 */
-        div[style*="height: 565px;"] {
+        div[style*="height: 630px; width: 58.3333%; left: 41.6667%; top: 300px;"] div[style*="height: 565px;"] {
             height: 850px !important;
         }
         /* 報告區的內框 CT 用 */
-        div[style*="height: 540px;"] {
+        div[style*="height: 630px; width: 58.3333%; left: 41.6667%; top: 300px;"] div[style*="height: 540px;"] {
             height: 827px !important;
         }
     }
@@ -59,11 +59,11 @@ url-prefix("http://10.2.2.160:8080/") {
             height: 663px !important;
         }
         /* 報告區的內框 非 CT 用 */
-        div[style*="height: 565px;"] {
+        div[style*="height: 630px; width: 58.3333%; left: 41.6667%; top: 300px;"] div[style*="height: 565px;"] {
             height: 606px !important;
         }
         /* 報告區的內框 CT 用 */
-        div[style*="height: 540px;"] {
+        div[style*="height: 630px; width: 58.3333%; left: 41.6667%; top: 300px;"] div[style*="height: 540px;"] {
             height: 582px !important;
         }
     }
@@ -198,8 +198,8 @@ url-prefix("http://10.2.2.160:8080/") {
     }
 
     /* 改 Quill Editor 字體 */
-    #quillContainer,
-    #quillContainer p span {
+    #quill2Container,
+    #quill2Container p span {
         font-family: "Source Han Code JP";
         font-size: 16px !important;
         font-weight: 100;
