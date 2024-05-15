@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20240514.2
+// @version      20240515.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -423,21 +423,16 @@
                 }
                 break;
             case 'INPUT':
+                //console.log(jNode[0].value);
                 examOriginStr = jNode[0].value;
-                switch (examOriginStr) {
-                    case '住院':
-                        jNode.first().css('style', 'color: #be99ff !important');
-                        break;
-                    case '急診':
-                        jNode.first().css('style', 'color: #ff62ac !important');
-                        break;
-                    case '健檢':
-                        jNode.first().css('style', 'color: #f0f0bb !important');
-                        break;
-                    case '門診':
-                        jNode.first().attr('style', 'color: #a9f0aa !important');
-                        break;
-                    default:
+                if (examOriginStr.match(/^住院/)) {
+                    jNode.first().attr('style', 'color: #be99ff !important');
+                } else if (examOriginStr == '急診') {
+                    jNode.first().attr('style', 'color: #ff62ac !important');
+                } else if (examOriginStr == '健檢') {
+                    jNode.first().attr('style', 'color: #f0f0bb !important');
+                } else if (examOriginStr == '門診') {
+                    jNode.first().attr('style', 'color: #a9f0aa !important');
                 }
                 break;
             default:
