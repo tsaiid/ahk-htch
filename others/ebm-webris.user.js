@@ -189,7 +189,7 @@
         // Select Btn Negative
         if (ev.altKey && ev.key === '1') {
             //console.log("a");
-            const btn1 = document.querySelector('div.main > div > div > div:nth-child(6) > div > div.flex.items-center.flex-wrap.text-16 > label:nth-child(1) > input');
+            const btn1 = document.querySelector('input[name="chfindcode"][value="1"]');
             if (btn1) {
                 btn1.click();
             }
@@ -198,7 +198,7 @@
         // Select Btn No Sig Finding
         if (ev.altKey && ev.key === '2') {
             //console.log("a");
-            const btn2 = document.querySelector('div.main > div > div > div:nth-child(6) > div > div.flex.items-center.flex-wrap.text-16 > label:nth-child(2) > input');
+            const btn2 = document.querySelector('input[name="chfindcode"][value="2"]');
             if (btn2) {
                 btn2.click();
             }
@@ -207,7 +207,7 @@
         // Select Btn Sig Finding
         if (ev.altKey && ev.key === '3') {
             //console.log("a");
-            const btn3 = document.querySelector('div.main > div > div > div:nth-child(6) > div > div.flex.items-center.flex-wrap.text-16 > label:nth-child(3) > input');
+            const btn3 = document.querySelector('input[name="chfindcode"][value="3"]');
             if (btn3) {
                 btn3.click();
             }
@@ -216,7 +216,7 @@
         // Select Btn Tumor
         if (ev.altKey && ev.key === '4') {
             //console.log("a");
-            const btn4 = document.querySelector('div.main > div > div > div:nth-child(6) > div > div.flex.items-center.flex-wrap.text-16 > label:nth-child(4) > input');
+            const btn4 = document.querySelector('input[name="chfindcode"][value="4"]');
             if (btn4) {
                 btn4.click();
             }
