@@ -259,6 +259,7 @@ execute_shuttlepro(key,layer)
       } Else If (key = 4) {
         Send, {F1}		; Chest window
       } Else If (key = 5) {
+				Send, !t			; Toggle OST
       } Else If (key = 6) {
       } Else If (key = 7) {
       } Else If (key = 8) {

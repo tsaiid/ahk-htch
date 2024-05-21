@@ -126,6 +126,10 @@ Return
   Send ^9
 Return
 
+!Esc::
+  Send {F4}   ; Quit without Save
+Return
+
 ;; Remap Kana Key
 ;;; Formatting IMPRESSION
 ;;;; Reorder Seleted Text And Discard SeIm
