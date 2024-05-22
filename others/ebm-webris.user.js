@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20240522.1
+// @version      20240522.2
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -81,8 +81,8 @@
             console.log("Ctrl+4: Open Infinitt");
             const lid = "A60076"; // Infinitt userid
             const lpw = "A60076"; // Infinitt passwd
-            const pid = document.querySelector('input[title="病歷號碼"]').value;
-            const an = document.querySelector('input[title="檢查單號"]').value;
+            const pid = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(3) input').value;
+            const an = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(4) input').value;
             const infinitt_url = (!isEdge ? "microsoft-edge:" : "") + `http://10.2.2.30/pkg_pacs/external_interface.aspx?LID=${lid}&LPW=${lpw}&AN=${an}&PID=${pid}`;
             window.open(infinitt_url, '_blank', 'height=100,width=200,screenX=0,toolbar=0,menubar=0,status=1');
             console.log(infinitt_url);
@@ -111,7 +111,7 @@
             // save prev report date into a var for further pasting
             const s = document.querySelector('tr.text-secondary td').textContent;
             prev_examdate = s.replace(/(\d{4})\/(\d{2})\/(\d{2})/, '$1-$2-$3');
-            prev_examdate_pid = document.querySelector('input[title="病歷號碼"]').value;
+            prev_examdate_pid = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(3) input').value;
             //console.log(prev_examdate);
         }
         // Ctrl+9: Copy report with opening images
@@ -126,7 +126,7 @@
                 'bubbles': true,
                 'cancelable': true
             });
-            const examName = document.querySelector('input[title="檢查項目"]');
+            const examName = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(11) input');
             switch (examName.value) {
                 case 'Chest':
                 case 'KUB':
@@ -163,7 +163,7 @@
         if (ev.ctrlKey && ev.altKey && ev.key === 'd') {
             console.log("Ctrl+Alt+D: Insert Prev Exam Date");
             //navigator.clipboard.writeText(prev_examdate);
-            const curr_pid = document.querySelector('input[title="病歷號碼"]').value;
+            const curr_pid = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(3) input').value;
             if (curr_pid === prev_examdate_pid) {
                 document.execCommand('insertText', false, prev_examdate);
             }
@@ -172,10 +172,10 @@
         // Remap hotkey to Ctrl+Alt+Shift+E in AHK
         if (ev.ctrlKey && ev.altKey && ev.key === 'f') {
             console.log("Ctrl+Alt+F: Insert Exam Name and Contrast");
-            const i1 = document.querySelector('input[title="檢查項目"]');
+            const i1 = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(11) input');
             if (i1) {
                 let examname = i1.value;
-                const i2 = document.querySelector('input[title="顯影劑"]');
+                const i2 = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(7) input');
                 if (i2 && i2.value && CONTRAST_STR.hasOwnProperty(i2.value)) {
                     examname += CONTRAST_STR[i2.value];
                 }
@@ -186,7 +186,7 @@
         // Remap hotkey to Alt+E in AHK
         if (ev.ctrlKey && ev.altKey && ev.key === 'e') {
             console.log("Ctrl+Alt+E: Insert Exam Name");
-            const i = document.querySelector('input[title="檢查項目"]');
+            const i = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(11) input');
             if (i) {
                 document.execCommand('insertText', false, i.value + ":\n\n");
             }
@@ -257,15 +257,18 @@
     );
 
     function highlightSimilarExam(jNode) {
-        const currExamName = document.querySelector('input[title="檢查項目"]').value;
+        const currExamNameInput = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(11) input');
+        const currExamName = currExamNameInput ? currExamNameInput.value : null;
         //console.log(jNode[0]);
-        const prevExamName = jNode[0].textContent;
-        if (prevExamName === currExamName || prevExamName === currExamName.replace(/ /g, '')) {
-            jNode.first().addClass('hl-same-report');
-        } else if (isSimilarExam(prevExamName, currExamName)) {
-            //console.log("檢查項目: " + currExamName);
-            //console.log(jNode.first());
-            jNode.first().addClass('hl-sim-report');
+        if (currExamName) {
+            const prevExamName = jNode[0].textContent;
+            if (prevExamName === currExamName || prevExamName === currExamName.replace(/ /g, '')) {
+                jNode.first().addClass('hl-same-report');
+            } else if (isSimilarExam(prevExamName, currExamName)) {
+                //console.log("檢查項目: " + currExamName);
+                //console.log(jNode.first());
+                jNode.first().addClass('hl-sim-report');
+            }
         }
     }
 
@@ -400,7 +403,7 @@
         , colorizeExamOrigin
     );
     waitForKeyElements (
-        'div[style="height: 60px; width: 100%; left: 0%; top: 0px;"] input[title="來源"]'
+        'div[style="width: 99%;"] div.grow-0.h-10:nth-child(12) input'
         , colorizeExamOrigin
     );
 
@@ -447,7 +450,7 @@
 
     /* highlight patient name */
     waitForKeyElements (
-        "#app > main > main > div > div.flex-auto > div.px-5 > div.overflow-auto > table > tbody > tr > td:nth-child(5)"
+        "main table > tbody > tr > td:nth-child(5)"
         , colorizeBundledExam
     );
 
