@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20240521.1
+// @version      20240522.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -44,10 +44,16 @@
         // Ctrl+I: Insert indication
         if (ev.ctrlKey && ev.altKey && ev.key === 'i') {
             console.log("Ctrl+I: Insert indication");
-            let soap_o = document.querySelector('#app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(3) > div > div > textarea').value;
+            let soap_o = document.querySelector('div[style="height: 930px;"] > div:nth-child(3) textarea').value;
             let found_indication = soap_o.match(/檢查目的：(.+)/);
             if (found_indication) {
                 document.execCommand('insertText', false, found_indication[1]);
+            } else {
+                let soap_a = document.querySelector('div[style="height: 930px;"] > div:nth-child(4) textarea').value;
+                found_indication = soap_a.match(/【檢查目的】\n(.+?)\n/s);
+                if (found_indication) {
+                    document.execCommand('insertText', false, found_indication[1]);
+                }
             }
         }
 
