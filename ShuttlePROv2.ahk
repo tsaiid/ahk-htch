@@ -275,6 +275,7 @@ execute_shuttlepro(key,layer)
       } Else If (key = 13) {
         Send, w				; Sync
       } Else If (key = 14) {
+        Send, !p			; Sync Sizing
       } Else If (key = 15) {
         Send, ^!w			; Sync Window Center/Level
       }
