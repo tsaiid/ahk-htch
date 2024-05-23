@@ -290,14 +290,14 @@ CopyPidAndLaunchPacsWorklist()
   Run %pacs_api%
 }
 
-;; for LibreOffice Calc
+;; for 檢查排程系統
 #IfWinActive ahk_exe ExmSchSys.EXE
 #c::
   CopyPidAndLaunchPacsWorklist()
 Return
 #IfWinActive  ; for ahk_exe ExmSchSys.EXE
 
-;; for 檢查排程系統
+;; for LibreOffice Calc
 #IfWinActive - LibreOffice Calc
 #c::
   CopyPidAndLaunchPacsWorklist()
