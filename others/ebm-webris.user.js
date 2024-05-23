@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20240522.2
+// @version      20240523.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -348,6 +348,7 @@
         'JOINT Shoulder CT': ['Shoulder internal+external(R)', 'Shoulder AP(R)',
                               'Shoulder internal+external(L)', 'Shoulder AP(L)',],
         'PELVIS  Hip  CT': ['Pelvis THR'],
+        'JOINT Ankle  CT': ['Ankle AP+lateral(R)', 'Ankle AP+lateral(L)'],
         'SPINE  Cervical  CT': ['SPINE Cervical MRI', 'C spine AP+ lateral', 'C spine dynamic', 'C spine AP'],
         'SPINE Lumbosacral CT': ['LS spine dynamic', 'LS spine AP', 'LS spine AP+lateral standing', 'LS spine AP+lateral',
                                  'LS spine lateral', 'TL spine AP+lateral standing', 'TL spine AP+lateral',
