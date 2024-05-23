@@ -255,7 +255,7 @@ Return
 ::ic::inflammatory change
 ::infl::inflammation
 ::cd::consolidation
-::cdv::consolidative
+::cdv::consolidative `
 ::nc::noncontrast-enhanced study
 ::ce::contrast-enhanced study
 ::sc::surgical clips
