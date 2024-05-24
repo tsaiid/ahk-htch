@@ -119,14 +119,14 @@ Return
   Send ^0
 Return
 
-^+Esc::
+!Esc::
 ;  CopyReportPath := "4.1.1.4.3.1.1.3.2.1.3.1.1.1.8.1.1.2.3.1"
 ;  btnObj := Acc_Get("Object", CopyReportPath, 0, "WebRIS")
 ;  btnObj.accDoDefaultAction(0)
   Send ^9
 Return
 
-!Esc::
+!q::
   Send {F4}   ; Quit without Save
 Return
 
