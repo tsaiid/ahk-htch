@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20240523.1
+// @version      20240524.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -114,11 +114,10 @@
             prev_examdate_pid = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(3) input').value;
             //console.log(prev_examdate);
         }
-        // Ctrl+9: Copy report with opening images
-        // Remap hotkey to Ctrl+Shift+Esc in AHK
+        // Ctrl+9: Open previous images
+        // Remap hotkey to Alt+Esc in AHK
         if (ev.ctrlKey && ev.key === '9') {
-            console.log("Ctrl+9: Copy report with opening images");
-            copyReportBtn.click();
+            console.log("Ctrl+9: Open previous images");
 
             // double click the prev report to open in PACS
             var dblClickEvent = new MouseEvent('dblclick', {
@@ -126,24 +125,10 @@
                 'bubbles': true,
                 'cancelable': true
             });
-            const examName = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(11) input');
-            switch (examName.value) {
-                case 'Chest':
-                case 'KUB':
-                case 'Sono Thyroid glands':
-                case 'Sono Abdomen':
-                case 'Sono Breasts':
-                case 'Abdominal ultrasound, for follow-up':
-                case 'Sono CDU  Kideny':
-                    break;
-                default:
-                    document.querySelector("#frameHistory tr.text-secondary").dispatchEvent(dblClickEvent);
+            let selectedPrevReport = document.querySelector("#frameHistory tr.text-secondary");
+            if (selectedPrevReport) {
+                selectedPrevReport.dispatchEvent(dblClickEvent);
             }
-
-            // save prev report date into a var for further pasting
-            const s = document.querySelector('tr.text-secondary td').textContent;
-            prev_examdate = s.replace(/(\d{4})(\d{2})(\d{2})/, '$1-$2-$3');
-            console.log(prev_examdate);
         }
         // Ctrl+Alt+P: Insert Pathology Date And Report
         // Remap hotkey to Alt+P in AHK
@@ -259,7 +244,7 @@
     function highlightSimilarExam(jNode) {
         const currExamNameInput = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(11) input');
         const currExamName = currExamNameInput ? currExamNameInput.value : null;
-        //console.log(jNode[0]);
+        //console.log(jNode.first().siblings('td').first().text());
         if (currExamName) {
             const prevExamName = jNode[0].textContent;
             if (prevExamName === currExamName || prevExamName === currExamName.replace(/ /g, '')) {
@@ -296,7 +281,7 @@
             'LS spine AP+lateral', 'LS spine AP Lat', 'LS spine dynamic',
             'LS spine lateral', 'T-L spine AP+Lat', 'TL spine AP+lateral'
         ],
-        'LS spine dynamic': ['LS-spine dynamic', 'LS spine AP+lateral', 'LS spine AP'],
+        'LS spine dynamic': ['LS-spine dynamic', 'LS spine AP+lateral', 'LS spine AP+lateral standing', 'LS spine AP'],
         'LS spine AP': ['LS-spine dynamic', 'LS spine AP+lateral', 'LS spine dynamic'],
         'LS spine lateral': ['LS-spine dynamic', 'LS spine AP+lateral'],
         'Coccyx AP+lateral': ['Coccyx lateral'],
@@ -363,8 +348,8 @@
                               'SPINE Lumbosacral MRI'],
         'SPINE Cervical MRI': ['SPINE  Cervical  CT', 'C spine AP+ lateral', 'C spine dynamic', 'C spine AP'],
         'JOINT Knee MRI': ['Knee AP+lateral standing(both)', 'Merchant view(both)',
-                           'Knee AP+lateral standing(R)',
-                           'Knee AP+lateral standing(L)'],
+                           'Knee AP+lateral standing(R)', 'Knee AP+lateral standing(L)',
+                           'Knee AP+lateral(R)', 'Knee AP+lateral(L)'],
         'JOINT Shoulder MRI': [
             'Shoulder internal+external(L)', 'Shoulder internal+external(R)', 'Shoulder internal+external(both)',
             'Shoulder AP(both)', 'Shoulder axial(both)', 'Scapula Y view(both)',
@@ -487,6 +472,58 @@
             const reportDrTd = jNode.next().next().next();
             reportDrTd.addClass('dk-incompleted-report');
             //console.log(reformattedExamDate);
+        }
+    }
+
+    /* highlight date by day */
+    waitForKeyElements (
+        '#frameHistory tr.text-secondary'
+        , clickSimilarReport
+    );
+
+    var foundSimilarReportAccNo = '';
+    function clickSimilarReport(jNode) {
+        //console.log(jNode);
+        //console.log('textarea: ' + t.value);
+        const currExamNameInput = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(11) input');
+        const currExamName = currExamNameInput ? currExamNameInput.value : null;
+        //console.log(jNode.first().siblings('td').first().text());
+        if (currExamName) {
+            const prevExams = document.querySelectorAll('#frameHistory tbody tr');
+            const currExamDateTime = new Date(document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(5) input').value + ' ' + document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(6) input').value);
+            for (let i = 0; prevExams[i]; i++) {
+                const prevExamName = prevExams[i].children[4].textContent;
+                const prevExamDateTime = new Date(prevExams[i].children[0].textContent.split('*')[0] + ' ' + prevExams[i].children[1].textContent);
+                if (currExamDateTime > prevExamDateTime
+                    && (prevExamName === currExamName
+                        || prevExamName === currExamName.replace(/ /g, '')
+                        || isSimilarExam(prevExamName, currExamName))) {
+                    console.log("found for click= i: " + i + "; pe: " + prevExamName + '; pdt: ' + prevExamDateTime.toISOString() + '; cdt: ' + currExamDateTime.toISOString());
+                    const accNo = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(4) input').value;
+                    if (accNo != foundSimilarReportAccNo) {
+                        setTimeout(() => {
+                            console.log("Delayed for 1 second.");
+
+                            console.log("first run for this exam: " + accNo);
+                            const t = document.querySelector('div[style="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] textarea');
+                            console.log("current textarea: " + t.value);
+                            prevExams[i].click();
+                            console.log("after click textarea: " + t.value);
+                            foundSimilarReportAccNo = accNo;
+
+                            // scroll to selected report
+                            const frameHistory = document.querySelector("#frameHistory");
+                            //const selectedReport = document.querySelector("#frameHistory tr.text-secondary");
+                            console.log(`before frameHistory top: ${frameHistory.scrollTop}; selectedReport top: ${prevExams[i].offsetTop}`);
+                            frameHistory.scrollTop = prevExams[i].offsetTop > 206 ? prevExams[i].offsetTop : 0;
+                            console.log(`after frameHistory top: ${frameHistory.scrollTop}; selectedReport top: ${prevExams[i].offsetTop}`);
+                        }, 1000);
+                    } else {
+                        console.log("not first run");
+                    }
+                    break;
+                }
+            };
         }
     }
 
