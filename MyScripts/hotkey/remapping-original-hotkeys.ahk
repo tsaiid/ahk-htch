@@ -287,7 +287,7 @@ CopyPidAndLaunchPacsWorklist()
       PID=%Clipboard%
   )
   ;MsgBox %pacs_api%
-  Run %pacs_api%
+  Run msedge.exe --app=%pacs_api%
 }
 
 ;; for 檢查排程系統
