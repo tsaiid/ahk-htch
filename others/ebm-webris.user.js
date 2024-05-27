@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20240527.1
+// @version      20240527.2
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -259,9 +259,13 @@
                 foundReport = true;
             }
             if (foundReport) {
-                const currExamDateTime = new Date(document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(5) input').value + ' ' + document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(6) input').value);
+                const currExamDateStr = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(5) input').value;
+                const currExamTimeStr = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(6) input').value;
+                const currExamDateTime = new Date(currExamDateStr + ' ' + currExamTimeStr);
                 const prevExamTr = jNode.first().parent();
-                const prevExamDateTime = new Date(prevExamTr.children().eq(0).text().split('*')[0] + ' ' + prevExamTr.children().eq(1).text());
+                const prevExamDateStr = prevExamTr.children().eq(0).text().split('*')[0];
+                const prevExamTimeStr = prevExamTr.children().eq(1).text();
+                const prevExamDateTime = new Date(prevExamDateStr + ' ' + prevExamTimeStr);
                 if (currExamDateTime > prevExamDateTime) {
                     const accNo = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(4) input').value;
                     if (accNo != foundSimilarReportAccNo) {
@@ -279,7 +283,7 @@
                         }, 1000);
 
                     } else {
-                        console.log("not first run: " + prevExamDateTime + ': ' + prevExamName);
+                        //console.log("not first run: " + prevExamDateTime + ': ' + prevExamName);
                     }
                 }
             }
@@ -380,6 +384,7 @@
                               'LS spine lateral', 'TL spine AP+lateral standing', 'TL spine AP+lateral',
                               'SPINE Lumbosacral MRI'],
         'SPINE Cervical MRI': ['SPINE  Cervical  CT', 'C spine AP+ lateral', 'C spine dynamic', 'C spine AP'],
+
         'JOINT Knee MRI': ['Knee AP+lateral standing(both)', 'Merchant view(both)',
                            'Knee AP+lateral standing(R)', 'Knee AP+lateral standing(L)',
                            'Knee AP+lateral(R)', 'Knee AP+lateral(L)'],
@@ -389,6 +394,8 @@
         ],
         'JOINT Ankle MRI': ['Ankle stress view(R)'],
         'JOINT Wrist MRI': ['Wrist PA+lateral(R)', 'Wrist PA+lateral(L)'],
+
+        'ABDOMEN Liver MRI': ['Abdomen  Liver 4 Phase CT', 'Abdomen  Liver Triple Phase CT'],
 
         // Breast
         'CHEST Breast MRI': ['Sono Breasts', 'SonoBreasts', 'Breasts sono'],
