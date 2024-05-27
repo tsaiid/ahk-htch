@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20240527.2
+// @version      20240527.3
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -279,7 +279,7 @@
 
                             // scroll to selected report
                             const frameHistory = document.querySelector("#frameHistory");
-                            frameHistory.scrollTop = jNode.get(0).offsetTop > 206 ? jNode.get(0).offsetTop : 0;
+                            frameHistory.scrollTop = (jNode.get(0).offsetTop + jNode.get(0).clientHeight > frameHistory.clientHeight) ? jNode.get(0).offsetTop : 0;
                         }, 1000);
 
                     } else {
