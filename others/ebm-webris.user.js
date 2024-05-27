@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20240524.1
+// @version      20240527.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -238,21 +238,50 @@
 
     waitForKeyElements (
         "#frameHistory tbody tr td:nth-child(5)"
-        , highlightSimilarExam
+        , highlightSimilarExamAndClickLatest
     );
 
-    function highlightSimilarExam(jNode) {
+    var foundSimilarReportAccNo = '';
+    function highlightSimilarExamAndClickLatest(jNode) {
         const currExamNameInput = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(11) input');
         const currExamName = currExamNameInput ? currExamNameInput.value : null;
         //console.log(jNode.first().siblings('td').first().text());
         if (currExamName) {
             const prevExamName = jNode[0].textContent;
+            let foundReport = false;
             if (prevExamName === currExamName || prevExamName === currExamName.replace(/ /g, '')) {
                 jNode.first().addClass('hl-same-report');
+                foundReport = true;
             } else if (isSimilarExam(prevExamName, currExamName)) {
                 //console.log("檢查項目: " + currExamName);
                 //console.log(jNode.first());
                 jNode.first().addClass('hl-sim-report');
+                foundReport = true;
+            }
+            if (foundReport) {
+                const currExamDateTime = new Date(document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(5) input').value + ' ' + document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(6) input').value);
+                const prevExamTr = jNode.first().parent();
+                const prevExamDateTime = new Date(prevExamTr.children().eq(0).text().split('*')[0] + ' ' + prevExamTr.children().eq(1).text());
+                if (currExamDateTime > prevExamDateTime) {
+                    const accNo = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(4) input').value;
+                    if (accNo != foundSimilarReportAccNo) {
+                        console.log(prevExamDateTime + ': ' + jNode.first().text());
+                        foundSimilarReportAccNo = accNo;
+
+                        // Delayed for 1 second
+                        setTimeout(() => {
+                            //console.log("first run for this exam: " + accNo);
+                            jNode.first().click();
+
+                            // scroll to selected report
+                            const frameHistory = document.querySelector("#frameHistory");
+                            frameHistory.scrollTop = jNode.get(0).offsetTop > 206 ? jNode.get(0).offsetTop : 0;
+                        }, 1000);
+
+                    } else {
+                        console.log("not first run: " + prevExamDateTime + ': ' + prevExamName);
+                    }
+                }
             }
         }
     }
@@ -266,13 +295,15 @@
         'Chest PA+lateral(R)': ['Chest', 'CHEST', 'Chest AP Portable'],
         'Chest AP Portable': ['Chest', 'CHEST'],
         'KUB': ['ABDOMEN KUB', 'KUB Portable'],
+        'KUB Portable': ['ABDOMEN KUB', 'KUB'],
         'Abdomen standing': ['KUB', 'ABDOMEN KUB', 'KUB Portable'],
 
         'C spine dynamic': ['C spine AP', 'C spine AP+ lateral'],
         'C spine AP': ['C spine dynamic', 'C spine AP+ lateral'],
         'C spine AP+ lateral': ['C spine dynamic', 'C spine AP'],
         'T spine AP+lateral': ['TL spine AP+lateral', 'TL spine AP+lateral standing', 'T-L spine AP+Lat'],
-        'TL spine AP+lateral': ['TL spine AP+lateral standing', 'T-L spine AP+Lat', 'LS spine lateral standing'],
+        'TL spine AP+lateral': ['TL spine AP+lateral standing', 'T-L spine AP+Lat',
+                                'LS spine lateral standing', 'LS spine AP+lateral'],
         'LS spine AP+lateral': [
             'LS spine AP+lateral standing', 'LS spine AP Lat', 'LS spine dynamic', 'LS-spine dynamic',
             'LS spine lateral', 'T-L spine AP+Lat', 'TL spine AP+lateral'
@@ -298,8 +329,10 @@
         'Elbow AP+lateral(R)': ['Elbow oblique(R)'],
         'Elbow oblique(L)': ['Elbow AP+lateral(L)'],
         'Elbow AP+lateral(L)': ['Elbow oblique(L)'],
-        'Knee AP+lateral(R)': ['JOINT Knee CT'],
-        'Knee AP+lateral(L)': ['JOINT Knee CT'],
+        'Wrist PA ulnar deviation(R)': ['Wrist PA+lateral(R)'],
+        'Wrist PA ulnar deviation(L)': ['Wrist PA+lateral(L)'],
+        'Knee AP+lateral(R)': ['Knee AP+lateral standing(R)', 'JOINT Knee CT'],
+        'Knee AP+lateral(L)': ['Knee AP+lateral standing(L)', 'JOINT Knee CT'],
         'Pelvis THR': ['Hip lateral(R)', 'Hip lateral(L)', 'KUB'],
         'Hip lateral(R)': ['Pelvis THR'],
         'Hip lateral(L)': ['Pelvis THR'],
@@ -472,58 +505,6 @@
             const reportDrTd = jNode.next().next().next();
             reportDrTd.addClass('dk-incompleted-report');
             //console.log(reformattedExamDate);
-        }
-    }
-
-    /* highlight date by day */
-    waitForKeyElements (
-        '#frameHistory tr.text-secondary'
-        , clickSimilarReport
-    );
-
-    var foundSimilarReportAccNo = '';
-    function clickSimilarReport(jNode) {
-        //console.log(jNode);
-        //console.log('textarea: ' + t.value);
-        const currExamNameInput = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(11) input');
-        const currExamName = currExamNameInput ? currExamNameInput.value : null;
-        //console.log(jNode.first().siblings('td').first().text());
-        if (currExamName) {
-            const prevExams = document.querySelectorAll('#frameHistory tbody tr');
-            const currExamDateTime = new Date(document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(5) input').value + ' ' + document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(6) input').value);
-            for (let i = 0; prevExams[i]; i++) {
-                const prevExamName = prevExams[i].children[4].textContent;
-                const prevExamDateTime = new Date(prevExams[i].children[0].textContent.split('*')[0] + ' ' + prevExams[i].children[1].textContent);
-                if (currExamDateTime > prevExamDateTime
-                    && (prevExamName === currExamName
-                        || prevExamName === currExamName.replace(/ /g, '')
-                        || isSimilarExam(prevExamName, currExamName))) {
-                    console.log("found for click= i: " + i + "; pe: " + prevExamName + '; pdt: ' + prevExamDateTime.toISOString() + '; cdt: ' + currExamDateTime.toISOString());
-                    const accNo = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(4) input').value;
-                    if (accNo != foundSimilarReportAccNo) {
-                        setTimeout(() => {
-                            console.log("Delayed for 1 second.");
-
-                            console.log("first run for this exam: " + accNo);
-                            const t = document.querySelector('div[style="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] textarea');
-                            console.log("current textarea: " + t.value);
-                            prevExams[i].click();
-                            console.log("after click textarea: " + t.value);
-                            foundSimilarReportAccNo = accNo;
-
-                            // scroll to selected report
-                            const frameHistory = document.querySelector("#frameHistory");
-                            //const selectedReport = document.querySelector("#frameHistory tr.text-secondary");
-                            console.log(`before frameHistory top: ${frameHistory.scrollTop}; selectedReport top: ${prevExams[i].offsetTop}`);
-                            frameHistory.scrollTop = prevExams[i].offsetTop > 206 ? prevExams[i].offsetTop : 0;
-                            console.log(`after frameHistory top: ${frameHistory.scrollTop}; selectedReport top: ${prevExams[i].offsetTop}`);
-                        }, 1000);
-                    } else {
-                        console.log("not first run");
-                    }
-                    break;
-                }
-            };
         }
     }
 
