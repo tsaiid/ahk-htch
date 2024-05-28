@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20240527.3
+// @version      20240529.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -33,6 +33,16 @@
         X6C: " without and with contrast medium"
     };
 
+    function isSameExam(prevExamName, currExamName) {
+        return (prevExamName === currExamName || prevExamName === currExamName.replace(/ /g, ''));
+    }
+    function isSimilarExam(prevExamName, currExamName) {
+        return (simExam[currExamName] && simExam[currExamName].includes(prevExamName));
+    }
+    function isRelatedReport(prevExamName, currExamName) {
+        return isSameExam(prevExamName, currExamName) || isSimilarExam(prevExamName, currExamName);
+    }
+
     document.addEventListener('keydown', (ev) => {
         let nextReportChkBox = document.querySelector("div.footer input");
         let prevReportTab = document.querySelector('div[style="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)');
@@ -40,6 +50,28 @@
         let labReportTab = document.querySelector('div[style="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] > div > div:nth-child(1) > div:nth-child(3) > div:nth-child(1)');
         let openHisBtn = document.querySelectorAll('div.footer div.pt-1 button')[2];
         let copyReportBtn = document.querySelector('button[title="複製內容"]');
+
+        // Ctrl+]: find next similar report
+        if (ev.ctrlKey && ev.key === ']') {
+            console.log("Ctrl+]: find next similar report");
+            const currExamNameInput = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(11) input');
+            const currExamName = currExamNameInput ? currExamNameInput.value : null;
+            const currTr = document.querySelector('#frameHistory tr.text-secondary');
+            const frameHistoryTr = document.querySelectorAll('#frameHistory tbody tr');
+            if (currExamName) {
+                let i = [...frameHistoryTr].indexOf(currTr) > -1 ? [...frameHistoryTr].indexOf(currTr) + 1 : 0;
+                for (; i < frameHistoryTr.length; i++) {
+                    const prevExamName = frameHistoryTr[i].children[4].textContent;
+                    //console.log(prevExamName + ': ' + isRelatedReport(prevExamName, currExamName));
+                    if (isRelatedReport(prevExamName, currExamName)) {
+                        frameHistoryTr[i].click();
+                        const frameHistory = document.querySelector('#frameHistory');
+                        console.log('tr top: ' + frameHistoryTr[i].offsetTop + '; div top: ' + frameHistory.offsetTop + '; div height: ' + frameHistory.clientHeight);
+                        break;
+                    }
+                }
+            }
+        }
 
         // Ctrl+I: Insert indication
         if (ev.ctrlKey && ev.altKey && ev.key === 'i') {
@@ -403,10 +435,6 @@
         // Angio
         'Lipiodol T.A.E.(trans-arterial embolization)-Lipiodol': ['血管阻塞術'],
     };
-
-    function isSimilarExam(prevExamName, currExamName) {
-        return (simExam[currExamName] && simExam[currExamName].includes(prevExamName));
-    }
 
     /* highlight date by day */
     waitForKeyElements (
