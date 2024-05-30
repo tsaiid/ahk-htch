@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20240529.1
+// @version      20240529.2
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -43,6 +43,12 @@
         return isSameExam(prevExamName, currExamName) || isSimilarExam(prevExamName, currExamName);
     }
 
+    function getCurrExamName() {
+        const currExamNameInput = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(11) input');
+        const currExamName = currExamNameInput ? currExamNameInput.value : null;
+        return currExamName;
+    }
+
     document.addEventListener('keydown', (ev) => {
         let nextReportChkBox = document.querySelector("div.footer input");
         let prevReportTab = document.querySelector('div[style="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)');
@@ -54,8 +60,7 @@
         // Ctrl+]: find next similar report
         if (ev.ctrlKey && ev.key === ']') {
             console.log("Ctrl+]: find next similar report");
-            const currExamNameInput = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(11) input');
-            const currExamName = currExamNameInput ? currExamNameInput.value : null;
+            const currExamName = getCurrExamName();
             const currTr = document.querySelector('#frameHistory tr.text-secondary');
             const frameHistoryTr = document.querySelectorAll('#frameHistory tbody tr');
             if (currExamName) {
@@ -66,7 +71,36 @@
                     if (isRelatedReport(prevExamName, currExamName)) {
                         frameHistoryTr[i].click();
                         const frameHistory = document.querySelector('#frameHistory');
-                        console.log('tr top: ' + frameHistoryTr[i].offsetTop + '; div top: ' + frameHistory.offsetTop + '; div height: ' + frameHistory.clientHeight);
+                        //console.log('tr top: ' + frameHistoryTr[i].offsetTop + '; div top: ' + frameHistory.offsetTop + '; div height: ' + frameHistory.clientHeight + '; div scrollTop: ' + frameHistory.scrollTop);
+                        if (frameHistoryTr[i].offsetTop + frameHistoryTr[i].clientHeight > frameHistory.scrollTop + frameHistory.clientHeight) {
+                            frameHistory.scrollTop = frameHistoryTr[i].offsetTop;
+                        }
+                        break;
+                    }
+                }
+            }
+        }
+
+        // Ctrl+[: find prev similar report
+        if (ev.ctrlKey && ev.key === '[') {
+            console.log("Ctrl+[: find prev similar report");
+            const currExamName = getCurrExamName();
+            const currTr = document.querySelector('#frameHistory tr.text-secondary');
+            const frameHistoryTr = document.querySelectorAll('#frameHistory tbody tr');
+            if (currExamName) {
+                let i = [...frameHistoryTr].indexOf(currTr) > -1 ? [...frameHistoryTr].indexOf(currTr) - 1 : frameHistoryTr.length - 1;
+                for (; i >= 0; i--) {
+                    const prevExamName = frameHistoryTr[i].children[4].textContent;
+                    //console.log(prevExamName + ': ' + isRelatedReport(prevExamName, currExamName));
+                    if (isRelatedReport(prevExamName, currExamName)) {
+                        frameHistoryTr[i].click();
+                        const frameHistory = document.querySelector('#frameHistory');
+                        //console.log('tr top: ' + frameHistoryTr[i].offsetTop + '; div top: ' + frameHistory.offsetTop + '; div height: ' + frameHistory.clientHeight + '; div scrollTop: ' + frameHistory.scrollTop);
+                        if (frameHistoryTr[i].offsetTop < frameHistory.scrollTop) {
+                            frameHistory.scrollTop = (frameHistoryTr[i].offsetTop + frameHistoryTr[i].clientHeight < frameHistory.clientHeight)
+                                ? 0
+                                : frameHistoryTr[i].offsetTop;
+                        }
                         break;
                     }
                 }
