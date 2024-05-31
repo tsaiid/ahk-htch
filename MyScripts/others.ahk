@@ -322,6 +322,8 @@ Return
 ::rkup::upper portion of right kidney
 ::rklp::lower portion of right kidney
 ::md::maximum diameter
+::msag::(measured in the sagittal view)
+::mcor::(measured in the coronal view)
 
 ::fn::FOOTNOTE:{Enter}[{^}1]: `
 
@@ -339,6 +341,7 @@ Return
 
 ; common hotstrings
 ::rcs::renal cysts
+::rcs1::renal cysts, size up to `
 ::rss::renal stones
 ::lrc::A -cm renal cyst at the left kidney.
 ::rrc::A -cm renal cyst at the right kidney.

@@ -24,7 +24,7 @@ No active lung lesions.
 Normal hili.
 Normal bony thorax.
 
-Impression
+Impression:
 Normal heart and lungs. 胸部X光判讀正常.
 )
   Paste(MyForm)
