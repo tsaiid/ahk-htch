@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20240601.1
+// @version      20240602.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -49,6 +49,16 @@
         return currExamName;
     }
 
+    function getFrameHistoryTr() {
+        // exclude no data case: the tr has only 1 td with colspan attr.
+        const allRows = document.querySelectorAll('#frameHistory tbody tr');
+        const filteredRows = Array.from(allRows).filter(tr => {
+            const tds = tr.querySelectorAll('td');
+            return !Array.from(tds).some(td => td.hasAttribute('colspan'));
+        });
+        return filteredRows;
+    }
+
     function scrollToSelectedItem(selectedTr) {
         const frameHistory = document.querySelector('#frameHistory');
         //console.log('tr top: ' + frameHistoryTr[i].offsetTop + '; div top: ' + frameHistory.offsetTop + '; div height: ' + frameHistory.clientHeight + '; div scrollTop: ' + frameHistory.scrollTop);
@@ -74,8 +84,9 @@
             console.log("Alt+] or Alt+[: find next/prev report");
             //const currExamName = getCurrExamName();
             const currTr = document.querySelector('#frameHistory tr.text-secondary');
-            const frameHistoryTr = document.querySelectorAll('#frameHistory tbody tr');
-            if (frameHistoryTr) {
+            const frameHistoryTr = getFrameHistoryTr();
+            //console.log(`frameHistoryTr: ` + frameHistoryTr);
+            if (frameHistoryTr.length) {
                 let i = [...frameHistoryTr].indexOf(currTr);
                 //console.log('curr index: ' + i + '; length: ' + frameHistoryTr.length);
                 i += (ev.key === ']') ? 1 : -1; // if no selection, i will be -1 + 1 = 0;
@@ -97,7 +108,7 @@
             console.log("Ctrl+] or Ctrl+[: find next/prev similar report");
             const currExamName = getCurrExamName();
             const currTr = document.querySelector('#frameHistory tr.text-secondary');
-            const frameHistoryTr = document.querySelectorAll('#frameHistory tbody tr');
+            const frameHistoryTr = getFrameHistoryTr();
             if (currExamName) {
                 let i = [...frameHistoryTr].indexOf(currTr);
                 let step;
