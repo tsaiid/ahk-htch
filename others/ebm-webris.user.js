@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20240602.1
+// @version      20240603.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -68,6 +68,16 @@
             frameHistory.scrollTop = (selectedTr.offsetTop + selectedTr.clientHeight < frameHistory.clientHeight)
                 ? 0
                 : selectedTr.offsetTop;
+        }
+    }
+
+    function getExamInfoInput(columnName) {
+        const examInfoDivs = document.querySelectorAll('div[style="width: 99%;"] div.input-wrapper');
+        if (examInfoDivs.length) {
+            const foundDiv = Array.from(examInfoDivs).find(a => a.textContent == columnName);
+            return foundDiv.querySelector('input');
+        } else {
+            console.log('Cannot get exam info divs.');
         }
     }
 
@@ -493,6 +503,24 @@
         // Angio
         'Lipiodol T.A.E.(trans-arterial embolization)-Lipiodol': ['血管阻塞術'],
     };
+
+    /* highlight gender */
+    waitForKeyElements (
+        'div[style="width: 99%;"] div.grow-0.h-10:nth-child(9) input'
+        , colorizeGender
+    );
+
+    function colorizeGender(jNode) {
+        //console.log(jNode);
+        //console.log(jNode.first().val());
+        const gender = jNode.first().val();
+        const male_color = '#00A8E8';
+        const female_color = '#FF4081';
+        const color = (gender == 'M' ? male_color : female_color);
+        // set style will overwrite the class in Stylus
+        const style_str = `color: ${color} !important; max-width: 3.5em; text-align: center;`;
+        jNode.first().attr('style', style_str);
+    }
 
     /* highlight date by day */
     waitForKeyElements (
