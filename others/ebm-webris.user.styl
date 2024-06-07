@@ -1,6 +1,6 @@
 ﻿/* ==UserStyle==
 @name           EBM WebRIS Enhanced Style
-@version        20240517.1
+@version        20240607.1
 @namespace      ebm-webris-htch
 @description    Enhanced UI experience for EBM WebRIS
 @author         I-Ta Tsai
@@ -335,44 +335,59 @@ url-prefix("http://10.2.2.160:8080/") {
         color: rgb(250 219 43) !important;
     }
 
-    input[title="病歷號碼"] {
+    input[title="病歷號碼"],
+    #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(3) > div > input {
         max-width: 6em !important;
         font-family: "Sofia Sans Condensed";
         font-weight: 600;
         font-size: 21px !important;
     }
-    input[title="檢查單號"] {
+    input[title="檢查單號"],
+    #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(4) > div > input {
         font-family: "Sofia Sans Extra Condensed";
         font-weight: 600;
         font-size: 21px !important;
         max-width: 7.5em;
     }
-    input[title="年齡"] {
+    input[title="年齡"],
+    #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(10) > div > input {
         max-width: 100px !important;
     }
-    input[title="來源"] {
+    input[title="來源"],
+    #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(12) > div > input {
         max-width: 150px !important;
     }
     input[title="申請醫師"],
-    input[title="主治醫師"] {
+    #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(14) > div > input,
+    input[title="主治醫師"],
+    #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(17) > div > input {
         max-width: 160px !important;
     }
-    input[title="性別"] {
+    input[title="性別"],
+    #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(9) > div > input {
         max-width: 3.5em !important;
         text-align: center;
     }
-    input[title="顯影劑"] {
+    input[title="顯影劑"],
+    #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(7) > div > input {
         max-width: 4.5em !important;
         text-align: center !important;
     }
-    input[title="檢查日期"] {
+    input[title="檢查日期"],
+    #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(5) > div > input {
         max-width: 130px !important;
     }
-    input[title="檢查時間"] {
+    input[title="檢查時間"],
+    #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(6) > div > input {
         max-width: 110px !important;
     }
-    input[title="執行放射師"] {
+    input[title="執行放射師"],
+    #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(13) > div > input {
         max-width: 110px !important;
+    }
+    /* 檢查項目外的 div */
+    #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(11) {
+        width: 31em;
     }
 
 
