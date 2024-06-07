@@ -249,6 +249,7 @@ The angiography of celiac trunk and common hepatic artery shows at least 4 tumor
 
 The main portal vein is patent in both celiac and superior mesenteric angiography.
 
+- Selective embolization was performed:
 - Selective embolizations were performed:
 --+ S7: 2 ml emulsion, 0.5 ml Gelfoam.
 --+ S8: 2 ml emulsion, 0.5 ml Gelfoam.
