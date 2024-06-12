@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20240603.2
+// @version      20240612.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -405,10 +405,11 @@
         'C spine dynamic': ['C spine AP', 'C spine AP+ lateral'],
         'C spine AP': ['C spine dynamic', 'C spine AP+ lateral'],
         'C spine AP+ lateral': ['C spine dynamic', 'C spine AP'],
-        'TL spine AP+lateral standing': ['T spine AP+lateral', 'TL spine AP+lateral', 'T-L spine AP+Lat'],
         'T spine AP+lateral': ['TL spine AP+lateral', 'TL spine AP+lateral standing', 'T-L spine AP+Lat'],
+        'TL spine AP+lateral standing': ['T spine AP+lateral', 'TL spine AP+lateral', 'T-L spine AP+Lat'],
         'TL spine AP+lateral': ['TL spine AP+lateral standing', 'T-L spine AP+Lat',
                                 'LS spine lateral standing', 'LS spine AP+lateral'],
+        'TL spine lateral': ['TL spine AP+lateral', 'TL spine AP+lateral standing'],
         'LS spine AP+lateral': [
             'LS spine AP+lateral standing', 'LS spine AP Lat', 'LS spine dynamic', 'LS-spine dynamic',
             'LS spine lateral', 'T-L spine AP+Lat', 'TL spine AP+lateral'
@@ -497,6 +498,7 @@
         'JOINT Wrist MRI': ['Wrist PA+lateral(R)', 'Wrist PA+lateral(L)'],
 
         'ABDOMEN Liver MRI': ['Abdomen  Liver 4 Phase CT', 'Abdomen  Liver Triple Phase CT'],
+        'Colon cancer (Abdomen & Pelvis) MRI': ['Colon cancer (Abdomen & Pelvis)-CT'],
 
         // Breast
         'CHEST Breast MRI': ['Sono Breasts', 'SonoBreasts', 'Breasts sono'],
