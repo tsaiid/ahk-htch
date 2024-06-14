@@ -1,6 +1,6 @@
 ﻿/* ==UserStyle==
 @name           EBM WebRIS Enhanced Style
-@version        20240612.1
+@version        20240614.1
 @namespace      ebm-webris-htch
 @description    Enhanced UI experience for EBM WebRIS
 @author         I-Ta Tsai
@@ -336,14 +336,14 @@ url-prefix("http://10.2.2.160:8080/") {
         color: rgb(250 219 43) !important;
     }
 
-    input[title="病歷號碼"],
+    /* input[title="病歷號碼"], */ /* 不能用這種方式，會和 list 那頁搞混 */
     #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(3) > div > input {
         max-width: 6em !important;
         font-family: "Sofia Sans Condensed";
         font-weight: 600;
         font-size: 21px !important;
     }
-    input[title="檢查單號"],
+    /* input[title="檢查單號"], */ /* 不能用這種方式，會和 list 那頁搞混 */
     #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(4) > div > input {
         font-family: "Sofia Sans Extra Condensed";
         font-weight: 600;
