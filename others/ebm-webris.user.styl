@@ -1,6 +1,6 @@
 ﻿/* ==UserStyle==
 @name           EBM WebRIS Enhanced Style
-@version        20240621.1
+@version        20240622.1
 @namespace      ebm-webris-htch
 @description    Enhanced UI experience for EBM WebRIS
 @author         I-Ta Tsai
@@ -117,8 +117,9 @@ url-prefix("http://10.2.2.160:8080/") {
             height: 451px !important;
         }
 
-        /* hide Modality */
-        #frameHistory > table tr > td:nth-child(3) {
+        /* hide Modality and ReportDr */
+        #frameHistory > table tr > td:nth-child(3),
+        #frameHistory > table tr > td:nth-child(4) {
             display: none;
         }
         /* 報告醫師的寬度 */
@@ -215,13 +216,11 @@ url-prefix("http://10.2.2.160:8080/") {
         width: 4em;
     }
     /* 隱藏危急通報欄位 */
-    #frameHistory table > thead > tr > td:nth-child(6),
-    #frameHistory table > tbody > tr > td:nth-child(6) {
+    #frameHistory table tr > td:nth-child(6) {
         display: none;
     }
     /* 隱藏影像欄位 */
-    #frameHistory table > thead > tr > td:nth-child(7),
-    #frameHistory table > tbody > tr > td:nth-child(7) {
+    #frameHistory table tr > td:nth-child(7) {
         display: none;
     }
     /* 改歷史報告清單字體 */
@@ -385,20 +384,13 @@ url-prefix("http://10.2.2.160:8080/") {
         }
 
         /* hide some columns */
-        #app > main > main > div > div.flex-auto > main > div.overflow-auto > table > thead > tr > td:nth-child(1),
-        #app > main > main > div > div.flex-auto > main > div.overflow-auto > table > tbody > tr > td:nth-child(1),
-        #app > main > main > div > div.flex-auto > main > div.overflow-auto > table > thead > tr > td:nth-child(5),
-        #app > main > main > div > div.flex-auto > main > div.overflow-auto > table > tbody > tr > td:nth-child(5),
-        #app > main > main > div > div.flex-auto > main > div.overflow-auto > table > thead > tr > td:nth-child(8),
-        #app > main > main > div > div.flex-auto > main > div.overflow-auto > table > tbody > tr > td:nth-child(8),
-        #app > main > main > div > div.flex-auto > main > div.overflow-auto > table > thead > tr > td:nth-child(10),
-        #app > main > main > div > div.flex-auto > main > div.overflow-auto > table > tbody > tr > td:nth-child(10),
-        #app > main > main > div > div.flex-auto > main > div.overflow-auto > table > thead > tr > td:nth-child(16),
-        #app > main > main > div > div.flex-auto > main > div.overflow-auto > table > tbody > tr > td:nth-child(16),
-        #app > main > main > div > div.flex-auto > main > div.overflow-auto > table > thead > tr > td:nth-child(18),
-        #app > main > main > div > div.flex-auto > main > div.overflow-auto > table > tbody > tr > td:nth-child(18),
-        #app > main > main > div > div.flex-auto > main > div.overflow-auto > table > thead > tr > td:nth-child(19),
-        #app > main > main > div > div.flex-auto > main > div.overflow-auto > table > tbody > tr > td:nth-child(19) {
+        #app > main > main > div > div.flex-auto > main > div.overflow-auto > table tr > td:nth-child(1),
+        #app > main > main > div > div.flex-auto > main > div.overflow-auto > table tr > td:nth-child(5),
+        #app > main > main > div > div.flex-auto > main > div.overflow-auto > table tr > td:nth-child(8),
+        #app > main > main > div > div.flex-auto > main > div.overflow-auto > table tr > td:nth-child(10),
+        #app > main > main > div > div.flex-auto > main > div.overflow-auto > table tr > td:nth-child(16),
+        #app > main > main > div > div.flex-auto > main > div.overflow-auto > table tr > td:nth-child(18),
+        #app > main > main > div > div.flex-auto > main > div.overflow-auto > table tr > td:nth-child(19) {
             display: none !important;
         }
 
