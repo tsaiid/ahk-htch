@@ -1,6 +1,6 @@
 ﻿/* ==UserStyle==
 @name           EBM WebRIS Enhanced Style
-@version        20240623.2
+@version        20240623.3
 @namespace      ebm-webris-htch
 @description    Enhanced UI experience for EBM WebRIS
 @author         I-Ta Tsai
@@ -322,8 +322,8 @@ url-prefix("http://10.2.2.160:8080/") {
     /* For 1280x1024 screen */
     @media (max-height: 1000px) {
         /* hide Patho No. and Part columns */
-        div[style='height: 870px; width: 41.6667%; left: 0%; top: 60px;'] div:not(#frameHistory) > table tr td:nth-child(1),
-        div[style='height: 870px; width: 41.6667%; left: 0%; top: 60px;'] div:not(#frameHistory) > table tr td:nth-child(4) {
+        div[style='height: 870px; width: 41.6667%; left: 0%; top: 60px;'] table[style="width: 100%; font-size: 16px;"] tr td:nth-child(1),
+        div[style='height: 870px; width: 41.6667%; left: 0%; top: 60px;'] table[style="width: 100%; font-size: 16px;"] tr td:nth-child(4) {
             display: none;
         }
     }
