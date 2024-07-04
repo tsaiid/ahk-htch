@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20240612.1
+// @version      20240701.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -471,6 +471,7 @@
         ],
         'JOINT Shoulder CT': ['Shoulder internal+external(R)', 'Shoulder AP(R)',
                               'Shoulder internal+external(L)', 'Shoulder AP(L)',],
+        'JOINT ELBOW CT': ['Elbow AP+lateral(R)', 'Elbow AP+lateral(L)'],
         'PELVIS  Hip  CT': ['Pelvis THR'],
         'JOINT Ankle  CT': ['Ankle AP+lateral(R)', 'Ankle AP+lateral(L)'],
         'SPINE  Cervical  CT': ['SPINE Cervical MRI', 'C spine AP+ lateral', 'C spine dynamic', 'C spine AP'],
@@ -575,7 +576,7 @@
                 }
                 break;
             case 'INPUT':
-                //console.log(jNode[0].value);
+                console.log(jNode[0].value);
                 examOriginStr = jNode[0].value;
                 if (examOriginStr.match(/^住院/)) {
                     jNode.first().attr('style', 'color: #be99ff !important');
