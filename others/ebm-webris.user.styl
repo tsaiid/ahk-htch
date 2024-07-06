@@ -1,6 +1,6 @@
 ﻿/* ==UserStyle==
 @name           EBM WebRIS Enhanced Style
-@version        20240705.1
+@version        20240706.1
 @namespace      ebm-webris-htch
 @description    Enhanced UI experience for EBM WebRIS
 @author         I-Ta Tsai
@@ -322,8 +322,8 @@ url-prefix("http://10.2.2.160:8080/") {
     /* For 1280x1024 screen */
     @media (max-height: 1000px) {
         /* hide Patho No. and Part columns */
-        div[style='height: 870px; width: 41.6667%; left: 0%; top: 60px;'] table[style="width: 100%; font-size: 16px;"] tr td:nth-child(1),
-        div[style='height: 870px; width: 41.6667%; left: 0%; top: 60px;'] table[style="width: 100%; font-size: 16px;"] tr td:nth-child(4) {
+        div[style="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] table[style="width: 100%; font-size: 16px;"] tr td:nth-child(1),
+        div[style="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] table[style="width: 100%; font-size: 16px;"] tr td:nth-child(4) {
             display: none;
         }
     }
@@ -384,9 +384,8 @@ url-prefix("http://10.2.2.160:8080/") {
     @media (max-width:1280px) {
         /* hide ReportKindBar, PatId, AccNo, Technician, OrderDr */
         #app > main > main > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(4),
-        #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(3),
-        #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(4),
-        #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(13),
+        #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(3) #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(4),
+        #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(11),
         #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(14) {
             display: none !important;
         }
@@ -418,7 +417,7 @@ url-prefix("http://10.2.2.160:8080/") {
         }
 
         /* Gender Min Width */
-        #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(9) > div > input {
+        #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(8) > div > input {
             min-width: 50px !important;
         }
     }
@@ -464,7 +463,7 @@ url-prefix("http://10.2.2.160:8080/") {
     }
     /* 性別 */
     #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(8) > div > input {
-        /* max-width: 100px !important; */
+        max-width: 100px !important;
     }
     /* 年齡 */
     #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(9) > div > input {
