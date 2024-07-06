@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20240701.1
+// @version      20240705.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -44,7 +44,7 @@
     }
 
     function getCurrExamName() {
-        const currExamNameInput = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(11) input');
+        const currExamNameInput = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(10) input');
         const currExamName = currExamNameInput ? currExamNameInput.value : null;
         return currExamName;
     }
@@ -257,7 +257,7 @@
         // Remap hotkey to Ctrl+Alt+Shift+E in AHK
         if (ev.ctrlKey && ev.altKey && ev.key === 'f') {
             console.log("Ctrl+Alt+F: Insert Exam Name and Contrast");
-            const i1 = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(11) input');
+            const i1 = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(10) input');
             if (i1) {
                 let examname = i1.value;
                 const i2 = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(7) input');
@@ -271,7 +271,7 @@
         // Remap hotkey to Alt+E in AHK
         if (ev.ctrlKey && ev.altKey && ev.key === 'e') {
             console.log("Ctrl+Alt+E: Insert Exam Name");
-            const i = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(11) input');
+            const i = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(10) input');
             if (i) {
                 document.execCommand('insertText', false, i.value + ":\n\n");
             }
@@ -337,13 +337,13 @@
     });
 
     waitForKeyElements (
-        "#frameHistory tbody tr td:nth-child(5)"
+        '#frameHistory tbody tr td:nth-child(5)'
         , highlightSimilarExamAndClickLatest
     );
 
     var foundSimilarReportAccNo = '';
     function highlightSimilarExamAndClickLatest(jNode) {
-        const currExamNameInput = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(11) input');
+        const currExamNameInput = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(10) input');
         const currExamName = currExamNameInput ? currExamNameInput.value : null;
         //console.log(jNode.first().siblings('td').first().text());
         if (currExamName) {
@@ -461,6 +461,9 @@
             'Abdomen  Pancreas Dual Phase  CT', 'Abdomen to Pelvis CT', 'Abdomen  Liver 4 Phase CT',
             'Abdomen  Liver Triple Phase CT',
         ],
+        'Colon cancer (Abdomen & Pelvis)-CT': [
+            'Abdomen to Pelvis CT', 'Abdomen  Liver Triple Phase CT', 'Abdomen  Liver 4 Phase CT'
+        ],
         'Chest CT': [
             'Lung cancer (Chest & Upper abdomen)-CT', 'Lung Low Dose CT', 'Lung-Low Dose CT',
             'Chest Pulmonary Arteries CT',
@@ -510,13 +513,13 @@
 
     /* highlight gender */
     waitForKeyElements (
-        'div[style="width: 99%;"] div.grow-0.h-10:nth-child(9) input'
+        'div.main div[style="width: 99%;"] div.pt-1 div.grow-0.h-10:nth-child(8) input'
         , colorizeGender
     );
 
     function colorizeGender(jNode) {
         //console.log(jNode);
-        //console.log(jNode.first().val());
+        console.log('Gender: ' + jNode.first().val());
         const gender = jNode.first().val();
         const male_color = '#00A8E8';
         const female_color = '#FF4081';
@@ -543,11 +546,12 @@
 
     /* highlight origin */
     waitForKeyElements (
-        "main table > tbody > tr > td:nth-child(2)"
+        'main table > tbody[style="min-height: 24vh;"] > tr > td:nth-child(2)'
         , colorizeExamOrigin
     );
+
     waitForKeyElements (
-        'div[style="width: 99%;"] div.grow-0.h-10:nth-child(12) input'
+        'div.main div[style="width: 99%;"] div.pt-1 div.grow-0.h-10:nth-child(12) input'
         , colorizeExamOrigin
     );
 
@@ -576,7 +580,7 @@
                 }
                 break;
             case 'INPUT':
-                console.log(jNode[0].value);
+                console.log('ExamOrigin: ' + jNode[0].value);
                 examOriginStr = jNode[0].value;
                 if (examOriginStr.match(/^住院/)) {
                     jNode.first().attr('style', 'color: #be99ff !important');
