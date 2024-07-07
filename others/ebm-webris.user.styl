@@ -1,6 +1,6 @@
 ﻿/* ==UserStyle==
 @name           EBM WebRIS Enhanced Style
-@version        20240706.1
+@version        20240707.1
 @namespace      ebm-webris-htch
 @description    Enhanced UI experience for EBM WebRIS
 @author         I-Ta Tsai
@@ -384,9 +384,10 @@ url-prefix("http://10.2.2.160:8080/") {
     @media (max-width:1280px) {
         /* hide ReportKindBar, PatId, AccNo, Technician, OrderDr */
         #app > main > main > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(4),
-        #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(3) #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(4),
-        #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(11),
-        #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(14) {
+        div.pt-1 > div > div:nth-child(3),
+        div.pt-1 > div > div:nth-child(4),
+        div.pt-1 > div > div:nth-child(11),
+        div.pt-1 > div > div:nth-child(14) {
             display: none !important;
         }
 
@@ -467,6 +468,7 @@ url-prefix("http://10.2.2.160:8080/") {
     }
     /* 年齡 */
     #app > main > main > div > div.flex-auto > main > div > div.main > div > div > div:nth-child(1) > div > div > div.d-flex.align-center.pt-1 > div > div:nth-child(9) > div > input {
+        min-width: 3em;
         max-width: 4.5em !important;
         text-align: center;
     }
