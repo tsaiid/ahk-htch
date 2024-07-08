@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20240708.1
+// @version      20240708.2
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -43,10 +43,37 @@
         return isSameExam(prevExamName, currExamName) || isSimilarExam(prevExamName, currExamName);
     }
 
+    function findExamInfoByLabel(labelText) {
+        const labels = document.querySelectorAll('div[style="width: 99%;"] label');
+        for (let label of labels) {
+            if (label.innerText === labelText) {
+                const parent = label.parentElement;
+                const input = parent.querySelector('input');
+                if (input) {
+                    return input.value;
+                }
+            }
+        }
+        return null;
+    }
+
     function getCurrExamName() {
-        const currExamNameInput = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(10) input');
-        const currExamName = currExamNameInput ? currExamNameInput.value : null;
-        return currExamName;
+        return findExamInfoByLabel('檢查項目');
+    }
+    function getCurrExamDate() {
+        return findExamInfoByLabel('檢查日期');
+    }
+    function getCurrExamTime() {
+        return findExamInfoByLabel('檢查時間');
+    }
+    function getCurrContrast() {
+        return findExamInfoByLabel('顯影劑');
+    }
+    function getCurrPatId() {
+        return findExamInfoByLabel('病歷號碼');
+    }
+    function getCurrAccNo() {
+        return findExamInfoByLabel('檢查單號');
     }
 
     function getFrameHistoryTr() {
@@ -68,16 +95,6 @@
             frameHistory.scrollTop = (selectedTr.offsetTop + selectedTr.clientHeight < frameHistory.clientHeight)
                 ? 0
                 : selectedTr.offsetTop;
-        }
-    }
-
-    function getExamInfoInput(columnName) {
-        const examInfoDivs = document.querySelectorAll('div[style="width: 99%;"] div.input-wrapper');
-        if (examInfoDivs.length) {
-            const foundDiv = Array.from(examInfoDivs).find(a => a.textContent == columnName);
-            return foundDiv.querySelector('input');
-        } else {
-            console.log('Cannot get exam info divs.');
         }
     }
 
@@ -209,8 +226,8 @@
             console.log("Ctrl+4: Open Infinitt");
             const lid = "A60076"; // Infinitt userid
             const lpw = "A60076"; // Infinitt passwd
-            const pid = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(3) input').value;
-            const an = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(4) input').value;
+            const pid = getCurrPatId();
+            const an = getCurrAccNo();
             const infinitt_url = (!isEdge ? "microsoft-edge:" : "") + `http://10.2.2.30/pkg_pacs/external_interface.aspx?LID=${lid}&LPW=${lpw}&AN=${an}&PID=${pid}`;
             window.open(infinitt_url, '_blank', 'height=100,width=200,screenX=0,toolbar=0,menubar=0,status=1');
             console.log(infinitt_url);
@@ -239,7 +256,7 @@
             // save prev report date into a var for further pasting
             const s = document.querySelector('tr.text-secondary td').textContent;
             prev_examdate = s.replace(/(\d{4})\/(\d{2})\/(\d{2})/, '$1-$2-$3');
-            prev_examdate_pid = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(3) input').value;
+            prev_examdate_pid = getCurrPatId();
             //console.log(prev_examdate);
         }
         // Ctrl+9: Open previous images
@@ -276,7 +293,7 @@
         if (ev.ctrlKey && ev.altKey && ev.key === 'd') {
             console.log("Ctrl+Alt+D: Insert Prev Exam Date");
             //navigator.clipboard.writeText(prev_examdate);
-            const curr_pid = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(3) input').value;
+            const curr_pid = getCurrPatId();
             if (curr_pid === prev_examdate_pid) {
                 document.execCommand('insertText', false, prev_examdate);
             }
@@ -285,23 +302,23 @@
         // Remap hotkey to Ctrl+Alt+Shift+E in AHK
         if (ev.ctrlKey && ev.altKey && ev.key === 'f') {
             console.log("Ctrl+Alt+F: Insert Exam Name and Contrast");
-            const i1 = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(10) input');
-            if (i1) {
-                let examname = i1.value;
-                const i2 = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(7) input');
-                if (i2 && i2.value && CONTRAST_STR.hasOwnProperty(i2.value)) {
-                    examname += CONTRAST_STR[i2.value];
+            const currExamName = getCurrExamName();
+            if (currExamName) {
+                let examStr = currExamName;
+                const currContrast = getCurrContrast();
+                if (currContrast && CONTRAST_STR.hasOwnProperty(currContrast)) {
+                    examStr += CONTRAST_STR[currContrast];
                 }
-                document.execCommand('insertText', false, examname + ":\n\n");
+                document.execCommand('insertText', false, examStr + ":\n\n");
             }
         }
         // Ctrl+Alt+E: Insert Exam Name
         // Remap hotkey to Alt+E in AHK
         if (ev.ctrlKey && ev.altKey && ev.key === 'e') {
             console.log("Ctrl+Alt+E: Insert Exam Name");
-            const i = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(10) input');
-            if (i) {
-                document.execCommand('insertText', false, i.value + ":\n\n");
+            const currExamName = getCurrExamName();
+            if (currExamName) {
+                document.execCommand('insertText', false, currExamName + ":\n\n");
             }
         }
 
@@ -371,8 +388,7 @@
 
     var foundSimilarReportAccNo = '';
     function highlightSimilarExamAndClickLatest(jNode) {
-        const currExamNameInput = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(10) input');
-        const currExamName = currExamNameInput ? currExamNameInput.value : null;
+        const currExamName = getCurrExamName();
         //console.log(jNode.first().siblings('td').first().text());
         if (currExamName) {
             const prevExamName = jNode[0].textContent;
@@ -387,15 +403,15 @@
                 foundReport = true;
             }
             if (foundReport) {
-                const currExamDateStr = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(5) input').value;
-                const currExamTimeStr = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(6) input').value;
+                const currExamDateStr = getCurrExamDate();
+                const currExamTimeStr = getCurrExamTime();
                 const currExamDateTime = new Date(currExamDateStr + ' ' + currExamTimeStr);
                 const prevExamTr = jNode.first().parent();
                 const prevExamDateStr = prevExamTr.children().eq(0).text().split('*')[0];
                 const prevExamTimeStr = prevExamTr.children().eq(1).text();
                 const prevExamDateTime = new Date(prevExamDateStr + ' ' + prevExamTimeStr);
                 if (currExamDateTime > prevExamDateTime) {
-                    const accNo = document.querySelector('div[style="width: 99%;"] div.grow-0.h-10:nth-child(4) input').value;
+                    const accNo = getCurrAccNo();
                     if (accNo != foundSimilarReportAccNo) {
                         console.log(prevExamDateTime + ': ' + jNode.first().text());
                         foundSimilarReportAccNo = accNo;
