@@ -251,7 +251,7 @@ Return
 ::rgv::regressive
 ::csd::considered
 ::spd::suspected
-::sp::suspicious `
+::sp::suspicious for `
 ::ic::inflammatory change
 ::infl::inflammation
 ::cd::consolidation
