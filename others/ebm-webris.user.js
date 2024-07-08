@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20240705.1
+// @version      20240708.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -133,6 +133,34 @@
                     const prevExamName = frameHistoryTr[i].children[4].textContent;
                     //console.log(prevExamName + ': ' + isRelatedReport(prevExamName, currExamName));
                     if (isRelatedReport(prevExamName, currExamName)) {
+                        frameHistoryTr[i].click();
+                        scrollToSelectedItem(frameHistoryTr[i]);
+                        break;
+                    }
+                }
+            }
+        }
+
+        // Ctrl+} or Ctrl+{: find next/prev similar report
+        if (ev.ctrlKey && (ev.key === '}' || ev.key === '{')) {
+            console.log("Ctrl+} or Ctrl+{: find next/prev similar report");
+            const currExamName = getCurrExamName();
+            const currTr = document.querySelector('#frameHistory tr.text-secondary');
+            const frameHistoryTr = getFrameHistoryTr();
+            if (currExamName) {
+                let i = [...frameHistoryTr].indexOf(currTr);
+                let step;
+                if (ev.key === '}') {
+                    i = (i > -1) ? i + 1 : 0;
+                    step = 1;
+                } else {
+                    i = (i > -1) ? i - 1 : frameHistoryTr.length - 1;
+                    step = -1;
+                }
+                for (; i >= 0 && i < frameHistoryTr.length; i+=step) {
+                    const prevExamName = frameHistoryTr[i].children[4].textContent;
+                    //console.log(prevExamName + ': ' + isRelatedReport(prevExamName, currExamName));
+                    if (isSameExam(prevExamName, currExamName)) {
                         frameHistoryTr[i].click();
                         scrollToSelectedItem(frameHistoryTr[i]);
                         break;
