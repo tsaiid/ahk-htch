@@ -53,6 +53,7 @@
 ;; Breast
 ::fcd::fibrocystic disease
 ::idp::intraductal papilloma
+::nac::nipple-areolar complex
 
 ;; Vascular
 ::a-a::ascending aorta
