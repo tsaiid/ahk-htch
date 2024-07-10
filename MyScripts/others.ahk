@@ -252,6 +252,7 @@ Return
 ::csd::considered
 ::spd::suspected
 ::sp::suspicious for `
+::su::size up to `
 ::ic::inflammatory change
 ::infl::inflammation
 ::cd::consolidation
