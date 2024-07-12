@@ -49,15 +49,15 @@
 ::oak0::Mild joint space narrowing in the medial compartment of the knee.
 ::oak1a::Mild joint space narrowing, especially in the medial compartment of the knee, suggestive of mild osteoarthrosis.
 ::boak1a::Mild joint space narrowing, especially in the medial compartments of the bilateral knees, suggestive of mild osteoarthrosis.
-::oak1b::Mild joint space narrowing, marginal osteophyte formation, especially in the medial compartment of the knee, suggestive of mild osteoarthrosis.
-::boak1b::Mild joint space narrowing, marginal osteophyte formation, especially in the medial compartments of the bilateral knees, suggestive of mild osteoarthrosis.
-::oak1::Mild joint space narrowing, subchondral sclerosis, marginal osteophyte formation, especially in the medial compartment of the knee, suggestive of mild osteoarthrosis.
-::oak2::Joint space narrowing, subchondral sclerosis, marginal osteophyte formation, especially in the medial compartment of the knee, suggestive of osteoarthrosis.
-::boak2::Joint space narrowing, subchondral sclerosis, marginal osteophyte formation, especially in the medial compartments of the bilateral knees, suggestive of osteoarthrosis.
-::oak2a::Joint space narrowing, marginal osteophyte formation, especially in the medial compartment of the knee, suggestive of osteoarthrosis.
-::oak3::Severe joint space narrowing, subchondral sclerosis, marginal osteophyte formation, in the knee, suggestive of osteoarthrosis.
-::oak3a::Severe joint space narrowing, subchondral sclerosis, marginal osteophyte formation, especially in the medial compartment of the knee, suggestive of osteoarthrosis.
-::oah::Superior joint space narrowing, subchondral sclerosis, subchondral cyst formation, osteophyte formation, in favor of osteoarthrosis of _ hip.
+::oak1b::Mild joint space narrowing and marginal osteophyte formation, especially in the medial compartment of the knee, suggestive of mild osteoarthrosis.
+::boak1b::Mild joint space narrowing and marginal osteophyte formation, especially in the medial compartments of the bilateral knees, suggestive of mild osteoarthrosis.
+::oak1::Mild joint space narrowing, subchondral sclerosis, and marginal osteophyte formation, especially in the medial compartment of the knee, suggestive of mild osteoarthrosis.
+::oak2::Joint space narrowing, subchondral sclerosis, and marginal osteophyte formation, especially in the medial compartment of the knee, suggestive of osteoarthrosis.
+::boak2::Joint space narrowing, subchondral sclerosis, and marginal osteophyte formation, especially in the medial compartments of the bilateral knees, suggestive of osteoarthrosis.
+::oak2a::Joint space narrowing and marginal osteophyte formation, especially in the medial compartment of the knee, suggestive of osteoarthrosis.
+::oak3::Severe joint space narrowing, subchondral sclerosis, and marginal osteophyte formation in the knee, suggestive of osteoarthrosis.
+::oak3a::Severe joint space narrowing, subchondral sclerosis, and marginal osteophyte formation, especially in the medial compartment of the knee, suggestive of osteoarthrosis.
+::oah::Superior joint space narrowing, subchondral sclerosis, subchondral cyst formation, and osteophyte formation, in favor of osteoarthrosis of _ hip.
 ::scc::subchondral cyst
 ::scs::subchondral sclerosis
 ::spef::suprapatellar effusion
@@ -68,27 +68,27 @@
 ::mrpatoa::Mild OA change of right patellofemoral joint with joint space narrowing and marginal osteophyte formation.
 ::mlpatoa::Mild OA change of left patellofemoral joint with joint space narrowing and marginal osteophyte formation.
 ::mbpatoa::Mild OA change of bilateral patellofemoral joints with joint space narrowing and marginal osteophyte formation.
-::patok::No lateral tilting or subluxation of patella. {Enter}No PF joint space narrowing.
-::bpatok::No lateral tilting or subluxation of bilateral patellae.{Enter}No PF joint space narrowing.
-::lpatok::No lateral tilting or subluxation of left patella.{Enter}No PF joint space narrowing.
-::rpatok::No lateral tilting or subluxation of right patella.{Enter}No PF joint space narrowing.
-::bpats::Lateral subluxation of bilateral patellae, with severe PF joint space narrowing at lateral facet.
-::lpats::Lateral subluxation of left patella, with PF joint space narrowing and subchondral sclerosis at lateral facet.
-::rpats::Lateral subluxation of right patella, with PF joint space narrowing and subchondral sclerosis at lateral facet.
-::mbpats::Mild lateral subluxation of bilateral patellae, with mild PF joint space narrowing at lateral facet.
-::mlpats::Mild lateral subluxation of left patella, with mild PF joint space narrowing at lateral facet.
-::mrpats::Mild lateral subluxation of right patella, with mild PF joint space narrowing at lateral facet.
-::mbpatt::Mild lateral tilting of bilateral patellae, with mild PF joint space narrowing at lateral facet.
-::lpatt::Lateral tilting of left patella, with severe PF joint space narrowing and subchondral sclerosis at lateral facet. Chondromalacia patella is considered.
-::mlpatt::Mild lateral tilting of left patella, with mild PF joint space narrowing at lateral facet.
-::rpatt::Lateral tilting of right patella, with severe PF joint space narrowing and subchondral sclerosis at lateral facet. Chondromalacia patella is considered.
-::mrpatt::Mild lateral tilting of right patella, with mild PF joint space narrowing at lateral facet.
-::bpatts::Lateral tilting and subluxation of bilateral patellae, with severe PF joint space narrowing, subchondral sclerosis and marginal osteophyte formation at lateral facet.
-::lpatts::Lateral tilting and subluxation of left patella, with PF joint space narrowing at lateral facet.
-::rpatts::Lateral tilting and subluxation of right patella, with PF joint space narrowing at lateral facet.
-::mbpatts::Mild lateral tilting and subluxation of bilateral patellae, with PF joint space narrowing at lateral facet.
-::mlpatts::Mild lateral tilting and subluxation of left patella, with PF joint space narrowing at lateral facet.
-::mrpatts::Mild lateral tilting and subluxation of right patella, with PF joint space narrowing at lateral facet.
+::patok::No lateral tilting or subluxation of patella. {Enter}No patellofemoral (PF) joint space narrowing.
+::bpatok::No lateral tilting or subluxation of the bilateral patellae.{Enter}No patellofemoral (PF) joint space narrowing.
+::lpatok::No lateral tilting or subluxation of left patella.{Enter}No patellofemoral (PF) joint space narrowing.
+::rpatok::No lateral tilting or subluxation of right patella.{Enter}No patellofemoral (PF) joint space narrowing.
+::bpats::Lateral subluxation of bilateral patellae, with severe patellofemoral (PF) joint space narrowing at lateral facet.
+::lpats::Lateral subluxation of left patella, with patellofemoral (PF) joint space narrowing and subchondral sclerosis at lateral facet.
+::rpats::Lateral subluxation of right patella, with patellofemoral (PF) joint space narrowing and subchondral sclerosis at lateral facet.
+::mbpats::Mild lateral subluxation of bilateral patellae, with mild patellofemoral (PF) joint space narrowing at lateral facet.
+::mlpats::Mild lateral subluxation of left patella, with mild patellofemoral (PF) joint space narrowing at lateral facet.
+::mrpats::Mild lateral subluxation of right patella, with mild patellofemoral (PF) joint space narrowing at lateral facet.
+::mbpatt::Mild lateral tilting of bilateral patellae, with mild patellofemoral (PF) joint space narrowing at lateral facet.
+::lpatt::Lateral tilting of left patella, with severe patellofemoral (PF) joint space narrowing and subchondral sclerosis at lateral facet. Chondromalacia patella is considered.
+::mlpatt::Mild lateral tilting of left patella, with mild patellofemoral (PF) joint space narrowing at lateral facet.
+::rpatt::Lateral tilting of right patella, with severe patellofemoral (PF) joint space narrowing and subchondral sclerosis at lateral facet. Chondromalacia patella is considered.
+::mrpatt::Mild lateral tilting of right patella, with mild patellofemoral (PF) joint space narrowing at lateral facet.
+::bpatts::Lateral tilting and subluxation of bilateral patellae, with severe patellofemoral (PF) joint space narrowing, subchondral sclerosis and marginal osteophyte formation at lateral facet.
+::lpatts::Lateral tilting and subluxation of left patella, with patellofemoral (PF) joint space narrowing at lateral facet.
+::rpatts::Lateral tilting and subluxation of right patella, with patellofemoral (PF) joint space narrowing at lateral facet.
+::mbpatts::Mild lateral tilting and subluxation of bilateral patellae, with patellofemoral (PF) joint space narrowing at lateral facet.
+::mlpatts::Mild lateral tilting and subluxation of left patella, with patellofemoral (PF) joint space narrowing at lateral facet.
+::mrpatts::Mild lateral tilting and subluxation of right patella, with patellofemoral (PF) joint space narrowing at lateral facet.
 ::acrd::Lateral downsloping of the acromion, narrowing the acromiohumeral distance, which may be associated with impingement of the supraspinatus tendon.
 ::acrok::No lateral downsloping or hooking of the acromion.
 ::acrsp::subacromial spur

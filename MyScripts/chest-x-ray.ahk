@@ -239,7 +239,7 @@ Return
 ::mstl0::Mild scoliosis of T- and L-spine.
 ::pi::ill-defined pulmonary infiltration over `
 ::pi0::pulmonary infiltration
-::po::patch opacity
+::po::patchy opacity
 ::no::nodular opacity
 ::lo::linear opacity
 ::flo::fibrolinear opacities
