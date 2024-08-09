@@ -38,6 +38,7 @@ Return
 - Bilateral CP angles are clear and sharp.
 - The thoracic cage and bones are generally intact.
 
+
 )
 
   Paste(MyForm)
@@ -50,29 +51,10 @@ Return
 - No specific finding in the bilateral lung fields.
 - Bilateral CP angles are clear and sharp.
 
-)
-
-  Paste(MyForm)
-Return
-
-::111::
-  MyForm =
-(
-No abnormal patch opacity in lung fields.
-No cardiomegaly.
-Bilateral CP angles are clear and sharp.
-The thoracic cage and bones are generally intact.
 
 )
 
   Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
-Normal chest X-ray.
-)
-  Paste(MyForm)
-  SleepThenTab()
 Return
 
 ::selm1::

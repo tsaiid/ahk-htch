@@ -946,9 +946,9 @@ Angiography of left lower extremity.
 Angiography of bilateral lower extremities.
 
 Anesthesia: local
-Materials: 4F sheath, 4F J-Curve, Optiray 320
-Materials: 4F sheath, 4F pigtail, 4F J-Curve, Optiray 320
-Materials: 4F sheath, 4F pigtail, Optiray 320
+Materials: 4F sheath, 4F J-Curve
+Materials: 4F sheath, 4F pigtail, 4F J-Curve
+Materials: 4F sheath, 4F pigtail
 Approach: right femoral artery.
 Approach: left femoral artery.
 
