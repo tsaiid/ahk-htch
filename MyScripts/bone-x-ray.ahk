@@ -280,6 +280,7 @@ Return
 ::spv::s/p vertebroplasty at `
 ::spv0::s/p vertebroplasty
 ::pif::pars interarticularis fracture
+::pif1::pars interarticularis fracture and spondylolisthesis of L5-S1.
 ::ritf::intertrochanteric fracture of right femur.
 ::litf::intertrochanteric fracture of left femur.
 ::rhoa::OA change of right hip.
