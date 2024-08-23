@@ -326,6 +326,7 @@ Return
 ::md::maximum diameter
 ::msag::(measured in the sagittal view)
 ::mcor::(measured in the coronal view)
+::smg1::Splenomegaly and prominent portosystemic collaterals suggest portal hypertension.
 
 ::fn::FOOTNOTE:{Enter}[{^}1]: `
 

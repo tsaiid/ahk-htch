@@ -292,6 +292,7 @@
 ::ky::kyphosis
 ::lod::lordosis
 ::sci::spinal cord injury
+::vh::vertebral hemangioma
 
 ;; Others
 ::dvt::deep vein thrombosis
