@@ -361,13 +361,6 @@ PrevReportGuiGuiEscape:
   Gui, Destroy
 Return
 
-^+c::
-  If (!CopyPrevReport()) {
-    Send ^+c
-    ;MsgBox, Send Original ^+c
-  }
-Return
-
 #IfWinActive
 
 CopyPrevReport(){
