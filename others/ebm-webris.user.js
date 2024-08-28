@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20240710.1
+// @version      20240828.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -146,14 +146,19 @@
                     i = (i > -1) ? i - 1 : frameHistoryTr.length - 1;
                     step = -1;
                 }
+                let foundSimilar = false;
                 for (; i >= 0 && i < frameHistoryTr.length; i+=step) {
                     const prevExamName = frameHistoryTr[i].children[4].textContent;
                     //console.log(prevExamName + ': ' + isRelatedReport(prevExamName, currExamName));
                     if (isRelatedReport(prevExamName, currExamName)) {
                         frameHistoryTr[i].click();
                         scrollToSelectedItem(frameHistoryTr[i]);
+                        foundSimilar = true;
                         break;
                     }
+                }
+                if (!foundSimilar && currTr) {
+                    scrollToSelectedItem(currTr);
                 }
             }
         }
@@ -174,6 +179,7 @@
                     i = (i > -1) ? i - 1 : frameHistoryTr.length - 1;
                     step = -1;
                 }
+                let foundSimilar = false;
                 for (; i >= 0 && i < frameHistoryTr.length; i+=step) {
                     const prevExamName = frameHistoryTr[i].children[4].textContent;
                     //console.log(prevExamName + ': ' + isRelatedReport(prevExamName, currExamName));
@@ -182,6 +188,9 @@
                         scrollToSelectedItem(frameHistoryTr[i]);
                         break;
                     }
+                }
+                if (!foundSimilar && currTr) {
+                    scrollToSelectedItem(currTr);
                 }
             }
         }
@@ -490,6 +499,8 @@
         'Hip lateral(L)': ['Pelvis THR'],
         'Foot AP+oblique(R)': ['Foot lateral(R)', 'Foot AP+lateral(R)'],
         'Foot AP+oblique(L)': ['Foot lateral(L)', 'Foot AP+lateral(L)'],
+        'Foot lateral standing(R)': ['Foot AP+oblique(R)', 'Foot lateral(R)', 'Foot AP+lateral(R)'],
+        'Foot lateral standing(L)': ['Foot AP+oblique(L)', 'Foot lateral(L)', 'Foot AP+lateral(L)'],
 
         // ultrasound
         'Sono Abdomen': ['腹部超音波，追蹤性', 'Abdominal ultrasound, for follow-up'],
