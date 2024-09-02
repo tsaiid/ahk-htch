@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20240828.2
+// @version      20240902.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -446,12 +446,13 @@
 
     const simExam = {
         // plain film
-        'Chest': ['CHEST', 'Chest AP Portable', 'Chest PA+lateral(R)', 'Chest PA+lateral(L)', 'CHEST PA+Lat(L.R)'],
+        'Chest': ['CHEST', 'Chest AP Portable', 'Chest PA+lateral(R)', 'Chest PA+lateral(L)', 'CHEST PA+Lat(L.R)',
+                  '【限IDS申報】Chest PA(Telemedicine)'],
         'Chest-Study': ['Chest', 'CHEST', 'Chest AP Portable', 'Chest PA+lateral(R)', 'Chest PA+lateral(L)',
-                        'CHEST PA+Lat(L.R)', 'Lung Low Dose CT-Study'],
-        'Chest PA+lateral(L)': ['Chest', 'CHEST', 'Chest AP Portable'],
-        'Chest PA+lateral(R)': ['Chest', 'CHEST', 'Chest AP Portable'],
-        'Chest AP Portable': ['Chest', 'CHEST'],
+                        'CHEST PA+Lat(L.R)', 'Lung Low Dose CT-Study', '【限IDS申報】Chest PA(Telemedicine)'],
+        'Chest PA+lateral(L)': ['Chest', 'CHEST', 'Chest AP Portable', '【限IDS申報】Chest PA(Telemedicine)'],
+        'Chest PA+lateral(R)': ['Chest', 'CHEST', 'Chest AP Portable', '【限IDS申報】Chest PA(Telemedicine)'],
+        'Chest AP Portable': ['Chest', 'CHEST', '【限IDS申報】Chest PA(Telemedicine)'],
         'KUB': ['ABDOMEN KUB', 'KUB Portable'],
         'KUB Portable': ['ABDOMEN KUB', 'KUB'],
         'Abdomen standing': ['KUB', 'ABDOMEN KUB', 'KUB Portable'],
