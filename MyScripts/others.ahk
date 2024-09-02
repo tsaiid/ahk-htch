@@ -251,8 +251,7 @@ Return
 ::rgv::regressive
 ::csd::considered
 ::spd::suspected
-::spf::suspicious for `
-::spo::suspicion of `
+::so::suspicion of `
 ::su::size up to `
 ::ic::inflammatory change
 ::infl::inflammation
