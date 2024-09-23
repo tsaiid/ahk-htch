@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20240905.1
+// @version      20240923.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -647,7 +647,7 @@
                 examOriginStr = jNode[0].value;
                 if (examOriginStr.match(/^住院/)) {
                     jNode.first().attr('style', 'color: #be99ff !important');
-                } else if (examOriginStr == '急診') {
+                } else if (examOriginStr.match(/^急診/)) {
                     jNode.first().attr('style', 'color: #ff62ac !important');
                 } else if (examOriginStr == '健檢') {
                     jNode.first().attr('style', 'color: #f0f0bb !important');
