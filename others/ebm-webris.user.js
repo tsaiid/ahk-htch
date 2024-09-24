@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20240923.1
+// @version      20240925.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -82,6 +82,15 @@
         const filteredRows = Array.from(allRows).filter(tr => {
             const tds = tr.querySelectorAll('td');
             return !Array.from(tds).some(td => td.hasAttribute('colspan'));
+        });
+        return filteredRows;
+    }
+
+    function getFrameHistoryUnfinishedTr() {
+        const allRows = document.querySelectorAll('#frameHistory tbody tr');
+        const filteredRows = Array.from(allRows).filter(tr => {
+            const tds = tr.querySelectorAll('td:first-child');
+            return Array.from(tds).some(td => td.textContent.endsWith('*'));
         });
         return filteredRows;
     }
@@ -308,6 +317,15 @@
                 document.execCommand('insertText', false, prev_examdate);
             }
         }
+
+        function isAbdCT(examName) {
+            const abdCTList = ['Abdomen to Pelvis CT'];
+            return abdCTList.includes(examName);
+        }
+        function isChestCT(examName) {
+            const chestCTList = ['Chest CT'];
+            return chestCTList.includes(examName);
+        }
         // Ctrl+Alt+F: Insert Exam Name and Contrast
         // Remap hotkey to Ctrl+Alt+Shift+E in AHK
         if (ev.ctrlKey && ev.altKey && ev.key === 'f') {
@@ -319,9 +337,21 @@
                 if (currContrast && CONTRAST_STR.hasOwnProperty(currContrast)) {
                     examStr += CONTRAST_STR[currContrast];
                 }
+                // handle multiple parts CT exams
+                if (isAbdCT(currExamName)) {
+                    const frameHistoryUnfinishedTr = getFrameHistoryUnfinishedTr();
+                    for (let i = 0; i < frameHistoryUnfinishedTr.length; i++) {
+                        const unfinishedExamName = frameHistoryUnfinishedTr[i].children[4].textContent;
+                        if (isChestCT(unfinishedExamName)) {
+                            examStr = 'Chest, ' + examStr;
+                            break;
+                        }
+                    }
+                }
                 document.execCommand('insertText', false, examStr + ":\n\n");
             }
         }
+
         // Ctrl+Alt+E: Insert Exam Name
         // Remap hotkey to Alt+E in AHK
         if (ev.ctrlKey && ev.altKey && ev.key === 'e') {
