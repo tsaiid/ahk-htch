@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20240925.1
+// @version      20240925.2
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -319,7 +319,7 @@
         }
 
         function isAbdCT(examName) {
-            const abdCTList = ['Abdomen to Pelvis CT'];
+            const abdCTList = ['Abdomen to Pelvis CT', 'Abdomen  Liver Triple Phase CT'];
             return abdCTList.includes(examName);
         }
         function isChestCT(examName) {
