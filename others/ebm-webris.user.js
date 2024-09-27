@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20240927.1
+// @version      20240927.2
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -329,6 +329,9 @@
         function isAortaCT(examName) {
             return examName.includes("Aorta");
         }
+        function isMsk(examName) {
+            return examName.includes("JOINT");
+        }
         // Ctrl+Alt+F: Insert Exam Name and Contrast
         // Remap hotkey to Ctrl+Alt+Shift+E in AHK
         if (ev.ctrlKey && ev.altKey && ev.key === 'f') {
@@ -362,6 +365,13 @@
                             examStr = examStr.replace(/\w+\s+(Aorta.+$)/, aortaPartList + " $1");
                             break;
                         }
+                    }
+                } else if (isMsk(currExamName)) {
+                    const soap_s = [...document.querySelectorAll('span')].filter((el) => el.innerText.includes("病患主述"))[0].parentElement.nextSibling.value;
+                    const foundLat = soap_s.match(/(left|right)/i);
+                    if (foundLat) {
+                        const strLat = foundLat[1].charAt(0).toUpperCase() + foundLat[1].slice(1).toLowerCase();
+                        examStr = strLat + " " + examStr;
                     }
                 }
                 document.execCommand('insertText', false, examStr + ":\n\n");
