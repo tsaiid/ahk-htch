@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20240927.2
+// @version      20240927.3
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -330,7 +330,7 @@
             return examName.includes("Aorta");
         }
         function isMsk(examName) {
-            return examName.includes("JOINT");
+            return examName.match(/JOINT|Leg/);
         }
         // Ctrl+Alt+F: Insert Exam Name and Contrast
         // Remap hotkey to Ctrl+Alt+Shift+E in AHK
