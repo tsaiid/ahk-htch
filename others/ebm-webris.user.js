@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20240925.2
+// @version      20240927.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -326,6 +326,9 @@
             const chestCTList = ['Chest CT'];
             return chestCTList.includes(examName);
         }
+        function isAortaCT(examName) {
+            return examName.includes("Aorta");
+        }
         // Ctrl+Alt+F: Insert Exam Name and Contrast
         // Remap hotkey to Ctrl+Alt+Shift+E in AHK
         if (ev.ctrlKey && ev.altKey && ev.key === 'f') {
@@ -344,6 +347,19 @@
                         const unfinishedExamName = frameHistoryUnfinishedTr[i].children[4].textContent;
                         if (isChestCT(unfinishedExamName)) {
                             examStr = 'Chest, ' + examStr;
+                            break;
+                        }
+                    }
+                } else if (isAortaCT(currExamName)) {
+                    const frameHistoryUnfinishedTr = getFrameHistoryUnfinishedTr();
+                    for (let i = 0; i < frameHistoryUnfinishedTr.length; i++) {
+                        const unfinishedExamName = frameHistoryUnfinishedTr[i].children[4].textContent;
+                        if (isAortaCT(unfinishedExamName)) {
+                            const currPart = currExamName.match(/(\w+)\s+Aorta/)[1];
+                            const unfinishedPart = unfinishedExamName.match(/(\w+)\s+Aorta/)[1];
+                            const descCompareFn = (a, b) => (a > b ? -1 : 0);
+                            const aortaPartList = [currPart, unfinishedPart].sort(descCompareFn).join(" and ");
+                            examStr = examStr.replace(/\w+\s+(Aorta.+$)/, aortaPartList + " $1");
                             break;
                         }
                     }
