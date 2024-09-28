@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20240927.6
+// @version      20240928.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -95,6 +95,15 @@
         return filteredRows;
     }
 
+    function getFrameHistoryFinishedSameDateTr(specifiedExamDate) {
+        const allRows = document.querySelectorAll('#frameHistory tbody tr');
+        const filteredRows = Array.from(allRows).filter(tr => {
+            const tds = tr.querySelectorAll('td:first-child');
+            return Array.from(tds).some(td => !td.textContent.endsWith('*') && td.textContent == specifiedExamDate);
+        });
+        return filteredRows;
+    }
+
     function scrollToSelectedItem(selectedTr) {
         const frameHistory = document.querySelector('#frameHistory');
         //console.log('tr top: ' + frameHistoryTr[i].offsetTop + '; div top: ' + frameHistory.offsetTop + '; div height: ' + frameHistory.clientHeight + '; div scrollTop: ' + frameHistory.scrollTop);
@@ -105,6 +114,21 @@
                 ? 0
                 : selectedTr.offsetTop;
         }
+    }
+
+    function isAbdCT(examName) {
+        const abdCTList = ['Abdomen to Pelvis CT', 'Abdomen  Liver Triple Phase CT'];
+        return abdCTList.includes(examName);
+    }
+    function isChestCT(examName) {
+        const chestCTList = ['Chest CT', 'Chest Pulmonary Arteries CT'];
+        return chestCTList.includes(examName);
+    }
+    function isAortaCT(examName) {
+        return examName.includes("Aorta");
+    }
+    function isMsk(examName) {
+        return examName.match(/JOINT|Leg/);
     }
 
     document.addEventListener('keydown', (ev) => {
@@ -318,20 +342,6 @@
             }
         }
 
-        function isAbdCT(examName) {
-            const abdCTList = ['Abdomen to Pelvis CT', 'Abdomen  Liver Triple Phase CT'];
-            return abdCTList.includes(examName);
-        }
-        function isChestCT(examName) {
-            const chestCTList = ['Chest CT', 'Chest Pulmonary Arteries CT'];
-            return chestCTList.includes(examName);
-        }
-        function isAortaCT(examName) {
-            return examName.includes("Aorta");
-        }
-        function isMsk(examName) {
-            return examName.match(/JOINT|Leg/);
-        }
         // Ctrl+Alt+F: Insert Exam Name and Contrast
         // Remap hotkey to Ctrl+Alt+Shift+E in AHK
         if (ev.ctrlKey && ev.altKey && ev.key === 'f') {
@@ -467,6 +477,23 @@
                 //console.log(jNode.first());
                 jNode.first().addClass('hl-sim-report');
                 foundReport = true;
+            }
+            // check if a multipart exam first
+            if (isChestCT(currExamName) || isAbdCT(currExamName)) {
+                const accNo = getCurrAccNo();
+                const currExamDateStr = getCurrExamDate();
+                const frameHistoryFinishedSameDateTr = getFrameHistoryFinishedSameDateTr(currExamDateStr);
+                for (let i = 0; i < frameHistoryFinishedSameDateTr.length; i++) {
+                    const prevExamName = frameHistoryFinishedSameDateTr[i].children[4].textContent;
+                    if ((accNo != foundSimilarReportAccNo) && ((isChestCT(currExamName) && isAbdCT(prevExamName)) || (isChestCT(prevExamName) && isAbdCT(currExamName)))) {
+                        console.log('Is Multi Part Exam. foundAccNo: ' + foundSimilarReportAccNo + ' accNo: ' + accNo);
+                        foundSimilarReportAccNo = accNo;
+                        setTimeout(() => {
+                            frameHistoryFinishedSameDateTr[i].click();
+                            scrollToSelectedItem(frameHistoryFinishedSameDateTr[i]);
+                        }, 1500);
+                    }
+                }
             }
             if (foundReport) {
                 const currExamDateStr = getCurrExamDate();
