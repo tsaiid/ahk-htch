@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20240928.1
+// @version      20240928.2
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -479,13 +479,15 @@
                 foundReport = true;
             }
             // check if a multipart exam first
-            if (isChestCT(currExamName) || isAbdCT(currExamName)) {
+            if (isChestCT(currExamName) || isAbdCT(currExamName) || isAortaCT(currExamName)) {
                 const accNo = getCurrAccNo();
                 const currExamDateStr = getCurrExamDate();
                 const frameHistoryFinishedSameDateTr = getFrameHistoryFinishedSameDateTr(currExamDateStr);
                 for (let i = 0; i < frameHistoryFinishedSameDateTr.length; i++) {
                     const prevExamName = frameHistoryFinishedSameDateTr[i].children[4].textContent;
-                    if ((accNo != foundSimilarReportAccNo) && ((isChestCT(currExamName) && isAbdCT(prevExamName)) || (isChestCT(prevExamName) && isAbdCT(currExamName)))) {
+                    if ((accNo != foundSimilarReportAccNo) && ((isChestCT(currExamName) && isAbdCT(prevExamName))
+                                                               || (isChestCT(prevExamName) && isAbdCT(currExamName))
+                                                               || (isAortaCT(prevExamName) && prevExamName != currExamName))) {
                         console.log('Is Multi Part Exam. foundAccNo: ' + foundSimilarReportAccNo + ' accNo: ' + accNo);
                         foundSimilarReportAccNo = accNo;
                         setTimeout(() => {
