@@ -117,6 +117,8 @@ Return
 ;  btnObj := Acc_Get("Object", CopyReportPath, 0, "WebRIS")
 ;  btnObj.accDoDefaultAction(0)
   Send ^0
+  Sleep, 500
+  Send ^{Home}
 Return
 
 !Esc::
