@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20240928.2
+// @version      20241002.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -117,7 +117,7 @@
     }
 
     function isAbdCT(examName) {
-        const abdCTList = ['Abdomen to Pelvis CT', 'Abdomen  Liver Triple Phase CT'];
+        const abdCTList = ['Abdomen to Pelvis CT', 'Abdomen  Liver Triple Phase CT', 'Abdomen  Liver 4 Phase CT'];
         return abdCTList.includes(examName);
     }
     function isChestCT(examName) {
@@ -513,7 +513,7 @@
 
                         // Delayed for 1 second
                         setTimeout(() => {
-                            //console.log("first run for this exam: " + accNo);
+                            console.log("first run for this exam: " + accNo);
                             jNode.first().click();
 
                             // scroll to selected report
