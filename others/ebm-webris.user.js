@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20241007.1
+// @version      20241015.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -133,6 +133,9 @@
     function isAngio(examName) {
         const angioList = ['Celiac a three vessel', 'Lipiodol T.A.E.(trans-arterial embolization)-Lipiodol'];
         return angioList.includes(examName);
+    }
+    function isSonoCDU(examName) {
+        return examName.includes("Sono CDU");
     }
 
     document.addEventListener('keydown', (ev) => {
@@ -467,6 +470,9 @@
     );
 
     var foundSimilarReportAccNo = '';
+    function needSameReport(examName) {
+        return isSonoCDU(examName);
+    }
     function highlightSimilarExamAndClickLatest(jNode) {
         const currExamName = getCurrExamName();
         //console.log(jNode.first().siblings('td').first().text());
@@ -480,7 +486,9 @@
                 //console.log("檢查項目: " + currExamName);
                 //console.log(jNode.first());
                 jNode.first().addClass('hl-sim-report');
-                foundReport = true;
+                if (!needSameReport(currExamName)) {
+                    foundReport = true;
+                }
             }
             // check if a multipart exam first
             if (isChestCT(currExamName) || isAbdCT(currExamName) || isAortaCT(currExamName) || isAngio(currExamName)) {
