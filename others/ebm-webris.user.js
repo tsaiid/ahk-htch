@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20241015.1
+// @version      20241017.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -136,6 +136,9 @@
     }
     function isSonoCDU(examName) {
         return examName.includes("Sono CDU");
+    }
+    function isSonoBreast(examName) {
+        return examName == "Sono Breasts";
     }
 
     document.addEventListener('keydown', (ev) => {
@@ -470,8 +473,8 @@
     );
 
     var foundSimilarReportAccNo = '';
-    function needSameReport(examName) {
-        return isSonoCDU(examName);
+    function forceSameReport(examName) {
+        return isSonoCDU(examName) || isSonoBreast(examName);
     }
     function highlightSimilarExamAndClickLatest(jNode) {
         const currExamName = getCurrExamName();
@@ -486,7 +489,7 @@
                 //console.log("檢查項目: " + currExamName);
                 //console.log(jNode.first());
                 jNode.first().addClass('hl-sim-report');
-                if (!needSameReport(currExamName)) {
+                if (!forceSameReport(currExamName)) {
                     foundReport = true;
                 }
             }
