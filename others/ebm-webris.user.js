@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20241017.1
+// @version      20241021.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -595,6 +595,10 @@
         'Elbow AP+lateral(L)': ['Elbow oblique(L)'],
         'Wrist PA ulnar deviation(R)': ['Wrist PA+lateral(R)'],
         'Wrist PA ulnar deviation(L)': ['Wrist PA+lateral(L)'],
+        'Hand PA+lateral(R)': ['Hand PA+oblique(R)'],
+        'Hand PA+lateral(L)': ['Hand PA+oblique(L)'],
+        'Hand PA+oblique(R)': ['Hand PA+lateral(R)'],
+        'Hand PA+oblique(L)': ['Hand PA+lateral(L)'],
         'Knee AP+lateral(R)': ['Knee AP+lateral standing(R)', 'JOINT Knee CT'],
         'Knee AP+lateral(L)': ['Knee AP+lateral standing(L)', 'JOINT Knee CT'],
         'Knee AP+lateral standing(R)': ['Knee AP+lateral(R)', 'JOINT Knee CT'],
