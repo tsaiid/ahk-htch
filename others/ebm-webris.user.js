@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20241021.2
+// @version      20241021.3
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -622,10 +622,12 @@
                          'Mammography L&R', 'Mammography L&R(HPA)限45歲以上', 'Mammography L&R(HPA)', 'MAMMOGRAPHY L&R'],
 
         // CT
-        'Abdomen to Pelvis CT': ['Abdomen  Liver Triple Phase CT', 'Abdomen  Liver 4 Phase CT', 'ABDOMEN Liver MRI'],
-        'Abdomen  Liver Triple Phase CT': ['Abdomen to Pelvis CT', 'Abdomen  Liver 4 Phase CT'],
+        'Abdomen to Pelvis CT': ['Abdomen  Liver Triple Phase CT', 'Abdomen  Liver 4 Phase CT', 'ABDOMEN Liver MRI',
+                                 'Colon cancer (Abdomen & Pelvis)-CT'],
+        'Abdomen  Liver Triple Phase CT': ['Abdomen to Pelvis CT', 'Abdomen  Liver 4 Phase CT',
+                                           'Colon cancer (Abdomen & Pelvis)-CT'],
         'Abdomen  Liver 4 Phase CT': ['Abdomen to Pelvis CT', 'Abdomen  Liver Triple Phase CT', 'ABDOMEN Liver MRI',
-                                      'Sono Abdomen'],
+                                      'Sono Abdomen', 'Colon cancer (Abdomen & Pelvis)-CT'],
         'Abdomen pancreas dual phase CT': [
             'Abdomen  Pancreas Dual Phase  CT', 'Abdomen to Pelvis CT', 'Abdomen  Liver 4 Phase CT',
             'Abdomen  Liver Triple Phase CT',
