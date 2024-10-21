@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20241021.1
+// @version      20241021.2
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -139,6 +139,9 @@
     }
     function isSonoBreast(examName) {
         return examName == "Sono Breasts";
+    }
+    function isSpineMRI(examName) {
+        return examName.match(/SPINE .+ MRI/);
     }
 
     document.addEventListener('keydown', (ev) => {
@@ -474,7 +477,7 @@
 
     var foundSimilarReportAccNo = '';
     function forceSameReport(examName) {
-        return isSonoCDU(examName) || isSonoBreast(examName);
+        return isSonoCDU(examName) || isSonoBreast(examName) || isSpineMRI(examName);
     }
     function highlightSimilarExamAndClickLatest(jNode) {
         const currExamName = getCurrExamName();
