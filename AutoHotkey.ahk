@@ -22,6 +22,7 @@ GroupAdd, Login, 慈濟病歷電子書
 GroupAdd, Login, ahk_exe AdmOrder1.EXE
 GroupAdd, Login, ahk_exe Code.exe
 GroupAdd, Login, ahk_exe WebViewer.exe
+GroupAdd, Login, WebRIS - 個人 - Microsoft​ Edge
 
 ; External Libraries
 #Include <WBGet>
