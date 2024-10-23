@@ -23,6 +23,7 @@ GroupAdd, Login, ahk_exe AdmOrder1.EXE
 GroupAdd, Login, ahk_exe Code.exe
 GroupAdd, Login, ahk_exe WebViewer.exe
 GroupAdd, Login, WebRIS - 個人 - Microsoft​ Edge
+GroupAdd, Login, 花蓮慈院上網認證
 
 ; External Libraries
 #Include <WBGet>
