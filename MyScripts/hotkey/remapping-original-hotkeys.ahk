@@ -88,6 +88,10 @@ Return
   Send ^!d
 Return
 
+!+d::
+  Send ^!+d
+Return
+
 !p::
   Send ^!p
 Return
