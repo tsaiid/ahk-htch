@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20241024.1
+// @version      20241105.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -345,14 +345,27 @@
                 document.execCommand('insertText', false, formatted_str);
             }
         }
-        // Ctrl+Alt+D: Insert Prev Exam Date
+        // Ctrl+Alt+D: Insert Prev Exam Date in Y-M-D format
         // Remap hotkey to Alt+D in AHK
         if (ev.ctrlKey && ev.altKey && ev.key === 'd') {
-            console.log("Ctrl+Alt+D: Insert Prev Exam Date");
+            console.log("Ctrl+Alt+D: Insert Prev Exam Date (Y-M-D)");
             //navigator.clipboard.writeText(prev_examdate);
             const curr_pid = getCurrPatId();
             if (curr_pid === prev_examdate_pid) {
                 document.execCommand('insertText', false, prev_examdate);
+            }
+        }
+
+        // Ctrl+Alt+Shift+D: Insert Prev Exam Date in Y/M/D format
+        // Remap hotkey to Alt+Shift+D in AHK
+        if (ev.ctrlKey && ev.altKey && ev.key === 'D') {
+            console.log("Ctrl+Alt+D: Insert Prev Exam Date (Y/M/D)");
+            //navigator.clipboard.writeText(prev_examdate);
+            const curr_pid = getCurrPatId();
+            if (curr_pid === prev_examdate_pid) {
+                const [year, month, day] = prev_examdate.split('-');
+                const new_prev_examdate = `${year}/${parseInt(month)}/${parseInt(day)}`;
+                document.execCommand('insertText', false, new_prev_examdate);
             }
         }
 
