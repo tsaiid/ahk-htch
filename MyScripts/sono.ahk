@@ -7,9 +7,9 @@
 
 ;; Sono, Upper Abdomen
 ::slcpd::Heterogeneous hyperechoic liver parenchyma echo pattern, suspicious chronic parenchymal disease.
-::slfl::Coarsening and hyperechoic liver parenchyma echo pattern without focal lesion noted, in favor of fatty liver change.
+::slfl::Coarsening and hyperechoic liver parenchyma echo pattern, in favor of fatty liver change.
 ::slfll::Coarsening and hyperechoic liver parenchyma echo pattern without focal lesion noted, in favor of fatty liver change. It may mask lesions, especially in the deep region.
-::slmfl::Slightly increased hyperechoic liver parenchyma without focal lesion noted, in favor of mild fatty liver change.
+::slmfl::Slightly increased hyperechoic liver parenchyma, in favor of mild fatty liver change.
 ::slc::Irregular surface of the liver and coarsening change of the parenchyma, indicating cirrhosis.
 ::slmc::Mildly irregular surface of the liver and coarsening change of the parenchyma, indicating mild cirrhosis.
 ::sngb::The gallbladder is not seen, may be due to previous cholecystectomy.
