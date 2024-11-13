@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20241113.1
+// @version      20241113.2
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -529,6 +529,10 @@
     function forceSameReport(examName) {
         return isSonoCDU(examName) || isSonoBreast(examName) || isSpineMRI(examName);
     }
+    function isMultiPart(examName) {
+        return isChestCT(examName) || isAbdCT(examName) || isAortaCT(examName)
+            || isAngio(examName) || isSpineMRI(examName);
+    }
     function highlightSimilarExamAndClickLatest(jNode) {
         const currExamName = getCurrExamName();
         //console.log(jNode.first().siblings('td').first().text());
@@ -547,7 +551,7 @@
                 }
             }
             // check if a multipart exam first
-            if (isChestCT(currExamName) || isAbdCT(currExamName) || isAortaCT(currExamName) || isAngio(currExamName)) {
+            if (isMultiPart(currExamName)) {
                 const accNo = getCurrAccNo();
                 const currExamDateStr = getCurrExamDate();
                 const frameHistoryFinishedSameDateTr = getFrameHistoryFinishedSameDateTr(currExamDateStr);
@@ -556,7 +560,8 @@
                     if ((accNo != foundSimilarReportAccNo) && ((isChestCT(currExamName) && isAbdCT(prevExamName))
                                                                || (isChestCT(prevExamName) && isAbdCT(currExamName))
                                                                || (isAortaCT(prevExamName) && prevExamName != currExamName)
-                                                               || (isAngio(currExamName) && isAngio(prevExamName)))) {
+                                                               || (isAngio(currExamName) && isAngio(prevExamName))
+                                                               || (isSpineMRI(currExamName) && isSpineMRI(prevExamName)))) {
                         console.log('Is Multi Part Exam. foundAccNo: ' + foundSimilarReportAccNo + ' accNo: ' + accNo);
                         foundSimilarReportAccNo = accNo;
                         setTimeout(() => {
