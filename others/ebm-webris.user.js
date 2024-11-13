@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20241108.1
+// @version      20241113.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -145,6 +145,19 @@
     }
     function isSpineMRI(examName) {
         return examName.match(/SPINE .+ MRI/);
+    }
+
+    function joinWithAnd(arr) {
+        // 如果 array 為空，返回空字串
+        if (arr.length === 0) return '';
+        // 如果 array 只有一個元素，直接返回
+        if (arr.length === 1) return arr[0];
+        // 如果 array 有兩個元素，使用 'and' 連接
+        if (arr.length === 2) return `${arr[0]} and ${arr[1]}`;
+
+        // 處理三個以上的元素，將前 n-1 個元素用 ", " 連接，最後一個元素用 ", and " 連接
+        const lastItem = arr.pop(); // 取出最後一個元素
+        return `${arr.join(', ')}, and ${lastItem}`;
     }
 
     document.addEventListener('keydown', (ev) => {
@@ -371,6 +384,15 @@
             }
         }
 
+
+        const descCompareFn = (a, b) => (a > b ? -1 : 0);
+        const spineCompareFn = (a, b) => {
+            const spineOrder = ['Cervical', 'Thoracic', 'Lumbosacral'];
+            const indexA = spineOrder.indexOf(a);
+            const indexB = spineOrder.indexOf(b);
+            return (indexA === -1 ? Infinity : indexA) - (indexB === -1 ? Infinity : indexB);
+        };
+
         // Ctrl+Alt+F: Insert Exam Name and Contrast
         // Remap hotkey to Ctrl+Alt+Shift+E in AHK
         if (ev.ctrlKey && ev.altKey && ev.key === 'f') {
@@ -399,7 +421,6 @@
                         if (isAortaCT(unfinishedExamName)) {
                             const currPart = currExamName.match(/(\w+)\s+Aorta/)[1];
                             const unfinishedPart = unfinishedExamName.match(/(\w+)\s+Aorta/)[1];
-                            const descCompareFn = (a, b) => (a > b ? -1 : 0);
                             const aortaPartList = [currPart, unfinishedPart].sort(descCompareFn).join(" and ");
                             examStr = examStr.replace(/\w+\s+(Aorta.+$)/, aortaPartList + " $1");
                             break;
@@ -412,6 +433,19 @@
                         const strLat = foundLat[1].charAt(0).toUpperCase() == 'L' ? 'Left ' : 'Right ';
                         examStr = strLat + examStr;
                     }
+                } else if (isSpineMRI(currExamName)) {
+                    const frameHistoryUnfinishedTr = getFrameHistoryUnfinishedTr();
+                    const currPart = currExamName.match(/SPINE (\w+)\s+MRI/)[1];
+                    let spinePartList = [currPart];
+                    for (let i = 0; i < frameHistoryUnfinishedTr.length; i++) {
+                        const unfinishedExamName = frameHistoryUnfinishedTr[i].children[4].textContent;
+                        if (isSpineMRI(unfinishedExamName)) {
+                            const unfinishedPart = unfinishedExamName.match(/SPINE (\w+)\s+MRI/)[1];
+                            spinePartList.push(unfinishedPart);
+                        }
+                    }
+                    const spinePartStr = joinWithAnd(spinePartList.sort(spineCompareFn));
+                    examStr = examStr.replace(/\w+\s+(MRI.+$)/, spinePartStr + " $1");
                 }
                 document.execCommand('insertText', false, examStr + ":\n\n");
             }
