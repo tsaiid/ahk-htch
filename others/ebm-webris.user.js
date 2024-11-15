@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20241113.2
+// @version      20241115.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -143,8 +143,8 @@
     function isSonoBreast(examName) {
         return examName == "Sono Breasts";
     }
-    function isSpineMRI(examName) {
-        return examName.match(/SPINE .+ MRI/);
+    function isSpineCTorMRI(examName) {
+        return examName.match(/SPINE.+(CT|MRI)/);
     }
 
     function joinWithAnd(arr) {
@@ -433,19 +433,19 @@
                         const strLat = foundLat[1].charAt(0).toUpperCase() == 'L' ? 'Left ' : 'Right ';
                         examStr = strLat + examStr;
                     }
-                } else if (isSpineMRI(currExamName)) {
+                } else if (isSpineCTorMRI(currExamName)) {
                     const frameHistoryUnfinishedTr = getFrameHistoryUnfinishedTr();
-                    const currPart = currExamName.match(/SPINE (\w+)\s+MRI/)[1];
+                    const currPart = currExamName.match(/SPINE\s+(\w+)\s+(CT|MRI)/)[1];
                     let spinePartList = [currPart];
                     for (let i = 0; i < frameHistoryUnfinishedTr.length; i++) {
                         const unfinishedExamName = frameHistoryUnfinishedTr[i].children[4].textContent;
-                        if (isSpineMRI(unfinishedExamName)) {
-                            const unfinishedPart = unfinishedExamName.match(/SPINE (\w+)\s+MRI/)[1];
+                        if (isSpineCTorMRI(unfinishedExamName)) {
+                            const unfinishedPart = unfinishedExamName.match(/SPINE\s+(\w+)\s+(CT|MRI)/)[1];
                             spinePartList.push(unfinishedPart);
                         }
                     }
                     const spinePartStr = joinWithAnd(spinePartList.sort(spineCompareFn));
-                    examStr = examStr.replace(/\w+\s+(MRI.+$)/, spinePartStr + " $1");
+                    examStr = examStr.replace(/.+(CT|MRI)/, "SPINE " + spinePartStr + " $1");
                 }
                 document.execCommand('insertText', false, examStr + ":\n\n");
             }
@@ -527,11 +527,11 @@
 
     var foundSimilarReportAccNo = '';
     function forceSameReport(examName) {
-        return isSonoCDU(examName) || isSonoBreast(examName) || isSpineMRI(examName);
+        return isSonoCDU(examName) || isSonoBreast(examName) || isSpineCTorMRI(examName);
     }
     function isMultiPart(examName) {
         return isChestCT(examName) || isAbdCT(examName) || isAortaCT(examName)
-            || isAngio(examName) || isSpineMRI(examName);
+            || isAngio(examName) || isSpineCTorMRI(examName);
     }
     function highlightSimilarExamAndClickLatest(jNode) {
         const currExamName = getCurrExamName();
@@ -561,7 +561,7 @@
                                                                || (isChestCT(prevExamName) && isAbdCT(currExamName))
                                                                || (isAortaCT(prevExamName) && prevExamName != currExamName)
                                                                || (isAngio(currExamName) && isAngio(prevExamName))
-                                                               || (isSpineMRI(currExamName) && isSpineMRI(prevExamName)))) {
+                                                               || (isSpineCTorMRI(currExamName) && isSpineCTorMRI(prevExamName)))) {
                         console.log('Is Multi Part Exam. foundAccNo: ' + foundSimilarReportAccNo + ' accNo: ' + accNo);
                         foundSimilarReportAccNo = accNo;
                         setTimeout(() => {
