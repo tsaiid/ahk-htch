@@ -45,6 +45,7 @@
 ::mspll::Mild spondylosis of L-spine.
 ::msplt::Mild spondylosis of T-spine.
 ::mspltl::Mild spondylosis of T- and L-spine.
+::mspltl1::Mild spondylosis of T- to L-spine with marginal osteophyte formation and disc space narrowing.
 ::msplctl::Mild spondylosis of C-, T- and L-spine.
 ::oak0::Mild joint space narrowing in the medial compartment of the knee.
 ::oak1a::Mild joint space narrowing, especially in the medial compartment of the knee, suggestive of mild osteoarthrosis.
