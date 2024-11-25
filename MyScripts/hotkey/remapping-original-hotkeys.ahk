@@ -70,8 +70,7 @@ Return
 Return
 
 ^w::
-  Send +^{Left}
-  Send {BS}
+  Send ^{BS}
 Return
 
 #d::
