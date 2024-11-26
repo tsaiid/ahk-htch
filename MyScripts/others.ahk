@@ -134,6 +134,7 @@
 ::ltls::lower T- to L-spine
 ::ije::increased joint effusion
 ::mije::mildly increased joint effusion
+::mibe::mildly increased bursal effusion
 ::ijbe::increased joint and bursal effusion
 ::mijbe::mildly increased joint and bursal effusion
 
