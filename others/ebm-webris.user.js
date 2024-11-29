@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20241115.2
+// @version      20241129.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -411,6 +411,15 @@
                         const unfinishedExamName = frameHistoryUnfinishedTr[i].children[4].textContent;
                         if (isChestCT(unfinishedExamName)) {
                             examStr = unfinishedExamName.replace(' CT', ', ') + examStr;
+                            break;
+                        }
+                    }
+                } else if (isChestCT(currExamName)) {
+                    const frameHistoryUnfinishedTr = getFrameHistoryUnfinishedTr();
+                    for (let i = 0; i < frameHistoryUnfinishedTr.length; i++) {
+                        const unfinishedExamName = frameHistoryUnfinishedTr[i].children[4].textContent;
+                        if (isAbdCT(unfinishedExamName)) {
+                            examStr = examStr.replace(' CT', ', ' + unfinishedExamName);
                             break;
                         }
                     }
