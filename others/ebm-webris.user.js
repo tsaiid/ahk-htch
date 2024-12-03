@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20241129.1
+// @version      20241203.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -675,6 +675,8 @@
         'Pelvis THR': ['Hip lateral(R)', 'Hip lateral(L)', 'KUB'],
         'Hip lateral(R)': ['Pelvis THR'],
         'Hip lateral(L)': ['Pelvis THR'],
+        'Foot AP+lateral(R)': ['Foot lateral(R)', 'Foot AP+oblique(R)'],
+        'Foot AP+lateral(L)': ['Foot lateral(L)', 'Foot AP+oblique(L)'],
         'Foot AP+oblique(R)': ['Foot lateral(R)', 'Foot AP+lateral(R)'],
         'Foot AP+oblique(L)': ['Foot lateral(L)', 'Foot AP+lateral(L)'],
         'Foot lateral standing(R)': ['Foot AP+oblique(R)', 'Foot lateral(R)', 'Foot AP+lateral(R)'],
