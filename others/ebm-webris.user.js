@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20241203.1
+// @version      20241204.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -134,7 +134,7 @@
     function isAngio(examName) {
         const angioList = ['Celiac a three vessel', 'Lipiodol T.A.E.(trans-arterial embolization)-Lipiodol',
                            'Percutaneous placement of ureter stent', 'Percutaneous retrieval of ureteral stent',
-                           'PCN', 'Percutaneous ureteroplasty'];
+                           'PCN', 'Percutaneous ureteroplasty', 'PCN revision'];
         return angioList.includes(examName);
     }
     function isSonoCDU(examName) {
