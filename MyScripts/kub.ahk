@@ -99,25 +99,25 @@ Return
 ::kss::
   MyForm =
 (
-Mottled gas pattern along colon course is noted, implying fecal residues retention.
-The stone evaluation is limited.
+- Mottled gas pattern along colon course is noted, implying fecal residues retention.
+- The stone evaluation is limited.
 )
   Paste(MyForm)
 Return
 ::ksi::
   MyForm =
 (
-Mottled gas pattern along colon course is noted, implying fecal residues retention.
-Obvious small bowel gas, c/w stool impaction.
+- Mottled gas pattern along colon course is noted, implying fecal residues retention.
+- Obvious small bowel gas, c/w stool impaction.
 )
   Paste(MyForm)
 Return
 ::sk::
   MyForm =
 (
-The bowel gas pattern, bilateral kidney shadows and psoas muscle contours are unremarkable.
-No evidence of subphrenic free air.
-No obvious air-fluid level in the bowel.
+- The bowel gas pattern, bilateral kidney shadows and psoas muscle contours are unremarkable.
+- No evidence of subphrenic free air.
+- No obvious air-fluid level in the bowel.
 )
   Paste(MyForm)
 Return
