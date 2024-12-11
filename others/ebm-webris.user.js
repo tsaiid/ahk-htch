@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20241210.1
+// @version      20241211.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -536,7 +536,7 @@
 
     var foundSimilarReportAccNo = '';
     function forceSameReport(examName) {
-        return isSonoCDU(examName) || isSonoBreast(examName) || isSpineCTorMRI(examName);
+        return isSonoCDU(examName) || isSonoBreast(examName) || isSpineCTorMRI(examName) || isChestCT(examName);
     }
     function isMultiPart(examName) {
         return isChestCT(examName) || isAbdCT(examName) || isAortaCT(examName)
