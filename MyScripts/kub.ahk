@@ -30,9 +30,9 @@
 ::bfcvp::On central venous catheters via bilateral femoral veins.
 ::ki::Obvious small bowel gas, may be due to paralytic ileus.
 ::ki2::Focal dilated bowel loops, probably ileus or partial bowel obstruction.
-::kiafl::Mild dilated bowel loops with several air-fluid levels, probably partial bowel obstruction or ileus.
+::kiafl::Mildly dilated bowel loops with several air-fluid levels, probably partial bowel obstruction or ileus.
 ::kbo::Obvious dilated bowel loops, suspicious bowel obstruction.
-::kmi::Mild distended small bowel gas, may be due to mild paralytic ileus.
+::kmi::Mildly distended small bowel gas, may be due to mild paralytic ileus.
 ::rdj::s/p right side double-J ureteral stent.
 ::ldj::s/p left side double-J ureteral stent.
 ::bdj::s/p bilateral double-J ureteral stents.
