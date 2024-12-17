@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20241217.2
+// @version      20241217.3
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -281,6 +281,24 @@
             if (sliderGrouping) {
                 sliderGrouping.click();
             }
+            ev.preventDefault();
+        }
+
+        // Ctrl+G: Folding All Lab Grouping in 3rd and 2nd order
+        if (ev.ctrlKey && ev.key === 'g') {
+            console.log("Ctrl+G: Folding All Lab Grouping in 3rd and 2nd order");
+            // 3rd order
+            document.querySelectorAll('div[style="border: 0.5px solid rgb(215, 215, 215); border-radius: 6px;"] div.p-1 div.pointer').forEach(function(p){
+                if (p.nextElementSibling) {
+                    p.children[0].click();
+                }
+            });
+            // 2nd order
+            document.querySelectorAll('div[style="border: 0.5px solid rgb(215, 215, 215); border-radius: 6px;"] div.p-2 div.pointer').forEach(function(p){
+                if (p.nextElementSibling) {
+                    p.click();
+                }
+            });
             ev.preventDefault();
         }
 
