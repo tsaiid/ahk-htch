@@ -13,7 +13,8 @@
 ::amrsptrus::Focal T1 hyperintensities at bilateral lobes, probably post-biopsy changes.
 ::amrbok::No DWI (b=400) hyperintense bone lesion detected.
 ::amrhc::The liver shows diffuse T2 hypointensity, lower signal intensity on in-phase sequence, and higher signal intensity on out-of-phase sequence. Hemochromatosis may be suspected.
-::pok::No space-occupying pancreatic lesion. No pancreatic duct dilatation.
+::panok::No space-occupying pancreatic lesion. No pancreatic duct dilatation.
+::panok1::No definite pancreatic tumor as expected.
 ::pz::peripheral zone
 ::jz::junctional zone
 

@@ -99,7 +99,7 @@
 ::rct1::Upward migration of the humeral head, narrowing the acromiohumeral distance, rotator cuff tear is suspected.
 ::pcsp::Post instrument fixation at the cervical spine.
 ::mpvsts::Mild prevertebral soft tissue swelling.
-::pvsts::Prevertebral soft tissue swelling.
+::pvsts::prevertebral soft tissue swelling
 ::pvsts1::Prevertebral soft tissue swelling, may be due to recent operation.
 ::ptsp::Post instrument fixation at thoracic spine.
 ::ptlsp::Post instrument fixation at the lower thoracic to lumbar spine.

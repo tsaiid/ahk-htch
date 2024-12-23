@@ -99,6 +99,8 @@
 )
   Paste(MyForm)
 Return
+::livok1::No definite hepatic tumor as expected.
+::kidok1::No definite renal tumor as expected.
 ::mcbdd1::Mild CBD dilatation with maximum diameter of 10 mm.
 ::pcal::Some calcifications in the prostate.
 ::rra::right renal atrophy.
