@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20241221.1
+// @version      20241223.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -473,13 +473,17 @@
                     }
                 } else if (isSpineCTorMRI(currExamName)) {
                     const frameHistoryUnfinishedTr = getFrameHistoryUnfinishedTr();
-                    const currPart = currExamName.match(/SPINE\s+(\w+)\s+(CT|MRI)/)[1];
+                    const [, currPart, currModality] = currExamName.match(/SPINE\s+(\w+)\s+(CT|MRI)/);
                     let spinePartList = [currPart];
+                    let reByCurrModality = new RegExp("SPINE\\s+(\\w+)\\s+" + currModality);
                     for (let i = 0; i < frameHistoryUnfinishedTr.length; i++) {
                         const unfinishedExamName = frameHistoryUnfinishedTr[i].children[4].textContent;
                         if (isSpineCTorMRI(unfinishedExamName)) {
-                            const unfinishedPart = unfinishedExamName.match(/SPINE\s+(\w+)\s+(CT|MRI)/)[1];
-                            spinePartList.push(unfinishedPart);
+                            const foundUnfinished = unfinishedExamName.match(reByCurrModality);
+                            if (foundUnfinished) {
+                                const unfinishedPart = foundUnfinished[1];
+                                spinePartList.push(unfinishedPart);
+                            }
                         }
                     }
                     const spinePartStr = joinWithAnd(spinePartList.sort(spineCompareFn));
