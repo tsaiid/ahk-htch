@@ -36,7 +36,14 @@
 ::cctpulhtn::Engorged pulmonary trunk with A/P ratio <1. Pulmonary hypertension may be suspected.
 ::aook::No evidence of aortic dissection or aneurysm.
 ::paok::No definite filling defect in the major pulmonary arteries.
-::ccttrok::No lung contusion, pneumothorax, or hemothorax.
+::ccttrok::
+  MyForm =
+(
+No lung contusion, pneumothorax, or hemothorax.
+The heart and great vessels are unremarkable.
+)
+  Paste(MyForm)
+Return
 ::cctlapok::
   MyForm =
 (

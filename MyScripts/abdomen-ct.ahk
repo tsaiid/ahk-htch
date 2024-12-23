@@ -89,7 +89,14 @@
 ::cdivs::colonic diverticulosis
 ::actluo::Mild left perirenal fat stranding, probably due to urinary obstruction. DDx: superimposed pyelonephritis.
 ::actruo::Mild right perirenal fat stranding, probably due to urinary obstruction. DDx: superimposed pyelonephritis.
-::acttrok::No liver, spleen, or kidney traumatic injury.
+::acttrok::
+  MyForm =
+(
+No liver, spleen, or kidney traumatic injury.
+The gallbladder, spleen, pancreas, adrenals, urinary bladder, and bowels are unremarkable.
+)
+  Paste(MyForm)
+Return
 ::livok::
   MyForm =
 (
