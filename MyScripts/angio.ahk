@@ -730,6 +730,26 @@ Ureteroplasty, antegrade DJS placement, and PCN revision were successfully perfo
   Paste(MyForm)
 Return
 
+::xardj::
+  MyForm =
+(
+Percutaneous retrieval and retrograde double-J ureteral stent placement.
+
+Anesthesia: no
+Materials: forceps, 7F x 26cm double-J stent
+Laterality: left
+
+PROCEDURE AND FINDINGS:
+- A 10F sheath was inserted through the urethra.
+- The existing DJS was retrieved by forceps and replaced with wires and angiocatheter.
+- Double-J stent was placed in a retrograde fashion.
+
+IMPRESSION:
+Left percutaneous retrieval and retrograde double-J ureteral stent placement were successfully performed.
+)
+  Paste(MyForm)
+Return
+
 ::xadjap::
   MyForm =
 (
