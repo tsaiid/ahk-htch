@@ -30,6 +30,7 @@
 ::ssptt::partial-thickness tear of the supraspinatus.
 ::isptt::partial-thickness tear of the infraspinatus.
 ::sscptt::partial-thickness tear of the subscapularis.
+::lhbtt::intrasubstance tear of the long head of biceps tendon
 ::mroa::marginal osteophyte formation, irregular joint space narrowing, cartilage loss, subchondral signal intensity change in the pancompartment of knee, especially the medial compartment, in favor of osteoarthrosis.
 ::bb::bone bruise
 
