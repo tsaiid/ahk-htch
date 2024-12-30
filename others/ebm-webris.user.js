@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20241224.1
+// @version      20241230.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -466,7 +466,7 @@
                     }
                 } else if (isMsk(currExamName)) {
                     const soap_s = [...document.querySelectorAll('span')].filter((el) => el.innerText.includes("病患主述"))[0].parentElement.nextSibling.value;
-                    const foundLat = soap_s.match(/\b(([Ll](eft|['`′]?t))|([Rr](ight|['`′]?t)))\b/);
+                    const foundLat = soap_s.match(/\b((l(eft|['`′]?t))|(r(ight|['`′]?t)))\b/i);
                     if (foundLat) {
                         const strLat = foundLat[1].charAt(0).toUpperCase() == 'L' ? 'Left ' : 'Right ';
                         examStr = strLat + examStr;
