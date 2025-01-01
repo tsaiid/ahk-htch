@@ -3,7 +3,7 @@
 ::bok1::No obvious dislocation or fracture.
 ::bok2::No obvious bony lesion.
 ::bok3::No obvious fracture.
-::kok::No joint space narrowing, dislocation, or fracture.{Enter}No obvious suprapatellar effusion.
+::kok::- No joint space narrowing, dislocation, or fracture.{Enter}- No obvious suprapatellar effusion.
 ::bkok::Bilateral knees:{Enter}No joint space narrowing, dislocation, or fracture.{Enter}No obvious suprapatellar effusion.+{Tab}No remarkable findings.
 ::ulath::Atherosclerotic change and calcification of the upper limb vessels.
 ::llath::Atherosclerotic change and calcification of the lower limb vessels.
