@@ -70,9 +70,9 @@
 ::mlpatoa::Mild OA change of left patellofemoral joint with joint space narrowing and marginal osteophyte formation.
 ::mbpatoa::Mild OA change of bilateral patellofemoral joints with joint space narrowing and marginal osteophyte formation.
 ::patok::No lateral tilting or subluxation of patella. {Enter}No patellofemoral (PF) joint space narrowing.
-::bpatok::No lateral tilting or subluxation of the bilateral patellae.{Enter}No patellofemoral (PF) joint space narrowing.
-::lpatok::No lateral tilting or subluxation of left patella.{Enter}No patellofemoral (PF) joint space narrowing.
-::rpatok::No lateral tilting or subluxation of right patella.{Enter}No patellofemoral (PF) joint space narrowing.
+::bpatok::- No lateral tilting or subluxation of the bilateral patellae.{Enter}- No patellofemoral (PF) joint space narrowing.
+::lpatok::- No lateral tilting or subluxation of left patella.{Enter}- No patellofemoral (PF) joint space narrowing.
+::rpatok::- No lateral tilting or subluxation of right patella.{Enter}- No patellofemoral (PF) joint space narrowing.
 ::bpats::Lateral subluxation of bilateral patellae, with severe patellofemoral (PF) joint space narrowing at lateral facet.
 ::lpats::Lateral subluxation of left patella, with patellofemoral (PF) joint space narrowing and subchondral sclerosis at lateral facet.
 ::rpats::Lateral subluxation of right patella, with patellofemoral (PF) joint space narrowing and subchondral sclerosis at lateral facet.
@@ -94,7 +94,7 @@
 ::acrok::No lateral downsloping or hooking of the acromion.
 ::acrsp::subacromial spur
 ::acrsp1::Presence of subacromial spur, which may be associated with impingement of the supraspinatus tendon.
-::shok::No joint space narrowing, dislocation, or fracture.{Enter}No limitation in internal/external rotation of the shoulder.
+::shok::- No joint space narrowing, dislocation, or fracture.{Enter}- No limitation in internal/external rotation of the shoulder.
 ::rct0::Upward migration of the humeral head.
 ::rct1::Upward migration of the humeral head, narrowing the acromiohumeral distance, rotator cuff tear is suspected.
 ::pcsp::Post instrument fixation at the cervical spine.
