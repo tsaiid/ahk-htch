@@ -59,7 +59,7 @@ ReorderSelectedText(deOrder = False, keepEmptyLine = False, itemChar = "", disca
           orderChar := (StrLen(itemChar) > 0 ? itemChar : startLineNo++ . ".")
           ; second order indentation if a spine level line
           If (isSpine && RegExMatch(A_LoopField, "^\s*[-\+\*]*\s*[CcTtLl]\d{1,2}-")) {
-            finalText .= "--+ "
+            finalText .= "--> "
           } Else {
             finalText .= orderChar . " "
           }
