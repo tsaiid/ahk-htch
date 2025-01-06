@@ -137,6 +137,7 @@
 ::mibe::mildly increased bursal effusion
 ::ijbe::increased joint and bursal effusion
 ::mijbe::mildly increased joint and bursal effusion
+::uf::uterine fibroid
 
 ::pl::possibly `
 ::pb::probably `
