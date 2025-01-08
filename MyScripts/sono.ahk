@@ -271,11 +271,11 @@ Return
 - Breast composition: c. heterogeneous
 - Mass: no
 - Mass:
---+ shape: oval, round, irregular
---+ margin: circumscribed, indistinct, angular, microlobulated, spiculated
---+ orientation: parallel, not parallel
---+ echo pattern: anechoic, hyperechoic, complex cystic/solid, hypoechoic, isoechoic, heterogeneous
---+ posterior features: no features, enhancement, shadowing, combined pattern
+--> shape: oval, round, irregular
+--> margin: circumscribed, indistinct, angular, microlobulated, spiculated
+--> orientation: parallel, not parallel
+--> echo pattern: anechoic, hyperechoic, complex cystic/solid, hypoechoic, isoechoic, heterogeneous
+--> posterior features: no features, enhancement, shadowing, combined pattern
 - Calcifications: no
 - Calcifications: in mass, outside mass, intraductal
 - Associated features: no
