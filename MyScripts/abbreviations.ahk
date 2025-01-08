@@ -54,6 +54,7 @@
 ::fcd::fibrocystic disease
 ::idp::intraductal papilloma
 ::nac::nipple-areolar complex
+::bpe::background parenchymal enhancement
 
 ;; Vascular
 ::a-a::ascending aorta
