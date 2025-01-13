@@ -176,17 +176,30 @@ Return
 ::ctg-mwa::
   MyForm =
 (
-Microwave ablation of renal tumor(>3cm;<=5cm):
+Microwave ablation of renal tumor(>2cm;<=4cm):
+Microwave ablation of liver tumor(>2cm;<=4cm):
 
 Anesthesia: general
 Position: prone
+Position: right semi-decubitus
+
 Device: ECO 16G ceramic antenna, 12 mm exposed tip, 15 cm shaft.
+Device: ECO 14G ceramic antenna, 12 mm exposed tip, 15 cm shaft.
+
 Ablation parameter: 40W x 8 min, ablation zone: diameter 33 mm, length 47 mm.
+
+Ablation parameter:
+1. 40W x 5 min, ablation zone: diameter 25 mm, length 35 mm
+2. 20W x 12 min, ablation zone: diameter 30 mm, length 33 mm
+
 Tumor location and size: left kidney, 31 x 24 x 34 mm.
+Tumor location and size: S3, 30 x 21 x 20 mm.
+
 Complication: nil.
 
 IMPRESSION:
 MWA for left kidney RCC was performed.
+MWA for S3 HCC was performed.
 )
   Paste(MyForm)
 Return
