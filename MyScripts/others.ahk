@@ -138,6 +138,7 @@
 ::ijbe::increased joint and bursal effusion
 ::mijbe::mildly increased joint and bursal effusion
 ::uf::uterine fibroid
+::ppss::prominent portosystemic shunts
 
 ::pl::possibly `
 ::pb::probably `
