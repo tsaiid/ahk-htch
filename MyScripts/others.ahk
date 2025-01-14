@@ -169,6 +169,7 @@ Return
 Return
 :c:IM::IMPRESSION:`n
 :c:IM2::IMPRESSION:`nAs aforementioned.
+:c:IM3::IMPRESSION:`nNo evidence of liver metastasis.
 :c:SG::SUGGESTION:`n
 :c:FD::FINDINGS:
 ::ci::clinical information: `
