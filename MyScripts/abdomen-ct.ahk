@@ -256,10 +256,10 @@ Return
 ::actok1::
   MyForm =
 (
-The liver, gallbladder, spleen, pancreas, adrenals, kidneys, urinary bladder, and bowels are unremarkable.
-The lower abdomen and pelvis are unremarkable.
-No retroperitoneal or mesenteric lymphadenopathy.
-The lungs covered in the scanning range are unremarkable.
+- The liver, gallbladder, spleen, pancreas, adrenals, kidneys, urinary bladder, and bowels are unremarkable.
+- The lower abdomen and pelvis are unremarkable.
+- No retroperitoneal or mesenteric lymphadenopathy.
+- The lungs covered in the scanning range are unremarkable.
 )
   Paste(MyForm)
 Return
@@ -267,8 +267,8 @@ Return
 ::actok2::
   MyForm =
 (
-No evidence of intraperitoneal free air.
-No obvious ascites.
+- No evidence of intraperitoneal free air.
+- No obvious ascites.
 )
   Paste(MyForm)
 Return
