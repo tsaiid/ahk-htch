@@ -2,6 +2,11 @@
 ;; Hotstrings
 :c:L::Lipiodol
 :c:G::Gelfoam
+::eg50::EGgel 50-150
+::eg150::EGgel 150-350
+::eg350::EGgel 350-560
+::eg560::EGgel 560-710
+::eg710::EGgel 710-1000
 
 ;; Forms
 ::xac::
@@ -251,10 +256,10 @@ The main portal vein is patent in both celiac and superior mesenteric angiograph
 
 - Selective embolization was performed:
 - Selective embolizations were performed:
---+ S7: 2 ml emulsion, 0.5 ml Gelfoam.
---+ S8: 2 ml emulsion, 0.5 ml Gelfoam.
---+ RHA: 2 ml Lipiodol.
---+ S4: 2 ml emulsion, 0.5 ml Gelfoam.
+--> S7: 2 ml emulsion, 0.5 ml Gelfoam.
+--> S8: 2 ml emulsion, 0.5 ml Gelfoam.
+--> RHA: 2 ml Lipiodol.
+--> S4: 2 ml emulsion, 0.5 ml Gelfoam.
 
 Superselective embolization of the S6 hepatic arterial branch was performed with mixture of 20 mg Doxorubicin and 10 ml Lipiodol, followed by Gelfoam slurry.
 Selective embolization of the superior and inferior branches of right hepatic artery, and left hepatic artery was performed with mixture of 20 mg Doxorubicin and 10 ml Lipiodol (RHA total 7 ml, LHA total 5 ml), followed by Gelfoam slurry.
@@ -278,6 +283,7 @@ The tumor stain shows irregularity and venous pools at the inferior portion. Rec
 
 IMPRESSION:
 TACE for HCC was performed. (Doxorubicin 20 mg)
+TACE for HCC was performed. (Doxorubicin 40 mg)
 
 )
   Paste(MyForm)
