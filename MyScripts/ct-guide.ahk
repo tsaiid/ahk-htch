@@ -158,7 +158,8 @@ Return
 ::ctg-rfa::
   MyForm =
 (
-Radiofrequency ablation of liver tumor(RFA<=3cm):
+Radiofrequency ablation of liver tumor(RFA<=2cm):
+Radiofrequency ablation of liver tumor(>2cm;<=4cm):
 
 Anesthesia: general
 Device: Medtronic Cool-tip RF ablation single, 15 cm x 3 cm.
