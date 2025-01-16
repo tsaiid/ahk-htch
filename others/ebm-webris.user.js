@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20250101.1
+// @version      20250116.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -116,6 +116,16 @@
         }
     }
 
+    function getPathoHistoryTr() {
+        // exclude no data case: the tr has only 1 td with colspan attr.
+        const allRows = document.querySelectorAll('div.table-wrp.block.max-h-48 tbody tr');
+        const filteredRows = Array.from(allRows).filter(tr => {
+            const tds = tr.querySelectorAll('td');
+            return !Array.from(tds).some(td => td.hasAttribute('colspan'));
+        });
+        return filteredRows;
+    }
+
     function isAbdCT(examName) {
         const abdCTList = ['Abdomen to Pelvis CT', 'Abdomen  Liver Triple Phase CT', 'Abdomen  Liver 4 Phase CT',
                            'ABDOMEN  Lymph  Nodes   CT', 'Colon cancer (Abdomen & Pelvis)-CT',
@@ -172,24 +182,48 @@
         // Alt+] or Alt+[: find next/prev report
         if (ev.altKey && (ev.key === ']' || ev.key === '[')) {
             console.log("Alt+] or Alt+[: find next/prev report");
-            //const currExamName = getCurrExamName();
-            const currTr = document.querySelector('#frameHistory tr.text-secondary');
-            const frameHistoryTr = getFrameHistoryTr();
-            //console.log(`frameHistoryTr: ` + frameHistoryTr);
-            if (frameHistoryTr.length) {
-                let i = [...frameHistoryTr].indexOf(currTr);
-                //console.log('curr index: ' + i + '; length: ' + frameHistoryTr.length);
-                i += (ev.key === ']') ? 1 : -1; // if no selection, i will be -1 + 1 = 0;
-                if (i >= frameHistoryTr.length) {
-                    i = 0;
-                } else if (i < 0) {
-                    i = frameHistoryTr.length - 1;
+            // check which tab is active
+            const tabName = document.querySelector('div.flex.items-center.text-20 div.text-primary')?.textContent;
+            if (tabName == "歷史報告") {
+                //const currExamName = getCurrExamName();
+                const currTr = document.querySelector('#frameHistory tr.text-secondary');
+                const frameHistoryTr = getFrameHistoryTr();
+                //console.log(`frameHistoryTr: ` + frameHistoryTr);
+                if (frameHistoryTr.length) {
+                    let i = [...frameHistoryTr].indexOf(currTr);
+                    //console.log('curr index: ' + i + '; length: ' + frameHistoryTr.length);
+                    i += (ev.key === ']') ? 1 : -1; // if no selection, i will be -1 + 1 = 0;
+                    if (i >= frameHistoryTr.length) {
+                        i = 0;
+                    } else if (i < 0) {
+                        i = frameHistoryTr.length - 1;
+                    }
+                    //console.log('after index: ' + i + '; length: ' + frameHistoryTr.length);
+                    frameHistoryTr[i].click();
+                    //const frameHistory = document.querySelector('#frameHistory');
+                    //console.log('tr top: ' + frameHistoryTr[i].offsetTop + '; div top: ' + frameHistory.offsetTop + '; div height: ' + frameHistory.clientHeight + '; div scrollTop: ' + frameHistory.scrollTop);
+                    scrollToSelectedItem(frameHistoryTr[i]);
                 }
-                //console.log('after index: ' + i + '; length: ' + frameHistoryTr.length);
-                frameHistoryTr[i].click();
-                const frameHistory = document.querySelector('#frameHistory');
-                //console.log('tr top: ' + frameHistoryTr[i].offsetTop + '; div top: ' + frameHistory.offsetTop + '; div height: ' + frameHistory.clientHeight + '; div scrollTop: ' + frameHistory.scrollTop);
-                scrollToSelectedItem(frameHistoryTr[i]);
+            } else if (tabName == "病理報告") {
+                console.log("tab: 病理報告");
+                const currTr = document.querySelector('div.table-wrp.block.max-h-48 tr.text-secondary');
+                const pathoHistoryTr = getPathoHistoryTr();
+                //console.log(`frameHistoryTr: ` + frameHistoryTr);
+                if (pathoHistoryTr.length) {
+                    let i = [...pathoHistoryTr].indexOf(currTr);
+                    //console.log('curr index: ' + i + '; length: ' + frameHistoryTr.length);
+                    i += (ev.key === ']') ? 1 : -1; // if no selection, i will be -1 + 1 = 0;
+                    if (i >= pathoHistoryTr.length) {
+                        i = 0;
+                    } else if (i < 0) {
+                        i = pathoHistoryTr.length - 1;
+                    }
+                    //console.log('after index: ' + i + '; length: ' + frameHistoryTr.length);
+                    pathoHistoryTr[i].click();
+                    //const frameHistory = document.querySelector('#frameHistory');
+                    //console.log('tr top: ' + frameHistoryTr[i].offsetTop + '; div top: ' + frameHistory.offsetTop + '; div height: ' + frameHistory.clientHeight + '; div scrollTop: ' + frameHistory.scrollTop);
+                    //scrollToSelectedItem(pathoHistoryTr[i]);
+                }
             }
         }
 
