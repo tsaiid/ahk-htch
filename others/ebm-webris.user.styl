@@ -1,6 +1,6 @@
 ﻿/* ==UserStyle==
 @name           EBM WebRIS Enhanced Style
-@version        20250129.2
+@version        20250129.3
 @namespace      ebm-webris-htch
 @description    Enhanced UI experience for EBM WebRIS
 @author         I-Ta Tsai
@@ -205,13 +205,6 @@ url-prefix("http://10.2.2.160:8080/") {
         width: 6em;
         min-width: 5.5em;
         max-width: 6.5em;
-    }
-    /* Highlight 相同檢查名稱 */
-    .hl-sim-report {
-        color: rgb(250 219 43) !important;
-    }
-    .hl-same-report {
-        color: #EF8089 !important;
     }
     /* 儀器左右 padding */
     #frameHistory table > tbody > tr > td:nth-child(3) {
@@ -436,16 +429,17 @@ url-prefix("http://10.2.2.160:8080/") {
         font-size: 0.7em;
     }
 
-    /* 改 "病患姓名" "檢查日期" "檢查項目" 的顏色 */
+    /* 改 "病患姓名" "檢查日期" 的顏色 */
     div.flex.gap-2.text-18.text-neutral1.flex-nowrap:not(.mr-3) > div:nth-child(2) > div > input,
-    div.flex.gap-2.text-18.text-neutral1.flex-nowrap:not(.mr-3) > div:nth-child(5) > div > input,
-    div.flex.gap-2.text-18.text-neutral1.flex-nowrap:not(.mr-3) > div:nth-child(10) > div > input {
+    div.flex.gap-2.text-18.text-neutral1.flex-nowrap:not(.mr-3) > div:nth-child(5) > div > input {
         color: rgb(250 219 43) !important;
     }
 
     /* 檢查項目 */
     div.flex.gap-2.text-18.text-neutral1.flex-nowrap:not(.mr-3) > div:nth-child(10) > div > input {
+        color: #EF8089 !important;
         font-family: "Fira Code", "Source Code Pro";
+        font-weight: bolder;
     }
 
     /* 病歷號碼 */
@@ -586,6 +580,15 @@ url-prefix("http://10.2.2.160:8080/") {
     .dk-incompleted-report {
         color: #888888 !important;
     }
+
+    /* Highlight 相同檢查名稱 */
+    .hl-sim-report {
+        color: rgb(250 219 43) !important;
+    }
+    .hl-same-report {
+        color: #EF8089 !important;
+    }
+
 
     /* 四個 finding radio button 改顏色 */
     input[type='radio'][name='chfindcode']:after {
