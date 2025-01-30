@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20250116.1
+// @version      20250130.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -140,7 +140,7 @@
         return examName.includes("Aorta");
     }
     function isMsk(examName) {
-        return examName.match(/JOINT|Leg|Hand-CT|Femur|foot (CT|MRI)/);
+        return examName.match(/JOINT|Leg|Hand-CT|Forearm- CT|Femur|foot (CT|MRI)/);
     }
     function isAngio(examName) {
         const angioList = ['Celiac a three vessel', 'Lipiodol T.A.E.(trans-arterial embolization)-Lipiodol',
