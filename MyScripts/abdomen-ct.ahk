@@ -16,7 +16,7 @@
 ::actgbss::Several gallbladder stones without obvious GB distention or wall thickening.
 ::actgbsg::High-attenuation material in the gallbladder with layering, in favor of GB sludge.
 ::actgba::Hourglass configuration of the gallbladder, suggestive of segmental adenomyomatosis.
-::actok::The liver, gallbladder, spleen, pancreas, adrenals, kidneys, and bowels are unremarkable.
+::actok::The liver, gallbladder, spleen, pancreas, adrenals, kidneys, urinary bladder, and bowels are unremarkable.
 ::actncok::The liver, spleen, pancreas, adrenals, kidneys, and bowels are normal. Due to non-contrast study, the evaluation of solid organs is limited.
 ::bpleat::Bilateral pleural effusion with atelectasis of lower lungs.
 ::actaps::A small wedge-shaped subcapsular arterial hyperenhancement at S_ of liver with isoenhancement in the portal venous and delay phases, in favor of AP shunting.
