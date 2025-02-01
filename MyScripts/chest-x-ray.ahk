@@ -301,18 +301,18 @@ Return
 ::sate::subsegmental atelectasis
 ::spate::subpleural atelectasis
 ::bsate::subsegmental atelectasis of the bilateral lower lungs.
-::mrsoa::Mild OA change of the right shoulder.
-::mlsoa::Mild OA change of the left shoulder.
-::mbsoa::Mild OA change of the bilateral shoulders.
-::rsoa::OA change of the right shoulder.
-::lsoa::OA change of the left shoulder.
-::bsoa::OA change of the bilateral shoulders.
-::racjoa::OA change of the right acromioclavicular joint.
-::mracjoa::Mild OA change of the right acromioclavicular joint.
-::lacjoa::OA change of the left acromioclavicular joint.
-::mlacjoa::Mild OA change of the left acromioclavicular joint.
-::bacjoa::OA change of the bilateral acromioclavicular joints.
-::mbacjoa::Mild OA change of the bilateral acromioclavicular joints.
+::mrsoa::Mild OA changes of the right shoulder.
+::mlsoa::Mild OA changes of the left shoulder.
+::mbsoa::Mild OA changes of the bilateral shoulders.
+::rsoa::OA changes of the right shoulder.
+::lsoa::OA changes of the left shoulder.
+::bsoa::OA changes of the bilateral shoulders.
+::racjoa::OA changes of the right acromioclavicular joint.
+::mracjoa::Mild OA changes of the right acromioclavicular joint.
+::lacjoa::OA changes of the left acromioclavicular joint.
+::mlacjoa::Mild OA changes of the left acromioclavicular joint.
+::bacjoa::OA changes of the bilateral acromioclavicular joints.
+::mbacjoa::Mild OA changes of the bilateral acromioclavicular joints.
 ::blfgs::Few tiny dense nodules over the bilateral lung fields, in favor of granulomas.
 ::rlfg::A small calcified nodule over the right lung field, possibly a granuloma.
 ::rulfg::A small calcified nodule over the right upper lung field, possibly a granuloma.
