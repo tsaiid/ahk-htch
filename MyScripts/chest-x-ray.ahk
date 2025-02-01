@@ -198,27 +198,27 @@ Return
 ::pcef::pericardial effusion
 ::xpcef::Enlarged cardiac shadow with water bottle configuration. Pericardial effusion may be suspected.
 ::iabp::On IABP, with tip in the thoracic aorta.
-::mssl0::Mild spondylosis and scoliosis of L-spine.
-::ssl0::Spondylosis and scoliosis of L-spine.
-::sl0::Scoliosis of L-spine.
-::sll::Scoliosis of L-spine with convexity to the left.
-::slr::Scoliosis of L-spine with convexity to the right.
-::msl0::Mild scoliosis of L-spine.
-::msll::Mild scoliosis of L-spine with convexity to the left.
-::mslr::Mild scoliosis of L-spine with convexity to the right.
+::mssl0::Mild spondylosis and scoliosis of the L-spine.
+::ssl0::Spondylosis and scoliosis of the L-spine.
+::sl0::Scoliosis of the L-spine.
+::sll::Scoliosis of the L-spine with left convexity.
+::slr::Scoliosis of the L-spine with right convexity.
+::msl0::Mild scoliosis of the L-spine.
+::msll::Mild scoliosis of the L-spine with left convexity.
+::mslr::Mild scoliosis of the L-spine with right convexity.
 ::mss0::Mild spondylosis and scoliosis.
-::msst0::Mild spondylosis and scoliosis of T-spine.
-::sst0::Spondylosis and scoliosis of T-spine.
-::st0::Scoliosis of T-spine.
-::stl::Scoliosis of T-spine with convexity to the left.
-::str::Scoliosis of T-spine with convexity to the right.
-::mst0::Mild scoliosis of T-spine.
-::mstl::Mild scoliosis of T-spine with convexity to the left.
-::mstr::Mild scoliosis of T-spine with convexity to the right.
-::sstl0::Spondylosis and scoliosis of T- and L-spine.
-::msstl0::Mild spondylosis and scoliosis of T- and L-spine.
-::stl0::Scoliosis of T- and L-spine.
-::mstl0::Mild scoliosis of T- and L-spine.
+::msst0::Mild spondylosis and scoliosis of the T-spine.
+::sst0::Spondylosis and scoliosis of the T-spine.
+::st0::Scoliosis of the T-spine.
+::stl::Scoliosis of the T-spine with left convexity.
+::str::Scoliosis of the T-spine with right convexity.
+::mst0::Mild scoliosis of the T-spine.
+::mstl::Mild scoliosis of the T-spine with left convexity.
+::mstr::Mild scoliosis of the T-spine with right convexity.
+::sstl0::Spondylosis and scoliosis of the T- and L-spine.
+::msstl0::Mild spondylosis and scoliosis of the T- and L-spine.
+::stl0::Scoliosis of the T- and L-spine.
+::mstl0::Mild scoliosis of the T- and L-spine.
 ::pi::ill-defined pulmonary infiltration over `
 ::pi0::pulmonary infiltration
 ::po::patchy opacity
