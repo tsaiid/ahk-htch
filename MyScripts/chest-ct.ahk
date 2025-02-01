@@ -15,12 +15,12 @@
 ::mcad0::mild calcification of the coronary arteries.
 ::cad1::calcification of the coronary arteries, suspicious coronary artery disease.
 ::mcad1::mild calcification of the coronary arteries, suspicious coronary artery disease.
-::amvcal::aortic and mitral valves calcification.
-::avcal::aortic valve calcification.
-::mvcal::mitral valve calcification.
-::mamvcal::mild aortic and mitral valves calcification.
-::mavcal::mild aortic valve calcification.
-::mmvcal::mild mitral valve calcification.
+::amvcal::calcification of the aortic and mitral valves.
+::avcal::calcification of the aortic valve.
+::mvcal::calcification of the mitral valve.
+::mamvcal::mild calcification of the aortic and mitral valves.
+::mavcal::mild calcification of the aortic valve.
+::mmvcal::mild calcification of the mitral valve.
 ::cctnc::*PS. The evaluation is limited especially for solid organs and vascular structure due to absence of contrast enhancement.
 ::cctnat::No abnormal air trapping in both inspiratory and expiratory phases.
 ::cadr0::CAD-RADS 0: Documented absence of CAD.
