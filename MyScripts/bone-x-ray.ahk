@@ -7,46 +7,46 @@
 ::bkok::Bilateral knees:{Enter}No joint space narrowing, dislocation, or fracture.{Enter}No obvious suprapatellar effusion.+{Tab}No remarkable findings.
 ::ulath::Atherosclerotic change and calcification of the upper limb vessels.
 ::llath::Atherosclerotic change and calcification of the lower limb vessels.
-::sdjdl::Scoliosis and DJD change of L-spine.
-::djdl::DJD change of L-spine.
-::djdl1::DJD change of L-spine with spur formation.
-::mdjdl::Mild DJD change of L-spine.
-::mdjdl1::Mild DJD change of L-spine with spur formation.
-::mdjdl2::Mild DJD change of L-spine with spur formation and facet joint hypertrophy.
-::djdt::DJD change of T-spine.
-::mdjdt::Mild DJD change of T-spine.
-::mdjdt1::Mild DJD change of T-spine with spur formation.
-::djdtl::DJD change of T- and L-spine.
-::mdjdtl::Mild DJD change of T- and L-spine.
-::mdjdtl1::Mild DJD change of T- and L-spine with spur formation.
-::djdctl::DJD change of C-, T- and L-spine.
-::mdjdctl::Mild DJD change of C-, T- and L-spine.
-::mdjdctl1::Mild DJD change of C-, T- and L-spine with spur formation.
+::sdjdl::Scoliosis and DJD change of the L-spine.
+::djdl::DJD change of the L-spine.
+::djdl1::DJD change of the L-spine with spur formation.
+::mdjdl::Mild DJD change of the L-spine.
+::mdjdl1::Mild DJD change of the L-spine with spur formation.
+::mdjdl2::Mild DJD change of the L-spine with spur formation and facet joint hypertrophy.
+::djdt::DJD change of the T-spine.
+::mdjdt::Mild DJD change of the T-spine.
+::mdjdt1::Mild DJD change of the T-spine with spur formation.
+::djdtl::DJD change of the T- and L-spine.
+::mdjdtl::Mild DJD change of the T- and L-spine.
+::mdjdtl1::Mild DJD change of the T- and L-spine with spur formation.
+::djdctl::DJD change of the C-, T- and L-spine.
+::mdjdctl::Mild DJD change of the C-, T- and L-spine.
+::mdjdctl1::Mild DJD change of the C-, T- and L-spine with spur formation.
 ::spdl::spondylolisthesis
 ::mspl::mild spondylosis
 ::spl::spondylosis
-::spll::Spondylosis of L-spine.
-::spll1::Spondylosis of L-spine with marginal osteophyte formation and disc space narrowing.
-::spll2::Spondylosis of L-spine with marginal osteophyte formation, disc space narrowing, and vacuum phenomenon.
-::mspll1::Mild spondylosis of L-spine with marginal osteophyte formation and disc space narrowing.
-::splc::Spondylosis of C-spine.
-::splc1::Spondylosis of C-spine with marginal osteophyte formation and disc space narrowing.
-::splc2::Spondylosis of C-spine with marginal osteophyte formation, disc space narrowing, and vacuum phenomenon.
-::msplc1::Mild spondylosis of C-spine with marginal osteophyte formation and disc space narrowing.
-::splt::Spondylosis of T-spine.
-::splt1::Spondylosis of T-spine with marginal osteophyte formation and disc space narrowing.
-::spltl::Spondylosis of T- and L-spine.
-::spltl1::Spondylosis of lower T- to L-spine with marginal osteophyte formation and disc space narrowing.
-::splctl::Spondylosis of C-, T- and L-spine.
-::splcl::Spondylosis of C- and L-spine.
-::splct::Spondylosis of C- and T-spine.
-::msplct::Mild spondylosis of C- and T-spine.
-::msplc::Mild spondylosis of C-spine.
-::mspll::Mild spondylosis of L-spine.
-::msplt::Mild spondylosis of T-spine.
-::mspltl::Mild spondylosis of T- and L-spine.
-::mspltl1::Mild spondylosis of T- to L-spine with marginal osteophyte formation and disc space narrowing.
-::msplctl::Mild spondylosis of C-, T- and L-spine.
+::spll::Spondylosis of the L-spine.
+::spll1::Spondylosis of the L-spine with marginal osteophyte formation and disc space narrowing.
+::spll2::Spondylosis of the L-spine with marginal osteophyte formation, disc space narrowing, and vacuum phenomenon.
+::mspll1::Mild spondylosis of the L-spine with marginal osteophyte formation and disc space narrowing.
+::splc::Spondylosis of the C-spine.
+::splc1::Spondylosis of the C-spine with marginal osteophyte formation and disc space narrowing.
+::splc2::Spondylosis of the C-spine with marginal osteophyte formation, disc space narrowing, and vacuum phenomenon.
+::msplc1::Mild spondylosis of the C-spine with marginal osteophyte formation and disc space narrowing.
+::splt::Spondylosis of the T-spine.
+::splt1::Spondylosis of the T-spine with marginal osteophyte formation and disc space narrowing.
+::spltl::Spondylosis of the T- and L-spine.
+::spltl1::Spondylosis of the lower T- to L-spine with marginal osteophyte formation and disc space narrowing.
+::splctl::Spondylosis of the C-, T- and L-spine.
+::splcl::Spondylosis of the C- and L-spine.
+::splct::Spondylosis of the C- and T-spine.
+::msplct::Mild spondylosis of the C- and T-spine.
+::msplc::Mild spondylosis of the C-spine.
+::mspll::Mild spondylosis of the L-spine.
+::msplt::Mild spondylosis of the T-spine.
+::mspltl::Mild spondylosis of the T- and L-spine.
+::mspltl1::Mild spondylosis of the T- to L-spine with marginal osteophyte formation and disc space narrowing.
+::msplctl::Mild spondylosis of the C-, T- and L-spine.
 ::oak0::Mild joint space narrowing in the medial compartment of the knee.
 ::oak1a::Mild joint space narrowing, especially in the medial compartment of the knee, suggestive of mild osteoarthrosis.
 ::boak1a::Mild joint space narrowing, especially in the medial compartments of the bilateral knees, suggestive of mild osteoarthrosis.
