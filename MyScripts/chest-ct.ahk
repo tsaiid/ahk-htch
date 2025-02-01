@@ -3,13 +3,13 @@
 ;; Hotstrings
 ::ist::interlobular septal thickening
 ::6mcct::Follow up chest CT scan 6 months later.
-::tacal::Atherosclerotic change and calcification of aortic wall.
-::tacal1::Atherosclerotic change and calcification of aortic and branches walls.
-::tacalt::Atherosclerotic change and calcification of aortic wall with aortic tortuosity.
-::macal::mild calcification of aortic wall.
-::mtacal::mild atherosclerotic change and calcification of aortic wall.
-::mtacalt::mild atherosclerotic change and calcification of aortic wall with aortic tortuosity.
-::accal::Atherosclerotic change of the aorta and coronary arteries.
+::tacal::Atherosclerotic changes and calcification of the aortic wall.
+::tacal1::Atherosclerotic changes and calcification of the aortic and branches walls.
+::tacalt::Atherosclerotic changes and calcification of the aortic wall with aortic tortuosity.
+::macal::mild calcification of the aortic wall.
+::mtacal::mild atherosclerotic changes and calcification of the aortic wall.
+::mtacalt::mild atherosclerotic changes and calcification of the aortic wall with aortic tortuosity.
+::accal::Atherosclerotic changes of the aorta and coronary arteries.
 ::cctcad::Calcification of the coronary arteries, suspicious of coronary artery disease.
 ::cad0::calcification of the coronary arteries.
 ::mcad0::mild calcification of the coronary arteries.
