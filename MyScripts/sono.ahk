@@ -44,7 +44,7 @@
 ::aacp::Calcified plaques at the abdominal aorta, suspicious atherosclerosis.
 
 ;; Sono, Lower Abdomen
-::s-foley::s/p Foley catheterization. The urinary bladder is not distended enough for evaluation.
+::s-foley::status post Foley catheterization. The urinary bladder is not distended enough for evaluation.
 ::sruus::A tiny stone at upper third of right ureter, with mild hydronephrosis.
 ::srlus::A tiny stone at lower third of right ureter, with mild hydronephrosis and hydroureter.
 ::sluus::A tiny stone at upper third of left ureter, with mild hydronephrosis.

@@ -22,29 +22,29 @@
 ::kfn::Small oval nodules with egg-shell calcification in the pelvis, in favor of old fat necrosis.
 ::kgbs::A round opacity over RUQ of abdomen, suspicious a gallstone. Suggest correlation with sonography.
 ::kgbss::Round opacities over RUQ of abdomen, suspicious gallstones. Suggest correlation with sonography.
-::lpcn::s/p left side percutaneous nephrostomy.
-::rpcn::s/p right side percutaneous nephrostomy.
-::bpcn::s/p bilateral percutaneous nephrostomies.
-::rfcvp::On central venous catheter via right femoral vein.
-::lfcvp::On central venous catheter via left femoral vein.
-::bfcvp::On central venous catheters via bilateral femoral veins.
+::lpcn::status post left side percutaneous nephrostomy.
+::rpcn::status post right side percutaneous nephrostomy.
+::bpcn::status post bilateral percutaneous nephrostomies.
+::rfcvp::Central venous catheter is in place via the right femoral vein.
+::lfcvp::Central venous catheter is in place via the left femoral vein.
+::bfcvp::Central venous catheters are in place via the bilateral femoral vein.
 ::ki::Obvious small bowel gas, may be due to paralytic ileus.
 ::ki2::Focal dilated bowel loops, probably ileus or partial bowel obstruction.
 ::kiafl::Mildly dilated bowel loops with several air-fluid levels, probably partial bowel obstruction or ileus.
 ::kbo::Obvious dilated bowel loops, suspicious bowel obstruction.
 ::kmi::Mildly distended small bowel gas, may be due to mild paralytic ileus.
-::rdj::s/p right side double-J ureteral stent.
-::ldj::s/p left side double-J ureteral stent.
-::bdj::s/p bilateral double-J ureteral stents.
+::rdj::status post right side double-J ureteral stent.
+::ldj::status post left side double-J ureteral stent.
+::bdj::status post bilateral double-J ureteral stents.
 ::rfdl::On double-lumen catheter via right femoral vein.
 ::lfdl::On double-lumen catheter via left femoral vein.
 ::nfa::No evidence of subphrenic free air.
-:c:F::s/p Foley catheterization.
-:c:F1::s/p Foley catheterization. The urinary bladder is not distended enough, and the evaluation is limited.
-::spiud::s/p intrauterine device implantation.
+:c:F::status post Foley catheterization.
+:c:F1::status post Foley catheterization. The urinary bladder is not distended enough, and the evaluation is limited.
+::spiud::status post intrauterine device implantation.
 ::haicok::On HAIC. The tip position shows no migration as compared with previous angiography.
 ::spa::Surgical clips at RLQ of abdomen, in favor of post appendectomy.
-::spa0::s/p appendectomy.
+::spa0::status post appendectomy.
 ::sphaic::Coils at the upper abdomen, may be due to previous hepatic arterial infusion chemotherapy.
 ::maacal::Mild calcification of abdominal aortic wall.
 ::aacal::Calcification of abdominal aortic wall.

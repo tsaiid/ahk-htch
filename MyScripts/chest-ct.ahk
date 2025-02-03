@@ -40,7 +40,8 @@
   MyForm =
 (
 No lung contusion, pneumothorax, or hemothorax.
-The heart and great vessels are unremarkable.
+The heart and great vessels appear unremarkable.
+The thoracic cage and bones appear intact.
 )
   Paste(MyForm)
 Return
@@ -64,8 +65,8 @@ Return
 (
 No pulmonary nodule.
 No mediastinal lymphadenopathy.
-The heart and great vessels are unremarkable.
-The thoracic cage and spine are unremarkable.
+The heart and great vessels appear unremarkable.
+The thoracic cage and bones appear intact.
 )
   Paste(MyForm)
 Return

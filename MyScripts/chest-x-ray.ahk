@@ -118,17 +118,17 @@ Return
 ::tr::On tracheostomy tube.
 ::ng::On NG tube.
 ::og::On NG/OG tube.
-::vps::s/p VP shunting.
-::lps::s/p LP shunting.
-::rpig::s/p right chest pigtail drainage.
-::rpig1::s/p right chest pigtail drainage, with decreased pleural effusion.
-::lpig::s/p left chest pigtail drainage.
-::lpig1::s/p left chest pigtail drainage, with decreased pleural effusion.
-::bpig::s/p bilateral chest pigtail drainage.
-::bpig1::s/p bilateral chest pigtail drainage, with decreased pleural effusion.
+::vps::status post VP shunting.
+::lps::status post LP shunting.
+::rpig::status post right chest pigtail drainage.
+::rpig1::status post right chest pigtail drainage, with decreased pleural effusion.
+::lpig::status post left chest pigtail drainage.
+::lpig1::status post left chest pigtail drainage, with decreased pleural effusion.
+::bpig::status post bilateral chest pigtail drainage.
+::bpig1::status post bilateral chest pigtail drainage, with decreased pleural effusion.
 ::elm::Exaggerated lung markings.
 ::selm::Slightly exaggerated lung markings.
-::lop0::s/p instrument fixation of L-spine.
+::lop0::status post instrument fixation of L-spine.
 ::lple::Left costophrenic angle blunting, suspect pleural effusion or changes.
 ::lple1::Left costophrenic angle blunting and diffuse ground glass opacity in left lung, suspect pleural effusion.
 ::rple::Right costophrenic angle blunting, suspect pleural effusion or changes.
@@ -149,41 +149,41 @@ Return
 ::sph0::S/P hysterectomy.
 ::sptae::Lipiodol retention in the liver, probably due to previous TACE.
 ::p/tae::Lipiodol retention in liver.
-::ricvp::On central venous catheter via right internal jugular vein with tip at superior vena cava.
-::licvp::On central venous catheter via left internal jugular vein with tip at superior vena cava.
-::bicvp::On central venous catheters via right and left internal jugular veins with tips at superior vena cava.
-::rscvp::On central venous catheter via right subclavian vein with tip at superior vena cava.
-::lscvp::On central venous catheter via left subclavian vein with tip at superior vena cava.
+::ricvp::Central venous catheter is in place via the right internal jugular vein, with the tip at the superior vena cava.
+::licvp::Central venous catheter is in place via the left internal jugular vein, with the tip at the superior vena cava.
+::bicvp::Central venous catheters are in place via the bilateral internal jugular veins, with the tips at the superior vena cava.
+::rscvp::Central venous catheter is in place via the right subclavian vein, with the tip at the superior vena cava.
+::lscvp::Central venous catheter is in place via the right subclavian vein, with the tip at the superior vena cava.
 ::ridl::On double lumen catheter via right internal jugular vein.
 ::lidl::On double lumen catheter via left internal jugular vein.
 ::rsdl::On double lumen catheter via right subclavian vein.
 ::lsdl::On double lumen catheter via left subclavian vein.
-::sppok::s/p chemo port implantation, without immediate complication.
-::rport::s/p chemo port implantation via right subclavian vein.
-::rport1::s/p chemo port implantation via right subclavian vein with tip at the SVC.
-::riport::s/p chemo port implantation via right internal jugular vein.
-::lport::s/p chemo port implantation via left subclavian vein.
-::lport1::s/p chemo port implantation via left subclavian vein with tip at the SVC.
-::liport::s/p chemo port implantation via left internal jugular vein.
-::lipport::s/p IP chemo port implantation at LUQ of abdomen.
-::ripport::s/p IP chemo port implantation at RUQ of abdomen.
+::sppok::status post chemo port implantation, without immediate complication.
+::rport::status post chemo port implantation via right subclavian vein.
+::rport1::status post chemo port implantation via right subclavian vein with tip at the SVC.
+::riport::status post chemo port implantation via right internal jugular vein.
+::lport::status post chemo port implantation via left subclavian vein.
+::lport1::status post chemo port implantation via left subclavian vein with tip at the SVC.
+::liport::status post chemo port implantation via left internal jugular vein.
+::lipport::status post IP chemo port implantation at LUQ of abdomen.
+::ripport::status post IP chemo port implantation at RUQ of abdomen.
 ::rsperm::On Permcath via right subclavian vein.
 ::lsperm::On Permcath catheter via left subclavian vein.
 ::riperm::On Permcath catheter via right internal jugular vein.
 ::liperm::On Permcath catheter via left internal jugular vein.
 ::rpicc::On PICC via right arm.
 ::lpicc::On PICC via left arm.
-::spppm::s/p PPM implantation.
-::rppm::s/p PPM implantation at right upper chest with lead tips in the RA and RV.
-::rsppm::s/p PPM implantation at right upper chest with lead tip in the RV.
-::lppm::s/p PPM implantation at left upper chest with lead tips in the RA and RV.
-::lsppm::s/p PPM implantation at left upper chest with lead tip in the RV.
-::rppm0::s/p PPM implantation at right upper chest.
-::rsppm0::s/p PPM implantation at right upper chest.
-::lppm0::s/p PPM implantation at left upper chest.
-::lsppm0::s/p PPM implantation at left upper chest.
-::ldbs::s/p deep brain stimulation device implantation at the left chest.
-::rdbs::s/p deep brain stimulation device implantation at the right chest.
+::spppm::status post PPM implantation.
+::rppm::status post PPM implantation at right upper chest with lead tips in the RA and RV.
+::rsppm::status post PPM implantation at right upper chest with lead tip in the RV.
+::lppm::status post PPM implantation at left upper chest with lead tips in the RA and RV.
+::lsppm::status post PPM implantation at left upper chest with lead tip in the RV.
+::rppm0::status post PPM implantation at right upper chest.
+::rsppm0::status post PPM implantation at right upper chest.
+::lppm0::status post PPM implantation at left upper chest.
+::lsppm0::status post PPM implantation at left upper chest.
+::ldbs::status post deep brain stimulation device implantation at the left chest.
+::rdbs::status post deep brain stimulation device implantation at the right chest.
 ::ile::Insufficient inspiration crowds lung markings.
 ::pe::Increased vascular markings and ill-defined vascular contours indicating pulmonary edema.
 ::mpe::Mildly increased vascular markings and ill-defined vascular contours indicating mild pulmonary edema.
@@ -274,8 +274,8 @@ Return
 ::rok::No evident rib fracture.
 ::rcf::Old fracture of the right clavicle.
 ::lcf::Old fracture of the left clavicle.
-::sprcf::Previous fracture of the right clavicle, s/p internal fixation.
-::splcf::Previous fracture of the left clavicle, s/p internal fixation.
+::sprcf::Previous fracture of the right clavicle, status post internal fixation.
+::splcf::Previous fracture of the left clavicle, status post internal fixation.
 ::rdia::Elevation of the right hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
 ::rdia0::Elevation of the right hemidiaphragm.
 ::ldia::Elevation of the left hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
@@ -329,11 +329,11 @@ Return
 ::rotb::Fibrilinear and nodular opacities over right apical region, in favor of old TB.
 ::lotb::Fibrilinear and nodular opacities over left apical region, in favor of old TB.
 ::botb::Fibrilinear and nodular opacities over bilateral apical regions, in favor of old TB.
-::splm::s/p left mastectomy.
-::splpm::s/p left partial mastectomy.
-::sprm::s/p right mastectomy.
-::sprpm::s/p right partial mastectomy.
-::spcs::s/p coronary stenting.
+::splm::status post left mastectomy.
+::splpm::status post left partial mastectomy.
+::sprm::status post right mastectomy.
+::sprpm::status post right partial mastectomy.
+::spcs::status post coronary stenting.
 ::bns::Symmetrical small nodular opacities over bilateral lower lung fields, in favor of nipple shadows.
 ::lns::A small nodular opacity over left lower lung field, in favor of nipple shadow.
 ::rns::A small nodular opacity over right lower lung field, in favor of nipple shadow.

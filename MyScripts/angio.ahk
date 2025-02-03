@@ -401,7 +401,7 @@ FINDINGS:
 - No abnormal Lipiodol retention in the GI tract.
 
 IMPRESSION:
-HCC, s/p TACE.
+HCC, status post TACE.
 )
   Paste(MyForm)
 Return

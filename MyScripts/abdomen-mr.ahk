@@ -365,7 +365,7 @@ Prostate:
 - Focal T1 hyperintensities at left lobe, probably post-biopsy change.
 - Enlarged transition zone with heterogeneous nodular signal intensity and an intact low signal pseudocapsule in the periphery, suggestive of benign prostatic hyperplasia.
 - Circumscribed hypointense or heterogeneous encapsulated nodule(s) (BPH)
-- s/p TURP appearance.
+- status post TURP appearance.
 
 Lesion 1:
 - location: peripheral zone of right base (PZpl)

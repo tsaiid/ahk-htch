@@ -58,13 +58,13 @@ Return
 SPINE Cervical CT without contrast medium:
 
 FINDINGS:
-- No obvious fracture-dislocation of the C-spine noted.
-- No evidence of the C1-C2 anterior and lateral subluxation noted.
-- No evident hyperdense hematoma in the prevertebral region and epidural space noted.
-- The lungs covered in the scanning range are normal.
+- No obvious fracture or dislocation of the cervical spine.
+- No evidence of the C1-C2 anterior and lateral subluxation.
+- No evident hyperdense hematoma in the prevertebral region and epidural space.
+- The lung fields within the scanning range appear normal.
 
 IMPRESSION:
-No obvious fracture-dislocation of the C-spine noted.
+No obvious fracture or dislocation of the cervical spine.
 )
   Paste(MyForm)
 Return

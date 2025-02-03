@@ -1,8 +1,8 @@
 ﻿; Abdomen CT Forms
 
 ;; Hotstrings
-::l-b-ok::The lungs covered in the scanning range are normal.{Enter}In bone window, the findings are unremarkable.
-::l-ok::The lungs covered in the scanning range are unremarkable.
+::l-b-ok::The lung fields within the scanning range appear normal.{Enter}In bone window, the findings are unremarkable.
+::l-ok::The lung fields within the scanning range appear normal.
 ::l-ok1::No pulmonary nodule.
 ::b-ok::No osteolytic or osteoblastic lesion in the scanning range.
 ::book::No obvious bowel wall thickening or significant bowel dilatation.
@@ -55,11 +55,11 @@
 ::na::No obvious ascites.
 ::actuf::A calcified nodule in the uterus, in favor of degenerated uterine fibroid.
 ::actufs::Several calcified nodules in the uterus, in favor of degenerated uterine fibroids.
-::sph0::S/P hysterectomy.
+::sph0::status post hysterectomy.
 ::actncl::*PS. The evaluation is limited especially for solid organs and vascular structure due to absence of contrast enhancement.
-::lthrl::s/p left total hip replacement. The evaluation of pelvic cavity may be limited due to its beam hardening artifacts.
-::rthrl::s/p right total hip replacement. The evaluation of pelvic cavity may be limited due to its beam hardening artifacts.
-::bthrl::s/p bilateral total hip replacements. The evaluation of pelvic cavity may be limited due to its beam hardening artifacts.
+::lthrl::status post left total hip replacement. The evaluation of pelvic cavity may be limited due to its beam hardening artifacts.
+::rthrl::status post right total hip replacement. The evaluation of pelvic cavity may be limited due to its beam hardening artifacts.
+::bthrl::status post bilateral total hip replacements. The evaluation of pelvic cavity may be limited due to its beam hardening artifacts.
 ::actaccll::Mild gallbladder wall thickening without GB distention or pericholecystic fat stranding. Acute cholecystitis is less likely.
 ::actclc::Mild subpleural reticulation and interlobular septal thickening over bilateral lower lungs, in favor of chronic inflammatory change.
 ::hvpvok::The major hepatic and portal veins are patent.
@@ -1389,7 +1389,7 @@ Large inspissated fecal material in the rectum and distal sigmoid colon, with bo
 No evidence of intraperitoneal free air.
 No obvious ascites.
 
-s/p Foley catheterization. The urinary bladder is not distended enough, and the evaluation is limited.
+status post Foley catheterization. The urinary bladder is not distended enough, and the evaluation is limited.
 
 On NG tube.
 The liver, spleen, pancreas, adrenals, kidneys are unremarkable.

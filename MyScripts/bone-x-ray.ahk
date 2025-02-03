@@ -156,7 +156,7 @@
 ::rhsf::right humeral shaft fracture.
 ::lphf::left proximal humeral fracture.
 ::rphf::right proximal humeral fracture.
-::orif::s/p screw and plate fixation.
+::orif::status post screw and plate fixation.
 ::fx::fixation
 ::hs::in healing stage
 ::bu::bone union
@@ -165,34 +165,34 @@
 ::nfd::no further displacement.
 
 ;; Prosthesis
-::rdhs::s/p right dynamic hip screw fixation.
-::rdhsl::s/p right dynamic hip screw fixation. The evaluation of pelvic cavity may be limited due to its beam hardening artifacts.
-::ldhs::s/p left dynamic hip screw fixation.
-::ldhsl::s/p left dynamic hip screw fixation. The evaluation of pelvic cavity may be limited due to its beam hardening artifacts.
-::bdhs::s/p bilateral dynamic hip screw fixation.
-::bdhsl::s/p bilateral dynamic hip screw fixation. The evaluation of pelvic cavity may be limited because of the beam hardening artifacts from hip prosthesis.
-::rthr::s/p right total hip replacement.
-::rthrr::s/p recent right total hip replacement.{Enter}A drain at right hip region.{Enter}Soft tissue swelling over right hip region.
-::lthr::s/p left total hip replacement.
-::lthrr::s/p recent left total hip replacement.{Enter}A drain at left hip region.{Enter}Soft tissue swelling over left hip region.
-::bthr::s/p bilateral total hip replacements.
-::rhba::s/p right hip bipolar hemiarthroplasty.
-::rhbar::s/p right hip bipolar hemiarthroplasty.{Enter}A drain at right hip region.
-::rhbal::s/p right hip bipolar hemiarthroplasty. The evaluation of pelvic cavity may be limited because of the beam hardening artifacts from right hip prosthesis.
-::lhba::s/p left hip bipolar hemiarthroplasty.
-::lhbar::s/p left hip bipolar hemiarthroplasty.{Enter}A drain at left hip region.
-::lhbal::s/p left hip bipolar hemiarthroplasty. The evaluation of pelvic cavity may be limited because of the beam hardening artifacts from left hip prosthesis.
-::bhba::s/p bilateral hip bipolar hemiarthroplasties.
-::bhbal::s/p bilateral hip bipolar hemiarthroplasties. The evaluation of pelvic cavity may be limited due to its beam hardening artifacts.
-::rtka::s/p right total knee arthroplasty.
-::rtka1::s/p right total knee arthroplasty, without loosening.
-::rtkar::s/p recent right total knee arthroplasty.{Enter}A drain at right knee region.{Enter}Soft tissue swelling over right knee region.
-::ltka::s/p left total knee arthroplasty.
-::ltka1::s/p left total knee arthroplasty, without loosening.
-::ltkar::s/p recent left total knee arthroplasty.{Enter}A drain at left knee region.{Enter}Soft tissue swelling over left knee region.
-::btka::s/p bilateral total knee arthroplasties.
-::btka0::s/p bilateral total knee arthroplasty.{Enter}A drain at bilateral knee region.
-::btka1::s/p bilateral total knee arthroplasty, without loosening.
+::rdhs::status post right dynamic hip screw fixation.
+::rdhsl::status post right dynamic hip screw fixation. The evaluation of pelvic cavity may be limited due to its beam hardening artifacts.
+::ldhs::status post left dynamic hip screw fixation.
+::ldhsl::status post left dynamic hip screw fixation. The evaluation of pelvic cavity may be limited due to its beam hardening artifacts.
+::bdhs::status post bilateral dynamic hip screw fixation.
+::bdhsl::status post bilateral dynamic hip screw fixation. The evaluation of pelvic cavity may be limited because of the beam hardening artifacts from hip prosthesis.
+::rthr::status post right total hip replacement.
+::rthrr::status post recent right total hip replacement.{Enter}A drain at right hip region.{Enter}Soft tissue swelling over right hip region.
+::lthr::status post left total hip replacement.
+::lthrr::status post recent left total hip replacement.{Enter}A drain at left hip region.{Enter}Soft tissue swelling over left hip region.
+::bthr::status post bilateral total hip replacements.
+::rhba::status post right hip bipolar hemiarthroplasty.
+::rhbar::status post right hip bipolar hemiarthroplasty.{Enter}A drain at right hip region.
+::rhbal::status post right hip bipolar hemiarthroplasty. The evaluation of pelvic cavity may be limited because of the beam hardening artifacts from right hip prosthesis.
+::lhba::status post left hip bipolar hemiarthroplasty.
+::lhbar::status post left hip bipolar hemiarthroplasty.{Enter}A drain at left hip region.
+::lhbal::status post left hip bipolar hemiarthroplasty. The evaluation of pelvic cavity may be limited because of the beam hardening artifacts from left hip prosthesis.
+::bhba::status post bilateral hip bipolar hemiarthroplasties.
+::bhbal::status post bilateral hip bipolar hemiarthroplasties. The evaluation of pelvic cavity may be limited due to its beam hardening artifacts.
+::rtka::status post right total knee arthroplasty.
+::rtka1::status post right total knee arthroplasty, without loosening.
+::rtkar::status post recent right total knee arthroplasty.{Enter}A drain at right knee region.{Enter}Soft tissue swelling over right knee region.
+::ltka::status post left total knee arthroplasty.
+::ltka1::status post left total knee arthroplasty, without loosening.
+::ltkar::status post recent left total knee arthroplasty.{Enter}A drain at left knee region.{Enter}Soft tissue swelling over left knee region.
+::btka::status post bilateral total knee arthroplasties.
+::btka0::status post bilateral total knee arthroplasty.{Enter}A drain at bilateral knee region.
+::btka1::status post bilateral total knee arthroplasty, without loosening.
 
 ::js::joint space
 ::jsn::joint space narrowing
@@ -209,26 +209,26 @@
 ::acj::acromioclavicular joint
 ::sts::soft tissue swelling
 ::ste::soft tissue edema
-::rssts::Soft tissue swelling around right shoulder.
-::lssts::Soft tissue swelling around left shoulder.
-::rhsts::Soft tissue swelling around right hip.
-::lhsts::Soft tissue swelling around left hip.
-::rasts::Soft tissue swelling around right ankle.
-::lasts::Soft tissue swelling around left ankle.
-::mrasts::Mild soft tissue swelling around right ankle.
-::mlasts::Mild soft tissue swelling around left ankle.
-::rksts::Soft tissue swelling around right knee.
-::lksts::Soft tissue swelling around left knee.
-::mrksts::Mild soft tissue swelling around right knee.
-::mlksts::Mild soft tissue swelling around left knee.
-::rests::Soft tissue swelling around right elbow.
-::lests::Soft tissue swelling around left elbow.
-::mrests::Mild soft tissue swelling around right elbow.
-::mlests::Mild soft tissue swelling around left elbow.
-::rwsts::Soft tissue swelling around right wrist.
-::lwsts::Soft tissue swelling around left wrist.
-::mrwsts::Mild soft tissue swelling around right wrist.
-::mlwsts::Mild soft tissue swelling around left wrist.
+::rssts::Soft tissue swelling around the right shoulder.
+::lssts::Soft tissue swelling around the left shoulder.
+::rhsts::Soft tissue swelling around the right hip.
+::lhsts::Soft tissue swelling around the left hip.
+::rasts::Soft tissue swelling around the right ankle.
+::lasts::Soft tissue swelling around the left ankle.
+::mrasts::Mild soft tissue swelling around the right ankle.
+::mlasts::Mild soft tissue swelling around the left ankle.
+::rksts::Soft tissue swelling around the right knee.
+::lksts::Soft tissue swelling around the left knee.
+::mrksts::Mild soft tissue swelling around the right knee.
+::mlksts::Mild soft tissue swelling around the left knee.
+::rests::Soft tissue swelling around the right elbow.
+::lests::Soft tissue swelling around the left elbow.
+::mrests::Mild soft tissue swelling around the right elbow.
+::mlests::Mild soft tissue swelling around the left elbow.
+::rwsts::Soft tissue swelling around the right wrist.
+::lwsts::Soft tissue swelling around the left wrist.
+::mrwsts::Mild soft tissue swelling around the right wrist.
+::mlwsts::Mild soft tissue swelling around the left wrist.
 ::sijok::No evidence of blurring, sclerosis, or bone erosion over bilateral sacroiliac joints.
 ::wgd::wedge deformity
 ::awgd::anterior wedge deformity
@@ -277,9 +277,9 @@ Return
 ::rkcppd::Linear calcifications along the joint space of the medial and lateral compartments of right knee, in favor of chondrocalcinosis, probably due to CPPD deposition.
 ::lkcppd::Linear calcifications along the joint space of the medial and lateral compartments of left knee, in favor of chondrocalcinosis, probably due to CPPD deposition.
 ::nbok::No evidence of nasal bone fracture.
-::spvcpf::Old vertebral compression fracture, s/p vertebroplasty.
-::spv::s/p vertebroplasty at `
-::spv0::s/p vertebroplasty
+::spvcpf::Old vertebral compression fracture, status post vertebroplasty.
+::spv::status post vertebroplasty at `
+::spv0::status post vertebroplasty
 ::pif::pars interarticularis fracture
 ::pif1::pars interarticularis fracture and spondylolisthesis of L5-S1.
 ::ritf::intertrochanteric fracture of right femur.
@@ -317,8 +317,8 @@ Return
 ::rammf::Medial malleolar fracture of right ankle.
 ::ralmf::Lateral malleolar fracture of right ankle.
 ::rabmf::Bimalleolar fracture of right ankle.
-::rsas::s/p anchor screw fixation at the right shoulder.
-::lsas::s/p anchor screw fixation at the left shoulder.
+::rsas::status post anchor screw fixation at the right shoulder.
+::lsas::status post anchor screw fixation at the left shoulder.
 ::snb::In the process of spinal nerve block.
 ::skok::
   MyForm =
