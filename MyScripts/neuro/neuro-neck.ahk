@@ -11,7 +11,7 @@ Neck CT
 TECHNIQUE:
 Multi-slice CT scanner with
 (1) Non-contrast and (2) Contrast-enhanced
-scanning in axial plane from skull base to thoracic inlet with 2.5-mm-thick contiguous slices 
+scanning in axial plane from skull base to thoracic inlet with 2.5-mm-thick contiguous slices
 coronal and sagittal reformatted images
 
 COMPARISON:
@@ -305,7 +305,7 @@ Presence of several/multiple lymph nodes noted over ---------------, the biggest
 
 3. Others:
 The nasopharynx, oropharynx, hypopharynx, and larynx are unremarkable.
-No particular finding in the parotid glands, submandibular glands, and thyroid glands.
+No particular findings in the parotid glands, submandibular glands, and thyroid glands.
 
 No evidence of enhanced mass lesion in the submandibular and neck region.
 

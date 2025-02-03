@@ -80,10 +80,10 @@
 ::ntti::No evident traumatic intrathoracic injury.
 ::ntai::No evident traumatic intraabdominal injury.
 ::nttai::No evident traumatic intrathoracic or intraabdominal injury.
-::naaf::No evident acute intraabdominal finding.
-::natf::No evident acute intrathoracic finding.
-::nataf::No evident acute intrathoracic or intraabdominal finding.
-::nacraf::No evident acute intracranial finding.
+::naaf::No evident acute intraabdominal findings.
+::natf::No evident acute intrathoracic findings.
+::nataf::No evident acute intrathoracic or intraabdominal findings.
+::nacraf::No evident acute intracranial findings.
 ::actapn::Edematous left renal parenchyma, with multifocal hypo-enhanced areas and perirenal fat stranding, suggestive of acute pyelonephritis.
 ::cdiv::colonic diverticula
 ::cdivs::colonic diverticulosis

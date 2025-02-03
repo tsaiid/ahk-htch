@@ -270,7 +270,7 @@ FINDINGS:
 
 IMPRESSION:
 No evident fracture or dislocation of cervical spine
-No significant finding in cervical spine region
+No significant findings in cervical spine region
 )
   Paste(MyForm)
 Return
@@ -315,7 +315,7 @@ FINDINGS:
 
 IMPRESSION:
 No evident acute intracranial hemorrhage
-No significant intracranial finding
+No significant intracranial findings
 No evident brain metastasis
 )
   Paste(MyForm)
@@ -359,7 +359,7 @@ FINDINGS:
 
 IMPRESSION:
 No evident acute intracranial hemorrhage
-No significant intracranial finding
+No significant intracranial findings
 )
   Paste(MyForm)
 Return
@@ -407,7 +407,7 @@ FINDINGS:
   SleepThenTab()
   MyForm =
 (
-No significant finding in face and neck region
+No significant findings in face and neck region
 )
   Paste(MyForm)
 Return
@@ -455,7 +455,7 @@ FINDINGS:
   SleepThenTab()
   MyForm =
 (
-No significant finding in face and neck region
+No significant findings in face and neck region
 )
   Paste(MyForm)
 Return
@@ -505,7 +505,7 @@ The detail could not be evaluated in this noncontrast CT.
 
 
 IMPRESSION:
-No significant finding in face and neck region
+No significant findings in face and neck region
 
 SUGGESTION:
 Suggest clinical correlation and follow up.
@@ -558,7 +558,7 @@ FINDINGS:
 
 
 IMPRESSION:
-No significant finding in bilateral orbital regions
+No significant findings in bilateral orbital regions
 )
   Paste(MyForm)
 Return
@@ -611,7 +611,7 @@ FINDINGS:
 
 
 IMPRESSION:
-No significant finding in bilateral orbital regions
+No significant findings in bilateral orbital regions
 )
   Paste(MyForm)
 Return
@@ -659,7 +659,7 @@ Post-surgical changes: none / post functional endoscopic sinus surgery (FESS) / 
 
 
 IMPRESSION:
-no significant finding in paranasal sinuses
+no significant findings in paranasal sinuses
 chronic paranasal sinusitis
 nasal polyposis with obstructive sinusitis
 obstructive sinusitis, due to polyp, mucosal thickening, or tumor
@@ -775,7 +775,7 @@ Arteriovenous fistula: none
 *Others: none
 
 IMPRESSION:
-No significant finding
+No significant findings
 )
   Paste(MyForm)
 Return
@@ -820,7 +820,7 @@ FINDINGS:
 
 
 IMPRESSION:
-No significant intracranial finding
+No significant intracranial findings
 )
   Paste(MyForm)
 Return
@@ -855,7 +855,7 @@ Presence of tiny old ischemic infarction or or tiny previous brain insult involv
 
 Presence of tiny old ischemic infarction or previous brain insult involving bil. basal ganglion, bil. corona radiata and bil. thalami regions.
 
-Presence of small old intracranial hemorrhage (ICH) hemosiderin noted including the pons, bil. basal ganglion and bil. thalamus region and bilateral cerebral and cerebellar hemispheres noted. From the above image finding and clinical history, more in favor of due to the hypertensive ICH. Other DDx: amyloid angiopathy.
+Presence of small old intracranial hemorrhage (ICH) hemosiderin noted including the pons, bil. basal ganglion and bil. thalamus region and bilateral cerebral and cerebellar hemispheres noted. From the above image findings and clinical history, more in favor of due to the hypertensive ICH. Other DDx: amyloid angiopathy.
 
 *White matter tracts: normal / as above
 
@@ -907,7 +907,7 @@ Basilar artery (BA): normal
 *MRA shows no evidence of abnormal intracranial engorged vessles and no evidence of retrograde venous drainage noted over the posterior fossa adjacent to the transverse and sigmoid venous sinus region noted, however, minute dura arterial venous fistula can not be completely to excluded in this MRA study.
 
 IMPRESSION:
-Essentially negative finding.
+Essentially negative findings.
 No remarkable significant intracranial findings.
 No evidence of high signal intensity on DWI and lower apparent diffusion coefficeint suggesting acute ischemia infarction in the brain and brainstem noted.
 1. Previous brain insult; old infarcts, old ICH.
@@ -1013,7 +1013,7 @@ Presence of tiny old ischemic infarction or or tiny previous brain insult involv
 
 Presence of tiny old ischemic infarction or previous brain insult involving bil. basal ganglion, bil. corona radiata and bil. thalami regions.
 
-Presence of small old intracranial hemorrhage (ICH) hemosiderin noted including the pons, bil. basal ganglion and bil. thalamus region and bilateral cerebral and cerebellar hemispheres noted. From the above image finding and clinical history, more in favor of due to the hypertensive ICH. Other DDx: amyloid angiopathy.
+Presence of small old intracranial hemorrhage (ICH) hemosiderin noted including the pons, bil. basal ganglion and bil. thalamus region and bilateral cerebral and cerebellar hemispheres noted. From the above image findings and clinical history, more in favor of due to the hypertensive ICH. Other DDx: amyloid angiopathy.
 
 *White matter tracts: normal / as above
 
@@ -1063,7 +1063,7 @@ Normal variant of left vertebral artery directly arising from the aortic arch.
 
 Presence of normal variation of right/left /bilateral fetal posterior cerebral artery.
 
-Incidental finding of right side fetal type posterior cerebral artery (PCA) from right internal carotid artery (ICA) with hypoplasia change at P1 segment of right PCA noted.
+Incidental findings of right side fetal type posterior cerebral artery (PCA) from right internal carotid artery (ICA) with hypoplasia change at P1 segment of right PCA noted.
 
 Presence of long segment hypoplasia or narrowing of left vertebral artery of the neck portion.
 
@@ -1089,7 +1089,7 @@ MRV shows that no evidence of venous thrombosis involving the intracranial venou
 *Others: none
 
 IMPRESSION:
-Essentially negative finding.
+Essentially negative findings.
 No remarkable significant intracranial findings.
 No evidence of high signal intensity on DWI and lower apparent diffusion coefficeint suggesting acute ischemia infarction in the brain and brainstem noted.
 1. Previous brain insult; old infarcts, old ICH.
@@ -1147,7 +1147,7 @@ FINDINGS:
 
 
 IMPRESSION:
-No significant finding in face and neck region
+No significant findings in face and neck region
 No evident tumor recurrence
 )
   Paste(MyForm)
@@ -1203,7 +1203,7 @@ FINDINGS:
 
 
 IMPRESSION:
-No significant finding in bilateral orbital regions
+No significant findings in bilateral orbital regions
 )
   Paste(MyForm)
 Return

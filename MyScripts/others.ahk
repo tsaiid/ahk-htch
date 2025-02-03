@@ -284,9 +284,9 @@ Return
 ::fc::fluid collection
 ::fs::fat stranding
 ::hop::hollow organ perforation
-::nrf::No remarkable finding.
+::nrf::No remarkable findings.
 ::us::unspecific
-::usf::unspecific finding
+::usf::unspecific findings
 ::ol::obstruction level
 ::tz::transitional zone
 ::nobs::nonobstructive `

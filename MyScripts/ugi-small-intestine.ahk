@@ -10,8 +10,8 @@ Double-contrast upper GI study from esophagus to proximal duodenum was performed
 - The mucosal fold of esophagus and stomach shows no significant unusual.
 - Well distension of duodenal bulb without obvious mass effect.
 
-IMPRESSION: 
-No abnormal finding noted in this UGI study.
+IMPRESSION:
+No abnormal findings noted in this UGI study.
 )
   Paste(MyForm)
 Return
@@ -30,7 +30,7 @@ FINDINGS:
 - Normal elasticity and distensibility of stomach.
 
 IMPRESSION:
-No abnormal finding noted in this UGI study.
+No abnormal findings noted in this UGI study.
 )
   Paste(MyForm)
 Return
@@ -49,7 +49,7 @@ FINDINGS:
 - Smooth passage of the barium without definite mass effect or abnormal mucosa pattern of the esophagus.
 
 IMPRESSION:
-No abnormal finding noted in this UGI study.
+No abnormal findings noted in this UGI study.
 )
   Paste(MyForm)
 Return
@@ -76,7 +76,7 @@ Double-contrast upper GI study from esophagus to proximal duodenum, and single c
 - Well distension of duodenal bulb without obvious mass effect.
 - Normal appearance of mucosa and peristalsis of small intestine without obvious mass lesion.
 
-IMPRESSION: No abnormal finding noted in this UGI and small intestine study.
+IMPRESSION: No abnormal findings noted in this UGI and small intestine study.
 )
   Paste(MyForm)
 Return

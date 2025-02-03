@@ -97,14 +97,14 @@
 ::shok::- No joint space narrowing, dislocation, or fracture.{Enter}- No limitation in internal/external rotation of the shoulder.
 ::rct0::Upward migration of the humeral head.
 ::rct1::Upward migration of the humeral head, narrowing the acromiohumeral distance, rotator cuff tear is suspected.
-::pcsp::Post instrument fixation at the cervical spine.
+::pcsp::Status post instrumented fixation of the cervical spine.
 ::mpvsts::Mild prevertebral soft tissue swelling.
 ::pvsts::prevertebral soft tissue swelling
 ::pvsts1::Prevertebral soft tissue swelling, may be due to recent operation.
-::ptsp::Post instrument fixation at thoracic spine.
-::ptlsp::Post instrument fixation at the lower thoracic to lumbar spine.
-::plsp::Post instrument fixation at the lumbar spine.
-::plsp0::Post laminectomy, transpedicular screws, rods fixation at the L1-2, L2-3, L3-4, L4-5, L5-S1.{Enter}Post interbody cage placement at the L1-2, L2-3, L3-4, L4-5, L5-S1.
+::ptsp::Status post instrumented fixation of the thoracic spine.
+::ptlsp::Status post instrumented fixation from the lower thoracic spine to the lumbar spine.
+::plsp::Status post instrumented fixation of the lumbar spine.
+::plsp0::Status post laminectomy, transpedicular screws, rods fixation at L1-2, L2-3, L3-4, L4-5, L5-S1.{Enter}Post interbody cage placement at L1-2, L2-3, L3-4, L4-5, L5-S1.
 ::spok::No disc space narrowing, spondylolisthesis, or fracture.
 ::lspok::L-spine: No disc space narrowing, spondylolisthesis, or fracture.
 ::wsplok::Normal cervical and lumbar lordotic curves.{Enter}Normal thoracic kyphotic curve.

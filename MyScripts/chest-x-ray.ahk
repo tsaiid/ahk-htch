@@ -34,9 +34,9 @@ Return
   MyForm =
 (
 - The heart size is normal.
-- No specific finding in the bilateral lung fields.
-- Bilateral CP angles are clear and sharp.
-- The thoracic cage and bones are generally intact.
+- No specific findings in the bilateral lung fields.
+- The bilateral costophrenic angles are clear and well-defined.
+- The thoracic cage and bones appear intact.
 
 
 )
@@ -48,8 +48,8 @@ Return
   MyForm =
 (
 - The heart size is normal.
-- No specific finding in the bilateral lung fields.
-- Bilateral CP angles are clear and sharp.
+- No specific findings in the bilateral lung fields.
+- The bilateral costophrenic angles are clear and well-defined.
 
 
 )

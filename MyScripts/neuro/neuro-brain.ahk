@@ -133,7 +133,7 @@ No remarkable intracranial findings on noncontrast CT.
 No remarkable findings on noncontrast CT.
 
 No significant acute intracranial lesion.
-No evident acute intracranial finding.
+No evident acute intracranial findings.
 No significant acute intracranial findings on noncontrast CT.
 No significant acute findings on noncontrast CT.
 
@@ -185,7 +185,7 @@ REMARKS:
   MyForm =
 (
 No definite acute ICH, SAH, EDH, or SDH.
-No evident acute intracranial finding.
+No evident acute intracranial findings.
 No remarkable intracranial findings on noncontrast CT.
 )
   Paste(MyForm)
@@ -901,7 +901,7 @@ MRA shows no evidence of aneurysm or arterial-venous malformation (AVM) noted ne
 MRA shows no evidence of occlusion or high grade stenosis over intracranial portion of the internal carotid artery and basilar artery, and main trunk of the bilateral anterior cerebral arteries and middle cerebral arteries.
 
 IMPRESSION:
-No significant intracranial finding
+No significant intracranial findings
 SUGGESTION:
 )
   Paste(MyForm)

@@ -154,7 +154,7 @@ The nasopharynx, oropharynx, hypopharynx, and larynx are unremarkable.
 No bulky lymph nodes over bilateral submandibular and submental, carotid, posterior cervical spaces, and supraclavicular fossae noted.
 No particular findings of parotid gland, submandibular gland, and thyroid gland.
 The paranasal sinuses and mastoid air cells are clear.
-The visible brain and lungs show no remarkable finding.
+The visible brain and lungs show no remarkable findings.
 )
   Paste(MyForm)
 Return
@@ -385,7 +385,7 @@ MRA shows no significant vascular stenosis in the major intracranial arteries or
   SleepThenTab()
   MyForm =
 (
-No remarkable intracranial finding.
+No remarkable intracranial findings.
 )
   Paste(MyForm)
 Return

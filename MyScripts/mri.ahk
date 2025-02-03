@@ -25,7 +25,7 @@ FINDINGS:
   SleepThenTab()
   MyForm =
 (
-No remarkable cardiac finding.
+No remarkable cardiac findings.
 )
   Paste(MyForm)
 Return

@@ -5,7 +5,7 @@
 ::/kd::Decubitus view of the abdomen:{Enter 2}
 
 ::nbp::Non-specific bowel gas pattern.
-::k::The bowel gas pattern, bilateral kidney shadows and psoas muscle contours are unremarkable.
+::k::The bowel gas pattern, kidney outlines, and psoas muscle contours are unremarkable.
 ::kk::The bowel gas pattern is unremarkable.{Enter}No obvious bony lesion.+{Tab}The bowel gas pattern is unremarkable.
 ::k2::The bilateral kidney shadows are unremarkable.
 ::k2n::The bilateral kidney shadows are not well depicted due to bowel gas.
