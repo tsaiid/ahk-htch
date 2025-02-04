@@ -94,7 +94,7 @@
   MyForm =
 (
 No liver, spleen, or kidney traumatic injury.
-The gallbladder, spleen, pancreas, adrenals, urinary bladder, and bowels are unremarkable.
+The gallbladder, spleen, pancreas, adrenals, kidneys, urinary bladder, and bowels are unremarkable.
 )
   Paste(MyForm)
 Return
