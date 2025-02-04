@@ -29,7 +29,7 @@
 ::cadr3::CAD-RADS 3: Moderate stenosis. Consider functional assessment.
 ::cadr4::CAD-RADS 4: Severe stenosis. Consider invasive coronary angiography or functional assessment.
 ::cadr5::CAD-RADS 5: Total coronary occlusion. Consider ICA and/or viability assessment.
-::ncldcic::a tiny irregular subpleural lesion with adjacent pleural thickening at the right upper thorax, in favor of chronic inflammatory change.
+::ncldcic::a tiny irregular subpleural lesion with adjacent pleural thickening at the right upper thorax, in favor of chronic inflammatory changes.
 ::ncldmi::a small soft tissue density lesion in the bronchiole of _, in favor of mucoid impaction.
 ::ncldhc::a small hypodense nodular lesion in the liver, in favor of hepatic cyst.
 ::ncldhcs::small hypodense nodular lesions in the liver, in favor of hepatic cysts.

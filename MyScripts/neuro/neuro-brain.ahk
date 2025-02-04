@@ -299,10 +299,10 @@ Low density and loss of gray and white matter differentiation at right middle ce
 - M6: "posterior MCA territory immediately superior to M3"
 Suggestive of acute ischemic stroke.
 
-The right cerebrum shows edematous change, and mild midline shift to left is noted.
+The right cerebrum shows edematous changes, and mild midline shift to left is noted.
 The suprasellar cistern is relatively preserved.
 No obvious dilatation of the ventricular system.
-Mild atherosclerotic change with calcification of intracranial portion of bilateral internal carotid arteries.
+Mild atherosclerotic changes with calcification of intracranial portion of bilateral internal carotid arteries.
 
 No obvious fracture of the skull base and the skull.
 The visible paranasal sinuses and mastoids are unremarkable.
@@ -345,7 +345,7 @@ No definite abnormal mass lesion in the brain noted.
 Mild dilatation of ventricular system and sulcal widening of bilateral cerebral hemispheres noted, in favor of mild brain atrophy.
 Enlargement of the ventricular system and sulcal widening of bilateral cerebral hemispheres noted, in favor of brain atrophy.
 
-Mild atherosclerotic change with calcification of intracranial portion of vertebrobasilar arteries and bilateral internal carotid arteries.
+Mild atherosclerotic changes with calcification of intracranial portion of vertebrobasilar arteries and bilateral internal carotid arteries.
 
 No definite bony lesion in the skull.
 The visible paranasal sinuses and mastoids are unremarkable.
@@ -721,7 +721,7 @@ Presence of tiny old ischemic infarction involving bilateral basal ganglion regi
 Presence of several tiny hyperintensities in the periventricular white matter regions on T2WI and FLAIR, which may be gliosis, demyelination or tiny old ischemia or tiny previous brain insult.
 
 No definite abnormal signal intensity or tumor mass lesion in the brain noted.
-No definite abnormal signal intensity change in the brain parenchyma.
+No definite abnormal signal intensity changes in the brain parenchyma.
 No definite abnormal tumor mass lesion in the brain noted.
 
 The bilateral lateral ventricles show no dilatation.
@@ -780,7 +780,7 @@ Presence of several small old ischemia infarction noted including the pons, bil.
 
 Presence of tiny old ischemic infarction or previous brain insult involving bil. basal ganglion, bil. corona radiata and bil. thalami regions.
 
-Presence of brain tissue loss change involving right temporal, right parietal, and left frontal regions, with compensatory dilatation of left lateral ventricle, in favor of previous brain insult, such as old ischemic infarction.
+Presence of brain tissue loss changes involving right temporal, right parietal, and left frontal regions, with compensatory dilatation of left lateral ventricle, in favor of previous brain insult, such as old ischemic infarction.
 
 Presence of small old intracranial hemorrhage (ICH) hemosiderin noted including the pons, bil. basal ganglion and bil. thalamus region and bilateral cerebral and cerebellar hemispheres noted. From the above image finding and clinical history, more in favor of due to the hypertensive ICH. DDx:amyloid angiopathy.
 
@@ -848,7 +848,7 @@ FINDINGS:
 No evidence of high signal intensity on DWI and lower apparent diffusion coefficient in the bilateral hippocampal regions.
 
 No definite abnormal signal intensity or tumor mass lesion in the brain noted.
-No definite abnormal signal intensity change in the brain parenchyma.
+No definite abnormal signal intensity changes in the brain parenchyma.
 No definite abnormal tumor mass lesion in the brain noted.
 
 The bilateral lateral ventricles show no dilatation.
@@ -921,14 +921,14 @@ Previous MRI of brain: none
 
 FINDINGS:
 Multiple enhanced nodules and masses over the bilateral cerebra and cerebella, and brainstem, c/w brain metastasis.
-The right frontal and bilateral occipital lobe lesions are larger, size about 2.5-2.8 cm, show cystic change, and have obvious perifocal edema.
+The right frontal and bilateral occipital lobe lesions are larger, size about 2.5-2.8 cm, show cystic changes, and have obvious perifocal edema.
 
 A 2.8-cm enhancing nodular lesion at the left cerebellar hemisphere, with perifocal edema, suggestive of brain metastasis.
 Post contrast study showed no abnormal enhancing lesion in the brain and no abnormal leptomeningeal enhancement noted.
 No definite abnormal signal intensity tumor mass lesion in the brain noted including supratentorial cerebral hemisphere and infratentorial cerebellum and brain stem region.
 
 No evidence of high signal intensity on DWI and lower apparent diffusion coefficient suggesting acute ischemia infarction in the brain and brainstem noted.
-No abnormal signal intensity change in the brain and brainstem noted.
+No abnormal signal intensity changes in the brain and brainstem noted.
 
 Presence of several tiny hyperintensities in the periventricular white matter regions on T2WI and FLAIR, which may be gliosis, demyelination or tiny old ischemia or tiny previous brain insult.
 Several nonspecific tiny hyperintensities in the bilateral periventricular and subcortical white matter regions on T2WI and FLAIR (unidentified bright objects).
@@ -1099,7 +1099,7 @@ FINDINGS:
 > Intracranial hypotension still may be suspected.
 
 - No evidence of high signal intensity on DWI and lower apparent diffusion coefficient suggesting acute ischemia infarction in the brain and brainstem noted.
-- No definite abnormal signal intensity change or tumor mass lesion in the brain noted including supratentorial cerebral hemisphere and infratentorial cerebellum and brain stem region.
+- No definite abnormal signal intensity changes or tumor mass lesion in the brain noted including supratentorial cerebral hemisphere and infratentorial cerebellum and brain stem region.
 - The bilateral lateral ventricles showed symmetrical without dilatation. However, enlarged subarachnoid space over bilateral high fronto-parietal region may still suggest brain atrophy.
 - The visible paranasal sinuses, mastoids and skull base are unremarkable.
 
@@ -1135,7 +1135,7 @@ No evidence of hippocampal atrophy or abnormal signal intensity.
 
 No evidence of high signal intensity on DWI and lower apparent diffusion coefficient suggesting acute ischemia infarction in the brain and brainstem noted.
 
-No definite abnormal signal intensity change or tumor mass lesion in the brain noted including supratentorial cerebral hemisphere and infratentorial cerebellum and brain stem region.
+No definite abnormal signal intensity changes or tumor mass lesion in the brain noted including supratentorial cerebral hemisphere and infratentorial cerebellum and brain stem region.
 
 The bilateral lateral ventricles are symmetrical without dilatation.
 The bilateral lateral ventricles show no dilatation.
@@ -1251,7 +1251,7 @@ A saccular aneurysm is noted at the anterior communicating artery
   > Hypoplasia of A1 portion of left anterior cerebral artery.
   > Left side fetal type posterior cerebral artery (PCA).
 
-Atherosclerotic change with calcification of intracranial portion of vertebrobasilar arteries and bilateral internal carotid arteries, without significant luminal stenosis.
+Atherosclerotic changes with calcification of intracranial portion of vertebrobasilar arteries and bilateral internal carotid arteries, without significant luminal stenosis.
 No obvious stenosis of the extracranial carotid arteries and vertebral arteries.
 
 Presence of acute subarachnoid hemorrhage in the suprasellar and ambient cisterns, with extension to the interhemispheric fissure and bilateral sylvian fissures.

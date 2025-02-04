@@ -18,12 +18,12 @@
 ::cmp2::blister-like swelling/fraying of articular cartilage extending to surface
 ::cmp3::partial thickness cartilage loss with focal ulceration
 ::cmp4::full thickness cartilage loss with underlying bone reactive changes
-::aclsp::Edematous change and increased signal intensity over the anterior cruciate ligament (ACL) with preserved fiber continuity. Sprain is considered.
-::pclsp::Edematous change and increased signal intensity over the posterior cruciate ligament (PCL) with preserved fiber continuity. Sprain is considered.
-::aclct::Edematous change and increased signal intensity over the anterior cruciate ligament (ACL) with incontinuous fiber. Complete tear is considered.
-::pclct::Edematous change and increased signal intensity over the posterior cruciate ligament (PCL) with incontinuous fiber. Complete tear is considered.
-::aclpt::Edematous change and increased signal intensity over the anterior cruciate ligament (ACL) with focally incontinuous fiber. Partial tear is considered.
-::pclpt::Edematous change and increased signal intensity over the posterior cruciate ligament (PCL) with focally incontinuous fiber. Partial tear is considered.
+::aclsp::Edematous changes and increased signal intensity over the anterior cruciate ligament (ACL) with preserved fiber continuity. Sprain is considered.
+::pclsp::Edematous changes and increased signal intensity over the posterior cruciate ligament (PCL) with preserved fiber continuity. Sprain is considered.
+::aclct::Edematous changes and increased signal intensity over the anterior cruciate ligament (ACL) with incontinuous fiber. Complete tear is considered.
+::pclct::Edematous changes and increased signal intensity over the posterior cruciate ligament (PCL) with incontinuous fiber. Complete tear is considered.
+::aclpt::Edematous changes and increased signal intensity over the anterior cruciate ligament (ACL) with focally incontinuous fiber. Partial tear is considered.
+::pclpt::Edematous changes and increased signal intensity over the posterior cruciate ligament (PCL) with focally incontinuous fiber. Partial tear is considered.
 ::mrsab::Presence of Hill Sachs deformity manifesting an impaction lesion of the posterolateral aspect of the humeral head, and under MR-arthrogram, the anteroinferior labrum is frayed and absence that considered Bankart lesion, the findings c/w secondary to anterior glenohumeral dislocation.
 ::ssftt::full-thickness tear of the supraspinatus.
 ::isftt::full-thickness tear of the infraspinatus.
@@ -31,7 +31,7 @@
 ::isptt::partial-thickness tear of the infraspinatus.
 ::sscptt::partial-thickness tear of the subscapularis.
 ::lhbtt::intrasubstance tear of the long head of biceps tendon
-::mroa::marginal osteophyte formation, irregular joint space narrowing, cartilage loss, subchondral signal intensity change in the pancompartment of knee, especially the medial compartment, in favor of osteoarthrosis.
+::mroa::marginal osteophyte formation, irregular joint space narrowing, cartilage loss, subchondral signal intensity changes in the pancompartment of knee, especially the medial compartment, in favor of osteoarthrosis.
 ::bb::bone bruise
 
 ;; MRI of Knee

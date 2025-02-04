@@ -1,7 +1,7 @@
 ﻿; Comparisons
 ; need other string and date lib
 ::nic::
-  StringWithPrevExamDate("No obvious interval change as compared with previous study")
+  StringWithPrevExamDate("No obvious interval changes as compared with previous study")
 Return
 
 ::nip::
@@ -13,17 +13,17 @@ Return
 Return
 
 ::pc::
-  StringWithPrevExamDate("Progressive change as compared with previous study")
+  StringWithPrevExamDate("Progressive changes as compared with previous study")
 Return
 
 ::mpc::
-  StringWithPrevExamDate("Mild progressive change as compared with previous study")
+  StringWithPrevExamDate("Mild progressive changes as compared with previous study")
 Return
 
 ::rc::
-  StringWithPrevExamDate("Regressive change as compared with previous study")
+  StringWithPrevExamDate("Regressive changes as compared with previous study")
 Return
 
 ::mrc::
-  StringWithPrevExamDate("Mild regressive change as compared with previous study")
+  StringWithPrevExamDate("Mild regressive changes as compared with previous study")
 Return

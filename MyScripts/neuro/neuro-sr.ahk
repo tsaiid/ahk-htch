@@ -305,7 +305,7 @@ FINDINGS:
 *Basal cisterns: normal for the patient's age
 *Ventricular system: normal for the patient's age
 
-*Visualized vascular system: normal / atherosclerotic change with vessel wall calcifications
+*Visualized vascular system: normal / atherosclerotic changes with vessel wall calcifications
 *Visualized nasopharynx and paranasal sinuses: clear
 *Visualized orbits: normal
 *Calvarium and scalp: normal
@@ -349,7 +349,7 @@ FINDINGS:
 *Basal cisterns: normal for the patient's age
 *Ventricular system: normal for the patient's age
 
-*Visualized vascular system: normal / atherosclerotic change with vessel wall calcifications
+*Visualized vascular system: normal / atherosclerotic changes with vessel wall calcifications
 *Visualized nasopharynx and paranasal sinuses: clear
 *Visualized orbits: normal
 *Calvarium and scalp: normal
@@ -378,7 +378,7 @@ Applicable previous CT of face and neck: none
 Applicable previous MRI of face and neck: none
 
 FINDINGS:
-- Post-surgical change: none
+- Post-surgical changes: none
 
 - Skull base: normal
 - Orbits: normal
@@ -424,7 +424,7 @@ Applicable previous CT of face and neck: none
 Applicable previous MRI of face and neck: none
 
 FINDINGS:
-- Post-surgical change: none
+- Post-surgical changes: none
 
 - Skull base: normal
 - Orbits: normal
@@ -478,7 +478,7 @@ No contrast medium. Film interpretation is limited.
 
 The detail could not be evaluated in this noncontrast CT.
 
-*Post-surgical change: none
+*Post-surgical changes: none
 
 *Skull base: normal
 *Orbits: normal
@@ -526,7 +526,7 @@ Applicable previous MRI of orbit: none
 
 FINDINGS:
 
-*Post-surgical change: none
+*Post-surgical changes: none
 
 *Orbit
 
@@ -579,7 +579,7 @@ Applicable previous MRI of orbit: none
 
 FINDINGS:
 
-*Post-surgical change: none
+*Post-surgical changes: none
 
 *Orbit
 
@@ -845,7 +845,7 @@ FINDINGS:
 
 Presence of small hypointensity on GET2*WI noted at left parietal region, possible due to previous hemorrhage or calcification.
 
-Presence of brain tissue loss change involving right temporal, right parietal, and left frontal regions, with compensatory dilatation of left lateral ventricle, in favor of previous brain insult, such as old ischemic infarction.
+Presence of brain tissue loss changes involving right temporal, right parietal, and left frontal regions, with compensatory dilatation of left lateral ventricle, in favor of previous brain insult, such as old ischemic infarction.
 
 *Basal ganglia and thalami: normal
 
@@ -1003,7 +1003,7 @@ FINDINGS:
 
 Presence of small hypointensity on GET2*WI noted at left parietal region, possible due to previous hemorrhage or calcification.
 
-Presence of brain tissue loss change involving right temporal, right parietal, and left frontal regions, with compensatory dilatation of left lateral ventricle, in favor of previous brain insult, such as old ischemic infarction.
+Presence of brain tissue loss changes involving right temporal, right parietal, and left frontal regions, with compensatory dilatation of left lateral ventricle, in favor of previous brain insult, such as old ischemic infarction.
 
 *Basal ganglia and thalami: normal
 
@@ -1063,7 +1063,7 @@ Normal variant of left vertebral artery directly arising from the aortic arch.
 
 Presence of normal variation of right/left /bilateral fetal posterior cerebral artery.
 
-Incidental findings of right side fetal type posterior cerebral artery (PCA) from right internal carotid artery (ICA) with hypoplasia change at P1 segment of right PCA noted.
+Incidental findings of right side fetal type posterior cerebral artery (PCA) from right internal carotid artery (ICA) with hypoplasia changes at P1 segment of right PCA noted.
 
 Presence of long segment hypoplasia or narrowing of left vertebral artery of the neck portion.
 
@@ -1077,7 +1077,7 @@ MRA shows that no evidence of occlusion or high grade stenosis over intracranial
 
 MRA did not show the information of the vertebral artery due to the limited FOV (field of view) of this MRA study noted.
 
-S/P embolization of left vertebral artery aneurysm anterior to the medulla with susceptability artifact, possibly from coil embolization. However, whether embolization of the aneurysm was completed or not cannot be evaluated because of limited FOV (field of view) of this MRA study which cannot show the full information of vertebral artery. Please correlate with prior studies to check the status of the left vertebral artery aneurysm.
+Status post embolization of left vertebral artery aneurysm anterior to the medulla with susceptability artifact, possibly from coil embolization. However, whether embolization of the aneurysm was completed or not cannot be evaluated because of limited FOV (field of view) of this MRA study which cannot show the full information of vertebral artery. Please correlate with prior studies to check the status of the left vertebral artery aneurysm.
 
 MRV shows that no evidence of venous thrombosis involving the intracranial venous sinuses noted.
 
@@ -1119,14 +1119,14 @@ Applicable previous MRI of face and neck: none
 
 FINDINGS:
 
-*Post-surgical change: none
+*Post-surgical changes: none
 
 *Skull base: normal
 *Orbits: normal
 *Nasal cavity: normal
 *Paranasal sinuses: normal
 
-*Nasopharynx: normal / symmetrical thickening, adenoidal hyperplasia favored / mild thickening, post-therapeutic change favored.
+*Nasopharynx: normal / symmetrical thickening, adenoidal hyperplasia favored / mild thickening, post-therapeutic changes favored.
 *Oropharynx: normal
 *Hypopharynx: normal
 *Larynx: normal
@@ -1140,7 +1140,7 @@ FINDINGS:
 *Lymph nodes: normal
 *Vascular structures: normal
 
-*Cervical spine: normal / increased bone marrow signal on T1WI, consistent with post radiation change
+*Cervical spine: normal / increased bone marrow signal on T1WI, consistent with post radiation changes
 *Neck soft tissue and muscles: normal
 
 *Others: none
@@ -1171,7 +1171,7 @@ Applicable previous MRI of orbit: none
 
 FINDINGS:
 
-*Post-surgical change: none
+*Post-surgical changes: none
 
 *Orbit
 
@@ -1223,7 +1223,7 @@ Applicable previous MRI of sella: none
 
 FINDINGS:
 
-* Post-surgical change: none / transsphenoidal resection of pituitary adenoma
+* Post-surgical changes: none / transsphenoidal resection of pituitary adenoma
 
 * Mass:
    Size: 1.5 x 1 x 1 cm
@@ -1274,7 +1274,7 @@ Applicable previous MRI of sella and brain: none
 
 FINDINGS:
 
-*Post-surgical change: none / transsphenoidal resection of pituitary adenoma
+*Post-surgical changes: none / transsphenoidal resection of pituitary adenoma
 
 *Mass:
    Size: 1.5 x 1 x 1 cm
@@ -1342,7 +1342,7 @@ Applicable previous MRI of cervical spine: none
 
 FINDINGS:
 
-*Post-surgical change: none
+*Post-surgical changes: none
 
 *Spinal stenosis:
 
@@ -1398,7 +1398,7 @@ Applicable previous MRI of cervical spine: none
 
 FINDINGS:
 
-*Post-surgical change: none
+*Post-surgical changes: none
 
 *Spinal stenosis:
 
@@ -1456,7 +1456,7 @@ Applicable previous MRI of lumbar spine: none
 
 FINDINGS:
 
-*Post-surgical change: none
+*Post-surgical changes: none
 
 *Spinal stenosis:
 
@@ -1511,7 +1511,7 @@ Applicable previous MRI of lumbar spine: none
 
 FINDINGS:
 
-*Post-surgical change: none
+*Post-surgical changes: none
 
 *Spinal stenosis:
 
@@ -1577,7 +1577,7 @@ T12: compression fracture with mild retropulsed posterior cortex, causing mild s
 *Vertebral body
   Morphology:
    1. moderate collapse of T12 vertebral body, in favor of compression fracture.
-   2. degenerative change of whole spine with osteophytes over unco-vertebral joints noted.
+   2. degenerative changes of whole spine with osteophytes over unco-vertebral joints noted.
 
   Alignment: fracture of pars interarticularis of L5 resulting in grade I spondylolytic spondylolisthesis of L5 over S1, and stenosis of bilateral neuroforamina of L5/S1 .
 
@@ -1615,7 +1615,7 @@ Applicable previous MRI of thoracic spine: none
 
 FINDINGS:
 
-*Post-surgical change: none
+*Post-surgical changes: none
 
 *Spinal stenosis:
 
@@ -1674,7 +1674,7 @@ Applicable previous MRI of spine: none
 
 FINDINGS:
 
-*Post-surgical change: none
+*Post-surgical changes: none
 
 *Spinal stenosis:
 

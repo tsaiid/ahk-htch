@@ -65,9 +65,9 @@
 ::kluvjs::A small stone-like opacity at left side of pelvis, possibly a UVJ stone.
 ::kruvjs::A small stone-like opacity at right side of pelvis, possibly a UVJ stone.
 ::kuf::Calcified nodules in the pelvis, suspicious degenerated uterine fibroids.
-::lptcd::S/P PTCD via left side approach.
-::rptcd::S/P PTCD via right side approach.
-::bptcd::S/P PTCD via left and right side approach.
+::lptcd::status post PTCD via left side approach.
+::rptcd::status post PTCD via right side approach.
+::bptcd::status post PTCD via left and right side approach.
 ::ruq::RUQ of abdomen
 ::ruqw::RUQ of abdominal wall
 ::luq::LUQ of abdomen

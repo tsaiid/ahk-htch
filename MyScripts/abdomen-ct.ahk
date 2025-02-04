@@ -25,10 +25,10 @@
 ::acthcc::A -cm nodule over S of liver, shows arterial phase hyperenhancement, washout and enhancing capsule in portal venous phase, suggestive of hepatocellular carcinoma.
 ::actraa::A __-cm fat-containing enhanced nodular lesion at the right adrenal gland, in favor of adenoma.
 ::actlaa::A __-cm fat-containing enhanced nodular lesion at the left adrenal gland, in favor of adenoma.
-::actckd::Atrophic change of bilateral kidneys, in favor of chronic kidney disease.
-::mactckd::Mild atrophic change of bilateral kidneys, in favor of mild chronic kidney disease.
-::actckd1::Atrophic change of bilateral kidneys with some renal cysts, in favor of chronic kidney disease.
-::mactckd1::Mild atrophic change of bilateral kidneys with some renal cysts, in favor of chronic kidney disease.
+::actckd::Atrophic changes of bilateral kidneys, in favor of chronic kidney disease.
+::mactckd::Mild atrophic changes of bilateral kidneys, in favor of mild chronic kidney disease.
+::actckd1::Atrophic changes of bilateral kidneys with some renal cysts, in favor of chronic kidney disease.
+::mactckd1::Mild atrophic changes of bilateral kidneys with some renal cysts, in favor of chronic kidney disease.
 ::actrkaml::A __-cm fat-containing tumor at the right kidney, in favor of angiomyolipoma.
 ::actlkaml::A __-cm fat-containing tumor at the left kidney, in favor of angiomyolipoma.
 ::actbkaml::Fat-containing tumors at the both kidneys, size up to __ cm, in favor of angiomyolipomas.
@@ -49,19 +49,20 @@
 ::mactac::Mild wall thickening of the urinary bladder with perivesical fat stranding, suggestive of acute cystitis.
 ::actcc::Wall thickening of the urinary bladder with trabeculation without perivesical fat stranding, suggestive of chronic cystitis.
 ::mactcc::mild wall thickening of the urinary bladder without perivesical fat stranding, suggestive of mild chronic cystitis.
-::actccdd::Wall thickening of the urinary bladder without perivesical fat stranding. DDx: chronic cystitis, insufficient UB distention related change.
-::mactccdd::Mild wall thickening of the urinary bladder. DDx: chronic cystitis, insufficient UB distention related change.
+::actccdd::Wall thickening of the urinary bladder without perivesical fat stranding. DDx: chronic cystitis, insufficient UB distention related changes.
+::mactccdd::Mild wall thickening of the urinary bladder. DDx: chronic cystitis, insufficient UB distention related changes.
 ::nifa::No evidence of intraperitoneal free air.
 ::na::No obvious ascites.
 ::actuf::A calcified nodule in the uterus, in favor of degenerated uterine fibroid.
 ::actufs::Several calcified nodules in the uterus, in favor of degenerated uterine fibroids.
 ::sph0::status post hysterectomy.
+::spp0::status post prostatectomy.
 ::actncl::*PS. The evaluation is limited especially for solid organs and vascular structure due to absence of contrast enhancement.
 ::lthrl::status post left total hip replacement. The evaluation of pelvic cavity may be limited due to its beam hardening artifacts.
 ::rthrl::status post right total hip replacement. The evaluation of pelvic cavity may be limited due to its beam hardening artifacts.
 ::bthrl::status post bilateral total hip replacements. The evaluation of pelvic cavity may be limited due to its beam hardening artifacts.
 ::actaccll::Mild gallbladder wall thickening without GB distention or pericholecystic fat stranding. Acute cholecystitis is less likely.
-::actclc::Mild subpleural reticulation and interlobular septal thickening over bilateral lower lungs, in favor of chronic inflammatory change.
+::actclc::Mild subpleural reticulation and interlobular septal thickening over bilateral lower lungs, in favor of chronic inflammatory changes.
 ::hvpvok::The major hepatic and portal veins are patent.
 ::sacds::Small amount of ascites in the cul-de-sac.
 ::macds::Minimal amount of ascites in the cul-de-sac.
@@ -314,9 +315,9 @@ FINDINGS:
 A swollen appendix, diameter about 1.1 cm, containing some appendicoliths, with mesoappendiceal fat stranding and regional peritoneal thickening, c/w acute appendicitis.
 A swollen appendix, diameter about 1.1 cm, with mesoappendiceal fat stranding, c/w acute appendicitis.
 
-A dilated appendix, diameter about 0.9 cm, with mild hyperemic change. Although no mesoappendiceal fat stranding is noted, early change of acute appendicitis is still suspected. Suggest clinical correlation.
+A dilated appendix, diameter about 0.9 cm, with mild hyperemic changes. Although no mesoappendiceal fat stranding is noted, early changes of acute appendicitis is still suspected. Suggest clinical correlation.
 
-The appendix has a borderline diameter of 7 mm and shows hyperemic change. Early stage of acute appendicitis may be suspected. Suggest clinical correlation.
+The appendix has a borderline diameter of 7 mm and shows hyperemic changes. Early stage of acute appendicitis may be suspected. Suggest clinical correlation.
 
 A fecalith is noted at the middle portion of the appendix, with dilatation of the appendiceal tip, diameter about 1.1 cm, and mild mesoappendiceal fat stranding, c/w acute appendicitis.
 
@@ -532,7 +533,7 @@ Previous abdominal CT: none.
 
 FINDINGS:
 Liver:
-cirrhotic change: nil, portosystemic collaterals (-)
+cirrhotic changes: nil, portosystemic collaterals (-)
 The major portal and hepatic veins are patent.
 
 Adrenals: Unremarkable
@@ -565,7 +566,7 @@ Previous abdominal CT: none.
 
 FINDINGS:
 Liver:
-- Cirrhotic change: yes; portosystemic collaterals: yes
+- Cirrhotic changes: yes; portosystemic collaterals: yes
 - Large ill-defined infiltrative tumor involving the S1-2-3-4-5-8 of the liver.
 - Tumor thrombosis in the engorged left and main portal veins, which nearly cross to the right portal vein. Some blood clots at the proximal part of main portal vein.
 - The arterial and portal venous phases show heterogeneous nodular and linear hypo-enhancement pattern in the main tumor, while the tumor thrombi show heterogeneous arterial phase hyper-enhancement.
@@ -633,7 +634,7 @@ Previous abdominal CT: none.
 
 FINDINGS:
 Pancreas:
-- Intrinsic pancreatic edematous change without necrosis.
+- Intrinsic pancreatic edematous changes without necrosis.
 - Several acute necrotic collections.
 - Several peripancreatic fluid collections, and inflammatory changes in peripancreatic fat.
 - Several non-encapsulated peripancreatic fluid collections.
@@ -663,7 +664,7 @@ Biliary tree:
 - Several small high-attenuation gallstones at the distal CBD.
 - No biliary tree dilatation.
 - Dilatation of the CBD (diameter about 1.4 cm) and bilateral IHDs.
-- S/P cholecystectomy.
+- status post cholecystectomy.
 - Several small gallbladder stones, and the GB is distended.
 - Relatively high-attenuation gallbladder content, suggestive of GB sludge.
 - No GB wall thickening.
@@ -1169,16 +1170,16 @@ Others:
 - Pancreas: unremarkable
 
 - Lungs:
-  > Some tiny subpleural nodules over bilateral lungs, with adjacent interlobular septal thickening, probably chronic inflammatory change. However, lung metastasis cannot be totally excluded. Suggest follow-up.
-  > Mild ill-defined ground glass opacities over RML and left lingular lobe, probably insufficient inspiration related change. (Scanning in prone position.)
+  > Some tiny subpleural nodules over bilateral lungs, with adjacent interlobular septal thickening, probably chronic inflammatory changes. However, lung metastasis cannot be totally excluded. Suggest follow-up.
+  > Mild ill-defined ground glass opacities over RML and left lingular lobe, probably insufficient inspiration related changes. (Scanning in prone position.)
 - Cardiomegaly; mild LV hypertrophy.
-- Mediastinum: A few slightly enlarged lymph nodes with coarse calcifications, in favor of chronic inflammatory change.
+- Mediastinum: A few slightly enlarged lymph nodes with coarse calcifications, in favor of chronic inflammatory changes.
 - Great vessels:
-  > Atherosclerotic change and calcification of aortic wall.
+  > Atherosclerotic changes and calcification of aortic wall.
   > Engorged pulmonary trunk, with larger diameter (3.5 cm) than the ascending aorta. Pulmonary hypertension may be suspected.
 
 - Musculoskeletal:
-  > Scoliosis and DJD change of L-spine.
+  > Scoliosis and DJD changes of L-spine.
   > No focal nodular osteolytic or osteoblastic lesion.
 
 M0: No distant metastasis (in this study).
@@ -1352,11 +1353,11 @@ Scanning range: Liver to symphysis, 5-mm contiguous scan.
 Previous abdominal CT: none.
 
 FINDINGS:
-Diffuse gallbladder wall thickening and edematous change with gallbladder stones, GB distention, and pericholecystic fat stranding are noted. Acute cholecystitis is considered.
-Diffuse gallbladder wall thickening and edematous change with gallbladder stones and GB distention are noted. Acute cholecystitis is considered.
-Diffuse gallbladder wall thickening and edematous change with pericholecystic fluid accumulation, and tiny gallbladder stones are noted. Even though, no obvious GB distention. Acute cholecystitis is still considered.
-Presence of a high-attenuation gallstone at the orifice of cystic duct, with distended gallbladder, diffuse gallbladder wall thickening and edematous change, c/w acute calculus cholecystitis.
-Mildly distended gallbladder, with mild GB wall thickening. No obvious pericholecystic fluid accumulation. However, early change of acute cholecystitis cannot be excluded. Suggest correlate with sonography and Murphy sign.
+Diffuse gallbladder wall thickening and edematous changes with gallbladder stones, GB distention, and pericholecystic fat stranding are noted. Acute cholecystitis is considered.
+Diffuse gallbladder wall thickening and edematous changes with gallbladder stones and GB distention are noted. Acute cholecystitis is considered.
+Diffuse gallbladder wall thickening and edematous changes with pericholecystic fluid accumulation, and tiny gallbladder stones are noted. Even though, no obvious GB distention. Acute cholecystitis is still considered.
+Presence of a high-attenuation gallstone at the orifice of cystic duct, with distended gallbladder, diffuse gallbladder wall thickening and edematous changes, c/w acute calculus cholecystitis.
+Mildly distended gallbladder, with mild GB wall thickening. No obvious pericholecystic fluid accumulation. However, early changes of acute cholecystitis cannot be excluded. Suggest correlate with sonography and Murphy sign.
 
 Several gallbladder stones and mild GB distention. However, no obvious GB wall thickening or pericholecystic fat stranding. Acute cholecystitis may be less likely. Suggest clinical and sonographic correlation.
 
@@ -1370,7 +1371,7 @@ The lungs covered in the scanning range are unremarkable.
 IMPRESSION:
 C/W acute cholecystitis.
 C/W acute calculus cholecystitis.
-Early change of acute cholecystitis is suspected. Suggest correlate with sonography and Murphy sign.
+Early changes of acute cholecystitis is suspected. Suggest correlate with sonography and Murphy sign.
 )
   Paste(MyForm)
 Return
@@ -1446,7 +1447,7 @@ Splenomegaly.
 Mild to moderate ascites, relatively not so exudative.
 Portal hypertension is suspected.
 
-Diffuse submucosal edema and mucosal hyperemic change, from stomach, small intestine, colon, to the rectum.
+Diffuse submucosal edema and mucosal hyperemic changes, from stomach, small intestine, colon, to the rectum.
 The major mesenteric vessels are patent, without filling defect.
 DDx: Portal hypertensive gastropathy / enteropathy / colopathy, acute gastroenterocolitis, pseudomembranous colitis (may not involve stomach and small intestine). Suggest clinical correlation.
 
@@ -1460,7 +1461,7 @@ Two thin-wall cystic lesions at the bilateral adnexa, size up to 6.5 cm. No mura
 Subsegmental atelectasis over bilateral lower lungs.
 
 IMPRESSION:
-1. Diffuse edematous change of the GI tract. DDx: Portal hypertensive gastropathy / enteropathy / colopathy, acute gastroenterocolitis, pseudomembranous colitis (may not involve stomach and small intestine). Suggest clinical correlation.
+1. Diffuse edematous changes of the GI tract. DDx: Portal hypertensive gastropathy / enteropathy / colopathy, acute gastroenterocolitis, pseudomembranous colitis (may not involve stomach and small intestine). Suggest clinical correlation.
 2. Cirrhosis, splenomegaly, ascites. Suspicious portal hypertension.
 )
   Paste(MyForm)

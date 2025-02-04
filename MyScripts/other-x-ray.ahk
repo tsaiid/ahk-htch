@@ -1,16 +1,16 @@
 ﻿; Other plain films
-::cnic::The condition shows no obvious change as compared with previous study.
-::nic0::no interval change.
-::nic1::no obvious interval change.
-::woic::without interval change
+::cnic::The condition shows no obvious changes as compared with previous study.
+::nic0::no interval changes.
+::nic1::no obvious interval changes.
+::woic::without interval changes
 ::nip0::no obvious improvement.
 ::mip0::mild improvement.
-::pc0::progressive change.
-::pc1::progressive change than previous.
-::mpc0::mild progressive change.
-::rc0::regressive change.
-::rc1::regressive change than previous.
-::mrc0::mild regressive change.
+::pc0::progressive changes.
+::pc1::progressive changes than previous.
+::mpc0::mild progressive changes.
+::rc0::regressive changes.
+::rc1::regressive changes than previous.
+::mrc0::mild regressive changes.
 ::nbd::Nature to be determined.
 ::msok::Bilateral maxillary sinuses are well-aerated.
 ::rmcs::Ground glass opacity in right maxillary sinus, suspicious mucoperiosteal thickening or chronic sinusitis.

@@ -5,23 +5,23 @@
 ::bok3::No obvious fracture.
 ::kok::- No joint space narrowing, dislocation, or fracture.{Enter}- No obvious suprapatellar effusion.
 ::bkok::Bilateral knees:{Enter}No joint space narrowing, dislocation, or fracture.{Enter}No obvious suprapatellar effusion.+{Tab}No remarkable findings.
-::ulath::Atherosclerotic change and calcification of the upper limb vessels.
-::llath::Atherosclerotic change and calcification of the lower limb vessels.
-::sdjdl::Scoliosis and DJD change of the L-spine.
-::djdl::DJD change of the L-spine.
-::djdl1::DJD change of the L-spine with spur formation.
-::mdjdl::Mild DJD change of the L-spine.
-::mdjdl1::Mild DJD change of the L-spine with spur formation.
-::mdjdl2::Mild DJD change of the L-spine with spur formation and facet joint hypertrophy.
-::djdt::DJD change of the T-spine.
-::mdjdt::Mild DJD change of the T-spine.
-::mdjdt1::Mild DJD change of the T-spine with spur formation.
-::djdtl::DJD change of the T- and L-spine.
-::mdjdtl::Mild DJD change of the T- and L-spine.
-::mdjdtl1::Mild DJD change of the T- and L-spine with spur formation.
-::djdctl::DJD change of the C-, T- and L-spine.
-::mdjdctl::Mild DJD change of the C-, T- and L-spine.
-::mdjdctl1::Mild DJD change of the C-, T- and L-spine with spur formation.
+::ulath::Atherosclerotic changes and calcification of the upper limb vessels.
+::llath::Atherosclerotic changes and calcification of the lower limb vessels.
+::sdjdl::Scoliosis and DJD changes of the L-spine.
+::djdl::DJD changes of the L-spine.
+::djdl1::DJD changes of the L-spine with spur formation.
+::mdjdl::Mild DJD changes of the L-spine.
+::mdjdl1::Mild DJD changes of the L-spine with spur formation.
+::mdjdl2::Mild DJD changes of the L-spine with spur formation and facet joint hypertrophy.
+::djdt::DJD changes of the T-spine.
+::mdjdt::Mild DJD changes of the T-spine.
+::mdjdt1::Mild DJD changes of the T-spine with spur formation.
+::djdtl::DJD changes of the T- and L-spine.
+::mdjdtl::Mild DJD changes of the T- and L-spine.
+::mdjdtl1::Mild DJD changes of the T- and L-spine with spur formation.
+::djdctl::DJD changes of the C-, T- and L-spine.
+::mdjdctl::Mild DJD changes of the C-, T- and L-spine.
+::mdjdctl1::Mild DJD changes of the C-, T- and L-spine with spur formation.
 ::spdl::spondylolisthesis
 ::mspl::mild spondylosis
 ::spl::spondylosis
@@ -63,12 +63,12 @@
 ::scs::subchondral sclerosis
 ::spef::suprapatellar effusion
 ::jef::joint effusion
-::rpatoa::OA change of right patellofemoral joint with joint space narrowing and marginal osteophyte formation.
-::lpatoa::OA change of left patellofemoral joint with joint space narrowing and marginal osteophyte formation.
-::bpatoa::OA change of bilateral patellofemoral joints with joint space narrowing and marginal osteophyte formation.
-::mrpatoa::Mild OA change of right patellofemoral joint with joint space narrowing and marginal osteophyte formation.
-::mlpatoa::Mild OA change of left patellofemoral joint with joint space narrowing and marginal osteophyte formation.
-::mbpatoa::Mild OA change of bilateral patellofemoral joints with joint space narrowing and marginal osteophyte formation.
+::rpatoa::OA changes of right patellofemoral joint with joint space narrowing and marginal osteophyte formation.
+::lpatoa::OA changes of left patellofemoral joint with joint space narrowing and marginal osteophyte formation.
+::bpatoa::OA changes of bilateral patellofemoral joints with joint space narrowing and marginal osteophyte formation.
+::mrpatoa::Mild OA changes of right patellofemoral joint with joint space narrowing and marginal osteophyte formation.
+::mlpatoa::Mild OA changes of left patellofemoral joint with joint space narrowing and marginal osteophyte formation.
+::mbpatoa::Mild OA changes of bilateral patellofemoral joints with joint space narrowing and marginal osteophyte formation.
 ::patok::No lateral tilting or subluxation of patella. {Enter}No patellofemoral (PF) joint space narrowing.
 ::bpatok::- No lateral tilting or subluxation of the bilateral patellae.{Enter}- No patellofemoral (PF) joint space narrowing.
 ::lpatok::- No lateral tilting or subluxation of left patella.{Enter}- No patellofemoral (PF) joint space narrowing.
@@ -109,7 +109,7 @@
 ::lspok::L-spine: No disc space narrowing, spondylolisthesis, or fracture.
 ::wsplok::Normal cervical and lumbar lordotic curves.{Enter}Normal thoracic kyphotic curve.
 ::oaf::Joint space narrowing and marginal osteophyte formation, involving several DIP and PIP joints. These findings are consistent with osteoarthritis.
-::oaf0::OA change of fingers.
+::oaf0::OA changes of fingers.
 ::calsp::Presence of calcaneal spurs at the insertions of the Achilles tendon and the plantar fascia.
 ::calspp::Presence of calcaneal spur at the insertion of the plantar fascia.
 ::calspa::Presence of calcaneal spur at the insertion of the Achilles tendon.
@@ -118,7 +118,7 @@
 ::fgpc::Fluoroscopy-guiding pain control procedure.
 ::spracj::Post hook plate fixation at the right acromioclavicular joint.
 ::splacj::Post hook plate fixation at the left acromioclavicular joint.
-::oac::OA change `
+::oac::OA changes `
 ::usp::ulnar styloid process
 
 ::1dpf::1st distal phalangeal fracture
@@ -232,9 +232,9 @@
 ::sijok::No evidence of blurring, sclerosis, or bone erosion over bilateral sacroiliac joints.
 ::wgd::wedge deformity
 ::awgd::anterior wedge deformity
-::opc::osteoporotic change
-::gopc::Generalized osteoporotic change.
-::dopc::Disuse osteoporotic change.
+::opc::osteoporotic changes
+::gopc::Generalized osteoporotic changes.
+::dopc::Disuse osteoporotic changes.
 ::dop::disuse osteoporosis
 ::avn::avascular necrosis
 ::lhd::A drain at left hip region.
@@ -284,28 +284,28 @@ Return
 ::pif1::pars interarticularis fracture and spondylolisthesis of L5-S1.
 ::ritf::intertrochanteric fracture of right femur.
 ::litf::intertrochanteric fracture of left femur.
-::rhoa::OA change of right hip.
-::lhoa::OA change of left hip.
-::bhoa::OA change of bilateral hips.
-::mrhoa::Mild OA change of right hip.
-::mlhoa::Mild OA change of left hip.
-::mbhoa::Mild OA change of bilateral hips.
-::rkoa::OA change of right knee.
-::lkoa::OA change of left knee.
-::bkoa::OA change of bilateral knees.
-::mrkoa::Mild OA change of right knee.
-::mlkoa::Mild OA change of left knee.
-::mbkoa::Mild OA change of bilateral knees.
-::raoa::OA change of right ankle.
-::laoa::OA change of left ankle.
-::mraoa::Mild OA change of right ankle.
-::mlaoa::Mild OA change of left ankle.
-::rwoa::OA change of right wrist.
-::lwoa::OA change of left wrist.
-::bwoa::OA change of bilateral wrists.
-::reoa::OA change of right elbow.
-::leoa::OA change of left elbow.
-::beoa::OA change of bilateral elbows.
+::rhoa::OA changes of right hip.
+::lhoa::OA changes of left hip.
+::bhoa::OA changes of bilateral hips.
+::mrhoa::Mild OA changes of right hip.
+::mlhoa::Mild OA changes of left hip.
+::mbhoa::Mild OA changes of bilateral hips.
+::rkoa::OA changes of right knee.
+::lkoa::OA changes of left knee.
+::bkoa::OA changes of bilateral knees.
+::mrkoa::Mild OA changes of right knee.
+::mlkoa::Mild OA changes of left knee.
+::mbkoa::Mild OA changes of bilateral knees.
+::raoa::OA changes of right ankle.
+::laoa::OA changes of left ankle.
+::mraoa::Mild OA changes of right ankle.
+::mlaoa::Mild OA changes of left ankle.
+::rwoa::OA changes of right wrist.
+::lwoa::OA changes of left wrist.
+::bwoa::OA changes of bilateral wrists.
+::reoa::OA changes of right elbow.
+::leoa::OA changes of left elbow.
+::beoa::OA changes of bilateral elbows.
 ::rsct::A linear calcification over the superolateral aspect of right shoulder, in favor of calcific tendinopathy.
 ::lsct::A linear calcification over the superolateral aspect of left shoulder, in favor of calcific tendinopathy.
 ::lasts::Soft tissue swelling over the left ankle region.
@@ -377,16 +377,16 @@ Return
 
 ; sacroiliitis
 ::sii0::The sacroiliac margin is clear, and there is uniform joint space of normal width. There is no sclerosis. The sacroiliac joints are normal.
-::sii1::No specific abnormality except “suspecious” change. (some blurring of the joint margins - suspicious). Grade I (suspecious) sacroiliitis.
+::sii1::No specific abnormality except “suspecious” changes. (some blurring of the joint margins - suspicious). Grade I (suspecious) sacroiliitis.
 ::sii2::Loss of definition at the edge of the sacroiliac joints. There is some sclerosis and perhaps minimal erosions. There may be some joint space narrowing. Grade II (minimal) sacroiliitis.
 ::sii3::There is definite sclerosis on both sides of the sacroiliac joints, blurring and indistinct margins, and erosive changes with loss of joint space. Grade III (moderate) sacroiliitis.
 ::sii4::Complete fusion or ankylosis of the joint with or withoutsome residual sclerosis. Grade IV (ankylosis) sacroiliitis.
 
-::djdc::DJD change of C-spine.
-::djdc1::DJD change of C-spine with spur formation.
-::mdjdc::Mild DJD change of C-spine.
-::mdjdc1::Mild DJD change of C-spine with spur formation.
-::mdjdc2::Mild DJD change of C-spine with spur formation and facet joint hypertrophy.
+::djdc::DJD changes of C-spine.
+::djdc1::DJD changes of C-spine with spur formation.
+::mdjdc::Mild DJD changes of C-spine.
+::mdjdc1::Mild DJD changes of C-spine with spur formation.
+::mdjdc2::Mild DJD changes of C-spine with spur formation and facet joint hypertrophy.
 ::csp::
   MyForm =
 (

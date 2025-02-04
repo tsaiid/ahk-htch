@@ -4,12 +4,12 @@
 #Include MyScripts\neuro-lai.ahk
 
 ;; Hotstrings
-::ath::Atherosclerotic change with calcification of intracranial portion of vertebrobasilar arteries and bilateral internal carotid arteries.
-::athc::Atherosclerotic change with calcification of intracranial portion of bilateral internal carotid arteries.
-::athv::Atherosclerotic change with calcification of intracranial portion of vertebrobasilar arteries.
-::math::Mild atherosclerotic change with calcification of intracranial portion of vertebrobasilar arteries and bilateral internal carotid arteries.
-::mathc::Mild atherosclerotic change with calcification of intracranial portion of bilateral internal carotid arteries.
-::mathv::Mild atherosclerotic change with calcification of intracranial portion of vertebrobasilar arteries.
+::ath::Atherosclerotic changes with calcification of intracranial portion of vertebrobasilar arteries and bilateral internal carotid arteries.
+::athc::Atherosclerotic changes with calcification of intracranial portion of bilateral internal carotid arteries.
+::athv::Atherosclerotic changes with calcification of intracranial portion of vertebrobasilar arteries.
+::math::Mild atherosclerotic changes with calcification of intracranial portion of vertebrobasilar arteries and bilateral internal carotid arteries.
+::mathc::Mild atherosclerotic changes with calcification of intracranial portion of bilateral internal carotid arteries.
+::mathv::Mild atherosclerotic changes with calcification of intracranial portion of vertebrobasilar arteries.
 ::sae::Bilateral periventricular low density presents. Subcortical arteriosclerotic encephalopathy (leukoaraiosis) is considered.
 ::msae::Mild bilateral periventricular low density presents. Mild subcortical arteriosclerotic encephalopathy (leukoaraiosis) is considered.
 ::sae2::Presence of mild/moderate/severe confluent symmetric periventricular hyperintensity on T2WI and FLAIR suggests subcortical arteriosclerotic encephalopathy (leukoaraiosis).
@@ -22,7 +22,7 @@
 ::ifch::from the imaging findings and clinical history, `
 ::mrmast::Increased signal intensity over -------------, mastoid air sinus on T2WI, in favor of mastoiditis or fluid collection in the mastoid.
 ::ctmast::Presence of soft tissue density over ---- mastoid air sinus, R/O mastoiditis or fluid collection in the mastoid.
-::ctcmast::Underdeveloped pneumatization and sclerotic change of right/left/bilateral mastoid air cells, suspicious chronic mastoiditis.
+::ctcmast::Underdeveloped pneumatization and sclerotic changes of right/left/bilateral mastoid air cells, suspicious chronic mastoiditis.
 ::atrv::Diffuse atrophy of bilateral cerebral hemispheres, with compensatory dilatation of bilateral lateral ventricles, deepening and widening of cortical sulci.
 ::atrvs::Enlargement of the ventricular system and sulcal widening of bilateral cerebral hemispheres noted, in favor of brain atrophy.
 ::matrvs::Mild enlargement of the ventricular system and sulcal widening of bilateral cerebral hemispheres noted, in favor of mild brain atrophy.
@@ -33,12 +33,12 @@
 ::matrs2::Mild brain atrophy with enlarged subarachnoid spaces of bilateral cerebral convexities.
 ::ctabi::A small ill-defined low density over left frontal subcortical white matter, could be old or recent ischemic infarction. Suggest clinical correlation.
 ::ctpbi::Presence of tiny/small low density involved ___ basal ganglion, ___ thalamus, and ___ periventricular white matter, previous brain ischemic insult, such as old tiny ischemic infarction considered.
-::ctpbi2::Presence of brain tissue loss change involving right temporal, right parietal, and left frontal regions, with compensatory dilatation of left lateral ventricle, in favor of previous brain insult, such as old ischemic infarction.
+::ctpbi2::Presence of brain tissue loss changes involving right temporal, right parietal, and left frontal regions, with compensatory dilatation of left lateral ventricle, in favor of previous brain insult, such as old ischemic infarction.
 ::mrpbi::Presence of several tiny hyperintensities in the periventricular white matter regions on T2WI and FLAIR, which may be gliosis, demyelination or tiny old ischemia or tiny previous brain insult.
 ::cteps::Small low density near right/left side of anterior commissure, in favor of enlarged perivascular space.
-::necsprt::Diffuse thickening and enhancement over the epiglottis, arytenoepiglottic folds, and posterior pharyngeal wall over the oropharynx and hypopharynx, c/w post-radiation change.
-::mrnecsprt::Presence of high signal intensity on T1WI over the C-spine, compatible with post radiation change.
-::mrnecspc::Mild mucosal and submucosal soft tissue thickening over the nasopharyngeal and oropharyngeal regions, in favor of post-treatment change. Suggest follow-up.
+::necsprt::Diffuse thickening and enhancement over the epiglottis, arytenoepiglottic folds, and posterior pharyngeal wall over the oropharynx and hypopharynx, c/w post-radiation changes.
+::mrnecsprt::Presence of high signal intensity on T1WI over the C-spine, compatible with post radiation changes.
+::mrnecspc::Mild mucosal and submucosal soft tissue thickening over the nasopharyngeal and oropharyngeal regions, in favor of post-treatment changes. Suggest follow-up.
 ::mrns::No evidence of high signal intensity on DWI and lower apparent diffusion coefficient suggesting acute ischemia infarction in the brain and brainstem noted.
 ::noaa::No evidence of aneurysm or arterial-venous malformation (AVM) noted near the circle of Willis regions.
 ::sdsa::Suggest correlate with DSA if clinically indicated.
@@ -56,7 +56,7 @@
 ::lnth::Left nasal turbinate hypertrophy.
 ::bnth::Bilateral nasal turbinate hypertrophy.
 ::ctmcm::Prominent retrocerebellar cerebrospinal fluid space with normal vermis, 4th ventricle, and cerebellar hemispheres, in favor of mega cisterna magna.
-::epc::endplate change
+::epc::endplate changes
 ::ctnph::Enlarged lateral and third ventricles, with relatively normal 4th ventricle. Ventricular enlargement out of proportion to cortical sulcal enlargement, and presence of bilateral periventricular low density. Normal pressure hydrocephalus may be suspected. DDx: normal aging brain.
 ::ctnph1::However, as the ventricular enlargement is slightly out of proportion to cortical sulcal enlargement, superimposed communicating hydrocephalus cannot be excluded. Suggest clinical correlation.
 ::rposts::Soft tissue swelling over right periorbital region.
@@ -118,7 +118,7 @@
 ::casc::cerebral atherosclerosis
 ::mcasc::mild cerebral atherosclerosis
 ::necmraok::The bilateral extracranial carotid and vertebral arteries are unremarkable.
-::cbnic::The intracranial condition shows no obvious change as compared with previous study.
+::cbnic::The intracranial condition shows no obvious changes as compared with previous study.
 ::mriess::The sella is slightly enlarged, the pituitary gland is flattened against the sellar floor, and there is downward traction of chiasm. Empty sella syndrome may be suspected.
 ::msr9::midline shift to right, about 9 mm at the midthalamic level.
 ::msl9::midline shift to left, about 9 mm at the midthalamic level.
@@ -308,7 +308,7 @@ FINDINGS:
 - Increased signal intensity over left mastoid air sinus on T2WI, in favor of mastoiditis or fluid collection in the mastoid.
 
 - No definite abnormal signal intensity tumor mass lesion in the brain noted including supratentorial cerebral hemisphere and infratentorial cerebellum and brain stem region.
-- No definite abnormal signal intensity change in the brain parenchyma.
+- No definite abnormal signal intensity changes in the brain parenchyma.
 - The bilateral lateral ventricles showed symmetrical without dilatation.
 
 - Post contrast study shows no abnormal enhancing lesion in the brain and no abnormal leptomeningeal enhancement noted.
@@ -337,7 +337,7 @@ Previous MRI of brain: none
 FINDINGS:
 No evidence of high signal intensity on DWI and lower apparent diffusion coefficient suggesting acute ischemia infarction in the brain and brainstem noted.
 
-No definite abnormal signal intensity change or tumor mass lesion in the brain noted.
+No definite abnormal signal intensity changes or tumor mass lesion in the brain noted.
 
 The bilateral lateral ventricles showed symmetrical without dilatation.
 
@@ -411,7 +411,7 @@ Findings:
 - Presence of mild confluent symmetric periventricular hyperintensity on T2WI and FLAIR noted, the subcortical arteriosclerotic encephalopathy considered.
 - Presence of small hyperintensities in the right occipital cortical region on T2WI and FLAIR, which may be gliosis, or old ischemia or previous brain insult.
 - Mild dilatation of intraventricular system with widening of subarachnoid space of bilateral cerebral hemispheres, in favor of aging process and mild brain atrophy.
-- Incidental finding of right side fetal type posterior cerebral artery (PCA) from right internal carotid artery (ICA) with hypoplasia change at P1 segment of right PCA noted.
+- Incidental finding of right side fetal type posterior cerebral artery (PCA) from right internal carotid artery (ICA) with hypoplasia changes at P1 segment of right PCA noted.
 - Presence of asymmetry of bilateral vertebral arteries, and more prominence over the right side, and patent flow of bilateral vertebral arteries noted, normal variation in favor.
 )
   Paste(MyForm)
@@ -437,18 +437,18 @@ MRI of C-spine:
 COMPARISON: No
 
 FINDINGS:
-The bilateral brachial plexus are symmetrical with no abnormal signal intensity change.
+The bilateral brachial plexus are symmetrical with no abnormal signal intensity changes.
 
-Multiple muscle groups show edematous change, including bilateral rotator cuffs, extensors and flexors of left arm, c/w rhabdomyolysis.
+Multiple muscle groups show edematous changes, including bilateral rotator cuffs, extensors and flexors of left arm, c/w rhabdomyolysis.
 
 C2-C3: postero-central protrusion disc, causing mild indentation of the anterior dural sac.
 C3-C4: diffuse bulging disc, spondylosis, with ligamentum flavum hypertrophy, causing moderate to severe spinal stenosis.
 C4-C5: diffuse bulging disc, spondylosis, with ligamentum flavum hypertrophy, causing moderate spinal stenosis.
 C5-C6: diffuse bulging disc, causing mild indentation of the anterior dural sac.
-C6-C7: diffuse bulging disc, spondylosis, disc space narrowing, endplate change, with ligamentum flavum hypertrophy, causing moderate spinal stenosis.
+C6-C7: diffuse bulging disc, spondylosis, disc space narrowing, endplate changes, with ligamentum flavum hypertrophy, causing moderate spinal stenosis.
 C7-T1: diffuse bulging disc, causing mild spinal stenosis.
 
-No abnormal signal intensity change within the cervical spinal cord.
+No abnormal signal intensity changes within the cervical spinal cord.
 )
   Paste(MyForm)
 Return

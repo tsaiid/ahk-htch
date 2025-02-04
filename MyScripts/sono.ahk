@@ -7,11 +7,11 @@
 
 ;; Sono, Upper Abdomen
 ::slcpd::Heterogeneous hyperechoic liver parenchyma echo pattern, suspicious chronic parenchymal disease.
-::slfl::Coarsening and hyperechoic liver parenchyma echo pattern, in favor of fatty liver change.
-::slfll::Coarsening and hyperechoic liver parenchyma echo pattern without focal lesion noted, in favor of fatty liver change. It may mask lesions, especially in the deep region.
-::slmfl::Slightly increased hyperechoic liver parenchyma, in favor of mild fatty liver change.
-::slc::Irregular surface of the liver and coarsening change of the parenchyma, indicating cirrhosis.
-::slmc::Mildly irregular surface of the liver and coarsening change of the parenchyma, indicating mild cirrhosis.
+::slfl::Coarsening and hyperechoic liver parenchyma echo pattern, in favor of fatty liver changes.
+::slfll::Coarsening and hyperechoic liver parenchyma echo pattern without focal lesion noted, in favor of fatty liver changes. It may mask lesions, especially in the deep region.
+::slmfl::Slightly increased hyperechoic liver parenchyma, in favor of mild fatty liver changes.
+::slc::Irregular surface of the liver and coarsening changes of the parenchyma, indicating cirrhosis.
+::slmc::Mildly irregular surface of the liver and coarsening changes of the parenchyma, indicating mild cirrhosis.
 ::sngb::The gallbladder is not seen, may be due to previous cholecystectomy.
 ::sckd::Cortical thinning, increased echogenicity, and small sizes of both kidneys, in favor of chronic kidney disease.
 ::smckd::Mild cortical thinning, increased echogenicity, and small sizes of both kidneys, in favor of chronic kidney disease.
@@ -23,7 +23,7 @@
 ::sgbps::Several tiny echogenic polyps, size up to __ cm, in the gallbladder noted. Cholesterol polyps are considered.
 ::sgbs::A __-cm echogenic lesion in GB with acoustic shadow, in favor gallstone.
 ::sgbss::Several echogenic lesions in GB with acoustic shadow, in favor gallstones.
-::sgbss1::Several echogenic lesions in GB with postural change and acoustic shadow, in favor gallstones.
+::sgbss1::Several echogenic lesions in GB with postural changes and acoustic shadow, in favor gallstones.
 ::sgba::Comet tail artifacts from the gallbladder wall, adenomyomatosis should be considered.
 ::sgba1::Presence of tiny GB adenomyomatoses with RA (Rokitanski-Aschoff) sinus noted.
 ::sgbcc::Mild gallbladder wall thickening, suspicious chronic cholecystitis.
@@ -172,12 +172,12 @@ Return
 ::sbbsp::Scars at the bilateral breasts.
 ::sbrsp::A scar at the right breast.
 ::sblsp::A scar at the left breast.
-::sbrspp::S/P previous right BCS (Breast conservation surgery) without evidence of local recurrence.
-::sblspp::S/P previous left BCS (Breast conservation surgery) without evidence of local recurrence.
-::sbbspp::S/P previous bilateral BCS (Breast conservation surgery) without evidence of local recurrence.
-::sbrspm::S/P previous right modified radical mastectomy without evidence of local recurrence.
-::sblspm::S/P previous left modified radical mastectomy without evidence of local recurrence.
-::sbbspm::S/P previous bilateral modified radical mastectomy without evidence of local recurrence.
+::sbrspp::status post previous right BCS (Breast conservation surgery) without evidence of local recurrence.
+::sblspp::status post previous left BCS (Breast conservation surgery) without evidence of local recurrence.
+::sbbspp::status post previous bilateral BCS (Breast conservation surgery) without evidence of local recurrence.
+::sbrspm::status post previous right modified radical mastectomy without evidence of local recurrence.
+::sblspm::status post previous left modified radical mastectomy without evidence of local recurrence.
+::sbbspm::status post previous bilateral modified radical mastectomy without evidence of local recurrence.
 ::sbbrlns::Slightly enlarged lymph nodes with preserved hilar structure at the bilateral axillae noted, probably reactive lymph nodes.
 ::sbrrln::A slightly enlarged lymph node with preserved hilar structure at the right axilla noted, probably a reactive lymph node.
 ::sblrln::A slightly enlarged lymph node with preserved hilar structure at the left axilla noted, probably a reactive lymph node.
@@ -192,9 +192,9 @@ Return
 ::sbls::A scar at the left breast.
 ::sbrc::Presence of an anechoic cyst at __ o'clock position of right breast, measuring about __ cm in size. Fibrocystic disease considered.
 ::sblc::Presence of an anechoic cyst at __ o'clock position of left breast, measuring about __ cm in size. Fibrocystic disease considered.
-::sbrcs::Presence of several small anechoic cysts at right breast noted. Fibrocystic change considered.
-::sblcs::Presence of several small anechoic cysts at left breast noted. Fibrocystic change considered.
-;::sbbcs::Presence of several small anechoic cysts at bilateral breasts noted. Fibrocystic change considered.
+::sbrcs::Presence of several small anechoic cysts at right breast noted. Fibrocystic changes considered.
+::sblcs::Presence of several small anechoic cysts at left breast noted. Fibrocystic changes considered.
+;::sbbcs::Presence of several small anechoic cysts at bilateral breasts noted. Fibrocystic changes considered.
 ::sbbhen::Several small hypoechoic nodular lesions at the bilateral breasts, probably benign.
 ::sblhen::Several small hypoechoic nodular lesions at the left breast, probably benign.
 ::sbrhen::Several small hypoechoic nodular lesions at the right breast, probably benign.
@@ -555,7 +555,7 @@ Return
 
   MyForm =
 (
-Nodular hyperechoic change in the transitional zone noted. Nodular hyperplasia considered.
+Nodular hyperechoic changes in the transitional zone noted. Nodular hyperplasia considered.
 The prostate is measured about %ProstateVol% in volume.
 
 Normal appearance of the seminal vesicles.
@@ -577,7 +577,7 @@ Return
 ::sprsp::
   MyForm =
 (
-S/P previous TURP with a central cleft of the prostate noted.
+Status post previous TURP with a central cleft of the prostate noted.
 The prostate was measured about __ cc in volume.
 )
   Paste(MyForm)

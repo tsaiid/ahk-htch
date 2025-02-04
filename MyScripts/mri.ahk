@@ -14,7 +14,7 @@ INDICATION: ?
 FINDINGS:
 - No definite structural abnormality.
 - No abnormal cardiac motion.
-- No abnormal myocardial signal intensity change.
+- No abnormal myocardial signal intensity changes.
 - Normal myocardial thickness.
 - No myocardial perfusion defect.
 - No definite late gadolinium enhancement in the myocardium.

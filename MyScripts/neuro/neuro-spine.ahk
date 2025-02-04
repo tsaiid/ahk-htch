@@ -5,7 +5,7 @@
 ::lllc::Loss of lumbar lordotic curve.
 ::pedf::prominent epidural fat
 ::aarst1::Atlantoaxial rotary subluxation is noted. The atlas is rotated on the odontoid with no anterior displacement, suggestive of Fielding and Hawkins type 1.
-::mrspm::Presence of mild high signal intensity within the cervical cord at the C5 and C6 spine level on T2WI noted, probably due to the spinal stenosis and/or prior cord injury edema and/or prior cord insult with cord gliosis or small cystic change.
+::mrspm::Presence of mild high signal intensity within the cervical cord at the C5 and C6 spine level on T2WI noted, probably due to the spinal stenosis and/or prior cord injury edema and/or prior cord insult with cord gliosis or small cystic changes.
 ::mrspsmn::Schmorl's node (vertical intravertebral disc herniation) over the `
 ::mrspma::Presence of metallic artifact may limit the evaluation in this area.
 ::mrspnom::No evidence of abnormal signal intensity lesion within the visible spinal cord.
@@ -33,7 +33,7 @@ FINDINGS:
 Degenerative disc disease of L-spine:
 - Spondylosis:
 - Disc space narrowing:
-- Endplate change:
+- Endplate changes:
 - Spondylolisthesis:
 - Retrolisthesis:
 - Protrusion disc:
@@ -163,8 +163,8 @@ No evidence of abnormal tumor mass lesion within the dural sac of the C-spine.
 No evidence of abnormal tumor mass lesion over the spinal canal of the C-spine.
 
 Suspicious high signal intensity within the cervical cord at the C4 and C5 level on T2WI noted, DDx: contusion edema, prior cord insult with cord gliosis, and/or artifact.
-Presence of mild high signal intensity within the cervical cord at the C5 and C6 spine level on T2WI noted, probably due to the spinal stenosis and/or prior cord injury edema and/or prior cord insult with cord gliosis or small cystic change.
-Presence of high signal intensity within the spinal cord from C1 to C5 disc level on T2WI noted, which may be due to cord edema, demyelination or gliosis change.
+Presence of mild high signal intensity within the cervical cord at the C5 and C6 spine level on T2WI noted, probably due to the spinal stenosis and/or prior cord injury edema and/or prior cord insult with cord gliosis or small cystic changes.
+Presence of high signal intensity within the spinal cord from C1 to C5 disc level on T2WI noted, which may be due to cord edema, demyelination or gliosis changes.
 
 
 Presence of small meningeal cysts over bilateral C7-T1 and T1-2 and left T2-3 neuroframen regions, maximal dimension about 9mm.
@@ -229,7 +229,7 @@ Presence of diffuse bulging disc noted over the T12-L1 region, and causing mild 
 6. Presence of narrowing of intervertebral foramen over --.
 7. No evidence of fracture of thoracic spine.
 8. Presence of fracture/subluxation over --------------.
-9. Presence of high signal within the spinal cord at ------ level, indicating edema/gliosis/compression with cord signal change
+9. Presence of high signal within the spinal cord at ------ level, indicating edema/gliosis/compression with cord signal changes
 10. Presence of infectious osteomylitis involving the ------- spine, combined with epidural/paraspinal soft tissue infection, causing compression of the spinal cord
 11. Presence of abnormal signal intensity involving the ------spine, and compression of the spinal cord at -------- level, R/O metastasis, myeloma, or lymphoma
 12. No evidence of abnormal signal intensity lesion in the spinal cord of T-spine.
@@ -283,7 +283,7 @@ Post-contrast, sagittal and axial T1WI:
 6. Presence of narrowing of intervertebral foramen over --.
 7. No evidence of fracture of thoracic spine.
 8. Presence of fracture/subluxation over --------------.
-9. Presence of high signal within the spinal cord at -----level, indicating edema/gliosis/compression with cord signal change
+9. Presence of high signal within the spinal cord at -----level, indicating edema/gliosis/compression with cord signal changes
 10. Presence of infectious osteomylitis involving the ------- spine, combined with epidural/paraspinal soft tissue infection, causing compression of the spinal cord
 11. Presence of abnormal signal intensity involving the -----spine, and compression of the spinal cord at -------- level, R/O metastasis, myeloma, or lymphoma
 12. No evidence of abnormal signal intensity lesion and no evidence of abnormal enhanced in the spinal cord of T-spine.
@@ -348,7 +348,7 @@ Post contrast study shows no evidence of abnormal enhanced lesion noted over the
 6. Presence of narrowing of intervertebral foramen over --.
 7. No evidence of fracture of lumbar spine.
 8. Presence of fracture/subluxation over --------------.
-9. Presence of high signal within the spinal cord at ------ level, indicating edema/gliosis/compression with cord signal change
+9. Presence of high signal within the spinal cord at ------ level, indicating edema/gliosis/compression with cord signal changes
 10. Presence of infectious osteomylitis involving the ------- spine, combined with epidural/paraspinal soft tissue infection, causing compression of the spinal cord
 11. Presence of abnormal signal intensity involving the ------- spine, and compression of the spinal cord at -------- level, R/O metastasis, myeloma, or lymphoma
 12. Presence of increased soft tissue over ------------ level, solid/marginal enhancement, post-operative epidural fibrosis/recurrent disc more in favor
@@ -397,7 +397,7 @@ Normal alignment and vertebral morphology over lower T- and L-spine regions.
 
 Presence of cystic lesion, maximum diameter about 1.1 cm in size, manifested with hypointensity on T1WI and hyperintensity on T2WI, near right/left L4-5 facet joint and medial to the facet joint and ligamentum flavum, DDx: synovial cyst or ligamentum flavum cyst.
 
-right side synovial cyst (iso- to hypointensity on T1WI and mild hyperintensity on T2WI), size about 7mm, noted medial to the adjacent right side facet joint, and lateral to the dural sac, and severe ligamentum flavum hypertrophy, facet joint DJD change, and causing severe spinal stenosis noted.
+right side synovial cyst (iso- to hypointensity on T1WI and mild hyperintensity on T2WI), size about 7mm, noted medial to the adjacent right side facet joint, and lateral to the dural sac, and severe ligamentum flavum hypertrophy, facet joint DJD changes, and causing severe spinal stenosis noted.
 
 Baastrup's disease of L3-4 with bone edema and enhancement of the kissing spinous process, and interspinous fluid and posterocentral epidural cyst noted.
 
@@ -417,8 +417,8 @@ Presence of several perineural cysts over the spinal canal of the upper sacrum l
 Presence of L6 (lumbarization of S1) noted.
 Suspicious spodylolysis fracture of L5 pars interarticularis.
 Presence of dessicated disc noted over L4-5 and L5-S1 and L-spine.
-Presence of degenerative end-plate change noted over the L4-L5.
-Narrowing of bilateral L4-5 and L5-S1 neuroforamina due to the degenerative change and severe disc space narrowing.
+Presence of degenerative end-plate changes noted over the L4-L5.
+Narrowing of bilateral L4-5 and L5-S1 neuroforamina due to the degenerative changes and severe disc space narrowing.
 
 Presence of small hemangiomas over L1 and L4 spine vertebral bodies.
 Presence of benign hemangioma noted over the L2 vertebral body, size about 2.1 cm.
@@ -498,7 +498,7 @@ PREVIOUS MRI of whole spine: no
 
 FINDINGS:
 
-No abnormal signal intensity change within the spinal cord, or mass lesion within the dural sac.
+No abnormal signal intensity changes within the spinal cord, or mass lesion within the dural sac.
 
 )
   Paste(MyForm)

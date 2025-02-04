@@ -104,7 +104,7 @@
 ::ld::low density
 ::pbi::previous brain insults
 ::pii::previous ischemic insults
-::ech::edematous change
+::ech::edematous changes
 ::sps::spinal stenosis
 ::sps0::mild indentation on anterior dural sac
 ::csps::central spinal stenosis
@@ -257,7 +257,7 @@ Return
 ::spd::suspected
 ::so::suspicion of `
 ::su::size up to `
-::ic::inflammatory change
+::ic::inflammatory changes
 ::infl::inflammation
 ::cd::consolidation
 ::cdv::consolidative `

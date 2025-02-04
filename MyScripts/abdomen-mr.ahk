@@ -52,7 +52,7 @@ COMPARISON: no
 
 FINDINGS:
 Liver and Biliary tree:
-- Cirrhotic change: nil, portosystemic collaterals (-)
+- Cirrhotic changes: nil, portosystemic collaterals (-)
 
 Pancreas: Unremarkable
 
@@ -83,8 +83,8 @@ COMPARISON: no
 FINDINGS:
 * A case of HCC, s/p OP, s/p RFA.
 Liver:
-- S/p right hepatectomy. Hypertrophic change of the lateral segment.
-- Cirrhotic change: nil, portosystemic collaterals (-)
+- S/p right hepatectomy. Hypertrophic changes of the lateral segment.
+- Cirrhotic changes: nil, portosystemic collaterals (-)
 - A 8-mm nodule at the S2 (Se/Im: 11,12,13/26) shows slightly enhancement in the arterial but prominent washout in portal venous, equilibrium, and hepatobiliary phases. Recurrence HCC is suspected.
 - Two mass lesions, about 4.8 and 4.2 cm, at the S4, show T1 slightly hypointensity, T2 slightly hyperintensity, restricted diffusion. The dynamic study shows mild peripheral enhancement in the arterial phase, and no Primovist uptake in the hepatobiliary phase. Metastasis is first considered. DDx: atypical HCC, CCC.
 - The major hepatic and portal veins are patent.
@@ -121,8 +121,8 @@ COMPARISON: no
 FINDINGS:
 * A case of HCC, s/p OP, s/p RFA.
 Liver:
-- S/p right hepatectomy. Hypertrophic change of the lateral segment.
-- Cirrhotic change: nil, portosystemic collaterals (-)
+- S/p right hepatectomy. Hypertrophic changes of the lateral segment.
+- Cirrhotic changes: nil, portosystemic collaterals (-)
 - A 8-mm nodule at the S2 (Se/Im: 11,12,13/26) shows slightly enhancement in the arterial but prominent washout in portal venous, equilibrium, and hepatobiliary phases. Recurrence HCC is suspected.
 - Two mass lesions, about 4.8 and 4.2 cm, at the S4, show T1 slightly hypointensity, T2 slightly hyperintensity, restricted diffusion. The dynamic study shows mild peripheral enhancement in the arterial phase, and no Primovist uptake in the hepatobiliary phase. Metastasis is first considered. DDx: atypical HCC, CCC.
 - The major hepatic and portal veins are patent.
@@ -362,7 +362,7 @@ FINDINGS:
 Prostate:
 - Size: 5.5 x 3.4 x 4.7 cm
 - Volume: 45.7 ml (length x width x height x 0.52)
-- Focal T1 hyperintensities at left lobe, probably post-biopsy change.
+- Focal T1 hyperintensities at left lobe, probably post-biopsy changes.
 - Enlarged transition zone with heterogeneous nodular signal intensity and an intact low signal pseudocapsule in the periphery, suggestive of benign prostatic hyperplasia.
 - Circumscribed hypointense or heterogeneous encapsulated nodule(s) (BPH)
 - status post TURP appearance.
@@ -795,7 +795,7 @@ SCANNING PROTOCOL:
 COMPARISON: no
 
 FINDINGS:
-The appendix cannot be depicted well. However, no definite swollen tubular structure or inflammatory change over the pericecal region. No strong evidence of acute appendicitis.
+The appendix cannot be depicted well. However, no definite swollen tubular structure or inflammatory changes over the pericecal region. No strong evidence of acute appendicitis.
 
 A gravid uterus with normal position of the placenta.
 The fetus is in breech presentation, and the images show no hydrocephalus, no hydronephrosis, and no obvious structural anomaly.

@@ -141,7 +141,7 @@ Parotid gland: Unremarkable
 Submandibular gland: Unremarkable
 Thyroid gland: Unremarkable
 
-Presence of increased bone marrow signal intensity on T1WI over  ------, compatible with post radiation change.
+Presence of increased bone marrow signal intensity on T1WI over  ------, compatible with post radiation changes.
 Increased signal intensity over  -----------, mastoid air sinus on T2WI, in favor of mastoiditis or fluid collection in the mastoid.
 
 IMPRESSION:
@@ -317,7 +317,7 @@ Parotid gland: Unremarkable
 Submandibular gland: Unremarkable
 Thyroid gland: Unremarkable
 
-Presence of increased bone marrow signal intensity on T1WI over  ------, compatible with post radiation change.
+Presence of increased bone marrow signal intensity on T1WI over  ------, compatible with post radiation changes.
 Increased signal intensity over  -----------, mastoid air sinus on T2WI, in favor of mastoiditis or fluid collection in the mastoid.
 
 IMPRESSION:
@@ -376,7 +376,7 @@ Parotid gland: not unusual
 Submandibular gland: not unusual
 Thyroid gland: not unusual
 
-Presence of increased bone marrow signal intensity on T1WI over  ------, compatible with post radiation change.
+Presence of increased bone marrow signal intensity on T1WI over  ------, compatible with post radiation changes.
 Increased signal intensity over  -----------, mastoid air sinus on T2WI, in favor of mastoiditis or fluid collection in the mastoid.
 
 IMPRESSION:
@@ -436,7 +436,7 @@ Parotid gland: not unusual
 Submandibular gland: not unusual
 Thyroid gland: not unusual
 
-Presence of increased bone marrow signal intensity on T1WI over  ------, compatible with post radiation change.
+Presence of increased bone marrow signal intensity on T1WI over  ------, compatible with post radiation changes.
 Increased signal intensity over  -----------, mastoid air sinus on T2WI, in favor of mastoiditis or fluid collection in the mastoid.
 
 IMPRESSION:

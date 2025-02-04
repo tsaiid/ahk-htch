@@ -309,7 +309,7 @@ No particular findings in the parotid glands, submandibular glands, and thyroid 
 
 No evidence of enhanced mass lesion in the submandibular and neck region.
 
-Presence of high signal intensity on T1WI over the C-spine, compatible with post radiation change.
+Presence of high signal intensity on T1WI over the C-spine, compatible with post radiation changes.
 
 The paranasal sinuses and mastoid air cells are unremarkable.
 

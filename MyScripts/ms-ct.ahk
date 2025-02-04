@@ -98,7 +98,7 @@ COMPARISON: no
 
 FINDINGS:
 
-Atrophic change of bilateral kidneys, in favor of chronic kidney disease.
+Atrophic changes of bilateral kidneys, in favor of chronic kidney disease.
 Some small nonobstructive bilateral renal stones.
 
 The lower abdomen and pelvis are unremarkable.
@@ -144,7 +144,7 @@ FINDINGS:
 - The visible intraabdominal organs are unremarkable.
 
 IMPRESSION:
-OA change of bilateral knees.
+OA changes of bilateral knees.
 )
   Paste(MyForm)
 Return
@@ -161,13 +161,13 @@ Axial and coronal reconstruction with MIP technique
 COMPARISON: no
 
 FINDINGS:
-Atherosclerotic change and calcification of the arterial wall, from abdominal aorta to the peripheral arteries of foot.
+Atherosclerotic changes and calcification of the arterial wall, from abdominal aorta to the peripheral arteries of foot.
 Because too small diameter of arteries and the severe calcification, the patency below the popliteal level is difficult to evaluate.
 
 Multifocal luminal stenosis over bilateral anterior tibial, posterior tibial, and peroneal arteries, c/w peripheral arterial disease. They are relatively patent to at least ankle level.
 Because too small diameter of arteries and the severe calcification, the evaluation may be limited.
 
-Atrophic change of bilateral kidneys, in favor of chronic kidney disease.
+Atrophic changes of bilateral kidneys, in favor of chronic kidney disease.
 Some small nonobstructive bilateral renal stones.
 
 The lower abdomen and pelvis are unremarkable.

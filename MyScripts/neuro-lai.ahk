@@ -96,8 +96,8 @@ No evidence of low signal intensity nodule noted within the pituitary gland in t
 IMPRESSION:
 No evidence of mass lesion on the sellar or suprasellar or hypothalamus regions.
 
-From the imaging finding and clinical history, compatible with pituitary microadenoma over the right side pituitary gland and S/P treatment.
-No obvious interval change as compared with previous last study.
+From the imaging finding and clinical history, compatible with pituitary microadenoma over the right side pituitary gland and status post treatment.
+No obvious interval changes as compared with previous last study.
 
 SUGGESTION:
 Check hormone profile.
