@@ -470,8 +470,8 @@ FINDINGS:
 - Cavum septum pellucidum and cavum vergae.
 - No abnormal dilatation of the ventricular system and no midline shift.
 
-- Major intracranial arteries, including anterior, middle and posterior cerebral arteries, bilateral internal carotid arteries, basilar arteries, and bilateral vertebral arteries, are patent. No evident luminal stenosis is noted.
-- Bilateral common carotid, carotid bulbs, external and internal carotid arteries are patent. No evident luminal stenosis is noted.
+- Major intracranial arteries, including anterior, middle and posterior cerebral arteries, bilateral internal carotid arteries, basilar arteries, and bilateral vertebral arteries, are patent. No evidence of luminal stenosis is noted.
+- Bilateral common carotid, carotid bulbs, external and internal carotid arteries are patent. No evidence of luminal stenosis is noted.
 - No definite aneurysm, arteriovenous malformation, or other vascular abnormality.
 
 - Nasal septum deviation to the right.

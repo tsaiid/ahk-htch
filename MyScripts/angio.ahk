@@ -113,7 +113,7 @@ The follow-up celiac trunk angiography showed decreased hepatic flow. The cystic
 The angiocatheter and sheath were removed, and hemostasis of puncture site was achieved by manual compression with a Coreleader Chitosan wound dressing.
 
 The angiography of common hepatic artery and right hepatic artery was performed.
-No evident contrast medium extravasation is noted.
+No obvious contrast medium extravasation is noted.
 For prophylaxis of occult bleeding from right liver traumatic injury, embolization was performed with Gelfoam powders into the RHA.
 The follow-up celiac trunk angiography showed decreased right hepatic flow.
 The angiography of SMA shows no replaced right hepatic artery.

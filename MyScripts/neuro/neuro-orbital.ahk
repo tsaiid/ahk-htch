@@ -33,7 +33,7 @@ Plane: axial, coronal, oblique sagittal
 PREVIOUS CT of orbit: no
 
 FINDINGS:
-No evident fracture of bilateral orbits.
+No obvious fracture of bilateral orbits.
 No evidence of acute hematoma over bilateral orbital retroocular regions.
 Symmetrical size of bilateral orbital retroocular optic nerves.
 No evidence of high density foreign body noted at the bilateral intraocular and retroocular regions.
@@ -70,7 +70,7 @@ FINDINGS:
 - Exophthalmos at left side.
 - Enlargement of left inferior rectus muscle, with sparing the anterior tendon, c/w thyroid-associated orbitopathy. However, due to it's unilateral and asymmetrical, orbital pseudotumor may also be considered. Suggest correlate with thyroid function test.
 
-- No evident fracture of bilateral orbits.
+- No obvious fracture of bilateral orbits.
 - Symmetrical size of bilateral orbital retroocular optic nerves.
 - The paranasal sinuses are clear.
 )
@@ -105,7 +105,7 @@ FINDINGS:
 
 - No evidence of mass lesion over the bilateral orbital or retroocular regions.
 - Symmetrical size of bilateral orbital retroocular optic nerves.
-- No evident fracture of bilateral orbits.
+- No obvious fracture of bilateral orbits.
 
 - Retention cysts in bilateral maxillary sinuses.
 )
@@ -135,7 +135,7 @@ Previous CT of orbit: no
 
 FINDINGS:
 - Shallow anterior chamber depth (ACD) of left globe, with a small air bubble in the anterior chamber, and wall irregularity of left globe, c/w eyeball rupture.
-- No evident fracture of bilateral orbits.
+- No obvious fracture of bilateral orbits.
 - Symmetrical size of bilateral orbital retroocular optic nerves.
 - No evidence of high density foreign body noted at the bilateral intraocular and retroocular regions.
 - No abnormal thickening of the extraocular muscles.

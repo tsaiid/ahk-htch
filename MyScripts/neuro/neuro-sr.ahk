@@ -269,7 +269,7 @@ FINDINGS:
 
 
 IMPRESSION:
-No evident fracture or dislocation of cervical spine
+No obvious fracture or dislocation of cervical spine
 No significant findings in cervical spine region
 )
   Paste(MyForm)
@@ -314,9 +314,9 @@ FINDINGS:
 
 
 IMPRESSION:
-No evident acute intracranial hemorrhage
+No obvious acute intracranial hemorrhage
 No significant intracranial findings
-No evident brain metastasis
+No obvious brain metastasis
 )
   Paste(MyForm)
 Return
@@ -358,7 +358,7 @@ FINDINGS:
 
 
 IMPRESSION:
-No evident acute intracranial hemorrhage
+No obvious acute intracranial hemorrhage
 No significant intracranial findings
 )
   Paste(MyForm)
@@ -1148,7 +1148,7 @@ FINDINGS:
 
 IMPRESSION:
 No significant findings in face and neck region
-No evident tumor recurrence
+No obvious tumor recurrence
 )
   Paste(MyForm)
 Return

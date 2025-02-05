@@ -134,7 +134,7 @@ FINDINGS:
   SleepThenTab()
   MyForm =
 (
-No evident traumatic intrathoracic injury.
+No obvious traumatic intrathoracic injury.
 )
   Paste(MyForm)
 Return

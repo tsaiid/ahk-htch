@@ -78,13 +78,13 @@
 ::appok::the appendix is normal.
 ::appok1::No evidence of acute appendicitis.
 ::appok2::No evidence of acute appendicitis or other acute intraabdominal findings.
-::ntti::No evident traumatic intrathoracic injury.
-::ntai::No evident traumatic intraabdominal injury.
-::nttai::No evident traumatic intrathoracic or intraabdominal injury.
-::naaf::No evident acute intraabdominal findings.
-::natf::No evident acute intrathoracic findings.
-::nataf::No evident acute intrathoracic or intraabdominal findings.
-::nacraf::No evident acute intracranial findings.
+::ntti::No definite traumatic intrathoracic injury.
+::ntai::No definite traumatic intraabdominal injury.
+::nttai::No definite traumatic intrathoracic or intraabdominal injury.
+::naaf::No definite acute intraabdominal findings.
+::natf::No definite acute intrathoracic findings.
+::nataf::No definite acute intrathoracic or intraabdominal findings.
+::nacraf::No definite acute intracranial findings.
 ::actapn::Edematous left renal parenchyma, with multifocal hypo-enhanced areas and perirenal fat stranding, suggestive of acute pyelonephritis.
 ::cdiv::colonic diverticula
 ::cdivs::colonic diverticulosis
@@ -150,7 +150,7 @@ Urinary bladder: Unremarkable
 Prostate: Unremarkable
 GYN organ: Unremarkable
 
-No evident retroperitoneal lymphadenopathy identified.
+No definite retroperitoneal lymphadenopathy identified.
 No evidence of intraperitoneal free air.
 No obvious ascites.
 )
@@ -172,7 +172,7 @@ Urinary bladder: Unremarkable
 Prostate: Unremarkable
 GYN organ: Unremarkable
 
-No evident retroperitoneal lymphadenopathy identified.
+No definite retroperitoneal lymphadenopathy identified.
 No evidence of intraperitoneal free air.
 No obvious ascites.
 
@@ -207,7 +207,7 @@ Kidneys and ureters: Unremarkable
 Urinary bladder: Unremarkable
 %gender_specific_str%
 
-No evident retroperitoneal lymphadenopathy identified.
+No definite retroperitoneal lymphadenopathy identified.
 No evidence of intraperitoneal free air.
 No obvious ascites.
 
@@ -242,7 +242,7 @@ Kidneys and ureters: Unremarkable
 Urinary bladder: Unremarkable
 %gender_specific_str%
 
-No evident retroperitoneal or mesenteric lymphadenopathy identified.
+No definite retroperitoneal or mesenteric lymphadenopathy identified.
 No evidence of intraperitoneal free air.
 No obvious ascites.
 
@@ -510,7 +510,7 @@ Pancreas: Unremarkable
 GI tract: Unremarkable
 %gender_specific_str%
 
-No evident upper abdominal retroperitoneal lymphadenopathy identified.
+No definite upper abdominal retroperitoneal lymphadenopathy identified.
 
 Lower thorax: Unremarkable
 )
@@ -580,7 +580,7 @@ Kidneys and ureters: Unremarkable
 
 Massive ascites.
 The bowels show diffuse wall edema, probably portal hypertensive enteropathy.
-No evident upper abdominal retroperitoneal lymphadenopathy identified.
+No definite upper abdominal retroperitoneal lymphadenopathy identified.
 
 Lower thorax: Unremarkable
 
@@ -615,7 +615,7 @@ Adrenals: Unremarkable
 Kidneys and ureters: Unremarkable
 Urinary bladder: Unremarkable
 
-No evident upper abdominal retroperitoneal lymphadenopathy identified.
+No definite upper abdominal retroperitoneal lymphadenopathy identified.
 
 Lower thorax: Unremarkable
 )
@@ -880,7 +880,7 @@ FINDINGS:
 No definite bleeder or contrast extravasation identified in this study.
 No other apparent focal lesion noted at liver, spleen, pancreas and kidneys.
 The lower abdomen showed no significant unusual.
-No evident bowel dilatation or wall thickening noted.
+No definite bowel dilatation or wall thickening noted.
 No intraabdominal lymphadenopathy noted.
 
 IMPRESSION:
@@ -938,7 +938,7 @@ Pancreas: Unremarkable
 GI tract: Unremarkable
 %gender_specific_str%
 
-No evident pelvic, retroperitoneal, or mesenteric lymphadenopathy identified.
+No definite pelvic, retroperitoneal, or mesenteric lymphadenopathy identified.
 
 Lower thorax: Unremarkable
 
@@ -992,8 +992,8 @@ REMARKS:
 * The evaluation is limited especially for solid organs and vascular structure due to absence of contrast enhancement.
 
 IMPRESSION:
-No evident acute intrathoracic or intraabdominal findings.
-No evident traumatic intrathoracic or intraabdominal injury.
+No definite acute intrathoracic or intraabdominal findings.
+No definite traumatic intrathoracic or intraabdominal injury.
 )
   Paste(MyForm)
 Return
@@ -1024,7 +1024,7 @@ Pancreas: Unremarkable
 GI tract: Unremarkable
 %gender_specific_str%
 
-No evident pelvic, retroperitoneal, or mesenteric lymphadenopathy identified.
+No definite pelvic, retroperitoneal, or mesenteric lymphadenopathy identified.
 
 Lower thorax: Unremarkable
 )
@@ -1057,7 +1057,7 @@ Pancreas: Unremarkable
 GI tract: Unremarkable
 %gender_specific_str%
 
-No evident pelvic, retroperitoneal, or mesenteric lymphadenopathy identified.
+No definite pelvic, retroperitoneal, or mesenteric lymphadenopathy identified.
 
 Lower thorax: Unremarkable
 
@@ -1337,8 +1337,8 @@ No obvious ascites.
 - Bony structure: unremarkable
 
 IMPRESSION:
-No evident acute intrathoracic or intraabdominal findings.
-No evident traumatic intrathoracic or intraabdominal injury.
+No definite acute intrathoracic or intraabdominal findings.
+No definite traumatic intrathoracic or intraabdominal injury.
 )
   Paste(MyForm)
 Return
@@ -1495,7 +1495,7 @@ The lungs covered in the scanning range are unremarkable.
 
 IMPRESSION:
 Paralytic ileus is suspected.
-Small bowel obstruction, at distal ileum, probably due to adhesion. No evident bowel perforation or ischemia.
+Small bowel obstruction, at distal ileum, probably due to adhesion. No evidence of bowel perforation or ischemia.
 )
   Paste(MyForm)
 Return

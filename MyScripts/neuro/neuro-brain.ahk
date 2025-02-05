@@ -123,9 +123,9 @@ The bilateral lateral ventricles are symmetrical in shape with acceptable age-de
 No obvious fracture of the skull base and the skull.
 
 IMPRESSION:
-1. No evident acute intracranial hemorrhage or acute subdural hematoma or acute subarachnoid hemorrhage.
+1. No evidence of acute intracranial hemorrhage or acute subdural hematoma or acute subarachnoid hemorrhage.
 2. No evidence of acute intracranial parenchymal hemorrhage or acute subdural or epidural hematoma.
-3. No evident acute ICH, SDH, or SAH.
+3. No evidence of acute ICH, SDH, or SAH.
 4. Previous brain insult; old lacunar infarcts.
 5. No obvious old brain insult.
 
@@ -133,7 +133,7 @@ No remarkable intracranial findings on noncontrast CT.
 No remarkable findings on noncontrast CT.
 
 No significant acute intracranial lesion.
-No evident acute intracranial findings.
+No obvious acute intracranial findings.
 No significant acute intracranial findings on noncontrast CT.
 No significant acute findings on noncontrast CT.
 
@@ -185,7 +185,7 @@ REMARKS:
   MyForm =
 (
 No definite acute ICH, SAH, EDH, or SDH.
-No evident acute intracranial findings.
+No obvious acute intracranial findings.
 No remarkable intracranial findings on noncontrast CT.
 )
   Paste(MyForm)
@@ -750,8 +750,8 @@ MRV shows a suspicious segment of absent flow over right transverse sinus. Howev
   SleepThenTab()
   MyForm =
 (
-No evident acute intracranial lesion.
-No evident acute ischemic infarction.
+No obvious acute intracranial lesion.
+No obvious acute ischemic infarction.
 
 )
   Paste(MyForm)

@@ -60,7 +60,7 @@ Adrenals: Unremarkable
 Spleen: Unremarkable
 Kidneys and ureters: Unremarkable
 
-No evident upper abdominal retroperitoneal lymphadenopathy identified.
+No obvious upper abdominal retroperitoneal lymphadenopathy identified.
 )
   Paste(MyForm)
 Return
@@ -96,7 +96,7 @@ Pancreas: Unremarkable
 
 Kidneys and ureters: Unremarkable
 
-No evident upper abdominal retroperitoneal lymphadenopathy identified.
+No obvious upper abdominal retroperitoneal lymphadenopathy identified.
 
 Lower thorax: Unremarkable
 
@@ -135,7 +135,7 @@ Pancreas: Unremarkable
 
 Kidneys and ureters: Unremarkable
 
-No evident upper abdominal retroperitoneal lymphadenopathy identified.
+No obvious upper abdominal retroperitoneal lymphadenopathy identified.
 
 Lower thorax: Unremarkable
 
@@ -198,7 +198,7 @@ Spleen: Unremarkable
 Biliary tree: Unremarkable
 Pancreas: Unremarkable
 
-No evident upper abdominal retroperitoneal lymphadenopathy identified.
+No obvious upper abdominal retroperitoneal lymphadenopathy identified.
 )
   Paste(MyForm)
 Return
@@ -636,7 +636,7 @@ Lower lungs: Unremarkable
   MyForm =
 (
 C/W renal artery stenosis, bilateral, mild.
-No evident renal artery stenosis.
+No obvious renal artery stenosis.
 )
   Paste(MyForm)
 Return
