@@ -82,7 +82,7 @@ Return
   MyForm =
 (
 Slightly enlarged cardiac shadow.
-Exaggerated lung markings at bilateral lowers, may be due to insufficient inspiration. Suggest clinical correlation.
+Exaggerated lung markings at bilateral lowers, may be due to insufficient inspiration. Clinical correlation is suggested.
 
 
 IMPRESSION:
@@ -96,7 +96,7 @@ Return
   MyForm =
 (
 Slightly enlarged cardiac shadow.
-Exaggerated lung markings at bilateral lowers, may be due to insufficient inspiration and/or supine. Suggest clinical correlation.
+Exaggerated lung markings at bilateral lowers, may be due to insufficient inspiration and/or supine. Clinical correlation is suggested.
 
 
 IMPRESSION:
@@ -110,12 +110,12 @@ Return
 ::3::No abnormal patch opacity in lung fields.{Enter}No cardiomegaly.{Enter}The bowel gas pattern is normal.+{Tab}Normal.
 ::4::Increased linear opacity and peribronchial thickening in the bilateral lung fields, r/o bronchiolitis.{Enter}No cardiomegaly.+{Tab}Suspicious bronchiolitis.
 ::clnic::The condition of lung shows no obvious changes as compared with previous study.
-::clat::Suggest correlation with lateral view.
+::clat::Correlation with lateral view is suggested.
 ::ett0::On endotracheal tube.
 ::ett::On endotracheal tube with tip at proper location.
-::ett-c::On endotracheal tube. The tip is near the carina. Suggest adjusting the depth.
-::ett-b::On endotracheal tube. The tip is in right main bronchus. Suggest adjusting the depth.
-::ett-t::On endotracheal tube. The tip is in the upper trachea. Suggest adjusting the depth.
+::ett-c::On endotracheal tube. The tip is near the carina. Adjusting the depth is suggested.
+::ett-b::On endotracheal tube. The tip is in right main bronchus. Adjusting the depth is suggested.
+::ett-t::On endotracheal tube. The tip is in the upper trachea. Adjusting the depth is suggested.
 ::tr::On tracheostomy tube.
 ::ng::On NG tube.
 ::og::On NG/OG tube.
@@ -325,7 +325,7 @@ Return
 ::maak::Mild atherosclerotic changes of the aortic knob.
 ::rci::Anterior interposition of the colon to the liver reaching the under-surface of the right hemidiaphragm.
 ::cpftl::Compression fracture of several lower T- and L-spine.
-::mw::Mediastinal widening, possibly due to tortuosity of the thoracic aorta. Suggest clinical correlation.
+::mw::Mediastinal widening, possibly due to tortuosity of the thoracic aorta. Clinical correlation is suggested.
 ::rotb::Fibrilinear and nodular opacities in the right apical region, in favor of old TB.
 ::lotb::Fibrilinear and nodular opacities in the left apical region, in favor of old TB.
 ::botb::Fibrilinear and nodular opacities in the bilateral apical regions, in favor of old TB.

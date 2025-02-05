@@ -508,7 +508,7 @@ IMPRESSION:
 No significant findings in face and neck region
 
 SUGGESTION:
-Suggest clinical correlation and follow up.
+Clinical correlation and follow up are suggested.
 )
   Paste(MyForm)
 Return

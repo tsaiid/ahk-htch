@@ -159,7 +159,7 @@ The lingual tonsils also show enlargement.
 Symmetrical enlargement of the roof and posterior wall of the nasopharynx, suggestive of adenoid hyperplasia, probably related to the acute inflammation.
 
 Cervical nodes:
-Multiple enlarged lymph nodes over the bilateral carotid spaces, posterior cervical spaces, in favor of reactive lymph nodes. Suggest follow-up.
+Multiple enlarged lymph nodes over the bilateral carotid spaces, posterior cervical spaces, in favor of reactive lymph nodes. Follow-up is suggested.
 No evidence of bulky lymph nodes in the bilateral supraclavicular fossae, bilateral submandibular and submental space.
 Several enlarged lymph nodes over the bilateral carotid spaces, probably reactive lymph nodes.
 
@@ -221,7 +221,7 @@ IMPRESSION:
 4. Mastoiditis, ----------.
 
 SUGGESTION:
-Suggest clinical correlation and follow up.
+Clinical correlation and follow up are suggested.
 )
   Paste(MyForm)
 Return
@@ -246,7 +246,7 @@ No osteolytic foci around the cochlear noted, and thus no CT imaging evidence of
 Presence of mucoperiosteal thickening in the bilateral ethmoid and maxillary sinuses, mild sinusitis considered.
 
 IMPRESSION:
-No CT imaging evidence of cholesteatoma or otosclerosis noted. Suggest clinical correlation.
+No CT imaging evidence of cholesteatoma or otosclerosis noted. Clinical correlation is suggested.
 )
   Paste(MyForm)
 Return
@@ -264,14 +264,14 @@ No evidence of soft tissue density in the bilateral middle ear, aditus, or masto
 
 No evidence of soft tissue opacification in bilateral mastoid air sinuses.
 
-Relatively thinning of the bony covering (arcuate eminence) of the right superior semicircular canal (Se/Im: 4/44), but not definite dehiscence. Suggest clinical correlation.
+Relatively thinning of the bony covering (arcuate eminence) of the right superior semicircular canal (Se/Im: 4/44), but not definite dehiscence. Clinical correlation is suggested.
 
 Bilateral cochlear and left semicircular canals show no obvious abnormalities.
 
 No osteolytic foci around the cochlear noted, and thus no CT imaging evidence of cochlear otosclerosis.
 
 IMPRESSION:
-Relatively thinning of the bony covering (arcuate eminence) of the right superior semicircular canal, but not definite dehiscence. Suggest clinical correlation.
+Relatively thinning of the bony covering (arcuate eminence) of the right superior semicircular canal, but not definite dehiscence. Clinical correlation is suggested.
 )
   Paste(MyForm)
 Return

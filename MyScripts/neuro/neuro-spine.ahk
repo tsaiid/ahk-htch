@@ -425,7 +425,7 @@ Presence of benign hemangioma noted over the L2 vertebral body, size about 2.1 c
 
 Bilateral renal cysts.
 
-Bilateral/Right/Left hydronephrosis and hydroureter. The precise nature to be determined. Suggest clinical correlation.
+Bilateral/Right/Left hydronephrosis and hydroureter. The precise nature to be determined. Clinical correlation is suggested.
 
 
 IMPRESSION:

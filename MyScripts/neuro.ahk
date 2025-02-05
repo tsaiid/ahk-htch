@@ -31,14 +31,14 @@
 ::atrs::Atrophy of bilateral cerebral cortices, with deepening and widening of fissures and cortical sulci.
 ::matrs::Mild atrophy of bilateral cerebral cortices, with deepening and widening of fissures and cortical sulci.
 ::matrs2::Mild brain atrophy with enlarged subarachnoid spaces of bilateral cerebral convexities.
-::ctabi::A small ill-defined low density in the left frontal subcortical white matter, could be old or recent ischemic infarction. Suggest clinical correlation.
+::ctabi::A small ill-defined low density in the left frontal subcortical white matter, could be old or recent ischemic infarction. Clinical correlation is suggested.
 ::ctpbi::Presence of tiny/small low density involved ___ basal ganglion, ___ thalamus, and ___ periventricular white matter, previous brain ischemic insult, such as old tiny ischemic infarction considered.
 ::ctpbi2::Presence of brain tissue loss changes involving right temporal, right parietal, and left frontal regions, with compensatory dilatation of left lateral ventricle, in favor of previous brain insult, such as old ischemic infarction.
 ::mrpbi::Presence of several tiny hyperintensities in the periventricular white matter regions on T2WI and FLAIR, which may be gliosis, demyelination or tiny old ischemia or tiny previous brain insult.
 ::cteps::Small low density near right/left side of anterior commissure, in favor of enlarged perivascular space.
 ::necsprt::Diffuse thickening and enhancement over the epiglottis, arytenoepiglottic folds, and posterior pharyngeal wall over the oropharynx and hypopharynx, c/w post-radiation changes.
 ::mrnecsprt::Presence of high signal intensity on T1WI over the C-spine, compatible with post radiation changes.
-::mrnecspc::Mild mucosal and submucosal soft tissue thickening over the nasopharyngeal and oropharyngeal regions, in favor of post-treatment changes. Suggest follow-up.
+::mrnecspc::Mild mucosal and submucosal soft tissue thickening over the nasopharyngeal and oropharyngeal regions, in favor of post-treatment changes. Follow-up is suggested.
 ::mrns::No evidence of high signal intensity on DWI and lower apparent diffusion coefficient suggesting acute ischemia infarction in the brain and brainstem noted.
 ::noaa::No evidence of aneurysm or arterial-venous malformation (AVM) noted near the circle of Willis regions.
 ::sdsa::Suggest correlate with DSA if clinically indicated.
@@ -58,7 +58,7 @@
 ::ctmcm::Prominent retrocerebellar cerebrospinal fluid space with normal vermis, 4th ventricle, and cerebellar hemispheres, in favor of mega cisterna magna.
 ::epc::endplate changes
 ::ctnph::Enlarged lateral and third ventricles, with relatively normal 4th ventricle. Ventricular enlargement out of proportion to cortical sulcal enlargement, and presence of bilateral periventricular low density. Normal pressure hydrocephalus may be suspected. DDx: normal aging brain.
-::ctnph1::However, as the ventricular enlargement is slightly out of proportion to cortical sulcal enlargement, superimposed communicating hydrocephalus cannot be excluded. Suggest clinical correlation.
+::ctnph1::However, as the ventricular enlargement is slightly out of proportion to cortical sulcal enlargement, superimposed communicating hydrocephalus cannot be excluded. Clinical correlation is suggested.
 ::rposts::Soft tissue swelling in the right periorbital region.
 ::mrposts::Mild soft tissue swelling in the right periorbital region.
 ::lposts::Soft tissue swelling in the left periorbital region.

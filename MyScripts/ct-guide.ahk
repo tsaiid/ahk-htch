@@ -57,7 +57,7 @@ F/U CXR 6 hours later.
 
 IMPRESSION:
 CT guide lung biopsy of  tumor was performed.
-Mild pneumothorax was noted. Suggest follow-up.
+Mild pneumothorax was noted. Follow-up is suggested.
 )
   Paste(MyForm)
 Return

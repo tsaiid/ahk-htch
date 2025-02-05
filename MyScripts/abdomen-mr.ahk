@@ -680,7 +680,7 @@ T2 HASTE and true FISP images show
 - Abnormal dilated intraplacental vascularity
 - Focal thinning of myometrium
 - Loss of triple-layered appearance of normal myometrium
-at the lower anterior uterine segment, c/w placenta accreta. Suggest correlation with placental sonography and clinical history.
+at the lower anterior uterine segment, c/w placenta accreta. Correlation with placental sonography and clinical history is suggested.
 
 The fetus is in vertex presentation, and the images show no hydrocephalus, no hydronephrosis, and no obvious structural anomaly.
 The amniotic fluid volume is within normal limits.
@@ -711,7 +711,7 @@ Key imaging features of normal placentation
   SleepThenTab()
   MyForm =
 (
-C/W complete placenta previa, with placenta accreta. Suggest correlation with placental sonography and clinical history.
+C/W complete placenta previa, with placenta accreta. Correlation with placental sonography and clinical history is suggested.
 No obvious fetal anomaly.
 )
   Paste(MyForm)

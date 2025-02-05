@@ -33,7 +33,7 @@ IMPRESSION:
 No obvious vascular lesion in brain and neck regions.
 
 SUGGESTION:
-Suggest clinical correlation and follow up.
+Clinical correlation and follow up are suggested.
 )
   Paste(MyForm)
 Return

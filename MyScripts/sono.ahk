@@ -115,7 +115,7 @@ Return
 ::stst::
   MyForm =
 (
-The thyroid gland size is within normal limits and there is no abnormal flow pattern noted on color Doppler. However, the thyroid gland shows mild heterogeneous echotexture. Subacute thyroiditis cannot be excluded. Suggest clinical correlation.
+The thyroid gland size is within normal limits and there is no abnormal flow pattern noted on color Doppler. However, the thyroid gland shows mild heterogeneous echotexture. Subacute thyroiditis cannot be excluded. Clinical correlation is suggested.
 
 Small bilateral neck lymph nodes noted with hila, favored benign lymph nodes.
 )
@@ -210,7 +210,7 @@ Return
 ::sbld::Mild dilatation of the lactiferous ducts in the left breast.
 ::sbb1::ACR-BIRADS 5th ed., category 1. Negative.
 ::sbb2::ACR-BIRADS 5th ed., category 2. Follow up as routine screening is recommended.
-::sbb3::ACR-BIRADS 5th ed., category 3. Probably benign. Suggest short-interval (3-6 months) follow-up.
+::sbb3::ACR-BIRADS 5th ed., category 3. Probably benign. Short-interval (3-6 months) follow-up is suggested.
 ::sbb4a::ACR-BIRADS 5th ed., category 4a. Biopsy is recommended to exclude benign-looking malignancy.
 ::sbb4b::ACR-BIRADS 5th ed., category 4b. Suspicious abnormality carrying intermediate probability of malignancy was noted. Biopsy recommended.
 ::sbb4c::ACR-BIRADS 5th ed., category 4c. Highly suspicious malignancy. Biopsy recommended.
@@ -629,7 +629,7 @@ Return
 Color doppler evaluation measured at the segmental arteries of both kidneys shows:
 
 Relatively prolonged accleration time of -- renal segmental arteries, measuring between 130-180 msec, with the accleration index about 90-100cm/s2. Tardus-parvus waves suspected. The possibility of ---. upstream renal arterial stenosis can not be R/O.
-Suggest further evaluation.
+Further evaluation is suggested.
 )
   Paste(MyForm)
 Return
@@ -642,7 +642,7 @@ Sono CDU Kideny:
 - The kidney graft is at the left iliac fossa.
 - The maximum dimension of the kidney graft is about 13.4 cm.
 - Mild pelvicalyceal dilation is noted.
-- Increased renal cortical echogenicity. Parenchymal abnormality may be suspected. Suggest clinical correlation.
+- Increased renal cortical echogenicity. Parenchymal abnormality may be suspected. Clinical correlation is suggested.
 - Preserved corticomedullary differentiation.
 - No hydronephrosis or peri-graft fluid collection.
 - Preserved renal blood flow without significant abnormal waveform pattern noted.

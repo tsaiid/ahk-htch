@@ -176,19 +176,19 @@ Return
 
 ; recommendations
 ::sg::suggest
-::cc::Suggest clinical correlation.
+::cc::Clinical correlation is suggested.
 ::cc0::clinical correlation
-::fe::Suggest further evaluation.
+::fe::Further evaluation is suggested.
 ::fe0::further evaluation
-::feci::Suggest further evaluation if clinically indicated.
-::fu::Suggest follow-up.
-::cfu::Suggest close follow-up.
+::feci::Further evaluation is suggested if clinically indicated.
+::fu::Follow-up is suggested.
+::cfu::Close follow-up is suggested.
 ::fu0::follow-up
-::ccfu::Suggest clinical correlation and follow-up.
-::fufe::Suggest follow-up or further evaluation.
-::cpes::Suggest correlate with panendoscopy.
-::csono::Suggest correlate with sonography.
-::ccsono::Suggest clinical and sonographic correlation.
+::ccfu::Clinical correlation and follow-up are suggested.
+::fufe::Follow-up or further evaluation is suggested.
+::cpes::Correlation with panendoscopy is suggested.
+::csono::Correlation with sonography is suggested.
+::ccsono::Clinical and sonographic correlation are suggested.
 ::ctrus::Suggest correlate with transrectal ultrasonography.
 ::cdsa::Suggest correlate with DSA.
 ::clab::Suggest correlate with Lab data.
@@ -196,13 +196,13 @@ Return
 ::cbs::Suggest correlate with bone scan.
 ::cercp::Suggest correlate with ERCP.
 ::cmrcp::Suggest correlate with MRCP.
-::sgyn::Suggest GYN check-up.
-::cgynsono::Suggest GYN check-up and sonographic correlation.
+::sgyn::GYN check-up are suggested.
+::cgynsono::GYN check-up and sonographic correlation are suggested.
 ::scmp::Suggest compare with previous images if available.
 ::slr3::Suggest repeat or alternative diagnostic imaging 3-6 months later.
 ::slr4::Suggest multidisciplinary discussion for tailored workup (may include biopsy).
 ::sop::Suggest correlate with OP history.
-::sfna::Suggest FNA.
+::sfna::FNA is suggested.
 
 ;; Limitations
 ::olnd::However, the obstruction level cannot be demonstrated in this study.

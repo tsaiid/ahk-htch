@@ -142,7 +142,7 @@ No definite acute intracranial parenchymal hemorrhage or acute epidural or acute
 No obvious fracture of the skull base and the skull.
 
 SUGGESTION:
-Suggest clinical correlation and follow up.
+Clinical correlation and follow up are suggested.
 Follow up or further evaluation.
 )
   Paste(MyForm)
@@ -687,7 +687,7 @@ IMPRESSION:
 As the above description.
 
 SUGGESTION:
-Suggest clinical correlation and follow up.
+Clinical correlation and follow up are suggested.
 )
   Paste(MyForm)
 Return
@@ -828,7 +828,7 @@ IMPRESSION:
 Small recent acute ischemic infarction, about 1.4cm in diameter, involving left periventricular white matter.
 
 SUGGESTION:
-Suggest clinical correlation and follow up.
+Clinical correlation and follow up are suggested.
 )
   Paste(MyForm)
 Return
@@ -1111,7 +1111,7 @@ FINDINGS:
   SleepThenTab()
   MyForm =
 (
-Although not fully fit the typical image findings, intracranial hypotension still may be suspected. Suggest clinical correlation.
+Although not fully fit the typical image findings, intracranial hypotension still may be suspected. Clinical correlation is suggested.
 )
   Paste(MyForm)
 Return
@@ -1155,7 +1155,7 @@ MRA shows no significant vascular stenosis in the major intracranial arteries or
   MyForm =
 (
 No remarkable intracranial findings.
-Right mesial temporal sclerosis may be suspected. Suggest clinical correlation.
+Right mesial temporal sclerosis may be suspected. Clinical correlation is suggested.
 )
   Paste(MyForm)
 Return

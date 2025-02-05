@@ -74,7 +74,7 @@
 ::rkuok::The right kidney and ureter are unremarkable.
 ::ubok::No obvious urinary bladder wall thickening or perivesical fat stranding.
 ::guok::No urinary obstruction. No definite high-attenuation urinary tract stone.
-::ubgb::Gas bubbles in the urinary bladder, probably due to recent examination. Suggest clinical correlation.
+::ubgb::Gas bubbles in the urinary bladder, probably due to recent examination. Clinical correlation is suggested.
 ::appok::the appendix is normal.
 ::appok1::No evidence of acute appendicitis.
 ::appok2::No evidence of acute appendicitis or other acute intraabdominal findings.
@@ -315,9 +315,9 @@ FINDINGS:
 A swollen appendix, diameter about 1.1 cm, containing some appendicoliths, with mesoappendiceal fat stranding and regional peritoneal thickening, c/w acute appendicitis.
 A swollen appendix, diameter about 1.1 cm, with mesoappendiceal fat stranding, c/w acute appendicitis.
 
-A dilated appendix, diameter about 0.9 cm, with mild hyperemic changes. Although no mesoappendiceal fat stranding is noted, early changes of acute appendicitis is still suspected. Suggest clinical correlation.
+A dilated appendix, diameter about 0.9 cm, with mild hyperemic changes. Although no mesoappendiceal fat stranding is noted, early changes of acute appendicitis is still suspected. Clinical correlation is suggested.
 
-The appendix has a borderline diameter of 7 mm and shows hyperemic changes. Early stage of acute appendicitis may be suspected. Suggest clinical correlation.
+The appendix has a borderline diameter of 7 mm and shows hyperemic changes. Early stage of acute appendicitis may be suspected. Clinical correlation is suggested.
 
 A fecalith is noted at the middle portion of the appendix, with dilatation of the appendiceal tip, diameter about 1.1 cm, and mild mesoappendiceal fat stranding, c/w acute appendicitis.
 
@@ -793,7 +793,7 @@ Previous abdominal CT: none.
 FINDINGS:
 Uterus: Unremarkable
 Ovaries:
-- Dilated, tortuous, thick-walled, fluid-filled tubular structure at the right adnexal region, with adjacent fat stranding in the pelvic cavity. Tubo-ovarian abscess is suspected. Suggest GYN check-up.
+- Dilated, tortuous, thick-walled, fluid-filled tubular structure at the right adnexal region, with adjacent fat stranding in the pelvic cavity. Tubo-ovarian abscess is suspected. GYN check-up is suggested.
 - The left ovary is unremarkable.
 
 Kidneys: Unremarkable
@@ -816,7 +816,7 @@ Lower thorax: Unremarkable
 Skeleton: No osteolytic nor osteoblastic lesion
 
 IMPRESSION:
-Right tubo-ovarian abscess is suspected. Suggest GYN check-up.
+Right tubo-ovarian abscess is suspected. GYN check-up is suggested.
 )
   Paste(MyForm)
 Return
@@ -1045,7 +1045,7 @@ Scanning range: Liver to symphysis, 5-mm contiguous scan.
 Previous abdominal CT: none.
 
 FINDINGS:
-Urinary bladder: No obvious urinary bladder wall thickening or perivesical fat stranding. Gas bubbles in the urinary bladder, probably due to recent procedure. Suggest clinical correlation. (* insufficient distention may limit the evaluation)
+Urinary bladder: No obvious urinary bladder wall thickening or perivesical fat stranding. Gas bubbles in the urinary bladder, probably due to recent procedure. Clinical correlation is suggested. (* insufficient distention may limit the evaluation)
 
 Kidneys and ureters: Unremarkable
 
@@ -1062,7 +1062,7 @@ No definite pelvic, retroperitoneal, or mesenteric lymphadenopathy identified.
 Lower thorax: Unremarkable
 
 IMPRESSION:
-No obvious urinary bladder wall thickening or perivesical fat stranding. Gas bubbles in the urinary bladder, probably due to recent procedure. Suggest clinical correlation.
+No obvious urinary bladder wall thickening or perivesical fat stranding. Gas bubbles in the urinary bladder, probably due to recent procedure. Clinical correlation is suggested.
 )
   Paste(MyForm)
 Return
@@ -1170,7 +1170,7 @@ Others:
 - Pancreas: unremarkable
 
 - Lungs:
-  > Some tiny subpleural nodules in the bilateral lungs, with adjacent interlobular septal thickening, probably chronic inflammatory changes. However, lung metastasis cannot be totally excluded. Suggest follow-up.
+  > Some tiny subpleural nodules in the bilateral lungs, with adjacent interlobular septal thickening, probably chronic inflammatory changes. However, lung metastasis cannot be totally excluded. Follow-up is suggested.
   > Mild ill-defined ground glass opacities in the RML and left lingular lobe, probably insufficient inspiration related changes. (Scanning in prone position.)
 - Cardiomegaly; mild LV hypertrophy.
 - Mediastinum: A few slightly enlarged lymph nodes with coarse calcifications, in favor of chronic inflammatory changes.
@@ -1357,9 +1357,9 @@ Diffuse gallbladder wall thickening and edematous changes with gallbladder stone
 Diffuse gallbladder wall thickening and edematous changes with gallbladder stones and GB distention are noted. Acute cholecystitis is considered.
 Diffuse gallbladder wall thickening and edematous changes with pericholecystic fluid accumulation, and tiny gallbladder stones are noted. Even though, no obvious GB distention. Acute cholecystitis is still considered.
 Presence of a high-attenuation gallstone at the orifice of cystic duct, with distended gallbladder, diffuse gallbladder wall thickening and edematous changes, c/w acute calculus cholecystitis.
-Mildly distended gallbladder, with mild GB wall thickening. No obvious pericholecystic fluid accumulation. However, early changes of acute cholecystitis cannot be excluded. Suggest correlate with sonography and Murphy sign.
+Mildly distended gallbladder, with mild GB wall thickening. No obvious pericholecystic fluid accumulation. However, early changes of acute cholecystitis cannot be excluded. Correlate with sonography and Murphy sign is suggested.
 
-Several gallbladder stones and mild GB distention. However, no obvious GB wall thickening or pericholecystic fat stranding. Acute cholecystitis may be less likely. Suggest clinical and sonographic correlation.
+Several gallbladder stones and mild GB distention. However, no obvious GB wall thickening or pericholecystic fat stranding. Acute cholecystitis may be less likely. Clinical and sonographic correlation is suggested.
 
 No CBD or IHD dilatation.
 
@@ -1449,7 +1449,7 @@ Portal hypertension is suspected.
 
 Diffuse submucosal edema and mucosal hyperemic changes, from stomach, small intestine, colon, to the rectum.
 The major mesenteric vessels are patent, without filling defect.
-DDx: Portal hypertensive gastropathy / enteropathy / colopathy, acute gastroenterocolitis, pseudomembranous colitis (may not involve stomach and small intestine). Suggest clinical correlation.
+DDx: Portal hypertensive gastropathy / enteropathy / colopathy, acute gastroenterocolitis, pseudomembranous colitis (may not involve stomach and small intestine). Clinical correlation is suggested.
 
 A few tiny gallbladder stones.
 Mild GB wall edema is noted, without GB distention, probably also secondary to the portal hypertension.
@@ -1461,7 +1461,7 @@ Two thin-wall cystic lesions at the bilateral adnexa, size up to 6.5 cm. No mura
 Subsegmental atelectasis in the bilateral lower lungs.
 
 IMPRESSION:
-1. Diffuse edematous changes of the GI tract. DDx: Portal hypertensive gastropathy / enteropathy / colopathy, acute gastroenterocolitis, pseudomembranous colitis (may not involve stomach and small intestine). Suggest clinical correlation.
+1. Diffuse edematous changes of the GI tract. DDx: Portal hypertensive gastropathy / enteropathy / colopathy, acute gastroenterocolitis, pseudomembranous colitis (may not involve stomach and small intestine). Clinical correlation is suggested.
 2. Cirrhosis, splenomegaly, ascites. Suspicious portal hypertension.
 )
   Paste(MyForm)

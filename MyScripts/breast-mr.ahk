@@ -17,7 +17,7 @@ COMPARISON: no
 FINDINGS:
 A 2.1 cm nodular lesion at 12 o'clock position of right breast, 2 cm from the nipple, shows T1 hypointensity, T2 hyperintensity, restricted diffusion, post-contrast enhancement with type III curve, suggestive of breast cancer.
 
-A 6 mm nodule at 12 o'clock position of left breast, 2 cm from the nipple. Suggest follow-up.
+A 6 mm nodule at 12 o'clock position of left breast, 2 cm from the nipple. Follow-up is suggested.
 
 No definite lymphadenopathy at both axillae noted.
 No definite lymphadenopathy at the both axillae or internal mammary regions noted.

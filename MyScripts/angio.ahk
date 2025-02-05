@@ -395,7 +395,7 @@ FINDINGS:
 - Some parts of the tumor still have relative scarce Lipiodol retention.
 - Cirrhosis.
 - Splenomegaly.
-- Lipiodol retention in the gallbladder wall. Post embolization cholecystitis may occur. Suggest clinical correlation and follow-up.
+- Lipiodol retention in the gallbladder wall. Post embolization cholecystitis may occur. Clinical correlation and follow-up are suggested.
 - High-attenuation in the atelectatic lung, suspicious Lipiodol emboli.
 - No obvious Lipiodol retention in the bilateral lower lungs.
 - No abnormal Lipiodol retention in the GI tract.
@@ -498,7 +498,7 @@ The aim of this procedure is to perform arterial embolozation for treatment of H
 3. The portal vein was patent.
 4. TAE with Lipiodol   ml and some gelfoam pieces injection into RHA.
 5. Another  ml Lipiodol and some gelfoam pieces injection into LHA.
-6. Suggest follow up this patient as TAE protocol.
+6. Follow up this patient as TAE protocol is suggested.
 
 # DC bead
 Celiac, superselective hepatic angiograms and TACE are performed via puncture of right femoral artery. The whole procedure was smooth.
@@ -511,7 +511,7 @@ The aim of this procedure is to perform deTACE for HCC.
 5. The RT phrenic artery angiography was performed to exclude apparent pulmonary shunting, and thent deTACE with DC bead (300-500 um) 2cc+ epirubicin 75 mg was slowly injected, followed by gelfoam pieces until flow stasis.
 6. deTACE with DC bead (100-300um) 2cc + epirubicin 75 mg was slowly injected into each segmental branches of the RHA.
 7. No tumor stain at final angiography.
-8. Suggest follow up this patient as TAE protocol.
+8. Follow up this patient as TAE protocol is suggested.
 
 # Embozene
 SMA, celiac, superselective hepatic angiograms and TAE are performed via puncture of right femoral artery. The whole procedure was smooth.
@@ -522,7 +522,7 @@ The aim of this procedure is to perform arterial embolozation for treatment of H
 3. The portal vein was patent.
 4. TAE with Embozene (75um) 1.5 vial injection into segmental RHA at S7 lesion.
 5. Another Embozene (75 um) 0.5 vial and lipiodol 3 ml injection into segmental RHA at S5 lesion.
-6. Suggest follow up this patient as TAE protocol.
+6. Follow up this patient as TAE protocol is suggested.
 
 # Hepasphere
 SMA, celiac, superselective hepatic angiograms and TAE are performed via puncture of left femoral artery. The whole procedure was smooth.
@@ -533,7 +533,7 @@ The aim of this procedure is to perform arterial embolozation for treatment of H
 3. The portal vein was patent.
 4. TAE with Hepasphere (30-60um) 1 vial + epirubicin 50mg injection into segmental LHA at S3 lesion.
 5. No tumor stain at selective angiogram of RHA.
-6. Suggest follow up this patient as TAE protocol.
+6. Follow up this patient as TAE protocol is suggested.
 
 # Huang
 Transarterial embolization for the was performed under the request of the clinician.
@@ -1034,7 +1034,7 @@ Procedure and Findings:
 - The drain was fixed with ___ at the 27-cm mark.
 - Bile was collected for laboratory examination.
 
-- Because the patient was uncooperative, marked abdominal motion, and intolerable to prolonged procedure, the right IHD could not be approached. Suggest another PTCD in a few days or consult ANES for general anesthesia procedure.
+- Because the patient was uncooperative, marked abdominal motion, and intolerable to prolonged procedure, the right IHD could not be approached. Another PTCD in a few days or consult ANES for general anesthesia procedure is suggested.
 
 Impression:
 PTCD was done.
