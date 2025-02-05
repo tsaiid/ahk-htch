@@ -20,9 +20,9 @@
 ::actncok::The liver, spleen, pancreas, adrenals, kidneys, and bowels are normal. Due to non-contrast study, the evaluation of solid organs is limited.
 ::bpleat::Bilateral pleural effusion with atelectasis of lower lungs.
 ::actaps::A small wedge-shaped subcapsular arterial hyperenhancement at S_ of liver with isoenhancement in the portal venous and delay phases, in favor of AP shunting.
-::acthh::A -cm nodule over S of liver, shows discontinuous, nodular, peripheral enhancement in arterial phase, and progressive peripheral enhancement with centripetal fill in in portal venous phase. Hepatic hemangioma is considered.
-::actrn::A -cm nodule over S of liver, shows enhancement in arterial phase, and isodense in portal venous phase, in favor of regenerative nodule.
-::acthcc::A -cm nodule over S of liver, shows arterial phase hyperenhancement, washout and enhancing capsule in portal venous phase, suggestive of hepatocellular carcinoma.
+::acthh::A -cm nodule in the S of liver, shows discontinuous, nodular, peripheral enhancement in arterial phase, and progressive peripheral enhancement with centripetal fill in in portal venous phase. Hepatic hemangioma is considered.
+::actrn::A -cm nodule in the S of liver, shows enhancement in arterial phase, and isodense in portal venous phase, in favor of regenerative nodule.
+::acthcc::A -cm nodule in the S of liver, shows arterial phase hyperenhancement, washout and enhancing capsule in portal venous phase, suggestive of hepatocellular carcinoma.
 ::actraa::A __-cm fat-containing enhanced nodular lesion at the right adrenal gland, in favor of adenoma.
 ::actlaa::A __-cm fat-containing enhanced nodular lesion at the left adrenal gland, in favor of adenoma.
 ::actckd::Atrophic changes of bilateral kidneys, in favor of chronic kidney disease.
@@ -62,7 +62,7 @@
 ::rthrl::status post right total hip replacement. The evaluation of pelvic cavity may be limited due to its beam hardening artifacts.
 ::bthrl::status post bilateral total hip replacements. The evaluation of pelvic cavity may be limited due to its beam hardening artifacts.
 ::actaccll::Mild gallbladder wall thickening without GB distention or pericholecystic fat stranding. Acute cholecystitis is less likely.
-::actclc::Mild subpleural reticulation and interlobular septal thickening over bilateral lower lungs, in favor of chronic inflammatory changes.
+::actclc::Mild subpleural reticulation and interlobular septal thickening in the bilateral lower lungs, in favor of chronic inflammatory changes.
 ::hvpvok::The major hepatic and portal veins are patent.
 ::sacds::Small amount of ascites in the cul-de-sac.
 ::macds::Minimal amount of ascites in the cul-de-sac.
@@ -402,7 +402,7 @@ Scanning range: lower abdomen to symphysis, 5-mm contiguous scan.
 Previous abdominal CT: none.
 
 FINDINGS:
-- Mild wall thickening and submucosal edema over the ascending colon, with mesocolic fat stranding, most likely diverticulitis.
+- Mild wall thickening and submucosal edema in the the ascending colon, with mesocolic fat stranding, most likely diverticulitis.
 - Small amount of ascites in the pelvis and right paracolic gutter.
 - No obvious ascites.
 - No evidence of intraperitoneal free air.
@@ -429,8 +429,8 @@ Scanning range: lower abdomen to symphysis, 5-mm contiguous scan.
 Previous abdominal CT: none.
 
 FINDINGS:
-- Several small diverticula noted over the ascending and sigmoid colon.
-- Wall thickening and edema over the ascending colon, with pericolic fat stranding, most likely diverticulitis.
+- Several small diverticula noted in the the ascending and sigmoid colon.
+- Wall thickening and edema in the the ascending colon, with pericolic fat stranding, most likely diverticulitis.
 - Small extraluminal free air is noted nearby, suggestive of perforation.
 - Several regional reactive lymph nodes.
 - Small amount of ascites in the right paracolic gutter.
@@ -1170,8 +1170,8 @@ Others:
 - Pancreas: unremarkable
 
 - Lungs:
-  > Some tiny subpleural nodules over bilateral lungs, with adjacent interlobular septal thickening, probably chronic inflammatory changes. However, lung metastasis cannot be totally excluded. Suggest follow-up.
-  > Mild ill-defined ground glass opacities over RML and left lingular lobe, probably insufficient inspiration related changes. (Scanning in prone position.)
+  > Some tiny subpleural nodules in the bilateral lungs, with adjacent interlobular septal thickening, probably chronic inflammatory changes. However, lung metastasis cannot be totally excluded. Suggest follow-up.
+  > Mild ill-defined ground glass opacities in the RML and left lingular lobe, probably insufficient inspiration related changes. (Scanning in prone position.)
 - Cardiomegaly; mild LV hypertrophy.
 - Mediastinum: A few slightly enlarged lymph nodes with coarse calcifications, in favor of chronic inflammatory changes.
 - Great vessels:
@@ -1395,7 +1395,7 @@ status post Foley catheterization. The urinary bladder is not distended enough, 
 On NG tube.
 The liver, spleen, pancreas, adrenals, kidneys are unremarkable.
 No retroperitoneal or mesenteric lymphadenopathy.
-Subsegmental atelectasis over bilateral lower lungs.
+Subsegmental atelectasis in the bilateral lower lungs.
 
 IMPRESSION:
 Stercoral colitis. No evidence of perforation.
@@ -1458,7 +1458,7 @@ The adrenals and kidneys are unremarkable.
 s/p Foley catheterization.
 Two thin-wall cystic lesions at the bilateral adnexa, size up to 6.5 cm. No mural nodule or thickened internal septum noted.
 
-Subsegmental atelectasis over bilateral lower lungs.
+Subsegmental atelectasis in the bilateral lower lungs.
 
 IMPRESSION:
 1. Diffuse edematous changes of the GI tract. DDx: Portal hypertensive gastropathy / enteropathy / colopathy, acute gastroenterocolitis, pseudomembranous colitis (may not involve stomach and small intestine). Suggest clinical correlation.

@@ -13,7 +13,7 @@ PREVIOUS CT of the head and neck: none.
 
 FINDINGS:
 1. Primary tumor/Lesion status:
-Mass lesion, maximum dimension ----- cm, noted over ------.
+Mass lesion, maximum dimension ----- cm, noted in the ------.
 [T1 (<= 2 cm), T2 (2~4 cm), T3 (>4 cm)]
 Locoregional tumor extension/Lesion extension:
 [T4a] Tumor/mass invades adjacent structures (eg, through cortical bone[mandible or maxilla], into deep [extrinsic] muscle of the tongue [genioglossus, hyoglossus, palatoglossus, and styloglossus], maxillary sinus, skin of face).
@@ -90,7 +90,7 @@ PREVIOUS MRI of the skull base and neck: none.
 
 FINDINGS:
 1. Primary tumor/Lesion status:
-Mass lesion, maximum dimension ----- cm, noted over ------.
+Mass lesion, maximum dimension ----- cm, noted in the ------.
 [T1 (<= 2 cm), T2 (2~4 cm), T3 (>4 cm)]
 Locoregional tumor extension/Lesion extension:
 [T4a] Tumor/mass invades adjacent structures (eg, through cortical bone[mandible or maxilla], into deep [extrinsic] muscle of the tongue [genioglossus, hyoglossus, palatoglossus, and styloglossus], maxillary sinus, skin of face).
@@ -141,8 +141,8 @@ Parotid gland: Unremarkable
 Submandibular gland: Unremarkable
 Thyroid gland: Unremarkable
 
-Presence of increased bone marrow signal intensity on T1WI over  ------, compatible with post radiation changes.
-Increased signal intensity over  -----------, mastoid air sinus on T2WI, in favor of mastoiditis or fluid collection in the mastoid.
+Presence of increased bone marrow signal intensity on T1WI in the  ------, compatible with post radiation changes.
+Increased signal intensity in the  -----------, mastoid air sinus on T2WI, in favor of mastoiditis or fluid collection in the mastoid.
 
 IMPRESSION:
 Oral cancer, image staging T N . AJCC 7th ed.
@@ -220,7 +220,7 @@ Parotid gland: Unremarkable
 Submandibular gland: Unremarkable
 Thyroid gland: Unremarkable
 
-Increased soft tissue density over  -----------, mastoid air sinus, in favor of mastoiditis or fluid collection in the mastoid.
+Increased soft tissue density in the  -----------, mastoid air sinus, in favor of mastoiditis or fluid collection in the mastoid.
 
 IMPRESSION:
 Nasopharyngeal cancer, imaging staging T N. AJCC 7th ed.
@@ -317,8 +317,8 @@ Parotid gland: Unremarkable
 Submandibular gland: Unremarkable
 Thyroid gland: Unremarkable
 
-Presence of increased bone marrow signal intensity on T1WI over  ------, compatible with post radiation changes.
-Increased signal intensity over  -----------, mastoid air sinus on T2WI, in favor of mastoiditis or fluid collection in the mastoid.
+Presence of increased bone marrow signal intensity on T1WI in the  ------, compatible with post radiation changes.
+Increased signal intensity in the  -----------, mastoid air sinus on T2WI, in favor of mastoiditis or fluid collection in the mastoid.
 
 IMPRESSION:
 Nasopharyngeal cancer, imaging staging T N. AJCC 7th ed.
@@ -376,8 +376,8 @@ Parotid gland: not unusual
 Submandibular gland: not unusual
 Thyroid gland: not unusual
 
-Presence of increased bone marrow signal intensity on T1WI over  ------, compatible with post radiation changes.
-Increased signal intensity over  -----------, mastoid air sinus on T2WI, in favor of mastoiditis or fluid collection in the mastoid.
+Presence of increased bone marrow signal intensity on T1WI in the  ------, compatible with post radiation changes.
+Increased signal intensity in the  -----------, mastoid air sinus on T2WI, in favor of mastoiditis or fluid collection in the mastoid.
 
 IMPRESSION:
 Glottic cancer, Image staging T3N2Mx.  AJCC 2009, 7th ed.
@@ -436,8 +436,8 @@ Parotid gland: not unusual
 Submandibular gland: not unusual
 Thyroid gland: not unusual
 
-Presence of increased bone marrow signal intensity on T1WI over  ------, compatible with post radiation changes.
-Increased signal intensity over  -----------, mastoid air sinus on T2WI, in favor of mastoiditis or fluid collection in the mastoid.
+Presence of increased bone marrow signal intensity on T1WI in the  ------, compatible with post radiation changes.
+Increased signal intensity in the  -----------, mastoid air sinus on T2WI, in favor of mastoiditis or fluid collection in the mastoid.
 
 IMPRESSION:
 Glottic cancer, Image staging T3N2Mx.  AJCC 2009, 7th ed.

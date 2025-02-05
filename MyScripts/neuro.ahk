@@ -20,8 +20,8 @@
 ::ubo1::Presence of several tiny hyperintensities in the periventricular white matter regions on T2WI and FLAIR, which may be gliosis, demyelination or tiny old ischemia or tiny previous brain insult.
 ::ubo2::Leukoaraiosis (some tiny/small hyperintensities on T2WI and FLAIR image in the periventricular and subcortical white matter regions) are mostly due to aging process and/or small vessel ischemic disease.
 ::ifch::from the imaging findings and clinical history, `
-::mrmast::Increased signal intensity over -------------, mastoid air sinus on T2WI, in favor of mastoiditis or fluid collection in the mastoid.
-::ctmast::Presence of soft tissue density over ---- mastoid air sinus, R/O mastoiditis or fluid collection in the mastoid.
+::mrmast::Increased signal intensity in the -------------, mastoid air sinus on T2WI, in favor of mastoiditis or fluid collection in the mastoid.
+::ctmast::Presence of soft tissue density in the ---- mastoid air sinus, R/O mastoiditis or fluid collection in the mastoid.
 ::ctcmast::Underdeveloped pneumatization and sclerotic changes of right/left/bilateral mastoid air cells, suspicious chronic mastoiditis.
 ::atrv::Diffuse atrophy of bilateral cerebral hemispheres, with compensatory dilatation of bilateral lateral ventricles, deepening and widening of cortical sulci.
 ::atrvs::Enlargement of the ventricular system and sulcal widening of bilateral cerebral hemispheres noted, in favor of brain atrophy.
@@ -31,7 +31,7 @@
 ::atrs::Atrophy of bilateral cerebral cortices, with deepening and widening of fissures and cortical sulci.
 ::matrs::Mild atrophy of bilateral cerebral cortices, with deepening and widening of fissures and cortical sulci.
 ::matrs2::Mild brain atrophy with enlarged subarachnoid spaces of bilateral cerebral convexities.
-::ctabi::A small ill-defined low density over left frontal subcortical white matter, could be old or recent ischemic infarction. Suggest clinical correlation.
+::ctabi::A small ill-defined low density in the left frontal subcortical white matter, could be old or recent ischemic infarction. Suggest clinical correlation.
 ::ctpbi::Presence of tiny/small low density involved ___ basal ganglion, ___ thalamus, and ___ periventricular white matter, previous brain ischemic insult, such as old tiny ischemic infarction considered.
 ::ctpbi2::Presence of brain tissue loss changes involving right temporal, right parietal, and left frontal regions, with compensatory dilatation of left lateral ventricle, in favor of previous brain insult, such as old ischemic infarction.
 ::mrpbi::Presence of several tiny hyperintensities in the periventricular white matter regions on T2WI and FLAIR, which may be gliosis, demyelination or tiny old ischemia or tiny previous brain insult.
@@ -59,10 +59,10 @@
 ::epc::endplate changes
 ::ctnph::Enlarged lateral and third ventricles, with relatively normal 4th ventricle. Ventricular enlargement out of proportion to cortical sulcal enlargement, and presence of bilateral periventricular low density. Normal pressure hydrocephalus may be suspected. DDx: normal aging brain.
 ::ctnph1::However, as the ventricular enlargement is slightly out of proportion to cortical sulcal enlargement, superimposed communicating hydrocephalus cannot be excluded. Suggest clinical correlation.
-::rposts::Soft tissue swelling over right periorbital region.
-::mrposts::Mild soft tissue swelling over right periorbital region.
-::lposts::Soft tissue swelling over left periorbital region.
-::mlposts::Mild soft tissue swelling over left periorbital region.
+::rposts::Soft tissue swelling in the right periorbital region.
+::mrposts::Mild soft tissue swelling in the right periorbital region.
+::lposts::Soft tissue swelling in the left periorbital region.
+::mlposts::Mild soft tissue swelling in the left periorbital region.
 ::f-p::fronto-parietal `
 ::f-t-p::fronto-temporo-parietal `
 ::f-t::fronto-temporal `
@@ -130,8 +130,8 @@
 ::li1::
   MyForm =
 (
-A small low density over left basal ganglion region, in favor of old lacunar infarct.
-A small low density over right basal ganglion region, in favor of old lacunar infarct.
+A small low density in the left basal ganglion region, in favor of old lacunar infarct.
+A small low density in the right basal ganglion region, in favor of old lacunar infarct.
 )
   Paste(MyForm)
 Return
@@ -139,9 +139,9 @@ Return
 ::lis::
   MyForm =
 (
-Several small low densities over bilateral basal ganglion regions, in favor of old lacunar infarcts.
-Several tiny low densities over left basal ganglion region, in favor of old lacunar infarcts.
-Several tiny low densities over right basal ganglion region, in favor of old lacunar infarcts.
+Several small low densities in the bilateral basal ganglion regions, in favor of old lacunar infarcts.
+Several tiny low densities in the left basal ganglion region, in favor of old lacunar infarcts.
+Several tiny low densities in the right basal ganglion region, in favor of old lacunar infarcts.
 Presence of tiny old ischemic infarction involving bilateral basal ganglion region.
 )
   Paste(MyForm)
@@ -151,7 +151,7 @@ Return
   MyForm =
 (
 The nasopharynx, oropharynx, hypopharynx, and larynx are unremarkable.
-No bulky lymph nodes over bilateral submandibular and submental, carotid, posterior cervical spaces, and supraclavicular fossae noted.
+No bulky lymph nodes in the bilateral submandibular and submental, carotid, posterior cervical spaces, and supraclavicular fossae noted.
 No particular findings of parotid gland, submandibular gland, and thyroid gland.
 The paranasal sinuses and mastoid air cells are clear.
 The visible brain and lungs show no remarkable findings.
@@ -162,7 +162,7 @@ Return
 ::neclapok::
   MyForm =
 (
-No bulky lymph nodes over bilateral submandibular and submental, carotid, posterior cervical spaces, and supraclavicular fossae noted.
+No bulky lymph nodes in the bilateral submandibular and submental, carotid, posterior cervical spaces, and supraclavicular fossae noted.
 )
   Paste(MyForm)
 Return
@@ -181,7 +181,7 @@ Return
 ::mrps::
   MyForm =
 (
-Presence of hyperintensity on T2WI over right/left/bilateral sphenoid, right/left/bilateral ethmoid, right/left/bilateral maxillary, right/left/bilateral frontal sinuses, in favor of mild sinusitis.
+Presence of hyperintensity on T2WI in the right/left/bilateral sphenoid, right/left/bilateral ethmoid, right/left/bilateral maxillary, right/left/bilateral frontal sinuses, in favor of mild sinusitis.
 )
   Paste(MyForm)
 Return
@@ -226,7 +226,7 @@ MRA shows no significant vascular stenosis in the major intracranial arteries or
 
 MRA shows no evidence of aneurysm or arterial-venous malformation (AVM) noted near the circle of Willis regions.
 
-MRA shows no evidence of occlusion or high grade stenosis over intracranial portion of the internal carotid artery and basilar artery, and main trunk of the bilateral anterior cerebral arteries and middle cerebral arteries.
+MRA shows no evidence of occlusion or high grade stenosis in the intracranial portion of the internal carotid artery and basilar artery, and main trunk of the bilateral anterior cerebral arteries and middle cerebral arteries.
 
 No significant vascular stenosis in the major intracranial arteries.
 
@@ -305,7 +305,7 @@ FINDINGS:
 - Normal appearance of bilateral vestibular aqueducts.
 
 - Normal appearance of bilateral mastoid air cells.
-- Increased signal intensity over left mastoid air sinus on T2WI, in favor of mastoiditis or fluid collection in the mastoid.
+- Increased signal intensity in the left mastoid air sinus on T2WI, in favor of mastoiditis or fluid collection in the mastoid.
 
 - No definite abnormal signal intensity tumor mass lesion in the brain noted including supratentorial cerebral hemisphere and infratentorial cerebellum and brain stem region.
 - No definite abnormal signal intensity changes in the brain parenchyma.
@@ -402,7 +402,7 @@ Intracranial MRA with 3D TOF and focus on the circle of Willis showed:
 Previous MRI of brain: none
 
 Findings:
-- A 5.9 x 3 x 3.7 cm hematoma, in subacute stage, with peripheral hemosiderin deposition, over left temporo-parieto-occipital area.
+- A 5.9 x 3 x 3.7 cm hematoma, in subacute stage, with peripheral hemosiderin deposition, in the left temporo-parieto-occipital area.
 - No evidence of mass lesion nearby that may be contribute to the ICH. (*noncontrast-enhanced study has lower sensitivity for subtle lesion)
 - No evidence of microhemorrhage nor cortical superficial siderosis on the GET2*WI, that suggestive of cerebral amyloid angiopathy.
 - MRA shows no evidence of aneurysm or arterial-venous malformation (AVM) noted near the circle of Willis regions.
@@ -418,7 +418,7 @@ Findings:
   SleepThenTab()
   MyForm =
 (
-Subacute ICH over left temporo-parieto-occipital area. No definite etiology identified.
+Subacute ICH in the left temporo-parieto-occipital area. No definite etiology identified.
 )
   Paste(MyForm)
 Return

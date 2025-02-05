@@ -23,7 +23,7 @@ FINDINGS:
 
 No evidence of aneurysm or arterial-venous malformation (AVM) noted near the circle of Willis regions.
 
-No evidence of occlusion or high grade stenosis over intracranial portion of the internal carotid artery and vertebral basilar artery, and main trunk of the bilateral anterior cerebral arteries and middle cerebral arteries.
+No evidence of occlusion or high grade stenosis in the intracranial portion of the internal carotid artery and vertebral basilar artery, and main trunk of the bilateral anterior cerebral arteries and middle cerebral arteries.
 
 No evidence of occlusion or high grade stenosis over the carotid bifurcation and bilateral proximal internal carotid arteries and external carotid arteries regions of the neck portion noted.
 
@@ -86,7 +86,7 @@ No evidence of abnormal enhanced mass lesion noted over the suprasellar region n
 
 No evidence of low signal intensity nodule noted within the pituitary gland in the conventional and dynamic scan. Suggest correlate with prolactin level.
 
-1. Presence of enhanced cystic/mass lesion over sellar and suprasellar arer, size about---------cm.
+1. Presence of enhanced cystic/mass lesion in the sellar and suprasellar arer, size about---------cm.
 2. Pituitary gland height about--------mm.
 3. No evidence of mass lesion on the sellar or suprasellar or hypothalamus regions.
 4. Presence of hyposignal intensity nodule over the right/left pituitary gland in the conventional/dynamic scan
@@ -119,7 +119,7 @@ Post contrast conventional T1WI with Fat sat showed:
 
 FINDINGS:
 
-1. Presence of enhanced cystic/mass lesion over sellar and suprasellar arer, size about---------cm.
+1. Presence of enhanced cystic/mass lesion in the sellar and suprasellar arer, size about---------cm.
 2. Pituitary gland height about--------mm.
 3. No evidence of mass lesion on the sellar or suprasellar or hypothalamus regions.
 4. Presence of hyposignal intensity nodule over the right/left pituitary gland in the conventional/dynamic scan.
@@ -148,7 +148,7 @@ Recommend correlate with the EMG and NCV studies.
 
 Post contrast study shows no obvious enhanced mass lesion over the brachial plexus region.
 
-Presence of bulging disc noted over C4-5, C5-6, C6-7, causing mild spinal stenosis.
+Presence of bulging disc noted at C4-5, C5-6, C6-7, causing mild spinal stenosis.
 
 No obvious significant spinal stenosis of the C-spine.
 
@@ -158,8 +158,8 @@ No evidence of focal herniation of nucleus pulposis (HIVD) in the C-spine region
 
 1. Presence of high signal in the ----------of the right/left brachial plexus on T2WI and STIR images.
 2. No evidence of obvious high signal in the brachial plexus noted on T2WI and STIR images.
-3. Presence of soft tissue swelling/hematoma noted over----
-4. Presence of bulging/protusion/herniated disc noted over----------, causing mild/moderate/severe spinal stenosis.
+3. Presence of soft tissue swelling/hematoma noted in the----
+4. Presence of bulging/protusion/herniated disc noted in the----------, causing mild/moderate/severe spinal stenosis.
 
 IMPRESSION:
 No obvious traumatic traction avulsion pseudomeningocele noted over the C-spine region noted.

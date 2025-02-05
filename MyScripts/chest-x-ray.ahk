@@ -4,7 +4,8 @@
 ::/cl::PA and Lat views of the Chest:{Enter 2}
 ::/ca::AP view of the Chest:{Enter 2}
 
-::nall::No active lung lesion.
+::napd::No active pulmonary disease.
+::nsll::No suspicious lung lesion.
 ::ncm::No cardiomegaly.
 ::bcm::Borderline cardiomegaly.
 ::bcms::Borderline enlarged cardiac shadow, possibly supine position related.
@@ -12,7 +13,7 @@
 ::cm1::enlarged cardiac shadow.
 ::cm2::Enlarged cardiac shadow. However, it could be due to supine.
 ::np::No abnormal patch opacity in lung fields.
-::nn::No nodular opacities (> 1cm) noted over bilateral lung fields.
+::nn::No nodular opacities (> 1cm) noted in the bilateral lung fields.
 ::cpok::Bilateral CP angles are clear and sharp.
 
 ::0::
@@ -105,9 +106,9 @@ Insufficient inspiration and/or supine related findings.
   Paste(MyForm)
 Return
 
-::2::Increased linear opacity over bilateral lower lungs, in favor of chronic inflammatory changes. {Enter}No cardiomegaly.+{Tab}No active lung lesion.
+::2::Increased linear opacity in the bilateral lower lungs, in favor of chronic inflammatory changes. {Enter}No cardiomegaly.+{Tab}No active lung lesion.
 ::3::No abnormal patch opacity in lung fields.{Enter}No cardiomegaly.{Enter}The bowel gas pattern is normal.+{Tab}Normal.
-::4::Increased linear opacity and peribronchial thickening over bilateral lung fields, r/o bronchiolitis.{Enter}No cardiomegaly.+{Tab}Suspicious bronchiolitis.
+::4::Increased linear opacity and peribronchial thickening in the bilateral lung fields, r/o bronchiolitis.{Enter}No cardiomegaly.+{Tab}Suspicious bronchiolitis.
 ::clnic::The condition of lung shows no obvious changes as compared with previous study.
 ::clat::Suggest correlation with lateral view.
 ::ett0::On endotracheal tube.
@@ -188,7 +189,7 @@ Return
 ::mpe::Mildly increased vascular markings and ill-defined vascular contours indicating mild pulmonary edema.
 ::pe0::pulmonary edema
 ::mpe0::mild pulmonary edema
-::clc::Increased interstitial markings over bilateral lower lung fields, in favor of chronic inflammatory changes.
+::clc::Increased interstitial markings in the bilateral lower lung fields, in favor of chronic inflammatory changes.
 ::lla::Linear atelectasis of left lower lung.
 ::rla::Linear atelectasis of right lower lung.
 ::bla::Linear atelectasis of bilateral lower lungs.
@@ -218,27 +219,27 @@ Return
 ::msstl0::Mild spondylosis and scoliosis of the T- and L-spine.
 ::stl0::Scoliosis of the T- and L-spine.
 ::mstl0::Mild scoliosis of the T- and L-spine.
-::pi::ill-defined pulmonary infiltration over `
+::pi::ill-defined pulmonary infiltration in the `
 ::pi0::pulmonary infiltration
 ::po::patchy opacity
 ::no::nodular opacity
 ::lo::linear opacity
 ::flo::fibrolinear opacities
-::buflo::Fibrolinear opacities over bilateral upper lung fields, in favor of chronic inflammatory changes.
-::ruflo::Fibrolinear opacities over right upper lung field, in favor of chronic inflammatory changes.
-::luflo::Fibrolinear opacities over left upper lung field, in favor of chronic inflammatory changes.
-::baflo::Fibrolinear opacities over bilateral apical lung fields, in favor of chronic inflammatory changes.
-::raflo::Fibrolinear opacities over right apical lung field, in favor of chronic inflammatory changes.
-::laflo::Fibrolinear opacities over left apical lung field, in favor of chronic inflammatory changes.
+::buflo::Fibrolinear opacities in the bilateral upper lung fields, in favor of chronic inflammatory changes.
+::ruflo::Fibrolinear opacities in the right upper lung field, in favor of chronic inflammatory changes.
+::luflo::Fibrolinear opacities in the left upper lung field, in favor of chronic inflammatory changes.
+::baflo::Fibrolinear opacities in the bilateral apical lung fields, in favor of chronic inflammatory changes.
+::raflo::Fibrolinear opacities in the right apical lung field, in favor of chronic inflammatory changes.
+::laflo::Fibrolinear opacities in the left apical lung field, in favor of chronic inflammatory changes.
 ::fno::fibronodular opacities
 ::fnl::fibronodular lesions
 ::rno::reticulonodular opacities
-::bafno::Fibronodular opacities over bilateral apical lung fields, in favor of chronic inflammatory changes.
-::rafno::Fibronodular opacities over right apical lung fields, in favor of chronic inflammatory changes.
-::lafno::Fibronodular opacities over left apical lung fields, in favor of chronic inflammatory changes.
-::bufno::Fibronodular opacities over bilateral upper lung fields, in favor of chronic inflammatory changes.
-::rufno::Fibronodular opacities over right upper lung fields, in favor of chronic inflammatory changes.
-::lufno::Fibronodular opacities over left upper lung fields, in favor of chronic inflammatory changes.
+::bafno::Fibronodular opacities in the bilateral apical lung fields, in favor of chronic inflammatory changes.
+::rafno::Fibronodular opacities in the right apical lung fields, in favor of chronic inflammatory changes.
+::lafno::Fibronodular opacities in the left apical lung fields, in favor of chronic inflammatory changes.
+::bufno::Fibronodular opacities in the bilateral upper lung fields, in favor of chronic inflammatory changes.
+::rufno::Fibronodular opacities in the right upper lung fields, in favor of chronic inflammatory changes.
+::lufno::Fibronodular opacities in the left upper lung fields, in favor of chronic inflammatory changes.
 ::ip::inflammatory process
 ::cic::chronic inflammatory changes
 ::cgc::chronic granulomatous changes
@@ -325,17 +326,17 @@ Return
 ::rci::Anterior interposition of the colon to the liver reaching the under-surface of the right hemidiaphragm.
 ::cpftl::Compression fracture of several lower T- and L-spine.
 ::mw::Mediastinal widening, possibly due to tortuosity of the thoracic aorta. Suggest clinical correlation.
-::rotb::Fibrilinear and nodular opacities over right apical region, in favor of old TB.
-::lotb::Fibrilinear and nodular opacities over left apical region, in favor of old TB.
-::botb::Fibrilinear and nodular opacities over bilateral apical regions, in favor of old TB.
+::rotb::Fibrilinear and nodular opacities in the right apical region, in favor of old TB.
+::lotb::Fibrilinear and nodular opacities in the left apical region, in favor of old TB.
+::botb::Fibrilinear and nodular opacities in the bilateral apical regions, in favor of old TB.
 ::splm::status post left mastectomy.
 ::splpm::status post left partial mastectomy.
 ::sprm::status post right mastectomy.
 ::sprpm::status post right partial mastectomy.
 ::spcs::status post coronary stenting.
-::bns::Symmetrical small nodular opacities over bilateral lower lung fields, in favor of nipple shadows.
-::lns::A small nodular opacity over left lower lung field, in favor of nipple shadow.
-::rns::A small nodular opacity over right lower lung field, in favor of nipple shadow.
+::bns::Symmetrical small nodular opacities in the bilateral lower lung fields, in favor of nipple shadows.
+::lns::A small nodular opacity in the left lower lung field, in favor of nipple shadow.
+::rns::A small nodular opacity in the right lower lung field, in favor of nipple shadow.
 ::seg::segment
 ::bapt::Bilateral apical pleural thickening, in favor of chronic inflammatory changes.
 ::mbapt::Mild bilateral apical pleural thickening, in favor of chronic inflammatory changes.

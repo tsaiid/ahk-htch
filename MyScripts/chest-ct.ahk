@@ -324,11 +324,11 @@ Applicable previous CT of chest: no
 FINDINGS:
 - Lung and large airways:
   > Bilateral subpleural reticulation, interlobular septal thickening, basal honeycombing, suggestive of UIP pattern.
-  > Mild bronchiectasis over bilateral lower lungs.
+  > Mild bronchiectasis in the bilateral lower lungs.
   > No definite extensive ground glass abnormality, micronodules, discrete cysts, diffuse mosaic attenuation, nor consolidation.
 
   > Bilateral reticulation, interlobular septal thickening, basal predominance, suggestive of possible UIP pattern.
-  > Mild bronchiectasis over bilateral lower lobes.
+  > Mild bronchiectasis in the bilateral lower lobes.
   > A few small nodules in the bilateral lungs.
   > No definite extensive ground glass abnormality, discrete cysts, diffuse mosaic attenuation, air trapping, nor consolidation.
 - Pleura: no visible nodularity or pleural thickening.
@@ -367,7 +367,7 @@ Applicable previous CT of chest: no
 
 FINDINGS:
 - Lung and large airways:
-  > Multifocal peribronchovascular ground glass opacities with bronchiectasis over bilateral lungs. Subpleural sparing is noted. No honeycombing. Non-specific interstitial pneumonia is suspected.
+  > Multifocal peribronchovascular ground glass opacities with bronchiectasis in the bilateral lungs. Subpleural sparing is noted. No honeycombing. Non-specific interstitial pneumonia is suspected.
 - Pleura: no visible nodularity or pleural thickening.
 - Great vessels: within normal limits.
 - Heart: within normal limits.

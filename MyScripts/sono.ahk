@@ -318,7 +318,7 @@ Return
 No obvious bulky retroperitoneal mass lesion.
 
 Right renal size about %RightKidney%; left renal size about %LeftKidney%.
-Normal size and echogenicity over bilateral kidneys without hydronephrosis nor nephrolithiasis noted.
+Normal size and echogenicity of bilateral kidneys without hydronephrosis nor nephrolithiasis noted.
 
 Normal appearance of urinary bladder. No stones nor sludge is noted.
 

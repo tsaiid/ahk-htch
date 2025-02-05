@@ -20,8 +20,8 @@
 ::ks::Mottled gas pattern along colon course is noted, implying fecal residues retention.
 ::kp::Several small calcified nodules in the pelvic cavity are mostly due to phleboliths of the vein.
 ::kfn::Small oval nodules with egg-shell calcification in the pelvis, in favor of old fat necrosis.
-::kgbs::A round opacity over RUQ of abdomen, suspicious a gallstone. Suggest correlation with sonography.
-::kgbss::Round opacities over RUQ of abdomen, suspicious gallstones. Suggest correlation with sonography.
+::kgbs::A round opacity in the RUQ of abdomen, suspicious a gallstone. Suggest correlation with sonography.
+::kgbss::Round opacities in the RUQ of abdomen, suspicious gallstones. Suggest correlation with sonography.
 ::lpcn::status post left side percutaneous nephrostomy.
 ::rpcn::status post right side percutaneous nephrostomy.
 ::bpcn::status post bilateral percutaneous nephrostomies.

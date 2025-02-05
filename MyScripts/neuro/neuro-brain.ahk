@@ -1,8 +1,8 @@
 ﻿; Neuro Brain Forms
-::rposts::Soft tissue swelling over right periorbital region.
-::mrposts::Mild soft tissue swelling over right periorbital region.
-::lposts::Soft tissue swelling over left periorbital region.
-::mlposts::Mild soft tissue swelling over left periorbital region.
+::rposts::Soft tissue swelling in the right periorbital region.
+::mrposts::Mild soft tissue swelling in the right periorbital region.
+::lposts::Soft tissue swelling in the left periorbital region.
+::mlposts::Mild soft tissue swelling in the left periorbital region.
 ::ra1hp::Hypoplasia of right A1 anterior cerebral artery.
 ::la1hp::Hypoplasia of left A1 anterior cerebral artery.
 ::rv4hp::Hypoplasia of right V4 vertebral artery.
@@ -23,10 +23,10 @@ Applicable previous CT of brain: same day earlier (non-contrast)
 Applicable previous CT of brain:      (other hospital)
 
 FINDINGS:
-A 1.3-cm enhancing nodule over left paramedian cerebellar hemisphere is noted, suggestive of brain metastasis.
+A 1.3-cm enhancing nodule in the left paramedian cerebellar hemisphere is noted, suggestive of brain metastasis.
 Tiny enhancing nodule at the tip of left sylvian fissure, possibly leptomeningeal metastasis.
 
-Brain tissue loss and encephalomalacia over right cerebellar hemisphere, in favor of previous brain insults.
+Brain tissue loss and encephalomalacia in the right cerebellar hemisphere, in favor of previous brain insults.
 
 Presence of skull base artifact with superimpose of bil. frontal base, bil. temporal base, and posterior fossa.
 
@@ -369,7 +369,7 @@ COMPARISON:
 Applicable previous CT of brain: no
 
 FINDINGS:
-- Acute intracranial hemorrhage over right lentiform nucleus, size about 2.7 x 2.4 x 3 cm, suspicious hypertensive ICH.
+- Acute intracranial hemorrhage in the right lentiform nucleus, size about 2.7 x 2.4 x 3 cm, suspicious hypertensive ICH.
 - Mild mass effect compressing the right lateral ventricle.
 - The bilateral lateral ventricles show symmetrical without dilatation.
 - No obvious midline shift.
@@ -385,7 +385,7 @@ REMARKS:
   SleepThenTab()
   MyForm =
 (
-Hypertensive ICH over right lentiform nucleus.
+Hypertensive ICH in the right lentiform nucleus.
 )
   Paste(MyForm)
 Return
@@ -400,7 +400,7 @@ COMPARISON:
 Applicable previous CT of brain: no
 
 FINDINGS:
-- Acute intracranial hemorrhage over right basal ganglion and thalamus, size about 4.3 x 2.8 x 3.6 cm, suspicious hypertensive ICH.
+- Acute intracranial hemorrhage in the right basal ganglion and thalamus, size about 4.3 x 2.8 x 3.6 cm, suspicious hypertensive ICH.
 - The ICH ruptured into the ventricular system, causing intraventricular hemorrhage in the bilateral lateral ventricles, the third and fourth ventricles.
 - Mild mass effect compressing the right lateral ventricle, and mild midline shift to left.
 
@@ -414,7 +414,7 @@ REMARKS:
   SleepThenTab()
   MyForm =
 (
-Possibly hypertensive ICH over right basal ganglion and thalamus, with IVH.
+Possibly hypertensive ICH in the right basal ganglion and thalamus, with IVH.
 )
   Paste(MyForm)
 Return
@@ -460,7 +460,7 @@ Applicable previous CT of brain: no
 
 FINDINGS:
 Presence of high-attenuation subdural hematoma along the right cerebellar tentorium.
-Crescent-shaped high-attenuation acute subdural hematoma over left cerebral convexity.
+Crescent-shaped high-attenuation acute subdural hematoma in the left cerebral convexity.
 Presence of fusiform high-attenuation lesion extending over the right anterior falx cerebri, suggestive of an acute parafalcine subdural hematoma.
 No definite acute intracranial parenchymal hemorrhage, subarachnoid hemorrhage, epidural hematoma in the brain noted.
 
@@ -470,7 +470,7 @@ The bilateral lateral ventricles showed symmetrical without dilatation.
 The bilateral lateral ventricles are symmetrical in shape with acceptable age-dependent ventricular dilatation.
 
 No obvious fracture of the skull base and the skull.
-Subgaleal hematoma over right parietal region.
+Subgaleal hematoma in the right parietal region.
 
 REMARKS:
 * Presence of skull base artifact with superimpose of bil. frontal base, bil. temporal base, and posterior fossa.
@@ -651,25 +651,25 @@ Applicable previous 3D-CT of face: no
 
 FINDINGS:
 
-1. Presence of fracture over anterior/posterior wall of ------- maxillary sinus.
-2. Presence of fracture over ---------- wall of right/left/bilateral orbit, with rectus muscle/orbital fat herniation.
-3. Presence of fracture over right/left/bilateral zygoma/zygomatic arch.
-4. Presence of fracture over --------- mandible.
+1. Presence of fracture in the anterior/posterior wall of ------- maxillary sinus.
+2. Presence of fracture in the ---------- wall of right/left/bilateral orbit, with rectus muscle/orbital fat herniation.
+3. Presence of fracture in the right/left/bilateral zygoma/zygomatic arch.
+4. Presence of fracture in the --------- mandible.
 5. No evidence of fracture of the orbit/cheek.
-6. Presence of hematoma over ----------
+6. Presence of hematoma in the ----------
 7. Presence of right/left/bilateral neck emphysema/soft tissue swelling.
 
 On endotracheal tube.
 
-Presence of fracture over bilateral lateral orbital bony wall and orbital floor, bilateral zygoma and zygoma arch.
+Presence of fracture in the bilateral lateral orbital bony wall and orbital floor, bilateral zygoma and zygoma arch.
 
-Presence of displaced fracture over anterior and posterior walls of bilateral maxillary sinuses.
+Presence of displaced fracture in the anterior and posterior walls of bilateral maxillary sinuses.
 
-Presence of fracture over maxilla, alveolar process, and teeth rupture.
+Presence of fracture in the maxilla, alveolar process, and teeth rupture.
 
-Presence of fracture over nasal bone and pterygoid process bone.
+Presence of fracture in the nasal bone and pterygoid process bone.
 
-Presence of displaced fracture over mandible body.
+Presence of displaced fracture in the mandible body.
 
 Presence of displaced fracture in the right coronoid process, bilateral condylar head and subluxation or dislocation of bilateral T-M joint.
 
@@ -736,14 +736,14 @@ MRA shows no significant vascular stenosis in the major intracranial arteries or
 No evidence of aneurysm or arterial-venous malformation (AVM) noted near the circle of Willis region.
 
 MRA shows multiple focal mild irregular luminal stenoses over the major intracranial arteries, probably due to atherosclerosis.
-MRA shows multiple foci of stenoses over intracranial portion of the bilateral internal carotid arteries.
+MRA shows multiple foci of stenoses in the intracranial portion of the bilateral internal carotid arteries.
 
 MRA shows presence of high grade stenosis or occlusion over the right/left carotid siphon and distal M1 of right/left MCA, with paucity of the branches of the right/left MCA noted.
 
 MRA shows presence of segmental occlusion or high grade stenosis of the intracranial portion of basilar artery.
 
 MRV shows no evidence of venous thrombosis involving the intracranial venous sinuses noted.
-MRV shows a suspicious segment of absent flow over right transverse sinus. However, no definite abnormal signal intensity within the right transverse sinus is noted. Hypoplastic transverse sinus and/or flow gap artifact is considered. Suggest DSA if venous sinus thrombosis is still highly suspected clinically.
+MRV shows a suspicious segment of absent flow in the right transverse sinus. However, no definite abnormal signal intensity within the right transverse sinus is noted. Hypoplastic transverse sinus and/or flow gap artifact is considered. Suggest DSA if venous sinus thrombosis is still highly suspected clinically.
 
 )
   Paste(MyForm)
@@ -818,7 +818,7 @@ Presence of several tiny hyperintensities in the periventricular white matter re
 
 The bilateral lateral ventricles showed symmetrical without dilatation.
 
-MRA show that no evidence of occlusion or high grade stenosis over intracranial portion of the internal carotid artery and vertebral basilar artery, and main trunk of the bilateral anterior cerebral arteries and middle cerebral arteries.
+MRA show that no evidence of occlusion or high grade stenosis in the intracranial portion of the internal carotid artery and vertebral basilar artery, and main trunk of the bilateral anterior cerebral arteries and middle cerebral arteries.
 
 No definite abnormal signal intensity tumor mass lesion in the brain noted including supratentorial cerebral hemisphere and infratentorial cerebellum and brain stem region.
 
@@ -898,7 +898,7 @@ Post contrast study showed no abnormal enhancing lesion in the brain and no abno
 
 MRA shows no evidence of aneurysm or arterial-venous malformation (AVM) noted near the circle of Willis regions.
 
-MRA shows no evidence of occlusion or high grade stenosis over intracranial portion of the internal carotid artery and basilar artery, and main trunk of the bilateral anterior cerebral arteries and middle cerebral arteries.
+MRA shows no evidence of occlusion or high grade stenosis in the intracranial portion of the internal carotid artery and basilar artery, and main trunk of the bilateral anterior cerebral arteries and middle cerebral arteries.
 
 IMPRESSION:
 No significant intracranial findings
@@ -946,7 +946,7 @@ Left fetal type posterior cerebral artery is noted.
 MRA shows
 - A suspicious aneurysm at the anterior communicating artery (Ser/Img: 9/63), size about 2 mm. Suggest correlate with DSA.
 - No evidence of aneurysm or arterial-venous malformation (AVM) noted near the circle of Willis regions.
-- No evidence of occlusion or high grade stenosis over intracranial portion of the internal carotid artery and basilar artery, and main trunk of the bilateral anterior cerebral arteries and middle cerebral arteries.
+- No evidence of occlusion or high grade stenosis in the intracranial portion of the internal carotid artery and basilar artery, and main trunk of the bilateral anterior cerebral arteries and middle cerebral arteries.
 - Left fetal type posterior cerebral artery.
 - Hypoplasia of A1 portion of left anterior cerebral artery.
 )
@@ -1100,7 +1100,7 @@ FINDINGS:
 
 - No evidence of high signal intensity on DWI and lower apparent diffusion coefficient suggesting acute ischemia infarction in the brain and brainstem noted.
 - No definite abnormal signal intensity changes or tumor mass lesion in the brain noted including supratentorial cerebral hemisphere and infratentorial cerebellum and brain stem region.
-- The bilateral lateral ventricles showed symmetrical without dilatation. However, enlarged subarachnoid space over bilateral high fronto-parietal region may still suggest brain atrophy.
+- The bilateral lateral ventricles showed symmetrical without dilatation. However, enlarged subarachnoid space in the bilateral high fronto-parietal region may still suggest brain atrophy.
 - The visible paranasal sinuses, mastoids and skull base are unremarkable.
 
 - MRA shows no significant vascular stenosis in the major intracranial arteries or aneurysm near the circle of Willis regions.

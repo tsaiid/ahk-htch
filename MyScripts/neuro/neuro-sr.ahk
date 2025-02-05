@@ -1041,11 +1041,11 @@ Mild dilatation of intraventricular system with widening of subarachnoid space o
 
 *MRA Visualized vascular system: normal / see below
 
-MRA shows turbulent flow or mild stenosis over intracranial portion of bilateral internal carotid arteries and basilar atery.
+MRA shows turbulent flow or mild stenosis in the intracranial portion of bilateral internal carotid arteries and basilar atery.
 
-Noncontrast intracranial MRA with 3D TOF shows that multiple foci of high grade stenoses over intracranial portion of the internal carotid artery.
+Noncontrast intracranial MRA with 3D TOF shows that multiple foci of high grade stenoses in the intracranial portion of the internal carotid artery.
 
-MRA shows presence of stenosis noted over the bilateral carotid siphon and supraclinoid internal carotid arteries, and high grade stenosis over main trunk of right side middle cerebral artery, and with paucity of the branches of the right side middle cerebral artery noted.
+MRA shows presence of stenosis noted over the bilateral carotid siphon and supraclinoid internal carotid arteries, and high grade stenosis in the main trunk of right side middle cerebral artery, and with paucity of the branches of the right side middle cerebral artery noted.
 
 MRA shows--
 Presence of normal variation of fenestration of the proximal basilar artery. (Hx: 13776391, ac: 65343630)
@@ -1073,7 +1073,7 @@ Presence of normal variant of common origin of left vertebral artery and left co
 
 MRA shows that no evidence of aneurysm or arterial-venous malformation (AVM) noted near the circle of Willis regions.
 
-MRA shows that no evidence of occlusion or high grade stenosis over intracranial portion of the internal carotid artery and basilar artery, and main trunk of the bilateral anterior cerebral arteries and middle cerebral arteries.
+MRA shows that no evidence of occlusion or high grade stenosis in the intracranial portion of the internal carotid artery and basilar artery, and main trunk of the bilateral anterior cerebral arteries and middle cerebral arteries.
 
 MRA did not show the information of the vertebral artery due to the limited FOV (field of view) of this MRA study noted.
 
@@ -1577,7 +1577,7 @@ T12: compression fracture with mild retropulsed posterior cortex, causing mild s
 *Vertebral body
   Morphology:
    1. moderate collapse of T12 vertebral body, in favor of compression fracture.
-   2. degenerative changes of whole spine with osteophytes over unco-vertebral joints noted.
+   2. degenerative changes of whole spine with osteophytes in the unco-vertebral joints noted.
 
   Alignment: fracture of pars interarticularis of L5 resulting in grade I spondylolytic spondylolisthesis of L5 over S1, and stenosis of bilateral neuroforamina of L5/S1 .
 

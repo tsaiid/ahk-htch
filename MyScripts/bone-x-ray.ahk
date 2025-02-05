@@ -172,9 +172,9 @@
 ::bdhs::status post bilateral dynamic hip screw fixation.
 ::bdhsl::status post bilateral dynamic hip screw fixation. The evaluation of pelvic cavity may be limited because of the beam hardening artifacts from hip prosthesis.
 ::rthr::status post right total hip replacement.
-::rthrr::status post recent right total hip replacement.{Enter}A drain at right hip region.{Enter}Soft tissue swelling over right hip region.
+::rthrr::status post recent right total hip replacement.{Enter}A drain at right hip region.{Enter}Soft tissue swelling in the right hip region.
 ::lthr::status post left total hip replacement.
-::lthrr::status post recent left total hip replacement.{Enter}A drain at left hip region.{Enter}Soft tissue swelling over left hip region.
+::lthrr::status post recent left total hip replacement.{Enter}A drain at left hip region.{Enter}Soft tissue swelling in the left hip region.
 ::bthr::status post bilateral total hip replacements.
 ::rhba::status post right hip bipolar hemiarthroplasty.
 ::rhbar::status post right hip bipolar hemiarthroplasty.{Enter}A drain at right hip region.
@@ -186,10 +186,10 @@
 ::bhbal::status post bilateral hip bipolar hemiarthroplasties. The evaluation of pelvic cavity may be limited due to its beam hardening artifacts.
 ::rtka::status post right total knee arthroplasty.
 ::rtka1::status post right total knee arthroplasty, without loosening.
-::rtkar::status post recent right total knee arthroplasty.{Enter}A drain at right knee region.{Enter}Soft tissue swelling over right knee region.
+::rtkar::status post recent right total knee arthroplasty.{Enter}A drain at right knee region.{Enter}Soft tissue swelling in the right knee region.
 ::ltka::status post left total knee arthroplasty.
 ::ltka1::status post left total knee arthroplasty, without loosening.
-::ltkar::status post recent left total knee arthroplasty.{Enter}A drain at left knee region.{Enter}Soft tissue swelling over left knee region.
+::ltkar::status post recent left total knee arthroplasty.{Enter}A drain at left knee region.{Enter}Soft tissue swelling in the left knee region.
 ::btka::status post bilateral total knee arthroplasties.
 ::btka0::status post bilateral total knee arthroplasty.{Enter}A drain at bilateral knee region.
 ::btka1::status post bilateral total knee arthroplasty, without loosening.
@@ -229,7 +229,7 @@
 ::lwsts::Soft tissue swelling around the left wrist.
 ::mrwsts::Mild soft tissue swelling around the right wrist.
 ::mlwsts::Mild soft tissue swelling around the left wrist.
-::sijok::No evidence of blurring, sclerosis, or bone erosion over bilateral sacroiliac joints.
+::sijok::No evidence of blurring, sclerosis, or bone erosion in the bilateral sacroiliac joints.
 ::wgd::wedge deformity
 ::awgd::anterior wedge deformity
 ::opc::osteoporotic changes
@@ -260,7 +260,7 @@
   MyForm =
 (
 No evidence of foreign body in the neck region.
-No disc space narrowing, spondylolisthesis, or fracture over C-spine.
+No disc space narrowing, spondylolisthesis, or fracture in the C-spine.
 No abnormal widening of the prevertebral space.
 The epiglottis is normal.
 )

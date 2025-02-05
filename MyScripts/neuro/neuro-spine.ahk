@@ -124,7 +124,7 @@ Return
 (
 The T-spine is unremarkable.
 
-There are also spondylosis and degenerative disc disease over L-spine, with spinal and neuroforaminal stenosis. For more details, suggest check L-spine MRI.
+There are also spondylosis and degenerative disc disease in the L-spine, with spinal and neuroforaminal stenosis. For more details, suggest check L-spine MRI.
 )
   Paste(MyForm)
 Return
@@ -143,8 +143,8 @@ Axial T2WI:
 PREVIOUS MRI of C-spine: no
 
 FINDINGS:
-Small marginal osteophyte formation over C-spine.
-Marginal osteophyte formation over C-spine.
+Small marginal osteophyte formation in the C-spine.
+Marginal osteophyte formation in the C-spine.
 
 No obvious spinal stenosis of the C-spine.
 
@@ -167,7 +167,7 @@ Presence of mild high signal intensity within the cervical cord at the C5 and C6
 Presence of high signal intensity within the spinal cord from C1 to C5 disc level on T2WI noted, which may be due to cord edema, demyelination or gliosis changes.
 
 
-Presence of small meningeal cysts over bilateral C7-T1 and T1-2 and left T2-3 neuroframen regions, maximal dimension about 9mm.
+Presence of small meningeal cysts at bilateral C7-T1 and T1-2 and left T2-3 neuroframen regions, maximal dimension about 9mm.
 
 A slitlike syrinx cavity at C1-C2 level, in favor of a persistent central canal.
 
@@ -225,10 +225,10 @@ Presence of diffuse bulging disc noted over the T12-L1 region, and causing mild 
 2. --------: Presence of diffuse bulging/protrusion/herniation disk causing mild/moderate/severe spinal stenosis.
 3. --------: Presence of diffuse bulging/protrusion/herniation  disk combined with ligament flavum hypertrophy and facet joint degenerative causing mild/moderate/severe spinal stenosis.
 4. --------: Presence of -------- herniated of nucleus pulposus (HIVD), cranial/caudal migration, with compression /attachment of the adjacent nerve root/dural sac.
-5. Presence of -------- DJD/spondylolytic type spondylolisthesis over ----------.
-6. Presence of narrowing of intervertebral foramen over --.
+5. Presence of -------- DJD/spondylolytic type spondylolisthesis at ----------.
+6. Presence of narrowing of intervertebral foramen at --.
 7. No evidence of fracture of thoracic spine.
-8. Presence of fracture/subluxation over --------------.
+8. Presence of fracture/subluxation at --------------.
 9. Presence of high signal within the spinal cord at ------ level, indicating edema/gliosis/compression with cord signal changes
 10. Presence of infectious osteomylitis involving the ------- spine, combined with epidural/paraspinal soft tissue infection, causing compression of the spinal cord
 11. Presence of abnormal signal intensity involving the ------spine, and compression of the spinal cord at -------- level, R/O metastasis, myeloma, or lymphoma
@@ -279,10 +279,10 @@ Post-contrast, sagittal and axial T1WI:
 2. --------: Presence of diffuse bulging/protrusion/herniation disk causing mild/moderate/severe spinal stenosis.
 3. --------: Presence of diffuse bulging/protrusion/herniation  disk combined with ligament flavum hypertrophy and facet joint degenerative causing mild/moderate/severe spinal stenosis.
 4. --------: Presence of -------- herniated of nucleus pulposus (HIVD), cranial/caudal migration, with compression /attachment of the adjacent nerve root/dural sac.
-5. Presence of -------- DJD/spondylolytic type spondylolisthesis over ----------.
-6. Presence of narrowing of intervertebral foramen over --.
+5. Presence of -------- DJD/spondylolytic type spondylolisthesis at ----------.
+6. Presence of narrowing of intervertebral foramen at --.
 7. No evidence of fracture of thoracic spine.
-8. Presence of fracture/subluxation over --------------.
+8. Presence of fracture/subluxation at --------------.
 9. Presence of high signal within the spinal cord at -----level, indicating edema/gliosis/compression with cord signal changes
 10. Presence of infectious osteomylitis involving the ------- spine, combined with epidural/paraspinal soft tissue infection, causing compression of the spinal cord
 11. Presence of abnormal signal intensity involving the -----spine, and compression of the spinal cord at -------- level, R/O metastasis, myeloma, or lymphoma
@@ -344,14 +344,14 @@ Post contrast study shows no evidence of abnormal enhanced lesion noted over the
 2. --------: Presence of diffuse bulging/protrusion/herniation disk causing mild/moderate/severe spinal stenosis.
 3. --------: Presence of diffuse bulging/protrusion/herniation  disk combined with ligament flavum hypertrophy and facet joint degenerative causing mild/moderate/severe spinal stenosis.
 4. --------: Presence of -------- herniated of nucleus pulposus (HIVD), cranial/caudal migration, with compression /attachment of the adjacent nerve root/dural sac.
-5. Presence of -------- DJD/spondylolytic type spondylolisthesis over ----------.
-6. Presence of narrowing of intervertebral foramen over --.
+5. Presence of -------- DJD/spondylolytic type spondylolisthesis at ----------.
+6. Presence of narrowing of intervertebral foramen at --.
 7. No evidence of fracture of lumbar spine.
-8. Presence of fracture/subluxation over --------------.
+8. Presence of fracture/subluxation at --------------.
 9. Presence of high signal within the spinal cord at ------ level, indicating edema/gliosis/compression with cord signal changes
 10. Presence of infectious osteomylitis involving the ------- spine, combined with epidural/paraspinal soft tissue infection, causing compression of the spinal cord
 11. Presence of abnormal signal intensity involving the ------- spine, and compression of the spinal cord at -------- level, R/O metastasis, myeloma, or lymphoma
-12. Presence of increased soft tissue over ------------ level, solid/marginal enhancement, post-operative epidural fibrosis/recurrent disc more in favor
+12. Presence of increased soft tissue at ------------ level, solid/marginal enhancement, post-operative epidural fibrosis/recurrent disc more in favor
 13. No evidence of abnormal signal intensity lesion and no evidence of abnormal enhanced lesion over the spinal canal of L-spine.
 14. Presence of abnormal signal intensity mass lesion, extradural/intradural extramedullary/intramedullary location, size about ---------- cm, over the --------- spine level.
 15. Post-contrast studies show enhancement of the abnormal signal lesions.
@@ -379,8 +379,8 @@ PREVIOUS MRI L-spine: no
 
 FINDINGS:
 
-Small marginal osteophyte formation over L-spine.
-Marginal osteophyte formation over L-spine.
+Small marginal osteophyte formation in the L-spine.
+Marginal osteophyte formation in the L-spine.
 No obvious spondylolisthesis.
 
 No definite spinal stenosis.
@@ -393,7 +393,7 @@ No evidence of abnormal signal intensity mass lesion within the dural sac of L-s
 No evidence of abnormal signal intensity mass lesion in the spinal canal of L-spine noted.
 
 Normal alignment of lower T- and L-spine regions.
-Normal alignment and vertebral morphology over lower T- and L-spine regions.
+Normal alignment and vertebral morphology in the lower T- and L-spine regions.
 
 Presence of cystic lesion, maximum diameter about 1.1 cm in size, manifested with hypointensity on T1WI and hyperintensity on T2WI, near right/left L4-5 facet joint and medial to the facet joint and ligamentum flavum, DDx: synovial cyst or ligamentum flavum cyst.
 
@@ -416,11 +416,11 @@ Presence of small linear shape lipoma over the filum terminale, and no evidence 
 Presence of several perineural cysts over the spinal canal of the upper sacrum level, the biggest one about 2cm.
 Presence of L6 (lumbarization of S1) noted.
 Suspicious spodylolysis fracture of L5 pars interarticularis.
-Presence of dessicated disc noted over L4-5 and L5-S1 and L-spine.
+Presence of dessicated disc noted at L4-5 and L5-S1 and L-spine.
 Presence of degenerative end-plate changes noted over the L4-L5.
 Narrowing of bilateral L4-5 and L5-S1 neuroforamina due to the degenerative changes and severe disc space narrowing.
 
-Presence of small hemangiomas over L1 and L4 spine vertebral bodies.
+Presence of small hemangiomas at L1 and L4 spine vertebral bodies.
 Presence of benign hemangioma noted over the L2 vertebral body, size about 2.1 cm.
 
 Bilateral renal cysts.

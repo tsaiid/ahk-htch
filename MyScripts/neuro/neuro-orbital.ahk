@@ -12,9 +12,9 @@ Plane: axial, coronal, oblique sagittal
 Previous CT of orbit: no
 
 FINDINGS:
-1. ---------- of fracture over --------------- orbital wall.
+1. ---------- of fracture in the --------------- orbital wall.
 2. Presence of ---------- orbital floor fracture, with rectus muscle/orbital fat herniation.
-3. Presence of high density foreign body noted over ----------
+3. Presence of high density foreign body noted in the ----------
 4. No evidence/presence of bony fragment noted near optic canal region.
 5. Presence of ----------- orbital emphysema noted.
 )
@@ -34,7 +34,7 @@ PREVIOUS CT of orbit: no
 
 FINDINGS:
 No obvious fracture of bilateral orbits.
-No evidence of acute hematoma over bilateral orbital retroocular regions.
+No evidence of acute hematoma in the bilateral orbital retroocular regions.
 Symmetrical size of bilateral orbital retroocular optic nerves.
 No evidence of high density foreign body noted at the bilateral intraocular and retroocular regions.
 No evidence of bony fragment noted near optic canal region.
@@ -159,9 +159,9 @@ Previous CT of orbit: no
 
 FINDINGS:
 
-1. Presence of cystic/mass lesion, size about ---------- cm, over ----------.
+1. Presence of cystic/mass lesion, size about ---------- cm, in the ----------.
 2. ----------- of enlargement of -------------- rectus muscle and exophthalmos noted, ------- of tendon insertion, thyroid related ophthalmopathy/orbital pseudotumor more in favor.
-3. No evidence of mass lesion over orbital, retro-ocular, sellar, suprasellar regions.
+3. No evidence of mass lesion in the orbital, retro-ocular, sellar, suprasellar regions.
 )
   Paste(MyForm)
 Return
@@ -177,13 +177,13 @@ Symmetrical bil. rectus muscle without enlargement of rectus muscle noted, no CT
 
 Symmetrical bil. retrobulbar fat was noted.
 
-No CT evidence of space occupying lesion over orbital, retro-ocular, sella, suprasellar regions.
+No CT evidence of space occupying lesion in the orbital, retro-ocular, sella, suprasellar regions.
 
-No obvious soft tissue density over bilateral frontal sinus, sphenoid sinus, ethmoid sinus, maxillary sinus.
+No obvious soft tissue density in the bilateral frontal sinus, sphenoid sinus, ethmoid sinus, maxillary sinus.
 
 Presence of mild exophthalmos of left eye.
 
-Presence of soft tissue thickening over nasopharynx, with bone erosion of the anterior portion of clivus, nasopharynx lesion should be R/O, suggest ENT check up.
+Presence of soft tissue thickening in the nasopharynx, with bone erosion of the anterior portion of clivus, nasopharynx lesion should be R/O, suggest ENT check up.
 
 Presence of dental artifact and superimpose of the oral cavity, and the oral cavity cannot be well evaluated. Film interpretation is limited.
 )
@@ -219,10 +219,10 @@ Post contrast study showed no abnormal enhanced lesion in the brain and no abnor
 
 
 
-1. Presence of soft tissue mass, size about----------cm, noted over--------
-2. No evidence of bulky lymph nodes over ---------------- carotid space and ----------------- posterior triangle of submandibular and neck regions was noted.
-3. Presence of several/ multiple lymph nodes noted over --------------- carotid space and ---------------- posterior triangle of submandibular and neck regions, the biggest size about-------cm.
-4. Presence of lymphadenopathy over ------------- carotid space and ------------ posterior triangle of submandibular and neck regions was noted.
+1. Presence of soft tissue mass, size about----------cm, noted in the--------
+2. No evidence of bulky lymph nodes in the ---------------- carotid space and ----------------- posterior triangle of submandibular and neck regions was noted.
+3. Presence of several/ multiple lymph nodes noted in the --------------- carotid space and ---------------- posterior triangle of submandibular and neck regions, the biggest size about-------cm.
+4. Presence of lymphadenopathy in the ------------- carotid space and ------------ posterior triangle of submandibular and neck regions was noted.
 
 IMPRESSION:
 No evidence of abnormal signal intensity mass lesion over the bil. orbital retrobulbar regions noted.
