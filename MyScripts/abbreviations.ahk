@@ -353,7 +353,7 @@
 ::impr::improvement
 ::neo::no evidence of `
 ::nseo::no strong evidence of `
-::c::contrast medium
+:c:c::contrast medium
 ::etv::extravasation
 ::asc::atherosclerosis
 ::sbp::spontaneous bacterial peritonitis

@@ -42,7 +42,7 @@
 :c:F::status post Foley catheterization.
 :c:F1::status post Foley catheterization. The urinary bladder is not distended enough, and the evaluation is limited.
 ::spiud::status post intrauterine device implantation.
-::haicok::On HAIC. The tip position shows no migration as compared with previous angiography.
+::haicok::On HAIC. The tip position shows no migration compared to the previous angiography.
 ::spa::Surgical clips at RLQ of abdomen, in favor of post appendectomy.
 ::spa0::status post appendectomy.
 ::sphaic::Coils at the upper abdomen, may be due to previous hepatic arterial infusion chemotherapy.

@@ -3,8 +3,7 @@
 ::rt::right `
 ::ifo::in favor of `
 ::mfo::more favor of `
-::acw::as compared with `
-::acwpi::as compared with the previous images, `
+:c:C::compared to `
 ::cpf::compression fracture
 ::vcpf::vertebral compression fracture
 ::cmf::comminuted fracture `

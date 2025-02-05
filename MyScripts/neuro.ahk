@@ -118,7 +118,7 @@
 ::casc::cerebral atherosclerosis
 ::mcasc::mild cerebral atherosclerosis
 ::necmraok::The bilateral extracranial carotid and vertebral arteries are unremarkable.
-::cbnic::The intracranial condition shows no obvious changes as compared with previous study.
+::cbnic::The intracranial condition shows no obvious changes compared to the previous study.
 ::mriess::The sella is slightly enlarged, the pituitary gland is flattened against the sellar floor, and there is downward traction of chiasm. Empty sella syndrome may be suspected.
 ::msr9::midline shift to right, about 9 mm at the midthalamic level.
 ::msl9::midline shift to left, about 9 mm at the midthalamic level.

@@ -109,7 +109,7 @@ Return
 ::2::Increased linear opacity in the bilateral lower lungs, in favor of chronic inflammatory changes. {Enter}No cardiomegaly.+{Tab}No active lung lesion.
 ::3::No abnormal patch opacity in lung fields.{Enter}No cardiomegaly.{Enter}The bowel gas pattern is normal.+{Tab}Normal.
 ::4::Increased linear opacity and peribronchial thickening in the bilateral lung fields, r/o bronchiolitis.{Enter}No cardiomegaly.+{Tab}Suspicious bronchiolitis.
-::clnic::The condition of lung shows no obvious changes as compared with previous study.
+::clnic::The condition of lung shows no obvious changes compared to the previous study.
 ::clat::Correlation with lateral view is suggested.
 ::ett0::On endotracheal tube.
 ::ett::On endotracheal tube with tip at proper location.
@@ -219,8 +219,8 @@ Return
 ::msstl0::Mild spondylosis and scoliosis of the T- and L-spine.
 ::stl0::Scoliosis of the T- and L-spine.
 ::mstl0::Mild scoliosis of the T- and L-spine.
-::pi::ill-defined pulmonary infiltration in the `
-::pi0::pulmonary infiltration
+::pi::ill-defined infiltrate in the `
+::pi0::infiltrate
 ::po::patchy opacity
 ::no::nodular opacity
 ::lo::linear opacity

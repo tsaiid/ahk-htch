@@ -1,5 +1,5 @@
 ﻿; Other plain films
-::cnic::The condition shows no obvious changes as compared with previous study.
+::cnic::The condition shows no obvious changes compared to the previous study.
 ::nic0::no interval changes.
 ::nic1::no obvious interval changes.
 ::woic::without interval changes

@@ -97,7 +97,7 @@ IMPRESSION:
 No evidence of mass lesion on the sellar or suprasellar or hypothalamus regions.
 
 From the imaging finding and clinical history, compatible with pituitary microadenoma over the right side pituitary gland and status post treatment.
-No obvious interval changes as compared with previous last study.
+No obvious interval changes compared to the previous last study.
 
 SUGGESTION:
 Check hormone profile.
