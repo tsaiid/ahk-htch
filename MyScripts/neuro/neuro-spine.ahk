@@ -298,13 +298,13 @@ SUGGESTION:
   Paste(MyForm)
 Return
 
-::mrc1::Cervical spondylosis and degenerative disc disease, with spinal and neuroforaminal stenosis, as detailed above.
-::mrc2::Cervical spondylosis, spondylolisthesis, and degenerative disc disease, with spinal and neuroforaminal stenosis, as detailed above.
+::mrc1::Cervical spondylosis and degenerative disc disease, with spinal canal and neuroforaminal stenosis, as described above.
+::mrc2::Cervical spondylosis, spondylolisthesis, and degenerative disc disease, with spinal canal and neuroforaminal stenosis, as described above.
 
-::mrl0::Mild lumbar spondylosis and degenerative disc disease, without significant spinal stenosis.
-::mrl1::Lumbar spondylosis and degenerative disc disease, with spinal and neuroforaminal stenosis, as detailed above.
-::mrl2::Lumbar spondylosis, spondylolisthesis, and degenerative disc disease, with spinal and neuroforaminal stenosis, as detailed above.
-::mrl3::Lumbar scoliosis, spondylosis, spondylolisthesis, and degenerative disc disease, with spinal and neuroforaminal stenosis, as detailed above.
+::mrl0::Mild lumbar spondylosis and degenerative disc disease, without significant spinal canal stenosis.
+::mrl1::Lumbar spondylosis and degenerative disc disease, with spinal canal and neuroforaminal stenosis, as described above.
+::mrl2::Lumbar spondylosis, spondylolisthesis, and degenerative disc disease, with spinal canal and neuroforaminal stenosis, as described above.
+::mrl3::Lumbar scoliosis, spondylosis, spondylolisthesis, and degenerative disc disease, with spinal canal and neuroforaminal stenosis, as described above.
 
 ;; MRSPL1
 ::mrspl1::

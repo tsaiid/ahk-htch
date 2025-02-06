@@ -305,7 +305,7 @@ execute_shuttlepro(key,layer)
       } Else If (key = 7) {
         Send, 1
       } Else If (key = 8) {
-        Send, 8
+        Send, 9
       } Else If (key = 9) {
         Send, 4
       } Else If (key = 10) {

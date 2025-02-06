@@ -78,9 +78,9 @@
 ::dbd::diffuse bulging disc
 ::dpd::diffuse protrusion disc
 ::dhd::diffuse herniation disc
-::bgd::bulging disc
-::prd::protrusion disc
-::hrd::herniation disc
+::bgd::disc bulging
+::prd::disc protrusion
+::hrd::disc herniation
 ::postcen::posterocentral `
 ::postlat::posterolateral `
 ::lpl::left posterolateral `

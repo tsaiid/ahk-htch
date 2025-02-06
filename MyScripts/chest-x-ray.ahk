@@ -130,20 +130,20 @@ Return
 ::elm::Exaggerated lung markings.
 ::selm::Slightly exaggerated lung markings.
 ::lop0::status post instrument fixation of L-spine.
-::lple::Left costophrenic angle blunting, suspect pleural effusion or changes.
-::lple1::Left costophrenic angle blunting and diffuse ground glass opacity in left lung, suspect pleural effusion.
-::rple::Right costophrenic angle blunting, suspect pleural effusion or changes.
-::rple1::Right costophrenic angle blunting and diffuse ground glass opacity in right lung, suspect pleural effusion.
-::bple::Bilateral costophrenic angles blunting, suspect pleural effusion or changes.
-::mbple::Mild bilateral costophrenic angles blunting, suspect mild pleural effusion or changes.
-::bple0::Bilateral costophrenic angles blunting, suspect pleural effusion.
-::mbple0::Mild bilateral costophrenic angles blunting, suspect mild pleural effusion.
-::bple1::Bilateral costophrenic angles blunting and diffuse ground glass opacity in both lungs, suspect pleural effusion.
-::mbple1::Mild bilateral costophrenic angles blunting and diffuse ground glass opacity in both lungs, suspect mild pleural effusion.
+::lple::Blunting of the left costophrenic angle is noted, suspicious for pleural effusion or pleural thickening.
+::lple1::Blunting of the left costophrenic angle and ground-glass opacities in the left lung are noted, suggestive of pleural effusion.
+::rple::Blunting of the right costophrenic angle is noted, suspicious for pleural effusion or pleural thickening.
+::rple1::Blunting of the right costophrenic angle and ground-glass opacities in the right lung are noted, suggestive of pleural effusion.
+::bple::Bilateral costophrenic angle blunting is noted, suspicious for pleural effusion or pleural thickening.
+::mbple::Mild bilateral costophrenic angle blunting is noted, suspicious for pleural effusion or pleural thickening.
+::bple0::Bilateral costophrenic angle blunting is noted, suggestive of pleural effusion.
+::mbple0::Mild bilateral costophrenic angle blunting is noted, suggestive of mild pleural effusion.
+::bple1::Bilateral costophrenic angle blunting and diffuse ground-glass opacity in both lungs are noted, suggestive of pleural effusion.
+::mbple1::Mild bilateral costophrenic angle blunting and diffuse ground-glass opacity in both lungs are noted, suggestive of mild pleural effusion.
 ::bple2::Diffuse ground glass opacity in both lungs with supine position, suspect pleural effusion.
 ::mbple2::Mild diffuse ground glass opacity in both lungs with supine position, suspect mild pleural effusion.
-::spster::Post median sternotomy with wire fixation.
-::spster1::Post median sternotomy with wire fixation. Several drains in the thorax.
+::spster::Status post median sternotomy with wire fixation.
+::spster1::Status post median sternotomy with wire fixation. Several drains in the thorax.
 ::spc::Surgical clips at RUQ of abdomen, in favor of post cholecystectomy.
 ::spc0::status post cholecystectomy.
 ::spc1::status post cholecystectomy, with mild secondary dilatation of the biliary tract.
@@ -171,8 +171,8 @@ Return
 ::lsperm::On Permcath catheter via left subclavian vein.
 ::riperm::On Permcath catheter via right internal jugular vein.
 ::liperm::On Permcath catheter via left internal jugular vein.
-::rpicc::On PICC via right arm.
-::lpicc::On PICC via left arm.
+::rpicc::PICC line in place via the right arm.
+::lpicc::PICC line in place via the left arm.
 ::spppm::status post PPM implantation.
 ::rppm::status post PPM implantation at right upper chest with lead tips in the RA and RV.
 ::rsppm::status post PPM implantation at right upper chest with lead tip in the RV.

@@ -128,7 +128,7 @@
 ::um::uterine myoma
 ::pbv::peribronchovascular
 ::ivd::intervertebral disc
-::vd::varying degree of `
+::vd::varying degrees of `
 ::vs::varying sized `
 ::ltls::lower T- to L-spine
 ::ije::increased joint effusion
@@ -311,7 +311,7 @@ Return
 ::bdl::borderline `
 ::bsmg::borderline splenomegaly
 :c:ls::luminal stenosis
-::ada::as detailed above
+::ada::as described above
 ::ntn::not true nodule
 ::wofl::without focal lesion
 ::vrt::3D VRT reconstruction
