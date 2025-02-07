@@ -217,7 +217,7 @@ If a solid nodule 6-8 mm, a single follow-up at 6-12 months is advised, with a t
 If a solid nodules > 8 mm, follow-up at 3 months or PET/CT or tissue sampling.
 If multiple nodules > 6 mm, follow-up at 3-6 months and then 18-24 months.
 
-If ground glass nodules greater than 6 mm, follow-up at 6-12 months and then every 2 years until the 5-year mark.
+If ground-glass nodules greater than 6 mm, follow-up at 6-12 months and then every 2 years until the 5-year mark.
 
 If subsolid nodules greater than 6 mm, should have CT follow-up at 3-6 months and then every year for 5 years.
 
@@ -270,7 +270,7 @@ If a solid nodule 6-8 mm, a single follow-up at 6-12 months is advised, with a t
 If a solid nodules > 8 mm, follow-up at 3 months or PET/CT or tissue sampling.
 If multiple nodules > 6 mm, follow-up at 3-6 months and then 18-24 months.
 
-If ground glass nodules greater than 6 mm, follow-up at 6-12 months and then every 2 years until the 5-year mark.
+If ground-glass nodules greater than 6 mm, follow-up at 6-12 months and then every 2 years until the 5-year mark.
 
 If subsolid nodules greater than 6 mm, should have CT follow-up at 3-6 months and then every year for 5 years.
 
@@ -294,7 +294,7 @@ If a solid nodule 6-8 mm, a single follow-up at 6-12 months is advised, with a t
 If a solid nodules > 8 mm, follow-up at 3 months or PET/CT or tissue sampling.
 If multiple nodules > 6 mm, follow-up at 3-6 months and then 18-24 months.
 
-If ground glass nodules greater than 6 mm, follow-up at 6-12 months and then every 2 years until the 5-year mark.
+If ground-glass nodules greater than 6 mm, follow-up at 6-12 months and then every 2 years until the 5-year mark.
 
 If subsolid nodules greater than 6 mm, should have CT follow-up at 3-6 months and then every year for 5 years.
 
@@ -325,12 +325,12 @@ FINDINGS:
 - Lung and large airways:
   > Bilateral subpleural reticulation, interlobular septal thickening, basal honeycombing, suggestive of UIP pattern.
   > Mild bronchiectasis in the bilateral lower lungs.
-  > No definite extensive ground glass abnormality, micronodules, discrete cysts, diffuse mosaic attenuation, nor consolidation.
+  > No definite extensive ground-glass abnormality, micronodules, discrete cysts, diffuse mosaic attenuation, nor consolidation.
 
   > Bilateral reticulation, interlobular septal thickening, basal predominance, suggestive of possible UIP pattern.
   > Mild bronchiectasis in the bilateral lower lobes.
   > A few small nodules in the bilateral lungs.
-  > No definite extensive ground glass abnormality, discrete cysts, diffuse mosaic attenuation, air trapping, nor consolidation.
+  > No definite extensive ground-glass abnormality, discrete cysts, diffuse mosaic attenuation, air trapping, nor consolidation.
 - Pleura: no visible nodularity or pleural thickening.
 - Great vessels: within normal limits.
 - Heart: within normal limits.
@@ -367,7 +367,7 @@ Applicable previous CT of chest: no
 
 FINDINGS:
 - Lung and large airways:
-  > Multifocal peribronchovascular ground glass opacities with bronchiectasis in the bilateral lungs. Subpleural sparing is noted. No honeycombing. Non-specific interstitial pneumonia is suspected.
+  > Multifocal peribronchovascular ground-glass opacities with bronchiectasis in the bilateral lungs. Subpleural sparing is noted. No honeycombing. Non-specific interstitial pneumonia is suspected.
 - Pleura: no visible nodularity or pleural thickening.
 - Great vessels: within normal limits.
 - Heart: within normal limits.

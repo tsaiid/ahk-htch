@@ -1171,7 +1171,7 @@ Others:
 
 - Lungs:
   > Some tiny subpleural nodules in the bilateral lungs, with adjacent interlobular septal thickening, probably chronic inflammatory changes. However, lung metastasis cannot be totally excluded. Follow-up is suggested.
-  > Mild ill-defined ground glass opacities in the RML and left lingular lobe, probably insufficient inspiration related changes. (Scanning in prone position.)
+  > Mild ill-defined ground-glass opacities in the RML and left lingular lobe, probably insufficient inspiration related changes. (Scanning in prone position.)
 - Cardiomegaly; mild LV hypertrophy.
 - Mediastinum: A few slightly enlarged lymph nodes with coarse calcifications, in favor of chronic inflammatory changes.
 - Great vessels:

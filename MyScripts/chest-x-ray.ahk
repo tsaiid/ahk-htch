@@ -111,14 +111,14 @@ Return
 ::4::Increased linear opacity and peribronchial thickening in the bilateral lung fields, r/o bronchiolitis.{Enter}No cardiomegaly.+{Tab}Suspicious bronchiolitis.
 ::clnic::The condition of lung shows no obvious changes compared to the previous study.
 ::clat::Correlation with lateral view is suggested.
-::ett0::On endotracheal tube.
-::ett::On endotracheal tube with tip at proper location.
-::ett-c::On endotracheal tube. The tip is near the carina. Adjusting the depth is suggested.
-::ett-b::On endotracheal tube. The tip is in right main bronchus. Adjusting the depth is suggested.
-::ett-t::On endotracheal tube. The tip is in the upper trachea. Adjusting the depth is suggested.
-::tr::On tracheostomy tube.
-::ng::On NG tube.
-::og::On NG/OG tube.
+::ett0::Endotracheal tube in place.
+::ett::Endotracheal tube in place, with the tip at an appropriate position.
+::ett-c::Endotracheal tube in place. The tip is near the carina. Adjusting the depth is suggested.
+::ett-b::Endotracheal tube in place. The tip is in right main bronchus. Adjusting the depth is suggested.
+::ett-t::Endotracheal tube in place. The tip is in the upper trachea. Adjusting the depth is suggested.
+::tr::Tracheostomy tube in place.
+::ng::NG tube in place.
+::og::NG/OG tube in place.
 ::vps::status post VP shunting.
 ::lps::status post LP shunting.
 ::rpig::status post right chest pigtail drainage.
@@ -140,8 +140,8 @@ Return
 ::mbple0::Mild bilateral costophrenic angle blunting is noted, suggestive of mild pleural effusion.
 ::bple1::Bilateral costophrenic angle blunting and diffuse ground-glass opacity in both lungs are noted, suggestive of pleural effusion.
 ::mbple1::Mild bilateral costophrenic angle blunting and diffuse ground-glass opacity in both lungs are noted, suggestive of mild pleural effusion.
-::bple2::Diffuse ground glass opacity in both lungs with supine position, suspect pleural effusion.
-::mbple2::Mild diffuse ground glass opacity in both lungs with supine position, suspect mild pleural effusion.
+::bple2::Diffuse ground-glass opacity in both lungs with supine position, suspect pleural effusion.
+::mbple2::Mild diffuse ground-glass opacity in both lungs with supine position, suspect mild pleural effusion.
 ::spster::Status post median sternotomy with wire fixation.
 ::spster1::Status post median sternotomy with wire fixation. Several drains in the thorax.
 ::spc::Surgical clips at RUQ of abdomen, in favor of post cholecystectomy.
@@ -149,15 +149,15 @@ Return
 ::spc1::status post cholecystectomy, with mild secondary dilatation of the biliary tract.
 ::sptae::Lipiodol retention in the liver, probably due to previous TACE.
 ::p/tae::Lipiodol retention in liver.
-::ricvp::Central venous catheter is in place via the right internal jugular vein, with the tip at the superior vena cava.
-::licvp::Central venous catheter is in place via the left internal jugular vein, with the tip at the superior vena cava.
-::bicvp::Central venous catheters are in place via the bilateral internal jugular veins, with the tips at the superior vena cava.
-::rscvp::Central venous catheter is in place via the right subclavian vein, with the tip at the superior vena cava.
-::lscvp::Central venous catheter is in place via the right subclavian vein, with the tip at the superior vena cava.
-::ridl::On double lumen catheter via right internal jugular vein.
-::lidl::On double lumen catheter via left internal jugular vein.
-::rsdl::On double lumen catheter via right subclavian vein.
-::lsdl::On double lumen catheter via left subclavian vein.
+::ricvp::Central venous catheter in place via the right internal jugular vein, with the tip at the superior vena cava.
+::licvp::Central venous catheter in place via the left internal jugular vein, with the tip at the superior vena cava.
+::bicvp::Central venous catheters in place via the bilateral internal jugular veins, with the tips at the superior vena cava.
+::rscvp::Central venous catheter in place via the right subclavian vein, with the tip at the superior vena cava.
+::lscvp::Central venous catheter in place via the right subclavian vein, with the tip at the superior vena cava.
+::ridl::Double-lumen catheter in place via the right internal jugular vein.
+::lidl::Double-lumen catheter in place via the left internal jugular vein.
+::rsdl::Double-lumen catheter in place via the right subclavian vein.
+::lsdl::Double-lumen catheter in place via the left subclavian vein.
 ::sppok::status post chemo port implantation, without immediate complication.
 ::rport::status post chemo port implantation via right subclavian vein.
 ::rport1::status post chemo port implantation via right subclavian vein with tip at the SVC.
@@ -167,10 +167,10 @@ Return
 ::liport::status post chemo port implantation via left internal jugular vein.
 ::lipport::status post IP chemo port implantation at LUQ of abdomen.
 ::ripport::status post IP chemo port implantation at RUQ of abdomen.
-::rsperm::On Permcath via right subclavian vein.
-::lsperm::On Permcath catheter via left subclavian vein.
-::riperm::On Permcath catheter via right internal jugular vein.
-::liperm::On Permcath catheter via left internal jugular vein.
+::rsperm::On Permcath via the right subclavian vein.
+::lsperm::On Permcath catheter via the left subclavian vein.
+::riperm::On Permcath catheter via the right internal jugular vein.
+::liperm::On Permcath catheter via the left internal jugular vein.
 ::rpicc::PICC line in place via the right arm.
 ::lpicc::PICC line in place via the left arm.
 ::spppm::status post PPM implantation.

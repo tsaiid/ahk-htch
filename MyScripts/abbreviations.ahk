@@ -1,7 +1,7 @@
 ﻿;; Chest
-::ggo::ground glass opacity `
-::ggos::ground glass opacities `
-::ggn::ground glass nodule `
+::ggo::ground-glass opacity `
+::ggos::ground-glass opacities `
+::ggn::ground-glass nodule `
 ::pul::pulmonary `
 ::tb::tuberculosis
 ::ntm::nontuberculous mycobacterium
