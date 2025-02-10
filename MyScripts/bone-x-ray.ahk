@@ -49,12 +49,12 @@
 ::msplctl::Mild spondylosis of the C-, T- and L-spine.
 ::oak0::Mild joint space narrowing in the medial compartment of the knee.
 ::oak1a::Mild joint space narrowing, especially in the medial compartment of the knee, suggestive of mild osteoarthrosis.
-::boak1a::Mild joint space narrowing, especially in the medial compartments of the bilateral knees, suggestive of mild osteoarthrosis.
+::boak1a::Mild joint space narrowing, especially in the medial compartments of both knees, suggestive of mild osteoarthrosis.
 ::oak1b::Mild joint space narrowing and marginal osteophyte formation, especially in the medial compartment of the knee, suggestive of mild osteoarthrosis.
-::boak1b::Mild joint space narrowing and marginal osteophyte formation, especially in the medial compartments of the bilateral knees, suggestive of mild osteoarthrosis.
+::boak1b::Mild joint space narrowing and marginal osteophyte formation, especially in the medial compartments of both knees, suggestive of mild osteoarthrosis.
 ::oak1::Mild joint space narrowing, subchondral sclerosis, and marginal osteophyte formation, especially in the medial compartment of the knee, suggestive of mild osteoarthrosis.
 ::oak2::Joint space narrowing, subchondral sclerosis, and marginal osteophyte formation, especially in the medial compartment of the knee, suggestive of osteoarthrosis.
-::boak2::Joint space narrowing, subchondral sclerosis, and marginal osteophyte formation, especially in the medial compartments of the bilateral knees, suggestive of osteoarthrosis.
+::boak2::Joint space narrowing, subchondral sclerosis, and marginal osteophyte formation, especially in the medial compartments of both knees, suggestive of osteoarthrosis.
 ::oak2a::Joint space narrowing and marginal osteophyte formation, especially in the medial compartment of the knee, suggestive of osteoarthrosis.
 ::oak3::Severe joint space narrowing, subchondral sclerosis, and marginal osteophyte formation in the knee, suggestive of osteoarthrosis.
 ::oak3a::Severe joint space narrowing, subchondral sclerosis, and marginal osteophyte formation, especially in the medial compartment of the knee, suggestive of osteoarthrosis.
@@ -70,7 +70,7 @@
 ::mlpatoa::Mild OA changes of left patellofemoral joint with joint space narrowing and marginal osteophyte formation.
 ::mbpatoa::Mild OA changes of bilateral patellofemoral joints with joint space narrowing and marginal osteophyte formation.
 ::patok::No lateral tilting or subluxation of patella. {Enter}No patellofemoral (PF) joint space narrowing.
-::bpatok::- No lateral tilting or subluxation of the bilateral patellae.{Enter}- No patellofemoral (PF) joint space narrowing.
+::bpatok::- No lateral tilting or subluxation of both patellae.{Enter}- No patellofemoral (PF) joint space narrowing.
 ::lpatok::- No lateral tilting or subluxation of left patella.{Enter}- No patellofemoral (PF) joint space narrowing.
 ::rpatok::- No lateral tilting or subluxation of right patella.{Enter}- No patellofemoral (PF) joint space narrowing.
 ::bpats::Lateral subluxation of bilateral patellae, with severe patellofemoral (PF) joint space narrowing at lateral facet.
@@ -191,7 +191,7 @@
 ::ltka1::status post left total knee arthroplasty, without loosening.
 ::ltkar::status post recent left total knee arthroplasty.{Enter}A drain in the left knee region.{Enter}Soft tissue swelling in the left knee region.
 ::btka::status post bilateral total knee arthroplasties.
-::btka0::status post bilateral total knee arthroplasty.{Enter}Drains in the bilateral knee regions.
+::btka0::status post bilateral total knee arthroplasty.{Enter}Drains in both knee regions.
 ::btka1::status post bilateral total knee arthroplasty, without loosening.
 
 ::js::joint space
@@ -229,7 +229,7 @@
 ::lwsts::Soft tissue swelling around the left wrist.
 ::mrwsts::Mild soft tissue swelling around the right wrist.
 ::mlwsts::Mild soft tissue swelling around the left wrist.
-::sijok::No evidence of blurring, sclerosis, or bone erosion in the bilateral sacroiliac joints.
+::sijok::No evidence of blurring, sclerosis, or bone erosion in both sacroiliac joints.
 ::wgd::wedge deformity
 ::awgd::anterior wedge deformity
 ::opc::osteoporotic changes
@@ -310,7 +310,7 @@ Return
 ::lsct::A linear calcification over the superolateral aspect of left shoulder, in favor of calcific tendinopathy.
 ::lasts::Soft tissue swelling over the left ankle region.
 ::rasts::Soft tissue swelling over the right ankle region.
-::basts::Soft tissue swelling over the bilateral ankle regions.
+::basts::Soft tissue swelling over both ankle regions.
 ::lammf::Medial malleolar fracture of left ankle.
 ::lalmf::Lateral malleolar fracture of left ankle.
 ::labmf::Bimalleolar fracture of left ankle.
@@ -499,7 +499,7 @@ Return
 (
 Bone age study:
 
-TECHNIQUE: Single frontal view of the bilateral hands
+TECHNIQUE: Single frontal view of both hands
 
 FINDINGS:
 Sex: %sex%

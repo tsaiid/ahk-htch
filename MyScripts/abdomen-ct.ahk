@@ -62,7 +62,7 @@
 ::rthrl::status post right total hip replacement. The evaluation of pelvic cavity may be limited due to its beam hardening artifacts.
 ::bthrl::status post bilateral total hip replacements. The evaluation of pelvic cavity may be limited due to its beam hardening artifacts.
 ::actaccll::Mild gallbladder wall thickening without GB distention or pericholecystic fat stranding. Acute cholecystitis is less likely.
-::actclc::Mild subpleural reticulation and interlobular septal thickening in the bilateral lower lungs, in favor of chronic inflammatory changes.
+::actclc::Mild subpleural reticulation and interlobular septal thickening in both lower lungs, in favor of chronic inflammatory changes.
 ::hvpvok::The major hepatic and portal veins are patent.
 ::sacds::Small amount of ascites in the cul-de-sac.
 ::macds::Minimal amount of ascites in the cul-de-sac.
@@ -1170,7 +1170,7 @@ Others:
 - Pancreas: unremarkable
 
 - Lungs:
-  > Some tiny subpleural nodules in the bilateral lungs, with adjacent interlobular septal thickening, probably chronic inflammatory changes. However, lung metastasis cannot be totally excluded. Follow-up is suggested.
+  > Some tiny subpleural nodules in both lungs, with adjacent interlobular septal thickening, probably chronic inflammatory changes. However, lung metastasis cannot be totally excluded. Follow-up is suggested.
   > Mild ill-defined ground-glass opacities in the RML and left lingular lobe, probably insufficient inspiration related changes. (Scanning in prone position.)
 - Cardiomegaly; mild LV hypertrophy.
 - Mediastinum: A few slightly enlarged lymph nodes with coarse calcifications, in favor of chronic inflammatory changes.
@@ -1395,7 +1395,7 @@ status post Foley catheterization. The urinary bladder is not distended enough, 
 On NG tube.
 The liver, spleen, pancreas, adrenals, kidneys are unremarkable.
 No retroperitoneal or mesenteric lymphadenopathy.
-Subsegmental atelectasis in the bilateral lower lungs.
+Subsegmental atelectasis in both lower lungs.
 
 IMPRESSION:
 Stercoral colitis. No evidence of perforation.
@@ -1456,9 +1456,9 @@ Mild GB wall edema is noted, without GB distention, probably also secondary to t
 
 The adrenals and kidneys are unremarkable.
 s/p Foley catheterization.
-Two thin-wall cystic lesions at the bilateral adnexa, size up to 6.5 cm. No mural nodule or thickened internal septum noted.
+Two thin-wall cystic lesions at both adnexa, size up to 6.5 cm. No mural nodule or thickened internal septum noted.
 
-Subsegmental atelectasis in the bilateral lower lungs.
+Subsegmental atelectasis in both lower lungs.
 
 IMPRESSION:
 1. Diffuse edematous changes of the GI tract. DDx: Portal hypertensive gastropathy / enteropathy / colopathy, acute gastroenterocolitis, pseudomembranous colitis (may not involve stomach and small intestine). Clinical correlation is suggested.

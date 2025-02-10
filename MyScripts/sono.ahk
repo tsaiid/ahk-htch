@@ -7,9 +7,9 @@
 
 ;; Sono, Upper Abdomen
 ::slcpd::Heterogeneous hyperechoic liver parenchyma echo pattern, suspicious chronic parenchymal disease.
-::slfl::Coarsening and hyperechoic liver parenchyma echo pattern, in favor of fatty liver changes.
+::slfl::Coarsening and hyperechoic echo pattern of the liver parenchyma, suggestive of fatty liver changes.
 ::slfll::Coarsening and hyperechoic liver parenchyma echo pattern without focal lesion noted, in favor of fatty liver changes. It may mask lesions, especially in the deep region.
-::slmfl::Slightly increased hyperechoic liver parenchyma, in favor of mild fatty liver changes.
+::slmfl::Slightly increased hyperechoic changes in the liver parenchyma, suggestive of mild fatty liver changes.
 ::slc::Irregular surface of the liver and coarsening changes of the parenchyma, indicating cirrhosis.
 ::slmc::Mildly irregular surface of the liver and coarsening changes of the parenchyma, indicating mild cirrhosis.
 ::sngb::The gallbladder is not seen, may be due to previous cholecystectomy.
@@ -60,13 +60,13 @@
 ::ltl::left thyroid lobe
 ::lutl::upper portion of left thyroid lobe
 ::lltl::lower portion of left thyroid lobe
-::btl::bilateral thyroid lobes
+::btl::both thyroid lobes
 ::stwnl::The sizes of thyroid gland are within normal limits.
 ::stlok::The left thyroid lobe is unremarkable.
 ::strok::The right thyroid lobe is unremarkable.
 ::stblnok::Bilateral neck lymph nodes noted with hila, favored benign lymph nodes.
 ::stblnok1::No definite bulky neck lymphadenopathy is noted.
-::stbrln::Some slightly enlarged lymph nodes with preserved hilar structure at the bilateral neck regions are noted, probably reactive lymph nodes.
+::stbrln::Some slightly enlarged lymph nodes with preserved hilar structure at both neck regions are noted, probably reactive lymph nodes.
 ::tr1::TI-RADS TR1, benign.
 ::tr2::TI-RADS TR2, not suspicious.
 ::tr3::TI-RADS TR3, mildly suspicious.
@@ -74,9 +74,9 @@
 ::tr5::TI-RADS TR5, highly suspicious.
 ::trnofu::Because the size does not reach the lower limit in this TI-RADS category, routine follow-up may not be recommended.
 ::trnofus::Because the sizes do not reach the lower limits in each TI-RADS category, routine follow-up may not be recommended.
-::trnofus1::Several other tiny cystic, spongiform, and solid nodules in the bilateral thyroid lobes. Because the sizes do not reach the lower limits in each TI-RADS category, routine follow-up may not be recommended.
+::trnofus1::Several other tiny cystic, spongiform, and solid nodules in both thyroid lobes. Because the sizes do not reach the lower limits in each TI-RADS category, routine follow-up may not be recommended.
 ::trnofna::Because the size does not reach the lower limit in this TI-RADS category, FNA may not be recommended.
-::trnofna1::Several other small cystic, spongiform, and solid nodules in the bilateral thyroid lobes. Because the sizes do not reach the lower limits in each TI-RADS category, FNA may not be recommended.
+::trnofna1::Several other small cystic, spongiform, and solid nodules in both thyroid lobes. Because the sizes do not reach the lower limits in each TI-RADS category, FNA may not be recommended.
 ::nofna::No FNA is recommended.
 ::pef::punctate echogenic foci
 ::ttw::taller-than-wide
@@ -137,8 +137,8 @@ Return
 (
 - The thyroid gland is slightly diffusely enlarged.
 - There is no abnormal flow pattern noted on color Doppler.
-- Several tiny cystic, spongiform, and solid nodules in the bilateral thyroid lobes.
-- A few small cystic or spongiform nodules in the bilateral thyroid lobes, probably benign.
+- Several tiny cystic, spongiform, and solid nodules in both thyroid lobes.
+- A few small cystic or spongiform nodules in both thyroid lobes, probably benign.
 - No definite bulky neck lymphadenopathy is noted.
 )
   Paste(MyForm)
@@ -159,7 +159,7 @@ Return
 (
 - The thyroid sizes are within normal limits.
 - There is no abnormal flow pattern noted on color Doppler.
-- Several tiny cystic, spongiform, and solid nodules in the bilateral thyroid lobes. Because the sizes do not reach the lower limits in each TI-RADS category, FNA may not be recommended.
+- Several tiny cystic, spongiform, and solid nodules in both thyroid lobes. Because the sizes do not reach the lower limits in each TI-RADS category, FNA may not be recommended.
 - No definite bulky neck lymphadenopathy is noted.
 )
   Paste(MyForm)
@@ -169,16 +169,16 @@ Return
 ::Is::INDICATION: breast cancer, s/p OP, follow-up.
 ::pm::partial mastectomy
 ::tm::total mastectomy
-::sbbsp::Scars at the bilateral breasts.
-::sbrsp::A scar at the right breast.
-::sblsp::A scar at the left breast.
+::sbbsp::Scars on both breasts.
+::sbrsp::A scar on the right breast.
+::sblsp::A scar on the left breast.
 ::sbrspp::status post previous right BCS (Breast conservation surgery) without evidence of local recurrence.
 ::sblspp::status post previous left BCS (Breast conservation surgery) without evidence of local recurrence.
 ::sbbspp::status post previous bilateral BCS (Breast conservation surgery) without evidence of local recurrence.
 ::sbrspm::status post previous right modified radical mastectomy without evidence of local recurrence.
 ::sblspm::status post previous left modified radical mastectomy without evidence of local recurrence.
 ::sbbspm::status post previous bilateral modified radical mastectomy without evidence of local recurrence.
-::sbbrlns::Slightly enlarged lymph nodes with preserved hilar structure at the bilateral axillae noted, probably reactive lymph nodes.
+::sbbrlns::Slightly enlarged lymph nodes with preserved hilar structure at both axillae noted, probably reactive lymph nodes.
 ::sbrrln::A slightly enlarged lymph node with preserved hilar structure at the right axilla noted, probably a reactive lymph node.
 ::sblrln::A slightly enlarged lymph node with preserved hilar structure at the left axilla noted, probably a reactive lymph node.
 ::sbrrlns::Slightly enlarged lymph nodes with preserved hilar structure at the right axilla noted, probably reactive lymph nodes.
@@ -186,8 +186,8 @@ Return
 ::sbrlnok::Some right axillary lymph nodes with preserved hilar structure and no cortical thickening, in favor of benign nature.
 ::sbllnok::Some left axillary lymph nodes with preserved hilar structure and no cortical thickening, in favor of benign nature.
 ::sbblnok::Some bilateral axillary lymph nodes with preserved hilar structure and no cortical thickening, in favor of benign nature.
-::sbblnok1::No bulky hilum absent lymph node noted at the bilateral axillae.
-::sbblnok2::No definite lymphadenopathy at both axillae noted.
+::sbblnok1::No bulky hilum absent lymph node noted in both axillae.
+::sbblnok2::No definite lymphadenopathy in both axillae.
 ::sbrs::A scar at the right breast.
 ::sbls::A scar at the left breast.
 ::sbrc::Presence of an anechoic cyst at __ o'clock position of right breast, measuring about __ cm in size. Fibrocystic disease considered.
@@ -195,17 +195,20 @@ Return
 ::sbrcs::Presence of several small anechoic cysts at right breast noted. Fibrocystic changes considered.
 ::sblcs::Presence of several small anechoic cysts at left breast noted. Fibrocystic changes considered.
 ;::sbbcs::Presence of several small anechoic cysts at bilateral breasts noted. Fibrocystic changes considered.
-::sbbhen::Several small hypoechoic nodular lesions at the bilateral breasts, probably benign.
+::sbrfc::Small fibrocysts in the right breast.
+::sblfc::Small fibrocysts in the left breast.
+::sbbhen::Several small hypoechoic nodular lesions at both breasts, probably benign.
 ::sblhen::Several small hypoechoic nodular lesions at the left breast, probably benign.
 ::sbrhen::Several small hypoechoic nodular lesions at the right breast, probably benign.
-::sbbcs::Several small anechoic or hypoechoic nodular lesions in the bilateral breasts, probably fibrocystic changes.
-::sbbcs1::Several small anechoic or hypoechoic lesions in the bilateral breasts, probably fibrocysts and/or fibroadenomas.
-::sbbcs2::Several small anechoic or hypoechoic lesions in the bilateral breasts, probably fibrocysts and/or fibroadenomas. The largest one is about `
-::sbbcs3::Fibrocystic changes over the bilateral breasts.
-::sbbcsfas::Small fibrocysts and fibroadenomas in the bilateral breasts, size up to  cm.{Left 4}
+::sbbcs::Several small anechoic or hypoechoic nodular lesions in both breasts, probably fibrocystic changes.
+::sbbcs1::Several small anechoic or hypoechoic lesions in both breasts, probably fibrocysts and/or fibroadenomas.
+::sbbcs2::Several small anechoic or hypoechoic lesions in both breasts, probably fibrocysts and/or fibroadenomas. The largest one is about `
+::sbbcs0::Fibrocystic changes in both breasts.
+::sbbfc::Small fibrocysts in both breasts.
+::sbbcsfas::Small fibrocysts and fibroadenomas in both breasts, size up to  cm.{Left 4}
 ::sblcsfas::Small fibrocysts and fibroadenomas in the left breast, size up to __ cm.
 ::sbrcsfas::Small fibrocysts and fibroadenomas in the right breast, size up to __ cm.
-::sbbd::Mild dilatation of the lactiferous ducts in the bilateral breasts.
+::sbbd::Mild dilatation of the lactiferous ducts in both breasts.
 ::sbrd::Mild dilatation of the lactiferous ducts in the right breast.
 ::sbld::Mild dilatation of the lactiferous ducts in the left breast.
 ::sbb1::ACR-BIRADS 5th ed., category 1. Negative.
@@ -220,13 +223,13 @@ Return
 ::sblfa::Presence of an oval, smooth-bordered, hypoechoic nodular lesion, measuring about __ x __ cm in size, at __ o'clock position of left breast, __ cm from the nipple. More likely benign nature such as fibroadenoma.
 ::sbrfas::Presence of several oval, smooth-bordered, hypoechoic nodular lesions, up to __ cm in size, in the right breast. More likely benign nature such as fibroadenomas.
 ::sblfas::Presence of several oval, smooth-bordered, hypoechoic nodular lesions, up to __ cm in size, in the left breast. More likely benign nature such as fibroadenomas.
-::sbbfas::Presence of several oval, smooth-bordered, hypoechoic nodular lesions, up to __ cm in size, in the bilateral breasts. More likely benign nature such as fibroadenomas.
+::sbbfas::Presence of several oval, smooth-bordered, hypoechoic nodular lesions, up to __ cm in size, in both breasts. More likely benign nature such as fibroadenomas.
 ::sblok::The left breast is unremarkable.
 ::sbrok::The right breast is unremarkable.
 ::sbbok::The bilateral breasts are unremarkable.
 ::sblok1::No focal lesion in the left breast.
 ::sbrok1::No focal lesion in the right breast.
-::sbbok1::No focal lesion in the bilateral breasts.
+::sbbok1::No focal lesion in both breasts.
 ::sbrl::at __ o'clock position of right breast, __ cm from the nipple.
 ::sbll::at __ o'clock position of left breast, __ cm from the nipple.
 ::sbrca::
@@ -504,7 +507,7 @@ Return
 ::sdvtok::
   MyForm =
 (
-The deep veins of lower limb are patent, from femoral to popliteal level. No evidence of deep vein thrombosis.
+The deep veins of the lower limb are patent, from the femoral to the popliteal level. No evidence of deep vein thrombosis.
 )
   Paste(MyForm)
 Return
@@ -520,7 +523,7 @@ Return
 ::spadok::
   MyForm =
 (
-The major arteries of lower limb are patent, without significant luminal stenosis. The dorsalis pedis and plantar arterial flow are also detected.
+The major arteries of the lower limb are patent, without significant luminal stenosis. Arterial flow in the dorsalis pedis and plantar arteries is also detected.
 )
   Paste(MyForm)
 Return

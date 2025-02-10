@@ -401,7 +401,7 @@ Applicable previous CT of brain: no
 
 FINDINGS:
 - Acute intracranial hemorrhage in the right basal ganglion and thalamus, size about 4.3 x 2.8 x 3.6 cm, suspicious hypertensive ICH.
-- The ICH ruptured into the ventricular system, causing intraventricular hemorrhage in the bilateral lateral ventricles, the third and fourth ventricles.
+- The ICH ruptured into the ventricular system, causing intraventricular hemorrhage in both lateral ventricles, the third and fourth ventricles.
 - Mild mass effect compressing the right lateral ventricle, and mild midline shift to left.
 
 - No obvious fracture of the skull base and the skull.
@@ -661,7 +661,7 @@ FINDINGS:
 
 On endotracheal tube.
 
-Presence of fracture in the bilateral lateral orbital bony wall and orbital floor, bilateral zygoma and zygoma arch.
+Presence of fracture in both lateral orbital bony wall and orbital floor, bilateral zygoma and zygoma arch.
 
 Presence of displaced fracture in the anterior and posterior walls of bilateral maxillary sinuses.
 
@@ -736,7 +736,7 @@ MRA shows no significant vascular stenosis in the major intracranial arteries or
 No evidence of aneurysm or arterial-venous malformation (AVM) noted near the circle of Willis region.
 
 MRA shows multiple focal mild irregular luminal stenoses over the major intracranial arteries, probably due to atherosclerosis.
-MRA shows multiple foci of stenoses in the intracranial portion of the bilateral internal carotid arteries.
+MRA shows multiple foci of stenoses in the intracranial portion of both internal carotid arteries.
 
 MRA shows presence of high grade stenosis or occlusion over the right/left carotid siphon and distal M1 of right/left MCA, with paucity of the branches of the right/left MCA noted.
 
@@ -818,7 +818,7 @@ Presence of several tiny hyperintensities in the periventricular white matter re
 
 The bilateral lateral ventricles showed symmetrical without dilatation.
 
-MRA show that no evidence of occlusion or high grade stenosis in the intracranial portion of the internal carotid artery and vertebral basilar artery, and main trunk of the bilateral anterior cerebral arteries and middle cerebral arteries.
+MRA show that no evidence of occlusion or high grade stenosis in the intracranial portion of the internal carotid artery and vertebral basilar artery, and main trunk of both anterior cerebral arteries and middle cerebral arteries.
 
 No definite abnormal signal intensity tumor mass lesion in the brain noted including supratentorial cerebral hemisphere and infratentorial cerebellum and brain stem region.
 
@@ -845,7 +845,7 @@ Intracranial MRA with 3D TOF and focus on the circle of Willis showed:
 Previous MRI of brain: none
 
 FINDINGS:
-No evidence of high signal intensity on DWI and lower apparent diffusion coefficient in the bilateral hippocampal regions.
+No evidence of high signal intensity on DWI and lower apparent diffusion coefficient in both hippocampal regions.
 
 No definite abnormal signal intensity or tumor mass lesion in the brain noted.
 No definite abnormal signal intensity changes in the brain parenchyma.
@@ -898,7 +898,7 @@ Post contrast study showed no abnormal enhancing lesion in the brain and no abno
 
 MRA shows no evidence of aneurysm or arterial-venous malformation (AVM) noted near the circle of Willis regions.
 
-MRA shows no evidence of occlusion or high grade stenosis in the intracranial portion of the internal carotid artery and basilar artery, and main trunk of the bilateral anterior cerebral arteries and middle cerebral arteries.
+MRA shows no evidence of occlusion or high grade stenosis in the intracranial portion of the internal carotid artery and basilar artery, and main trunk of both anterior cerebral arteries and middle cerebral arteries.
 
 IMPRESSION:
 No significant intracranial findings
@@ -920,7 +920,7 @@ Intracranial MRA with 3D TOF and focus on the circle of Willis showed:
 Previous MRI of brain: none
 
 FINDINGS:
-Multiple enhanced nodules and masses over the bilateral cerebra and cerebella, and brainstem, c/w brain metastasis.
+Multiple enhanced nodules and masses over both cerebra and cerebella, and brainstem, c/w brain metastasis.
 The right frontal and bilateral occipital lobe lesions are larger, size about 2.5-2.8 cm, show cystic changes, and have obvious perifocal edema.
 
 A 2.8-cm enhancing nodular lesion at the left cerebellar hemisphere, with perifocal edema, suggestive of brain metastasis.
@@ -931,7 +931,7 @@ No evidence of high signal intensity on DWI and lower apparent diffusion coeffic
 No abnormal signal intensity changes in the brain and brainstem noted.
 
 Presence of several tiny hyperintensities in the periventricular white matter regions on T2WI and FLAIR, which may be gliosis, demyelination or tiny old ischemia or tiny previous brain insult.
-Several nonspecific tiny hyperintensities in the bilateral periventricular and subcortical white matter regions on T2WI and FLAIR (unidentified bright objects).
+Several nonspecific tiny hyperintensities in both periventricular and subcortical white matter regions on T2WI and FLAIR (unidentified bright objects).
 
 Mild dilatation of ventricular system and sulcal widening of bilateral cerebral hemispheres noted, in favor of mild brain atrophy.
 The bilateral lateral ventricles showed symmetrical without dilatation.
@@ -946,7 +946,7 @@ Left fetal type posterior cerebral artery is noted.
 MRA shows
 - A suspicious aneurysm at the anterior communicating artery (Ser/Img: 9/63), size about 2 mm. Suggest correlate with DSA.
 - No evidence of aneurysm or arterial-venous malformation (AVM) noted near the circle of Willis regions.
-- No evidence of occlusion or high grade stenosis in the intracranial portion of the internal carotid artery and basilar artery, and main trunk of the bilateral anterior cerebral arteries and middle cerebral arteries.
+- No evidence of occlusion or high grade stenosis in the intracranial portion of the internal carotid artery and basilar artery, and main trunk of both anterior cerebral arteries and middle cerebral arteries.
 - Left fetal type posterior cerebral artery.
 - Hypoplasia of A1 portion of left anterior cerebral artery.
 )
@@ -1015,9 +1015,9 @@ The high resolution SWI shows absence of the normal appearance of nigrosome-1 wi
 
 No evidence of high signal intensity on DWI and lower apparent diffusion coefficient suggesting acute ischemia infarction in the brain and brainstem noted.
 
-Multiple tiny T2 hyperintensity spots over the bilateral basal ganglia, in favor of dilated perivascular spaces.
+Multiple tiny T2 hyperintensity spots over both basal ganglia, in favor of dilated perivascular spaces.
 
-Several nonspecific tiny hyperintensities in the bilateral subcortical and deep white matter regions on T2WI and FLAIR (unidentified bright objects).
+Several nonspecific tiny hyperintensities in both subcortical and deep white matter regions on T2WI and FLAIR (unidentified bright objects).
 Presence of mild confluent symmetric periventricular hyperintensity on T2WI and FLAIR noted, the subcortical arteriosclerotic encephalopathy (leukoaraiosis) considered.
 
 No definite abnormal signal intensity tumor mass lesion in the brain noted including supratentorial cerebral hemisphere and infratentorial cerebellum and brain stem region.
@@ -1057,7 +1057,7 @@ The high resolution SWI shows normal appearance of the substantia nigra (present
 
 No evidence of high signal intensity on DWI and lower apparent diffusion coefficient suggesting acute ischemia infarction in the brain and brainstem noted.
 
-Multiple tiny T2 hyperintensity spots over the bilateral basal ganglia, in favor of dilated perivascular spaces.
+Multiple tiny T2 hyperintensity spots over both basal ganglia, in favor of dilated perivascular spaces.
 
 Presence of mild confluent symmetric periventricular hyperintensity on T2WI and FLAIR noted, the subcortical arteriosclerotic encephalopathy (leukoaraiosis) considered.
 

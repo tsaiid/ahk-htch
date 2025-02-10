@@ -442,7 +442,7 @@ HeliosBtnNormalCXR:
     normalFindingStr =
 ( Join`r`n
 The heart size is normal.
-No specific finding in the bilateral lung fields.
+No specific finding in both lung fields.
 Bilateral CP angles are clear and sharp.
 The thoracic cage and bones are generally intact.
 )
@@ -479,7 +479,7 @@ HeliosBtnPcuNormalCXR:
     fd_str =
 (
 No abnormal contour or soft tissue shadow in the mediastinum.
-No significant pleural thickening or abnormal shadow is noted in the bilateral lung fields.
+No significant pleural thickening or abnormal shadow is noted in both lung fields.
 Bilateral costophrenic angles are clear and sharp.
 The heart size is normal.
 The thoracic cage and bones are generally intact.

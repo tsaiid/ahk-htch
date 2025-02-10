@@ -27,7 +27,7 @@
 ::bpcn::status post bilateral percutaneous nephrostomies.
 ::rfcvp::Central venous catheter is in place via the right femoral vein.
 ::lfcvp::Central venous catheter is in place via the left femoral vein.
-::bfcvp::Central venous catheters are in place via the bilateral femoral vein.
+::bfcvp::Central venous catheters are in place via both femoral vein.
 ::ki::Obvious small bowel gas, may be due to paralytic ileus.
 ::ki2::Focal dilated bowel loops, probably ileus or partial bowel obstruction.
 ::kiafl::Mildly dilated bowel loops with several air-fluid levels, probably partial bowel obstruction or ileus.

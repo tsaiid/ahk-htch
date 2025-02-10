@@ -97,7 +97,7 @@ PROCEDURE AND FINDINGS:
 - Aortography and angiography of bilateral internal iliac arteries were performed to identify the uterine arteries.
 - Before embolization, Pethidine was given.
 - The left uterine artery was embolized with Gelfoam slurry, followed by right uterine artery.
-- The follow-up internal iliac angiography shows decreased blood flow of the bilateral uterine arteries.
+- The follow-up internal iliac angiography shows decreased blood flow of both uterine arteries.
 - The angiocatheter and sheath were removed, and hemostasis of puncture site was achieved by manual compression with a Coreleader Chitosan wound dressing.
 
 -- Pelvic fracture, no active bleeding
@@ -397,7 +397,7 @@ FINDINGS:
 - Splenomegaly.
 - Lipiodol retention in the gallbladder wall. Post embolization cholecystitis may occur. Clinical correlation and follow-up are suggested.
 - High-attenuation in the atelectatic lung, suspicious Lipiodol emboli.
-- No obvious Lipiodol retention in the bilateral lower lungs.
+- No obvious Lipiodol retention in both lower lungs.
 - No abnormal Lipiodol retention in the GI tract.
 
 IMPRESSION:

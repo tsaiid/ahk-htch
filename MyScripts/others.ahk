@@ -139,6 +139,8 @@
 ::uf::uterine fibroid
 ::ppss::prominent portosystemic shunts
 ::sp::status post `
+::ma::measures approximately `
+::ma1::measuring approximately `
 
 ::pl::possibly `
 ::pb::probably `
@@ -256,7 +258,7 @@ Return
 ::csd::considered
 ::spd::suspected
 ::so::suspicion of `
-::su::size up to `
+::su::with a size up to `
 ::ic::inflammatory changes
 ::infl::inflammation
 ::cd::consolidation
