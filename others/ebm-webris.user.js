@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20250130.1
+// @version      20250210.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -126,6 +126,10 @@
         return filteredRows;
     }
 
+    function getTabName() {
+        return document.querySelector('div.flex.items-center.text-20 div.text-primary')?.textContent;
+    }
+
     function isAbdCT(examName) {
         const abdCTList = ['Abdomen to Pelvis CT', 'Abdomen  Liver Triple Phase CT', 'Abdomen  Liver 4 Phase CT',
                            'ABDOMEN  Lymph  Nodes   CT', 'Colon cancer (Abdomen & Pelvis)-CT',
@@ -183,7 +187,7 @@
         if (ev.altKey && (ev.key === ']' || ev.key === '[')) {
             console.log("Alt+] or Alt+[: find next/prev report");
             // check which tab is active
-            const tabName = document.querySelector('div.flex.items-center.text-20 div.text-primary')?.textContent;
+            const tabName = getTabName();
             if (tabName == "歷史報告") {
                 //const currExamName = getCurrExamName();
                 const currTr = document.querySelector('#frameHistory tr.text-secondary');
@@ -414,13 +418,16 @@
         // Remap hotkey to Alt+P in AHK
         if (ev.ctrlKey && ev.altKey && ev.key === 'p') {
             console.log("Ctrl+Alt+P: Insert Pathology Date And Report");
-            let pat_date = document.querySelector('tr.text-secondary td:nth-child(2)').textContent;
-            if (pat_date) {
-                pat_date = pat_date.replace(/(\d{4})\/(\d{2})\/(\d{2})/, '$1-$2-$3');
-                const full_pat_report = document.querySelector('div[style="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] textarea').value;
-                const pat_diagnosis = full_pat_report.replace(/.+檢驗後診斷名稱:\n(.+)\n\n報告內容.+$/s, '$1');
-                const formatted_str = `${pat_date}: ${pat_diagnosis}`;
-                document.execCommand('insertText', false, formatted_str);
+            const tabName = getTabName();
+            if (tabName == "病理報告") {
+                let pat_date = document.querySelector('tr.text-secondary td:nth-child(2)').textContent;
+                if (pat_date) {
+                    pat_date = pat_date.replace(/(\d{4})\/(\d{2})\/(\d{2})/, '$1-$2-$3');
+                    const full_pat_report = document.querySelector('div[style="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] textarea').value;
+                    const pat_diagnosis = full_pat_report.replace(/.+檢驗後診斷名稱:\n(.+)\n\n報告內容.+$/s, '$1');
+                    const formatted_str = `${pat_date}: ${pat_diagnosis}`;
+                    document.execCommand('insertText', false, formatted_str);
+                }
             }
         }
         // Ctrl+Alt+D: Insert Prev Exam Date in Y-M-D format
