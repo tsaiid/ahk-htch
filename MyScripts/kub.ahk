@@ -22,9 +22,9 @@
 ::kfn::Small oval nodules with egg-shell calcification in the pelvis, in favor of old fat necrosis.
 ::kgbs::A round opacity in the RUQ of abdomen, suspicious a gallstone. Correlation with sonography is suggested.
 ::kgbss::Round opacities in the RUQ of abdomen, suspicious gallstones. Correlation with sonography is suggested.
-::lpcn::status post left side percutaneous nephrostomy.
-::rpcn::status post right side percutaneous nephrostomy.
-::bpcn::status post bilateral percutaneous nephrostomies.
+::lpcn::Status post left side percutaneous nephrostomy.
+::rpcn::Status post right side percutaneous nephrostomy.
+::bpcn::Status post bilateral percutaneous nephrostomies.
 ::rfcvp::Central venous catheter is in place via the right femoral vein.
 ::lfcvp::Central venous catheter is in place via the left femoral vein.
 ::bfcvp::Central venous catheters are in place via both femoral vein.
@@ -33,18 +33,18 @@
 ::kiafl::Mildly dilated bowel loops with several air-fluid levels, probably partial bowel obstruction or ileus.
 ::kbo::Obvious dilated bowel loops, suspicious bowel obstruction.
 ::kmi::Mildly distended small bowel gas, may be due to mild paralytic ileus.
-::rdj::status post right side double-J ureteral stent.
-::ldj::status post left side double-J ureteral stent.
-::bdj::status post bilateral double-J ureteral stents.
+::rdj::Status post right side double-J ureteral stent.
+::ldj::Status post left side double-J ureteral stent.
+::bdj::Status post bilateral double-J ureteral stents.
 ::rfdl::On double-lumen catheter via right femoral vein.
 ::lfdl::On double-lumen catheter via left femoral vein.
 ::nfa::No evidence of subphrenic free air.
-:c:F::status post Foley catheterization.
-:c:F1::status post Foley catheterization. The urinary bladder is not distended enough, and the evaluation is limited.
-::spiud::status post intrauterine device implantation.
+:c:F::Status post Foley catheterization.
+:c:F1::Status post Foley catheterization. The urinary bladder is not distended enough, and the evaluation is limited.
+::spiud::Status post intrauterine device implantation.
 ::haicok::On HAIC. The tip position shows no migration compared to the previous angiography.
 ::spa::Surgical clips at RLQ of abdomen, in favor of post appendectomy.
-::spa0::status post appendectomy.
+::spa0::Status post appendectomy.
 ::sphaic::Coils at the upper abdomen, may be due to previous hepatic arterial infusion chemotherapy.
 ::maacal::Mild calcification of abdominal aortic wall.
 ::aacal::Calcification of abdominal aortic wall.

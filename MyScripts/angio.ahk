@@ -411,6 +411,7 @@ Return
   MyForm =
 (
 Celiac Angiography and Pre-RFA TAE for HCC
+Celiac Angiography and Pre-RFA TAE for Liver Metastasis
 
 Anesthesia: local
 Approach: right femoral artery
@@ -420,22 +421,29 @@ Embolizer: Lipiodol
 Embolizer: Lipiodol, Gelfoam slurry
 
 PROCEDURE AND FINDINGS:
-Angiography of celiac trunk, common hepatic artery, left hepatic artery, right hepatic artery were performed.
+- Angiograms of left gastric artery, celiac trunk, common hepatic artery, right hepatic artery, and left hepatic artery were performed.
 
-A tumor vascular blush is noted in the left lobe of liver, supplied by left hepatic artery.
-
-DynaCT was used to check the amount of Lipiodol retention.
+- A tumor vascular blush is noted in the left lobe of liver, supplied by left hepatic artery.
+- No definite tumor vascular blush is noted in the liver.
 
 - Selective embolization was performed:
-  + LHA: 3 + 2 ml of Lipiodol.
+- Selective embolizations were performed:
+--> LHA: 4 ml of Lipiodol.
+--> RHA: 6 ml of Lipiodol.
+
+DynaCT was used to check the amount of Lipiodol retention.
 
 The angiocatheter and sheath were removed, and hemostasis of the puncture site was achieved by manual compression with a Coreleader Chitosan wound dressing.
 The angiocatheter and sheath were removed, and hemostasis of the puncture site was achieved by manual compression.
 
 The patient was then transferred to CT room for RFA under general anesthesia.
+The patient was then transferred to CT room for MWA under general anesthesia.
 
 IMPRESSION:
-Pre-TAE for HCC was performed.
+Pre-RFA TAE for HCC was performed.
+Pre-RFA TAE for liver metastasis was performed.
+Pre-MWA TAE for HCC was performed.
+Pre-MWA TAE for liver metastasis was performed.
 )
   Paste(MyForm)
 Return
