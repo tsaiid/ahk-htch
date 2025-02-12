@@ -88,6 +88,7 @@
 ::actapn::Edematous left renal parenchyma, with multifocal hypo-enhanced areas and perirenal fat stranding, suggestive of acute pyelonephritis.
 ::cdiv::colonic diverticula
 ::cdivs::colonic diverticulosis
+::ffs::focal fatty sparing
 ::actluo::Mild left perirenal fat stranding, probably due to urinary obstruction. DDx: superimposed pyelonephritis.
 ::actruo::Mild right perirenal fat stranding, probably due to urinary obstruction. DDx: superimposed pyelonephritis.
 ::acttrok::
