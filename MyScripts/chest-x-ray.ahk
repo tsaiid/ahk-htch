@@ -127,8 +127,8 @@ Return
 ::lpig1::status post left chest pigtail drainage, with decreased pleural effusion.
 ::bpig::status post bilateral chest pigtail drainage.
 ::bpig1::status post bilateral chest pigtail drainage, with decreased pleural effusion.
-::elm::Exaggerated lung markings.
-::selm::Slightly exaggerated lung markings.
+::plm::Prominent lung markings.
+::mplm::Mildly prominent lung markings.
 ::lop0::status post instrument fixation of L-spine.
 ::lple::Blunting of the left costophrenic angle is noted, suspicious for pleural effusion or pleural thickening.
 ::lple1::Blunting of the left costophrenic angle and ground-glass opacities in the left lung are noted, suggestive of pleural effusion.

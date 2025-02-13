@@ -172,24 +172,24 @@
 ::bdhs::Status post bilateral dynamic hip screw fixation.
 ::bdhsl::Status post bilateral dynamic hip screw fixation. The evaluation of pelvic cavity may be limited because of the beam hardening artifacts from hip prosthesis.
 ::rthr::Status post right total hip replacement.
-::rthrr::Status post recent right total hip replacement.{Enter}A drain in the right hip region.{Enter}Soft tissue swelling in the right hip region.
+::rthrr::Status post recent right total hip replacement.{Enter}A drain in place in the right hip region.{Enter}Soft tissue swelling in the right hip region.
 ::lthr::Status post left total hip replacement.
-::lthrr::Status post recent left total hip replacement.{Enter}A drain in the left hip region.{Enter}Soft tissue swelling in the left hip region.
+::lthrr::Status post recent left total hip replacement.{Enter}A drain in place in the left hip region.{Enter}Soft tissue swelling in the left hip region.
 ::bthr::Status post bilateral total hip replacements.
 ::rhba::Status post right hip bipolar hemiarthroplasty.
-::rhbar::Status post right hip bipolar hemiarthroplasty.{Enter}A drain in the right hip region.
+::rhbar::Status post right hip bipolar hemiarthroplasty.{Enter}A drain in place in the right hip region.
 ::rhbal::Status post right hip bipolar hemiarthroplasty. The evaluation of pelvic cavity may be limited because of the beam hardening artifacts from right hip prosthesis.
 ::lhba::Status post left hip bipolar hemiarthroplasty.
-::lhbar::Status post left hip bipolar hemiarthroplasty.{Enter}A drain in the left hip region.
+::lhbar::Status post left hip bipolar hemiarthroplasty.{Enter}A drain in place in the left hip region.
 ::lhbal::Status post left hip bipolar hemiarthroplasty. The evaluation of pelvic cavity may be limited because of the beam hardening artifacts from left hip prosthesis.
 ::bhba::Status post bilateral hip bipolar hemiarthroplasties.
 ::bhbal::Status post bilateral hip bipolar hemiarthroplasties. The evaluation of pelvic cavity may be limited due to its beam hardening artifacts.
 ::rtka::Status post right total knee arthroplasty.
 ::rtka1::Status post right total knee arthroplasty, without loosening.
-::rtkar::Status post recent right total knee arthroplasty.{Enter}A drain in the right knee region.{Enter}Soft tissue swelling in the right knee region.
+::rtkar::Status post recent right total knee arthroplasty.{Enter}A drain in place in the right knee region.{Enter}Soft tissue swelling in the right knee region.
 ::ltka::Status post left total knee arthroplasty.
 ::ltka1::Status post left total knee arthroplasty, without loosening.
-::ltkar::Status post recent left total knee arthroplasty.{Enter}A drain in the left knee region.{Enter}Soft tissue swelling in the left knee region.
+::ltkar::Status post recent left total knee arthroplasty.{Enter}A drain in place in the left knee region.{Enter}Soft tissue swelling in the left knee region.
 ::btka::Status post bilateral total knee arthroplasties.
 ::btka0::Status post bilateral total knee arthroplasty.{Enter}Drains in both knee regions.
 ::btka1::Status post bilateral total knee arthroplasty, without loosening.
