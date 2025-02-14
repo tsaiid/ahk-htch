@@ -257,7 +257,8 @@ Return
 ::csd::considered
 ::spd::suspected
 ::so::suspicion of `
-::su::with a size up to `
+::su::up to 2 cm in size
+::su1::with the largest measuring up to 2 cm in the
 ::ic::inflammatory changes
 ::infl::inflammation
 ::cd::consolidation
