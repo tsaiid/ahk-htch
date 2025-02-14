@@ -391,7 +391,7 @@ Return
 ::suaok::
   MyForm =
 (
-No focal lesion in the liver, GB, spleen, kidney, visible pancreas, and paraaortic region.
+No focal lesion in the liver, GB, spleen, kidney, and visible pancreas.
 )
   Paste(MyForm)
 Return

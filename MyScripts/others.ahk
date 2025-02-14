@@ -116,8 +116,7 @@
 ::d-::density
 ::pcm::parenchyma
 ::pnb::pneumobilia
-::sta::stationary
-::gsta::grossly stationary
+::sta::stable
 ::oh::obstructive hydrocephalus
 ::cex::contrast medium extravasation
 ::woc::without IV contrast medium
@@ -198,7 +197,7 @@ Return
 ::cbs::Suggest correlate with bone scan.
 ::cercp::Suggest correlate with ERCP.
 ::cmrcp::Suggest correlate with MRCP.
-::sgyn::GYN check-up are suggested.
+::sgyn::GYN check-up is suggested.
 ::cgynsono::GYN check-up and sonographic correlation are suggested.
 ::scmp::Suggest compare with previous images if available.
 ::slr3::Suggest repeat or alternative diagnostic imaging 3-6 months later.
