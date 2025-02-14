@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20250213.2
+// @version      20250214.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -105,14 +105,18 @@
     }
 
     function scrollToSelectedItem(selectedTr) {
-        const frameHistory = document.querySelector('#frameHistory');
+        // can be used for both history report and pathology report tables
+        //const frameHistory = document.querySelector('#frameHistory');
+        const tableParentDiv = selectedTr?.parentNode?.parentNode?.parentNode;
         //console.log('tr top: ' + frameHistoryTr[i].offsetTop + '; div top: ' + frameHistory.offsetTop + '; div height: ' + frameHistory.clientHeight + '; div scrollTop: ' + frameHistory.scrollTop);
-        if (selectedTr.offsetTop + selectedTr.clientHeight > frameHistory.scrollTop + frameHistory.clientHeight) {
-            frameHistory.scrollTop = selectedTr.offsetTop;
-        } else if (selectedTr.offsetTop < frameHistory.scrollTop) {
-            frameHistory.scrollTop = (selectedTr.offsetTop + selectedTr.clientHeight < frameHistory.clientHeight)
-                ? 0
+        if (tableParentDiv) {
+            if (selectedTr.offsetTop + selectedTr.clientHeight > tableParentDiv.scrollTop + tableParentDiv.clientHeight) {
+                tableParentDiv.scrollTop = selectedTr.offsetTop;
+            } else if (selectedTr.offsetTop < tableParentDiv.scrollTop) {
+                tableParentDiv.scrollTop = (selectedTr.offsetTop + selectedTr.clientHeight < tableParentDiv.clientHeight)
+                    ? 0
                 : selectedTr.offsetTop;
+            }
         }
     }
 
@@ -226,7 +230,7 @@
                     pathoHistoryTr[i].click();
                     //const frameHistory = document.querySelector('#frameHistory');
                     //console.log('tr top: ' + frameHistoryTr[i].offsetTop + '; div top: ' + frameHistory.offsetTop + '; div height: ' + frameHistory.clientHeight + '; div scrollTop: ' + frameHistory.scrollTop);
-                    //scrollToSelectedItem(pathoHistoryTr[i]);
+                    scrollToSelectedItem(pathoHistoryTr[i]);
                 }
             }
         }
@@ -234,32 +238,67 @@
         // Ctrl+] or Ctrl+[: find next/prev similar report
         if (ev.ctrlKey && (ev.key === ']' || ev.key === '[')) {
             console.log("Ctrl+] or Ctrl+[: find next/prev similar report");
-            const currExamName = getCurrExamName();
-            const currTr = document.querySelector('#frameHistory tr.text-secondary');
-            const frameHistoryTr = getFrameHistoryTr();
-            if (currExamName) {
-                let i = [...frameHistoryTr].indexOf(currTr);
-                let step;
-                if (ev.key === ']') {
-                    i = (i > -1) ? i + 1 : 0;
-                    step = 1;
-                } else {
-                    i = (i > -1) ? i - 1 : frameHistoryTr.length - 1;
-                    step = -1;
-                }
-                let foundSimilar = false;
-                for (; i >= 0 && i < frameHistoryTr.length; i+=step) {
-                    const prevExamName = frameHistoryTr[i].children[4].textContent;
-                    //console.log(prevExamName + ': ' + isRelatedReport(prevExamName, currExamName));
-                    if (isRelatedReport(prevExamName, currExamName)) {
-                        frameHistoryTr[i].click();
-                        scrollToSelectedItem(frameHistoryTr[i]);
-                        foundSimilar = true;
-                        break;
+            // check which tab is active
+            const tabName = getTabName();
+            if (tabName == "歷史報告") {
+                const currExamName = getCurrExamName();
+                const currTr = document.querySelector('#frameHistory tr.text-secondary');
+                const frameHistoryTr = getFrameHistoryTr();
+                if (currExamName) {
+                    let i = [...frameHistoryTr].indexOf(currTr);
+                    let step;
+                    if (ev.key === ']') {
+                        i = (i > -1) ? i + 1 : 0;
+                        step = 1;
+                    } else {
+                        i = (i > -1) ? i - 1 : frameHistoryTr.length - 1;
+                        step = -1;
+                    }
+                    let foundSimilar = false;
+                    for (; i >= 0 && i < frameHistoryTr.length; i+=step) {
+                        const prevExamName = frameHistoryTr[i].children[4].textContent;
+                        //console.log(prevExamName + ': ' + isRelatedReport(prevExamName, currExamName));
+                        if (isRelatedReport(prevExamName, currExamName)) {
+                            frameHistoryTr[i].click();
+                            scrollToSelectedItem(frameHistoryTr[i]);
+                            foundSimilar = true;
+                            break;
+                        }
+                    }
+                    if (!foundSimilar && currTr) {
+                        scrollToSelectedItem(currTr);
                     }
                 }
-                if (!foundSimilar && currTr) {
-                    scrollToSelectedItem(currTr);
+            } else if (tabName == "病理報告") {
+                console.log("tab: 病理報告");
+                const currTr = document.querySelector('div.table-wrp.block.max-h-48 tr.text-secondary');
+                const pathoHistoryTr = getPathoHistoryTr();
+                //console.log(`frameHistoryTr: ` + frameHistoryTr);
+                if (pathoHistoryTr.length) {
+                    let i = [...pathoHistoryTr].indexOf(currTr);
+                    let step;
+                    //i += (ev.key === ']') ? 1 : -1; // if no selection, i will be -1 + 1 = 0;
+                    if (ev.key === ']') {
+                        i = (i > -1) ? i + 1 : 0;
+                        step = 1;
+                    } else {
+                        i = (i > -1) ? i - 1 : pathoHistoryTr.length - 1;
+                        step = -1;
+                    }
+                    let foundSimilar = false;
+                    for (; i >= 0 && i < pathoHistoryTr.length; i+=step) {
+                        const pathoName = pathoHistoryTr[i].children[2].textContent;
+                        //console.log(prevExamName + ': ' + isRelatedReport(prevExamName, currExamName));
+                        if (pathoName.match(/^Surgical pathology Level/)) {
+                            pathoHistoryTr[i].click();
+                            scrollToSelectedItem(pathoHistoryTr[i]);
+                            foundSimilar = true;
+                            break;
+                        }
+                    }
+                    if (!foundSimilar && currTr) {
+                        scrollToSelectedItem(currTr);
+                    }
                 }
             }
         }
@@ -611,11 +650,11 @@
     var foundSimilarReportAccNo = '';
     function forceSameReport(examName) {
         return isSonoCDU(examName) || isSonoBreast(examName) || isSpineCTorMRI(examName) || isChestCT(examName)
-            || needSamePlainFilm.includes(examName);
+        || needSamePlainFilm.includes(examName);
     }
     function isMultiPart(examName) {
         return isChestCT(examName) || isAbdCT(examName) || isAortaCT(examName)
-            || isAngio(examName) || isSpineCTorMRI(examName);
+        || isAngio(examName) || isSpineCTorMRI(examName);
     }
     function highlightSimilarExamAndClickLatest(jNode) {
         const currExamName = getCurrExamName();
