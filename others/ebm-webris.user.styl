@@ -1,6 +1,6 @@
 ﻿/* ==UserStyle==
 @name           EBM WebRIS Enhanced Style
-@version        20250129.3
+@version        20250214.1
 @namespace      ebm-webris-htch
 @description    Enhanced UI experience for EBM WebRIS
 @author         I-Ta Tsai
@@ -342,6 +342,12 @@ url-prefix("http://10.2.2.160:8080/") {
         div[style='height: 870px; width: 41.6667%; left: 0%; top: 60px;'] textarea[style*="height: 514px;"] {
             height: 531px !important;
         }
+    }
+    /* 因為 thead fix 在上會有一個小縫 */
+    div.table-wrp.block.max-h-48 > table {
+        border-collapse: separate;
+        border-spacing: 0;
+        border-width: 0;
     }
 
 
