@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20250214.1
+// @version      20250217.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -289,7 +289,7 @@
                     for (; i >= 0 && i < pathoHistoryTr.length; i+=step) {
                         const pathoName = pathoHistoryTr[i].children[2].textContent;
                         //console.log(prevExamName + ': ' + isRelatedReport(prevExamName, currExamName));
-                        if (pathoName.match(/^Surgical pathology Level/)) {
+                        if (pathoName.match(/^Surgical pathology Level|第四級外科病理/)) {
                             pathoHistoryTr[i].click();
                             scrollToSelectedItem(pathoHistoryTr[i]);
                             foundSimilar = true;
