@@ -190,19 +190,19 @@ Return
 ::cpes::Correlation with panendoscopy is suggested.
 ::csono::Correlation with sonography is suggested.
 ::ccsono::Clinical and sonographic correlation are suggested.
-::ctrus::Suggest correlate with transrectal ultrasonography.
-::cdsa::Suggest correlate with DSA.
-::clab::Suggest correlate with Lab data.
-::coi::Suggest correlate with other imaging modality.
-::cbs::Suggest correlate with bone scan.
-::cercp::Suggest correlate with ERCP.
-::cmrcp::Suggest correlate with MRCP.
+::ctrus::Correlate with transrectal ultrasonography is suggested.
+::cdsa::Correlation with DSA is suggested.
+::clab::Correlation with Lab data is suggested.
+::coi::Correlation with other imaging modalities is suggested.
+::cbs::Correlation with bone scan is suggested.
+::cercp::Correlation with ERCP is suggested.
+::cmrcp::Correlation with MRCP is suggested.
 ::sgyn::GYN check-up is suggested.
 ::cgynsono::GYN check-up and sonographic correlation are suggested.
 ::scmp::Suggest compare with previous images if available.
 ::slr3::Suggest repeat or alternative diagnostic imaging 3-6 months later.
 ::slr4::Suggest multidisciplinary discussion for tailored workup (may include biopsy).
-::sop::Suggest correlate with OP history.
+::sop::Correlation with OP history is suggested.
 ::sfna::FNA is suggested.
 
 ;; Limitations
