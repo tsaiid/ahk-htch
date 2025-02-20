@@ -119,17 +119,17 @@ Return
 ::tr::Tracheostomy tube in place.
 ::ng::NG tube in place.
 ::og::NG/OG tube in place.
-::vps::status post VP shunting.
-::lps::status post LP shunting.
-::rpig::status post right chest pigtail drainage.
-::rpig1::status post right chest pigtail drainage, with decreased pleural effusion.
-::lpig::status post left chest pigtail drainage.
-::lpig1::status post left chest pigtail drainage, with decreased pleural effusion.
-::bpig::status post bilateral chest pigtail drainage.
-::bpig1::status post bilateral chest pigtail drainage, with decreased pleural effusion.
+::vps::Status post VP shunting.
+::lps::Status post LP shunting.
+::rpig::Status post right chest pigtail drainage.
+::rpig1::Status post right chest pigtail drainage, with decreased pleural effusion.
+::lpig::Status post left chest pigtail drainage.
+::lpig1::Status post left chest pigtail drainage, with decreased pleural effusion.
+::bpig::Status post bilateral chest pigtail drainage.
+::bpig1::Status post bilateral chest pigtail drainage, with decreased pleural effusion.
 ::plm::Prominent lung markings.
 ::mplm::Mildly prominent lung markings.
-::lop0::status post instrument fixation of L-spine.
+::lop0::Status post instrument fixation of L-spine.
 ::lple::Blunting of the left costophrenic angle is noted, suspicious for pleural effusion or pleural thickening.
 ::lple1::Blunting of the left costophrenic angle and ground-glass opacities in the left lung are noted, suggestive of pleural effusion.
 ::rple::Blunting of the right costophrenic angle is noted, suspicious for pleural effusion or pleural thickening.
