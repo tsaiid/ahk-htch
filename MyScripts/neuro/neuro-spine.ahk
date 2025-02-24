@@ -8,7 +8,7 @@
 ::mrspm::Presence of mild high signal intensity within the cervical cord at the C5 and C6 spine level on T2WI noted, probably due to the spinal stenosis and/or prior cord injury edema and/or prior cord insult with cord gliosis or small cystic changes.
 ::mrspsmn::Schmorl's node (vertical intravertebral disc herniation) over the `
 ::mrspma::Presence of metallic artifact may limit the evaluation in this area.
-::mrspnom::No evidence of abnormal signal intensity lesion within the visible spinal cord.
+::mrspnom::No evidence of abnormal signal intensity within the visible spinal cord.
 ::mrsppnc::Presence of several perineural cysts over the spinal canal of the upper sacrum level, the biggest one about 2cm.
 ::mrspdjdl::
   MyForm =
