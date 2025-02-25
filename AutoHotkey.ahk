@@ -172,16 +172,8 @@ Return
   ReorderSelectedText(false, true, "+")
 Return
 
-^!*::
-  ReorderSelectedText(false, true, "--*")
-Return
-
-^!-::
-  ReorderSelectedText(false, true, "---")
-Return
-
-^!+::
-  ReorderSelectedText(false, true, "--+")
+^!>::
+  ReorderSelectedText(false, true, "-->")
 Return
 #IfWinActive  ; ahk_group RIS
 
