@@ -82,7 +82,7 @@ Return
   MyForm =
 (
 Slightly enlarged cardiac shadow.
-Exaggerated lung markings at bilateral lowers, may be due to insufficient inspiration. Clinical correlation is suggested.
+Prominent lung markings at bilateral lowers, may be due to insufficient inspiration. Clinical correlation is suggested.
 
 
 IMPRESSION:
@@ -96,7 +96,7 @@ Return
   MyForm =
 (
 Slightly enlarged cardiac shadow.
-Exaggerated lung markings at bilateral lowers, may be due to insufficient inspiration and/or supine. Clinical correlation is suggested.
+Prominent lung markings at bilateral lowers, may be due to insufficient inspiration and/or supine. Clinical correlation is suggested.
 
 
 IMPRESSION:

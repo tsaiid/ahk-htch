@@ -306,11 +306,11 @@ Return
 ::reoa::OA changes of right elbow.
 ::leoa::OA changes of left elbow.
 ::beoa::OA changes of bilateral elbows.
-::rsct::A linear calcification over the superolateral aspect of right shoulder, in favor of calcific tendinopathy.
-::lsct::A linear calcification over the superolateral aspect of left shoulder, in favor of calcific tendinopathy.
-::lasts::Soft tissue swelling over the left ankle region.
-::rasts::Soft tissue swelling over the right ankle region.
-::basts::Soft tissue swelling over both ankle regions.
+::rsct::A linear calcification in the superolateral aspect of right shoulder, suspicious for calcific tendinopathy.
+::lsct::A linear calcification in the superolateral aspect of left shoulder, suspicious for calcific tendinopathy.
+::lasts::Soft tissue swelling in the left ankle region.
+::rasts::Soft tissue swelling in the right ankle region.
+::basts::Soft tissue swelling in both ankle regions.
 ::lammf::Medial malleolar fracture of left ankle.
 ::lalmf::Lateral malleolar fracture of left ankle.
 ::labmf::Bimalleolar fracture of left ankle.

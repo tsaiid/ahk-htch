@@ -45,8 +45,8 @@ plsp:
   }
   finalStr =
 (
-Post laminectomy, transpedicular screws, rods fixation at %range%.
-Post interbody cage placement at %cage%.
+Status post laminectomy, transpedicular screws, rods fixation at %range%.
+Status post interbody cage placement at %cage%.
 )
   Paste(finalStr)
 Return
@@ -86,8 +86,8 @@ pcsp:
   }
   finalStr =
 (
-Post anterior cervical plate fixation at %range%.
-Post interbody cage placement at %cage%.
+Status post anterior cervical plate fixation at %range%.
+Status post interbody cage placement at %cage%.
 )
   Paste(finalStr)
 Return
