@@ -301,8 +301,11 @@ Return
 ::mraoa::Mild OA changes of right ankle.
 ::mlaoa::Mild OA changes of left ankle.
 ::rwoa::OA changes of right wrist.
+::mrwoa::Mild OA changes of right wrist.
 ::lwoa::OA changes of left wrist.
+::mlwoa::Mild OA changes of left wrist.
 ::bwoa::OA changes of bilateral wrists.
+::mbwoa::Mild OA changes of bilateral wrists.
 ::reoa::OA changes of right elbow.
 ::leoa::OA changes of left elbow.
 ::beoa::OA changes of bilateral elbows.
