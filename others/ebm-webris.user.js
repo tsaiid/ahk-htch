@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20250220.1
+// @version      20250305.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -1001,6 +1001,26 @@
         if (jNode[0].textContent.match(/\*$/)) {
             const reportDrTd = jNode.next().next().next();
             reportDrTd.addClass('dk-incompleted-report');
+            //console.log(reformattedExamDate);
+        }
+    }
+
+    /* highlight recent 1 month patho reports */
+    waitForKeyElements (
+        "div.table-wrp.block.max-h-48 tbody tr td:nth-child(2)"
+        , hightlightRecentPathoReport
+    );
+
+    function hightlightRecentPathoReport(jNode) {
+        //console.log(jNode);
+        //console.log(jNode.val());
+        const inputDate = new Date(jNode[0].textContent);
+        if (isNaN(inputDate)) return false; // 確保輸入是有效的日期
+        const currentDate = new Date();
+        const oneMonthAgo = new Date();
+        oneMonthAgo.setMonth(currentDate.getMonth() - 1);
+        if (inputDate >= oneMonthAgo && inputDate <= currentDate) {
+            jNode.addClass('hl-recent-patho-report');
             //console.log(reformattedExamDate);
         }
     }

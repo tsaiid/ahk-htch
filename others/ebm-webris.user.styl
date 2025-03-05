@@ -1,6 +1,6 @@
 ﻿/* ==UserStyle==
 @name           EBM WebRIS Enhanced Style
-@version        20250214.1
+@version        20250305.1
 @namespace      ebm-webris-htch
 @description    Enhanced UI experience for EBM WebRIS
 @author         I-Ta Tsai
@@ -302,25 +302,26 @@ url-prefix("http://10.2.2.160:8080/") {
     /*  病理報告   */
     /**************/
     /* 改病理報告清單字體 */
-    div[style='height: 870px; width: 41.6667%; left: 0%; top: 60px;'] table > tbody {
+    div.table-wrp.block.max-h-48 table > tbody {
         font-family: "Fira Code", "Source Code Pro";
         font-size: 15px !important;
         font-weight: 500;
     }
-    div[style='height: 870px; width: 41.6667%; left: 0%; top: 60px;'] table > tbody > tr > td:nth-child(1),
-    div[style='height: 870px; width: 41.6667%; left: 0%; top: 60px;'] table > tbody > tr > td:nth-child(2) {
+    div.table-wrp.block.max-h-48 table > tbody > tr > td:nth-child(1),
+    div.table-wrp.block.max-h-48 table > tbody > tr > td:nth-child(2) {
         text-align: center;
+        width: 10em;
     }
-    div[style='height: 870px; width: 41.6667%; left: 0%; top: 60px;'] table > tbody > tr > td:nth-child(3),
-    div[style='height: 870px; width: 41.6667%; left: 0%; top: 60px;'] table > tbody > tr > td:nth-child(5) {
+    div.table-wrp.block.max-h-48 table > tbody > tr > td:nth-child(3),
+    div.table-wrp.block.max-h-48 table > tbody > tr > td:nth-child(5) {
         padding-left: 0.7em;
     }
 
     /* For 1280x1024 screen */
     @media (max-height: 1000px) {
         /* hide Patho No. and Part columns */
-        div[style="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] table[style="width: 100%; font-size: 16px;"] tr td:nth-child(1),
-        div[style="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] table[style="width: 100%; font-size: 16px;"] tr td:nth-child(4) {
+        div.table-wrp.block.max-h-48 table[style="width: 100%; font-size: 16px;"] tr td:nth-child(1),
+        div.table-wrp.block.max-h-48 table[style="width: 100%; font-size: 16px;"] tr td:nth-child(4) {
             display: none;
         }
 
@@ -332,14 +333,14 @@ url-prefix("http://10.2.2.160:8080/") {
     /* For 21:9 screen */
     @media (min-height:1001px) and (max-height:1070px) {
         /* 病理報告的外框 */
-        div[style='height: 870px; width: 41.6667%; left: 0%; top: 60px;'] textarea[style*="height: 514px;"] {
+        div[style="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] textarea[style*="height: 514px;"] {
             height: 481px !important;
         }
     }
     /* For 16:10 screen */
     @media (min-height:1071px) and (max-height:1200px) {
         /* 病理報告的外框 */
-        div[style='height: 870px; width: 41.6667%; left: 0%; top: 60px;'] textarea[style*="height: 514px;"] {
+        div[style="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] textarea[style*="height: 514px;"] {
             height: 531px !important;
         }
     }
@@ -595,6 +596,10 @@ url-prefix("http://10.2.2.160:8080/") {
         color: #EF8089 !important;
     }
 
+    /* Highlight 近期病理報告 */
+    .hl-recent-patho-report {
+        color: rgb(250 219 43) !important;
+    }
 
     /* 四個 finding radio button 改顏色 */
     input[type='radio'][name='chfindcode']:after {
