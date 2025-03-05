@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20250305.1
+// @version      20250305.2
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -832,7 +832,7 @@
         'Chest CT': [
             'Lung cancer (Chest & Upper abdomen)-CT', 'Lung Low Dose CT', 'Lung-Low Dose CT',
             'Chest Pulmonary Arteries CT',
-            'Chest', 'CHEST', 'Chest AP Portable',
+            'Chest', 'CHEST', 'Chest AP Portable', 'Chest PA+lateral(L)',
         ],
         'Lung cancer (Chest & Upper abdomen)-CT': [
             'Chest CT', 'Lung Low Dose CT', 'Lung-Low Dose CT', 'Chest Pulmonary Arteries CT',
