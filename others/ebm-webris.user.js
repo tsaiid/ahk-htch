@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20250305.2
+// @version      20250307.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -999,9 +999,11 @@
         //console.log(jNode);
         //console.log(jNode.val());
         if (jNode[0].textContent.match(/\*$/)) {
-            const reportDrTd = jNode.next().next().next();
-            reportDrTd.addClass('dk-incompleted-report');
-            //console.log(reformattedExamDate);
+            //const reportDrTd = jNode.next().next().next();
+            //reportDrTd.addClass('dk-incompleted-report');
+            jNode.addClass('dk-incompleted-report');
+            jNode.siblings().addClass('dk-incompleted-report');
+            //console.log(reportDrTd);
         }
     }
 
