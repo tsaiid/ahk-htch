@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20250307.1
+// @version      20250308.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -1023,6 +1023,22 @@
         oneMonthAgo.setMonth(currentDate.getMonth() - 1);
         if (inputDate >= oneMonthAgo && inputDate <= currentDate) {
             jNode.addClass('hl-recent-patho-report');
+            //console.log(reformattedExamDate);
+        }
+    }
+
+    /* highlight important patho reports */
+    waitForKeyElements (
+        "div.table-wrp.block.max-h-48 tbody tr td:nth-child(3)"
+        , hightlightImportantPathoReport
+    );
+
+    function hightlightImportantPathoReport(jNode) {
+        //console.log(jNode);
+        //console.log(jNode.val());
+        const pathoName = jNode[0].textContent;
+        if (pathoName.match(/^Surgical pathology Level|第四級外科病理/)) {
+            jNode.addClass('hl-important-patho-report');
             //console.log(reformattedExamDate);
         }
     }
