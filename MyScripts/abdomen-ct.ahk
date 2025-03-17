@@ -55,12 +55,12 @@
 ::na::No obvious ascites.
 ::actuf::A calcified nodule in the uterus, in favor of degenerated uterine fibroid.
 ::actufs::Several calcified nodules in the uterus, in favor of degenerated uterine fibroids.
-::sph0::status post hysterectomy.
-::spp0::status post prostatectomy.
+::sph0::Status post hysterectomy.
+::spp0::Status post prostatectomy.
 ::actncl::*PS. The evaluation is limited especially for solid organs and vascular structure due to absence of contrast enhancement.
-::lthrl::status post left total hip replacement. The evaluation of pelvic cavity may be limited due to its beam hardening artifacts.
-::rthrl::status post right total hip replacement. The evaluation of pelvic cavity may be limited due to its beam hardening artifacts.
-::bthrl::status post bilateral total hip replacements. The evaluation of pelvic cavity may be limited due to its beam hardening artifacts.
+::lthrl::Status post left total hip replacement. The evaluation of pelvic cavity may be limited due to its beam hardening artifacts.
+::rthrl::Status post right total hip replacement. The evaluation of pelvic cavity may be limited due to its beam hardening artifacts.
+::bthrl::Status post bilateral total hip replacements. The evaluation of pelvic cavity may be limited due to its beam hardening artifacts.
 ::actaccll::Mild gallbladder wall thickening without GB distention or pericholecystic fat stranding. Acute cholecystitis is less likely.
 ::actclc::Mild subpleural reticulation and interlobular septal thickening in both lower lungs, in favor of chronic inflammatory changes.
 ::hvpvok::The major hepatic and portal veins are patent.

@@ -272,6 +272,7 @@ Return
 ::brf::Old fractures of the bilateral ribs.
 ::brf1::Fractures of the bilateral ribs.
 ::rok::No obvious rib fracture.
+::bcf::Old fractures of the bilateral clavicles.
 ::rcf::Old fracture of the right clavicle.
 ::lcf::Old fracture of the left clavicle.
 ::sprcf::Previous fracture of the right clavicle, status post internal fixation.
