@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20250310.1
+// @version      20250319.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -828,6 +828,9 @@
         ],
         'Colon cancer (Abdomen & Pelvis)-CT': [
             'Abdomen to Pelvis CT', 'Abdomen  Liver Triple Phase CT', 'Abdomen  Liver 4 Phase CT'
+        ],
+        'Gastric cancer staging(Hydro CT)': [
+            'Abdomen to Pelvis CT',
         ],
         'Chest CT': [
             'Lung cancer (Chest & Upper abdomen)-CT', 'Lung Low Dose CT', 'Lung-Low Dose CT',
