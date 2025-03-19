@@ -100,12 +100,12 @@ sbl:
   if (distance) {
     finalStr =
 (
-at the %laterality% breast, %oclock%'/%distance%cm.
+in the %laterality% breast, %oclock%'/%distance%cm.
 )
   } else {
     finalStr =
 (
-at the %laterality% breast, %oclock%'/subareolar.
+in the %laterality% breast, %oclock%'/subareolar.
 )
   }
   Paste(finalStr)
