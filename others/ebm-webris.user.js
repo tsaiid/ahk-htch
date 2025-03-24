@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20250320.1
+// @version      20250324.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -809,9 +809,9 @@
         'Foot lateral standing(L)': ['Foot AP+oblique(L)', 'Foot lateral(L)', 'Foot AP+lateral(L)'],
 
         // ultrasound
-        'Sono Abdomen': ['腹部超音波，追蹤性', 'Abdominal ultrasound, for follow-up'],
-        'Abdominal ultrasound, for follow-up': ['腹部超音波，追蹤性', 'Sono Abdomen'],
-        'Sono CDU  Kideny': ['Abdominal ultrasound, for follow-up', 'Sono Abdomen'],
+        'Sono Abdomen': ['腹部超音波，追蹤性', 'Abdominal ultrasound, for follow-up', 'Abdomen sono'],
+        'Abdominal ultrasound, for follow-up': ['腹部超音波，追蹤性', 'Sono Abdomen', 'Abdomen sono'],
+        'Sono CDU  Kideny': ['Abdominal ultrasound, for follow-up', 'Sono Abdomen', 'Abdomen sono'],
         'Sono Breasts': ['SonoBreasts', 'Breasts sono',
                          'Mammography L&R', 'Mammography L&R(HPA)限45歲以上', 'Mammography L&R(HPA)', 'MAMMOGRAPHY L&R'],
 
