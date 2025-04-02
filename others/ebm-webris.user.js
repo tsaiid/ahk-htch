@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20250402.1
+// @version      20250402.2
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -436,6 +436,7 @@
             prev_examdate = s.replace(/(\d{4})\/(\d{2})\/(\d{2})/, '$1-$2-$3');
             prev_examdate_pid = getCurrPatId();
             //console.log(prev_examdate);
+            ev.preventDefault();
         }
         // Ctrl+9: Open previous images
         // Remap hotkey to Alt+Esc in AHK
@@ -452,6 +453,7 @@
             if (selectedPrevReport) {
                 selectedPrevReport.dispatchEvent(dblClickEvent);
             }
+            ev.preventDefault();
         }
         // Ctrl+Alt+P: Insert Pathology Date And Report
         // Remap hotkey to Alt+P in AHK
