@@ -5,8 +5,8 @@
 
 #IfWinActive ahk_group RIS
 
-^9::
 /*
+^9::
   ;SoundPlay *-1
   SoundPlay, %A_WinDir%\money.wav
   Send ^s
