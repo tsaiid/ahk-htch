@@ -1,5 +1,5 @@
 ﻿; My RegEx HotStrings
-#Include Lib\Hotstrings.ahk
+#Include <Hotstrings>
 hotstrings("plsp(\d)(\d)\s", "plsp")
 hotstrings("pcsp(\d)(\d)\s", "pcsp")
 hotstrings("sb([rl])l(1[0-2](-\d+)?|[1-9](-\d+)?)\/(\d+)\s", "sbl")

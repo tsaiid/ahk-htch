@@ -1,4 +1,5 @@
 ﻿; Settings
+#Requires AutoHotkey v1.1
 #NoEnv
 #Hotstring EndChars `t
 #Hotstring O
