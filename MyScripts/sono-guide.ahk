@@ -16,6 +16,19 @@ PTCCD was performed in %currDateStr%. A 6 Fr pigtail drain with safety lock was 
   Paste(MyForm)
 Return
 
+::ptccd::
+  MyForm =
+(
+P.T.C.C.D:
+
+- Image guidance: CT
+- Anesthesia: local
+- Drain: 8F pigtail drain with string lock
+- Complication: no
+)
+  Paste(MyForm)
+Return
+
 ::sg-ptccd::
   MyForm =
 (
@@ -29,12 +42,6 @@ Brown, sandy, mucinous, pus like fluid was aspirated and collected for examinati
 
 The fluoroscopy confirmed the drain's location. Then, the drain was fixed with Nylon.
 The whole procedure was smooth, the patient tolerated well, and no immediate complication was noted.
-)
-  Paste(MyForm)
-  SleepThenTab()
-  MyForm =
-(
-PTCCD was done.
 )
   Paste(MyForm)
 Return
