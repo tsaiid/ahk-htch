@@ -276,6 +276,7 @@ Return
 Return
 
 ::lapok::No intrathoracic or intraabdominal lymphadenopathy.
+::metok0::No apparent radiological sign of malignancy related distant metastasis.
 ::metok::No apparent radiological sign of malignancy related lymphadenopathy or distant metastasis.
 
 ::actlapok::
