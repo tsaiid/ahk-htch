@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20250402.2
+// @version      20250418.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -461,7 +461,7 @@
             console.log("Ctrl+Alt+P: Insert Pathology Date And Report");
             const tabName = getTabName();
             if (tabName == "病理報告") {
-                let pat_date = document.querySelector('tr.text-secondary td:nth-child(2)').textContent;
+                let pat_date = document.querySelector('tr.text-secondary td:nth-child(2)')?.textContent;
                 if (pat_date) {
                     pat_date = pat_date.replace(/(\d{4})\/(\d{2})\/(\d{2})/, '$1-$2-$3');
                     const full_pat_report = document.querySelector('div[style="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] textarea').value;
@@ -469,6 +469,8 @@
                     const formatted_str = `${pat_date}: ${pat_diagnosis}`;
                     document.execCommand('insertText', false, formatted_str);
                 }
+            } else if (tabName == "檢驗報告") {
+                console.log('檢驗報告');
             }
         }
         // Ctrl+Alt+D: Insert Prev Exam Date in Y-M-D format
