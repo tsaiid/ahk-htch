@@ -189,7 +189,7 @@ PSCButtonOK:
 ;)
   MyForm =
 (
-- Size: %PrWidth% x %PrLength% x %PrHeight% cm; Volume: %PrVol% ml (length x width x height x 0.52)
+Prostatic size: %PrWidth% x %PrLength% x %PrHeight% cm; Volume: %PrVol% ml (length x width x height x 0.52).
 )
   Gui, Destroy
   WinActivate, ahk_id %hParentWnd%
