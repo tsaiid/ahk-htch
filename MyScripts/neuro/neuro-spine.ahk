@@ -10,6 +10,7 @@
 ::mrspma::Presence of metallic artifact may limit the evaluation in this area.
 ::mrspnom::No evidence of abnormal signal intensity within the visible spinal cord.
 ::mrsppnc::Presence of several perineural cysts over the spinal canal of the upper sacrum level, the biggest one about 2cm.
+::amlf::at multiple levels from `
 ::mrspdjdl::
   MyForm =
 (
