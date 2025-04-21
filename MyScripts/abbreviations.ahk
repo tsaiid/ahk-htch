@@ -5,7 +5,8 @@
 ::pul::pulmonary `
 ::tb::tuberculosis
 ::ntm::nontuberculous mycobacterium
-::asd::atrial septal defect `
+::asd::adjacent segment degeneration
+::asd0::atrial septal defect `
 ::vsd::ventricular septal defect `
 ::pda::patent ductus arteriosus `
 ::mi::myocardial infarction `
