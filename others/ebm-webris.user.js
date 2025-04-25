@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20250418.1
+// @version      20250425.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -473,10 +473,10 @@
                 console.log('檢驗報告');
             }
         }
-        // Ctrl+Alt+D: Insert Prev Exam Date in Y-M-D format
+        // Ctrl+Alt+D: Insert Prev Exam Date Copied
         // Remap hotkey to Alt+D in AHK
         if (ev.ctrlKey && ev.altKey && ev.key === 'd') {
-            console.log("Ctrl+Alt+D: Insert Prev Exam Date (Y-M-D)");
+            console.log("Ctrl+Alt+D: Insert Prev Exam Date Copied");
             //navigator.clipboard.writeText(prev_examdate);
             const curr_pid = getCurrPatId();
             if (curr_pid === prev_examdate_pid) {
@@ -484,16 +484,16 @@
             }
         }
 
-        // Ctrl+Alt+Shift+D: Insert Prev Exam Date in Y/M/D format
+        // Ctrl+Alt+Shift+D: Insert Prev Exam Date Currently Selected
         // Remap hotkey to Alt+Shift+D in AHK
         if (ev.ctrlKey && ev.altKey && ev.key === 'D') {
-            console.log("Ctrl+Alt+D: Insert Prev Exam Date (Y/M/D)");
+            console.log("Ctrl+Alt+D: Insert Prev Exam Date Currently Selected");
             //navigator.clipboard.writeText(prev_examdate);
-            const curr_pid = getCurrPatId();
-            if (curr_pid === prev_examdate_pid) {
-                const [year, month, day] = prev_examdate.split('-');
-                const new_prev_examdate = `${year}/${parseInt(month)}/${parseInt(day)}`;
-                document.execCommand('insertText', false, new_prev_examdate);
+            const tds = document.querySelector('tr.text-secondary')?.querySelectorAll('td');
+            const examdate = tds[0]?.textContent?.replace(/(\d{4})\/(\d{2})\/(\d{2})/, '$1-$2-$3');
+            const modality = tds[2]?.textContent;
+            if (examdate && modality) {
+                document.execCommand('insertText', false, `${examdate} ${modality}`);
             }
         }
 
