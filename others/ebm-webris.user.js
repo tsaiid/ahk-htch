@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20250425.1
+// @version      20250501.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -995,8 +995,8 @@
             //console.log(nextTrTrimmedAccno);
             if (trimmedAccNo === nextTrTrimmedAccno) {
                 const hlClass = 'hl-bundledexam-' + (parseInt(trimmedAccNo) % 3);
-                jNode.first().addClass(hlClass);
-                nextTr.children().eq(4).addClass(hlClass);
+                jNode.first().parent().children().eq(10).addClass(hlClass); // highlight exam name
+                nextTr.children().eq(10).addClass(hlClass);
             }
         }
     }
