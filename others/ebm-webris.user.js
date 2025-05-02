@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20250501.2
+// @version      20250502.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -762,11 +762,11 @@
             'LS spine lateral', 'T-L spine AP+Lat', 'TL spine AP+lateral'
         ],
         'LS spine AP+lateral standing': [
-            'LS spine AP+lateral', 'LS spine AP Lat', 'LS spine dynamic',
+            'LS spine AP+lateral', 'LS spine AP Lat', 'LS spine dynamic', 'LS spine lateral standing',
             'LS spine lateral', 'T-L spine AP+Lat', 'TL spine AP+lateral'
         ],
         'LS spine dynamic': ['LS-spine dynamic', 'LS spine AP+lateral', 'LS spine AP+lateral standing',
-                             'LS spine AP', 'LS spine lateral'],
+                             'LS spine AP', 'LS spine lateral', 'LS spine lateral standing'],
         'LS spine AP': ['LS-spine dynamic', 'LS spine AP+lateral', 'LS spine dynamic', 'LS spine lateral'],
         'LS spine lateral': ['LS-spine dynamic', 'LS spine AP+lateral', 'LS spine dynamic'],
         'LS spine lateral standing': ['LS-spine dynamic', 'LS spine dynamic', 'LS spine AP+lateral'],
