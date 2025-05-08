@@ -284,6 +284,7 @@ Return
 (
 No retroperitoneal or mesenteric lymphadenopathy.
 No pelvic, retroperitoneal or mesenteric lymphadenopathy.
+No pelvic or retroperitoneal lymphadenopathy.
 No obvious intraabdominal lymphadenopathy.
 )
   Paste(MyForm)
