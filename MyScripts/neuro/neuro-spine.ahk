@@ -11,6 +11,8 @@
 ::mrspnom::No evidence of abnormal signal intensity within the visible spinal cord.
 ::mrsppnc::Presence of several perineural cysts over the spinal canal of the upper sacrum level, the biggest one about 2cm.
 ::amlf::at multiple levels from `
+::scin::spinal cord indentation
+::sccp::spinal cord compression
 ::mrspdjdl::
   MyForm =
 (
@@ -299,10 +301,11 @@ SUGGESTION:
   Paste(MyForm)
 Return
 
+::mmrc1::Mild cervical degenerative disc disease, as described above.
 ::mrc1::Cervical spondylosis and degenerative disc disease, with spinal canal and neuroforaminal stenosis, as described above.
 ::mrc2::Cervical spondylosis, spondylolisthesis, and degenerative disc disease, with spinal canal and neuroforaminal stenosis, as described above.
 
-::mrl0::Mild lumbar spondylosis and degenerative disc disease, without significant spinal canal stenosis.
+::mmrl1::Mild lumbar spondylosis and degenerative disc disease, as described above.
 ::mrl1::Lumbar spondylosis and degenerative disc disease, with spinal canal and neuroforaminal stenosis, as described above.
 ::mrl2::Lumbar spondylosis, spondylolisthesis, and degenerative disc disease, with spinal canal and neuroforaminal stenosis, as described above.
 ::mrl3::Lumbar scoliosis, spondylosis, spondylolisthesis, and degenerative disc disease, with spinal canal and neuroforaminal stenosis, as described above.
