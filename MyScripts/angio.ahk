@@ -710,8 +710,8 @@ Materials: 6mm x 10cm balloon, 7F x 26cm double-J stent, 8F x 25cm pigtail drain
 Laterality: left
 
 PROCEDURE AND FINDINGS:
-The percutaneous nephrostomy drain was changed to sheath first.
-Percutaneous nephrostomy was performed first.
+The previously placed PCN was replaced with a sheath.
+Percutaneous nephrostomy was performed.
 The antegrade pyelography showed severe hydronephrosis and hydroureter, with a tight stricture at the junction of middle to lower third ureter.
 Ureteroplasty with balloon dilatation was then performed.
 Double-J stent was placed in an antegrade fashion.
