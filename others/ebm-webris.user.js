@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20250522.1
+// @version      20250528.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -185,7 +185,7 @@
         let pathoReportTab = document.querySelector('div[style="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] > div > div:nth-child(1) > div:nth-child(2) > div:nth-child(1)');
         let labReportTab = document.querySelector('div[style="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] > div > div:nth-child(1) > div:nth-child(3) > div:nth-child(1)');
         let openHisBtn = document.querySelectorAll('div.footer div.pt-1 button')[2];
-        let copyReportBtn = document.querySelector('button[title="複製內容"]');
+        let copyReportBtn = document.querySelector('button[title="複製內容F8"]');
 
         // Alt+] or Alt+[: find next/prev report
         if (ev.altKey && (ev.key === ']' || ev.key === '[')) {
