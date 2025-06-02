@@ -219,6 +219,7 @@
 ::ev::esophageal varices
 ::pkd::polycystic kidney disease
 ::bil::biliary `
+::thad::transient hepatic attenuation difference
 
 ;; Brain
 ::ich::intracranial hemorrhage
