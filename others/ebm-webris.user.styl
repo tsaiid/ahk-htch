@@ -1,6 +1,6 @@
 ﻿/* ==UserStyle==
 @name           EBM WebRIS Enhanced Style
-@version        20250529.1
+@version        20250606.1
 @namespace      ebm-webris-htch
 @description    Enhanced UI experience for EBM WebRIS
 @author         I-Ta Tsai
@@ -101,6 +101,11 @@ url-prefix("http://10.2.2.160:8080/") {
     #app > main > main > div > div.flex-auto > div.h-10 {
         /* height: 35px !important; */
         height: unset !important;
+    }
+
+    /* 把報告區的底色改成 Dracula style */
+    div#quill2Container {
+        background-color: #282a36 !important;
     }
 
     /* 把報告區的 toolbar 拿掉 */
