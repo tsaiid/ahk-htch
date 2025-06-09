@@ -5,8 +5,7 @@
 ::/kd::Decubitus view of the abdomen:{Enter 2}
 
 ::nbp::Non-specific bowel gas pattern.
-::k::The bowel gas pattern, kidney outlines, and psoas muscle contours are unremarkable.
-::kk::The bowel gas pattern is unremarkable.{Enter}No obvious bony lesion.+{Tab}The bowel gas pattern is unremarkable.
+::k::Bowel gas pattern, kidney outlines, and psoas muscle contours are unremarkable.
 ::k2::The bilateral kidney shadows are unremarkable.
 ::k2n::The bilateral kidney shadows are not well depicted due to bowel gas.
 ::k3::The psoas muscle contours are unremarkable.
@@ -17,7 +16,7 @@
 ::kb1::the bowel gas pattern is normal.
 ::kob::The other bowel gas pattern is unremarkable.
 ::kbok::No abnormal bowel dilatation.
-::ks::Mottled gas pattern along colon course is noted, implying fecal residues retention.
+::ks::Mottled gas pattern along the course of the colon is noted, suggestive of fecal residue retention.
 ::kp::Several small calcified nodules in the pelvic cavity are mostly due to phleboliths of the vein.
 ::kfn::Small oval nodules with egg-shell calcification in the pelvis, in favor of old fat necrosis.
 ::kgbs::A round opacity in the RUQ of abdomen, suspicious a gallstone. Correlation with sonography is suggested.
