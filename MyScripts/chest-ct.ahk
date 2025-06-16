@@ -36,6 +36,7 @@
 ::cctpulhtn::Engorged pulmonary trunk with A/P ratio <1. Pulmonary hypertension may be suspected.
 ::aook::No evidence of aortic dissection or aneurysm.
 ::paok::No definite filling defect in the major pulmonary arteries.
+::plok::No pleural effusion.
 ::ccttrok::
   MyForm =
 (
