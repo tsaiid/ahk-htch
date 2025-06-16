@@ -6,6 +6,7 @@ hotstrings("sb([rl])l(1[0-2](-\d+)?|[1-9](-\d+)?)\/(\d+)\s", "sbl")
 hotstrings("([RL])(1[0-2](-\d+)?|[1-9](-\d+)?)\/(\d+)\s", "bl")
 hotstrings("ca([1-9]|[1-8][0-9])\s", "ca")
 hotstrings("([1-9]|[1][0-2])t([1-9]|[1][0-2])\s", "nr")
+hotstrings("(\d{1,2})y([0-9]|1[01])m\s", "age")
 Return
 
 plsp:
@@ -149,4 +150,31 @@ nr:
 %n_start% to %n_end%
 )
   Paste(finalStr)
+Return
+
+age:
+    Years := $1 + 0 ; Convert to number
+    Months := $2 + 0 ; Convert to number
+
+    ; Validate month range
+    If (Months < 0 || Months > 11) {
+        Return
+    }
+
+    ; Handle year pluralization
+    If (Years = 1) {
+        YearPart := Years . " year"
+    } Else {
+        YearPart := Years . " years"
+    }
+
+    ; Handle month pluralization
+    If (Months = 1) {
+        MonthPart := Months . " month"
+    } Else {
+        MonthPart := Months . " months"
+    }
+
+    finalStr := YearPart . " " . MonthPart
+    Paste(finalStr)
 Return
