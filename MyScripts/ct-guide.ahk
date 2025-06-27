@@ -183,9 +183,11 @@ Microwave ablation of liver tumor(>2cm;<=4cm):
 Anesthesia: general
 Position: prone
 Position: right semi-decubitus
+Position: supine
 
 Device: ECO 16G ceramic antenna, 12 mm exposed tip, 15 cm shaft.
 Device: ECO 14G ceramic antenna, 12 mm exposed tip, 15 cm shaft.
+Device: Canyon Suretip antennas, 15G, 11 mm active tip, 18 cm shaft.
 
 Ablation parameter: 40W x 8 min, ablation zone: diameter 33 mm, length 47 mm.
 
