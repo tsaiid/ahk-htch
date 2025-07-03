@@ -1028,6 +1028,7 @@ Percutaneous Transhepatic Cholangiography and Drainage
 
 Devices: 8 Fr Cholangio-Entero-Tube
 Devices: 8 Fr x 35 cm pigtail drain
+Devices: 8 Fr x 35 cm pigtail drain with string lock
 Devices: 8 Fr x 35 cm pigtail drain with string lock and homemade side holes
 Devices: 8.3Fr ring catheter with 20 sideports
 Anesthesia: local
