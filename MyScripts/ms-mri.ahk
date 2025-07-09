@@ -33,6 +33,7 @@
 ::lhbtt::intrasubstance tear of the long head of biceps tendon
 ::mroa::marginal osteophyte formation, irregular joint space narrowing, cartilage loss, subchondral signal intensity changes in the pancompartment of knee, especially the medial compartment, in favor of osteoarthrosis.
 ::bb::bone bruise
+::bmok::No abnormal signal intensity changes in the bone marrow space.
 
 ;; MRI of Knee
 ::mrkr::

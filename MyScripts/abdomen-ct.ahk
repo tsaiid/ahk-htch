@@ -8,7 +8,7 @@
 ::book::No obvious bowel wall thickening or significant bowel dilatation.
 ::btok::No biliary tree dilatation.
 ::btok1::No CBD or IHD dilatation.
-::gbok::No distended gallbladder or GB wall thickening.
+::gbok::No gallbladder distension or wall thickening.
 ::pdok::No pancreatic duct dilatation.
 ::giok::No abnormal bowel wall thickening.
 ::acthcs::Several hepatic cysts, size up to  cm.{Left 4}
