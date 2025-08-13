@@ -129,7 +129,7 @@
 ::ivd::intervertebral disc
 ::vd::varying degrees of `
 ::vs::varying sized `
-::ltls::lower T- to L-spine
+::ltls::lower T-spine to sacrum
 ::ije::increased joint effusion
 ::mije::mildly increased joint effusion
 ::mibe::mildly increased bursal effusion
