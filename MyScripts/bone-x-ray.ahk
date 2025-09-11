@@ -186,10 +186,10 @@
 ::bhbal::Status post bilateral hip bipolar hemiarthroplasties. The evaluation of pelvic cavity may be limited due to its beam hardening artifacts.
 ::rtka::Status post right total knee arthroplasty.
 ::rtka1::Status post right total knee arthroplasty, without loosening.
-::rtkar::Status post recent right total knee arthroplasty.{Enter}A drain in place in the right knee region.{Enter}Soft tissue swelling in the right knee region.
+::rtkar::- Status post recent right total knee arthroplasty.{Enter}- A drain in place in the right knee region.{Enter}- Soft tissue swelling in the right knee region.
 ::ltka::Status post left total knee arthroplasty.
 ::ltka1::Status post left total knee arthroplasty, without loosening.
-::ltkar::Status post recent left total knee arthroplasty.{Enter}A drain in place in the left knee region.{Enter}Soft tissue swelling in the left knee region.
+::ltkar::- Status post recent left total knee arthroplasty.{Enter}- A drain in place in the left knee region.{Enter}- Soft tissue swelling in the left knee region.
 ::btka::Status post bilateral total knee arthroplasties.
 ::btka0::Status post bilateral total knee arthroplasty.{Enter}Drains in both knee regions.
 ::btka1::Status post bilateral total knee arthroplasty, without loosening.
@@ -255,7 +255,7 @@
 ::ob::osseous body
 ::bf::bone fragment
 ::c7::The C7 vertebra is blocked by the shoulder shadow with limited evaluation.
-::c12ok::No evidence of atlanto-axial subluxation or odontoid fracture.
+::c12ok::No evidence of atlantoaxial subluxation or odontoid fracture.
 ::cspok::
   MyForm =
 (
