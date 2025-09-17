@@ -52,7 +52,7 @@ ReorderSelectedText(deOrder = False, keepEmptyLine = False, itemChar = "", disca
       ;MsgBox % A_LoopField
       If (!RegExMatch(A_LoopField, "^\s*$")) {
         ; check if is a spine report
-        If (RegExMatch(A_LoopField, "^\s*[-\+\*]*\s*[Vv]arying degree")) {
+        If (RegExMatch(A_LoopField, "^\s*[-\+\*]*\s*([Vv]arying degree|[Mm]ild).+causing:")) {
           isSpine := true
         }
         tmpText := A_LoopField
