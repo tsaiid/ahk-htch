@@ -40,6 +40,7 @@
 ::ccttrok::
   MyForm =
 (
+No pneumothorax or hemothorax.
 No lung contusion, pneumothorax, or hemothorax.
 The heart and great vessels appear unremarkable.
 The thoracic cage and bones appear intact.
