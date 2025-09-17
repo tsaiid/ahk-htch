@@ -55,17 +55,18 @@ ReorderSelectedText(deOrder = False, keepEmptyLine = False, itemChar = "", disca
         If (RegExMatch(A_LoopField, "^\s*[-\+\*]*\s*[Vv]arying degree")) {
           isSpine := true
         }
+        tmpText := A_LoopField
         If (!deOrder) {
           orderChar := (StrLen(itemChar) > 0 ? itemChar : startLineNo++ . ".")
           ; second order indentation if a spine level line
-          If (isSpine && RegExMatch(A_LoopField, "^\s*[-\+\*]*\s*[CcTtLl]\d{1,2}-")) {
+          If (isSpine && RegExMatch(A_LoopField, "O)^\s*([-\+\*]*|-->)\s*([CcTtLl]\d{1,2}-.+$)", matchedSpineLevel)) {
             finalText .= "--> "
+            tmpText := matchedSpineLevel.Value(2)
           } Else {
             finalText .= orderChar . " "
           }
         }
 
-        tmpText := A_LoopField
         ; remove (Se/Im: ...) string
         If (StrLen(itemChar) = 0 && discardSeIm) {
           tmpText := RegExReplace(tmpText, "\s*\(Srs\/Img:[\s,-\/\d;]+\)", "")
