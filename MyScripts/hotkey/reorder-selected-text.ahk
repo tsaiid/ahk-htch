@@ -60,7 +60,7 @@ ReorderSelectedText(deOrder = False, keepEmptyLine = False, itemChar = "", disca
           orderChar := (StrLen(itemChar) > 0 ? itemChar : startLineNo++ . ".")
           ; second order indentation if a spine level line
           If (isSpine && RegExMatch(A_LoopField, "O)^\s*([-\+\*]*|-->)\s*([CcTtLl]\d{1,2}-.+$)", matchedSpineLevel)) {
-            finalText .= "--> "
+            finalText .= "-> "
             tmpText := matchedSpineLevel.Value(2)
           } Else {
             finalText .= orderChar . " "

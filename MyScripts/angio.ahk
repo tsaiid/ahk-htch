@@ -256,10 +256,10 @@ The main portal vein is patent in both celiac and superior mesenteric angiograph
 
 - Selective embolization was performed:
 - Selective embolizations were performed:
---> S7: 2 ml emulsion, 0.5 ml Gelfoam.
---> S8: 2 ml emulsion, 0.5 ml Gelfoam.
---> RHA: 2 ml Lipiodol.
---> S4: 2 ml emulsion, 0.5 ml Gelfoam.
+-> S7: 2 ml emulsion, 0.5 ml Gelfoam.
+-> S8: 2 ml emulsion, 0.5 ml Gelfoam.
+-> RHA: 2 ml Lipiodol.
+-> S4: 2 ml emulsion, 0.5 ml Gelfoam.
 
 Superselective embolization of the S6 hepatic arterial branch was performed with mixture of 20 mg Doxorubicin and 10 ml Lipiodol, followed by Gelfoam slurry.
 Selective embolization of the superior and inferior branches of right hepatic artery, and left hepatic artery was performed with mixture of 20 mg Doxorubicin and 10 ml Lipiodol (RHA total 7 ml, LHA total 5 ml), followed by Gelfoam slurry.
@@ -428,8 +428,8 @@ PROCEDURE AND FINDINGS:
 
 - Selective embolization was performed:
 - Selective embolizations were performed:
---> LHA: 4 ml of Lipiodol.
---> RHA: 6 ml of Lipiodol.
+-> LHA: 4 ml of Lipiodol.
+-> RHA: 6 ml of Lipiodol.
 
 DynaCT was used to check the amount of Lipiodol retention.
 
