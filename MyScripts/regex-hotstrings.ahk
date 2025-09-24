@@ -145,10 +145,7 @@ nr:
   global ORDINAL_NUM_STR
   n_start := ORDINAL_NUM_STR[$1]
   n_end := ORDINAL_NUM_STR[$2]
-  finalStr =
-(
-%n_start% to %n_end%
-)
+  finalStr := n_start . " to " . n_end . " "
   Paste(finalStr)
 Return
 
