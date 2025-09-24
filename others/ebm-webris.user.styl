@@ -1,6 +1,6 @@
 ﻿/* ==UserStyle==
 @name           EBM WebRIS Enhanced Style
-@version        20250606.1
+@version        20250924.1
 @namespace      ebm-webris-htch
 @description    Enhanced UI experience for EBM WebRIS
 @author         I-Ta Tsai
@@ -40,12 +40,12 @@ url-prefix("http://10.2.2.160:8080/") {
             height: 600px !important;
         }
         /* 報告區的內框 非 CT 用 */
-        div[style*="height: 630px; width: 58.3333%; left: 41.6667%; top: 300px;"] div[style*="height: 565px;"] {
-            height: 551px !important;
+        div[style*="height: 630px; width: 58.3333%; left: 41.6667%; top: 300px;"] div[style*="height: 615px;"] {
+            height: 584px !important;
         }
         /* 報告區的內框 CT 用 */
-        div[style*="height: 630px; width: 58.3333%; left: 41.6667%; top: 300px;"] div[style*="height: 540px;"] {
-            height: 530px !important;
+        div[style*="height: 630px; width: 58.3333%; left: 41.6667%; top: 300px;"] div[style*="height: 590px;"] {
+            height: 578px !important;
         }
     }
 
@@ -125,9 +125,9 @@ url-prefix("http://10.2.2.160:8080/") {
         display: none !important;
     }
 
-    /* 補齊報告區的高度，有可能不同螢幕會不同 */
-    div[style="height: calc(100% - 14px);"] {
-        height: calc(100% + 28px) !important;
+    /* 補齊報告區的高度，有可能不同螢幕會不同，只有非 CT/MRI 的要調 */
+    div[style*="height: 630px; width: 58.3333%; left: 41.6667%; top: 300px;"] div[style*="height: 615px;"] div[style="height: calc(100% - 14px);"] {
+        height: calc(100% + 0px) !important;
     }
 
 
@@ -173,8 +173,8 @@ url-prefix("http://10.2.2.160:8080/") {
         }
 
         /* 歷史報告的外框 */
-        div[style*="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] textarea[style*="height: 525px;"] {
-            height: 507px !important;
+        div[style*="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] textarea[style*="height: 530px;"] {
+            height: 510px !important;
         }
     }
 
