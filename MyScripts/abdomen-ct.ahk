@@ -4,6 +4,7 @@
 ::l-b-ok::The lung fields within the scanning range appear normal.{Enter}In bone window, the findings are unremarkable.
 ::l-ok::The lung fields within the scanning range appear normal.
 ::l-ok1::No pulmonary nodule.
+::l-ok2::The lung is unremarkable.
 ::b-ok::No osteolytic or osteoblastic lesion in the scanning range.
 ::book::No obvious bowel wall thickening or significant bowel dilatation.
 ::btok::No biliary tree dilatation.
@@ -258,7 +259,6 @@ Return
   MyForm =
 (
 - The liver, gallbladder, spleen, pancreas, adrenals, kidneys, urinary bladder, and bowel are unremarkable.
-- The spleen, adrenals, and kidneys are unremarkable.
 )
   Paste(MyForm)
 Return
