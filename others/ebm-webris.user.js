@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         Enhanced WebRIS
 // @namespace    http://tsai.it/
-// @version      20250602.1
+// @version      20250925.1
 // @description  Add more functions and colors to EBM WebRIS
 // @author       I-Ta Tsai
 // @match        http://10.2.2.160:8080/
@@ -108,14 +108,18 @@
         // can be used for both history report and pathology report tables
         //const frameHistory = document.querySelector('#frameHistory');
         const tableParentDiv = selectedTr?.parentNode?.parentNode?.parentNode;
-        //console.log('tr top: ' + frameHistoryTr[i].offsetTop + '; div top: ' + frameHistory.offsetTop + '; div height: ' + frameHistory.clientHeight + '; div scrollTop: ' + frameHistory.scrollTop);
+        //console.log("selectedTr: " + selectedTr);
+        //console.log("selectedTr.parentNode: " + selectedTr?.parentNode);
+        //console.log("tableParentDiv: " + tableParentDiv);
         if (tableParentDiv) {
+            const theadTrHeight = tableParentDiv.querySelector('thead tr')?.clientHeight ?? 0;
+            //console.log('tr top: ' + selectedTr.offsetTop + '; tr height: ' + selectedTr.clientHeight + '; div top: ' + tableParentDiv.offsetTop + '; div height: ' + tableParentDiv.clientHeight + '; div scrollTop: ' + tableParentDiv.scrollTop);
             if (selectedTr.offsetTop + selectedTr.clientHeight > tableParentDiv.scrollTop + tableParentDiv.clientHeight) {
-                tableParentDiv.scrollTop = selectedTr.offsetTop;
-            } else if (selectedTr.offsetTop < tableParentDiv.scrollTop) {
+                tableParentDiv.scrollTop = selectedTr.offsetTop - theadTrHeight;
+            } else if (selectedTr.offsetTop < tableParentDiv.scrollTop + theadTrHeight) {
                 tableParentDiv.scrollTop = (selectedTr.offsetTop + selectedTr.clientHeight < tableParentDiv.clientHeight)
                     ? 0
-                : selectedTr.offsetTop;
+                : selectedTr.offsetTop - theadTrHeight;
             }
         }
     }
@@ -718,8 +722,8 @@
                             jNode.first().click();
 
                             // scroll to selected report
-                            const frameHistory = document.querySelector("#frameHistory");
-                            frameHistory.scrollTop = (jNode.get(0).offsetTop + jNode.get(0).clientHeight > frameHistory.clientHeight) ? jNode.get(0).offsetTop : 0;
+                            const selectedTr = jNode.first().parent().get(0);
+                            scrollToSelectedItem(selectedTr);
                         }, 1500);
 
                     } else {
