@@ -110,6 +110,7 @@
 ::wsplok::Normal cervical and lumbar lordotic curves.{Enter}Normal thoracic kyphotic curve.
 ::oaf::Joint space narrowing and marginal osteophyte formation, involving several DIP and PIP joints. These findings are consistent with osteoarthritis.
 ::oaf0::OA changes of fingers.
+::moaf::Mild joint space narrowing and marginal osteophyte formation, involving several DIP and PIP joints. These findings are consistent with osteoarthritis.
 ::calsp::Presence of calcaneal spurs at the insertions of the Achilles tendon and the plantar fascia.
 ::calspp::Presence of calcaneal spur at the insertion of the plantar fascia.
 ::calspa::Presence of calcaneal spur at the insertion of the Achilles tendon.
