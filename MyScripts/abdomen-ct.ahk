@@ -10,7 +10,7 @@
 ::btok::No biliary tree dilatation.
 ::btok1::No CBD or IHD dilatation.
 ::gbok::No gallbladder distension or wall thickening.
-::pdok::No pancreatic duct dilatation.
+::pdok::No pancreatic duct dilatation.{Enter}The main pancreatic duct shows no dilatation.
 ::giok::No abnormal bowel wall thickening.
 ::acthcs::Several hepatic cysts, size up to  cm.{Left 4}
 ::actgbs::A tiny gallbladder stone without obvious GB distention or wall thickening.
