@@ -1,312 +1,312 @@
 #Requires AutoHotkey v2.0
-A_MaxHotkeysPerInterval := 200
+
+; HotKey
+
+;; For all RIS related window
+#HotIf WinActive("ahk_group RIS")
+;; Ctrl + A
+;; Go to start of line
+^a::Send("{Home}")
+
+;; Ctrl + E
+;; Go to end of line
+^e::
+{
+  Send("{End}")
+  /*
+  ControlGetFocus, FocusedControl
+  If (FocusedControl = "TMemo6" || FocusedControl = "TMemo7") {
+    ControlGet, hEdit, Hwnd,, %FocusedControl%
+    Edit_GetSel(hEdit, startSel)
+    ;MsgBox % startSel
+    l_text := Edit_GetTextRange(hEdit, startSel)
+    ;MsgBox % l_text
+    l_FoundPos:=InStr(l_Text, "`r`n")
+    ;a:=Edit_FindText(hEdit, "`n")
+    ;MsgBox % l_FoundPos
+    If (l_FoundPos > 0) {
+      endSel := startSel + l_FoundPos - 1
+      Edit_SetSel(hEdit, endSel, endSel)
+    } Else {
+      endSel := Edit_GetTextLength(hEdit)
+      Edit_SetSel(hEdit, endSel, -1)
+    }
+    ;p_LineIdx:=Edit_LineFromChar(hEdit,Edit_LineIndex(hEdit))
+    ;l_StartSelPos:=Edit_LineIndex(hEdit,p_LineIdx)
+    ;l_EndSelPos  :=l_StartSelPos+Edit_LineLength(hEdit,p_LineIdx)
+    ;Edit_SetSel(hEdit,l_EndSelPos,l_EndSelPos)
+  }
+  */
+}
+
+;; Ctrl + D
+;; Delete a character
+^d::Send("{Del}")
+
+^k::
+{
+  Send("+{End}")
+  Send("{Del}")
+}
+
+^y::
+{
+  Send("{Home}")
+  Send("+{Down}")
+  Send("{Del}")
+}
+#HotIf  ; end of ahk_group RIS
+
+
+;
+;
+; Only for WebRIS
+;
+;
+#HotIf WinActive("WebRIS")
+#c::
+{
+  Send("^a")
+  Sleep(100)
+  Send("^c")
+}
+
+^w::Send("^{BS}")
+
+#d::
+{
+  Send("^a")
+  Sleep(100)
+  Send("{Del}")
+}
+
+#a::Send("^a")
+
+!d::Send("^!d")
+
+!+d::Send("^!+d")
+
+!p::Send("^!p")
+
+;; Alt + E
+;; Paste Examname
+!e::
+{
+;  PasteExamname()
+  Send("^!e")
+}
+
+;; Ctrl + Alt + Shift + E
+;; Paste Examname with contrast informtion
+^!+e::
+{
+;  PasteExamnameAndContrast()
+  Send("^!f")
+}
+
+;; Insert Indication
+;; Because Quill editor has a hotkey of Ctrl+I to italic
+^i::Send("^!i")
+
+^Esc::
+{
+;  CopyReportPath := "4.1.1.4.3.1.1.3.2.1.3.1.1.1.8.1.1.2.3.1"
+;  btnObj := Acc_Get("Object", CopyReportPath, 0, "WebRIS")
+;  btnObj.accDoDefaultAction(0)
+  Send("^0")
+  Sleep(500)
+  Send("^{Home}")
+}
+
+!Esc::
+{
+;  CopyReportPath := "4.1.1.4.3.1.1.3.2.1.3.1.1.1.8.1.1.2.3.1"
+;  btnObj := Acc_Get("Object", CopyReportPath, 0, "WebRIS")
+;  btnObj.accDoDefaultAction(0)
+  Send("^9")
+}
+
+!q::Send("{F4}")   ; Quit without Save
+
+;; Remap Kana Key
+;;; Formatting IMPRESSION
+;;;; Reorder Seleted Text And Discard SeIm
+SC070::ReorderSelectedText()
+
+;;; Formatting FINDINGS
+;;;; Reorder Seleted Text And Keep SeIm
+SC079::ReorderSelectedText(false, true, "-", false)
+#HotIf  ; end of WebRIS
+
+
+;
+; Solid PACS Viewer
+;
+#HotIf WinActive("ahk_exe WEBVIE~1.EXE")
+;; zoom in/out
+^WheelUp::Send("{NumpadAdd}")
+^WheelDown::Send("{NumpadSub}")
+
+;; activate WebRIS and copy report
+^Esc::
+{
+  if (!WinActive("WebRIS")) {
+    WinActivate("WebRIS")
+    Send("^0")
+  }
+}
+
+;; activate WebRIS and insert exam name
+!e::
+{
+  if (!WinActive("WebRIS")) {
+    WinActivate("WebRIS")
+    Send("^!e")
+  }
+}
+#HotIf  ; for ahk_exe WEBVIE~1.EXE
+
+
 
 ;; for INFINITT PACS
-#HotIf MouseIsOverG3Pacs()
-$WheelUp::FocusG3PacsUnderMouseAndScroll("WheelUp")
-$WheelDown::FocusG3PacsUnderMouseAndScroll("WheelDown")
-#HotIf
-
-#HotIf IsG3PacsHotkeyContext()
-^s::SelectG3PacsSortBySliceLocationDesc()
-#HotIf
-
-MouseIsOverG3Pacs() {
-    MouseGetPos(,, &hwnd)
-    try return WinGetProcessName("ahk_id " hwnd) = "G3PACS.exe"
-    return false
-}
-
-IsG3PacsHotkeyContext() {
-    return WinActive("ahk_exe G3PACS.exe") && MouseIsOverG3Pacs()
-}
-
-FocusG3PacsUnderMouseAndScroll(direction) {
-    MouseGetPos(,, &hwnd)
-    if (hwnd && !WinActive("ahk_id " hwnd)) {
-        WinActivate("ahk_id " hwnd)
-    }
-    Click(direction)
-}
-
-SelectG3PacsSortBySliceLocationDesc() {
-    Click("Right")
-    Sleep(250)
-    popupHwnd := WaitForG3PacsPopupMenu("排序")
-    if !popupHwnd {
-        NotifyG3PacsHotkeyError("找不到 G3PACS 右鍵選單")
-        return
-    }
-
-    hMenu := SendMessage(0x01E1, 0, 0,, "ahk_id " popupHwnd) ; MN_GETHMENU
-    if !hMenu {
-        NotifyG3PacsHotkeyError("無法取得右鍵選單 HMENU")
-        return
-    }
-
-    sortItem := FindMenuItemByText(hMenu, "排序")
-    if !sortItem || !sortItem.submenu {
-        NotifyG3PacsHotkeyError("找不到選單項目: 排序", hMenu)
-        return
-    }
-
-    HoverMenuItem(popupHwnd, hMenu, sortItem.index)
-
-    subMenuHwnd := WaitForG3PacsPopupMenu("切面位置 (遞減)", popupHwnd)
-    if !subMenuHwnd {
-        NotifyG3PacsHotkeyError("找不到排序子選單")
-        return
-    }
-
-    subMenu := SendMessage(0x01E1, 0, 0,, "ahk_id " subMenuHwnd) ; MN_GETHMENU
-    if !subMenu {
-        NotifyG3PacsHotkeyError("無法取得排序子選單 HMENU")
-        return
-    }
-
-    sliceDescItem := FindMenuItemByText(subMenu, "切面位置 (遞減)")
-    if !sliceDescItem {
-        NotifyG3PacsHotkeyError("找不到選單項目: 切面位置 (遞減)", subMenu)
-        return
-    }
-
-    ClickMenuItem(subMenuHwnd, subMenu, sliceDescItem.index)
-}
-
-WaitForG3PacsPopupMenu(requiredItemText := "", excludeHwnd := 0, timeoutMs := 1500) {
-    deadline := A_TickCount + timeoutMs
-    while A_TickCount < deadline {
-        for hwnd in WinGetList("ahk_class #32768 ahk_exe G3PACS.exe") {
-            if hwnd = excludeHwnd
-                continue
-            if IsG3PacsPopupMenu(hwnd) && PopupMenuHasItem(hwnd, requiredItemText)
-                return hwnd
-        }
-
-        Sleep(20)
-    }
-    return 0
-}
-
-IsG3PacsPopupMenu(hwnd) {
-    if !hwnd
-        return false
-
-    try return WinGetClass("ahk_id " hwnd) = "#32768"
-        && WinGetProcessName("ahk_id " hwnd) = "G3PACS.exe"
-    return false
-}
-
-PopupMenuHasItem(hwnd, itemText) {
-    if itemText = ""
-        return true
-
-    hMenu := SendMessage(0x01E1, 0, 0,, "ahk_id " hwnd) ; MN_GETHMENU
-    return hMenu && FindMenuItemByText(hMenu, itemText)
-}
-
-FindMenuItemByText(hMenu, targetText) {
-    itemCount := DllCall("GetMenuItemCount", "Ptr", hMenu, "Int")
-    selectableOffset := 0
-    normalizedTargetText := NormalizeMenuItemText(targetText)
-
-    loop itemCount {
-        index := A_Index - 1
-        itemText := GetMenuItemText(hMenu, index)
-        if !IsSelectableMenuItem(hMenu, index, itemText)
-            continue
-
-        subMenu := DllCall("GetSubMenu", "Ptr", hMenu, "Int", index, "Ptr")
-        if NormalizeMenuItemText(itemText) = normalizedTargetText
-            return {index: index, offset: selectableOffset, submenu: subMenu}
-
-        selectableOffset += 1
-    }
-
-    return false
-}
-
-IsSelectableMenuItem(hMenu, index, itemText) {
-    return itemText != ""
-}
-
-NormalizeMenuItemText(itemText) {
-    itemText := StrReplace(itemText, "&")
-    itemText := StrReplace(itemText, "‧‧", "..")
-    itemText := RegExReplace(itemText, "\t.*$")
-    return Trim(itemText)
-}
-
-GetMenuItemText(hMenu, index) {
-    length := DllCall("GetMenuString", "Ptr", hMenu, "UInt", index, "Ptr", 0, "Int", 0, "UInt", 0x0400, "Int") ; MF_BYPOSITION
-    if length < 1
-        return ""
-
-    textBuffer := Buffer((length + 1) * 2, 0)
-    DllCall("GetMenuString", "Ptr", hMenu, "UInt", index, "Ptr", textBuffer, "Int", length + 1, "UInt", 0x0400, "Int")
-    return StrGet(textBuffer, "UTF-16")
-}
-
-HoverMenuItem(hwnd, hMenu, index) {
-    point := GetMenuItemCenter(hwnd, hMenu, index)
-    if !point {
-        Send("{Home}")
-        return
-    }
-
-    MouseMove(point.x, point.y, 0)
-    Sleep(250)
-}
-
-ClickMenuItem(hwnd, hMenu, index) {
-    point := GetMenuItemCenter(hwnd, hMenu, index)
-    if !point {
-        Send("{Enter}")
-        return
-    }
-
-    Click(point.x, point.y)
-}
-
-GetMenuItemCenter(hwnd, hMenu, index) {
-    rect := Buffer(16, 0)
-    if !DllCall("GetMenuItemRect", "Ptr", hwnd, "Ptr", hMenu, "UInt", index, "Ptr", rect, "Int")
-        return false
-
-    left := NumGet(rect, 0, "Int")
-    top := NumGet(rect, 4, "Int")
-    right := NumGet(rect, 8, "Int")
-    bottom := NumGet(rect, 12, "Int")
-    return {x: (left + right) // 2, y: (top + bottom) // 2}
-}
-
-DumpMenuItems(hMenu) {
-    itemCount := DllCall("GetMenuItemCount", "Ptr", hMenu, "Int")
-    if itemCount < 1
-        return "(no items)"
-
-    lines := ""
-    loop itemCount {
-        index := A_Index - 1
-        itemText := GetMenuItemText(hMenu, index)
-        subMenu := DllCall("GetSubMenu", "Ptr", hMenu, "Int", index, "Ptr")
-        lines .= Format("{:02}", A_Index) ". submenu: " (subMenu ? subMenu : "no") " text: " (itemText != "" ? itemText : "(blank)") "`n"
-    }
-    return RTrim(lines, "`n")
-}
-
-NotifyG3PacsHotkeyError(message, hMenu := 0) {
-    if hMenu
-        A_Clipboard := message "`n`nMenu items:`n" DumpMenuItems(hMenu)
-    ToolTip(message)
-    SetTimer(() => ToolTip(), -3000)
-}
-
 #HotIf WinActive("ahk_exe G3PACS.exe")
 w::
 {
-    try {
-        ; v2 的 ControlGetFocus 回傳 HWND，需轉為 ClassNN 才能做字串比對
-        hCtl := ControlGetFocus("A")
-        PacsFocusedControl := ControlGetClassNN(hCtl)
-    } catch {
-        PacsFocusedControl := ""
-    }
-
-    OutputVar := WinGetTitle("A")
-    ;MsgBox(OutputVar)
-
-    if (OutputVar = "INFINITT PACS" && SubStr(PacsFocusedControl, 1, 3) = "Afx") {
-        DiffSyncBtns := ["Button1", "Button85", "Button90", "Button102"]
-        for idx, btn in DiffSyncBtns {
-            try {
-                t := ControlGetText(btn)
-                if (t == " Auto sync" || t == "自動同步") {
-                    ControlClick(btn)
-                    break
-                }
-            }
+  pacsFocusedControl := GetFocusedControlClassNN()
+  OutputVar := WinGetTitle("A")
+;MsgBox, "%OutputVar%"
+  if (OutputVar = "INFINITT PACS" && SubStr(pacsFocusedControl, 1, 3) == "Afx") {
+    DiffSyncBtns := ["Button1", "Button75"]
+    for idx, btn in DiffSyncBtns {
+      try {
+        t := ControlGetText(btn)
+        if (t = "自動同步") {
+          ControlClick(btn)
+          break
         }
-    } else {
-        Send("w")
+      }
     }
+  } else {
+    Send("w")
+  }
 }
 
 f::
 {
-    try {
-        hCtl := ControlGetFocus("A")
-        PacsFocusedControl := ControlGetClassNN(hCtl)
-    } catch {
-        PacsFocusedControl := ""
-    }
-
-    OutputVar := WinGetTitle("A")
-    ;MsgBox(OutputVar)
-
-    if (OutputVar = "INFINITT PACS" && SubStr(PacsFocusedControl, 1, 3) = "Afx") {
-        DiffSyncBtns := ["Button2", "Button86", "Button91", "Button103"]
-        for idx, btn in DiffSyncBtns {
-            try {
-                t := ControlGetText(btn)
-                if (t == " Sync with other exams" || t == "不同檢查同步 ") {
-                    ControlClick(btn)
-                    break
-                }
-            }
+  pacsFocusedControl := GetFocusedControlClassNN()
+  OutputVar := WinGetTitle("A")
+;MsgBox, "%OutputVar%"
+  if (OutputVar = "INFINITT PACS" && SubStr(pacsFocusedControl, 1, 3) == "Afx") {
+    DiffSyncBtns := ["Button2", "Button76", "Button91"]
+    for idx, btn in DiffSyncBtns {
+      try {
+        t := ControlGetText(btn)
+        if (t = "不同檢查同步 ") {
+          ControlClick(btn)
+          break
         }
-    } else {
-        Send("f")
+      }
     }
+  } else {
+    Send("f")
+  }
 }
 
 e::
 {
-    try {
-        hCtl := ControlGetFocus("A")
-        PacsFocusedControl := ControlGetClassNN(hCtl)
-    } catch {
-        PacsFocusedControl := ""
-    }
-    ;MsgBox(PacsFocusedControl)
+  pacsFocusedControl := GetFocusedControlClassNN()
+  ;MsgBox, "%FocusedControl%"
 
-    OutputVar := WinGetTitle("A")
-    if (OutputVar = "INFINITT PACS" && SubStr(PacsFocusedControl, 1, 3) = "Afx") {
-        DiffSyncBtns := ["Button4", "Button78"]
-        for idx, btn in DiffSyncBtns {
-            try {
-                t := ControlGetText(btn)
-                if (t = " Scout lines") { ; 注意這裡原代碼有一個前導空白
-                    ControlClick(btn)
-                    break
-                }
-            }
+  OutputVar := WinGetTitle("A")
+  if (OutputVar = "INFINITT PACS" && SubStr(pacsFocusedControl, 1, 3) == "Afx") {
+    DiffSyncBtns := ["Button4", "Button78"]
+    for idx, btn in DiffSyncBtns {
+      try {
+        t := ControlGetText(btn)
+        if (t = " Scout lines") {
+          ControlClick(btn)
+          break
         }
-    } else {
-        Send("e")
+      }
     }
+  } else {
+    Send("e")
+  }
 }
+#HotIf  ; for INFINITT PACS
 
-/*
-;; activate RIS and insert exam name
-!e::
+
+
+
+
+
+
+
+;
+; Global Remap
+;
+#^p::ProcessClose("G3PACS.exe")
+
+;; for JIS keyboard
+SC029::
 {
-    global FINDING_CONTROL ; 引用外部全域變數
-    if (!WinActive("報告作業(frmRISReport)")) {
-        ; 檢查視窗是否存在，避免報錯
-        if (WinExist("報告作業(frmRISReport)")) {
-            WinActivate("報告作業(frmRISReport)")
-            WinWaitActive("報告作業(frmRISReport)")
-
-            ; 確保 FINDING_CONTROL 已定義且控制項存在
-            if IsSet(FINDING_CONTROL) {
-                try ControlFocus(FINDING_CONTROL)
-            }
-
-            ; 假設 InsertExamname() 是一個已定義的函數
-            try InsertExamname()
-        }
-    }
+  if (!WinActive("WebRIS")) {
+    WinActivate("WebRIS")
+  }
 }
-*/
-#HotIf ; end for INFINITT PACS
+
+SC07B::LButton
+
+#x::^x
+
+;; for global windows environment
+#Space::SendEvent("^{Space}")  ; Need to send event to work in VirtualBox
+
+
+
+
+
+
+;
+;
+; Probably useless?
+;
+;
+CopyPidAndLaunchPacsWorklist()
+{
+  ;MsgBox, 1
+  A_Clipboard := ""
+  Send("^c")
+  if !ClipWait(2)
+  {
+    MsgBox("The attempt to copy text onto the clipboard failed.")
+    return
+  }
+  ;load patient in INFINITT PACS
+  pacs_api := "http://10.2.2.30/pkg_pacs/external_interface.aspx?"
+    . "TYPE=W&"
+    . "LID=A60076&"
+    . "LPW=A60076&"
+    . "PID=" A_Clipboard
+  ;MsgBox %pacs_api%
+  Run("msedge.exe --app=" pacs_api)
+}
+
+;; for 檢查排程系統
+#HotIf WinActive("ahk_exe ExmSchSys.EXE")
+#c::CopyPidAndLaunchPacsWorklist()
+#HotIf  ; for ahk_exe ExmSchSys.EXE
+
+;; for LibreOffice Calc
+#HotIf WinActive("- LibreOffice Calc")
+#c::CopyPidAndLaunchPacsWorklist()
+#HotIf  ; for LibreOffice Calc
+
+GetFocusedControlClassNN()
+{
+  try {
+    hCtl := ControlGetFocus("A")
+    return ControlGetClassNN(hCtl)
+  }
+  return ""
+}
