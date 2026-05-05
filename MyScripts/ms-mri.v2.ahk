@@ -1,0 +1,230 @@
+#Requires AutoHotkey v2.0
+
+#Include ..\Lib\Paste.v2.ahk
+
+; MS MRI Forms
+
+;; Hotstrings
+::mrarok::No arthrographic evidence of full-thickness tear of rotator cuff or adhesive capsulitis.
+::pt::partial tear
+::ct::complete tear
+::ftt::full-thickness tear
+::ptt::partial-thickness tear
+::ht::horizontal tear
+::je::joint effusion
+::be::bursal effusion
+::jbe::joint and bursal effusion
+::jbeok::No obviously increased joint or bursal effusion.
+::bme::bone marrow edema
+::mpp::mediopatellar plica
+::mppok::Presence of mediopatellar plica. The adjacent patellar and femoral cartilages are normal.
+::cmp1::focal areas of hyperintensity on PDWI with normal contour
+::cmp2::blister-like swelling/fraying of articular cartilage extending to surface
+::cmp3::partial thickness cartilage loss with focal ulceration
+::cmp4::full thickness cartilage loss with underlying bone reactive changes
+::aclsp::Edematous changes and increased signal intensity over the anterior cruciate ligament (ACL) with preserved fiber continuity. Sprain is considered.
+::pclsp::Edematous changes and increased signal intensity over the posterior cruciate ligament (PCL) with preserved fiber continuity. Sprain is considered.
+::aclct::Edematous changes and increased signal intensity over the anterior cruciate ligament (ACL) with incontinuous fiber. Complete tear is considered.
+::pclct::Edematous changes and increased signal intensity over the posterior cruciate ligament (PCL) with incontinuous fiber. Complete tear is considered.
+::aclpt::Edematous changes and increased signal intensity over the anterior cruciate ligament (ACL) with focally incontinuous fiber. Partial tear is considered.
+::pclpt::Edematous changes and increased signal intensity over the posterior cruciate ligament (PCL) with focally incontinuous fiber. Partial tear is considered.
+::mrsab::Presence of Hill Sachs deformity manifesting an impaction lesion of the posterolateral aspect of the humeral head, and under MR-arthrogram, the anteroinferior labrum is frayed and absence that considered Bankart lesion, the findings c/w secondary to anterior glenohumeral dislocation.
+::ssftt::full-thickness tear of the supraspinatus.
+::isftt::full-thickness tear of the infraspinatus.
+::ssptt::partial-thickness tear of the supraspinatus.
+::isptt::partial-thickness tear of the infraspinatus.
+::scptt::partial-thickness tear of the subscapularis.
+::lhbtt::intrasubstance tear of the long head of biceps tendon
+::mroa::marginal osteophyte formation, irregular joint space narrowing, cartilage loss, subchondral signal intensity changes in the pancompartment of knee, especially the medial compartment, in favor of osteoarthrosis.
+::bb::bone bruise
+::bmok::No abnormal signal intensity changes in the bone marrow space.
+::mcs::meniscocapsular separation
+::mmt::Medial meniscal tear.
+::mmht::Horizontal tear of the lateral meniscus.
+::mmte::Medial meniscal tear, including posterior root, with meniscal extrusion.
+::lmt::Lateral meniscal tear.
+::lmht::Horizontal tear of the lateral meniscus.
+::kmroa::marginal osteophyte formation, irregular joint space narrowing, cartilage erosions in the pan-compartment of knee, especially the medial compartment, in favor of osteoarthrosis.
+::kmrok::
+{
+    MyForm := "
+    (
+Intact medial and lateral menisci without tear or abnormal signal.
+Intact ACL, PCL, MCL, and LCL.
+Unremarkable quadriceps and patellar tendons. Normal patellar alignment.
+Preserved articular cartilage. No fracture, bone contusion, or marrow edema.
+No significant joint effusion or Baker's cyst.
+    )"
+    Paste(MyForm)
+}
+::smrok::
+{
+    MyForm := "
+    (
+The rotator cuff is intact.
+Unremarkable long head of the biceps tendon and glenoid labrum.
+Normal appearance of the AC joint.
+No significant joint effusion or bursal fluid accumulation.
+Normal osseous structures without marrow edema.
+    )"
+    Paste(MyForm)
+}
+
+;; MRI of Knee
+::mrkr::
+{
+    MyForm := "
+  (
+MRI of right knee in
+Axial T2*
+Coronal T2+FS, PD
+Sagittal T2 STIR, T2, T1
+Sagittal ACL T2, PCL T2
+
+PREVIOUS MRI of knee: none.
+
+FINDINGS:
+
+  )"
+    Paste(MyForm)
+}
+
+::mrkl::
+{
+    MyForm := "
+  (
+MRI of left knee in
+Axial T2*
+Coronal T2+FS, PD
+Sagittal T2 STIR, T2, T1
+Sagittal ACL T2, PCL T2
+
+PREVIOUS MRI of knee: none.
+
+FINDINGS:
+
+  )"
+    Paste(MyForm)
+}
+
+; MRI of shoulder
+::mrsa::
+{
+    MyForm := "
+  (
+MRI of right / left shoulder in:
+axial plane: T2WI
+oblique coronal plane: T2WI, PDWI
+oblique sagittal plane: T1WI, PDWI with fat saturation
+with MR arthrography in oblique coronal plane:
+
+PREVIOUS MRI of shoulder: none.
+
+FINDINGS:
+  )"
+    Paste(MyForm)
+}
+
+::mrsr::
+{
+    MyForm := "
+  (
+MRI of right shoulder in:
+axial plane: T2WI
+oblique coronal plane: T2WI, PDWI
+oblique sagittal plane: T1WI, PDWI with fat saturation
+
+PREVIOUS MRI of shoulder: none.
+
+FINDINGS:
+
+  )"
+    Paste(MyForm)
+}
+
+::mrsl::
+{
+    MyForm := "
+  (
+MRI of left shoulder in:
+axial plane: T2WI
+oblique coronal plane: T2WI, PDWI
+oblique sagittal plane: T1WI, PDWI with fat saturation
+
+PREVIOUS MRI of shoulder: none.
+
+FINDINGS:
+
+  )"
+    Paste(MyForm)
+}
+
+; MRI of ankle
+::mrar::
+{
+    MyForm := "
+  (
+MRI of right ankle in:
+axial plane: GRE T2*WI, FSE T1WI
+coronal plane: T2WI+FS, PDWI
+sagittal plane: T2WI, STIR, T1WI
+
+PREVIOUS MRI: none.
+
+FINDINGS:
+
+  )"
+    Paste(MyForm)
+}
+
+::mral::
+{
+    MyForm := "
+  (
+MRI of left ankle in:
+axial plane: GRE T2*WI, FSE T1WI
+coronal plane: T2WI+FS, PDWI
+sagittal plane: T2WI, STIR, T1WI
+
+PREVIOUS MRI: none.
+
+FINDINGS:
+
+  )"
+    Paste(MyForm)
+}
+
+; MRI of wrist
+::mrwr::
+{
+    MyForm := "
+  (
+MRI of right wrist in
+coronal plane: PDWI, T2WI, T2 STIR
+axial plane: T1WI, T2WI, fat-suppressed T2WI
+sagittal plane: T2WI
+
+PREVIOUS MRI of wrist: none.
+
+FINDINGS:
+
+  )"
+    Paste(MyForm)
+}
+
+::mrwl::
+{
+    MyForm := "
+  (
+MRI of left wrist in
+coronal plane: PDWI, T2WI, T2 STIR
+axial plane: T1WI, T2WI, fat-suppressed T2WI
+sagittal plane: T2WI
+
+PREVIOUS MRI of wrist: none.
+
+FINDINGS:
+
+  )"
+    Paste(MyForm)
+}
