@@ -4,7 +4,6 @@
 ::barium:: {
   MyForm := "
 (
-
 Double contrast barium enema was performed from rectum to cecum with the demonstration of appendix, ileocecal valve and terminal ileum:
 
 - Normal mucosa pattern without evidence of stenosis or stricture is noted.

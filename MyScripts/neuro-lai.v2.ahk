@@ -12,7 +12,6 @@
 ::hemra:: {
   MyForm := "
 (
-
 The MRA of the brain with focus on circle of Willis or skull base and Neck region with 2D SPGR time of flight,
 Post contrast enhanced 3D Fast SPGR MRA of the aortic arch and the Neck,
 MIP (maximum intensity projection) of collapse and projection image:
@@ -43,7 +42,6 @@ Clinical correlation and follow up are suggested.
 ::ctp:: {
   MyForm := "
 (
-
 Noncontrast CT of the paranasal sinuses was performed with a multi-slice CT scanner:
 SCAN RANGE: axial plane of the paranasal sinuses with 3 mm continuous scan, with coronal and sagittal reconstruction
 
@@ -59,7 +57,6 @@ FINDINGS:
 ::mrse:: {
   MyForm := "
 (
-
 MRI of the sella performed with:
 - Axial T2WI for whole brain
 - Sagittal and Coronal T1WI
@@ -114,7 +111,6 @@ Suggest correlate with serum prolactin and other pituitary gland hormone level.
 ::mrse1:: {
   MyForm := "
 (
-
 MRI of the sella performed with
 Sagittal T1WI (localizer)
 Sagittal T1WI and T2WI
@@ -136,7 +132,6 @@ FINDINGS:
 ::mrple:: {
   MyForm := "
 (
-
 The MRI of the brachial plexus performed with neurovascular coil
 Coronal T1WI, T2WI with Fat Sat images
 Sagittal T1WI, T2 STIR images
@@ -182,7 +177,6 @@ Recommend correlate with the EMG and NCV studies.
 ::mrse-hemorrhagic:: {
   MyForm := "
 (
-
 The MR of the brain performed with Sagittal T1WI
 Axial T1WI, T2WI, GET2*WI, FLAIR (Fluid Attenuated Inversion Recovery)
 Diffusion-weighted Imaging (DWI) and Apparent Diffusion Coefficient (ADC) map
@@ -216,7 +210,6 @@ MRA shows several suspicious aneurysms at the right supraclinoid ICA, size up to
 ::mritumorcp:: {
   MyForm := "
 (
-
 MRI of whole brain with:
 - Sagittal T1WI
 - Axial T1WI, T2WI, GET2*WI, FLAIR (Fluid Attenuated Inversion Recovery)
@@ -251,7 +244,6 @@ Post contrast study showed no abnormal enhanced lesion in the brain and no abnor
 ::mritumorcpvs:: {
   MyForm := "
 (
-
 MRI of whole brain with:
 - T2WI axial
 - T1WI+C axial, coronal, sagittal

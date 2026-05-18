@@ -2,7 +2,6 @@
 ::0ctg-lb:: {
   MyForm := "
 (
-
 CT-guide lung biopsy is indicated and has been scheduled on / PM. If specimen for tissue culture is needed, please prepare other specimen collecting bottles and send to CT room with the patient. Otherwise, only specimen immersed in formalin will be harvested.
 )"
   Paste(MyForm)
@@ -12,7 +11,6 @@ CT-guide lung biopsy is indicated and has been scheduled on / PM. If specimen fo
   currDateStr := FormatTime(, "M/d tt")
   MyForm := "
 (
-
 CT guide lung biopsy was performed in %currDateStr%. Please follow up CXR if pneumothorax develops or progresses.
 )"
   Paste(MyForm)
@@ -22,7 +20,6 @@ CT guide lung biopsy was performed in %currDateStr%. Please follow up CXR if pne
   currDateStr := FormatTime(, "M/d tt")
   MyForm := "
 (
-
 CT guide biopsy was performed in %currDateStr%. Please keep bed rest and check if internal bleeding occurs.
 )"
   Paste(MyForm)
@@ -33,7 +30,6 @@ CT guide biopsy was performed in %currDateStr%. Please keep bed rest and check i
 ::ctg-lb:: {
   MyForm := "
 (
-
 CT guide biopsy was performed under clinical request. The operation procedure and potential risk were well explained. Patient agreement and consensus were obtained.
 Under CT guide, tissue specimens were smoothly taken for pathology examination.
 
@@ -71,7 +67,6 @@ Mild pneumothorax was noted. Follow-up is suggested.
 ::ctg-lb-p:: {
   MyForm := "
 (
-
 CT guide biopsy was performed under clinical request. The operation procedure and potential risk were well explained. Patient agreement and consensus were obtained.
 Under CT guide, tissue specimens were smoothly taken for pathology examination.
 
@@ -106,7 +101,6 @@ F/U CXR 6 hours later.
   currDateStr := FormatTime(, "M/d tt")
   MyForm := "
 (
-
 CT guide drainage was performed in %currDateStr%. A 8 Fr pigtail drain was inserted. 10 ml of aspirated pus was collected for Lab exam.
 )"
   Paste(MyForm)
@@ -115,7 +109,6 @@ CT guide drainage was performed in %currDateStr%. A 8 Fr pigtail drain was inser
 ::ctg-d:: {
   MyForm := "
 (
-
 CT guide drainage was performed under clinical request. The operation procedure and potential risk were well explained. Patient agreement and consensus were obtained.
 Under CT guide, tissue specimens were smoothly taken for pathology examination.
 
@@ -139,7 +132,6 @@ CT guide drainage for  was performed.
 ::ctg-b:: {
   MyForm := "
 (
-
 CT guide biopsy was performed under clinical request. The operation procedure and potential risk were well explained. Patient agreement and consensus were obtained.
 
 Under CT guide, tissue specimens were smoothly taken for pathology examination.
@@ -166,7 +158,6 @@ CT guide biopsy for  was performed.
 ::ctg-rfa:: {
   MyForm := "
 (
-
 Radiofrequency ablation of liver tumor(RFA<=2cm):
 Radiofrequency ablation of liver tumor(>2cm;<=4cm):
 
@@ -186,7 +177,6 @@ RFA for S8 hepatic tumor was performed.
 ::ctg-mwa:: {
   MyForm := "
 (
-
 Microwave ablation of renal tumor(>2cm;<=4cm):
 Microwave ablation of liver tumor(>2cm;<=4cm):
 

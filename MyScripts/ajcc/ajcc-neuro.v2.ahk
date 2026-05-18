@@ -4,7 +4,6 @@
 ::tsoralct:: {
   MyForm := "
 (
-
 CT scan of head and neck was performed with a multi-slice CT scanner:
 TECHNIQUE: (1) Non-contrast and (2) Contrast enhancement
 SCAN RANGE: Axial plane from the skull base to the low neck with 5-mm continuous scan slice thickness and coronal reconstruction
@@ -79,7 +78,6 @@ SUGGESTION:
 ::tsoralmr:: {
   MyForm := "
 (
-
 MRI of the skull base and neck was performed with a 1.5-T scanner:
 TECHNIQUE: Sagittal T1WI and T2WI,
    Axial T1WI and T2WI with fat suppression,
@@ -159,7 +157,6 @@ SUGGESTION:
 ::tsnpcct:: {
   MyForm := "
 (
-
 CT scan of head and neck was performed with a multi-slice CT scanner:
 TECHNIQUE: (1) Noncontrast and (2) Post-contrast enhancement
 SCAN RANGE: axial plane from the skull base to the low neck with 5-mm continuous scan slice thickness and coronal reconstruction
@@ -239,7 +236,6 @@ SUGGESTION:
 ::tsnpcmr:: {
   MyForm := "
 (
-
 MRI of the skull base and neck was performed with a 1.5-T scanner:
 TECHNIQUE: Sagittal T1WI and T2WI,
    Axial T1WI and T2WI with fat suppression,
@@ -337,7 +333,6 @@ SUGGESTION:
 ::tslarct:: {
   MyForm := "
 (
-
 CT scan of head and neck was performed with a multi-slice CT scanner:
 TECHNIQUE: (1) Noncontrast and (2) Post-contrast enhancement
 SCAN RANGE: axial plane from the skull base to the low neck with 5-mm continuous scan slice thickness and coronal reconstruction
@@ -397,7 +392,6 @@ SUGGESTION:
 ::tslarmr:: {
   MyForm := "
 (
-
 MRI of the skull base and neck was performed with a 1.5-T/3.0-T scanner:
 TECHNIQUE: Sagittal T1WI and T2WI, Axial T1WI and T2WI with fat suppression, Coronal T1WI and T2WI with fat suppression, Post Gd-enhanced dynamic and conventional T1WI with
 fat suppression
@@ -459,7 +453,6 @@ SUGGESTION:
 ::tshypoct:: {
   MyForm := "
 (
-
 CT scan of head and neck was performed with a multi-slice CT scanner:
 TECHNIQUE: (1) Non-contrast and (2) Contrast-enhanced
 SCAN RANGE: Axial plane from the skull base to the thoracic inlet with 5-mm continuous scan slice thickness and coronal reconstruction
@@ -507,7 +500,6 @@ SUGGESTION:
 ::tshypomr:: {
   MyForm := "
 (
-
 MRI of the skull base and neck was performed with a 1.5-T scanner:
 TECHNIQUE: Sagittal T1WI and T2WI,
 Axial T1WI and T2WI with fat suppression,
@@ -558,7 +550,6 @@ SUGGESTION:
 ::tssalct:: {
   MyForm := "
 (
-
 CT scan of head and neck was performed with a multi-slice CT scanner:
 TECHNIQUE: (1) Non-contrast and (2) Contrast-enhanced
 SCAN RANGE: Axial plane from the skull base to the thoracic inlet with 5-mm continuous scan slice thickness and coronal reconstruction
@@ -607,7 +598,6 @@ SUGGESTION:
 ::tssalmr:: {
   MyForm := "
 (
-
 MRI of the skull base and neck was performed with a 1.5-T scanner:
 TECHNIQUE: Sagittal T1WI and T2WI,
 Axial T1WI and T2WI with fat suppression,
@@ -659,7 +649,6 @@ SUGGESTION:
 ::tsorophct:: {
   MyForm := "
 (
-
 CT scan of head and neck was performed with a multi-slice CT scanner:
 TECHNIQUE: (1) Non-contrast and (2) Contrast-enhanced
 SCAN RANGE: Axial plane from the skull base to the thoracic inlet with 5-mm continuous scan slice thickness and coronal reconstruction
@@ -723,7 +712,6 @@ SUGGESTION:
 ::tsorophmr:: {
   MyForm := "
 (
-
 MRI of the skull base and neck was performed with a 1.5-T scanner:
 TECHNIQUE: Sagittal T1WI and T2WI,
    Axial T1WI and T2WI with fat suppression,
@@ -792,7 +780,6 @@ SUGGESTION:
 ::tsthyct:: {
   MyForm := "
 (
-
 CT scan of head and neck was performed with a multi-slice CT scanner:
 TECHNIQUE: (1) Non-contrast and (2) Contrast-enhanced
 SCAN RANGE: Axial plane from the skull base to the thoracic inlet with 5-mm continuous scan slice thickness and coronal reconstruction

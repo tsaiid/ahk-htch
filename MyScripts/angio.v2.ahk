@@ -12,7 +12,6 @@
 ::xac:: {
   MyForm := "
 (
-
 Angiography
 
 Indication: Post recent hepatectomy, with suspicious internal bleeding or pseudoaneurysm formation.
@@ -42,7 +41,6 @@ No definite internal bleeding or pseudoaneurysm formation.
 ::xar:: {
   MyForm := "
 (
-
 Aortography and renal angiography
 Renal angiography
 
@@ -77,7 +75,6 @@ No definite internal bleeding or pseudoaneurysm formation.
 ::tae:: {
   MyForm := "
 (
-
 TAE for bleeding
 
 Operator: I-Ta Tsai
@@ -204,7 +201,6 @@ TAE at bilateral bronchial arteries for hemoptysis was successfully performed.
 ::taefu:: {
   MyForm := "
 (
-
 Follow-up angiography after Vasospasm TAE
 
 PROCEDURE AND FINDINGS:
@@ -225,7 +221,6 @@ Hemostasis of GI bleeding was achieved after Vasospasm TAE.
   currDateStr := FormatTime(, "M/d tt")
   MyForm := "
 (
-
 TACE was performed in %currDateStr%. Please keep external compression and check if puncture site bleeding or hematoma occurs.
 )"
   Paste(MyForm)
@@ -234,7 +229,6 @@ TACE was performed in %currDateStr%. Please keep external compression and check 
 ::tace:: {
   MyForm := "
 (
-
 Celiac Angiography and TACE for HCC
 
 Operator: I-Ta Tsai
@@ -298,7 +292,6 @@ TACE for HCC was performed. (Doxorubicin 40 mg)
 ::tacedeb:: {
   MyForm := "
 (
-
 DEB-TACE for HCC
 
 Operator: I-Ta Tsai
@@ -336,7 +329,6 @@ DEB-TACE (TANDEM) for HCC was performed.
 ::rtace:: {
   MyForm := "
 (
-
 TACE (transradial) for HCC
 
 Operator: I-Ta Tsai
@@ -366,7 +358,6 @@ TACE (transradial) for HCC was performed.
 ::drtace:: {
   MyForm := "
 (
-
 TACE (transradial) for HCC
 
 Operator: I-Ta Tsai
@@ -396,7 +387,6 @@ TACE (transradial, snuffbox access) for HCC was performed.
 ::tacect:: {
   MyForm := "
 (
-
 Post-embolization CT without IV contrast medium:
 Reconstruction planes: axial, coronal, and sagittal.
 
@@ -420,7 +410,6 @@ HCC, status post TACE.
 ::taerfa:: {
   MyForm := "
 (
-
 Celiac Angiography and Pre-RFA TAE for HCC
 Celiac Angiography and Pre-RFA TAE for Liver Metastasis
 
@@ -463,7 +452,6 @@ Pre-MWA TAE for liver metastasis was performed.
   currDateStr := FormatTime(, "M/d tt")
   MyForm := "
 (
-
 Angiography and CTHA/CTAP were performed in %currDateStr%. Please keep external compression of the femoral puncture area and check if bleeding occurs.
 )"
   Paste(MyForm)
@@ -473,7 +461,6 @@ Angiography and CTHA/CTAP were performed in %currDateStr%. Please keep external 
 ::ctap:: {
   MyForm := "
 (
-
 Angiography, CTHA, and CTAP:
 
 Operator: I-Ta Tsai
@@ -510,7 +497,6 @@ HCC, S2, 2.6 cm.
 ::tacehcc:: {
   MyForm := "
 (
-
 # Lipiodol
 SMA, celiac, superselective hepatic angiograms and TAE are performed via puncture of right femoral artery. The whole procedure was smooth.
 The aim of this procedure is to perform arterial embolozation for treatment of HCC.
@@ -592,7 +578,6 @@ Operator: Dr. Huang,
   currDateStr := FormatTime(, "M/d tt")
   MyForm := "
 (
-
 The temporary HAIC catheter was placed in %currDateStr%. Please keep infusion of the catheter to prevent clotting. If oozing from the puncture area occurs, please check KUB to make sure the catheter tip location is proper. If further TAE with Lipiodol after this HAIC session is needed, please arrange the exam.
 )"
   Paste(MyForm)
@@ -601,7 +586,6 @@ The temporary HAIC catheter was placed in %currDateStr%. Please keep infusion of
 ::xahaic:: {
   MyForm := "
 (
-
 HAIC (hepatic arterial infusion chemotherapy) Catheter Placement
 
 Operator: I-Ta Tsai
@@ -642,7 +626,6 @@ The infusion catheter for HAIC was placed at the common hepatic artery.
 ::xahaicsp:: {
   MyForm := "
 (
-
 Transarterial Embolization of HCC after HAIC
 
 Operator: I-Ta Tsai
@@ -672,7 +655,6 @@ Embolization with Lipiodol through the HAIC catheter was performed, and the cath
 ::xahaicadj:: {
   MyForm := "
 (
-
 HAIC (hepatic arterial infusion chemotherapy) Catheter Readjustment
 
 Clinical information: easily puncture wound oozing and occlusion of the infusion pump.
@@ -710,7 +692,6 @@ The infusion catheter for HAIC was exchanged.
   currDateStr := FormatTime(, "M/d tt")
   MyForm := "
 (
-
 Antegrade double-J ureteral stent placement was performed in %currDateStr%. Please keep PCN drainage if hematuria persists. For PCN removal, if needed, please clamp the PCN first, if no discomfort nor fever for hours to a day, arrange antegrade pyelography to check the patency of ureteral stent. If patent, I will remove the PCND at that time.
 )"
   Paste(MyForm)
@@ -719,7 +700,6 @@ Antegrade double-J ureteral stent placement was performed in %currDateStr%. Plea
 ::xadj:: {
   MyForm := "
 (
-
 Percutaneous nephrostomy, ureteroplasty, and antegrade double-J ureteral stent placement.
 Ureteroplasty, antegrade double-J ureteral stent placement, and PCN revision.
 
@@ -767,7 +747,6 @@ Ureteroplasty, antegrade DJS placement, and PCN revision were successfully perfo
 ::xardj:: {
   MyForm := "
 (
-
 Percutaneous retrieval and retrograde double-J ureteral stent placement.
 
 Anesthesia: no
@@ -788,7 +767,6 @@ Left percutaneous retrieval and retrograde double-J ureteral stent placement wer
 ::xadjap:: {
   MyForm := "
 (
-
 Antegrade pyelography
 
 Operator: I-Ta Tsai
@@ -811,7 +789,6 @@ Patent ureteral stent and successful removal of PCND.
   currDateStr := FormatTime(, "M/d tt")
   MyForm := "
 (
-
 Percutaneous nephrostomy (8F pigtail) was performed in %currDateStr%.
 )"
   Paste(MyForm)
@@ -820,7 +797,6 @@ Percutaneous nephrostomy (8F pigtail) was performed in %currDateStr%.
 ::xapcn:: {
   MyForm := "
 (
-
 Percutaneous Nephrostomy
 
 Operator: I-Ta Tsai
@@ -851,7 +827,6 @@ Bilateral PCN (8F pigtail) was successfully performed.
 ::xapcnr:: {
   MyForm := "
 (
-
 Percutaneous Nephrostomy Revision
 
 Operator: I-Ta Tsai
@@ -874,7 +849,6 @@ PCN revision was successfully performed.
 ::xaap:: {
   MyForm := "
 (
-
 Antegrade pyelography
 
 Operator: I-Ta Tsai
@@ -894,7 +868,6 @@ No urinary obstruction is noted.
 ::xaretr:: {
   MyForm := "
 (
-
 Percutaneous retrieval of foreign body:
 
 Operator: I-Ta Tsai
@@ -918,7 +891,6 @@ Percutaneous retrieval of foreign body was successfully performed.
 ::0picc:: {
   MyForm := "
 (
-
 Please arrange:
 
 1. PICC catheter insertion
@@ -934,7 +906,6 @@ The procedure has been scheduled.
   currDateStr := FormatTime(, "M/d tt")
   MyForm := "
 (
-
 PICC catheter insertion was performed in %currDateStr%. A 4 Fr Groshong catheter was placed with tip at the SVC.
 )"
   Paste(MyForm)
@@ -944,7 +915,6 @@ PICC catheter insertion was performed in %currDateStr%. A 4 Fr Groshong catheter
 ::xapicc:: {
   MyForm := "
 (
-
 Venography of right/left arm and SVC:
 - Puncture: basilic/brachial/cephalic vein
 - Patent of right basilic/brachial/cephalic vein, subclavian vein, brachiocephalic vein and superior vena cava.
@@ -967,7 +937,6 @@ IMPRESSION:
 ::xapiccdl:: {
   MyForm := "
 (
-
 Venography of right/left arm and SVC:
 - Puncture: basilic/brachial/cephalic vein
 - Patent of right basilic/brachial/cephalic vein, subclavian vein, brachiocephalic vein and superior vena cava.
@@ -993,7 +962,6 @@ IMPRESSION:
   currDateStr := FormatTime(, "M/d tt")
   MyForm := "
 (
-
 Aortography and angiography of lower extremity were performed in %currDateStr%.
 Angiography of lower extremity was performed in %currDateStr%.
 Please keep external compression on the puncture site and check if bleeding or hematoma occurs.
@@ -1004,7 +972,6 @@ Please keep external compression on the puncture site and check if bleeding or h
 ::xale:: {
   MyForm := "
 (
-
 Aortography and angiography of bilateral lower extremities.
 Aortography and angiography of right lower extremity.
 Aortography and angiography of left lower extremity.
@@ -1049,7 +1016,6 @@ Patent major left lower extremity arteries.
   currDateStr := FormatTime(, "M/d tt")
   MyForm := "
 (
-
 PTCD was performed in %currDateStr%. A 8 Fr pigtail drain was inserted through left / right IHD.
 )"
   Paste(MyForm)
@@ -1058,7 +1024,6 @@ PTCD was performed in %currDateStr%. A 8 Fr pigtail drain was inserted through l
 ::xaptcd:: {
   MyForm := "
 (
-
 Percutaneous Transhepatic Cholangiography and Drainage
 
 Devices: 8 Fr Cholangio-Entero-Tube
@@ -1093,7 +1058,6 @@ Right PTCD (8F pigtail with string lock and homemade side holes, tip in the duod
 ::xaptcdr:: {
   MyForm := "
 (
-
 PTCD Revision
 
 Materials: 8 Fr x 25 cm pigtail drain
@@ -1115,7 +1079,6 @@ Bilateral PTCD revisions were done.
 ::xaport:: {
   MyForm := "
 (
-
 Port-A catheter implantation:
 Central venography and Port-A catheter implantation:
 
@@ -1137,7 +1100,6 @@ A venous access port was implanted at the left upper chest.
 ::xaportremoval:: {
   MyForm := "
 (
-
 Port-A removal:
 
 Indication: suspicious Port-A system infection.
@@ -1156,7 +1118,6 @@ The venous access port-catheter system was completely removed.
 ::xachkport:: {
   MyForm := "
 (
-
 Venography to check Port-A:
 
 FINDINGS:
@@ -1185,7 +1146,6 @@ After adjusting the Huber needle, the Port-A catheter functioned well.
 ::xahaicport:: {
   MyForm := "
 (
-
 HAIC (hepatic arterial infusion chemotherapy) Catheter Placement and Port Implantation
 
 Operator: I-Ta Tsai, CC Chen
@@ -1238,7 +1198,6 @@ Single blood supply (blockage of SMA supply) for pancreatic cancer was achieved.
 ::xanj:: {
   MyForm := "
 (
-
 UGI Series, Balloon Dilatation, and Fluoro-guide NJ tube placement.
 
 Operator: I-Ta Tsai
@@ -1260,7 +1219,6 @@ The NG tube could not pass the pyloric stenosis. Instead, a 6F long sheath was p
 ::taci:: {
   MyForm := "
 (
-
 Celiac Angiography and Adjuvant TACI for HCC
 
 INDICATION: HCC, s/p OP, for adjuvant TACI of the remnant liver.

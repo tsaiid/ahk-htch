@@ -2,7 +2,6 @@
 ::srct3d:: {
   MyForm := "
 (
-
 FACIAL facial Bone CT
 
 TECHNIQUE:
@@ -54,7 +53,6 @@ FINDINGS:
 ::srct3dok:: {
   MyForm := "
 (
-
 FACIAL facial Bone CT
 
 TECHNIQUE:
@@ -105,7 +103,6 @@ No evidence of facial bone fracture.
 ::srctabrain:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Multi-slice CT scanner with
 (1) Non-contrast scanning in axial plane from skull base to vertex with 4 to 5-mm-thick contiguous slices.
@@ -196,7 +193,6 @@ Aneurysm rupture
 ::srctanec:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Multi-slice CT scanner with
 (1) Non-contrast scanning in axial plane from aortic arch to skull base with 4 to 5-mm-thick contiguous slices.
@@ -248,7 +244,6 @@ carotid stenosis
 ::srctcs2:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Multi-slice CT scanner;
 Non-contrast axial contiguous scanning of cervical spine with sagittal and coronal reformatted images
@@ -284,7 +279,6 @@ No significant findings in cervical spine region
 ::srctn1:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Multi-slice CT scanner with (1) non-contrast and (2) contrast-enhanced
 scanning in axial plane from skull base to vertex with 4 to 5-mm-thick contiguous slices;
@@ -331,7 +325,6 @@ No obvious brain metastasis
 ::srctn2:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Multi-slice CT scanner without contrast medium in axial plane from skull base to vertex with 5-mm-thick contiguous slices
 
@@ -375,7 +368,6 @@ No significant intracranial findings
 ::srctnec:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Multi-slice CT scanner with
 (1) Non-contrast and (2) Contrast-enhanced
@@ -423,7 +415,6 @@ No significant findings in face and neck region
 ::srctnecnc:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Multi-slice CT scanner with
 Non-contrast scanning in axial plane from skull base to thoracic inlet with 2.5-mm-thick contiguous slices and coronal reformatted images.
@@ -473,7 +464,6 @@ No significant findings in face and neck region
 ::srctnec1:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Noncontrast CT scan of head and neck was performed with a multi-slice CT scanner:
 SCAN RANGE: axial plane from the skull base to the low neck with 5-mm continuous scan slice thickness and coronal reconstruction
@@ -527,7 +517,6 @@ Clinical correlation and follow up are suggested.
 ::srcto1:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Multi-slice CT scanner with non-contrast scanning in axial plane and coronal reformatted images.
 
@@ -578,7 +567,6 @@ No significant findings in bilateral orbital regions
 ::srcto2:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Multi-slice CT scanner with
 (1) Non-contrast and (2) Contrast-enhanced
@@ -632,7 +620,6 @@ No significant findings in bilateral orbital regions
 ::srctp:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Multi-slice CT scanner with non-contrast scanning in axial plane and coronal reformatted images.
 
@@ -685,7 +672,6 @@ DDx: antrochoanal polyp, inverted papilloma, or polyp with obstructive sinusitis
 ::srhrct:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Multi-slice CT scanner with ultra-thin slice (<1mm) axial scan of temporal bone using high-resolution bone algorithm, with coronal reconstruction
 
@@ -741,7 +727,6 @@ Left chronic otitis media with acquired cholesteatoma and ossicular preservation
 ::srmranec:: {
   MyForm := "
 (
-
 TECHNIQUE:
 1.5 Tesla scanner
 Magnetic resonance angiography (MRA) of the brain focused on circle of Willis using 3D SPGR time of flight method with MIP (maximum intensity projection) reformatted images and raw data display.
@@ -799,7 +784,6 @@ No significant findings
 ::srmrb:: {
   MyForm := "
 (
-
 TECHNIQUE:
 1.5 Tesla scanner
 Sagittal T1WI (localizer), Axial T1WI, T2WI, GET2*WI, Fluid Attenuated Inversion Recovery (FLAIR), Diffusion-weighted Imaging (DWI),
@@ -845,7 +829,6 @@ No significant intracranial findings
 ::srmrbcva:: {
   MyForm := "
 (
-
 TECHNIQUE:
 1.5 Tesla scanner
 Sagittal T1WI (localizer), Axial T1WI, T2WI, GET2*WI, Fluid Attenuated Inversion Recovery (FLAIR), Diffusion-weighted Imaging (DWI),
@@ -940,7 +923,6 @@ Follow up or further evaluation.
 ::srmrbcva-wnl:: {
   MyForm := "
 (
-
 TECHNIQUE:
 1.5 Tesla scanner
 Sagittal T1WI (localizer), Axial T1WI, T2WI, GET2*WI, Fluid Attenuated Inversion Recovery (FLAIR), Diffusion-weighted Imaging (DWI),
@@ -1002,7 +984,6 @@ IMPRESSION:
 ::srmricva:: {
   MyForm := "
 (
-
 TECHNIQUE:
 1.5 Tesla scanner
 The MR of the brain performed with Sagittal T1WI (localizer)
@@ -1124,7 +1105,6 @@ Follow up or further evaluation.
 ::srmrnec:: {
   MyForm := "
 (
-
 TECHNIQUE:
 1.5 Tesla scanner
 Sagittal T1WI and T2WI,
@@ -1177,7 +1157,6 @@ No obvious tumor recurrence
 ::srmro1:: {
   MyForm := "
 (
-
 TECHNIQUE:
 1.5 Tesla scanner
 Axial T1WI and T2WI with Fat sat,
@@ -1233,7 +1212,6 @@ No significant findings in bilateral orbital regions
 ::srmrse:: {
   MyForm := "
 (
-
 TECHNIQUE:
 1.5 Tesla scanner
 Axial T2WI for whole brain
@@ -1279,7 +1257,6 @@ Pituitary macroadenoma
 ::srmrsellaandbrain:: {
   MyForm := "
 (
-
 TECHNIQUE:
 1.5 Tesla scanner
 Sella:
@@ -1353,7 +1330,6 @@ Pituitary macroadenoma
 ::srmrspc1:: {
   MyForm := "
 (
-
 TECHNIQUE:
 1.5 Tesla scanner
 Coronal T2WI (localizer)
@@ -1411,7 +1387,6 @@ Spinal canal stenosis
 ::srmrspc2:: {
   MyForm := "
 (
-
 TECHNIQUE:
 1.5 Tesla scanner
 Coronal T2WI (localizer)
@@ -1469,7 +1444,6 @@ Spinal canal stenosis
 ::srmrspl1:: {
   MyForm := "
 (
-
 TECHNIQUE:
 1.5 Tesla scanner
 Coronal T2WI with fat sat (localizer)
@@ -1526,7 +1500,6 @@ Spinal canal stenosis
 ::srmrspl2:: {
   MyForm := "
 (
-
 TECHNIQUE:
 1.5 Tesla scanner
 Coronal T2WI with fat sat (localizer)
@@ -1582,7 +1555,6 @@ Spinal canal stenosis
 ::srspinemyeloct:: {
   MyForm := "
 (
-
 Hx: 3222853, Ac: 71633372, M/77Y, 20150430
 
 Myelography T&L Spine
@@ -1630,7 +1602,6 @@ See descriptions
 ::srmrspt:: {
   MyForm := "
 (
-
 TECHNIQUE:
 1.5 Tesla scanner
 Lumbar spine localization (sagittal T2WI)
@@ -1689,7 +1660,6 @@ Spinal canal stenosis
 ::srspinewholemrce:: {
   MyForm := "
 (
-
 TECHNIQUE:
 1.5 Tesla scanner
 Cervical spine localization (sagittal T2WI)

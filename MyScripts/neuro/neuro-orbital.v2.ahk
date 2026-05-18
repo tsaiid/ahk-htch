@@ -3,7 +3,6 @@
 ::cto2:: {
   MyForm := "
 (
-
 Non-contrast CT scan of orbit
 
 TECHNIQUE:
@@ -25,7 +24,6 @@ FINDINGS:
 ::cto2ok:: {
   MyForm := "
 (
-
 Non-contrast CT scan of orbit
 
 TECHNIQUE:
@@ -49,7 +47,6 @@ No abnormal thickening of the extraocular muscles.
   SleepThenTab()
   MyForm := "
 (
-
 No evidence of high density foreign body noted at the bilateral intraocular and retroocular regions.
 )"
   Paste(MyForm)
@@ -58,7 +55,6 @@ No evidence of high density foreign body noted at the bilateral intraocular and 
 ::cto2tao:: {
   MyForm := "
 (
-
 Non-contrast CT scan of orbit
 
 TECHNIQUE:
@@ -82,7 +78,6 @@ FINDINGS:
   SleepThenTab()
   MyForm := "
 (
-
 C/W thyroid-associated orbitopathy.
 Possibly thyroid-associated orbitopathy, left side. DDx: orbital pseudotumor. Suggest correlate with thyroid function test.
 )"
@@ -92,7 +87,6 @@ Possibly thyroid-associated orbitopathy, left side. DDx: orbital pseudotumor. Su
 ::cto2taook:: {
   MyForm := "
 (
-
 Non-contrast CT scan of orbit
 
 TECHNIQUE:
@@ -119,7 +113,6 @@ FINDINGS:
   SleepThenTab()
   MyForm := "
 (
-
 1. No obvious proptosis.
 2. No abnormal thickening of the extraocular muscles.
 
@@ -132,7 +125,6 @@ Bilateral exophthalmos. However, no strong evidence of thyroid-associated orbito
 ::cto2ebr:: {
   MyForm := "
 (
-
 Non-contrast CT scan of orbit
 
 TECHNIQUE:
@@ -153,7 +145,6 @@ FINDINGS:
   SleepThenTab()
   MyForm := "
 (
-
 c/w left eyeball rupture.
 )"
   Paste(MyForm)
@@ -162,7 +153,6 @@ c/w left eyeball rupture.
 ::cto1:: {
   MyForm := "
 (
-
 Noncontrast CT scan and post contrast CT scan of the orbit performed with axial and coronal section, 2-2 mm slice thickness showed:
 
 Previous CT of orbit: no
@@ -179,7 +169,6 @@ FINDINGS:
 ::cto1ok:: {
   MyForm := "
 (
-
 Noncontrast CT scan and post contrast CT scan of the orbit performed with axial and coronal section, 2-2mm slice thickness showed:
 Previous CT of orbit: no
 
@@ -206,7 +195,6 @@ Presence of dental artifact and superimpose of the oral cavity, and the oral cav
 ::mro1:: {
   MyForm := "
 (
-
 MRI of the orbit performed with Sagittal T1WI (localizer)
 Axial T1WI and FSE T2WI with Fat sat
 Coronal T1WI and FSE T2WI with Fat sat

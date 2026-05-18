@@ -2,7 +2,6 @@
 ::0sg-ptccd:: {
   MyForm := "
 (
-
 PTCCD is indicated and has been arranged.
 )"
   Paste(MyForm)
@@ -12,7 +11,6 @@ PTCCD is indicated and has been arranged.
   currDateStr := FormatTime(, "M/d tt")
   MyForm := "
 (
-
 PTCCD was performed in %currDateStr%. A 6 Fr pigtail drain with safety lock was inserted. 10 ml of aspirated bile was collected for Lab exam.
 )"
   Paste(MyForm)
@@ -21,7 +19,6 @@ PTCCD was performed in %currDateStr%. A 6 Fr pigtail drain with safety lock was 
 ::ptccd:: {
   MyForm := "
 (
-
 P.T.C.C.D:
 
 - Image guidance: CT
@@ -35,7 +32,6 @@ P.T.C.C.D:
 ::sg-ptccd:: {
   MyForm := "
 (
-
 Under sonography guidance, the gallbladder was localized.
 The skin was prepared and the area was draped.
 After local anesthesia, a 6 Fr one-step pigtail catheter (with string lock) was placed transhepatically into the gallbladder.
@@ -53,7 +49,6 @@ The whole procedure was smooth, the patient tolerated well, and no immediate com
 :*:sg-a:: {
   MyForm := "
 (
-
 Under sonography guidance, ascites was noted in RLQ of abdomen.
 The skin was prepared and the area was draped.
 Under local anesthesia, a 6 Fr pigtail catheter, using Seldinger technique, was placed into the peritoneal cavity.
@@ -65,7 +60,6 @@ The whole procedure was smooth, the patient tolerated well, and no immediate com
   SleepThenTab()
   MyForm := "
 (
-
 Percutaneous drainage for ascites was performed.
 )"
   Paste(MyForm)
@@ -74,7 +68,6 @@ Percutaneous drainage for ascites was performed.
 :*:sg-rpig:: {
   MyForm := "
 (
-
 Under sonography guidance, pleural effusion and lung atelectasis were noted in right chest.
 The skin was prepared and the area was draped.
 Under local anesthesia, a 8 Fr pigtail catheter, using Seldinger technique, was placed through intercostal space into the pleural cavity.
@@ -88,7 +81,6 @@ The whole procedure was smooth, the patient tolerated well, and no immediate com
 :*:sg-lpig:: {
   MyForm := "
 (
-
 Under sonography guidance, pleural effusion and lung atelectasis were noted in left chest.
 The skin was prepared and the area was draped.
 Under local anesthesia, a 8 Fr pigtail catheter, using Seldinger technique, was placed through intercostal space into the pleural cavity.
@@ -102,7 +94,6 @@ The whole procedure was smooth, the patient tolerated well, and no immediate com
 :*:sg-bpig:: {
   MyForm := "
 (
-
 Under sonography guidance, pleural effusion and lung atelectasis were noted in bilateral chests.
 The skin was prepared and the area was draped.
 Under local anesthesia, a 8 Fr pigtail catheter, using Seldinger technique, was placed through intercostal space into the right pleural cavity.
@@ -119,7 +110,6 @@ The whole procedure was smooth, the patient tolerated well, and no immediate com
 :*:sg-npig:: {
   MyForm := "
 (
-
 Due to the small amount of right/left side pleural effusion(<2cm thickness), pigtail drainage was not recommended.
 )"
   Paste(MyForm)
@@ -128,7 +118,6 @@ Due to the small amount of right/left side pleural effusion(<2cm thickness), pig
 :*:sg-lpb:: {
   MyForm := "
 (
-
 The skin was prepared, the area was draped, and the rectum was filled with Povidone.
 Under sonography guidance, the hypoechoic tumor was localized at left lobe of prostate.
 A 18G biopsy needle was used and 12 pieces of specimen (3 from the tumor, 3 from left lobe, 6 from right lobe) were harvested.
@@ -140,7 +129,6 @@ The whole procedure was smooth, the patient tolerated well, and no immediate com
 :*:sg-rpb:: {
   MyForm := "
 (
-
 The skin was prepared, the area was draped, and the rectum was filled with Povidone.
 Under sonography guidance, the hypoechoic tumor was localized at right lobe of prostate.
 A 18G biopsy needle was used and 12 pieces of specimen (3 from the tumor, 3 from right lobe, 6 from left lobe) were harvested.
@@ -152,7 +140,6 @@ The whole procedure was smooth, the patient tolerated well, and no immediate com
 :*:sg-lb:: {
   MyForm := "
 (
-
 Sono-Guiding Liver Biopsy:
 
 Biopsy region: Left lobe
@@ -167,7 +154,6 @@ Complication: nil
   SleepThenTab()
   MyForm := "
 (
-
 Sono-guiding liver biopsy was successfully performed.
 )"
   Paste(MyForm)
@@ -178,7 +164,6 @@ Sono-guiding liver biopsy was successfully performed.
 :*:sg-ld:: {
   MyForm := "
 (
-
 Percutaneons abscess drainage-PAD:
 
 Target: right subphrenic biloma.
@@ -205,7 +190,6 @@ The whole procedure was smooth, the patient tolerated well, and no immediate com
   SleepThenTab()
   MyForm := "
 (
-
 Percutaneous drain (8F pigtail) for right subphrenic biloma was performed.
 Percutaneous drain for liver abscess was performed.
 )"
@@ -215,7 +199,6 @@ Percutaneous drain for liver abscess was performed.
 :*:sg-bb:: {
   MyForm := "
 (
-
 Sono-Guiding Breast Biopsy:
 
 Biopsy region: Left 2/0
@@ -230,7 +213,6 @@ Complication: nil
   SleepThenTab()
   MyForm := "
 (
-
 Sono-guiding breast biopsy was successfully performed.
 )"
   Paste(MyForm)
@@ -239,7 +221,6 @@ Sono-guiding breast biopsy was successfully performed.
 :*:sg-kb:: {
   MyForm := "
 (
-
 Sono-Guiding Kidney Biopsy:
 
 Biopsy region: Graft kidney at right iliac fossa, upper portion, cortex. corticomedullary junction.
@@ -254,7 +235,6 @@ Complication: nil
   SleepThenTab()
   MyForm := "
 (
-
 Sono-guiding kidney biopsy was successfully performed.
 )"
   Paste(MyForm)
@@ -263,7 +243,6 @@ Sono-guiding kidney biopsy was successfully performed.
 :*:sg-ta:: {
   MyForm := "
 (
-
 Sono-Guiding Fine Needle Aspiration of Thyroid:
 
 Under sonography, the mass lesion was identified at the left/right thyroid lobe.
@@ -277,7 +256,6 @@ The patient tolerated wall, and no immediate complication was noted.
   SleepThenTab()
   MyForm := "
 (
-
 Sono-guiding find needle aspiration of thyroid was successfully performed.
 )"
   Paste(MyForm)
@@ -286,7 +264,6 @@ Sono-guiding find needle aspiration of thyroid was successfully performed.
 :*:sg-lnb:: {
   MyForm := "
 (
-
 Sono-Guiding Lymph Node Biopsy:
 
 Biopsy region: Left axillary
@@ -300,7 +277,6 @@ Complication: nil
   SleepThenTab()
   MyForm := "
 (
-
 Sono-guiding lymph node biopsy was successfully performed.
 )"
   Paste(MyForm)
@@ -309,7 +285,6 @@ Sono-guiding lymph node biopsy was successfully performed.
 :*:sg-lna:: {
   MyForm := "
 (
-
 Sono-Guiding Fine Needle Aspiration of Lymph Node:
 
 Under sonography, the mass lesion was identified at the left/right neck.
@@ -321,7 +296,6 @@ The patient tolerated wall, and no immediate complication was noted.
   SleepThenTab()
   MyForm := "
 (
-
 Sono-guiding find needle aspiration of lymph node was successfully performed.
 )"
   Paste(MyForm)

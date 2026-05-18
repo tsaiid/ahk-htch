@@ -40,7 +40,6 @@
 ::ccttrok:: {
   MyForm := "
 (
-
 No pneumothorax or hemothorax.
 No lung contusion, pneumothorax, or hemothorax.
 The heart and great vessels appear unremarkable.
@@ -51,7 +50,6 @@ The thoracic cage and bones appear intact.
 ::cctlapok:: {
   MyForm := "
 (
-
 No mediastinal or pulmonary hilar lymphadenopathy.
 No axillary, supraclavicular, mediastinal or pulmonary hilar lymphadenopathy.
 )"
@@ -68,7 +66,6 @@ No axillary, supraclavicular, mediastinal or pulmonary hilar lymphadenopathy.
 ::cctok:: {
   MyForm := "
 (
-
 No pulmonary nodule.
 No mediastinal lymphadenopathy.
 The heart and great vessels appear unremarkable.
@@ -81,7 +78,6 @@ The thoracic cage and bones appear intact.
 ::cctlr:: {
   MyForm := "
 (
-
 CT scan of the thorax was performed with a multi-slice CT scanner.
 
 TECHNIQUE:
@@ -110,7 +106,6 @@ FINDINGS:
 ::cctncsd:: {
   MyForm := "
 (
-
 CT scan of the thorax was performed with a multi-slice CT scanner.
 
 TECHNIQUE:
@@ -142,7 +137,6 @@ FINDINGS:
   SleepThenTab()
   MyForm := "
 (
-
 No obvious traumatic intrathoracic injury.
 )"
   Paste(MyForm)
@@ -151,7 +145,6 @@ No obvious traumatic intrathoracic injury.
 ::cctncsd+a:: {
   MyForm := "
 (
-
 CT scan of the thorax and abdomen was performed with a multi-slice CT scanner.
 
 TECHNIQUE:
@@ -182,7 +175,6 @@ FINDINGS:
 ::cctncld:: {
   MyForm := "
 (
-
 Lower dose, high resolution (2-mm slice thickness) non-contrast CT scan for screening pulmonary nodule.
 Scanner: Multi-detector CT scanner.
 Scan range: thoracic inlet to diaphragm.
@@ -218,7 +210,6 @@ FINDINGS:
   SleepThenTab()
   MyForm := "
 (
-
 No remarkable nodular lesions in bilateral lungs.
 
 ----
@@ -245,7 +236,6 @@ Fleischner Society 2017 Guidelines for Management of Incidentally Detected Pulmo
 ::cctncldok:: {
   MyForm := "
 (
-
 Lower dose, high resolution (2-mm slice thickness) non-contrast CT scan for screening pulmonary nodule.
 Scanner: Multi-detector CT scanner.
 Scan range: thoracic inlet to diaphragm.
@@ -273,7 +263,6 @@ FINDINGS:
   SleepThenTab()
   MyForm := "
 (
-
 No remarkable nodular lesions in bilateral lungs.
 
 ----
@@ -300,7 +289,6 @@ Fleischner Society 2017 Guidelines for Management of Incidentally Detected Pulmo
 ::cctfsg:: {
   MyForm := "
 (
-
 ----
 Measurement of pulmonary solid nodule is based on RECIST 1.1, the largest diameter in an axial plane. RECIST: Response Evaluation Criteria in Solid Tumors
 
@@ -325,7 +313,6 @@ Fleischner Society 2017 Guidelines for Management of Incidentally Detected Pulmo
 ::cctncsduip:: {
   MyForm := "
 (
-
 CT scan of the thorax was performed with a multi-slice CT scanner.
 
 TECHNIQUE:
@@ -362,7 +349,6 @@ FINDINGS:
   SleepThenTab()
   MyForm := "
 (
-
 UIP pattern.
 )"
   Paste(MyForm)
@@ -371,7 +357,6 @@ UIP pattern.
 ::cctncsdnsip:: {
   MyForm := "
 (
-
 CT scan of the thorax was performed with a multi-slice CT scanner.
 
 TECHNIQUE:
@@ -399,7 +384,6 @@ FINDINGS:
   SleepThenTab()
   MyForm := "
 (
-
 NSIP is suspected.
 )"
   Paste(MyForm)
@@ -409,7 +393,6 @@ NSIP is suspected.
 ::cctcta:: {
   MyForm := "
 (
-
 CT scan of the thorax and abdomen was performed with a multi-slice CT scanner.
 
 TECHNIQUE:
@@ -444,7 +427,6 @@ FINDINGS:
 ::cctctaa:: {
   MyForm := "
 (
-
 CT scan of the thorax and abdomen was performed with a multi-slice CT scanner.
 
 TECHNIQUE:
@@ -479,7 +461,6 @@ FINDINGS:
 ::cctctap:: {
   MyForm := "
 (
-
 CT scan of the thorax was performed with a multi-slice CT scanner.
 
 TECHNIQUE:
@@ -514,7 +495,6 @@ FINDINGS:
 ::cctchd:: {
   MyForm := "
 (
-
 MDCT FOR CONGENITAL HEART DISEASE PERFORMED WITH 64-SLICE CT SCANNER
 Total DLP:
 
@@ -566,7 +546,6 @@ IMPRESSION:
 ::cctlcs:: {
   MyForm := "
 (
-
 CT scan of the thorax was performed with a MDCT scanner.
 TECHNIQUE: (1) NCCT (2) CECT were performed
 SCAN RANGE: lower neck to adrenal gland
@@ -621,7 +600,6 @@ B. Other Findings
   SleepThenTab()
   MyForm := "
 (
-
 Lung cancer of , cTNM (AJCC 2016, 8th ed.)
 )"
   Paste(MyForm)
@@ -631,7 +609,6 @@ Lung cancer of , cTNM (AJCC 2016, 8th ed.)
 ::cctecs:: {
   MyForm := "
 (
-
 CT scan of the thorax was performed with a MDCT scanner.
 
 PROTOCOL:
@@ -686,7 +663,6 @@ Left gastric artery
   SleepThenTab()
   MyForm := "
 (
-
 Esophageal CA of , cTNM. (AJCC 2016, 8th ed.)
 )"
   Paste(MyForm)
@@ -695,7 +671,6 @@ Esophageal CA of , cTNM. (AJCC 2016, 8th ed.)
 ::cctsr:: {
   MyForm := "
 (
-
 Lung and large airways: no pulmonary nodules.
 Pleura: no visible nodularity or pleural thickening.
 Great vessels: within normal limits.
@@ -709,7 +684,6 @@ Chest Wall and low neck: within normal limits.
 ::cctcs:: {
   MyForm := "
 (
-
 Cardiac dual-source CT was performed without intravenous contrast administration and under ECG-gating.
 
 Findings:
@@ -730,7 +704,6 @@ Additional findings:
   SleepThenTab()
   MyForm := "
 (
-
 Total Calcium Score (Equivalent Agatston Score) is 0.
 )"
   Paste(MyForm)
@@ -739,7 +712,6 @@ Total Calcium Score (Equivalent Agatston Score) is 0.
 ::ccta:: {
   MyForm := "
 (
-
 Dual-Source CT of heart was performed with rapid i.v. contrast administration
 Findings of CT coronary angiography:
 
@@ -786,7 +758,6 @@ Remark: Some heart motion might mimic pseudo-stenotic lesions in Volume Renderin
   SleepThenTab()
   MyForm := "
 (
-
 No evidence of coronary stenosis or plaque by Coronary CT Angiography.
 )"
   Paste(MyForm)

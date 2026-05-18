@@ -3,7 +3,6 @@
 ::ugi:: {
   MyForm := "
 (
-
 Double-contrast upper GI study from esophagus to proximal duodenum was performed smoothly and showed:
 
 - Normal elasticity and distensibility of stomach.
@@ -20,7 +19,6 @@ No abnormal findings noted in this UGI study.
 ::ugipcu:: {
   MyForm := "
 (
-
 Double-contrast upper GI study from esophagus to proximal duodenum was performed smoothly.
 Esophagography was performed under fluoroscopy and showed:
 
@@ -40,7 +38,6 @@ No abnormal findings noted in this UGI study.
 ::ugieso:: {
   MyForm := "
 (
-
 Double-contrast upper GI study from esophagus to proximal duodenum was performed smoothly and showed:
 Esophagography was performed under fluoroscopy:
 
@@ -60,7 +57,6 @@ No abnormal findings noted in this UGI study.
 ::smint:: {
   MyForm := "
 (
-
 Single contrast small intestine and compressed spot view were performed under fluoroscope with well demonstration to the ileocecal valve:
 
 - Normal appearance of mucosa and peristalsis of small intestine without obvious mass lesion.
@@ -72,7 +68,6 @@ Single contrast small intestine and compressed spot view were performed under fl
 ::ugisi:: {
   MyForm := "
 (
-
 Double-contrast upper GI study from esophagus to proximal duodenum, and single contrast small intestine and compressed spot view were performed smoothly and showed:
 
 - Normal elasticity and distensibility of stomach.

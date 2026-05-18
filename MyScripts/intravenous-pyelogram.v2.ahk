@@ -9,7 +9,6 @@
 ::ivp:: {
   MyForm := "
 (
-
 IV urography was performed and demonstrates as follows:
 
 1. Clear bilateral renal shadows and psoas muscle lines.

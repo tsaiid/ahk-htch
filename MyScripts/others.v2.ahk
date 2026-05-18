@@ -215,7 +215,6 @@
 ::ncl:: {
   MyForm := "
 (
-
 * The evaluation is limited due to absence of contrast enhancement, especially for solid organs and vascular structure.
 * The detection of tiny or occult metastasis is limited due to absence of contrast enhancement.
 * The detection of tiny or occult residual/recurrent tumor and the evaluation of vascular structure are limited due to absence of contrast enhancement.
@@ -340,7 +339,6 @@
   currDateStr := FormatTime(, "yyyy/M/d")
   MyForm := "
 (
-
 ----
 Additional report on %currDateStr%:
 
@@ -363,7 +361,6 @@ Additional report on %currDateStr%:
 ::share:: {
   MyForm := "
 (
-
 The study has been uploaded to our PACS system.
 Original report has been attached as a picture file.
 For second opinion, please submit a formal consultation request to our department.

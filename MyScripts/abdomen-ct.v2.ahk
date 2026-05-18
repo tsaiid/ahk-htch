@@ -94,7 +94,6 @@
 ::acttrok:: {
   MyForm := "
 (
-
 No liver, spleen, or kidney traumatic injury.
 The gallbladder, spleen, pancreas, adrenals, urinary bladder, and bowels are unremarkable.
 )"
@@ -103,7 +102,6 @@ The gallbladder, spleen, pancreas, adrenals, urinary bladder, and bowels are unr
 ::livok:: {
   MyForm := "
 (
-
 - No abnormal enhanced lesion or washout pattern noted.
 - No definite abnormal enhanced hepatic mass lesion with washout pattern noted.
 - No definite abnormal enhanced hepatic mass lesion with/without washout pattern noted.
@@ -126,7 +124,6 @@ The gallbladder, spleen, pancreas, adrenals, urinary bladder, and bowels are unr
 ::act:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Non-contrast and contrast-enhanced abdominal CT scans.
 Scanning range: Liver to symphysis, 5-mm contiguous scan.
@@ -142,7 +139,6 @@ FINDINGS:
 ::actpel:: {
   MyForm := "
 (
-
 Non-contrast and contrast-enhanced pelvic CT scans.
 Scanning range: Lower abdomen to pelvis, 5-mm contiguous scan.
 
@@ -165,7 +161,6 @@ No obvious ascites.
 ::actpelnc:: {
   MyForm := "
 (
-
 Non-contrast pelvic CT scan.
 Scanning range: Lower abdomen to pelvis, 5-mm contiguous scan.
 
@@ -194,7 +189,6 @@ No obvious ascites.
 
   MyForm := "
 (
-
 TECHNIQUE:
 Non-contrast and contrast-enhanced abdominal CT scans.
 Scanning range: Liver to symphysis, 5-mm contiguous scan.
@@ -230,7 +224,6 @@ Lower thorax: Unremarkable
 
   MyForm := "
 (
-
 Abdomen to Pelvis CT:
 
 TECHNIQUE:
@@ -265,7 +258,6 @@ REMARKS:
 ::actok:: {
   MyForm := "
 (
-
 - The liver, gallbladder, spleen, pancreas, adrenals, kidneys, urinary bladder, and bowel are unremarkable.
 )"
   Paste(MyForm)
@@ -274,7 +266,6 @@ REMARKS:
 ::actok1:: {
   MyForm := "
 (
-
 - The liver, gallbladder, spleen, pancreas, adrenals, kidneys, urinary bladder, and bowel are unremarkable.
 - The lower abdomen and pelvis are unremarkable.
 - No retroperitoneal or mesenteric lymphadenopathy.
@@ -286,7 +277,6 @@ REMARKS:
 ::actok2:: {
   MyForm := "
 (
-
 - No evidence of intraperitoneal free air.
 - No obvious ascites.
 )"
@@ -300,7 +290,6 @@ REMARKS:
 ::actlapok:: {
   MyForm := "
 (
-
 No retroperitoneal or mesenteric lymphadenopathy.
 No pelvic, retroperitoneal or mesenteric lymphadenopathy.
 No pelvic or retroperitoneal lymphadenopathy.
@@ -312,7 +301,6 @@ No obvious intraabdominal lymphadenopathy.
 ::ctcaok:: {
   MyForm := "
 (
-
 No local recurrence.
 No retroperitoneal or mesenteric lymphadenopathy.
 No pelvic, retroperitoneal or mesenteric lymphadenopathy.
@@ -328,7 +316,6 @@ No osteolytic or osteoblastic bone lesion in the scanning range.
 ::actapp:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Non-contrast and contrast-enhanced abdominal CT scans.
 Scanning range: Liver to symphysis, 5-mm contiguous scan.
@@ -366,7 +353,6 @@ Acute appendicitis is suspected.
 ::actappr:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Non-contrast and contrast-enhanced abdominal CT scans.
 Scanning range: Liver to symphysis, 5-mm contiguous scan.
@@ -395,7 +381,6 @@ C/W acute appendicitis with rupture.
 ::actppu:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Non-contrast and contrast-enhanced abdominal CT scans.
 Scanning range: Liver to symphysis, 5-mm contiguous scan.
@@ -421,7 +406,6 @@ Hollow organ perforation, suspicious perforated peptic ulcer.
 ::actdiv:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Non-contrast and contrast-enhanced abdominal CT scans.
 Scanning range: lower abdomen to symphysis, 5-mm contiguous scan.
@@ -449,7 +433,6 @@ Ascending colon diverticulitis, without rupture.
 ::actdivr:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Non-contrast and contrast-enhanced abdominal CT scans.
 Scanning range: lower abdomen to symphysis, 5-mm contiguous scan.
@@ -486,7 +469,6 @@ Acute diverticulitis of sigmoid colon, with perforation and abscess formation.
 ::actea:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Non-contrast and contrast-enhanced abdominal CT scans.
 Scanning range: Liver to symphysis, 5-mm contiguous scan.
@@ -519,7 +501,6 @@ Epiploic appendagitis at the descending colon.
 
   MyForm := "
 (
-
 TECHNIQUE:
 Non-contrast and contrast-enhanced abdominal CT scans.
 Scanning range: Abdomen and pelvis contiguous scan, with 2.5 mm axial reconstruction.
@@ -554,7 +535,6 @@ Lower thorax: Unremarkable
 
   MyForm := "
 (
-
 TECHNIQUE:
 Non-contrast and contrast-enhanced abdominal CT scans.
 Scanning range: Diaphragm to symphysis, 5-mm contiguous scan.
@@ -588,7 +568,6 @@ Lower thorax: Unremarkable
 ::actlivihcc:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Non-contrast and contrast-enhanced abdominal CT scans.
 Scanning range: Diaphragm to kidney, 5-mm contiguous scan.
@@ -627,7 +606,6 @@ Lower thorax: Unremarkable
 ::actpan:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Non-contrast and contrast-enhanced abdominal CT scans.
 Scanning range: Diaphragm to pubis, 2.5-mm contiguous scan.
@@ -658,7 +636,6 @@ Lower thorax: Unremarkable
 ::actctsi:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Non-contrast and contrast-enhanced abdominal CT scans.
 Scanning range: Liver to symphysis, 5-mm contiguous scan.
@@ -724,7 +701,6 @@ Acute pancreatitis. Modified CTSI score:
 ::acttcc:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Non-contrast and contrast-enhanced abdominal CT scans.
 Scanning range: Liver to symphysis, 5-mm contiguous scan. Coronal and sagittal reconstructions.
@@ -756,7 +732,6 @@ Skeleton: No osteolytic nor osteoblastic lesion
 ::actrcc:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Non-contrast and contrast-enhanced abdominal CT scans.
 Scanning range: Liver to symphysis, 5-mm contiguous scan. Coronal reconstruction.
@@ -787,7 +762,6 @@ Skeleton: No osteolytic nor osteoblastic lesion
 ::actgyn:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Non-contrast and contrast-enhanced abdominal CT scans.
 Scanning range: Liver to symphysis, 5-mm contiguous scan.
@@ -820,7 +794,6 @@ Skeleton: No osteolytic nor osteoblastic lesion
 ::actgyntoa:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Non-contrast and contrast-enhanced abdominal CT scans.
 Scanning range: Liver to symphysis, 5-mm contiguous scan.
@@ -862,7 +835,6 @@ Right tubo-ovarian abscess is suspected. GYN check-up is suggested.
 ::actl:: {
   MyForm := "
 (
-
 ** Non-contrast and contrast-enhanced chest and abdominal CT scans.
 Scanning range: lower neck to symphysis, 5-mm contiguous scan.
 Contrast medium administered: Yes, 80 ml, 1-2 ml/sec, with 100 seconds scanning delay.
@@ -907,7 +879,6 @@ Lymphoma with relapse/ progression/ partial remission/ complete remission.
 ::actcta:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Non-contrast and contrast-enhanced abdominal CTA scans.
 Scanning range: Liver to symphysis, 5-mm contiguous scan.
@@ -936,7 +907,6 @@ SUGGESTION:
 ::actnc:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Non-contrast enhanced abdominal CT scans.
 Scanning range: Liver to symphysis, 5-mm contiguous scan, coronal reconstruction.
@@ -958,7 +928,6 @@ REMARKS:
 
   MyForm := "
 (
-
 TECHNIQUE:
 Non-contrast enhanced abdominal CT scans.
 Scanning range: Liver to symphysis, 5-mm contiguous scan.
@@ -997,7 +966,6 @@ REMARKS:
 
   MyForm := "
 (
-
 Non-contrast enhanced chest and abdominal CT scan.
 
 TECHNIQUE:
@@ -1048,7 +1016,6 @@ No definite traumatic intrathoracic or intraabdominal injury.
 
   MyForm := "
 (
-
 TECHNIQUE:
 Non-contrast and contrast-enhanced abdominal CT scans.
 Scanning range: Liver to symphysis, 5-mm contiguous scan.
@@ -1082,7 +1049,6 @@ Lower thorax: Unremarkable
 
   MyForm := "
 (
-
 TECHNIQUE:
 Non-contrast and contrast-enhanced abdominal CT scans.
 Scanning range: Liver to symphysis, 5-mm contiguous scan.
@@ -1115,7 +1081,6 @@ No obvious urinary bladder wall thickening or perivesical fat stranding. Gas bub
 ::actcrcs:: {
   MyForm := "
 (
-
 PROCEDURE: Non-contrast and contrast-enhanced abdominal CT scans.
 TECHNIQUE description:
    Scanning range: Liver to symphysis, 5-mm contiguous scan. Supine and prone positions.
@@ -1175,7 +1140,6 @@ Under lung window, no definite pulmonary nodules detected from available images
 ::actcrcs+l:: {
   MyForm := "
 (
-
 PROCEDURE: Non-contrast and contrast-enhanced chest and abdominal CT scans.
 TECHNIQUE description:
    Scanning range: Neck to symphysis, 5-mm contiguous scan. Supine and prone positions.
@@ -1243,7 +1207,6 @@ NOTE: in case of mucinous-type of rectal tumor the involved lymph nodes may have
 ::acts:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Non-contrast and contrast-enhanced abdominal CT scans.
 Scanning range: Liver to symphysis, 5-mm contiguous scan.
@@ -1261,7 +1224,6 @@ FINDINGS:
 ::actgcs:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Non-contrast and contrast-enhanced abdominal CT scans.
 Scanning range: Liver to symphysis, 5-mm contiguous scan. Prone and supine.
@@ -1315,7 +1277,6 @@ Gastric cancer, prepyloric antrum, with regional lymphadenopathy, causing gastri
   SexOrganStr := (Sex = "M" ? "Prostate" : "Uterus") . ": Unremarkable."
   MyForm := "
 (
-
 INDICATION: PCU
 
 TECHNIQUE:
@@ -1353,7 +1314,6 @@ SUGGESTION:
 
   MyForm := "
 (
-
 Chest, Abdomen to Pelvis CT:
 
 TECHNIQUE:
@@ -1397,7 +1357,6 @@ No definite traumatic intrathoracic or intraabdominal injury.
 ::actacc:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Non-contrast and contrast-enhanced abdominal CT scans.
 Scanning range: Liver to symphysis, 5-mm contiguous scan.
@@ -1431,7 +1390,6 @@ Early changes of acute cholecystitis is suspected. Suggest correlate with sonogr
 ::actsc:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Non-contrast and contrast-enhanced abdominal CT scans.
 Scanning range: Liver to symphysis, 5-mm contiguous scan.
@@ -1460,7 +1418,6 @@ Stercoral colitis. No evidence of perforation.
 ::actic:: {
   MyForm := "
 (
-
 Non-contrast and contrast-enhanced abdominal CT scans.
 Scanning range: Liver to symphysis, 5-mm contiguous scan.
 
@@ -1489,7 +1446,6 @@ IMPRESSION:
 ::actphtn:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Non-contrast and contrast-enhanced abdominal CT scans.
 Scanning range: Liver to symphysis, 5-mm contiguous scan.
@@ -1526,7 +1482,6 @@ IMPRESSION:
 ::actsbo:: {
   MyForm := "
 (
-
 TECHNIQUE:
 Non-contrast and contrast-enhanced abdominal CT scans.
 Scanning range: Liver to symphysis, 5-mm contiguous scan.

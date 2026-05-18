@@ -130,7 +130,6 @@
 ::li1:: {
   MyForm := "
 (
-
 A small low density in the left basal ganglion region, in favor of old lacunar infarct.
 A small low density in the right basal ganglion region, in favor of old lacunar infarct.
 )"
@@ -140,7 +139,6 @@ A small low density in the right basal ganglion region, in favor of old lacunar 
 ::lis:: {
   MyForm := "
 (
-
 Several small low densities in the bilateral basal ganglion regions, in favor of old lacunar infarcts.
 Several tiny low densities in the left basal ganglion region, in favor of old lacunar infarcts.
 Several tiny low densities in the right basal ganglion region, in favor of old lacunar infarcts.
@@ -152,7 +150,6 @@ Presence of tiny old ischemic infarction involving bilateral basal ganglion regi
 ::necok:: {
   MyForm := "
 (
-
 The nasopharynx, oropharynx, hypopharynx, and larynx are unremarkable.
 No bulky lymph nodes in the bilateral submandibular and submental, carotid, posterior cervical spaces, and supraclavicular fossae noted.
 No particular findings of parotid gland, submandibular gland, and thyroid gland.
@@ -165,7 +162,6 @@ The visible brain and lungs show no remarkable findings.
 ::neclapok:: {
   MyForm := "
 (
-
 No bulky lymph nodes in the bilateral submandibular and submental, carotid, posterior cervical spaces, and supraclavicular fossae noted.
 )"
   Paste(MyForm)
@@ -175,7 +171,6 @@ No bulky lymph nodes in the bilateral submandibular and submental, carotid, post
 ::ctps:: {
   MyForm := "
 (
-
 Mild mucoperiosteal thickening and soft tissue density in the bilateral frontal, bilateral ethmoid, bilateral maxillary, and bilateral sphenoid sinuses, in favor of mild sinusitis.
 )"
   Paste(MyForm)
@@ -186,7 +181,6 @@ Mild mucoperiosteal thickening and soft tissue density in the bilateral frontal,
 ::mrps:: {
   MyForm := "
 (
-
 Presence of hyperintensity on T2WI in the right/left/bilateral sphenoid, right/left/bilateral ethmoid, right/left/bilateral maxillary, right/left/bilateral frontal sinuses, in favor of mild sinusitis.
 )"
   Paste(MyForm)
@@ -194,7 +188,6 @@ Presence of hyperintensity on T2WI in the right/left/bilateral sphenoid, right/l
 ::mmrps:: {
   MyForm := "
 (
-
 Mild mucoperiosteal thickening and hyperintensity on T2WI over the paranasal sinuses, in favor of mild sinusitis.
 Hyperintensity on T2WI over the paranasal sinuses, in favor of mild sinusitis.
 )"
@@ -204,7 +197,6 @@ Hyperintensity on T2WI over the paranasal sinuses, in favor of mild sinusitis.
 ::bctaok:: {
   MyForm := "
 (
-
 Pre and post-contrast CTA scan of brain:
 
 Brain CT:
@@ -230,7 +222,6 @@ Multiphase CTA:
 ::mraok:: {
   MyForm := "
 (
-
 MRA shows no significant vascular stenosis in the major intracranial arteries or aneurysm near the circle of Willis regions.
 
 MRA shows no evidence of aneurysm or arterial-venous malformation (AVM) noted near the circle of Willis regions.
@@ -247,7 +238,6 @@ No significant vascular stenosis in the major intracranial arteries or aneurysm 
 ::ctp1:: {
   MyForm := "
 (
-
 Noncontrast CT of the paranasal sinuses was performed with a multi-slice CT scanner:
 SCAN RANGE: axial plane of the paranasal sinuses with 2 mm continuous scan, with coronal and sagittal reconstruction
 
@@ -267,7 +257,6 @@ FINDINGS:
   SleepThenTab()
   MyForm := "
 (
-
 C/W chronic paranasal sinusitis.
 )"
   Paste(MyForm)
@@ -276,7 +265,6 @@ C/W chronic paranasal sinusitis.
 ::ctpok:: {
   MyForm := "
 (
-
 Noncontrast CT of the paranasal sinuses was performed with a multi-slice CT scanner:
 SCAN RANGE: axial plane of the paranasal sinuses with 2 mm continuous scan, with coronal and sagittal reconstruction
 
@@ -293,7 +281,6 @@ FINDINGS:
   SleepThenTab()
   MyForm := "
 (
-
 No evidence of paranasal sinusitis.
 )"
   Paste(MyForm)
@@ -302,7 +289,6 @@ No evidence of paranasal sinusitis.
 ::mriiac:: {
   MyForm := "
 (
-
 MRI of internal auditory canal with:
 - T2 SPACE axial, coronal, oblique sagittal
 - T1WI axial, coronal
@@ -332,7 +318,6 @@ FINDINGS:
   SleepThenTab()
   MyForm := "
 (
-
 1. No evidence of cochlear aplasia, cochlear nerve agenesis, or other malformations.
 2. Left mastoiditis or fluid collection.
 )"
@@ -342,7 +327,6 @@ FINDINGS:
 ::mricvaok:: {
   MyForm := "
 (
-
 The MR of the brain performed with Sagittal T2WI, Coronal T1WI
 Axial T2WI, GET2*WI, FLAIR (Fluid Attenuated Inversion Recovery)
 Diffusion-weighted Imaging (DWI) and Apparent Diffusion Coefficient (ADC) map
@@ -365,7 +349,6 @@ MRA shows no significant vascular stenosis in the major intracranial arteries or
   SleepThenTab()
   MyForm := "
 (
-
 No evidence of high signal intensity on DWI suggesting acute or recent ischemia infarction in the brain noted.
 )"
   Paste(MyForm)
@@ -374,7 +357,6 @@ No evidence of high signal intensity on DWI suggesting acute or recent ischemia 
 ::mrbok:: {
   MyForm := "
 (
-
 The MR of the brain performed with Sagittal T2WI, Coronal T1WI
 Axial T2WI, GET2*WI, FLAIR (Fluid Attenuated Inversion Recovery)
 Diffusion-weighted Imaging (DWI) and Apparent Diffusion Coefficient (ADC) map
@@ -403,7 +385,6 @@ MRA shows no significant vascular stenosis in the major intracranial arteries or
   SleepThenTab()
   MyForm := "
 (
-
 No remarkable intracranial findings.
 )"
   Paste(MyForm)
@@ -413,7 +394,6 @@ No remarkable intracranial findings.
 ::mriich:: {
   MyForm := "
 (
-
 The MR of the brain performed with Sagittal T1WI
 Axial T1WI, T2WI, GET2*WI, FLAIR (Fluid Attenuated Inversion Recovery)
 Diffusion-weighted Imaging (DWI) and Apparent Diffusion Coefficient (ADC) map
@@ -438,7 +418,6 @@ Findings:
   SleepThenTab()
   MyForm := "
 (
-
 Subacute ICH in the left temporo-parieto-occipital area. No definite etiology identified.
 )"
   Paste(MyForm)
@@ -448,7 +427,6 @@ Subacute ICH in the left temporo-parieto-occipital area. No definite etiology id
 ::mribp:: {
   MyForm := "
 (
-
 MRI of Brachial Plexus:
 - Cor T1WI, T2WI, T2WI+FS, T2 SPACE
 - Sag T2WI
@@ -479,7 +457,6 @@ No abnormal signal intensity changes within the cervical spinal cord.
 ::nctapcu:: {
   MyForm := "
 (
-
 CTA of the neck and brain was performed before and after IV contrast agent administration
 Scanning range: aortic arch to cranial vault.
 Axial, 3D MPR, MIP (and VRT) images:
@@ -509,7 +486,6 @@ FINDINGS:
   SleepThenTab()
   MyForm := "
 (
-
 The major neck and intracranial arteries are patent, without vascular anomaly nor luminal stenosis.
 )"
   Paste(MyForm)

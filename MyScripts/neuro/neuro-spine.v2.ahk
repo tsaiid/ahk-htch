@@ -16,7 +16,6 @@
 ::mrspdjdl:: {
   MyForm := "
 (
-
 Degenerative disc disease:
 1. Desiccation: L1 through L5
 2. Disc space narrowing: L2 through L5
@@ -29,7 +28,6 @@ Degenerative disc disease:
 ::ctls2:: {
   MyForm := "
 (
-
 Non-contrast helical axial CT of lumbar spine with coronal and sagittal MPR reformations shows:
 
 PREVIOUS CT SCAN of L-spine: no
@@ -60,7 +58,6 @@ There is moderate degree degenerative disc disease, L1 through S1.
 ::ctcs2:: {
   MyForm := "
 (
-
 SPINE Cervical CT without contrast medium:
 
 FINDINGS:
@@ -78,7 +75,6 @@ No obvious fracture or dislocation of the cervical spine.
 ::ctts2:: {
   MyForm := "
 (
-
 Noncontrast CT of T-spine was performed with a multi-slice CT scanner:
 SCAN RANGE: axial plane performed from C7 to L1, and sagittal and coronal reconstruction 5-mm continuous scan slice thickness
 
@@ -105,7 +101,6 @@ No obvious fracture-dislocation of the T-spine noted.
 ::mrspc1:: {
   MyForm := "
 (
-
 The MRI of the C-spine performed with
 Coronal T2WI+FS
 Sagittal TIWI, T2WI
@@ -130,7 +125,6 @@ No evidence of abnormal signal intensity tumor mass lesion over the spinal canal
 ::mrspcdjdl:: {
   MyForm := "
 (
-
 The T-spine is unremarkable.
 
 There are also spondylosis and degenerative disc disease in the L-spine, with spinal and neuroforaminal stenosis. For more details, suggest check L-spine MRI.
@@ -144,7 +138,6 @@ There are also spondylosis and degenerative disc disease in the L-spine, with sp
 ::mrspc2:: {
   MyForm := "
 (
-
 The MRI of the C-spine performed with
 Coronal T2WI
 Sagittal TIWI, T2WI, T2 STIR
@@ -193,7 +186,6 @@ Cervical spondylosis and DDD, with mild spinal stenosis and neuroforaminal steno
 ::mrspcok:: {
   MyForm := "
 (
-
 No obvious spinal stenosis of the C-spine.
 No evidence of focal herniation of nucleus pulposus (HIVD) in the C-spine region noted.
 No evidence of abnormal signal intensity lesion within the spinal cord of the C-spine.
@@ -206,7 +198,6 @@ No evidence of abnormal signal intensity tumor mass lesion over the spinal canal
 ::mrspt2:: {
   MyForm := "
 (
-
 The MRI of the T-spine performed:
 - Coronal T2WI
 - Sagittal TIWI, T2WI, T2 STIR
@@ -258,7 +249,6 @@ No evidence of abnormal signal intensity lesion over the spinal canal of the low
 ::mrspt1:: {
   MyForm := "
 (
-
 The MRI of the T-spine performed:
 Coronal T2WI with fat sat (localized)
 Sagittal T1, T2WI
@@ -324,7 +314,6 @@ SUGGESTION:
 ::mrspl1:: {
   MyForm := "
 (
-
 The MRI of the L-spine performed:
 Sagittal T1WI, T2WI, T2 STIR
 Axial T1WI and T2WI
@@ -385,7 +374,6 @@ SUGGESTION:
 ::mrspl2:: {
   MyForm := "
 (
-
 The MRI of the L-spine performed:
 Coronal T2WI
 Sagittal T1WI, T2WI, T2 STIR
@@ -455,7 +443,6 @@ Mild lumbar scoliosis, spondylosis, spondylolisthesis, and DDD, without signific
 ::mrsplok:: {
   MyForm := "
 (
-
 No significant spinal stenosis of the L-spine.
 No evidence of abnormal signal intensity mass lesion over the spinal canal of the lower T-spine and L-spine region noted.
 Postcontrast study shows no evidence of abnormal enhanced lesion over the spinal canal of the lower T-spine and L-spine region noted.
@@ -469,7 +456,6 @@ No evidence of abnormal signal intensity lesion noted over the conus medullaris 
 ::mrspl2ok:: {
   MyForm := "
 (
-
 The MRI of the L-spine performed:
 Coronal T2WI
 Sagittal T1WI, T2WI, T2 STIR
@@ -507,7 +493,6 @@ No evidence of abnormal signal intensity tumor mass lesion over the spinal canal
 ::mrwsp:: {
   MyForm := "
 (
-
 The MRI of the whole spine performed:
 Sagittal T1, T2WI, T2+FS
 Axial T1 and T2WI

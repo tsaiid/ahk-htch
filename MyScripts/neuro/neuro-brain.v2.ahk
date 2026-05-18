@@ -12,7 +12,6 @@
 ::ctn1:: {
   MyForm := "
 (
-
 CT scan of brain was performed with a multi-slice CT scanner:
 TECHNIQUE: (1) Noncontrast and (2) Post-contrast enhancement
 SCAN RANGE: oblique axial plane from the skull base to the vertex with 5-mm continuous scan slice thickness
@@ -59,7 +58,6 @@ Follow up or further evaluation.
 ::ctn1ok:: {
   MyForm := "
 (
-
 CT scan of brain was performed with a multi-slice CT scanner:
 
 TECHNIQUE: (1) Noncontrast and (2) Post-contrast enhancement
@@ -89,7 +87,6 @@ The visible paranasal sinuses and mastoids are unremarkable.
   SleepThenTab()
   MyForm := "
 (
-
 No remarkable intracranial findings.
 No definite abnormal enhancing mass lesion in the brain noted.
 )"
@@ -100,7 +97,6 @@ No definite abnormal enhancing mass lesion in the brain noted.
 ::ctn2:: {
   MyForm := "
 (
-
 Noncontrast CT of the brain was performed with a multi-slice CT scanner:
 SCAN RANGE: oblique axial plane from the skull base to the vertex with 5-mm continuous scan slice thickness
 
@@ -156,7 +152,6 @@ Follow up or further evaluation.
 ::ctn2ok:: {
   MyForm := "
 (
-
 Noncontrast CT of the brain was performed with a multi-slice CT scanner:
 SCAN RANGE: oblique axial plane from the skull base to the vertex with 2.5-mm continuous scan slice thickness
 
@@ -189,7 +184,6 @@ REMARKS:
   SleepThenTab()
   MyForm := "
 (
-
 No definite acute ICH, SAH, EDH, or SDH.
 No obvious acute intracranial findings.
 No remarkable intracranial findings on noncontrast CT.
@@ -201,7 +195,6 @@ No remarkable intracranial findings on noncontrast CT.
 ::ctn2ok0:: {
   MyForm := "
 (
-
 Noncontrast CT of the brain was performed with a multi-slice CT scanner:
 SCAN RANGE: oblique axial plane from the skull base to the vertex with 2.5-mm continuous scan slice thickness
 
@@ -223,7 +216,6 @@ REMARKS:
   SleepThenTab()
   MyForm := "
 (
-
 No remarkable intracranial findings on noncontrast CT.
 )"
   Paste(MyForm)
@@ -232,7 +224,6 @@ No remarkable intracranial findings on noncontrast CT.
 ::ctn2oktr:: {
   MyForm := "
 (
-
 Noncontrast CT of the brain was performed with a multi-slice CT scanner:
 SCAN RANGE: oblique axial plane from the skull base to the vertex with 2.5-mm continuous scan slice thickness
 
@@ -257,7 +248,6 @@ REMARKS:
   SleepThenTab()
   MyForm := "
 (
-
 No definite acute ICH, SAH, EDH, or SDH.
 )"
   Paste(MyForm)
@@ -266,7 +256,6 @@ No definite acute ICH, SAH, EDH, or SDH.
 ::ctn2oktr0:: {
   MyForm := "
 (
-
 Noncontrast CT of the brain was performed with a multi-slice CT scanner:
 SCAN RANGE: oblique axial plane from the skull base to the vertex with 2.5-mm continuous scan slice thickness
 
@@ -288,7 +277,6 @@ REMARKS:
   SleepThenTab()
   MyForm := "
 (
-
 No definite acute ICH, SAH, EDH, or SDH.
 )"
   Paste(MyForm)
@@ -298,7 +286,6 @@ No definite acute ICH, SAH, EDH, or SDH.
 ::ctn2cva:: {
   MyForm := "
 (
-
 Noncontrast CT of the brain was performed with a multi-slice CT scanner:
 SCAN RANGE: oblique axial plane from the skull base to the vertex with 5-mm continuous scan slice thickness
 
@@ -342,7 +329,6 @@ No definite acute intracranial parenchymal hemorrhage or acute epidural or acute
 ::ctn2atr:: {
   MyForm := "
 (
-
 Noncontrast CT of the brain was performed with a multi-slice CT scanner:
 SCAN RANGE: oblique axial plane from the skull base to the vertex with 2.5-mm continuous scan slice thickness; coronal reconstruction.
 
@@ -368,7 +354,6 @@ The visible paranasal sinuses and mastoids are unremarkable.
   SleepThenTab()
   MyForm := "
 (
-
 Mild brain atrophy; leukoaraiosis.
 )"
   Paste(MyForm)
@@ -377,7 +362,6 @@ Mild brain atrophy; leukoaraiosis.
 ::ctn2hich:: {
   MyForm := "
 (
-
 Noncontrast CT of the brain was performed with a multi-slice CT scanner:
 SCAN RANGE: oblique axial plane from the skull base to the vertex with 2.5-mm continuous scan slice thickness
 
@@ -401,7 +385,6 @@ REMARKS:
   SleepThenTab()
   MyForm := "
 (
-
 Hypertensive ICH in the right lentiform nucleus.
 )"
   Paste(MyForm)
@@ -410,7 +393,6 @@ Hypertensive ICH in the right lentiform nucleus.
 ::ctn2hichivh:: {
   MyForm := "
 (
-
 Noncontrast CT of the brain was performed with a multi-slice CT scanner:
 SCAN RANGE: oblique axial plane from the skull base to the vertex with 2.5-mm continuous scan slice thickness
 
@@ -432,7 +414,6 @@ REMARKS:
   SleepThenTab()
   MyForm := "
 (
-
 Possibly hypertensive ICH in the right basal ganglion and thalamus, with IVH.
 )"
   Paste(MyForm)
@@ -441,7 +422,6 @@ Possibly hypertensive ICH in the right basal ganglion and thalamus, with IVH.
 ::ctn2sah:: {
   MyForm := "
 (
-
 Noncontrast CT of the brain was performed with a multi-slice CT scanner:
 SCAN RANGE: oblique axial plane from the skull base to the vertex with 2.5-mm continuous scan slice thickness
 
@@ -464,7 +444,6 @@ REMARKS:
   SleepThenTab()
   MyForm := "
 (
-
 Diffuse acute SAH. Rupture of intracranial aneurysm should be excluded.
 )"
   Paste(MyForm)
@@ -473,7 +452,6 @@ Diffuse acute SAH. Rupture of intracranial aneurysm should be excluded.
 ::ctn2sdh:: {
   MyForm := "
 (
-
 Noncontrast CT of the brain was performed with a multi-slice CT scanner:
 SCAN RANGE: oblique axial plane from the skull base to the vertex with 2.5-mm continuous scan slice thickness
 
@@ -501,7 +479,6 @@ REMARKS:
   SleepThenTab()
   MyForm := "
 (
-
 Acute right anterior parafalcine SDH.
 )"
   Paste(MyForm)
@@ -510,7 +487,6 @@ Acute right anterior parafalcine SDH.
 ::ctn2hie:: {
   MyForm := "
 (
-
 Noncontrast CT of the brain was performed with a multi-slice CT scanner:
 SCAN RANGE: oblique axial plane from the skull base to the vertex with 5-mm continuous scan slice thickness
 
@@ -537,7 +513,6 @@ No obvious fracture of the skull base and the skull.
   SleepThenTab()
   MyForm := "
 (
-
 Hypoxic-ischemic encephalopathy is suspected.
 )"
   Paste(MyForm)
@@ -547,7 +522,6 @@ Hypoxic-ischemic encephalopathy is suspected.
 ::ctn2bess:: {
   MyForm := "
 (
-
 Noncontrast CT of the brain was performed with a multi-slice CT scanner:
 SCAN RANGE: oblique axial plane from the skull base to the vertex with 3-mm continuous scan slice thickness
 
@@ -569,7 +543,6 @@ The visible paranasal sinuses and mastoids are unremarkable.
   SleepThenTab()
   MyForm := "
 (
-
 No definite acute ICH, SAH, EDH, or SDH.
 Benign enlargement of the subarachnoid spaces in infancy.
 )"
@@ -580,7 +553,6 @@ Benign enlargement of the subarachnoid spaces in infancy.
 ::1cta:: {
   MyForm := "
 (
-
 CT angiography of brain and neck was performed with a multi-slice CT scanner:
 TECHNIQUE: multi thin-slice spiral scanning of arterial and venous phases
 SCAN RANGE: axial plane from the skull base to the vertex.
@@ -602,7 +574,6 @@ FINDINGS:
 ::1ctaok:: {
   MyForm := "
 (
-
 CT angiography of brain and neck was performed with a multi-slice CT scanner:
 TECHNIQUE: multi thin-slice spiral scanning of arterial and venous phases
 SCAN RANGE: axial plane from the skull base to the vertex.
@@ -627,7 +598,6 @@ FINDINGS:
   SleepThenTab()
   MyForm := "
 (
-
 No evidence of aneurysm, arterial-venous malformation (AVM), or other vascular lesion.
 )"
   Paste(MyForm)
@@ -637,7 +607,6 @@ No evidence of aneurysm, arterial-venous malformation (AVM), or other vascular l
 ::1ctasahr:: {
   MyForm := "
 (
-
 CT angiography of brain and neck was performed with a multi-slice CT scanner:
 TECHNIQUE: multi thin-slice spiral scanning of arterial and venous phases
 SCAN RANGE: axial plane from the skull base to the vertex.
@@ -665,7 +634,6 @@ The visible paranasal sinuses and mastoids are unremarkable.
   SleepThenTab()
   MyForm := "
 (
-
 PICA aneurysm ruptured with acute SAH.
 Mild obstructive hydrocephalus cannot be excluded.
 )"
@@ -676,7 +644,6 @@ Mild obstructive hydrocephalus cannot be excluded.
 ::ct3d:: {
   MyForm := "
 (
-
 Noncontrast CT scan of the face and skull, with thin slice 3 mm, and post reconstruction 3D display.
 
 COMPARISON:
@@ -731,7 +698,6 @@ Clinical correlation and follow up are suggested.
 ::mricva:: {
   MyForm := "
 (
-
 The MR of the brain performed with Sagittal T2WI, Coronal T1WI
 Axial T2WI, GET2*WI, FLAIR (Fluid Attenuated Inversion Recovery)
 Diffusion-weighted Imaging (DWI) and Apparent Diffusion Coefficient (ADC) map
@@ -784,7 +750,6 @@ MRV shows a suspicious segment of absent flow in the right transverse sinus. How
   SleepThenTab()
   MyForm := "
 (
-
 No obvious acute intracranial lesion.
 No obvious acute ischemic infarction.
 
@@ -796,7 +761,6 @@ No obvious acute ischemic infarction.
 ::mricva1:: {
   MyForm := "
 (
-
 The MR of the brain performed with Sagittal T1WI (localizer)
 Axial T1WI, T2WI, GET2*WI, FLAIR (Fluid Attenuated Inversion Recovery)
 Coronal T1WI, T2WI
@@ -873,7 +837,6 @@ Clinical correlation and follow up are suggested.
 ::mritga:: {
   MyForm := "
 (
-
 The MR of the brain performed with Sagittal T1WI
 Axial T1WI, T2WI, GET2*WI, FLAIR (Fluid Attenuated Inversion Recovery)
 Thin-slice diffusion-weighted Imaging (DWI) (b=1000, 2000, 3000) and Apparent Diffusion Coefficient (ADC) map
@@ -903,7 +866,6 @@ No evidence of aneurysm or arterial-venous malformation (AVM) noted near the cir
 ::mrb:: {
   MyForm := "
 (
-
 The MRI of the brain performed with a 1.5-T scanner:
 TECHNIQUE:
 - Sagittal T1WI
@@ -949,7 +911,6 @@ SUGGESTION:
 ::mrblcs:: {
   MyForm := "
 (
-
 The MR of the brain performed with Sagittal T1WI
 Axial T1WI, T2WI, GET2*WI, FLAIR (Fluid Attenuated Inversion Recovery)
 Diffusion-weighted Imaging (DWI) and Apparent Diffusion Coefficient (ADC) map
@@ -993,7 +954,6 @@ MRA shows
   SleepThenTab()
   MyForm := "
 (
-
 No evidence of brain metastasis.
 Left cerebellar metastasis.
 )"
@@ -1004,7 +964,6 @@ Left cerebellar metastasis.
 ::mrblcsok:: {
   MyForm := "
 (
-
 MRI of brain without and with IV Gadolinium.
 
 SCANNING PROTOCOL:
@@ -1033,7 +992,6 @@ MRA shows no significant vascular stenosis in the major intracranial arteries or
   SleepThenTab()
   MyForm := "
 (
-
 No evidence of brain metastasis.
 )"
   Paste(MyForm)
@@ -1044,7 +1002,6 @@ No evidence of brain metastasis.
 ::mrbpd:: {
   MyForm := "
 (
-
 The MR of the brain performed with Sagittal T1WI
 Axial T1WI, T2WI, GET2*WI, FLAIR (Fluid Attenuated Inversion Recovery)
 Diffusion-weighted Imaging (DWI) and Apparent Diffusion Coefficient (ADC) map
@@ -1077,7 +1034,6 @@ MRA shows no significant vascular stenosis in the major intracranial arteries or
   SleepThenTab()
   MyForm := "
 (
-
 1. C/W Parkinson disease. DDx: dementia with Lewy bodies.
 2. Senile brain atrophy, mild leukoaraiosis.
 )"
@@ -1088,7 +1044,6 @@ MRA shows no significant vascular stenosis in the major intracranial arteries or
 ::mrbnopd:: {
   MyForm := "
 (
-
 The MR of the brain performed with Sagittal T1WI
 Axial T1WI, T2WI, GET2*WI, FLAIR (Fluid Attenuated Inversion Recovery)
 Diffusion-weighted Imaging (DWI) and Apparent Diffusion Coefficient (ADC) map
@@ -1118,7 +1073,6 @@ MRA shows no significant vascular stenosis in the major intracranial arteries or
   SleepThenTab()
   MyForm := "
 (
-
 1. No strong evidence of Parkinson disease.
 2. Senile brain atrophy, mild leukoaraiosis.
 )"
@@ -1129,7 +1083,6 @@ MRA shows no significant vascular stenosis in the major intracranial arteries or
 ::mrbsih:: {
   MyForm := "
 (
-
 The MR of the brain performed with Sagittal T1WI
 Axial T1WI, T2WI, GET2*WI, FLAIR (Fluid Attenuated Inversion Recovery)
 Diffusion-weighted Imaging (DWI) and Apparent Diffusion Coefficient (ADC) map
@@ -1158,7 +1111,6 @@ FINDINGS:
   SleepThenTab()
   MyForm := "
 (
-
 Although not fully fit the typical image findings, intracranial hypotension still may be suspected. Clinical correlation is suggested.
 )"
   Paste(MyForm)
@@ -1167,7 +1119,6 @@ Although not fully fit the typical image findings, intracranial hypotension stil
 ::mriseizure:: {
   MyForm := "
 (
-
 The MR of the brain performed
 - Axial T2WI, FLAIR, DWI with ADC map, GRE T2*WI
 - Thin slice coronal T2WI focusing on temporal lobe.
@@ -1203,7 +1154,6 @@ MRA shows no significant vascular stenosis in the major intracranial arteries or
   SleepThenTab()
   MyForm := "
 (
-
 No remarkable intracranial findings.
 Right mesial temporal sclerosis may be suspected. Clinical correlation is suggested.
 )"
@@ -1213,7 +1163,6 @@ Right mesial temporal sclerosis may be suspected. Clinical correlation is sugges
 ::bctas:: {
   MyForm := "
 (
-
 CT angiography of brain and neck was performed with a multi-slice CT scanner:
 TECHNIQUE: multi thin-slice spiral scanning of arterial, venous, and delayed phases
 SCAN RANGE: axial plane from the neck to the vertex.
@@ -1261,7 +1210,6 @@ Compared to asymptomatic contralateral hemisphere, there is no delay and normal 
   SleepThenTab()
   MyForm := "
 (
-
 Acute ischemic stroke, right MCA territory, ASPECTS: 7, with good collateral (University of Calgary classification score 4)
 )"
   Paste(MyForm)
@@ -1270,7 +1218,6 @@ Acute ischemic stroke, right MCA territory, ASPECTS: 7, with good collateral (Un
 ::bctacol:: {
   MyForm := "
 (
-
 Compared to asymptomatic contralateral hemisphere there are just a few vessels visible in any phase within the occluded vascular territory. University of Calgary classification score 1 (poor collateral).
 
 Compared to asymptomatic contralateral hemisphere there is a delay of two phases in filling in of peripheral vessels and decreased prominence and extent or a one-phase delay and some regions with no vessels in some part of the territory occluded. University of Calgary classification score 2 (intermediate collateral).
@@ -1287,7 +1234,6 @@ Compared to asymptomatic contralateral hemisphere, there is no delay and normal 
 ::bctaa:: {
   MyForm := "
 (
-
 CT angiography of brain and neck was performed with a multi-slice CT scanner:
 TECHNIQUE: multi thin-slice spiral scanning of arterial, venous, and delayed phases
 SCAN RANGE: axial plane from the neck to the vertex.
@@ -1317,7 +1263,6 @@ No obvious fracture of the skull base and the skull.
   SleepThenTab()
   MyForm := "
 (
-
 Ruptured ACom aneurysm, with acute SAH.
 )"
   Paste(MyForm)
@@ -1326,7 +1271,6 @@ Ruptured ACom aneurysm, with acute SAH.
 ::bctaavm:: {
   MyForm := "
 (
-
 CT angiography of brain and neck was performed with a multi-slice CT scanner:
 TECHNIQUE: multi thin-slice spiral scanning of arterial, venous, and delayed phases
 SCAN RANGE: axial plane from the neck to the vertex.
@@ -1367,7 +1311,6 @@ FINDINGS:
   SleepThenTab()
   MyForm := "
 (
-
 Left temporal lobe AVM, with ICH. Spetzler-Martin grade: 1.
 )"
   Paste(MyForm)

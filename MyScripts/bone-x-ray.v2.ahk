@@ -423,7 +423,6 @@ DJD of C-spine.
 ::sco:: {
   MyForm := "
 (
-
 Scoliosis :
 1. Major curve
    extent:
