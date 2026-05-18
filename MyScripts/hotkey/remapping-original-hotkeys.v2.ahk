@@ -49,12 +49,13 @@
   Send("{Del}")
 }
 
-^y::
-{
-  Send("{Home}")
-  Send("+{Down}")
-  Send("{Del}")
-}
+;; Ctrl+Y is left to WebRIS/browser handling.
+;^y::
+;{
+;  Send("{Home}")
+;  Send("+{Down}")
+;  Send("{Del}")
+;}
 #HotIf  ; end of ahk_group RIS
 
 

@@ -183,6 +183,98 @@
         return `${arr.join(', ')}, and ${lastItem}`;
     }
 
+    function selectCurrentLogicalLine(textarea) {
+        const value = textarea.value;
+        const cursorPos = textarea.selectionStart;
+        let lineStart = value.lastIndexOf('\n', cursorPos - 1) + 1;
+        let lineEnd = value.indexOf('\n', textarea.selectionEnd);
+
+        if (lineEnd === -1) {
+            lineEnd = value.length;
+        } else {
+            lineEnd += 1;
+        }
+
+        if (lineStart === lineEnd && lineStart === value.length && value.endsWith('\n')) {
+            lineStart -= 1;
+        }
+
+        textarea.setSelectionRange(lineStart, lineEnd);
+    }
+
+    function getQuillEditorElement(target) {
+        return target.closest?.('.ql-editor') || null;
+    }
+
+    function selectionHasTextInElement(element) {
+        const selection = window.getSelection();
+        return selection && !selection.isCollapsed && element.contains(selection.anchorNode) && element.contains(selection.focusNode);
+    }
+
+    function getCurrentQuillDomLine(editor) {
+        const selection = window.getSelection();
+        if (!selection || !selection.rangeCount || !selection.isCollapsed) return null;
+        if (!editor.contains(selection.anchorNode)) return null;
+
+        let node = selection.anchorNode;
+        if (node === editor) {
+            node = editor.childNodes[selection.anchorOffset] || editor.childNodes[selection.anchorOffset - 1];
+        }
+
+        let line = node?.nodeType === Node.ELEMENT_NODE ? node : node?.parentElement;
+        while (line && line.parentElement !== editor) {
+            line = line.parentElement;
+        }
+
+        return line?.parentElement === editor ? line : null;
+    }
+
+    function selectCurrentQuillDomLine(editor) {
+        if (selectionHasTextInElement(editor)) return false;
+
+        const line = getCurrentQuillDomLine(editor);
+        if (!line) return false;
+
+        const range = document.createRange();
+        range.selectNode(line);
+
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        return true;
+    }
+
+    function isEmptyQuillDomLine(line) {
+        return line.textContent.replace(/\u00a0/g, '').trim() === '';
+    }
+
+    function setCaretInQuillDomLine(line) {
+        const range = document.createRange();
+        range.setStart(line, 0);
+        range.collapse(true);
+
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+    }
+
+    function deleteEmptyQuillDomLine(editor, line) {
+        const nextLine = line.nextSibling;
+        const prevLine = line.previousSibling;
+        line.remove();
+
+        if (!editor.firstChild) {
+            const newLine = document.createElement(line.tagName.toLowerCase());
+            newLine.appendChild(document.createElement('br'));
+            editor.appendChild(newLine);
+            setCaretInQuillDomLine(newLine);
+        } else {
+            setCaretInQuillDomLine(nextLine || prevLine);
+        }
+
+        editor.dispatchEvent(new InputEvent('input', { bubbles: true, inputType: 'deleteContent' }));
+    }
+
     document.addEventListener('keydown', (ev) => {
         let nextReportChkBox = document.querySelector("div.footer input");
         let prevReportTab = document.querySelector('div[style="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)');
@@ -190,6 +282,29 @@
         let labReportTab = document.querySelector('div[style="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] > div > div:nth-child(1) > div:nth-child(3) > div:nth-child(1)');
         let openHisBtn = document.querySelectorAll('div.footer div.pt-1 button')[2];
         let copyReportBtn = document.querySelector('button[title="複製內容F8"]');
+
+        // Ctrl+X: cut selected text, or cut the current logical line if no text is selected.
+        if (ev.ctrlKey && ev.key === 'x' && ev.target instanceof HTMLTextAreaElement) {
+            if (ev.target.selectionStart === ev.target.selectionEnd) {
+                selectCurrentLogicalLine(ev.target);
+            }
+            return;
+        }
+        if (ev.ctrlKey && ev.key === 'x') {
+            const quillEditor = getQuillEditorElement(ev.target);
+            if (quillEditor) {
+                const line = getCurrentQuillDomLine(quillEditor);
+                if (line && isEmptyQuillDomLine(line)) {
+                    ev.preventDefault();
+                    navigator.clipboard?.writeText('\n').catch(() => {});
+                    deleteEmptyQuillDomLine(quillEditor, line);
+                    return;
+                }
+
+                selectCurrentQuillDomLine(quillEditor);
+                return;
+            }
+        }
 
         // Alt+] or Alt+[: find next/prev report
         if (ev.altKey && (ev.key === ']' || ev.key === '[')) {
