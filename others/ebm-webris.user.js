@@ -223,6 +223,84 @@
         return target.closest?.('.ql-editor') || null;
     }
 
+    function normalizeContentEditableInsertText(text) {
+        return text.replace(/\n+$/g, "");
+    }
+
+    function createEditorLine(sourceLine, text) {
+        const line = sourceLine.cloneNode(false);
+        if (text.length) {
+            line.appendChild(document.createTextNode(text));
+        } else {
+            line.appendChild(document.createElement("br"));
+        }
+        return line;
+    }
+
+    function insertEditorLines(editor, beforeLine, sourceLine, text) {
+        const lines = text.split("\n");
+        let lastLine = null;
+
+        lines.forEach(lineText => {
+            const line = createEditorLine(sourceLine, lineText);
+            editor.insertBefore(line, beforeLine);
+            lastLine = line;
+        });
+
+        return lastLine;
+    }
+
+    function getEditorLineElement(editor, node) {
+        let element = node?.nodeType === Node.ELEMENT_NODE ? node : node?.parentElement;
+        while (element && element.parentElement !== editor) {
+            element = element.parentElement;
+        }
+        return element?.parentElement === editor ? element : null;
+    }
+
+    function replaceSelectedContentEditableText(editor, text) {
+        const selection = window.getSelection();
+        if (!selection || !selection.rangeCount || selection.isCollapsed) return false;
+        if (!editor.contains(selection.anchorNode) || !editor.contains(selection.focusNode)) return false;
+
+        const range = selection.getRangeAt(0);
+        const startLine = getEditorLineElement(editor, range.startContainer);
+        const endLine = getEditorLineElement(editor, range.endContainer);
+        let lastNode = null;
+
+        if (startLine && endLine) {
+            const afterLine = endLine.nextSibling;
+
+            let line = startLine;
+            while (line) {
+                const nextLine = line.nextSibling;
+                line.remove();
+                if (line === endLine) break;
+                line = nextLine;
+            }
+
+            lastNode = insertEditorLines(editor, afterLine, startLine, text);
+        } else {
+            const fragment = document.createDocumentFragment();
+            fragment.appendChild(document.createTextNode(text));
+            lastNode = fragment.lastChild;
+
+            range.deleteContents();
+            range.insertNode(fragment);
+        }
+
+        if (lastNode) {
+            const caretRange = document.createRange();
+            caretRange.setStartAfter(lastNode);
+            caretRange.collapse(true);
+            selection.removeAllRanges();
+            selection.addRange(caretRange);
+        }
+
+        editor.dispatchEvent(new InputEvent("input", { bubbles: true, inputType: "insertText", data: text }));
+        return true;
+    }
+
     function selectionHasTextInElement(element) {
         const selection = window.getSelection();
         return selection && !selection.isCollapsed && element.contains(selection.anchorNode) && element.contains(selection.focusNode);
@@ -318,7 +396,7 @@
         let isSpine = false;
         let hadTrimmedRight = false;
 
-        selectedText = selectedText.replace(/\r\n/g, "\n");
+        selectedText = selectedText.replace(/\r\n|\r/g, "\n");
 
         if (selectedText.endsWith("\n")) {
             selectedText = selectedText.slice(0, -1);
@@ -368,7 +446,7 @@
                 );
 
                 if (index < endLine || hadTrimmedRight) {
-                    finalText += "\r\n";
+                    finalText += "\n";
                 }
             } else {
                 if (isFirstLineEmpty && index === 1) {
@@ -424,43 +502,25 @@
     }
 
     function reorderSelectedText(target, options) {
-        if (target instanceof HTMLTextAreaElement) {
-            const selectedText = target.value.slice(target.selectionStart, target.selectionEnd);
-            const finalText = reorderSelectedTextValue(
-                selectedText,
-                false,
-                options.keepEmptyLine ?? false,
-                options.itemChar ?? "",
-                options.discardSeIm ?? true
-            );
-            if (finalText === null) return false;
-
-            target.setRangeText(finalText, target.selectionStart, target.selectionEnd, "end");
-            target.dispatchEvent(new InputEvent("input", { bubbles: true, inputType: "insertText", data: finalText }));
-            return true;
-        }
-
         const quillEditor = getQuillEditorElement(target);
-        if (quillEditor) {
-            const selection = window.getSelection();
-            if (!selection || selection.isCollapsed || !quillEditor.contains(selection.anchorNode) || !quillEditor.contains(selection.focusNode)) {
-                return false;
-            }
+        if (!quillEditor) return false;
 
-            const finalText = reorderSelectedTextValue(
-                selection.toString(),
-                false,
-                options.keepEmptyLine ?? false,
-                options.itemChar ?? "",
-                options.discardSeIm ?? true
-            );
-            if (finalText === null) return false;
-
-            document.execCommand("insertText", false, finalText);
-            return true;
+        const selection = window.getSelection();
+        if (!selection || selection.isCollapsed || !quillEditor.contains(selection.anchorNode) || !quillEditor.contains(selection.focusNode)) {
+            return false;
         }
 
-        return false;
+        let finalText = reorderSelectedTextValue(
+            selection.toString(),
+            false,
+            options.keepEmptyLine ?? false,
+            options.itemChar ?? "",
+            options.discardSeIm ?? true
+        );
+        if (finalText === null) return false;
+        finalText = normalizeContentEditableInsertText(finalText);
+
+        return replaceSelectedContentEditableText(quillEditor, finalText);
     }
 
     document.addEventListener('keydown', (ev) => {
