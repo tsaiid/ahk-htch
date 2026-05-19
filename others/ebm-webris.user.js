@@ -286,7 +286,9 @@
         // Ctrl+X: cut selected text, or cut the current logical line if no text is selected.
         if (ev.ctrlKey && ev.key === 'x' && ev.target instanceof HTMLTextAreaElement) {
             if (ev.target.selectionStart === ev.target.selectionEnd) {
+                ev.preventDefault();
                 selectCurrentLogicalLine(ev.target);
+                document.execCommand('cut');
             }
             return;
         }
@@ -301,7 +303,10 @@
                     return;
                 }
 
-                selectCurrentQuillDomLine(quillEditor);
+                if (selectCurrentQuillDomLine(quillEditor)) {
+                    ev.preventDefault();
+                    document.execCommand('cut');
+                }
                 return;
             }
         }
