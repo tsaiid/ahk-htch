@@ -86,11 +86,8 @@ PRESERVE_CLIPBOARD := 0
 #Include MyScripts\abbreviations.v2.ahk
 #Include MyScripts\others.v2.ahk
 
-#Include MyScripts\spg.v2.ahk
 #Include MyScripts\bone-density.v2.ahk
 
-  ;;; Gui
-#Include MyScripts\gui-common.v2.ahk
 #HotIf
 
 ; HotKeys Lib

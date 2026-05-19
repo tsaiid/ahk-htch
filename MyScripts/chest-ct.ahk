@@ -56,12 +56,6 @@ No axillary, supraclavicular, mediastinal or pulmonary hilar lymphadenopathy.
   Paste(MyForm)
 Return
 
-;; Show helper to insert Fleischner guideline
-::fsg::
-  hParentWnd := WinExist("A")
-  Fleischner2017Form()
-Return
-
 ::cctok::
   MyForm =
 (

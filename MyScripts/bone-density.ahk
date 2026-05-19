@@ -21,6 +21,3 @@ Osteoporosis, T-score = -3.2.
   Paste(MyForm)
 Return
 
-::bmd1::
-  LiberaBMDSR()
-Return

@@ -21,10 +21,3 @@ Osteoporosis, T-score = -3.2.
   Paste(MyForm)
 }
 
-::bmd1:: {
-  LiberaBMDSR()
-}
-
-LiberaBMDSR() {
-  MsgBox "LiberaBMDSR is not yet ported to AutoHotkey v2."
-}

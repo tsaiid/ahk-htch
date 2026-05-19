@@ -88,7 +88,6 @@ PRESERVE_CLIPBOARD := 0
   #Include MyScripts\abbreviations.ahk
   #Include MyScripts\others.ahk
 
-  #Include MyScripts\spg.ahk
   #Include MyScripts\bone-density.ahk
 
   ;;; Gui

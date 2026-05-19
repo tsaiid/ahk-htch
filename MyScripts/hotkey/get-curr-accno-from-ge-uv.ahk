@@ -4,7 +4,6 @@
 
 GetCurrAccnoFromGeUv(debugInfo=True) {
   GEUVhWnd := WinExist("ahk_exe Miv2Lib.exe")
-  ;WinGet, hWnd, ID, Helios
 
   If (GEUVhWnd) {
     WinGetTitle, WinTitle, ahk_id %GEUVhWnd%
