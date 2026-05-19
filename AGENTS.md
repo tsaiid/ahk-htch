@@ -14,3 +14,7 @@
 ## Commit Rule
 - Always use **Traditional Chinese**.
 - Commit message follows Conventional Commits.
+
+## WebRIS Text Editing Rule
+- 在 WebRIS 裡做文字處理功能時，只考慮 `.ql-editor` 的 DOM 結構與 selection 操作。
+- 不需要支援 textarea 編輯目標，也不要嘗試使用 Quill instance API。
