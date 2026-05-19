@@ -202,6 +202,23 @@
         textarea.setSelectionRange(lineStart, lineEnd);
     }
 
+    function deleteTextToLineEnd(textarea) {
+        const value = textarea.value;
+        const selectionStart = textarea.selectionStart;
+        const lineEnd = value.indexOf('\n', textarea.selectionEnd);
+        let deleteEnd = lineEnd === -1 ? value.length : lineEnd;
+
+        if (selectionStart === deleteEnd && deleteEnd < value.length) {
+            deleteEnd += 1;
+        }
+
+        if (selectionStart === deleteEnd) return false;
+
+        textarea.setRangeText('', selectionStart, deleteEnd, 'start');
+        textarea.dispatchEvent(new InputEvent('input', { bubbles: true, inputType: 'deleteContentForward' }));
+        return true;
+    }
+
     function getQuillEditorElement(target) {
         return target.closest?.('.ql-editor') || null;
     }
@@ -273,6 +290,28 @@
         }
 
         editor.dispatchEvent(new InputEvent('input', { bubbles: true, inputType: 'deleteContent' }));
+    }
+
+    function deleteQuillTextToLineEnd(editor) {
+        const selection = window.getSelection();
+        if (!selection || !selection.rangeCount || !selection.isCollapsed) return false;
+        if (!editor.contains(selection.anchorNode)) return false;
+
+        const line = getCurrentQuillDomLine(editor);
+        if (!line) return false;
+
+        const range = selection.getRangeAt(0).cloneRange();
+        range.setEnd(line, line.childNodes.length);
+
+        if (range.collapsed) {
+            document.execCommand('forwardDelete');
+        } else {
+            selection.removeAllRanges();
+            selection.addRange(range);
+            document.execCommand('delete');
+        }
+
+        return true;
     }
 
     function reorderSelectedTextValue(selectedText, deOrder = false, keepEmptyLine = false, itemChar = "", discardSeIm = true) {
@@ -438,6 +477,21 @@
                 ev.preventDefault();
             }
             return;
+        }
+
+        // Ctrl+K: delete text from the caret to the end of the current line.
+        if (ev.ctrlKey && ev.key === 'k' && ev.target instanceof HTMLTextAreaElement) {
+            ev.preventDefault();
+            deleteTextToLineEnd(ev.target);
+            return;
+        }
+        if (ev.ctrlKey && ev.key === 'k') {
+            const quillEditor = getQuillEditorElement(ev.target);
+            if (quillEditor) {
+                ev.preventDefault();
+                deleteQuillTextToLineEnd(quillEditor);
+                return;
+            }
         }
 
         // Ctrl+X: cut selected text, or cut the current logical line if no text is selected.

@@ -43,12 +43,6 @@
 ;; Delete a character
 ^d::Send("{Del}")
 
-^k::
-{
-  Send("+{End}")
-  Send("{Del}")
-}
-
 ;; Ctrl+Y is left to WebRIS/browser handling.
 ;^y::
 ;{
