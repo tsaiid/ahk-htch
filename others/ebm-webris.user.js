@@ -214,6 +214,18 @@
         return lastLine;
     }
 
+    function insertEditorLineList(editor, beforeLine, sourceLine, lines) {
+        let lastLine = null;
+
+        lines.forEach(lineText => {
+            const line = createEditorLine(sourceLine, lineText);
+            editor.insertBefore(line, beforeLine);
+            lastLine = line;
+        });
+
+        return lastLine;
+    }
+
     function getEditorLineElement(editor, node) {
         let element = node?.nodeType === Node.ELEMENT_NODE ? node : node?.parentElement;
         while (element && element.parentElement !== editor) {
@@ -225,6 +237,16 @@
     function setCaretAfterNode(node) {
         const range = document.createRange();
         range.setStartAfter(node);
+        range.collapse(true);
+
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+    }
+
+    function setCaretBeforeNode(node) {
+        const range = document.createRange();
+        range.setStartBefore(node);
         range.collapse(true);
 
         const selection = window.getSelection();
@@ -309,12 +331,28 @@
             setCaretAfterNode(textNode);
         } else {
             const isCurrentLineEmpty = isEmptyEditorDomLine(currentLine);
-            const beforeLine = isCurrentLineEmpty ? currentLine : currentLine.nextSibling;
-            const lastLine = insertEditorLines(editor, beforeLine, currentLine, normalizedText);
+            let lastLine = null;
+
             if (isCurrentLineEmpty) {
+                lastLine = insertEditorLines(editor, currentLine, currentLine, normalizedText);
                 currentLine.remove();
+                setCaretAfterNode(lastLine);
+            } else {
+                const tailRange = range.cloneRange();
+                tailRange.setEnd(currentLine, currentLine.childNodes.length);
+                const tailFragment = tailRange.extractContents();
+                const tailFirstChild = tailFragment.firstChild;
+                const firstTextNode = document.createTextNode(lines[0]);
+                range.insertNode(firstTextNode);
+
+                lastLine = insertEditorLineList(editor, currentLine.nextSibling, currentLine, lines.slice(1));
+                if (tailFirstChild) {
+                    lastLine.appendChild(tailFragment);
+                    setCaretBeforeNode(tailFirstChild);
+                } else {
+                    setCaretAfterNode(lastLine);
+                }
             }
-            setCaretAfterNode(lastLine);
         }
 
         dispatchEditorInput(editor, "insertText", normalizedText);
