@@ -183,43 +183,7 @@
         return `${arr.join(', ')}, and ${lastItem}`;
     }
 
-    function selectCurrentLogicalLine(textarea) {
-        const value = textarea.value;
-        const cursorPos = textarea.selectionStart;
-        let lineStart = value.lastIndexOf('\n', cursorPos - 1) + 1;
-        let lineEnd = value.indexOf('\n', textarea.selectionEnd);
-
-        if (lineEnd === -1) {
-            lineEnd = value.length;
-        } else {
-            lineEnd += 1;
-        }
-
-        if (lineStart === lineEnd && lineStart === value.length && value.endsWith('\n')) {
-            lineStart -= 1;
-        }
-
-        textarea.setSelectionRange(lineStart, lineEnd);
-    }
-
-    function deleteTextToLineEnd(textarea) {
-        const value = textarea.value;
-        const selectionStart = textarea.selectionStart;
-        const lineEnd = value.indexOf('\n', textarea.selectionEnd);
-        let deleteEnd = lineEnd === -1 ? value.length : lineEnd;
-
-        if (selectionStart === deleteEnd && deleteEnd < value.length) {
-            deleteEnd += 1;
-        }
-
-        if (selectionStart === deleteEnd) return false;
-
-        textarea.setRangeText('', selectionStart, deleteEnd, 'start');
-        textarea.dispatchEvent(new InputEvent('input', { bubbles: true, inputType: 'deleteContentForward' }));
-        return true;
-    }
-
-    function getQuillEditorElement(target) {
+    function getEditorElement(target) {
         return target.closest?.('.ql-editor') || null;
     }
 
@@ -258,6 +222,30 @@
         return element?.parentElement === editor ? element : null;
     }
 
+    function setCaretAfterNode(node) {
+        const range = document.createRange();
+        range.setStartAfter(node);
+        range.collapse(true);
+
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+    }
+
+    function setCaretInEditorLine(line) {
+        const range = document.createRange();
+        range.setStart(line, 0);
+        range.collapse(true);
+
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+    }
+
+    function dispatchEditorInput(editor, inputType, data = null) {
+        editor.dispatchEvent(new InputEvent("input", { bubbles: true, inputType, data }));
+    }
+
     function replaceSelectedContentEditableText(editor, text) {
         const selection = window.getSelection();
         if (!selection || !selection.rangeCount || selection.isCollapsed) return false;
@@ -290,14 +278,46 @@
         }
 
         if (lastNode) {
-            const caretRange = document.createRange();
-            caretRange.setStartAfter(lastNode);
-            caretRange.collapse(true);
-            selection.removeAllRanges();
-            selection.addRange(caretRange);
+            setCaretAfterNode(lastNode);
         }
 
-        editor.dispatchEvent(new InputEvent("input", { bubbles: true, inputType: "insertText", data: text }));
+        dispatchEditorInput(editor, "insertText", text);
+        return true;
+    }
+
+    function insertContentEditableText(editor, text) {
+        if (!editor) return false;
+
+        const selection = window.getSelection();
+        if (!selection || !selection.rangeCount) return false;
+        if (!editor.contains(selection.anchorNode) || !editor.contains(selection.focusNode)) return false;
+
+        if (!selection.isCollapsed) {
+            return replaceSelectedContentEditableText(editor, text.replace(/\r\n|\r/g, "\n"));
+        }
+
+        const range = selection.getRangeAt(0);
+        const currentLine = getEditorLineElement(editor, range.startContainer) || editor.firstElementChild;
+        if (!currentLine) return false;
+
+        const normalizedText = text.replace(/\r\n|\r/g, "\n");
+        const lines = normalizedText.split("\n");
+
+        if (lines.length === 1) {
+            const textNode = document.createTextNode(normalizedText);
+            range.insertNode(textNode);
+            setCaretAfterNode(textNode);
+        } else {
+            const isCurrentLineEmpty = isEmptyEditorDomLine(currentLine);
+            const beforeLine = isCurrentLineEmpty ? currentLine : currentLine.nextSibling;
+            const lastLine = insertEditorLines(editor, beforeLine, currentLine, normalizedText);
+            if (isCurrentLineEmpty) {
+                currentLine.remove();
+            }
+            setCaretAfterNode(lastLine);
+        }
+
+        dispatchEditorInput(editor, "insertText", normalizedText);
         return true;
     }
 
@@ -306,7 +326,7 @@
         return selection && !selection.isCollapsed && element.contains(selection.anchorNode) && element.contains(selection.focusNode);
     }
 
-    function getCurrentQuillDomLine(editor) {
+    function getCurrentEditorDomLine(editor) {
         const selection = window.getSelection();
         if (!selection || !selection.rangeCount || !selection.isCollapsed) return null;
         if (!editor.contains(selection.anchorNode)) return null;
@@ -324,10 +344,10 @@
         return line?.parentElement === editor ? line : null;
     }
 
-    function selectCurrentQuillDomLine(editor) {
+    function selectCurrentEditorDomLine(editor) {
         if (selectionHasTextInElement(editor)) return false;
 
-        const line = getCurrentQuillDomLine(editor);
+        const line = getCurrentEditorDomLine(editor);
         if (!line) return false;
 
         const range = document.createRange();
@@ -339,21 +359,11 @@
         return true;
     }
 
-    function isEmptyQuillDomLine(line) {
+    function isEmptyEditorDomLine(line) {
         return line.textContent.replace(/\u00a0/g, '').trim() === '';
     }
 
-    function setCaretInQuillDomLine(line) {
-        const range = document.createRange();
-        range.setStart(line, 0);
-        range.collapse(true);
-
-        const selection = window.getSelection();
-        selection.removeAllRanges();
-        selection.addRange(range);
-    }
-
-    function deleteEmptyQuillDomLine(editor, line) {
+    function deleteEmptyEditorDomLine(editor, line) {
         const nextLine = line.nextSibling;
         const prevLine = line.previousSibling;
         line.remove();
@@ -362,33 +372,78 @@
             const newLine = document.createElement(line.tagName.toLowerCase());
             newLine.appendChild(document.createElement('br'));
             editor.appendChild(newLine);
-            setCaretInQuillDomLine(newLine);
+            setCaretInEditorLine(newLine);
         } else {
-            setCaretInQuillDomLine(nextLine || prevLine);
+            setCaretInEditorLine(nextLine || prevLine);
         }
 
-        editor.dispatchEvent(new InputEvent('input', { bubbles: true, inputType: 'deleteContent' }));
+        dispatchEditorInput(editor, 'deleteContent');
     }
 
-    function deleteQuillTextToLineEnd(editor) {
+    function deleteEditorDomTextToLineEnd(editor) {
         const selection = window.getSelection();
         if (!selection || !selection.rangeCount || !selection.isCollapsed) return false;
         if (!editor.contains(selection.anchorNode)) return false;
 
-        const line = getCurrentQuillDomLine(editor);
+        const line = getCurrentEditorDomLine(editor);
         if (!line) return false;
+
+        if (isEmptyEditorDomLine(line)) {
+            deleteEmptyEditorDomLine(editor, line);
+            return true;
+        }
 
         const range = selection.getRangeAt(0).cloneRange();
         range.setEnd(line, line.childNodes.length);
 
-        if (range.collapsed) {
-            document.execCommand('forwardDelete');
+        if (!range.collapsed) {
+            range.deleteContents();
+        } else if (line.nextSibling) {
+            line.nextSibling.remove();
         } else {
-            selection.removeAllRanges();
-            selection.addRange(range);
-            document.execCommand('delete');
+            return false;
         }
 
+        dispatchEditorInput(editor, 'deleteContentForward');
+        return true;
+    }
+
+    function cutSelectedEditorDomText(editor) {
+        const selection = window.getSelection();
+        if (!selection || !selection.rangeCount || selection.isCollapsed) return false;
+        if (!editor.contains(selection.anchorNode) || !editor.contains(selection.focusNode)) return false;
+
+        const text = selection.toString();
+        navigator.clipboard?.writeText(text).catch(() => {});
+
+        const range = selection.getRangeAt(0);
+        const startLine = getEditorLineElement(editor, range.startContainer);
+        const endLine = getEditorLineElement(editor, range.endContainer);
+
+        if (startLine && endLine) {
+            const caretLine = startLine.previousSibling || endLine.nextSibling;
+            let line = startLine;
+            while (line) {
+                const nextLine = line.nextSibling;
+                line.remove();
+                if (line === endLine) break;
+                line = nextLine;
+            }
+
+            if (!editor.firstChild) {
+                const newLine = createEditorLine(startLine, "");
+                editor.appendChild(newLine);
+                setCaretInEditorLine(newLine);
+            } else {
+                setCaretInEditorLine(caretLine || editor.firstChild);
+            }
+        } else {
+            range.deleteContents();
+            selection.removeAllRanges();
+            selection.addRange(range);
+        }
+
+        dispatchEditorInput(editor, 'deleteByCut');
         return true;
     }
 
@@ -502,11 +557,11 @@
     }
 
     function reorderSelectedText(target, options) {
-        const quillEditor = getQuillEditorElement(target);
-        if (!quillEditor) return false;
+        const editor = getEditorElement(target);
+        if (!editor) return false;
 
         const selection = window.getSelection();
-        if (!selection || selection.isCollapsed || !quillEditor.contains(selection.anchorNode) || !quillEditor.contains(selection.focusNode)) {
+        if (!selection || selection.isCollapsed || !editor.contains(selection.anchorNode) || !editor.contains(selection.focusNode)) {
             return false;
         }
 
@@ -520,7 +575,7 @@
         if (finalText === null) return false;
         finalText = normalizeContentEditableInsertText(finalText);
 
-        return replaceSelectedContentEditableText(quillEditor, finalText);
+        return replaceSelectedContentEditableText(editor, finalText);
     }
 
     document.addEventListener('keydown', (ev) => {
@@ -539,44 +594,30 @@
             return;
         }
 
-        // Ctrl+K: delete text from the caret to the end of the current line.
-        if (ev.ctrlKey && ev.key === 'k' && ev.target instanceof HTMLTextAreaElement) {
-            ev.preventDefault();
-            deleteTextToLineEnd(ev.target);
-            return;
-        }
         if (ev.ctrlKey && ev.key === 'k') {
-            const quillEditor = getQuillEditorElement(ev.target);
-            if (quillEditor) {
+            const editor = getEditorElement(ev.target);
+            if (editor) {
                 ev.preventDefault();
-                deleteQuillTextToLineEnd(quillEditor);
+                deleteEditorDomTextToLineEnd(editor);
                 return;
             }
         }
 
         // Ctrl+X: cut selected text, or cut the current logical line if no text is selected.
-        if (ev.ctrlKey && ev.key === 'x' && ev.target instanceof HTMLTextAreaElement) {
-            if (ev.target.selectionStart === ev.target.selectionEnd) {
-                ev.preventDefault();
-                selectCurrentLogicalLine(ev.target);
-                document.execCommand('cut');
-            }
-            return;
-        }
         if (ev.ctrlKey && ev.key === 'x') {
-            const quillEditor = getQuillEditorElement(ev.target);
-            if (quillEditor) {
-                const line = getCurrentQuillDomLine(quillEditor);
-                if (line && isEmptyQuillDomLine(line)) {
+            const editor = getEditorElement(ev.target);
+            if (editor) {
+                const line = getCurrentEditorDomLine(editor);
+                if (line && isEmptyEditorDomLine(line)) {
                     ev.preventDefault();
                     navigator.clipboard?.writeText('\n').catch(() => {});
-                    deleteEmptyQuillDomLine(quillEditor, line);
+                    deleteEmptyEditorDomLine(editor, line);
                     return;
                 }
 
-                if (selectCurrentQuillDomLine(quillEditor)) {
+                if (selectCurrentEditorDomLine(editor)) {
                     ev.preventDefault();
-                    document.execCommand('cut');
+                    cutSelectedEditorDomText(editor);
                 }
                 return;
             }
@@ -737,12 +778,12 @@
             let soap_o = document.querySelector('div[style="height: 930px;"] > div:nth-child(3) textarea').value;
             let found_indication = soap_o.match(/檢查目的：(.+)/);
             if (found_indication) {
-                document.execCommand('insertText', false, found_indication[1]);
+                insertContentEditableText(getEditorElement(ev.target), found_indication[1]);
             } else {
                 let soap_a = document.querySelector('div[style="height: 930px;"] > div:nth-child(4) textarea').value;
                 found_indication = soap_a.match(/【檢查目的】\n(.+?)\n/s);
                 if (found_indication) {
-                    document.execCommand('insertText', false, found_indication[1]);
+                    insertContentEditableText(getEditorElement(ev.target), found_indication[1]);
                 }
             }
         }
@@ -862,7 +903,7 @@
                     const full_pat_report = document.querySelector('div[style="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] textarea').value;
                     const pat_diagnosis = full_pat_report.replace(/.+檢驗後診斷名稱:\n(.+)\n\n報告內容.+$/s, '$1');
                     const formatted_str = `${pat_date}: ${pat_diagnosis}`;
-                    document.execCommand('insertText', false, formatted_str);
+                    insertContentEditableText(getEditorElement(ev.target), formatted_str);
                 }
             } else if (tabName == "檢驗報告") {
                 console.log('檢驗報告');
@@ -875,7 +916,7 @@
             //navigator.clipboard.writeText(prev_examdate);
             const curr_pid = getCurrPatId();
             if (curr_pid === prev_examdate_pid) {
-                document.execCommand('insertText', false, prev_examdate);
+                insertContentEditableText(getEditorElement(ev.target), prev_examdate);
             }
         }
 
@@ -888,7 +929,7 @@
             const examdate = tds[0]?.textContent?.replace(/(\d{4})\/(\d{2})\/(\d{2})/, '$1-$2-$3');
             const modality = tds[2]?.textContent;
             if (examdate && modality) {
-                document.execCommand('insertText', false, `${examdate} ${modality}`);
+                insertContentEditableText(getEditorElement(ev.target), `${examdate} ${modality}`);
             }
         }
 
@@ -968,7 +1009,7 @@
                     const spinePartStr = joinWithAnd(spinePartList.sort(spineCompareFn));
                     examStr = examStr.replace(/.+(CT|MRI)/, "SPINE " + spinePartStr + " $1");
                 }
-                document.execCommand('insertText', false, examStr + ":\n\n");
+                insertContentEditableText(getEditorElement(ev.target), examStr + ":\n\n");
             }
         }
 
@@ -978,7 +1019,7 @@
             console.log("Ctrl+Alt+E: Insert Exam Name");
             const currExamName = getCurrExamName();
             if (currExamName) {
-                document.execCommand('insertText', false, currExamName + ":\n\n");
+                insertContentEditableText(getEditorElement(ev.target), currExamName + ":\n\n");
             }
         }
 
