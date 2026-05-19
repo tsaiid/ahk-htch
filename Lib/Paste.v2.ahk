@@ -8,24 +8,9 @@ Paste(text, convertCRLF := true) {
         text := StrReplace(text, "`n", "`r`n")
     }
 
-    ; --- 1. 嘗試取得焦點 Control 的 Hwnd ---
-    hCtl := 0
-    try {
-        focusedHwnd := ControlGetFocus("A")
-    }
-
-    ; --- 2. 策略 A: 直接訊息貼上 (優先使用) ---
-    if (focusedHwnd) {
-        try {
-            ; 使用 Hwnd 呼叫 EditPaste，完全繞過剪貼簿
-            EditPaste(text, focusedHwnd)
-            return ; 成功則直接結束
-        } catch {
-            ; 失敗 (例如該 Control 不支援 Edit 訊息) 則繼續往下
-        }
-    }
-
-    ; --- 3. 策略 B: 傳統剪貼簿貼上 (備案) ---
+    ; --- 1. 傳統剪貼簿貼上 ---
+    ; 使用 Ctrl+V 讓貼上動作維持在鍵盤事件序列內，避免搶在 hotstring
+    ; 內建 backspacing 前直接寫入 control，造成 abbreviation 殘留。
 
     ; 字數少直接打字
     if (StrLen(text) < 50) {

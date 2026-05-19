@@ -8,11 +8,11 @@ PTCCD is indicated and has been arranged.
 }
 
 ::1sg-ptccd:: {
-  currDateStr := FormatTime(, "M/d tt")
-  MyForm := "
+  currDateStr := FormatTime("L1033", "M/d tt")
+  MyForm := Format("
 (
-PTCCD was performed in %currDateStr%. A 6 Fr pigtail drain with safety lock was inserted. 10 ml of aspirated bile was collected for Lab exam.
-)"
+PTCCD was performed in {1}. A 6 Fr pigtail drain with safety lock was inserted. 10 ml of aspirated bile was collected for Lab exam.
+)", currDateStr)
   Paste(MyForm)
 }
 

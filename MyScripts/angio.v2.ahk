@@ -218,11 +218,11 @@ Hemostasis of GI bleeding was achieved after Vasospasm TAE.
 
 ::0tace::TACE for HCC has been arranged.
 ::1tace:: {
-  currDateStr := FormatTime(, "M/d tt")
-  MyForm := "
+  currDateStr := FormatTime("L1033", "M/d tt")
+  MyForm := Format("
 (
-TACE was performed in %currDateStr%. Please keep external compression and check if puncture site bleeding or hematoma occurs.
-)"
+TACE was performed in {1}. Please keep external compression and check if puncture site bleeding or hematoma occurs.
+)", currDateStr)
   Paste(MyForm)
 }
 
@@ -449,11 +449,11 @@ Pre-MWA TAE for liver metastasis was performed.
 }
 
 ::1ctap:: {
-  currDateStr := FormatTime(, "M/d tt")
-  MyForm := "
+  currDateStr := FormatTime("L1033", "M/d tt")
+  MyForm := Format("
 (
-Angiography and CTHA/CTAP were performed in %currDateStr%. Please keep external compression of the femoral puncture area and check if bleeding occurs.
-)"
+Angiography and CTHA/CTAP were performed in {1}. Please keep external compression of the femoral puncture area and check if bleeding occurs.
+)", currDateStr)
   Paste(MyForm)
 }
 
@@ -575,11 +575,11 @@ Operator: Dr. Huang,
 }
 
 ::1xahaic:: {
-  currDateStr := FormatTime(, "M/d tt")
-  MyForm := "
+  currDateStr := FormatTime("L1033", "M/d tt")
+  MyForm := Format("
 (
-The temporary HAIC catheter was placed in %currDateStr%. Please keep infusion of the catheter to prevent clotting. If oozing from the puncture area occurs, please check KUB to make sure the catheter tip location is proper. If further TAE with Lipiodol after this HAIC session is needed, please arrange the exam.
-)"
+The temporary HAIC catheter was placed in {1}. Please keep infusion of the catheter to prevent clotting. If oozing from the puncture area occurs, please check KUB to make sure the catheter tip location is proper. If further TAE with Lipiodol after this HAIC session is needed, please arrange the exam.
+)", currDateStr)
   Paste(MyForm)
 }
 
@@ -689,11 +689,11 @@ The infusion catheter for HAIC was exchanged.
 
 ::0xadj::Antegrade double-J ureteral stent placement has been arranged.
 ::1xadj:: {
-  currDateStr := FormatTime(, "M/d tt")
-  MyForm := "
+  currDateStr := FormatTime("L1033", "M/d tt")
+  MyForm := Format("
 (
-Antegrade double-J ureteral stent placement was performed in %currDateStr%. Please keep PCN drainage if hematuria persists. For PCN removal, if needed, please clamp the PCN first, if no discomfort nor fever for hours to a day, arrange antegrade pyelography to check the patency of ureteral stent. If patent, I will remove the PCND at that time.
-)"
+Antegrade double-J ureteral stent placement was performed in {1}. Please keep PCN drainage if hematuria persists. For PCN removal, if needed, please clamp the PCN first, if no discomfort nor fever for hours to a day, arrange antegrade pyelography to check the patency of ureteral stent. If patent, I will remove the PCND at that time.
+)", currDateStr)
   Paste(MyForm)
 }
 
@@ -786,11 +786,11 @@ Patent ureteral stent and successful removal of PCND.
 }
 
 ::1xapcn:: {
-  currDateStr := FormatTime(, "M/d tt")
-  MyForm := "
+  currDateStr := FormatTime("L1033", "M/d tt")
+  MyForm := Format("
 (
-Percutaneous nephrostomy (8F pigtail) was performed in %currDateStr%.
-)"
+Percutaneous nephrostomy (8F pigtail) was performed in {1}.
+)", currDateStr)
   Paste(MyForm)
 }
 
@@ -903,11 +903,11 @@ The procedure has been scheduled.
 }
 
 ::1picc:: {
-  currDateStr := FormatTime(, "M/d tt")
-  MyForm := "
+  currDateStr := FormatTime("L1033", "M/d tt")
+  MyForm := Format("
 (
-PICC catheter insertion was performed in %currDateStr%. A 4 Fr Groshong catheter was placed with tip at the SVC.
-)"
+PICC catheter insertion was performed in {1}. A 4 Fr Groshong catheter was placed with tip at the SVC.
+)", currDateStr)
   Paste(MyForm)
 }
 
@@ -959,13 +959,13 @@ IMPRESSION:
 
 ::0xale::Angiography of lower extremity has been arranged.
 ::1xale:: {
-  currDateStr := FormatTime(, "M/d tt")
-  MyForm := "
+  currDateStr := FormatTime("L1033", "M/d tt")
+  MyForm := Format("
 (
-Aortography and angiography of lower extremity were performed in %currDateStr%.
-Angiography of lower extremity was performed in %currDateStr%.
+Aortography and angiography of lower extremity were performed in {1}.
+Angiography of lower extremity was performed in {1}.
 Please keep external compression on the puncture site and check if bleeding or hematoma occurs.
-)"
+)", currDateStr)
   Paste(MyForm)
 }
 
@@ -1013,11 +1013,11 @@ Patent major left lower extremity arteries.
 }
 
 ::1xaptcd:: {
-  currDateStr := FormatTime(, "M/d tt")
-  MyForm := "
+  currDateStr := FormatTime("L1033", "M/d tt")
+  MyForm := Format("
 (
-PTCD was performed in %currDateStr%. A 8 Fr pigtail drain was inserted through left / right IHD.
-)"
+PTCD was performed in {1}. A 8 Fr pigtail drain was inserted through left / right IHD.
+)", currDateStr)
   Paste(MyForm)
 }
 

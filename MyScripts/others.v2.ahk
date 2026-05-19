@@ -336,14 +336,14 @@
 ::fn::FOOTNOTE:{Enter}[{^}1]: `
 
 ::ar:: {
-  currDateStr := FormatTime(, "yyyy/M/d")
-  MyForm := "
+  currDateStr := FormatTime("L1033", "yyyy/M/d")
+  MyForm := Format("
 (
 ----
-Additional report on %currDateStr%:
+Additional report on {1}:
 
 
-)"
+)", currDateStr)
   Paste(MyForm)
 }
 

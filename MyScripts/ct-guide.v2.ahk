@@ -8,20 +8,20 @@ CT-guide lung biopsy is indicated and has been scheduled on / PM. If specimen fo
 }
 
 ::1ctg-lb:: {
-  currDateStr := FormatTime(, "M/d tt")
-  MyForm := "
+  currDateStr := FormatTime("L1033", "M/d tt")
+  MyForm := Format("
 (
-CT guide lung biopsy was performed in %currDateStr%. Please follow up CXR if pneumothorax develops or progresses.
-)"
+CT guide lung biopsy was performed in {1}. Please follow up CXR if pneumothorax develops or progresses.
+)", currDateStr)
   Paste(MyForm)
 }
 
 ::1ctg-b:: {
-  currDateStr := FormatTime(, "M/d tt")
-  MyForm := "
+  currDateStr := FormatTime("L1033", "M/d tt")
+  MyForm := Format("
 (
-CT guide biopsy was performed in %currDateStr%. Please keep bed rest and check if internal bleeding occurs.
-)"
+CT guide biopsy was performed in {1}. Please keep bed rest and check if internal bleeding occurs.
+)", currDateStr)
   Paste(MyForm)
 }
 
@@ -98,11 +98,11 @@ F/U CXR 6 hours later.
 
 ;; Drainage
 ::1ctg-d:: {
-  currDateStr := FormatTime(, "M/d tt")
-  MyForm := "
+  currDateStr := FormatTime("L1033", "M/d tt")
+  MyForm := Format("
 (
-CT guide drainage was performed in %currDateStr%. A 8 Fr pigtail drain was inserted. 10 ml of aspirated pus was collected for Lab exam.
-)"
+CT guide drainage was performed in {1}. A 8 Fr pigtail drain was inserted. 10 ml of aspirated pus was collected for Lab exam.
+)", currDateStr)
   Paste(MyForm)
 }
 
