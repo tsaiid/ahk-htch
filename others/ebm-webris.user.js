@@ -13,7 +13,10 @@
 // @require      https://code.jquery.com/jquery-3.7.1.min.js
 // @require      https://gist.githubusercontent.com/BrockA/2625891/raw/9c97aa67ff9c5d56be34a55ad6c18a314e5eb548/waitForKeyElements.js
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=2.160
-// @grant        none
+// @grant        GM_xmlhttpRequest
+// @grant        GM_registerMenuCommand
+// @connect      127.0.0.1
+// @connect      localhost
 // ==/UserScript==
 
 (function() {
@@ -23,6 +26,19 @@
     let isEdge = /Edg/.test(userAgent);
     let prev_examdate = '';
     let prev_examdate_pid = '';
+    let isAiRefinePending = false;
+    let isAiRefineAltDown = false;
+    let isAiRefineSuppressingAltMenu = false;
+    let lastAiRefineAltDownAt = 0;
+
+    const AI_REFINE_PROXY_URL = "http://127.0.0.1:8787/refine";
+    const AI_REFINE_DEBUG = true;
+
+    console.log("[WebRIS AI] userscript loaded", {
+        proxyUrl: AI_REFINE_PROXY_URL,
+        hasGmXmlHttpRequest: typeof GM_xmlhttpRequest === "function",
+        hasGmRegisterMenuCommand: typeof GM_registerMenuCommand === "function"
+    });
 
     const CONTRAST_STR = {
         X5A: " without contrast medium",
@@ -185,6 +201,48 @@
 
     function getEditorElement(target) {
         return target.closest?.('.ql-editor') || null;
+    }
+
+    function getEditorElementFromSelection() {
+        const selection = window.getSelection();
+        if (!selection || !selection.rangeCount) return null;
+
+        const nodes = [selection.anchorNode, selection.focusNode];
+        for (const node of nodes) {
+            const element = node?.nodeType === Node.ELEMENT_NODE ? node : node?.parentElement;
+            const editor = element?.closest?.(".ql-editor");
+            if (editor) return editor;
+        }
+
+        return null;
+    }
+
+    function getActiveEditorElement() {
+        return getEditorElement(document.activeElement) || getEditorElementFromSelection();
+    }
+
+    function getBestEditorEventTarget(target) {
+        const editor = getEditorElement(target) || getActiveEditorElement();
+        return editor || target;
+    }
+
+    function getEventTargetDebug(target) {
+        if (!target) return "(no target)";
+        const tagName = target.tagName || target.nodeName || "(unknown)";
+        const id = target.id ? `#${target.id}` : "";
+        const className = typeof target.className === "string" && target.className
+            ? `.${target.className.trim().replace(/\s+/g, ".")}`
+            : "";
+        return `${tagName}${id}${className}`;
+    }
+
+    function logAiRefineDebug(message, data = null) {
+        if (!AI_REFINE_DEBUG) return;
+        if (data === null) {
+            console.log(`[WebRIS AI] ${message}`);
+        } else {
+            console.log(`[WebRIS AI] ${message}`, data);
+        }
     }
 
     function normalizeContentEditableInsertText(text) {
@@ -389,7 +447,7 @@
         if (!line) return false;
 
         const range = document.createRange();
-        range.selectNode(line);
+        range.selectNodeContents(line);
 
         const selection = window.getSelection();
         selection.removeAllRanges();
@@ -482,6 +540,463 @@
         }
 
         dispatchEditorInput(editor, 'deleteByCut');
+        return true;
+    }
+
+    function getSelectionInEditor(editor) {
+        const selection = window.getSelection();
+        if (!selection || !selection.rangeCount || selection.isCollapsed) return null;
+        if (!editor.contains(selection.anchorNode) || !editor.contains(selection.focusNode)) return null;
+        return selection;
+    }
+
+    function getNormalizedTrailingNewlines(text) {
+        const match = text.replace(/\r\n|\r/g, "\n").match(/\n+$/);
+        return match ? match[0] : "";
+    }
+
+    function normalizeAiRefineResult(text, trailingNewlines) {
+        let result = text.replace(/\r\n|\r/g, "\n").replace(/\n+$/g, "");
+        return result + trailingNewlines;
+    }
+
+    function showAiRefineStatus(message, duration = 1800) {
+        let status = document.querySelector("#ebm-webris-ai-status");
+        if (!status) {
+            status = document.createElement("div");
+            status.id = "ebm-webris-ai-status";
+            Object.assign(status.style, {
+                position: "fixed",
+                left: "50%",
+                top: "33vh",
+                transform: "translateX(-50%)",
+                zIndex: "2147483647",
+                padding: "12px 18px",
+                background: "#f3f1ec",
+                color: "#35414b",
+                border: "1px solid #ddd8cf",
+                borderRadius: "8px",
+                fontSize: "17px",
+                lineHeight: "1.4",
+                boxShadow: "0 12px 32px rgba(48, 56, 66, 0.13)",
+                maxWidth: "min(720px, 86vw)",
+                whiteSpace: "pre-wrap"
+            });
+            document.body.appendChild(status);
+        }
+
+        status.textContent = message;
+        status.style.display = "block";
+
+        clearTimeout(status._hideTimer);
+        if (duration > 0) {
+            status._hideTimer = setTimeout(() => {
+                status.style.display = "none";
+            }, duration);
+        }
+    }
+
+    function postJsonWithGm(url, payload) {
+        if (typeof GM_xmlhttpRequest !== "function") {
+            throw new Error("GM_xmlhttpRequest unavailable. Please reload/reinstall the Tampermonkey script so @grant permissions are applied.");
+        }
+
+        return new Promise((resolve, reject) => {
+            logAiRefineDebug("POST proxy", {
+                url,
+                payloadKeys: Object.keys(payload),
+                textLength: payload.text?.length ?? 0
+            });
+
+            GM_xmlhttpRequest({
+                method: "POST",
+                url,
+                headers: { "Content-Type": "application/json" },
+                data: JSON.stringify(payload),
+                timeout: 120000,
+                onload: response => {
+                    logAiRefineDebug("proxy response", {
+                        status: response.status,
+                        responseLength: response.responseText?.length ?? 0,
+                        responsePreview: response.responseText?.slice(0, 300) ?? ""
+                    });
+
+                    if (response.status < 200 || response.status >= 300) {
+                        reject(new Error(response.responseText || `HTTP ${response.status}`));
+                        return;
+                    }
+
+                    try {
+                        resolve(JSON.parse(response.responseText));
+                    } catch (err) {
+                        reject(new Error(`Invalid proxy response: ${err.message}`));
+                    }
+                },
+                ontimeout: () => reject(new Error("AI proxy request timed out.")),
+                onerror: response => {
+                    logAiRefineDebug("proxy request error", response);
+                    reject(new Error("AI proxy request failed."));
+                }
+            });
+        });
+    }
+
+    async function callAiRefineProxy(selectedText) {
+        const response = await postJsonWithGm(AI_REFINE_PROXY_URL, { text: selectedText });
+        if (!response || typeof response.text !== "string") {
+            throw new Error("AI proxy did not return text.");
+        }
+        return response.text;
+    }
+
+    function restoreSelectionRange(editor, range) {
+        if (!range) return false;
+        if (!editor.contains(range.startContainer) || !editor.contains(range.endContainer)) return false;
+
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        return true;
+    }
+
+    function getRangeTextBefore(range, line) {
+        const beforeRange = document.createRange();
+        beforeRange.selectNodeContents(line);
+        beforeRange.setEnd(range.startContainer, range.startOffset);
+        return beforeRange.toString();
+    }
+
+    function getRangeTextAfter(range, line) {
+        const afterRange = document.createRange();
+        afterRange.selectNodeContents(line);
+        afterRange.setStart(range.endContainer, range.endOffset);
+        return afterRange.toString();
+    }
+
+    function buildReplacementLines(prefix, replacementText, suffix) {
+        const replacementLines = replacementText.replace(/\r\n|\r/g, "\n").split("\n");
+        replacementLines[0] = prefix + replacementLines[0];
+        replacementLines[replacementLines.length - 1] += suffix;
+        return replacementLines;
+    }
+
+    function replaceSelectedEditorRangeText(editor, range, text) {
+        if (!editor.contains(range.startContainer) || !editor.contains(range.endContainer)) return false;
+
+        const startLine = getEditorLineElement(editor, range.startContainer);
+        const endLine = getEditorLineElement(editor, range.endContainer);
+
+        if (!startLine || !endLine) {
+            const textNode = document.createTextNode(text.replace(/\r\n|\r/g, "\n"));
+            range.deleteContents();
+            range.insertNode(textNode);
+            setCaretAfterNode(textNode);
+            dispatchEditorInput(editor, "insertText", text);
+            return true;
+        }
+
+        const afterLine = endLine.nextSibling;
+        const prefix = getRangeTextBefore(range, startLine);
+        const suffix = getRangeTextAfter(range, endLine);
+        const replacementLines = buildReplacementLines(prefix, text, suffix);
+
+        let line = startLine;
+        while (line) {
+            const nextLine = line.nextSibling;
+            line.remove();
+            if (line === endLine) break;
+            line = nextLine;
+        }
+
+        let lastLine = null;
+        replacementLines.forEach(lineText => {
+            const newLine = createEditorLine(startLine, lineText);
+            editor.insertBefore(newLine, afterLine);
+            lastLine = newLine;
+        });
+
+        if (lastLine) {
+            setCaretAfterNode(lastLine);
+        }
+
+        dispatchEditorInput(editor, "insertText", text.replace(/\r\n|\r/g, "\n"));
+        return true;
+    }
+
+    function closeAiRefineComparisonDialog(dialog) {
+        dialog?._cleanup?.();
+        dialog?.remove();
+    }
+
+    function hasAiRefineComparisonDialog() {
+        return Boolean(document.querySelector("#ebm-webris-ai-compare-dialog"));
+    }
+
+    function showAiRefineComparisonDialog(editor, selectedRange, originalText, refinedText) {
+        const existingDialog = document.querySelector("#ebm-webris-ai-compare-dialog");
+        existingDialog?.remove();
+        const editorStyle = window.getComputedStyle(editor);
+        const editorTextStyle = {
+            fontFamily: editorStyle.fontFamily,
+            fontSize: editorStyle.fontSize,
+            lineHeight: editorStyle.lineHeight
+        };
+
+        const dialog = document.createElement("div");
+        dialog.id = "ebm-webris-ai-compare-dialog";
+        dialog.tabIndex = -1;
+        Object.assign(dialog.style, {
+            position: "fixed",
+            inset: "0",
+            zIndex: "2147483647",
+            background: "rgba(48, 56, 66, 0.28)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            padding: "24px"
+        });
+
+        const panel = document.createElement("div");
+        Object.assign(panel.style, {
+            width: "min(1120px, 94vw)",
+            height: "min(720px, 86vh)",
+            background: "#f3f1ec",
+            color: "#35414b",
+            borderRadius: "8px",
+            border: "1px solid #ddd8cf",
+            boxShadow: "0 24px 68px rgba(48, 56, 66, 0.19)",
+            display: "grid",
+            gridTemplateRows: "auto 1fr auto",
+            overflow: "hidden",
+            fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+        });
+
+        const header = document.createElement("div");
+        header.textContent = "AI Refine";
+        Object.assign(header.style, {
+            padding: "12px 16px",
+            fontSize: "16px",
+            fontWeight: "600",
+            color: "#394752",
+            background: "#ebe8e1",
+            borderBottom: "1px solid #ddd8cf"
+        });
+
+        const body = document.createElement("div");
+        Object.assign(body.style, {
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr",
+            gap: "12px",
+            padding: "12px",
+            minHeight: "0"
+        });
+
+        const beforeBox = createAiRefineComparePane("Before", originalText, true, editorTextStyle);
+        const afterBox = createAiRefineComparePane("After", refinedText, true, editorTextStyle);
+        body.append(beforeBox.wrapper, afterBox.wrapper);
+
+        const footer = document.createElement("div");
+        Object.assign(footer.style, {
+            display: "flex",
+            justifyContent: "flex-end",
+            gap: "8px",
+            padding: "12px 16px",
+            borderTop: "1px solid #ddd8cf",
+            background: "#ebe8e1"
+        });
+
+        const cancelButton = createAiRefineDialogButton("取消", "#ddd8cf", "#46525d");
+        const acceptButton = createAiRefineDialogButton("採用", "#6f879d", "#fff");
+        const cancelDialog = () => {
+            closeAiRefineComparisonDialog(dialog);
+            showAiRefineStatus("AI 潤色結果未採用");
+        };
+        const acceptDialog = () => {
+            try {
+                if (!restoreSelectionRange(editor, selectedRange)) {
+                    throw new Error("原本選取範圍已改變，未套用 AI 結果。");
+                }
+
+                replaceSelectedEditorRangeText(editor, selectedRange, afterBox.textarea.value);
+                closeAiRefineComparisonDialog(dialog);
+                showAiRefineStatus("AI 潤色結果已採用");
+            } catch (err) {
+                console.error(err);
+                showAiRefineStatus(`AI 潤色結果套用失敗: ${err.message}`, 8000);
+            }
+        };
+
+        cancelButton.addEventListener("click", () => {
+            cancelDialog();
+        });
+
+        acceptButton.addEventListener("click", () => {
+            acceptDialog();
+        });
+
+        footer.append(cancelButton, acceptButton);
+        panel.append(header, body, footer);
+        dialog.appendChild(panel);
+
+        const handleDialogKeydown = ev => {
+            if (ev.key === "Escape") {
+                ev.preventDefault();
+                ev.stopPropagation();
+                cancelDialog();
+            } else if (ev.key === "Enter") {
+                ev.preventDefault();
+                ev.stopPropagation();
+                acceptDialog();
+            }
+        };
+
+        dialog.addEventListener("keydown", handleDialogKeydown);
+        document.addEventListener("keydown", handleDialogKeydown, true);
+        dialog._cleanup = () => {
+            document.removeEventListener("keydown", handleDialogKeydown, true);
+        };
+
+        document.body.appendChild(dialog);
+        const focusAfterText = () => {
+            if (!document.body.contains(dialog)) return;
+            if (document.activeElement !== afterBox.textarea) {
+                afterBox.textarea.focus({ preventScroll: true });
+                afterBox.textarea.setSelectionRange(0, 0);
+                logAiRefineDebug("comparison dialog focused", {
+                    activeElement: getEventTargetDebug(document.activeElement)
+                });
+            }
+        };
+
+        focusAfterText();
+        requestAnimationFrame(() => requestAnimationFrame(focusAfterText));
+        setTimeout(focusAfterText, 80);
+        setTimeout(focusAfterText, 250);
+    }
+
+    function createAiRefineComparePane(title, text, readOnly, textStyle) {
+        const wrapper = document.createElement("div");
+        Object.assign(wrapper.style, {
+            display: "grid",
+            gridTemplateRows: "auto 1fr",
+            minWidth: "0",
+            minHeight: "0"
+        });
+
+        const label = document.createElement("div");
+        label.textContent = title;
+        Object.assign(label.style, {
+            padding: "0 0 6px",
+            fontSize: "13px",
+            fontWeight: "600",
+            color: "#53616b"
+        });
+
+        const textarea = document.createElement("textarea");
+        textarea.value = text;
+        textarea.readOnly = readOnly;
+        Object.assign(textarea.style, {
+            width: "100%",
+            height: "100%",
+            resize: "none",
+            boxSizing: "border-box",
+            border: "1px solid #ddd8cf",
+            borderRadius: "6px",
+            padding: "10px",
+            background: readOnly ? "#eeeae3" : "#f8f6f1",
+            color: "#35414b",
+            fontFamily: textStyle.fontFamily,
+            fontSize: textStyle.fontSize,
+            lineHeight: textStyle.lineHeight,
+            whiteSpace: "pre-wrap"
+        });
+
+        wrapper.append(label, textarea);
+        return { wrapper, textarea };
+    }
+
+    function createAiRefineDialogButton(text, background, color) {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.textContent = text;
+        Object.assign(button.style, {
+            minWidth: "72px",
+            padding: "7px 12px",
+            border: "0",
+            borderRadius: "6px",
+            background,
+            color,
+            cursor: "pointer",
+            fontSize: "14px",
+            fontWeight: "600"
+        });
+        return button;
+    }
+
+    async function refineSelectedEditorText(target) {
+        const editor = getEditorElement(target) || getActiveEditorElement();
+        logAiRefineDebug("refine invoked", {
+            eventTarget: getEventTargetDebug(target),
+            activeElement: getEventTargetDebug(document.activeElement),
+            hasEditor: Boolean(editor),
+            hasSelection: Boolean(window.getSelection()?.rangeCount),
+            selectionCollapsed: window.getSelection()?.isCollapsed ?? null
+        });
+
+        if (!editor) {
+            showAiRefineStatus(`Alt+R 已觸發，但找不到 .ql-editor\nTarget: ${getEventTargetDebug(target)}\nActive: ${getEventTargetDebug(document.activeElement)}`, 6000);
+            return true;
+        }
+
+        let selection = getSelectionInEditor(editor);
+        if (!selection && !selectCurrentEditorDomLine(editor)) {
+            showAiRefineStatus(`Alt+R 已觸發，但無法選取目前行\nEditor text length: ${editor.textContent.length}`, 6000);
+            return true;
+        }
+
+        selection = getSelectionInEditor(editor);
+        if (!selection) {
+            showAiRefineStatus("Alt+R 已觸發，但選取範圍不在 .ql-editor 內", 6000);
+            return true;
+        }
+
+        const selectedText = selection.toString();
+        logAiRefineDebug("selected text", {
+            length: selectedText.length,
+            preview: selectedText.slice(0, 300)
+        });
+
+        if (selectedText.trim() === "") {
+            showAiRefineStatus("選取的文字為空");
+            return true;
+        }
+
+        if (isAiRefinePending) {
+            showAiRefineStatus("Alt+R 已觸發，但 AI 潤色仍在進行中...");
+            return true;
+        }
+
+        const selectedRange = selection.getRangeAt(0).cloneRange();
+        const trailingNewlines = getNormalizedTrailingNewlines(selectedText);
+
+        try {
+            isAiRefinePending = true;
+            document.body.style.cursor = "wait";
+            showAiRefineStatus("AI 潤色中...", 0);
+
+            const refinedText = await callAiRefineProxy(selectedText);
+            const finalText = normalizeAiRefineResult(refinedText, trailingNewlines);
+
+            showAiRefineComparisonDialog(editor, selectedRange, selectedText, finalText);
+            showAiRefineStatus(`AI 潤色完成，請確認是否採用\nOutput length: ${finalText.length}`);
+        } catch (err) {
+            console.error(err);
+            showAiRefineStatus(`AI 潤色失敗: ${err.message}\nProxy: ${AI_REFINE_PROXY_URL}`, 8000);
+        } finally {
+            isAiRefinePending = false;
+            document.body.style.cursor = "";
+        }
+
         return true;
     }
 
@@ -616,6 +1131,97 @@
         return replaceSelectedContentEditableText(editor, finalText);
     }
 
+    function isAiRefineHotkey(ev) {
+        const isKeyR = ev.code === "KeyR" || ev.key.toLowerCase() === "r" || ev.keyCode === 82;
+        const hasAlt = ev.altKey || (isAiRefineAltDown && Date.now() - lastAiRefineAltDownAt < 2500);
+
+        return hasAlt
+            && !ev.ctrlKey
+            && !ev.shiftKey
+            && isKeyR;
+    }
+
+    function handleAiRefineHotkey(ev) {
+        const isAltKey = ev.key === "Alt" || ev.code === "AltLeft" || ev.code === "AltRight";
+        const isKeyR = ev.code === "KeyR" || ev.key.toLowerCase() === "r" || ev.keyCode === 82;
+        const hasEditorContext = Boolean(getEditorElement(ev.target) || getActiveEditorElement());
+        const shouldSuppressBrowserAltMenu = isAltKey
+            && (hasEditorContext || hasAiRefineComparisonDialog() || isAiRefineSuppressingAltMenu);
+
+        if (ev.type === "keydown" && isAltKey) {
+            isAiRefineAltDown = true;
+            isAiRefineSuppressingAltMenu = hasEditorContext || hasAiRefineComparisonDialog();
+            lastAiRefineAltDownAt = Date.now();
+        } else if (ev.type === "keyup" && isAltKey) {
+            isAiRefineAltDown = false;
+            if (shouldSuppressBrowserAltMenu) {
+                ev.preventDefault();
+                ev.stopPropagation();
+                ev.stopImmediatePropagation();
+                isAiRefineSuppressingAltMenu = false;
+                if (hasAiRefineComparisonDialog()) {
+                    const textareas = document.querySelectorAll("#ebm-webris-ai-compare-dialog textarea");
+                    textareas[textareas.length - 1]?.focus({ preventScroll: true });
+                }
+                return true;
+            }
+        }
+
+        if (ev.altKey || isAltKey || isKeyR) {
+            logAiRefineDebug("hotkey event observed", {
+                type: ev.type,
+                key: ev.key,
+                code: ev.code,
+                keyCode: ev.keyCode,
+                altKey: ev.altKey,
+                trackedAltDown: isAiRefineAltDown,
+                ctrlKey: ev.ctrlKey,
+                shiftKey: ev.shiftKey,
+                repeat: ev.repeat,
+                target: getEventTargetDebug(ev.target),
+                activeElement: getEventTargetDebug(document.activeElement)
+            });
+        }
+
+        if (shouldSuppressBrowserAltMenu) {
+            ev.preventDefault();
+        }
+
+        if (!isAiRefineHotkey(ev)) return false;
+        if (ev.__webRisAiRefineHandled) return true;
+        ev.__webRisAiRefineHandled = true;
+        isAiRefineSuppressingAltMenu = true;
+
+        logAiRefineDebug("Alt+R keydown", {
+            key: ev.key,
+            code: ev.code,
+            target: getEventTargetDebug(ev.target),
+            activeElement: getEventTargetDebug(document.activeElement)
+        });
+
+        ev.preventDefault();
+        ev.stopPropagation();
+        ev.stopImmediatePropagation();
+        refineSelectedEditorText(getBestEditorEventTarget(ev.target));
+        return true;
+    }
+
+    window.addEventListener('keydown', handleAiRefineHotkey, true);
+    window.addEventListener('keyup', handleAiRefineHotkey, true);
+    document.addEventListener('keydown', handleAiRefineHotkey, true);
+    document.addEventListener('keyup', handleAiRefineHotkey, true);
+
+    if (typeof GM_registerMenuCommand === "function") {
+        GM_registerMenuCommand("WebRIS AI Refine selection/current line", () => {
+            logAiRefineDebug("menu command invoked", {
+                activeElement: getEventTargetDebug(document.activeElement)
+            });
+            refineSelectedEditorText(getBestEditorEventTarget(document.activeElement));
+        });
+    } else {
+        console.warn("[WebRIS AI] GM_registerMenuCommand unavailable; loader metadata may need reload.");
+    }
+
     document.addEventListener('keydown', (ev) => {
         let nextReportChkBox = document.querySelector("div.footer input");
         let prevReportTab = document.querySelector('div[style="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)');
@@ -659,6 +1265,10 @@
                 }
                 return;
             }
+        }
+
+        if (handleAiRefineHotkey(ev)) {
+            return;
         }
 
         // Alt+] or Alt+[: find next/prev report
