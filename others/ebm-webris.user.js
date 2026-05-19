@@ -275,6 +275,155 @@
         editor.dispatchEvent(new InputEvent('input', { bubbles: true, inputType: 'deleteContent' }));
     }
 
+    function reorderSelectedTextValue(selectedText, deOrder = false, keepEmptyLine = false, itemChar = "", discardSeIm = true) {
+        let isSpine = false;
+        let hadTrimmedRight = false;
+
+        selectedText = selectedText.replace(/\r\n/g, "\n");
+
+        if (selectedText.endsWith("\n")) {
+            selectedText = selectedText.slice(0, -1);
+            hadTrimmedRight = true;
+        }
+
+        if (!selectedText.length) return null;
+
+        const txtAry = selectedText.split("\n");
+        const endLine = txtAry.length;
+        let finalText = "";
+        let isFirstLineEmpty = false;
+        let startLineNo = parseInt(selectedText.match(/^(\d+)/)?.[1] ?? "1", 10);
+
+        txtAry.forEach((line, i) => {
+            const index = i + 1;
+
+            if (index === 1 && !line.length) {
+                isFirstLineEmpty = true;
+            }
+
+            if (!/^\s*$/.test(line)) {
+                if (/^\s*[-+*]*\s*([Vv]arying degree|[Mm]ild).+causing:/.test(line)) {
+                    isSpine = true;
+                }
+
+                let tmpText = line;
+                if (!deOrder) {
+                    const orderChar = itemChar.length ? itemChar : `${startLineNo++}.`;
+                    const matchedSpineLevel = line.match(/^\s*([-+*]*|-->)\s*([CcTtLl]\d{1,2}-.+$)/);
+                    if (isSpine && matchedSpineLevel) {
+                        finalText += "-> ";
+                        tmpText = matchedSpineLevel[2];
+                    } else {
+                        finalText += `${orderChar} `;
+                    }
+                }
+
+                if (!itemChar.length && discardSeIm) {
+                    tmpText = tmpText.replace(/\s*\(Srs\/Img:[\s,\-/\d;]+\)/g, "");
+                    tmpText = tmpText.replace(/Mark L\d+:\s*/g, "");
+                }
+
+                finalText += tmpText.replace(
+                    /^(\s*)((\d+\.)|([-+*>=])|(\(?\d+\)))?(\s*)(\w?)(.*)/,
+                    (_match, _p1, _p2, _p3, _p4, _p5, _p6, firstWordChar, restText) => firstWordChar.toUpperCase() + restText
+                );
+
+                if (index < endLine || hadTrimmedRight) {
+                    finalText += "\r\n";
+                }
+            } else {
+                if (isFirstLineEmpty && index === 1) {
+                    finalText += `${line}\n`;
+                }
+
+                if (keepEmptyLine) {
+                    if (isFirstLineEmpty) {
+                        if (index % 2 === 0) {
+                            finalText += `${line}\n`;
+                        }
+                    } else if (index % 2 === 1) {
+                        finalText += `${line}\n`;
+                    }
+                }
+            }
+        });
+
+        return finalText;
+    }
+
+    function getReorderSelectedTextOptions(ev) {
+        if (!ev.ctrlKey && !ev.altKey && !ev.shiftKey) {
+            if (ev.key === "KanaMode" || ev.code === "KanaMode") {
+                return {};
+            }
+            if (ev.key === "Convert" || ev.code === "Convert") {
+                return { keepEmptyLine: true, itemChar: "-", discardSeIm: false };
+            }
+        }
+
+        if (ev.ctrlKey && ev.altKey && ev.key.toLowerCase() === "o") {
+            return { discardSeIm: !ev.shiftKey };
+        }
+
+        if (ev.ctrlKey && ev.shiftKey && !ev.altKey) {
+            if (ev.key === "*" || ev.code === "NumpadMultiply") {
+                return { keepEmptyLine: true, itemChar: "*" };
+            }
+            if (ev.code === "Minus") {
+                return { keepEmptyLine: true, itemChar: "-" };
+            }
+            if (ev.key === "+" || ev.code === "Equal" || ev.code === "NumpadAdd") {
+                return { keepEmptyLine: true, itemChar: "+" };
+            }
+        }
+
+        if (ev.ctrlKey && ev.altKey && ev.key === ">") {
+            return { keepEmptyLine: true, itemChar: "->" };
+        }
+
+        return null;
+    }
+
+    function reorderSelectedText(target, options) {
+        if (target instanceof HTMLTextAreaElement) {
+            const selectedText = target.value.slice(target.selectionStart, target.selectionEnd);
+            const finalText = reorderSelectedTextValue(
+                selectedText,
+                false,
+                options.keepEmptyLine ?? false,
+                options.itemChar ?? "",
+                options.discardSeIm ?? true
+            );
+            if (finalText === null) return false;
+
+            target.setRangeText(finalText, target.selectionStart, target.selectionEnd, "end");
+            target.dispatchEvent(new InputEvent("input", { bubbles: true, inputType: "insertText", data: finalText }));
+            return true;
+        }
+
+        const quillEditor = getQuillEditorElement(target);
+        if (quillEditor) {
+            const selection = window.getSelection();
+            if (!selection || selection.isCollapsed || !quillEditor.contains(selection.anchorNode) || !quillEditor.contains(selection.focusNode)) {
+                return false;
+            }
+
+            const finalText = reorderSelectedTextValue(
+                selection.toString(),
+                false,
+                options.keepEmptyLine ?? false,
+                options.itemChar ?? "",
+                options.discardSeIm ?? true
+            );
+            if (finalText === null) return false;
+
+            document.execCommand("insertText", false, finalText);
+            return true;
+        }
+
+        return false;
+    }
+
     document.addEventListener('keydown', (ev) => {
         let nextReportChkBox = document.querySelector("div.footer input");
         let prevReportTab = document.querySelector('div[style="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)');
@@ -282,6 +431,14 @@
         let labReportTab = document.querySelector('div[style="height: 870px; width: 41.6667%; left: 0%; top: 60px;"] > div > div:nth-child(1) > div:nth-child(3) > div:nth-child(1)');
         let openHisBtn = document.querySelectorAll('div.footer div.pt-1 button')[2];
         let copyReportBtn = document.querySelector('button[title="複製內容F8"]');
+
+        const reorderOptions = getReorderSelectedTextOptions(ev);
+        if (reorderOptions) {
+            if (reorderSelectedText(ev.target, reorderOptions)) {
+                ev.preventDefault();
+            }
+            return;
+        }
 
         // Ctrl+X: cut selected text, or cut the current logical line if no text is selected.
         if (ev.ctrlKey && ev.key === 'x' && ev.target instanceof HTMLTextAreaElement) {

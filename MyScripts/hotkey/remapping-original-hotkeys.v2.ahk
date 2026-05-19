@@ -128,15 +128,6 @@
 }
 
 !q::Send("{F4}")   ; Quit without Save
-
-;; Remap Kana Key
-;;; Formatting IMPRESSION
-;;;; Reorder Seleted Text And Discard SeIm
-SC070::ReorderSelectedText()
-
-;;; Formatting FINDINGS
-;;;; Reorder Seleted Text And Keep SeIm
-SC079::ReorderSelectedText(false, true, "-", false)
 #HotIf  ; end of WebRIS
 
 

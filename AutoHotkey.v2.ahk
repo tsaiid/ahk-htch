@@ -94,38 +94,10 @@ PRESERVE_CLIPBOARD := 0
 #HotIf
 
 ; HotKeys Lib
-#Include MyScripts\hotkey\reorder-selected-text.v2.ahk
 #Include MyScripts\hotkey\remapping-original-hotkeys.v2.ahk
 
 ; Define hotkeys
 #HotIf WinActive("ahk_group RIS")
-
-; Reorder Seleted Text And Discard SeIm
-^!o:: {
-  ReorderSelectedText()
-}
-
-; Reorder Seleted Text And Keep SeIm
-^!+o:: {
-  ReorderSelectedText(,,, false)
-}
-
-; Unorder Seleted Text
-^+*:: {
-  ReorderSelectedText(false, true, "*")
-}
-
-^+-:: {
-  ReorderSelectedText(false, true, "-")
-}
-
-^++:: {
-  ReorderSelectedText(false, true, "+")
-}
-
-^!>:: {
-  ReorderSelectedText(false, true, "->")
-}
 #HotIf
 
 ^!r::Reload()  ; Assign Ctrl-Alt-R as a hotkey to restart the script.
