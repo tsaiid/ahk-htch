@@ -517,7 +517,7 @@
         const endLine = getEditorLineElement(editor, range.endContainer);
 
         if (startLine && endLine) {
-            const caretLine = startLine.previousSibling || endLine.nextSibling;
+            const caretLine = endLine.nextSibling || startLine.previousSibling;
             let line = startLine;
             while (line) {
                 const nextLine = line.nextSibling;
