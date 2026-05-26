@@ -655,13 +655,45 @@
         return selection;
     }
 
+    function getSelectedEditorRangeText(editor, range) {
+        const startLine = getEditorLineElement(editor, range.startContainer);
+        const endLine = getEditorLineElement(editor, range.endContainer);
+        if (!startLine || !endLine || startLine === endLine) {
+            return range.toString().replace(/\r\n|\r/g, "\n");
+        }
+
+        const firstRange = document.createRange();
+        firstRange.selectNodeContents(startLine);
+        firstRange.setStart(range.startContainer, range.startOffset);
+
+        const lines = [firstRange.toString()];
+        let line = startLine.nextElementSibling;
+        while (line && line !== endLine) {
+            lines.push(line.textContent);
+            line = line.nextElementSibling;
+        }
+
+        const lastRange = document.createRange();
+        lastRange.selectNodeContents(endLine);
+        lastRange.setEnd(range.endContainer, range.endOffset);
+        lines.push(lastRange.toString());
+
+        return lines.join("\n");
+    }
+
     function getNormalizedTrailingNewlines(text) {
         const match = text.replace(/\r\n|\r/g, "\n").match(/\n+$/);
         return match ? match[0] : "";
     }
 
-    function normalizeAiRefineResult(text, trailingNewlines) {
+    function normalizeAiRefineResult(text, originalText, trailingNewlines) {
         let result = text.replace(/\r\n|\r/g, "\n").replace(/\n+$/g, "");
+        const originalBody = originalText.replace(/\r\n|\r/g, "\n").replace(/\n+$/g, "");
+
+        if (!/\n[ \t]*\n/.test(originalBody)) {
+            result = result.replace(/\n[ \t]*\n+/g, "\n");
+        }
+
         return result + trailingNewlines;
     }
 
@@ -1065,7 +1097,8 @@
             return true;
         }
 
-        const selectedText = selection.toString();
+        const selectedRange = selection.getRangeAt(0).cloneRange();
+        const selectedText = getSelectedEditorRangeText(editor, selectedRange);
         logAiRefineDebug("selected text", {
             length: selectedText.length,
             preview: selectedText.slice(0, 300)
@@ -1081,7 +1114,6 @@
             return true;
         }
 
-        const selectedRange = selection.getRangeAt(0).cloneRange();
         const trailingNewlines = getNormalizedTrailingNewlines(selectedText);
 
         try {
@@ -1090,7 +1122,7 @@
             showAiRefineStatus("AI 潤色中...", 0);
 
             const refinedText = await callAiRefineProxy(selectedText);
-            const finalText = normalizeAiRefineResult(refinedText, trailingNewlines);
+            const finalText = normalizeAiRefineResult(refinedText, selectedText, trailingNewlines);
 
             showAiRefineComparisonDialog(editor, selectedRange, selectedText, finalText);
             showAiRefineStatus(`AI 潤色完成，請確認是否採用\nOutput length: ${finalText.length}`);
