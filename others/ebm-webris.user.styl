@@ -1,6 +1,6 @@
 ﻿/* ==UserStyle==
 @name           EBM WebRIS Enhanced Style
-@version        20260519.2
+@version        20260526.1
 @namespace      ebm-webris-htch
 @description    Enhanced UI experience for EBM WebRIS
 @author         I-Ta Tsai
@@ -82,7 +82,10 @@ url-prefix("http://10.2.2.160:8080/") {
         }
         /* 報告區的內框 非 CT 用 */
         div[style*="height: 630px; width: 58.3333%; left: 41.6667%; top: 300px;"] div[style*="height: 686px;"] {
-            height: 665px !important;
+            height: 643px !important;
+        }
+        div[style*="height: 630px; width: 58.3333%; left: 41.6667%; top: 300px;"] div[style*="height: 686px;"] div.relative.pt-1 {
+            height: calc(100% + 7px) !important;
         }
         /* 報告區的內框 CT 用 */
         div[style*="height: 630px; width: 58.3333%; left: 41.6667%; top: 300px;"] div[style*="height: 661px;"] {
