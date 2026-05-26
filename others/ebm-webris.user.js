@@ -33,6 +33,7 @@
 
     const AI_REFINE_PROXY_URL = "http://127.0.0.1:8787/refine";
     const AI_REFINE_DEBUG = true;
+    const BULLET_CONTINUATION_DEBUG = false;
 
     console.log("[WebRIS AI] userscript loaded", {
         proxyUrl: AI_REFINE_PROXY_URL,
@@ -245,6 +246,15 @@
         }
     }
 
+    function logBulletContinuationDebug(message, data = null) {
+        if (!BULLET_CONTINUATION_DEBUG) return;
+        if (data === null) {
+            console.log(`[WebRIS Bullet] ${message}`);
+        } else {
+            console.log(`[WebRIS Bullet] ${message}`, data);
+        }
+    }
+
     function normalizeContentEditableInsertText(text) {
         return text.replace(/\n+$/g, "");
     }
@@ -320,6 +330,40 @@
         const selection = window.getSelection();
         selection.removeAllRanges();
         selection.addRange(range);
+    }
+
+    function setCaretAtEndOfEditorLine(line) {
+        const range = document.createRange();
+        const lastNode = line.lastChild;
+        if (lastNode?.nodeType === Node.TEXT_NODE) {
+            range.setStart(lastNode, lastNode.textContent.length);
+        } else {
+            range.setStart(line, line.childNodes.length);
+        }
+        range.collapse(true);
+
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+    }
+
+    function restoreBulletContinuationCaret(editor, lineIndex) {
+        const nextLine = editor.children[lineIndex + 1];
+        if (!nextLine) {
+            logBulletContinuationDebug("caret restore skipped: new line not found", {
+                lineIndex,
+                lineCount: editor.children.length
+            });
+            return;
+        }
+
+        setCaretAtEndOfEditorLine(nextLine);
+        const selection = window.getSelection();
+        logBulletContinuationDebug("caret restored after input handling", {
+            caretLineText: nextLine.textContent,
+            caretContainer: selection?.anchorNode?.nodeName ?? null,
+            caretOffset: selection?.anchorOffset ?? null
+        });
     }
 
     function dispatchEditorInput(editor, inputType, data = null) {
@@ -415,6 +459,67 @@
 
         dispatchEditorInput(editor, "insertText", normalizedText);
         return true;
+    }
+
+    function continueEditorBulletLine(editor) {
+        const selection = window.getSelection();
+        if (!selection || !selection.rangeCount || !selection.isCollapsed) {
+            logBulletContinuationDebug("skipped: selection unavailable or not collapsed", {
+                hasSelection: Boolean(selection),
+                rangeCount: selection?.rangeCount ?? null,
+                isCollapsed: selection?.isCollapsed ?? null
+            });
+            return false;
+        }
+        if (!editor.contains(selection.anchorNode)) {
+            logBulletContinuationDebug("skipped: caret is outside editor", {
+                anchorNode: selection.anchorNode?.nodeName ?? null
+            });
+            return false;
+        }
+
+        const line = getCurrentEditorDomLine(editor);
+        if (!line) {
+            logBulletContinuationDebug("skipped: current DOM line not found", {
+                editorHtml: editor.innerHTML
+            });
+            return false;
+        }
+
+        const range = selection.getRangeAt(0);
+        const textAfterCaret = getRangeTextAfter(range, line);
+        if (textAfterCaret !== "") {
+            logBulletContinuationDebug("skipped: caret is not at line end", {
+                lineText: line.textContent,
+                textAfterCaret
+            });
+            return false;
+        }
+
+        const prefix = getRangeTextBefore(range, line);
+        const markerMatch = prefix.match(/^(\s*(?:[-*+]|\u2022)\s+)/);
+        if (!markerMatch) {
+            logBulletContinuationDebug("skipped: no bullet prefix found", {
+                lineText: line.textContent,
+                textBeforeCaret: prefix
+            });
+            return false;
+        }
+
+        const lineIndex = Array.prototype.indexOf.call(editor.children, line);
+        const inserted = insertContentEditableText(editor, `\n${markerMatch[1]}`);
+        if (inserted && lineIndex >= 0) {
+            setTimeout(() => restoreBulletContinuationCaret(editor, lineIndex), 0);
+        }
+        const updatedSelection = window.getSelection();
+        logBulletContinuationDebug("insert attempted", {
+            bulletPrefix: markerMatch[1],
+            inserted,
+            nextLineIndex: lineIndex + 1,
+            caretContainer: updatedSelection?.anchorNode?.nodeName ?? null,
+            caretOffset: updatedSelection?.anchorOffset ?? null
+        });
+        return inserted;
     }
 
     function selectionHasTextInElement(element) {
@@ -1210,6 +1315,28 @@
     window.addEventListener('keyup', handleAiRefineHotkey, true);
     document.addEventListener('keydown', handleAiRefineHotkey, true);
     document.addEventListener('keyup', handleAiRefineHotkey, true);
+    document.addEventListener('keydown', (ev) => {
+        if (ev.key !== 'Enter') return;
+
+        const editor = getEditorElement(ev.target);
+        logBulletContinuationDebug("Enter captured", {
+            target: getEventTargetDebug(ev.target),
+            targetEditor: Boolean(editor),
+            activeEditor: Boolean(getActiveEditorElement()),
+            ctrlKey: ev.ctrlKey,
+            altKey: ev.altKey,
+            metaKey: ev.metaKey,
+            shiftKey: ev.shiftKey,
+            isComposing: ev.isComposing
+        });
+
+        if (ev.ctrlKey || ev.altKey || ev.metaKey || ev.shiftKey || ev.isComposing) return;
+        if (editor && continueEditorBulletLine(editor)) {
+            ev.preventDefault();
+            ev.stopPropagation();
+            logBulletContinuationDebug("default Enter prevented before editor handled it");
+        }
+    }, true);
 
     if (typeof GM_registerMenuCommand === "function") {
         GM_registerMenuCommand("WebRIS AI Refine selection/current line", () => {
