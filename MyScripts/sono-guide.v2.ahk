@@ -300,3 +300,14 @@ Sono-guiding find needle aspiration of lymph node was successfully performed.
 )"
   Paste(MyForm)
 }
+
+:*:sg-fap:: {
+  MyForm := "
+(
+Sono-Guiding Biopsy:
+
+Ultrasound-guided right femoral artery puncture was performed for vascular access. The whole procedure was smooth, and no immediate complication was noted.
+)"
+  Paste(MyForm)
+}
+
