@@ -6,12 +6,10 @@
 
 - Windows
 - AutoHotkey v2.0
-- 若仍需使用舊版入口，需另外安裝 AutoHotkey v1.1
 
 ## 專案結構
 
 - `AutoHotkey.v2.ahk`: AHK v2 主要入口，載入目前維護中的 scripts。
-- `AutoHotkey.ahk`: AHK v1 舊版入口，保留供相容使用。
 - `Lib/`: 共用 AutoHotkey libraries。
 - `MyScripts/`: 報告範本、hotstrings、hotkeys 與自訂 helper scripts。
 - `MyScripts/hotkey/`: RIS / PACS 操作相關熱鍵。
@@ -44,7 +42,5 @@ powershell -NoProfile -ExecutionPolicy Bypass -File Utilities\compile-check.ps1 
 
 ## 開發注意事項
 
-- 新增或修改功能時，優先更新 AHK v2 檔案。
-- 若仍需支援 AHK v1，請同步確認對應的 `.ahk` 舊版檔案。
-- 個人或院內私有設定應放在 `MyScripts/private.v2.ahk` 或 `MyScripts/private.ahk`，不要提交敏感資訊。
+- 個人或院內私有設定應放在 `MyScripts/private.v2.ahk`，不要提交敏感資訊。
 - 修改 AHK code 後必須通過 `Utilities\compile-check.ps1`。
