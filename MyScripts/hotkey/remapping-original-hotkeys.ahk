@@ -95,12 +95,11 @@ Return
   Send ^!p
 Return
 
-;; Alt + E
-;; Paste Examname
-!e::
-;  PasteExamname()
-  Send ^!e
-Return
+;; Alt+E is left to WebRIS userscript handling.
+;!e::
+;;  PasteExamname()
+;  Send ^!e
+;Return
 
 ;; Ctrl + Alt + Shift + E
 ;; Paste Examname with contrast informtion
@@ -174,7 +173,7 @@ Return
 !e::
   If (!WinActive("WebRIS")) {
     WinActivate, WebRIS
-    Send ^!e
+    Send !e
   }
 Return
 #IfWinActive  ; for ahk_exe WEBVIE~1.EXE

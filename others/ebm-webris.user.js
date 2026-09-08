@@ -1343,10 +1343,42 @@
         return true;
     }
 
+    function isExamNameHotkey(ev) {
+        const isKeyE = ev.code === "KeyE" || ev.key?.toLowerCase() === "e" || ev.keyCode === 69;
+        const hasAlt = ev.altKey || (isAiRefineAltDown && Date.now() - lastAiRefineAltDownAt < 2500);
+
+        return hasAlt
+            && !ev.shiftKey
+            && isKeyE;
+    }
+
+    function handleExamNameHotkey(ev) {
+        if (!isExamNameHotkey(ev)) return false;
+
+        const editor = getEditorElement(ev.target) || getActiveEditorElement();
+        if (!editor) return false;
+
+        if (ev.__webRisExamNameHandled) return true;
+        ev.__webRisExamNameHandled = true;
+        isAiRefineSuppressingAltMenu = true;
+
+        ev.preventDefault();
+        ev.stopPropagation();
+        ev.stopImmediatePropagation();
+
+        const currExamName = getCurrExamName();
+        if (currExamName) {
+            insertContentEditableText(editor, currExamName + ":\n\n");
+        }
+        return true;
+    }
+
     window.addEventListener('keydown', handleAiRefineHotkey, true);
     window.addEventListener('keyup', handleAiRefineHotkey, true);
     document.addEventListener('keydown', handleAiRefineHotkey, true);
     document.addEventListener('keyup', handleAiRefineHotkey, true);
+    window.addEventListener('keydown', handleExamNameHotkey, true);
+    document.addEventListener('keydown', handleExamNameHotkey, true);
     document.addEventListener('keydown', (ev) => {
         if (ev.key !== 'Enter') return;
 
@@ -1427,6 +1459,10 @@
         }
 
         if (handleAiRefineHotkey(ev)) {
+            return;
+        }
+
+        if (handleExamNameHotkey(ev)) {
             return;
         }
 
@@ -1817,16 +1853,7 @@
                     examStr = examStr.replace(/.+(CT|MRI)/, "SPINE " + spinePartStr + " $1");
                 }
                 insertContentEditableText(getEditorElement(ev.target), examStr + ":\n\n");
-            }
-        }
-
-        // Ctrl+Alt+E: Insert Exam Name
-        // Remap hotkey to Alt+E in AHK
-        if (ev.ctrlKey && ev.altKey && ev.key === 'e') {
-            console.log("Ctrl+Alt+E: Insert Exam Name");
-            const currExamName = getCurrExamName();
-            if (currExamName) {
-                insertContentEditableText(getEditorElement(ev.target), currExamName + ":\n\n");
+                ev.preventDefault();
             }
         }
 

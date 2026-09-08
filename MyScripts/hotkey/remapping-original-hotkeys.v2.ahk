@@ -83,13 +83,12 @@
 
 !p::Send("^!p")
 
-;; Alt + E
-;; Paste Examname
-!e::
-{
-;  PasteExamname()
-  Send("^!e")
-}
+;; Alt+E is left to WebRIS userscript handling.
+;!e::
+;{
+;;  PasteExamname()
+;  Send("^!e")
+;}
 
 ;; Ctrl + Alt + Shift + E
 ;; Paste Examname with contrast informtion
@@ -147,7 +146,7 @@
 {
   if (!WinActive("WebRIS")) {
     WinActivate("WebRIS")
-    Send("^!e")
+    Send("!e")
   }
 }
 #HotIf  ; for ahk_exe WEBVIE~1.EXE
