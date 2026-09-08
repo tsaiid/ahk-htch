@@ -1,3 +1,8 @@
+#Requires AutoHotkey v2.0
+
+#Include ..\..\Lib\WBGet.v2.ahk
+#Include ..\..\Lib\Paste.v2.ahk
+
 ; Date Lib
 SplitDate(dateStr) {
   Return RegExReplace(dateStr, "(\d{4})(\d{2})(\d{2})", "$1-$2-$3")

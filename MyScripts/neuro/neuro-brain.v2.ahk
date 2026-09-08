@@ -1,3 +1,8 @@
+#Requires AutoHotkey v2.0
+
+#Include ..\..\Lib\Paste.v2.ahk
+#Include ..\lib\ris-common.v2.ahk
+
 ; Neuro Brain Forms
 ::rposts::Soft tissue swelling in the right periorbital region.
 ::mrposts::Mild soft tissue swelling in the right periorbital region.

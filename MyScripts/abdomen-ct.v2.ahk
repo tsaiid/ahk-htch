@@ -1,3 +1,8 @@
+#Requires AutoHotkey v2.0
+
+#Include ..\Lib\Paste.v2.ahk
+#Include ..\Lib\WBGet.v2.ahk
+
 ; Abdomen CT Forms
 
 ;; Hotstrings

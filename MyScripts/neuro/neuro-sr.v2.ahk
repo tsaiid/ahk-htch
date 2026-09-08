@@ -1,3 +1,8 @@
+#Requires AutoHotkey v2.0
+
+#Include ..\..\Lib\Paste.v2.ahk
+#Include ..\lib\ris-common.v2.ahk
+
 ;; srCT3D
 ::srct3d:: {
   MyForm := "

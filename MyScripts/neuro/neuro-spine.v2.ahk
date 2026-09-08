@@ -1,3 +1,7 @@
+#Requires AutoHotkey v2.0
+
+#Include ..\..\Lib\Paste.v2.ahk
+
 ; Neuro Spine Forms
 ::rpbf::retropulsed bone fragment
 ::paft::posterior annulus fibrosus tear

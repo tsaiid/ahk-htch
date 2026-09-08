@@ -1,3 +1,7 @@
+#Requires AutoHotkey v2.0
+
+#Include lib\date.v2.ahk
+
 ; Comparisons
 ; need other string and date lib
 ::nic:: {
