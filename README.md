@@ -9,7 +9,7 @@
 
 ## 專案結構
 
-- `AutoHotkey.v2.ahk`: AHK v2 主要入口，載入目前維護中的 scripts。
+- `RisTools.v2.ahk`: AHK v2 主要入口，載入目前維護中的 scripts。
 - `Lib/`: 共用 AutoHotkey libraries。
 - `Hotstrings/`: 各影像次專科與模板 hotstrings。
 - `Hotstrings/lib/`: 專案內部共用函式。
@@ -21,10 +21,10 @@
 
 1. 安裝 AutoHotkey v2。
 2. 將本 repository 放在固定位置。
-3. 執行或建立捷徑指向 `AutoHotkey.v2.ahk`。
+3. 執行或建立捷徑指向 `RisTools.v2.ahk`。
 4. 需要個人化設定時，可建立 `Hotstrings/private.v2.ahk`。此檔案以 optional include 載入，未存在時不會影響主程式啟動。
 
-主要功能會在 `RIS` 視窗群組中啟用。視窗群組定義於 `AutoHotkey.v2.ahk`，目前包含 WebRIS、報告管理系統與相關院內系統視窗。
+主要功能會在 `RIS` 視窗群組中啟用。視窗群組定義於 `RisTools.v2.ahk`，目前包含 WebRIS、報告管理系統與相關院內系統視窗。
 
 ## 驗證
 
@@ -34,7 +34,7 @@
 powershell -NoProfile -ExecutionPolicy Bypass -File Utilities\compile-check.ps1
 ```
 
-此腳本會解析 `AutoHotkey.v2.ahk` 的 include dependency，並以 AutoHotkey v2 的 `/Validate` 模式檢查語法。若要同時編譯，可加上 `-Compile`：
+此腳本會解析 `RisTools.v2.ahk` 的 include dependency，並以 AutoHotkey v2 的 `/Validate` 模式檢查語法。若要同時編譯，可加上 `-Compile`：
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File Utilities\compile-check.ps1 -Compile

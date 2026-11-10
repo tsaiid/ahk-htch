@@ -13,7 +13,7 @@ $repoRoot = Split-Path -Parent $PSScriptRoot
 Set-Location $repoRoot
 
 $entryList = @(
-    "AutoHotkey.v2.ahk"
+    "RisTools.v2.ahk"
 )
 
 function Resolve-AbsolutePath {
