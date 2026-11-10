@@ -6,7 +6,7 @@
 ::lt::left `
 ::rt::right `
 ::ifo::in favor of `
-::mfo::more favor of `
+::mfo::more in favor of `
 :c:C::compared to `
 ::cpf::compression fracture
 ::vcpf::vertebral compression fracture
@@ -39,17 +39,19 @@
 ::rec::recurrence
 ::ret::retention
 :c:imp::improvement
-::imp2::As aforementioned.
+::im::As aforementioned.
 ::impd::improved
 ::w::with `
 ::wo::without `
-::woo::without obvious `
 ::wos::without significant `
 ::wod::without definite `
 ::esp::especially `
+::ptc::particularly `
+::pdm::predominantly `
 ::asp::aspiration
 ::cw::consistent with `
 ::ow::otherwise, `
+:c:RM::REMARK:
 ::rm::remarkable `
 ::urm::unremarkable
 ::cnbd::cannot be determined
@@ -70,6 +72,7 @@
 ::nr::nodular `
 ::lr::linear `
 ::sn::solid nodule
+::nsn::non-solid nodule
 ::psn::part-solid nodule
 ::cn::calcified nodule
 ::cg::calcified granuloma
@@ -83,6 +86,7 @@
 ::cdl::consolidative lesion
 ::mod::moderate `
 ::sv::severe `
+::hg::high-grade `
 ::stm::small to moderate `
 ::mtm::mild to moderate `
 ::mts::moderate to severe `
@@ -100,9 +104,10 @@
 ::ep::equilibrium phase
 ::hbp::hepatobiliary phase
 ::bd::bone density
-::ndlg::Nearly dislodgement is considered.
+::ndlg::Near dislodgement is considered.
 ::eva::evaluation
 ::fb::foreign body
+::ifb::ingested foreign body
 ::hd::high density
 ::ld::low density
 ::pbi::previous brain insults
@@ -140,6 +145,7 @@
 ::ijbe::increased joint and bursal effusion
 ::mijbe::mildly increased joint and bursal effusion
 ::uf::uterine fibroid
+::cuf::calcified uterine fibroid
 ::ppss::prominent portosystemic shunts
 ::sp::status post `
 ::ma::measures approximately `
@@ -148,7 +154,9 @@
 ::pl::possibly `
 ::pb::probably `
 ::sf::suspicious for `
+::ua::unavailable
 ::ll::less likely
+::idf::indeterminate for `
 
 :c:f::findings
 
@@ -192,19 +200,24 @@
 ::ccfu::Clinical correlation and follow-up are suggested.
 ::fufe::Follow-up or further evaluation is suggested.
 ::cpes::Correlation with panendoscopy is suggested.
+::ccys::Correlation with cystoscopy is suggested.
+::ccolon::Correlation with colonoscopy is suggested.
+::cegd::Correlation with esophagogastroduodenoscopy is suggested.
 ::csono::Correlation with sonography is suggested.
-::ccsono::Clinical and sonographic correlation are suggested.
-::ctrus::Correlate with transrectal ultrasonography is suggested.
+::ccsono::Clinical and sonographic correlation is suggested.
+::ctrus::Correlation with transrectal ultrasonography is suggested.
+::cpsa::Clinical correlation and serum PSA evaluation are suggested if clinically indicated.
 ::cdsa::Correlation with DSA is suggested.
 ::clab::Correlation with Lab data is suggested.
 ::coi::Correlation with other imaging modalities is suggested.
 ::cbs::Correlation with bone scan is suggested.
+::cmri::Correlation with MRI is suggested.
 ::cercp::Correlation with ERCP is suggested.
 ::cmrcp::Correlation with MRCP is suggested.
 ::sgyn::GYN check-up is suggested.
 ::cgynsono::GYN check-up and sonographic correlation are suggested.
-::scmp::Suggest compare with previous images if available.
-::slr3::Suggest repeat or alternative diagnostic imaging 3-6 months later.
+::scmp::Suggest comparing with previous images if available.
+::slr3::Suggest repeating or alternative diagnostic imaging 3-6 months later.
 ::slr4::Suggest multidisciplinary discussion for tailored workup (may include biopsy).
 ::sop::Correlation with OP history is suggested.
 ::sfna::FNA is suggested.
@@ -212,8 +225,8 @@
 ;; Limitations
 ::olnd::However, the obstruction level cannot be demonstrated in this study.
 ::tstc::too small to categorize
-::motion::* Obvious motion artifacts may limit the interpretation.
-::mart::* Obvious metallic artifact may limit the evaluation.
+::motion::* Significant motion artifacts may limit the interpretation.
+::mart::* Severe metallic artifact may limit the evaluation.
 ::ubl::(* Limited evaluation due to collapsed UB.)
 ::gil::(* limited evaluation due to peristalsis, susceptibility artifact from gas, etc.)
 ::ncl:: {
@@ -227,10 +240,7 @@
 }
 
 ::sgo::suggestive of `
-::obv::obvious `
 ::sig::significant `
-::nob::no obvious `
-::nobl::no obviously `
 ::nod::no definite `
 ::noe::no evident `
 ::nos::no significant `
@@ -297,15 +307,14 @@
 ::tz::transitional zone
 ::nobs::nonobstructive `
 ::obs::obstruction
-::hypoec::hypo-enhanced `
-::hyperec::hyper-enhanced `
+::hypoec::hypoenhancing `
+::hyperec::hyperenhancing `
 ::pce::post-contrast enhancement
 ::fl::fatty liver
 ::mfl::mild fatty liver
 ::mfl1::mild fatty liver without focal lesion.
 ::sfl::severe fatty liver
 ::sfl1::severe fatty liver with focal fatty sparing around the GB fossa.
-::duf::degenerative uterine fibroid
 ::eso::esophagus
 ::gd::The greatest dimension is about  cm.{Left 4}
 ::pvs::(Previously,  mm.){Left 5}
@@ -333,9 +342,15 @@
 ::rkup::upper portion of right kidney
 ::rklp::lower portion of right kidney
 ::md::maximum diameter
+::mt::maximum thickness
 ::msag::(measured in the sagittal view)
 ::mcor::(measured in the coronal view)
 ::smg1::Splenomegaly and prominent portosystemic collaterals suggest portal hypertension.
+
+::inact::For abdominal condition, please refer to the concurrent CT abdomen for detailed evaluation.
+::inbct::For other findings, please refer to the brain CT performed earlier on the same day.
+::incct::For thoracic condition, please refer to the concurrent CT chest for detailed evaluation.
+::innct::For neck condition, please refer to the concurrent CT neck for detailed evaluation.
 
 ::fn::FOOTNOTE:{Enter}[{^}1]: `
 
@@ -355,8 +370,8 @@ Additional report on {1}:
 ::rcs::renal cysts
 ::rcs1::renal cysts, size up to `
 ::rss::renal stones
-::lrc::A -cm renal cyst at the left kidney.
-::rrc::A -cm renal cyst at the right kidney.
+::lrc::A -cm renal cyst in the left kidney.
+::rrc::A -cm renal cyst in the right kidney.
 ::srcs::Some small renal cysts in both kidneys.
 ::shcs::Some small hepatic cysts.
 ::fcs::fibrocysts

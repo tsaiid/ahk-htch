@@ -8,10 +8,12 @@
 ::mrposts::Mild soft tissue swelling in the right periorbital region.
 ::lposts::Soft tissue swelling in the left periorbital region.
 ::mlposts::Mild soft tissue swelling in the left periorbital region.
-::ra1hp::Hypoplasia of right A1 anterior cerebral artery.
-::la1hp::Hypoplasia of left A1 anterior cerebral artery.
-::rv4hp::Hypoplasia of right V4 vertebral artery.
-::lv4hp::Hypoplasia of left V4 vertebral artery.
+::ra1hp::hypoplasia of right A1 anterior cerebral artery.
+::la1hp::hypoplasia of left A1 anterior cerebral artery.
+::rv4hp::hypoplasia of right V4 vertebral artery.
+::lv4hp::hypoplasia of left V4 vertebral artery.
+::vok::The bilateral lateral ventricles show no dilatation, and no midline shift is noted.
+::bmetok::Post contrast study shows no abnormal enhanced tumor mass lesion in the brain and no abnormal leptomeningeal enhancement.
 
 ;; CTN1
 ::ctn1:: {
@@ -86,7 +88,7 @@ The bilateral lateral ventricles are symmetrical in shape with acceptable age-de
 The major dural venous sinuses are patent.
 
 No obvious fracture of the skull base and the skull.
-The visible paranasal sinuses and mastoids are unremarkable.
+The visualized paranasal sinuses and mastoids are unremarkable.
 )"
   Paste(MyForm)
   SleepThenTab()
@@ -96,6 +98,17 @@ No remarkable intracranial findings.
 No definite abnormal enhancing mass lesion in the brain noted.
 )"
   Paste(MyForm)
+}
+
+;; CTN1ok0
+::ctn1ok0::
+{
+    MyForm := "
+  (
+No definite abnormal enhancing mass lesion in the brain.
+The major dural venous sinuses are patent.
+  )"
+    Paste(MyForm)
 }
 
 ;; CTN2
@@ -177,7 +190,7 @@ No midline shift is noted.
 No definite bony lesion in the skull.
 No obvious fracture of the skull base and the skull.
 
-The visible paranasal sinuses and mastoids are unremarkable.
+The visualized paranasal sinuses and mastoids are unremarkable.
 
 Mild mucoperiosteal thickening and soft tissue density in the paranasal sinuses, in favor of mild sinusitis.
 The mastoids are unremarkable.
@@ -212,7 +225,7 @@ FINDINGS:
 - No definite acute intracranial parenchymal hemorrhage, subarachnoid hemorrhage, epidural or subdural hematoma in the brain noted.
 - The bilateral lateral ventricles show no dilatation, and no midline shift is noted.
 - No definite bony lesion in the skull.
-- The visible paranasal sinuses and mastoids are unremarkable.
+- The visualized paranasal sinuses and mastoids are unremarkable.
 
 REMARKS:
 * Presence of skull base artifact with superimpose of bil. frontal base, bil. temporal base, and posterior fossa.
@@ -224,6 +237,83 @@ REMARKS:
 No remarkable intracranial findings on noncontrast CT.
 )"
   Paste(MyForm)
+}
+
+::ctn2trok::
+{
+    MyForm := "
+  (
+No definite abnormal attenuation in the brain parenchyma.
+No definite abnormal mass lesion in the brain.
+No definite acute intracranial parenchymal hemorrhage, subarachnoid hemorrhage, epidural or subdural hematoma in the brain.
+The bilateral lateral ventricles are symmetrical without dilatation.
+
+No acute fracture of the skull.
+No acute fracture of the skull and facial bones.
+
+The paranasal sinuses and mastoids are unremarkable.
+
+Mild mucoperiosteal thickening and soft tissue density in the paranasal sinuses, in favor of mild sinusitis.
+The mastoids are unremarkable.
+
+Mild spondylosis of the C-spine.
+No acute fracture or dislocation of the cervical spine.
+  )"
+    Paste(MyForm)
+    SleepThenTab()
+    MyForm := "
+  (
+1. No definite acute ICH, SAH, EDH, or SDH.
+2. No acute fracture or dislocation of the cervical spine.
+  )"
+    Paste(MyForm)
+}
+
+::ctn2trok0::
+{
+    MyForm := "
+  (
+No definite abnormal attenuation in the brain parenchyma.
+No definite abnormal mass lesion in the brain.
+No definite acute intracranial parenchymal hemorrhage, subarachnoid hemorrhage, epidural or subdural hematoma in the brain.
+The bilateral lateral ventricles are symmetrical without dilatation.
+
+No acute fracture of the skull.
+No acute fracture of the skull and facial bones.
+
+The visualized paranasal sinuses and mastoids are unremarkable.
+The paranasal sinuses and mastoids are unremarkable.
+
+No acute fracture or dislocation of the cervical spine.
+  )"
+    Paste(MyForm)
+    SleepThenTab()
+    MyForm := "
+  (
+1. No definite acute ICH, SAH, EDH, or SDH.
+2. No acute fracture or dislocation of the cervical spine.
+  )"
+    Paste(MyForm)
+}
+
+::ctn2trok00::
+{
+    MyForm := "
+  (
+- No definite abnormal attenuation in the brain parenchyma.
+- No definite abnormal mass lesion in the brain.
+- No definite acute intracranial parenchymal hemorrhage, subarachnoid hemorrhage, epidural or subdural hematoma in the brain.
+- The bilateral lateral ventricles are symmetrical without dilatation.
+- No acute fracture of the skull.
+- The visualized paranasal sinuses and mastoids are unremarkable.
+  )"
+    Paste(MyForm)
+    SleepThenTab()
+    MyForm := "
+  (
+No CT evidence of acute intracranial injury or skull fracture.
+  )"
+    Paste(MyForm)
 }
 
 ::ctn2oktr:: {
@@ -241,7 +331,7 @@ No definite abnormal mass lesion in the brain noted.
 No definite acute intracranial parenchymal hemorrhage, subarachnoid hemorrhage, epidural or subdural hematoma in the brain noted.
 The bilateral lateral ventricles show symmetrical without dilatation.
 No obvious fracture of the skull base and the skull.
-The visible paranasal sinuses and mastoids are unremarkable.
+The visualized paranasal sinuses and mastoids are unremarkable.
 
 Mild mucoperiosteal thickening and soft tissue density in the paranasal sinuses, in favor of mild sinusitis.
 The mastoids are unremarkable.
@@ -273,7 +363,7 @@ FINDINGS:
 - No definite acute intracranial parenchymal hemorrhage, subarachnoid hemorrhage, epidural or subdural hematoma in the brain noted.
 - The bilateral lateral ventricles show symmetrical without dilatation.
 - No obvious fracture of the skull base and the skull.
-- The visible paranasal sinuses and mastoids are unremarkable.
+- The visualized paranasal sinuses and mastoids are unremarkable.
 
 REMARKS:
 * Presence of skull base artifact with superimpose of bil. frontal base, bil. temporal base, and posterior fossa.
@@ -310,7 +400,7 @@ No obvious dilatation of the ventricular system.
 Mild atherosclerotic changes with calcification of intracranial portion of bilateral internal carotid arteries.
 
 No obvious fracture of the skull base and the skull.
-The visible paranasal sinuses and mastoids are unremarkable.
+The visualized paranasal sinuses and mastoids are unremarkable.
 
 Alberta stroke programme early CT score (ASPECTS):
 caudate
@@ -353,7 +443,7 @@ Enlargement of the ventricular system and sulcal widening of bilateral cerebral 
 Mild atherosclerotic changes with calcification of intracranial portion of vertebrobasilar arteries and bilateral internal carotid arteries.
 
 No definite bony lesion in the skull.
-The visible paranasal sinuses and mastoids are unremarkable.
+The visualized paranasal sinuses and mastoids are unremarkable.
 )"
   Paste(MyForm)
   SleepThenTab()
@@ -381,7 +471,7 @@ FINDINGS:
 - The suprasellar cistern is preserved.
 
 - No definite bony lesion in the skull.
-- The visible paranasal sinuses, mastoids and skull base are unremarkable.
+- The visualized paranasal sinuses, mastoids and skull base are unremarkable.
 
 REMARKS:
 * Presence of skull base artifact with superimpose of bil. frontal base, bil. temporal base, and posterior fossa.
@@ -410,7 +500,7 @@ FINDINGS:
 - Mild mass effect compressing the right lateral ventricle, and mild midline shift to left.
 
 - No obvious fracture of the skull base and the skull.
-- The visible paranasal sinuses, mastoids and skull base are unremarkable.
+- The visualized paranasal sinuses, mastoids and skull base are unremarkable.
 
 REMARKS:
 * Presence of skull base artifact with superimpose of bil. frontal base, bil. temporal base, and posterior fossa.
@@ -440,7 +530,7 @@ The bilateral lateral ventricles showed symmetrical without dilatation.
 
 No obvious fracture of the skull base and the skull.
 
-The visible paranasal sinuses, mastoids and skull base are unremarkable.
+The visualized paranasal sinuses, mastoids and skull base are unremarkable.
 
 REMARKS:
 * Presence of skull base artifact with superimpose of bil. frontal base, bil. temporal base, and posterior fossa.
@@ -542,7 +632,7 @@ The bilateral lateral ventricles show symmetrical without dilatation.
 Mild widening of the bifrontal and anterior interhemispheric CSF spaces, without flattening of adjacent gyri, in favor of benign enlargement of the subarachnoid spaces in infancy.
 
 No obvious fracture of the skull base and the skull.
-The visible paranasal sinuses and mastoids are unremarkable.
+The visualized paranasal sinuses and mastoids are unremarkable.
 )"
   Paste(MyForm)
   SleepThenTab()
@@ -633,7 +723,7 @@ No midline shift is noted.
 No definite area of obvious abnormal density in the brain parenchyma noted.
 No definite abnormal mass lesion in the brain noted.
 No definite bony lesion in the skull.
-The visible paranasal sinuses and mastoids are unremarkable.
+The visualized paranasal sinuses and mastoids are unremarkable.
 )"
   Paste(MyForm)
   SleepThenTab()
@@ -735,7 +825,7 @@ The bilateral lateral ventricles show symmetrical without dilatation.
 Post contrast study shows no abnormal enhancing lesion in the brain and no abnormal leptomeningeal enhancement noted.
 The major dural venous sinuses are patent.
 
-The visible paranasal sinuses, mastoids and skull base are unremarkable.
+The visualized paranasal sinuses, mastoids and skull base are unremarkable.
 
 MRA shows no significant vascular stenosis in the major intracranial arteries or aneurysm near the circle of Willis region.
 No evidence of aneurysm or arterial-venous malformation (AVM) noted near the circle of Willis region.
@@ -859,7 +949,7 @@ No definite abnormal tumor mass lesion in the brain noted.
 The bilateral lateral ventricles show no dilatation.
 The bilateral lateral ventricles show symmetrical without dilatation.
 
-The visible paranasal sinuses, mastoids and skull base are unremarkable.
+The visualized paranasal sinuses, mastoids and skull base are unremarkable.
 
 MRA shows no significant vascular stenosis in the major intracranial arteries or aneurysm near the circle of Willis region.
 No evidence of aneurysm or arterial-venous malformation (AVM) noted near the circle of Willis region.
@@ -1030,7 +1120,7 @@ No definite abnormal signal intensity tumor mass lesion in the brain noted inclu
 The bilateral lateral ventricles show symmetrical without dilatation.
 Mild dilatation of ventricular system and sulcal widening of bilateral cerebral hemispheres noted, in favor of mild brain atrophy.
 
-The visible paranasal sinuses, mastoids and skull base are unremarkable.
+The visualized paranasal sinuses, mastoids and skull base are unremarkable.
 
 MRA shows no significant vascular stenosis in the major intracranial arteries or aneurysm near the circle of Willis regions.
 
@@ -1106,7 +1196,7 @@ FINDINGS:
 - No evidence of high signal intensity on DWI and lower apparent diffusion coefficient suggesting acute ischemia infarction in the brain and brainstem noted.
 - No definite abnormal signal intensity changes or tumor mass lesion in the brain noted including supratentorial cerebral hemisphere and infratentorial cerebellum and brain stem region.
 - The bilateral lateral ventricles showed symmetrical without dilatation. However, enlarged subarachnoid space in the bilateral high fronto-parietal region may still suggest brain atrophy.
-- The visible paranasal sinuses, mastoids and skull base are unremarkable.
+- The visualized paranasal sinuses, mastoids and skull base are unremarkable.
 
 - MRA shows no significant vascular stenosis in the major intracranial arteries or aneurysm near the circle of Willis regions.
 - Right fetal type posterior cerebral artery is noted.
@@ -1119,6 +1209,28 @@ FINDINGS:
 Although not fully fit the typical image findings, intracranial hypotension still may be suspected. Clinical correlation is suggested.
 )"
   Paste(MyForm)
+}
+
+::mrbpcu::
+{
+    MyForm := "
+  (
+- Normal brain parenchyma without acute infarction, hemorrhage, or mass effect.
+- Preserved gray-white matter differentiation; midline structures remain centered.
+- Cerebellum and brainstem demonstrate unremarkable morphology and signal intensity.
+- Ventricular system and subarachnoid spaces are symmetric and normal for age.
+- Bilateral mastoid air cells, paranasal sinuses, and orbital contents are clear.
+- 3D TOF MRA shows patent major intracranial arteries (bilateral ICA, ACA, MCA, VA, BA, and PCA).
+- No hemodynamically significant stenosis, occlusion, vascular malformation, or definite intracranial aneurysm.
+  )"
+    Paste(MyForm)
+    SleepThenTab()
+    MyForm := "
+  (
+- Unremarkable brain MRI: No acute intracranial pathology or space-occupying lesion.
+- Patent intracranial arterial system: No evidence of significant stenosis or aneurysm.
+  )"
+    Paste(MyForm)
 }
 
 ::mriseizure:: {
@@ -1148,7 +1260,7 @@ The bilateral lateral ventricles show no dilatation.
 Post contrast study showed no abnormal enhancing lesion in the brain and no abnormal leptomeningeal enhancement noted.
 The major dural venous sinuses are patent.
 
-The visible paranasal sinuses, mastoids and skull base are unremarkable.
+The visualized paranasal sinuses, mastoids and skull base are unremarkable.
 
 Mild mucoperiosteal thickening and hyperintensity on T2WI over the paranasal sinuses, in favor of mild sinusitis.
 The mastoids and skull base are unremarkable.
@@ -1163,6 +1275,39 @@ No remarkable intracranial findings.
 Right mesial temporal sclerosis may be suspected. Clinical correlation is suggested.
 )"
   Paste(MyForm)
+}
+
+;; MRSE
+::mrse::
+{
+    MyForm := "
+  (
+Pituitary gland height about 5 mm.
+
+No evidence of ectopic posterior pituitary lobe.
+
+No evidence of mass lesion on the sellar or suprasellar or hypothalamus regions.
+
+No evidence of abnormal enhanced mass lesion over the suprasellar region.
+
+
+
+Pituitary gland height about 7 mm.
+
+No evidence of ectopic posterior pituitary lobe.
+
+No evidence of mass lesion on the sellar or suprasellar or hypothalamus regions.
+
+No evidence of abnormal enhanced mass lesion over the suprasellar region.
+
+No evidence of low signal intensity nodule within the pituitary gland in the conventional and dynamic scan. Suggest correlate with prolactin level.
+
+1. Presence of enhanced cystic/mass lesion in the sellar and suprasellar area, size about---------cm.
+2. Pituitary gland height about--------mm.
+3. Presence of ectopic posterior pituitary lobe over the median eminence of the tuber cinereum.
+4. Pituitary stalk not visualized, maybe hypoplasia or transection.
+  )"
+    Paste(MyForm)
 }
 
 ::bctas:: {

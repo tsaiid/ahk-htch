@@ -6,7 +6,7 @@
 ::0ctg-lb:: {
   MyForm := "
 (
-CT-guide lung biopsy is indicated and has been scheduled on / PM. If specimen for tissue culture is needed, please prepare other specimen collecting bottles and send to CT room with the patient. Otherwise, only specimen immersed in formalin will be harvested.
+CT-guided lung biopsy is indicated and has been scheduled on / PM. If specimen for tissue culture is needed, please prepare other specimen collecting bottles and send to CT room with the patient. Otherwise, only specimen immersed in formalin will be harvested.
 )"
   Paste(MyForm)
 }
@@ -15,7 +15,7 @@ CT-guide lung biopsy is indicated and has been scheduled on / PM. If specimen fo
   currDateStr := FormatTime("L1033", "M/d tt")
   MyForm := Format("
 (
-CT guide lung biopsy was performed in {1}. Please follow up CXR if pneumothorax develops or progresses.
+CT-guided lung biopsy was performed in {1}. Please follow up CXR if pneumothorax develops or progresses.
 )", currDateStr)
   Paste(MyForm)
 }
@@ -24,7 +24,7 @@ CT guide lung biopsy was performed in {1}. Please follow up CXR if pneumothorax 
   currDateStr := FormatTime("L1033", "M/d tt")
   MyForm := Format("
 (
-CT guide biopsy was performed in {1}. Please keep bed rest and check if internal bleeding occurs.
+CT-guided biopsy was performed in {1}. Please keep bed rest and check if internal bleeding occurs.
 )", currDateStr)
   Paste(MyForm)
 }
@@ -34,8 +34,8 @@ CT guide biopsy was performed in {1}. Please keep bed rest and check if internal
 ::ctg-lb:: {
   MyForm := "
 (
-CT guide biopsy was performed under clinical request. The operation procedure and potential risk were well explained. Patient agreement and consensus were obtained.
-Under CT guide, tissue specimens were smoothly taken for pathology examination.
+CT-guided biopsy was performed under clinical request. The operation procedure and potential risks were well explained. Patient agreement and consensus were obtained.
+Under CT guidance, tissue specimens were smoothly taken for pathology examination.
 
 1. Position:
 2. Target lesions
@@ -60,7 +60,7 @@ Recommend close f/u patient's vital signs, bed rest and compression for at least
 F/U CXR 6 hours later.
 
 IMPRESSION:
-CT guide lung biopsy of  tumor was performed.
+CT-guided lung biopsy of  tumor was performed.
 Mild pneumothorax was noted. Follow-up is suggested.
 )"
   Paste(MyForm)
@@ -71,8 +71,8 @@ Mild pneumothorax was noted. Follow-up is suggested.
 ::ctg-lb-p:: {
   MyForm := "
 (
-CT guide biopsy was performed under clinical request. The operation procedure and potential risk were well explained. Patient agreement and consensus were obtained.
-Under CT guide, tissue specimens were smoothly taken for pathology examination.
+CT-guided biopsy was performed under clinical request. The operation procedure and potential risks were well explained. Patient agreement and consensus were obtained.
+Under CT guidance, tissue specimens were smoothly taken for pathology examination.
 
 1. Position:
 2. Target lesions
@@ -105,7 +105,7 @@ F/U CXR 6 hours later.
   currDateStr := FormatTime("L1033", "M/d tt")
   MyForm := Format("
 (
-CT guide drainage was performed in {1}. A 8 Fr pigtail drain was inserted. 10 ml of aspirated pus was collected for Lab exam.
+CT-guided drainage was performed in {1}. An 8 Fr pigtail drain was inserted. 10 ml of aspirated pus was collected for Lab exam.
 )", currDateStr)
   Paste(MyForm)
 }
@@ -113,8 +113,8 @@ CT guide drainage was performed in {1}. A 8 Fr pigtail drain was inserted. 10 ml
 ::ctg-d:: {
   MyForm := "
 (
-CT guide drainage was performed under clinical request. The operation procedure and potential risk were well explained. Patient agreement and consensus were obtained.
-Under CT guide, tissue specimens were smoothly taken for pathology examination.
+CT-guided drainage was performed under clinical request. The operation procedure and potential risks were well explained. Patient agreement and consensus were obtained.
+Under CT guidance, a 6F one-step pigtail drain was placed and pus was aspirated.
 
 1. Position:
 2. Target lesion:
@@ -126,7 +126,7 @@ Under CT guide, tissue specimens were smoothly taken for pathology examination.
 The patient was sent back to the ward under stable condition without complaint.
 
 IMPRESSION:
-CT guide drainage for  was performed.
+CT-guided drainage for  was performed.
 )"
   Paste(MyForm)
 }
@@ -136,9 +136,9 @@ CT guide drainage for  was performed.
 ::ctg-b:: {
   MyForm := "
 (
-CT guide biopsy was performed under clinical request. The operation procedure and potential risk were well explained. Patient agreement and consensus were obtained.
+CT-guided biopsy was performed under clinical request. The operation procedure and potential risks were well explained. Patient agreement and consensus were obtained.
 
-Under CT guide, tissue specimens were smoothly taken for pathology examination.
+Under CT guidance, tissue specimens were smoothly taken for pathology examination.
 
 1. Position:
 2. Target lesion:
@@ -152,7 +152,7 @@ Gelfoam slurry was injected through the coaxial needle after biopsy.
 The patient was sent back to the ward under stable condition without complaint. Recommend close f/u patient's vital signs, bed rest and compression for at least 4 hours.
 
 IMPRESSION:
-CT guide biopsy for  was performed.
+CT-guided biopsy for  was performed.
 )"
   Paste(MyForm)
 }

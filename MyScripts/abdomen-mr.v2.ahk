@@ -7,10 +7,10 @@
 ; Abdomen MR Forms
 
 ;; Hotstrings
-::amrhcc::A _ cm nodule in the S of liver, shows mild T2 hyperintensity, T1 hypointensity, signal drop on out-of-phase images, mild restricted diffusion, arterial phase hyperenhancement, washout and enhancing capsule in portal venous phase, suggestive of hepatocellular carcinoma.
-::amrfnh::A _ cm mass lesion at the S of liver, with arterial enhancement, mild persistent enhancement into delayed phase, fading toward background liver intensity on the delayed hepatobiliary phase, suggest focal nodular hyperplasia.
-::amrhh::A _ cm nodule in the S of liver, shows hyperintensity on T2WI, and the dynamic study shows discontinuous, nodular, peripheral enhancement, with progressive peripheral enhancement with centripetal fill in. Hepatic hemangioma is considered.
-::amraps::A small wedge-shaped subcapsular arterial enhancement at S_ of liver with isointense in the portal venous and delay phases, in favor of AP shunting.
+::amrhcc::A _ cm nodule in the S of the liver, shows mild T2 hyperintensity, T1 hypointensity, signal drop on out-of-phase images, mild restricted diffusion, arterial phase hyperenhancement, washout and enhancing capsule in portal venous phase, suggestive of hepatocellular carcinoma.
+::amrfnh::A _ cm mass lesion at the S of the liver, with arterial enhancement, mild persistent enhancement into delayed phase, fading toward background liver intensity on the delayed hepatobiliary phase, suggests focal nodular hyperplasia.
+::amrhh::A _ cm nodule in the S of the liver, shows hyperintensity on T2WI, and the dynamic study shows discontinuous, nodular, peripheral enhancement, with progressive peripheral enhancement with centripetal fill in. Hepatic hemangioma is considered.
+::amraps::A small wedge-shaped subcapsular arterial enhancement at S_ of the liver with isoenhancement in the portal venous and delayed phases, in favor of AP shunting.
 ::amrfl::Marked diffuse signal drop of the liver parenchyma in the opposed-phase images, suggestive of hepatic steatosis.
 ::amrmfl::Mild diffuse signal drop of the liver parenchyma in the opposed-phase images, suggestive of mild hepatic steatosis.
 ::amrgbsg::T1 hyperintensity material in the gallbladder with layering, in favor of GB sludge.
@@ -69,7 +69,7 @@ Adrenals: Unremarkable
 Spleen: Unremarkable
 Kidneys and ureters: Unremarkable
 
-No obvious upper abdominal retroperitoneal lymphadenopathy identified.
+No definite upper abdominal retroperitoneal lymphadenopathy identified.
   )"
     Paste(MyForm)
 }
@@ -106,7 +106,7 @@ Pancreas: Unremarkable
 
 Kidneys and ureters: Unremarkable
 
-No obvious upper abdominal retroperitoneal lymphadenopathy identified.
+No definite upper abdominal retroperitoneal lymphadenopathy identified.
 
 Lower thorax: Unremarkable
 
@@ -146,7 +146,7 @@ Pancreas: Unremarkable
 
 Kidneys and ureters: Unremarkable
 
-No obvious upper abdominal retroperitoneal lymphadenopathy identified.
+No definite upper abdominal retroperitoneal lymphadenopathy identified.
 
 Lower thorax: Unremarkable
 
@@ -211,7 +211,7 @@ Spleen: Unremarkable
 Biliary tree: Unremarkable
 Pancreas: Unremarkable
 
-No obvious upper abdominal retroperitoneal lymphadenopathy identified.
+No definite upper abdominal retroperitoneal lymphadenopathy identified.
   )"
     Paste(MyForm)
 }
@@ -263,7 +263,7 @@ MRI of the abdomen & pelvis for prostatic cancer evaluation.  It was performed b
 MR protocols: T1WI, T2WI, DWI (b=1000 axial; b=400  coronal ) pulse sequences in axial, coronal, and sagittal views.  T1WI-FS pulse sequence  with iv. contrast administration.
 Prostate:
 1. Size:
-    Zonal demarction: clear (  ).
+    Zonal demarcation: clear (  ).
       Capsule: intact (  ).
 2.  Lesions:
       L:             :-cen/junctional(  ) or peripheral (  ).  Sign of diffusional restriction (    )*. Enhancement (  )
@@ -669,7 +669,7 @@ Lower lungs: Unremarkable
     MyForm := "
   (
 C/W renal artery stenosis, bilateral, mild.
-No obvious renal artery stenosis.
+No significant renal artery stenosis.
   )"
     Paste(MyForm)
 }
@@ -717,7 +717,7 @@ T2 HASTE and true FISP images show
 - Loss of triple-layered appearance of normal myometrium
 at the lower anterior uterine segment, c/w placenta accreta. Correlation with placental sonography and clinical history is suggested.
 
-The fetus is in vertex presentation, and the images show no hydrocephalus, no hydronephrosis, and no obvious structural anomaly.
+The fetus is in vertex presentation, and the images show no hydrocephalus, no hydronephrosis, and no gross structural anomaly.
 The amniotic fluid volume is within normal limits.
 
 
@@ -749,7 +749,7 @@ Key imaging features of normal placentation
     MyForm := "
   (
 C/W complete placenta previa, with placenta accreta. Correlation with placental sonography and clinical history is suggested.
-No obvious fetal anomaly.
+No gross fetal anomaly.
   )"
     Paste(MyForm)
 }
@@ -839,14 +839,14 @@ FINDINGS:
 The appendix cannot be depicted well. However, no definite swollen tubular structure or inflammatory changes over the pericecal region. No strong evidence of acute appendicitis.
 
 A gravid uterus with normal position of the placenta.
-The fetus is in breech presentation, and the images show no hydrocephalus, no hydronephrosis, and no obvious structural anomaly.
+The fetus is in breech presentation, and the images show no hydrocephalus, no hydronephrosis, and no gross structural anomaly.
 The amniotic fluid volume is within normal limits.
 
 A small left renal cyst.
-Mild right renal pelvic and calyceal dilatation, probably secondary to the pregnancy.
+Mild right renal pelvic and calyceal dilatation, probably secondary to pregnancy.
 The liver, gallbladder, spleen, and pancreas are unremarkable.
 No retroperitoneal or mesenteric lymphadenopathy.
-No obvious ascites.
+No significant ascites.
 The lungs covered in the scanning range are unremarkable.
   )"
     Paste(MyForm)

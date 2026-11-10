@@ -5,7 +5,7 @@
 
 ; Neuro Neck Forms
 
-::ctneclnok::No evidence of bulky lymph nodes in the bilateral submandibular, carotid spaces, posterior cervical spaces noted.
+::ctneclnok::No evidence of bulky lymph nodes in the bilateral submandibular, carotid spaces, posterior cervical spaces.
 
 ;; CTNEC
 ::ctnec::
@@ -17,11 +17,11 @@
 
 
 2. Cervical nodes:
-No bulky lymph nodes in the bilateral submandibular and submental, carotid, posterior cervical spaces, and supraclavicular fossae noted.
-No evidence of bulky lymph nodes (> 1cm) in the bilateral carotid space and posterior cervical space noted.
-No evidence of bulky lymph nodes in shortest axis (> 1 cm) in the bilateral carotid space and posterior cervical space noted.
-No evidence of bulky lymph nodes in shortest axis (> 1 cm) in the bilateral supraclavicular fossae noted.
-No evidence of bulky lymph nodes in shortest axis (> 1.5 cm) in the bilateral submandibular and submental space noted.
+No bulky lymph nodes in the bilateral submandibular and submental, carotid, posterior cervical spaces, and supraclavicular fossae.
+No evidence of bulky lymph nodes (> 1cm) in the bilateral carotid space and posterior cervical space.
+No evidence of bulky lymph nodes in shortest axis (> 1 cm) in the bilateral carotid space and posterior cervical space.
+No evidence of bulky lymph nodes in shortest axis (> 1 cm) in the bilateral supraclavicular fossae.
+No evidence of bulky lymph nodes in shortest axis (> 1.5 cm) in the bilateral submandibular and submental space.
 
 * Imaging criteria:
   > Carotid space, posterior cervical space, and supraclavicular fossae: shortest axis > 1 cm.
@@ -50,7 +50,7 @@ Thoracic inlet: normal
 Parotid gland: normal
 Submandibular gland: normal
 Thyroid gland: normal
-Lymph nodes: No evidence of bulky lymph nodes (> 1 cm) in the bilateral carotid space and posterior triangle of submandibular and neck regions noted.
+Lymph nodes: No evidence of bulky lymph nodes (> 1 cm) in the bilateral carotid space and posterior triangle of submandibular and neck regions.
   )"
     Paste(MyForm)
 }
@@ -75,11 +75,11 @@ The detail could not be evaluated in this noncontrast CT.
 
 
 2. Cervical nodes:
-No bulky lymph nodes in the bilateral submandibular and submental, carotid, posterior cervical spaces, and supraclavicular fossae noted.
-No evidence of bulky lymph nodes (> 1cm) in the bilateral carotid space and posterior cervical space noted.
-No evidence of bulky lymph nodes in shortest axis (> 1 cm) in the bilateral carotid space and posterior cervical space noted.
-No evidence of bulky lymph nodes in shortest axis (> 1 cm) in the bilateral supraclavicular fossae noted.
-No evidence of bulky lymph nodes in shortest axis (> 1.5 cm) in the bilateral submandibular and submental space noted.
+No bulky lymph nodes in the bilateral submandibular and submental, carotid, posterior cervical spaces, and supraclavicular fossae.
+No evidence of bulky lymph nodes (> 1cm) in the bilateral carotid space and posterior cervical space.
+No evidence of bulky lymph nodes in shortest axis (> 1 cm) in the bilateral carotid space and posterior cervical space.
+No evidence of bulky lymph nodes in shortest axis (> 1 cm) in the bilateral supraclavicular fossae.
+No evidence of bulky lymph nodes in shortest axis (> 1.5 cm) in the bilateral submandibular and submental space.
 
 * Imaging criteria:
   > Carotid space, posterior cervical space, and supraclavicular fossae: shortest axis > 1 cm.
@@ -108,7 +108,7 @@ Thoracic inlet: normal
 Parotid gland: normal
 Submandibular gland: normal
 Thyroid gland: normal
-Lymph nodes: No evidence of bulky lymph nodes (> 1 cm) in the bilateral carotid space and posterior triangle of submandibular and neck regions noted.
+Lymph nodes: No evidence of bulky lymph nodes (> 1 cm) in the bilateral carotid space and posterior triangle of submandibular and neck regions.
 
 PS. The evaluation is limited especially for solid organs, neck lymph nodes and vascular structure due to absence of contrast enhancement.
   )"
@@ -180,7 +180,7 @@ Presence of soft tissue density in the left middle ear, aditus, left mastoid ant
 
 Poor pneumatization of the bilateral mastoid air sinuses.
 
-The bilateral ossicle chains, cochlear and semicircular canals show no obvious abnormalities.
+The bilateral ossicle chains, cochlear and semicircular canals are unremarkable.
 No evidence of soft tissue bony destruction in the jugular foramen.
 No evidence of soft tissue mass over the cochlear promontory.
 
@@ -189,7 +189,7 @@ No evidence of soft tissue mass over the cochlear promontory.
 2. No evidence of soft tissue density in the --------- middle ear, aditus, and mastoid antrum, with ossicle chain intact.
 3. No evidence of soft tissue opacification in the --------- mastoid air sinus.
 4. Presence of soft tissue density in the ---------- mastoid air sinus, mastoiditis considered.
-5. Poor pneumonization of the --------- mastoid air sinus.
+5. Poor pneumatization of the --------- mastoid air sinus.
 
 IMPRESSION:
 1. COM with granulation tissue, ----------.
@@ -217,9 +217,9 @@ No evidence of soft tissue density in the bilateral middle ear, aditus, or masto
 
 No evidence of soft tissue opacification in bilateral mastoid air sinuses.
 
-The bilateral ossicle chains, cochlear and semicircular canals show no obvious abnormalities.
+The bilateral ossicle chains, cochlear and semicircular canals are unremarkable.
 
-No osteolytic foci around the cochlear noted, and thus no CT imaging evidence of cochlear otosclerosis.
+No osteolytic foci around the cochlear, and thus no CT imaging evidence of cochlear otosclerosis.
 
 Presence of mucoperiosteal thickening in the bilateral ethmoid and maxillary sinuses, mild sinusitis considered.
   )"
@@ -229,7 +229,7 @@ Presence of mucoperiosteal thickening in the bilateral ethmoid and maxillary sin
 
     MyForm := "
   (
-No CT imaging evidence of cholesteatoma or otosclerosis noted.
+No CT imaging evidence of cholesteatoma or otosclerosis.
   )"
     Paste(MyForm)
 }
@@ -250,9 +250,9 @@ No evidence of soft tissue opacification in bilateral mastoid air sinuses.
 
 Relatively thinning of the bony covering (arcuate eminence) of the right superior semicircular canal (Se/Im: 4/44), but not definite dehiscence. Clinical correlation is suggested.
 
-Bilateral cochlear and left semicircular canals show no obvious abnormalities.
+Bilateral cochlear and left semicircular canals are unremarkable.
 
-No osteolytic foci around the cochlear noted, and thus no CT imaging evidence of cochlear otosclerosis.
+No osteolytic foci around the cochlear, and thus no CT imaging evidence of cochlear otosclerosis.
 
 IMPRESSION:
 Relatively thinning of the bony covering (arcuate eminence) of the right superior semicircular canal, but not definite dehiscence. Clinical correlation is suggested.
@@ -278,7 +278,7 @@ FINDINGS:
 1. Primary tumor status:
 
 2. Cervical nodes:
-No evidence of bulky lymph nodes in the --------------- carotid space and --------------- posterior triangle of submandibular and neck regions was noted.
+No evidence of bulky lymph nodes in the --------------- carotid space and --------------- posterior triangle of submandibular and neck regions.
 
 Presence of several/multiple lymph nodes noted in the --------------- carotid space and --------------- posterior triangle of submandibular and neck regions, the biggest size about --------  cm, R/O inflammatory or metastatic lymph nodes.
 
@@ -298,7 +298,7 @@ Presence of high signal intensity on T1WI over the C-spine, compatible with post
 
 The paranasal sinuses and mastoid air cells are unremarkable.
 
-The visible brain is unremarkable.
+The visualized brain is unremarkable.
   )"
     Paste(MyForm)
 }

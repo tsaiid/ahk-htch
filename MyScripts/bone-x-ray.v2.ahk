@@ -5,11 +5,11 @@
 
 ; For Bone Plain Film
 ::bok::No joint space narrowing, dislocation, or fracture.
-::bok1::No obvious dislocation or fracture.
-::bok2::No obvious bony lesion.
-::bok3::No obvious fracture.
-::kok::- No joint space narrowing, dislocation, or fracture.{Enter}- No obvious suprapatellar effusion.
-::bkok::Bilateral knees:{Enter}No joint space narrowing, dislocation, or fracture.{Enter}No obvious suprapatellar effusion.+{Tab}No remarkable findings.
+::bok1::No acute fracture or dislocation within the scanned range.
+::bok2::No definite bony lesion.
+::bok3::No acute fracture.
+::kok::- No joint space narrowing, dislocation, or fracture.{Enter}- No significant suprapatellar effusion.
+::bkok::Bilateral knees:{Enter}No joint space narrowing, dislocation, or fracture.{Enter}No significant suprapatellar effusion.+{Tab}No remarkable findings.
 ::ulath::Atherosclerotic changes and calcification of the upper limb vessels.
 ::llath::Atherosclerotic changes and calcification of the lower limb vessels.
 ::sdjdl::Scoliosis and DJD changes of the L-spine.
@@ -178,7 +178,7 @@
 ::ldhs::Status post left dynamic hip screw fixation.
 ::ldhsl::Status post left dynamic hip screw fixation. The evaluation of pelvic cavity may be limited due to its beam hardening artifacts.
 ::bdhs::Status post bilateral dynamic hip screw fixation.
-::bdhsl::Status post bilateral dynamic hip screw fixation. The evaluation of pelvic cavity may be limited because of the beam hardening artifacts from hip prosthesis.
+::bdhsl::Status post bilateral dynamic hip screw fixation. The evaluation of pelvic cavity may be limited because of the beam hardening artifacts from hip prostheses.
 ::rthr::Status post right total hip replacement.
 ::rthrr::Status post recent right total hip replacement.{Enter}A drain in place in the right hip region.{Enter}Soft tissue swelling in the right hip region.
 ::lthr::Status post left total hip replacement.
@@ -186,10 +186,10 @@
 ::bthr::Status post bilateral total hip replacements.
 ::rhba::Status post right hip bipolar hemiarthroplasty.
 ::rhbar::Status post right hip bipolar hemiarthroplasty.{Enter}A drain in place in the right hip region.
-::rhbal::Status post right hip bipolar hemiarthroplasty. The evaluation of pelvic cavity may be limited because of the beam hardening artifacts from right hip prosthesis.
+::rhbal::Status post right hip bipolar hemiarthroplasty. The evaluation of pelvic cavity may be limited because of the beam hardening artifacts from the right hip prosthesis.
 ::lhba::Status post left hip bipolar hemiarthroplasty.
 ::lhbar::Status post left hip bipolar hemiarthroplasty.{Enter}A drain in place in the left hip region.
-::lhbal::Status post left hip bipolar hemiarthroplasty. The evaluation of pelvic cavity may be limited because of the beam hardening artifacts from left hip prosthesis.
+::lhbal::Status post left hip bipolar hemiarthroplasty. The evaluation of pelvic cavity may be limited because of the beam hardening artifacts from the left hip prosthesis.
 ::bhba::Status post bilateral hip bipolar hemiarthroplasties.
 ::bhbal::Status post bilateral hip bipolar hemiarthroplasties. The evaluation of pelvic cavity may be limited due to its beam hardening artifacts.
 ::rtka::Status post right total knee arthroplasty.
@@ -252,11 +252,11 @@
 ::u+::Positive ulnar variance.
 ::u-::Negative ulnar variance.
 ::hm::hypermobility
-::nhm::No obvious hypermobility.
-::noas::No obvious squaring of the vertebral bodies.
+::nhm::No abnormal hypermobility.
+::noas::No squaring of the vertebral bodies.
 ::gvr::genu varum
-::gvg::genu valgus
-::hvr::hallux varum
+::gvg::genu valgum
+::hvr::hallux varus
 ::hvg::hallux valgus
 ::if::internal fixation
 ::ef::external fixation
@@ -279,57 +279,57 @@ The epiglottis is normal.
 ::c5l::C5 and levels below are blocked with a limited evaluation.
 ::c6l::C6 and levels below are blocked with a limited evaluation.
 ::c7l::C7 and levels below are blocked with a limited evaluation.
-::dok::No obvious hypermobility or ROM limitation.
+::dok::No abnormal hypermobility or ROM limitation.
 ::dlr::Limited ROM.
 ::dmlr::Mildly limited ROM.
 ::iaiv::intra-articular involvement
-::bkcppd::Linear calcifications along the joint space of the medial and lateral compartments of bilateral knees, in favor of chondrocalcinosis, probably due to CPPD deposition.
-::rkcppd::Linear calcifications along the joint space of the medial and lateral compartments of right knee, in favor of chondrocalcinosis, probably due to CPPD deposition.
-::lkcppd::Linear calcifications along the joint space of the medial and lateral compartments of left knee, in favor of chondrocalcinosis, probably due to CPPD deposition.
+::bkcppd::Linear calcifications along the joint space of the medial and lateral compartments of the bilateral knees, in favor of chondrocalcinosis, probably due to CPPD deposition.
+::rkcppd::Linear calcifications along the joint space of the medial and lateral compartments of the right knee, in favor of chondrocalcinosis, probably due to CPPD deposition.
+::lkcppd::Linear calcifications along the joint space of the medial and lateral compartments of the left knee, in favor of chondrocalcinosis, probably due to CPPD deposition.
 ::nbok::No evidence of nasal bone fracture.
 ::spvcpf::Old vertebral compression fracture, status post vertebroplasty.
 ::spv::status post vertebroplasty at `
 ::spv0::status post vertebroplasty
 ::pif::pars interarticularis fracture
 ::pif1::pars interarticularis fracture and spondylolisthesis at L5-S1.
-::ritf::intertrochanteric fracture of right femur.
-::litf::intertrochanteric fracture of left femur.
-::rhoa::OA changes of right hip.
-::lhoa::OA changes of left hip.
-::bhoa::OA changes of bilateral hips.
-::mrhoa::Mild OA changes of right hip.
-::mlhoa::Mild OA changes of left hip.
-::mbhoa::Mild OA changes of bilateral hips.
-::rkoa::OA changes of right knee.
-::lkoa::OA changes of left knee.
-::bkoa::OA changes of bilateral knees.
-::mrkoa::Mild OA changes of right knee.
-::mlkoa::Mild OA changes of left knee.
-::mbkoa::Mild OA changes of bilateral knees.
-::raoa::OA changes of right ankle.
-::laoa::OA changes of left ankle.
-::mraoa::Mild OA changes of right ankle.
-::mlaoa::Mild OA changes of left ankle.
-::rwoa::OA changes of right wrist.
-::mrwoa::Mild OA changes of right wrist.
-::lwoa::OA changes of left wrist.
-::mlwoa::Mild OA changes of left wrist.
-::bwoa::OA changes of bilateral wrists.
-::mbwoa::Mild OA changes of bilateral wrists.
-::reoa::OA changes of right elbow.
-::leoa::OA changes of left elbow.
-::beoa::OA changes of bilateral elbows.
-::rsct::A linear calcification in the superolateral aspect of right shoulder, suspicious for calcific tendinopathy.
-::lsct::A linear calcification in the superolateral aspect of left shoulder, suspicious for calcific tendinopathy.
+::ritf::intertrochanteric fracture of the right femur.
+::litf::intertrochanteric fracture of the left femur.
+::rhoa::OA changes of the right hip.
+::lhoa::OA changes of the left hip.
+::bhoa::OA changes of the bilateral hips.
+::mrhoa::Mild OA changes of the right hip.
+::mlhoa::Mild OA changes of the left hip.
+::mbhoa::Mild OA changes of the bilateral hips.
+::rkoa::OA changes of the right knee.
+::lkoa::OA changes of the left knee.
+::bkoa::OA changes of the bilateral knees.
+::mrkoa::Mild OA changes of the right knee.
+::mlkoa::Mild OA changes of the left knee.
+::mbkoa::Mild OA changes of the bilateral knees.
+::raoa::OA changes of the right ankle.
+::laoa::OA changes of the left ankle.
+::mraoa::Mild OA changes of the right ankle.
+::mlaoa::Mild OA changes of the left ankle.
+::rwoa::OA changes of the right wrist.
+::mrwoa::Mild OA changes of the right wrist.
+::lwoa::OA changes of the left wrist.
+::mlwoa::Mild OA changes of the left wrist.
+::bwoa::OA changes of the bilateral wrists.
+::mbwoa::Mild OA changes of the bilateral wrists.
+::reoa::OA changes of the right elbow.
+::leoa::OA changes of the left elbow.
+::beoa::OA changes of the bilateral elbows.
+::rsct::A linear calcification in the superolateral aspect of the right shoulder, suspicious for calcific tendinopathy.
+::lsct::A linear calcification in the superolateral aspect of the left shoulder, suspicious for calcific tendinopathy.
 ::lasts::Soft tissue swelling in the left ankle region.
 ::rasts::Soft tissue swelling in the right ankle region.
 ::basts::Soft tissue swelling in both ankle regions.
-::lammf::Medial malleolar fracture of left ankle.
-::lalmf::Lateral malleolar fracture of left ankle.
-::labmf::Bimalleolar fracture of left ankle.
-::rammf::Medial malleolar fracture of right ankle.
-::ralmf::Lateral malleolar fracture of right ankle.
-::rabmf::Bimalleolar fracture of right ankle.
+::lammf::Medial malleolar fracture of the left ankle.
+::lalmf::Lateral malleolar fracture of the left ankle.
+::labmf::Bimalleolar fracture of the left ankle.
+::rammf::Medial malleolar fracture of the right ankle.
+::ralmf::Lateral malleolar fracture of the right ankle.
+::rabmf::Bimalleolar fracture of the right ankle.
 ::rsas::status post anchor screw fixation at the right shoulder.
 ::lsas::status post anchor screw fixation at the left shoulder.
 ::snb::In the process of spinal nerve block.
@@ -338,7 +338,7 @@ The epiglottis is normal.
     MyForm := "
 (
 No definite bony lesion in the skull.
-The visible paranasal sinuses and mastoids are unremarkable.
+The visualized paranasal sinuses and mastoids are unremarkable.
 No obvious dislocation or fracture.
 The paranasal sinuses are clear.
 The mastoid air cells are well-aerated.
@@ -391,10 +391,10 @@ Findings include extensive destruction of the femoral head and joint.
 
 ; sacroiliitis
 ::sii0::The sacroiliac margin is clear, and there is uniform joint space of normal width. There is no sclerosis. The sacroiliac joints are normal.
-::sii1::No specific abnormality except “suspecious” changes. (some blurring of the joint margins - suspicious). Grade I (suspecious) sacroiliitis.
+::sii1::No specific abnormality except "suspicious" changes. (some blurring of the joint margins - suspicious). Grade I (suspicious) sacroiliitis.
 ::sii2::Loss of definition at the edge of the sacroiliac joints. There is some sclerosis and perhaps minimal erosions. There may be some joint space narrowing. Grade II (minimal) sacroiliitis.
 ::sii3::There is definite sclerosis on both sides of the sacroiliac joints, blurring and indistinct margins, and erosive changes with loss of joint space. Grade III (moderate) sacroiliitis.
-::sii4::Complete fusion or ankylosis of the joint with or withoutsome residual sclerosis. Grade IV (ankylosis) sacroiliitis.
+::sii4::Complete fusion or ankylosis of the joint with or without some residual sclerosis. Grade IV (ankylosis) sacroiliitis.
 
 ::djdc::DJD changes of C-spine.
 ::djdc1::DJD changes of C-spine with spur formation.
@@ -520,10 +520,10 @@ TECHNIQUE: Single frontal view of both hands
 
 FINDINGS:
 Sex: {1}
-Choronological Age: {2}
+Chronological Age: {2}
 Estimated Bone Age:
 
-REMARKES:
+REMARKS:
 The estimation of bone age is by the method of Greulich and Pyle.
 )",
         sex, ageText)

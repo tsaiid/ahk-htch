@@ -38,21 +38,21 @@ Plane: axial, coronal, oblique sagittal
 PREVIOUS CT of orbit: no
 
 FINDINGS:
-No obvious fracture of bilateral orbits.
+No acute fracture of bilateral orbits.
 No evidence of acute hematoma in the bilateral orbital retroocular regions.
 Symmetrical size of bilateral orbital retroocular optic nerves.
-No evidence of high density foreign body noted at the bilateral intraocular and retroocular regions.
-No evidence of bony fragment noted near optic canal region.
-No evidence of orbital emphysema noted.
-Measurement of proptosis by the distance between interzygomatic line and posterior sclera, and anterior global surface, are within normal limits (<23 mm).
-Measurement of proptosis by the distance between interzygomatic line and posterior sclera are within normal limits (>11 mm).
+No evidence of high density foreign body at the bilateral intraocular and retroocular regions.
+No evidence of bony fragment near optic canal region.
+No evidence of orbital emphysema.
+Measurement of proptosis by the distance between interzygomatic line and posterior sclera, and anterior global surface, is within normal limits (<23 mm).
+Measurement of proptosis by the distance between interzygomatic line and posterior sclera is within normal limits (>11 mm).
 No abnormal thickening of the extraocular muscles.
 )"
   Paste(MyForm)
   SleepThenTab()
   MyForm := "
 (
-No evidence of high density foreign body noted at the bilateral intraocular and retroocular regions.
+No evidence of high density foreign body at the bilateral intraocular and retroocular regions.
 )"
   Paste(MyForm)
 }
@@ -73,9 +73,9 @@ FINDINGS:
 - Symmetrical enlargement of bilateral extraocular muscles, especially inferior rectus, medial rectus, superior rectus, with sparing the anterior tendon, c/w thyroid-associated orbitopathy.
 
 - Exophthalmos at left side.
-- Enlargement of left inferior rectus muscle, with sparing the anterior tendon, c/w thyroid-associated orbitopathy. However, due to it's unilateral and asymmetrical, orbital pseudotumor may also be considered. Suggest correlate with thyroid function test.
+- Enlargement of left inferior rectus muscle, with sparing the anterior tendon, c/w thyroid-associated orbitopathy. However, because it is unilateral and asymmetrical, orbital pseudotumor may also be considered. Suggest correlation with thyroid function tests.
 
-- No obvious fracture of bilateral orbits.
+- No acute fracture of bilateral orbits.
 - Symmetrical size of bilateral orbital retroocular optic nerves.
 - The paranasal sinuses are clear.
 )"
@@ -84,7 +84,7 @@ FINDINGS:
   MyForm := "
 (
 C/W thyroid-associated orbitopathy.
-Possibly thyroid-associated orbitopathy, left side. DDx: orbital pseudotumor. Suggest correlate with thyroid function test.
+Possibly thyroid-associated orbitopathy, left side. DDx: orbital pseudotumor. Suggest correlation with thyroid function tests.
 )"
   Paste(MyForm)
 }
@@ -101,8 +101,8 @@ Plane: axial, coronal, oblique sagittal
 PREVIOUS CT of orbit: no
 
 FINDINGS:
-- Measurement of proptosis by the distance between interzygomatic line and posterior sclera, and anterior global surface, are within normal limits.
-- Measurement of proptosis by the distance between interzygomatic line and posterior sclera are within normal limits (>11 mm).
+- Measurement of proptosis by the distance between interzygomatic line and posterior sclera, and anterior global surface, is within normal limits.
+- Measurement of proptosis by the distance between interzygomatic line and posterior sclera is within normal limits (>11 mm).
 - Measurements by the distance between interzygomatic line and posterior sclera are reduced (< 11 mm).
 
 - No abnormal thickening of the extraocular muscles.
@@ -110,7 +110,7 @@ FINDINGS:
 
 - No evidence of mass lesion over the bilateral orbital or retroocular regions.
 - Symmetrical size of bilateral orbital retroocular optic nerves.
-- No obvious fracture of bilateral orbits.
+- No acute fracture of bilateral orbits.
 
 - Retention cysts in bilateral maxillary sinuses.
 )"
@@ -118,7 +118,7 @@ FINDINGS:
   SleepThenTab()
   MyForm := "
 (
-1. No obvious proptosis.
+1. No proptosis.
 2. No abnormal thickening of the extraocular muscles.
 
 Bilateral exophthalmos. However, no strong evidence of thyroid-associated orbitopathy. Suggest correlate with Lab data.
@@ -140,9 +140,9 @@ Previous CT of orbit: no
 
 FINDINGS:
 - Shallow anterior chamber depth (ACD) of left globe, with a small air bubble in the anterior chamber, and wall irregularity of left globe, c/w eyeball rupture.
-- No obvious fracture of bilateral orbits.
+- No acute fracture of bilateral orbits.
 - Symmetrical size of bilateral orbital retroocular optic nerves.
-- No evidence of high density foreign body noted at the bilateral intraocular and retroocular regions.
+- No evidence of high density foreign body at the bilateral intraocular and retroocular regions.
 - No abnormal thickening of the extraocular muscles.
 - Bilateral nasal turbinate hypertrophy.
 )"
@@ -178,15 +178,15 @@ Noncontrast CT scan and post contrast CT scan of the orbit performed with axial 
 Previous CT of orbit: no
 
 FINDINGS:
-Symmetrical bil. rectus muscle without enlargement of rectus muscle noted, no CT evidence of thyroid related ophthalmopathy.
+Symmetrical bil. rectus muscle without enlargement of rectus muscle, no CT evidence of thyroid related ophthalmopathy.
 
 Symmetrical bil. retrobulbar fat was noted.
 
 No CT evidence of space occupying lesion in the orbital, retro-ocular, sella, suprasellar regions.
 
-No obvious soft tissue density in the bilateral frontal sinus, sphenoid sinus, ethmoid sinus, maxillary sinus.
+No abnormal soft tissue density in the bilateral frontal sinus, sphenoid sinus, ethmoid sinus, maxillary sinus.
 
-Presence of mild exophthalmos of left eye.
+Presence of mild exophthalmos of the left eye.
 
 Presence of soft tissue thickening in the nasopharynx, with bone erosion of the anterior portion of clivus, nasopharynx lesion should be R/O, suggest ENT check up.
 
@@ -208,19 +208,19 @@ Post contrast conventional T1WI with Fat sat showed:
 Previous MRI of orbit: none
 
 Findings:
-No evidence of abnormal signal intensity mass lesion over the bil. orbital retrobulbar regions noted.
+No evidence of abnormal signal intensity mass lesion over the bil. orbital retrobulbar regions.
 
-No obvious high signal intensity on T2WI over the bil. orbital retrobulbar optic nerves noted.
+No abnormal high signal intensity on T2WI over the bil. orbital retrobulbar optic nerves.
 
-Post contrast study shows no obvious enhancement noted over the bil. orbital retrobulbar optic nerves noted.
+Post contrast study shows no abnormal enhancement over the bil. orbital retrobulbar optic nerves.
 
-No evidence of abnormal hyperintense lesion noted over the white matter and corpus callosum on T2WI and FLAIR noted, no MRI evidence of multiple sclerosis plaques.
+No evidence of abnormal hyperintense lesion over the white matter and corpus callosum on T2WI and FLAIR, no MRI evidence of multiple sclerosis plaques.
 
-No definite abnormal signal intensity mass lesion in the brain noted including supratentorial cerebral hemisphere and infratentorial cerebellum and brain stem region.
+No definite abnormal signal intensity mass lesion in the brain including supratentorial cerebral hemisphere and infratentorial cerebellum and brain stem region.
 
-The bilateral lateral ventricles showed symmetrical without dilatation.
+The bilateral lateral ventricles are symmetrical and without dilatation.
 
-Post contrast study showed no abnormal enhanced lesion in the brain and no abnormal leptomeningeal enhancement noted.
+Post contrast study showed no abnormal enhanced lesion in the brain and no abnormal leptomeningeal enhancement.
 
 
 
@@ -230,10 +230,10 @@ Post contrast study showed no abnormal enhanced lesion in the brain and no abnor
 4. Presence of lymphadenopathy in the ------------- carotid space and ------------ posterior triangle of submandibular and neck regions was noted.
 
 IMPRESSION:
-No evidence of abnormal signal intensity mass lesion over the bil. orbital retrobulbar regions noted.
-No obvious high signal intensity on T2WI over the bil. orbital retrobulbar optic nerves noted.
-Post contrast study shows no obvious enhancement noted over the bil. orbital retrobulbar optic nerves noted.
-No definite abnormal signal intensity mass lesion in the brain noted including supratentorial cerebral hemisphere and infratentorial cerebellum and brain stem region.
+No evidence of abnormal signal intensity mass lesion over the bil. orbital retrobulbar regions.
+No abnormal high signal intensity on T2WI over the bil. orbital retrobulbar optic nerves.
+Post contrast study shows no abnormal enhancement over the bil. orbital retrobulbar optic nerves.
+No definite abnormal signal intensity mass lesion in the brain including supratentorial cerebral hemisphere and infratentorial cerebellum and brain stem region.
 No MRI evidence of multiple sclerosis plaques.
 SUGGESTION:
 )"

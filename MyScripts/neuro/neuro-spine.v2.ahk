@@ -9,11 +9,11 @@
 ::lllc::Loss of lumbar lordotic curve.
 ::pedf::prominent epidural fat
 ::aarst1::Atlantoaxial rotary subluxation is noted. The atlas is rotated on the odontoid with no anterior displacement, suggestive of Fielding and Hawkins type 1.
-::mrspm::Presence of mild high signal intensity within the cervical cord at the C5 and C6 spine level on T2WI noted, probably due to the spinal stenosis and/or prior cord injury edema and/or prior cord insult with cord gliosis or small cystic changes.
-::mrspsmn::Schmorl's node (vertical intravertebral disc herniation) over the `
+::mrspm::Presence of mild high signal intensity within the cervical cord at the C5 and C6 spine level on T2WI, probably due to spinal stenosis and/or prior cord injury edema and/or prior cord insult with cord gliosis or small cystic changes.
+::mrspsmn::Schmorl's node (vertical intravertebral disc herniation) over the 
 ::mrspma::Presence of metallic artifact may limit the evaluation in this area.
-::mrspnom::No evidence of abnormal signal intensity within the visible spinal cord.
-::mrsppnc::Presence of several perineural cysts over the spinal canal of the upper sacrum level, the biggest one about 2cm.
+::mrspnom::No evidence of abnormal signal intensity within the visualized spinal cord.
+::mrsppnc::Presence of several perineural cysts over the spinal canal of the upper sacrum level, with the largest one measuring about 2 cm.
 ::amlf::at multiple levels from `
 ::scin::spinal cord indentation
 ::sccp::spinal cord compression
@@ -62,16 +62,13 @@ There is moderate degree degenerative disc disease, L1 through S1.
 ::ctcs2:: {
   MyForm := "
 (
-SPINE Cervical CT without contrast medium:
-
-FINDINGS:
-- No obvious fracture or dislocation of the cervical spine.
-- No evidence of the C1-C2 anterior and lateral subluxation.
-- No obvious hyperdense hematoma in the prevertebral region and epidural space.
-- The lung fields within the scanning range appear normal.
+No acute fracture or dislocation of the cervical spine.
+No evidence of C1-C2 anterior and lateral subluxation.
+No definite hyperdense hematoma in the prevertebral region and epidural space.
+The lung fields within the scanning range appear normal.
 
 IMPRESSION:
-No obvious fracture or dislocation of the cervical spine.
+No acute fracture or dislocation of the cervical spine.
 )"
   Paste(MyForm)
 }
@@ -85,9 +82,9 @@ SCAN RANGE: axial plane performed from C7 to L1, and sagittal and coronal recons
 Previous CT of T-spine: no
 
 FINDINGS:
-No obvious fracture-dislocation of the T-spine noted.
+No acute fracture-dislocation of the T-spine.
 
-No obvious hyperdense hematoma in the prevertebral region and epidural space noted.
+No definite hyperdense hematoma in the prevertebral region and epidural space.
 
 The lungs covered in the scanning range are normal.
 
@@ -96,7 +93,7 @@ REMARKS:
 
 
 IMPRESSION:
-No obvious fracture-dislocation of the T-spine noted.
+No acute fracture-dislocation of the T-spine.
 )"
   Paste(MyForm)
 }
@@ -117,7 +114,7 @@ FINDINGS:
 
 No obvious significant spinal stenosis of the C-spine.
 
-No evidence of focal herniation of nucleus pulposis (HIVD) in the C-spine region noted.
+No evidence of focal herniation of nucleus pulposus (HIVD) in the C-spine region noted.
 
 No evidence of abnormal signal intensity lesion within the spinal cord of the C-spine.
 
@@ -365,7 +362,7 @@ Post contrast study shows no evidence of abnormal enhanced lesion noted over the
 15. Post-contrast studies show enhancement of the abnormal signal lesions.
 
 IMPRESSION:
-No evidence of focal herniation of nucleus pulposis (HIVD) in the L-spine region noted.
+No evidence of focal herniation of nucleus pulposus (HIVD) in the L-spine region noted.
 
 No evidence of abnormal signal intensity tumor mass lesion over the spinal canal of the L-spine noted.
 
@@ -418,15 +415,15 @@ posteroinferior limbus vertebra of L3 and L4
 
 Schmorl's node (vertical intravertebral disc herniation) over the T12-L1, L1-L2, L2-L3, L3-L4, L4-L5, L5-S1.
 
-Presence of small lipomatous filum terminale, however, no evidence of causing tethered cord noted.
-Presence of small linear shape lipoma over the filum terminale, and no evidence of causing tethered cord noted.
+Presence of small lipomatous filum terminale; however, no evidence of tethered cord.
+Presence of small linear shape lipoma over the filum terminale, without evidence of tethered cord.
 
 Presence of several perineural cysts over the spinal canal of the upper sacrum level, the biggest one about 2cm.
-Presence of L6 (lumbarization of S1) noted.
-Suspicious spodylolysis fracture of L5 pars interarticularis.
+Presence of L6 (lumbarization of S1).
+Suspicious for a spondylolytic fracture of the L5 pars interarticularis.
 Presence of dessicated disc noted at L4-5 and L5-S1 and L-spine.
 Presence of degenerative end-plate changes noted over the L4-L5.
-Narrowing of bilateral L4-5 and L5-S1 neuroforamina due to the degenerative changes and severe disc space narrowing.
+Narrowing of bilateral L4-5 and L5-S1 neuroforamina due to degenerative changes and severe disc space narrowing.
 
 Presence of small hemangiomas at L1 and L4 spine vertebral bodies.
 Presence of benign hemangioma noted over the L2 vertebral body, size about 2.1 cm.
@@ -448,11 +445,11 @@ Mild lumbar scoliosis, spondylosis, spondylolisthesis, and DDD, without signific
   MyForm := "
 (
 No significant spinal stenosis of the L-spine.
-No evidence of abnormal signal intensity mass lesion over the spinal canal of the lower T-spine and L-spine region noted.
-Postcontrast study shows no evidence of abnormal enhanced lesion over the spinal canal of the lower T-spine and L-spine region noted.
-No evidence of focal herniation of nucleus pulposus (HIVD) in the L-spine region noted.
-No evidence of signal intensity lesion over the spinal cord of the lower T-spine region noted.
-No evidence of abnormal signal intensity lesion noted over the conus medullaris region.
+No evidence of abnormal signal intensity mass lesion over the spinal canal of the lower T-spine and L-spine region.
+Postcontrast study shows no evidence of abnormal enhanced lesion over the spinal canal of the lower T-spine and L-spine region.
+No evidence of focal herniation of nucleus pulposus (HIVD) in the L-spine region.
+No evidence of signal intensity lesion over the spinal cord of the lower T-spine region.
+No evidence of abnormal signal intensity lesion over the conus medullaris region.
 )"
   Paste(MyForm)
 }
@@ -471,25 +468,25 @@ FINDINGS:
 
 No significant spinal stenosis of the L-spine.
 
-Slightly bulging disc noted over the L4-5, and with mild indentation of anterior dural sac and with mild spinal stenosis noted.
+Slightly bulging disc over the L4-5, with mild indentation of anterior dural sac and mild spinal stenosis.
 
-No evidence of abnormal signal intensity mass lesion over the spinal canal of the lower T-spine and L-spine region noted.
+No evidence of abnormal signal intensity mass lesion over the spinal canal of the lower T-spine and L-spine region.
 
-Postcontrast study shows no evidence of abnormal enhanced lesion over the spinal canal of the lower T-spine and L-spine region noted.
+Postcontrast study shows no evidence of abnormal enhanced lesion over the spinal canal of the lower T-spine and L-spine region.
 
-No evidence of focal herniation of nucleus pulposus (HIVD) in the L-spine region noted.
+No evidence of focal herniation of nucleus pulposus (HIVD) in the L-spine region.
 
-No evidence of signal intensity lesion over the spinal cord of the lower T-spine region noted.
+No evidence of signal intensity lesion over the spinal cord of the lower T-spine region.
 
-No evidence of intraspinal hematoma noted over the L-spine region noted.
+No evidence of intraspinal hematoma over the L-spine region.
 
-No evidence of abnormal signal intensity lesion noted over the conus medullaris region.
+No evidence of abnormal signal intensity lesion over the conus medullaris region.
 
 
 IMPRESSION:
-No evidence of focal herniation of nucleus pulposus (HIVD) in the L-spine region noted.
+No evidence of focal herniation of nucleus pulposus (HIVD) in the L-spine region.
 
-No evidence of abnormal signal intensity tumor mass lesion over the spinal canal of the L-spine noted.
+No evidence of abnormal signal intensity tumor mass lesion over the spinal canal of the L-spine.
 )"
   Paste(MyForm)
 }

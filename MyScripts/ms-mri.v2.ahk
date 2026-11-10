@@ -5,7 +5,7 @@
 ; MS MRI Forms
 
 ;; Hotstrings
-::mrarok::No arthrographic evidence of full-thickness tear of rotator cuff or adhesive capsulitis.
+::mrarok::No arthrographic evidence of full-thickness tear of the rotator cuff or adhesive capsulitis.
 ::pt::partial tear
 ::ct::complete tear
 ::ftt::full-thickness tear
@@ -14,7 +14,7 @@
 ::je::joint effusion
 ::be::bursal effusion
 ::jbe::joint and bursal effusion
-::jbeok::No obviously increased joint or bursal effusion.
+::jbeok::No significant joint or bursal effusion.
 ::bme::bone marrow edema
 ::mpp::mediopatellar plica
 ::mppok::Presence of mediopatellar plica. The adjacent patellar and femoral cartilages are normal.
@@ -28,23 +28,23 @@
 ::pclct::Edematous changes and increased signal intensity over the posterior cruciate ligament (PCL) with incontinuous fiber. Complete tear is considered.
 ::aclpt::Edematous changes and increased signal intensity over the anterior cruciate ligament (ACL) with focally incontinuous fiber. Partial tear is considered.
 ::pclpt::Edematous changes and increased signal intensity over the posterior cruciate ligament (PCL) with focally incontinuous fiber. Partial tear is considered.
-::mrsab::Presence of Hill Sachs deformity manifesting an impaction lesion of the posterolateral aspect of the humeral head, and under MR-arthrogram, the anteroinferior labrum is frayed and absence that considered Bankart lesion, the findings c/w secondary to anterior glenohumeral dislocation.
+::mrsab::Presence of Hill Sachs deformity manifesting as an impaction lesion of the posterolateral aspect of the humeral head, and under MR-arthrogram, the anteroinferior labrum is frayed and absent, consistent with a Bankart lesion; the findings are consistent with anterior glenohumeral dislocation.
 ::ssftt::full-thickness tear of the supraspinatus.
 ::isftt::full-thickness tear of the infraspinatus.
 ::ssptt::partial-thickness tear of the supraspinatus.
 ::isptt::partial-thickness tear of the infraspinatus.
 ::scptt::partial-thickness tear of the subscapularis.
-::lhbtt::intrasubstance tear of the long head of biceps tendon
-::mroa::marginal osteophyte formation, irregular joint space narrowing, cartilage loss, subchondral signal intensity changes in the pancompartment of knee, especially the medial compartment, in favor of osteoarthrosis.
+::lhbtt::intrasubstance tear of the long head of the biceps tendon
+::mroa::marginal osteophyte formation, irregular joint space narrowing, cartilage loss, subchondral signal intensity changes in the pancompartment of the knee, especially the medial compartment, in favor of osteoarthrosis.
 ::bb::bone bruise
 ::bmok::No abnormal signal intensity changes in the bone marrow space.
 ::mcs::meniscocapsular separation
 ::mmt::Medial meniscal tear.
-::mmht::Horizontal tear of the lateral meniscus.
+::mmht::Horizontal tear of the medial meniscus.
 ::mmte::Medial meniscal tear, including posterior root, with meniscal extrusion.
 ::lmt::Lateral meniscal tear.
 ::lmht::Horizontal tear of the lateral meniscus.
-::kmroa::marginal osteophyte formation, irregular joint space narrowing, cartilage erosions in the pan-compartment of knee, especially the medial compartment, in favor of osteoarthrosis.
+::kmroa::marginal osteophyte formation, irregular joint space narrowing, cartilage erosions in the pan-compartment of the knee, especially the medial compartment, in favor of osteoarthrosis.
 ::kmrok::
 {
     MyForm := "

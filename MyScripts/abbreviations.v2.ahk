@@ -20,7 +20,7 @@
 :c:LUL::left upper lobe
 :c:LLL::left lower lobe
 :c:LLnL::left lingular lobe
-:c:llnl::lingula of left lung
+:c:llnl::lingula of the left lung
 ::ppm::permanent pacemaker
 ::pmf::progressive massive fibrosis
 ::aip::acute interstitial pneumonia
@@ -49,6 +49,7 @@
 ::abpa::allergic bronchopulmonary aspergillosis
 ::tib::tree-in-bud appearance
 ::pfn::perifissural nodule
+::pn::previously noted
 ::itho::intrathoracic `
 ::cle::centrilobular emphysema
 ::tbc::tracheobronchial calcification
@@ -77,6 +78,7 @@
 ::cca::common carotid artery
 ::eca::external carotid artery
 ::ica::internal carotid artery
+::arsa::aberrant right subclavian artery
 
 ;; MSK
 ::oa::osteoarthrosis
@@ -120,7 +122,7 @@
 ::hme::hereditary multiple exostoses
 ::ddd::degenerative disc disease
 ::slap::superior labral anterior posterior
-::lhbt::long head of biceps tendon
+::lhbt::long head of the biceps tendon
 ::gt::greater tuberosity
 
 ;; Abdomen
@@ -143,8 +145,8 @@
 ::ima::inferior mesenteric artery
 ::iud::intrauterine device
 ::gb::gallbladder
-::gbs::gallbladder stone
-::gbss::gallbladder stones
+::gbs::gallstone
+::gbss::gallstones
 ::gbsg::gallbladder sludge
 ::gbp::gallbladder polyp
 ::gbps::gallbladder polyps
@@ -189,6 +191,7 @@
 ::uti::urinary tract infection
 ::ou::obstructive uropathy
 ::uo::urinary obstruction
+::uri::urinary
 ::bti::biliary tract infection
 ::hc::hepatic cyst
 ::hcs::hepatic cysts
@@ -230,7 +233,8 @@
 ::rsj::rectosigmoid junction
 
 ;; Brain
-::ich::intracranial hemorrhage
+::ich::intracerebral hemorrhage
+::iph::intraparenchymal hemorrhage
 ::ivh::intraventricular hemorrhage
 ::sah::subarachnoid hemorrhage
 ::sdh::subdural hematoma
@@ -253,7 +257,7 @@
 ::eca::external carotid artery
 ::caa::cerebral amyloid angiopathy
 ::ene::encephalomalacia
-::bg::basal ganglion
+::bg::basal ganglia
 ::vb::vertebral body
 ::vbs::vertebral bodies
 ::mcm::mega cisterna magna
@@ -263,6 +267,7 @@
 ::icra::intracranial `
 ::wad::Wallerian degeneration
 ::cso::centrum semiovale
+::crd::corona radiata
 ::svd::small vessel disease
 ::wld::Wallerian degeneration
 ::ba::basilar artery
@@ -281,6 +286,7 @@
 ::nsd::nasal septum deviation
 ::tmj::temporomandibular joint
 ::sov::superior ophthalmic vein
+::np::nasopharynx
 ::npc::nasopharyngeal cancer
 ::iac::internal acoustic canal
 ::eac::external acoustic canal
@@ -312,8 +318,8 @@
 
 ;; MSK
 ::scm::sternocleidomastoid
-::atfl::anterior tibiofibular ligament
-::ptfl::posterior tibiofibular ligament
+::atfl::anterior talofibular ligament
+::ptfl::posterior talofibular ligament
 ::cfl::calcaneofibular ligament
 
 ;; General
@@ -337,7 +343,7 @@
 ::sec::secondary `
 ::ned::no evidence of disease.
 ::ner::no evidence of local recurrence.
-::ner0::no evident of recurrence.
+::ner0::no evidence of recurrence.
 ::ner1::no evidence of local recurrence or lymphadenopathy.
 ::nerm::No evidence of recurrence or metastasis.
 ::nerv::No evidence of recurrent or viable tumor.
@@ -353,7 +359,8 @@
 ::pulhtn::pulmonary hypertension
 ::a::artery
 ::aa::arteries
-::v::vein
+::v::versus `
+::vis::visualized `
 ::impr::improvement
 ::neo::no evidence of `
 ::nseo::no strong evidence of `

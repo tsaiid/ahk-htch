@@ -51,6 +51,39 @@ The whole procedure was smooth, the patient tolerated well, and no immediate com
   Paste(MyForm)
 }
 
+::sg-ptgbd:: {
+  MyForm := "
+(
+PTGBD:
+
+- Image Guidance: CT and ultrasound.
+- Anesthesia: Local anesthesia.
+- Drainage: 8 Fr one-step pigtail catheter (non-locking) was placed and secured at a depth of 16 cm.
+- Specimen: Dark green, mucinous fluid.
+- Complications: None.
+
+Under sonography guidance, the gallbladder was localized.
+The skin was prepared and the area was draped.
+After local anesthesia, a 8 Fr one-step pigtail catheter (without string lock) was placed transhepatically into the gallbladder.
+After local anesthesia, a 18G Chiba needle was introduced transhepatically into the gallbladder, followed by J-curve guiding wire, and a 8Fr pigtail catheter was placed using Seldinger technique.
+
+Dark green, mucinous fluid was aspirated and collected for examination.
+Brown, sandy, mucinous, pus like fluid was aspirated and collected for examination.
+
+Then, the drain was fixed with Nylon.
+Fluoroscopy confirmed the drain's location. Then, the drain was fixed with Nylon.
+The whole procedure was smooth, the patient tolerated well, and no immediate complication was noted.
+)"
+  Paste(MyForm)
+  SleepThenTab()
+  MyForm := "
+(
+PTGBD (8F pigtail non-locking drain) was performed.
+PTGBD (8F pigtail drain without string lock) was performed.
+)"
+  Paste(MyForm)
+}
+
 :*:sg-a:: {
   MyForm := "
 (
@@ -152,7 +185,7 @@ Biopsy procedure: freehand technique, guided by 4C convex transducer
 Biopsy device: 18G Merit Temno biopsy device in 17G coaxial needle.
 Biopsy device: 18G Merit Temno biopsy device.
 Number of core samples: 4
-Use of Gelfoam slurry: yes
+Use of Gelfoam slurry: no
 Complication: nil
 )"
   Paste(MyForm)
@@ -169,7 +202,7 @@ Sono-guiding liver biopsy was successfully performed.
 :*:sg-ld:: {
   MyForm := "
 (
-Percutaneons abscess drainage-PAD:
+Percutaneous abscess drainage-PAD:
 
 Target: right subphrenic biloma.
 Drain: 8F one-step pigtail drain (with string lock), fixed at 17 cm.
@@ -186,7 +219,7 @@ Then, the drain was fixed with 3-0 Nylon.
 
 After local anesthesia, a 18G Chiba needle was introduced transhepatically into the abscess, followed by J-curve guiding wire.
 Milky pus about 4 ml was aspirated. (collected for Lab study.)
-A 6Fr pigtail catheter was placed using Seldinger technique. The fluoroscopy confirmed the drain's location.
+A 6Fr pigtail catheter was placed using Seldinger technique. Fluoroscopy confirmed the drain's location.
 Then, the drain was fixed with 3-0 Nylon.
 
 The whole procedure was smooth, the patient tolerated well, and no immediate complication was noted.
@@ -255,13 +288,13 @@ Fine needle aspiration was then performed.
 About 30 ml of light brown serous fluid was aspirated.
 The sample was smeared and fixed.
 The sample was injected into the thin layer cytology fluid.
-The patient tolerated wall, and no immediate complication was noted.
+The patient tolerated the procedure well, and no immediate complication was noted.
 )"
   Paste(MyForm)
   SleepThenTab()
   MyForm := "
 (
-Sono-guiding find needle aspiration of thyroid was successfully performed.
+Sono-guided fine needle aspiration of thyroid was successfully performed.
 )"
   Paste(MyForm)
 }
@@ -295,13 +328,13 @@ Sono-Guiding Fine Needle Aspiration of Lymph Node:
 Under sonography, the mass lesion was identified at the left/right neck.
 Fine needle aspiration was then performed.
 The sample was smeared and fixed.
-The patient tolerated wall, and no immediate complication was noted.
+The patient tolerated the procedure well, and no immediate complication was noted.
 )"
   Paste(MyForm)
   SleepThenTab()
   MyForm := "
 (
-Sono-guiding find needle aspiration of lymph node was successfully performed.
+Sono-guided fine needle aspiration of lymph node was successfully performed.
 )"
   Paste(MyForm)
 }

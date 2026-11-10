@@ -205,11 +205,11 @@ Non-contrast study.
 Scanning from pelvis to foot, axial, coronal, sagittal views
 
 FINDINGS:
-- Bilateral knees show joint space narrowing, marginal osteophyte formation, subchondral sclerosis, especially at medial compartment of knee joint, consistent with osteoarthrosis.
+- Bilateral knees show joint space narrowing, marginal osteophyte formation, subchondral sclerosis, especially at the medial compartment of the knee joint, consistent with osteoarthrosis.
 - Left moderate and right small suprapatellar effusion.
 - Mild bilateral genu varum is noted.
-- No obvious dislocation or fracture.
-- The visible intraabdominal organs are unremarkable.
+- No acute fracture or dislocation.
+- The visualized intraabdominal organs are unremarkable.
 
 IMPRESSION:
 OA changes of bilateral knees.
@@ -223,10 +223,10 @@ OA changes of bilateral knees.
     MyForm := "
   (
 Atherosclerotic changes and calcification of the arterial wall, from abdominal aorta to the peripheral arteries of foot.
-Because too small diameter of arteries and the severe calcification, the patency below the popliteal level is difficult to evaluate.
+Because of the small diameter of the arteries and severe calcification, the patency below the popliteal level is difficult to evaluate.
 
 Multifocal luminal stenosis in the bilateral anterior tibial, posterior tibial, and peroneal arteries, c/w peripheral arterial disease. They are relatively patent to at least ankle level.
-Because too small diameter of arteries and the severe calcification, the evaluation may be limited.
+Because of the small diameter of the arteries and severe calcification, the evaluation may be limited.
 
 Atrophic changes of bilateral kidneys, in favor of chronic kidney disease.
 Some small nonobstructive bilateral renal stones.
@@ -236,7 +236,7 @@ No retroperitoneal or mesenteric lymphadenopathy.
 
 IMPRESSION:
 Severe arterial wall calcification from abdominal aorta to feet.
-Because too small diameter of arteries and the severe calcification, the patency below the popliteal level is difficult to evaluate.
+Because of the small diameter of the arteries and severe calcification, the patency below the popliteal level is difficult to evaluate.
   )"
     Paste(MyForm)
 }

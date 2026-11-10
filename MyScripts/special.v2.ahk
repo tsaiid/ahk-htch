@@ -1,6 +1,7 @@
 #Requires AutoHotkey v2.0
 
 #Include ..\Lib\Paste.v2.ahk
+#Include lib\ris-common.v2.ahk
 
 ; Special
 
@@ -8,11 +9,11 @@
 {
     MyForm := "
     (
-Voiding cystourethrography was performed under fluoroscopy by using contrast medium dripping into urinary bladder through Foley catheter with supine position:
+Voiding cystourethrography was performed under fluoroscopy by using contrast medium dripping into the urinary bladder through Foley catheter with supine position:
 
 1. No evidence of bil. vesico-ureteral reflux during straining, voiding and post-voiding.
-2. Normal contour of urinary bladder without filling defect noted.
-3. No definite structure anomaly or fistula identified in this study.
+2. Normal contour of the urinary bladder without filling defect noted.
+3. No definite structural anomaly or fistula identified in this study.
 
 IMPRESSION:
 No vesicoureteral reflux or fistula.
@@ -20,21 +21,28 @@ No vesicoureteral reflux or fistula.
     Paste(MyForm)
 }
 
-::vur1::Reflux limited to ureter. Grade 1 vesicoureteric reflux is considered.
+::vur1::Reflux limited to the ureter. Grade 1 vesicoureteric reflux is considered.
 ::vur2::Reflux up to the renal pelvis. Grade 2 vesicoureteric reflux is considered.
-::vur3::Reflux with mild dilatation of ureter and pelvicalyceal system. Grade 3 vesicoureteric reflux is considered.
-::vur4::Reflux with moderate dilated tortuous ureter and blunting of fornices but preserved papillary impressions. Grade 4 vesicoureteric reflux is considered.
-::vur5::Reflux with severe dilated tortuous ureter, dilatation of pelvicalyceal system, and loss of fornices and papillary impressions. Grade 5 vesicoureteric reflux is considered.
+::vur3::Reflux with mild dilatation of the ureter and pelvicalyceal system. Grade 3 vesicoureteric reflux is considered.
+::vur4::Reflux with moderately dilated, tortuous ureter and blunting of fornices but preserved papillary impressions. Grade 4 vesicoureteric reflux is considered.
+::vur5::Reflux with severely dilated, tortuous ureter, dilatation of the pelvicalyceal system, and loss of fornices and papillary impressions. Grade 5 vesicoureteric reflux is considered.
 
 ::hsg::
 {
     MyForm := "
     (
-Hysterosalpingography was performed under fluoroscopy by using contrast medium injected into patient's uterus :
+Hysterosalpingography was performed under fluoroscopy by using contrast medium injected into patient's uterus:
 
-1. Uterus: normal appearance without evident filling defect.
-2. Right fallopian tube: patency.
-3. Left fallopian tube: patency.
+- Uterine cavity: Normal size, triangular shape, and smooth mucosal contour. No evidence of filling defect, synechiae, or congenital uterine anomaly.
+- Fallopian tubes: Both fallopian tubes are well visualized, normal in caliber throughout their course, with no dilatation or obstruction.
+- Peritoneal spill: Prompt, free, and symmetrical peritoneal spillage of contrast is demonstrated bilaterally without loculation.
+    )"
+    Paste(MyForm)
+    SleepThenTab()
+    MyForm := "
+    (
+1. Normal contour and capacity of the uterine cavity.
+2. Bilateral patent fallopian tubes with free peritoneal spill.
     )"
     Paste(MyForm)
 }
@@ -61,7 +69,7 @@ Normal passage of contrast medium through the ampulla of Vater into the duodenum
 {
     MyForm := "
     (
-Antegrade pyelography was performed under fluoroscope by using contrast medium through right/left/bilateral PCN catheters with prone/supine position:
+Antegrade pyelography was performed under fluoroscopy by using contrast medium through right/left/bilateral PCN catheters with prone/supine position:
 
     )"
     Paste(MyForm)
@@ -82,11 +90,11 @@ Pharyngography
 
 Functional abnormality:
 
-Leakage: Nil. Yes, due to: weak, atrophy or resection of tongue, poor dentures, paralysis of soft palate.
+Leakage: Nil. Yes, due to: weakness, atrophy or resection of tongue, poor dentures, paralysis of soft palate.
 
 Nasal regurgitation: Nil.  Yes, due to: weakness of soft palate, or superior constrictor
 
-Barium aspiration: Nil., Yes, due to : poor or absence of (epiglottic tilting, elevation of larynx, closure of larynx).
+Barium aspiration: Nil., Yes, due to : impairment or absence of (epiglottic tilting, elevation of larynx, closure of larynx).
 
 Retention: Nil.
 
@@ -152,8 +160,8 @@ Double-contrast upper GI study from esophagus to proximal duodenum was performed
 
 - Normal elasticity and distensibility of stomach.
 - No significant filling defect or mass lesion noted in the stomach.
-- The mucosal fold of esophagus and stomach shows no significant unusual.
-- Well distension of duodenal bulb without obvious mass effect.
+- The mucosal folds of the esophagus and stomach show no significant abnormality.
+- Good distension of the duodenal bulb without definite mass effect.
 
 IMPRESSION:
 No abnormal findings noted in this UGI study.
@@ -170,10 +178,10 @@ Esophagography was performed under fluoroscopy and showed:
 
 FINDINGS:
 - No significant filling defect or mass lesion noted in the stomach.
-- The mucosal fold of esophagus and stomach shows no significant unusual.
-- Well distension of duodenal bulb without obvious mass effect.
-- Smooth passage of the barium without definite mass effect or abnormal mucosa pattern of the esophagus.
-- Normal elasticity and distensibility of stomach.
+- The mucosal folds of the esophagus and stomach show no significant abnormality.
+- Good distension of the duodenal bulb without definite mass effect.
+- Smooth passage of the barium without definite mass effect or abnormal mucosal pattern of the esophagus.
+- Normal elasticity and distensibility of the stomach.
 
 IMPRESSION:
 No abnormal findings noted in this UGI study.
@@ -189,11 +197,11 @@ Double-contrast upper GI study from esophagus to proximal duodenum was performed
 Esophagography was performed under fluoroscopy:
 
 FINDINGS:
-- Normal elasticity and distensibility of stomach.
+- Normal elasticity and distensibility of the stomach.
 - No significant filling defect or mass lesion noted in the stomach.
-- The mucosal fold of esophagus and stomach shows no significant unusual.
-- Well distension of duodenal bulb without obvious mass effect.
-- Smooth passage of the barium without definite mass effect or abnormal mucosa pattern of the esophagus.
+- The mucosal folds of the esophagus and stomach show no significant abnormality.
+- Good distension of the duodenal bulb without definite mass effect.
+- Smooth passage of the barium without definite mass effect or abnormal mucosal pattern of the esophagus.
 
 IMPRESSION:
 No abnormal findings noted in this UGI study.
@@ -205,10 +213,27 @@ No abnormal findings noted in this UGI study.
 {
     MyForm := "
 (
-Single contrast small intestine and compressed spot view were performed under fluoroscope with well demonstration to the ileocecal valve:
+SMALL INTESTINE:
 
-- Normal appearance of mucosa and peristalsis of small intestine without obvious mass lesion.
-- No obvious fistula formation noted.
+CLINICAL HISTORY:
+[Indication, e.g., Suspected bowel obstruction, abdominal pain, or status post-procedure evaluation]
+
+COMPARISON:
+[None / Prior exam date and modality]
+
+TECHNIQUE:
+Serial abdominal radiographs were obtained following oral administration of water-soluble contrast medium (e.g., Gastrografin / Meglumine diatrizoate).
+
+FINDINGS:
+1. Contrast Transit: Smooth and unimpeded transit of contrast material through the stomach, duodenum, and jejunum/ileum. Contrast reaches the cecum and proximal colon at 60 minutes post-ingestion.
+2. Bowel Loops: The small bowel loops show normal caliber, mucosal fold patterns, and wall thickness throughout. No significant luminal narrowing, stricture, or dilatation is identified.
+3. Mass / Lesion: No filling defect, intraluminal mass, or extrinsic compression is seen along the small bowel loops.
+4. Extravasation: No evidence of contrast extravasation, fistulae, or sinus tract formation.
+
+IMPRESSION:
+1. Unremarkable small bowel follow-through study with water-soluble contrast.
+2. Normal transit time, with contrast reaching the colon at 60 minutes.
+3. No small bowel obstruction, stricture, mass, or extravasation identified.
 )"
     Paste(MyForm)
 }
@@ -217,13 +242,13 @@ Single contrast small intestine and compressed spot view were performed under fl
 {
     MyForm := "
 (
-Double-contrast upper GI study from esophagus to proximal duodenum, and single contrast small intestine and compressed spot view were performed smoothly and showed:
+Double-contrast upper GI study from esophagus to proximal duodenum, and single-contrast small intestine examination with compressed spot views were performed smoothly and showed:
 
-- Normal elasticity and distensibility of stomach.
+- Normal elasticity and distensibility of the stomach.
 - No significant filling defect or mass lesion noted in the stomach.
-- The mucosal fold of esophagus and stomach shows no significant unusual.
-- Well distension of duodenal bulb without obvious mass effect.
-- Normal appearance of mucosa and peristalsis of small intestine without obvious mass lesion.
+- The mucosal folds of the esophagus and stomach show no significant abnormality.
+- Good distension of the duodenal bulb without definite mass effect.
+- Normal appearance of mucosa and peristalsis of small intestine without definite mass lesion.
 
 IMPRESSION: No abnormal findings noted in this UGI and small intestine study.
 )"

@@ -3,14 +3,14 @@
 #Include ..\Lib\Hotstrings.v2.ahk
 #Include ..\Lib\Paste.v2.ahk
 
-; My RegEx HotStrings
-hotstrings("plsp(\d)(\d)\n", "plsp")
-hotstrings("pcsp(\d)(\d)\n", "pcsp")
-hotstrings("sb([rl])l(1[0-2](-\d+)?|[1-9](-\d+)?)\/(\d+)\n", "sbl")
-hotstrings("([RL])(1[0-2](-\d+)?|[1-9](-\d+)?)\/(\d+)\n", "bl")
-hotstrings("ca([1-9]|[1-8][0-9])\n", "ca")
-hotstrings("([1-9]|[1][0-2])t([1-9]|[1][0-2])\n", "nr")
-hotstrings("\b(\d{1,2})y(([0-9]|1[01])m)?\n", "age")
+; My RegEx HotStrings (觸發鍵跟隨 AHK #Hotstring EndChars 設定)
+hotstrings("plsp(\d)(\d)", "plsp")
+hotstrings("pcsp(\d)(\d)", "pcsp")
+hotstrings("sb([rl])l(1[0-2](-\d+)?|[1-9](-\d+)?)\/(\d+)", "sbl")
+hotstrings("([RL])(1[0-2](-\d+)?|[1-9](-\d+)?)\/(\d+)", "bl")
+hotstrings("ca([1-9]|[1-8][0-9])", "ca")
+hotstrings("([1-9]|[1][0-2])t([1-9]|[1][0-2])", "nr")
+hotstrings("\b(\d{1,2})y(([0-9]|1[01])m)?", "age")
 
 global ORDINAL_NUM_STR := Map(
     "1", "1st", "2", "2nd", "3", "3rd", "4", "4th", "5", "5th",
@@ -160,8 +160,8 @@ ca() {
     ca_degree := hsMatch[1]
     finalStr := Format("
 (
-Cobb angle: {1} degree.
-)", ca_degree)
+Cobb angle: {1} degree{2}.
+)", ca_degree, ca_degree == "1" ? "" : "s")
     Paste(finalStr)
 }
 

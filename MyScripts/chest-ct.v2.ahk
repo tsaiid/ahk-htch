@@ -9,7 +9,7 @@
 ::ist::interlobular septal thickening
 ::6mcct::Follow up chest CT scan 6 months later.
 ::tacal::Atherosclerotic changes and calcification of the aortic wall.
-::tacal1::Atherosclerotic changes and calcification of the aortic and branches walls.
+::tacal1::Atherosclerotic changes and calcification of the aortic and branch walls.
 ::tacalt::Atherosclerotic changes and calcification of the aortic wall with aortic tortuosity.
 ::macal::mild calcification of the aortic wall.
 ::mtacal::mild atherosclerotic changes and calcification of the aortic wall.
@@ -18,8 +18,8 @@
 ::cctcad::Calcification of the coronary arteries, suspicious of coronary artery disease.
 ::cad0::calcification of the coronary arteries.
 ::mcad0::mild calcification of the coronary arteries.
-::cad1::calcification of the coronary arteries, suspicious coronary artery disease.
-::mcad1::mild calcification of the coronary arteries, suspicious coronary artery disease.
+::cad1::calcification of the coronary arteries, suspicious for coronary artery disease.
+::mcad1::mild calcification of the coronary arteries, suspicious for coronary artery disease.
 ::amvcal::calcification of the aortic and mitral valves.
 ::avcal::calcification of the aortic valve.
 ::mvcal::calcification of the mitral valve.
@@ -28,6 +28,9 @@
 ::mmvcal::mild calcification of the mitral valve.
 ::cctnc::*PS. The evaluation is limited especially for solid organs and vascular structure due to absence of contrast enhancement.
 ::cctnat::No abnormal air trapping in both inspiratory and expiratory phases.
+::cctsi::Increased ground-glass opacities in the dependent portions of both lungs, likely due to suboptimal inspiration.
+::cctlok::No suspicious pulmonary nodule or consolidation.
+::cctali::Bilateral peribronchovascular ground-glass opacities and small consolidations, with a patchy and/or gravity-dependent distribution. DDx: acute lung injury, pulmonary edema, atypical pneumonia.
 ::cadr0::CAD-RADS 0: Documented absence of CAD.
 ::cadr1::CAD-RADS 1: Minimal non-obstructive CAD. Consider preventive therapy and risk factor modification.
 ::cadr2::CAD-RADS 2: Mild non-obstructive CAD. Consider preventive therapy and risk factor modification, particularly for patients with non-obstructive plaque in multiple segments.
@@ -38,10 +41,35 @@
 ::ncldmi::a small soft tissue density lesion in the bronchiole of _, in favor of mucoid impaction.
 ::ncldhc::a small hypodense nodular lesion in the liver, in favor of hepatic cyst.
 ::ncldhcs::small hypodense nodular lesions in the liver, in favor of hepatic cysts.
-::cctpulhtn::Engorged pulmonary trunk with A/P ratio <1. Pulmonary hypertension may be suspected.
+::cctphtn::Engorged pulmonary trunk with A/P ratio <1. Pulmonary hypertension may be suspected.
 ::aook::No evidence of aortic dissection or aneurysm.
 ::paok::No definite filling defect in the major pulmonary arteries.
+::paok1::No evidence of pulmonary embolism.
 ::plok::No pleural effusion.
+::lu1::Lung-RADS Category 1: Negative.
+::lu1s::Lung-RADS Category 1S: Negative (with other significant findings).
+::lu2::Lung-RADS Category 2: Benign - Based on imaging features or indolent behavior.
+::lu2s::Lung-RADS Category 2S: Benign - Based on imaging features or indolent behavior (with other significant findings).
+::lu3::Lung-RADS Category 3: Probably Benign - Based on imaging features or behavior.
+::lu3s::Lung-RADS Category 3S: Probably Benign - Based on imaging features or behavior (with other significant findings).
+::lu4a::Lung-RADS Category 4A: Suspicious.
+::lu4as::Lung-RADS Category 4AS: Suspicious (with other significant findings).
+::lu4b::Lung-RADS Category 4B: Very suspicious.
+::lu4bs::Lung-RADS Category 4BS: Very suspicious (with other significant findings).
+::lu4x::Lung-RADS Category 4X: Category 3 or 4 nodules with additional features or imaging findings that increase suspicion for lung cancer.
+::lu4xs::Lung-RADS Category 4XS: Category 3 or 4 nodules with additional features or imaging findings that increase suspicion for lung cancer (with other significant findings).
+::pe1::pulmonary embolism
+:c:MS::(Modifier S)
+
+::ccttrok0:: {
+  MyForm := "
+(
+No pneumothorax or hemothorax.
+No lung contusion, pneumothorax, or hemothorax.
+)"
+  Paste(MyForm)
+}
+
 ::ccttrok:: {
   MyForm := "
 (
@@ -49,6 +77,22 @@ No pneumothorax or hemothorax.
 No lung contusion, pneumothorax, or hemothorax.
 The heart and great vessels appear unremarkable.
 The thoracic cage and bones appear intact.
+)"
+  Paste(MyForm)
+}
+
+::cttrok:: {
+  MyForm := "
+(
+No pneumothorax or hemothorax.
+No lung contusion, pneumothorax, or hemothorax.
+The heart and great vessels appear unremarkable.
+The thoracic cage and bones appear intact.
+
+
+No liver, spleen, or kidney traumatic injury.
+No evidence of intraperitoneal free air.
+No significant ascites.
 )"
   Paste(MyForm)
 }
@@ -68,6 +112,20 @@ No pulmonary nodule.
 No mediastinal lymphadenopathy.
 The heart and great vessels appear unremarkable.
 The thoracic cage and bones appear intact.
+)"
+  Paste(MyForm)
+}
+
+::cctok0:: {
+  MyForm := "
+(
+No suspicious pulmonary nodule or consolidation.
+The central airways are patent.
+No significant mediastinal or axillary lymphadenopathy.
+The heart size and great vessels are normal in caliber.
+No pleural effusion or pneumothorax.
+No suspicious bone lesion in the visualized skeleton.
+Visualized upper abdominal organs are unremarkable.
 )"
   Paste(MyForm)
 }
@@ -119,7 +177,7 @@ Applicable previous CT of chest: no
 
 FINDINGS:
 - Lung and large airways: no pulmonary nodules.
-- Pleura: no visible nodularity or pleural thickening.
+- Pleura: no visualized nodularity or pleural thickening.
 - Great vessels: within normal limits.
 - Heart: within normal limits.
 - Mediastinum: unremarkable.
@@ -135,7 +193,7 @@ FINDINGS:
   SleepThenTab()
   MyForm := "
 (
-No obvious traumatic intrathoracic injury.
+No definite traumatic intrathoracic injury.
 )"
   Paste(MyForm)
 }
@@ -155,7 +213,7 @@ Applicable previous CT of abdomen: no
 
 FINDINGS:
 - Lung and large airways: no pulmonary nodules.
-- Pleura: no visible nodularity or pleural thickening.
+- Pleura: no visualized nodularity or pleural thickening.
 - Great vessels: within normal limits.
 - Heart: within normal limits.
 - Mediastinum and hila: no LNs > 1 cm.
@@ -215,7 +273,7 @@ Measurement of pulmonary solid nodule is based on RECIST 1.1, the largest diamet
 
 If a solid nodule < 6 mm, follow-up at 12 months may be considered.
 If a solid nodule 6-8 mm, a single follow-up at 6-12 months is advised, with a third CT scan at 18-24 months to be considered.
-If a solid nodules > 8 mm, follow-up at 3 months or PET/CT or tissue sampling.
+If a solid nodule > 8 mm, follow-up at 3 months or PET/CT or tissue sampling.
 If multiple nodules > 6 mm, follow-up at 3-6 months and then 18-24 months.
 
 If ground-glass nodules greater than 6 mm, follow-up at 6-12 months and then every 2 years until the 5-year mark.
@@ -224,7 +282,7 @@ If subsolid nodules greater than 6 mm, should have CT follow-up at 3-6 months an
 
 If any change in size, morphology and density suspicious for malignancy, please reevaluate the lesion at the chest or chest surgical outpatient clinic.
 
-Remarks: A majority of the nodules less than 6 mm may not be cancer (risk <1`% in heavy smokers and <0.15`% in non-smokers). However, to exclude any possibility of malignancy, we recommend that (1) a complete evaluation by the chest specialist and/or (2) a follow-up study based on personal risk factors.
+Remarks: A majority of the nodules less than 6 mm may not be cancer (risk <1% in heavy smokers and <0.15% in non-smokers). However, to exclude any possibility of malignancy, we recommend that (1) a complete evaluation by the chest specialist and/or (2) a follow-up study based on personal risk factors.
 
 Fleischner Society 2017 Guidelines for Management of Incidentally Detected Pulmonary Nodules in Adults.
 )"
@@ -268,7 +326,7 @@ Measurement of pulmonary solid nodule is based on RECIST 1.1, the largest diamet
 
 If a solid nodule < 6 mm, follow-up at 12 months may be considered.
 If a solid nodule 6-8 mm, a single follow-up at 6-12 months is advised, with a third CT scan at 18-24 months to be considered.
-If a solid nodules > 8 mm, follow-up at 3 months or PET/CT or tissue sampling.
+If a solid nodule > 8 mm, follow-up at 3 months or PET/CT or tissue sampling.
 If multiple nodules > 6 mm, follow-up at 3-6 months and then 18-24 months.
 
 If ground-glass nodules greater than 6 mm, follow-up at 6-12 months and then every 2 years until the 5-year mark.
@@ -277,7 +335,7 @@ If subsolid nodules greater than 6 mm, should have CT follow-up at 3-6 months an
 
 If any change in size, morphology and density suspicious for malignancy, please reevaluate the lesion at the chest or chest surgical outpatient clinic.
 
-Remarks: A majority of the nodules less than 6 mm may not be cancer (risk <1`% in heavy smokers and <0.15`% in non-smokers). However, to exclude any possibility of malignancy, we recommend that (1) a complete evaluation by the chest specialist and/or (2) a follow-up study based on personal risk factors.
+Remarks: A majority of the nodules less than 6 mm may not be cancer (risk <1% in heavy smokers and <0.15% in non-smokers). However, to exclude any possibility of malignancy, we recommend that (1) a complete evaluation by the chest specialist and/or (2) a follow-up study based on personal risk factors.
 
 Fleischner Society 2017 Guidelines for Management of Incidentally Detected Pulmonary Nodules in Adults.
 )"
@@ -292,7 +350,7 @@ Measurement of pulmonary solid nodule is based on RECIST 1.1, the largest diamet
 
 If a solid nodule < 6 mm, follow-up at 12 months may be considered.
 If a solid nodule 6-8 mm, a single follow-up at 6-12 months is advised, with a third CT scan at 18-24 months to be considered.
-If a solid nodules > 8 mm, follow-up at 3 months or PET/CT or tissue sampling.
+If a solid nodule > 8 mm, follow-up at 3 months or PET/CT or tissue sampling.
 If multiple nodules > 6 mm, follow-up at 3-6 months and then 18-24 months.
 
 If ground-glass nodules greater than 6 mm, follow-up at 6-12 months and then every 2 years until the 5-year mark.
@@ -301,7 +359,7 @@ If subsolid nodules greater than 6 mm, should have CT follow-up at 3-6 months an
 
 If any change in size, morphology and density suspicious for malignancy, please reevaluate the lesion at the chest or chest surgical outpatient clinic.
 
-Remarks: A majority of the nodules less than 6 mm may not be cancer (risk <1`% in heavy smokers and <0.15`% in non-smokers). However, to exclude any possibility of malignancy, we recommend that (1) a complete evaluation by the chest specialist and/or (2) a follow-up study based on personal risk factors.
+Remarks: A majority of the nodules less than 6 mm may not be cancer (risk <1% in heavy smokers and <0.15% in non-smokers). However, to exclude any possibility of malignancy, we recommend that (1) a complete evaluation by the chest specialist and/or (2) a follow-up study based on personal risk factors.
 
 Fleischner Society 2017 Guidelines for Management of Incidentally Detected Pulmonary Nodules in Adults.
 )"
@@ -332,7 +390,7 @@ FINDINGS:
   > Mild bronchiectasis in both lower lobes.
   > A few small nodules in both lungs.
   > No definite extensive ground-glass abnormality, discrete cysts, diffuse mosaic attenuation, air trapping, nor consolidation.
-- Pleura: no visible nodularity or pleural thickening.
+- Pleura: no visualized nodularity or pleural thickening.
 - Great vessels: within normal limits.
 - Heart: within normal limits.
 - Mediastinum and hila: no LNs > 1 cm.
@@ -369,7 +427,7 @@ Applicable previous CT of chest: no
 FINDINGS:
 - Lung and large airways:
   > Multifocal peribronchovascular ground-glass opacities with bronchiectasis in both lungs. Subpleural sparing is noted. No honeycombing. Non-specific interstitial pneumonia is suspected.
-- Pleura: no visible nodularity or pleural thickening.
+- Pleura: no visualized nodularity or pleural thickening.
 - Great vessels: within normal limits.
 - Heart: within normal limits.
 - Mediastinum and hila: no LNs > 1 cm.
@@ -500,7 +558,7 @@ COMPARISON:
 Applicable previous CT of chest: no
 
 PROTOCOL:
-  - EKG gating, prospective (65-85`%)
+  - EKG gating, prospective (65-85%)
   - EKG gating, retrospective
   - Delay image:
     1. Time: 10 min; Low dose: 80kV
@@ -514,7 +572,7 @@ CARDIOVASCULAR FINDINGS:
   . Situs: solitus
   . Atrium: Not unusual
   . Ventricle: Not unusual.
-  . Aorta: not usuual, AAo diameter:  mm; DAo: mm.
+  . Aorta: not usual, AAo diameter:  mm; DAo: mm.
   . Pulmonary trunk: not unusual, trunk diameter: mm; RPA: mm; LPA: mm.
   . Collateral to lung: PDA (-); MAPCA(-).
   . Pulmonary vein: Not unusual
@@ -529,9 +587,9 @@ MEASUREMENT:
 
 OTHER FINDINGS:
   . Trachea and bronchus: Not unusual
-  . Lung parenchyma and plerua: No unusual
+  . Lung parenchyma and pleura: Not unusual
   . Pleural: Not unusual
-  . Chest wall: No unusual
+  . Chest wall: Not unusual
   . Presence of thymus gland: (+)
   . Abdomen: Not unusual
 
@@ -568,7 +626,7 @@ A. Tumor Profile
 * Involves main bronchus (T2)
 * Invades visceral pleura (T2)
 * Focal atelectasis or obstructive pneumonitis to hilum (T2)
-* Involves part or anterior longitudinal ligament of the lung (T2)
+* Involves part of the lung or the whole lung (T2)
 
 
 * Invades parietal pleura, chest wall (including superior sulcus tumors), phrenic nerve, parietal pericardium (T3)
@@ -588,7 +646,7 @@ A. Tumor Profile
 * Separate tumor nodule(s) in a contralateral lobe (M1a)
 * Tumor with pleural or pericardial nodules, or malignant pleural (or pericardial) effusion (M1a)
 * Single extrathoracic metastasis in a single organ (M1b):
-* Multiple extrathoracic metastasis in a single organ or multiple organs (M1c):
+* Multiple extrathoracic metastases in a single organ or multiple organs (M1c):
 * Uncertain lesion in the scanned range, which could be metastatic lesion or not, and require further study (Mx)
 
 B. Other Findings
@@ -670,7 +728,7 @@ Esophageal CA of , cTNM. (AJCC 2016, 8th ed.)
   MyForm := "
 (
 Lung and large airways: no pulmonary nodules.
-Pleura: no visible nodularity or pleural thickening.
+Pleura: no visualized nodularity or pleural thickening.
 Great vessels: within normal limits.
 Heart: within normal limits.
 Mediastinum and hila: no LNs > 1 cm.
@@ -682,7 +740,7 @@ Chest Wall and low neck: within normal limits.
 ::cctcs:: {
   MyForm := "
 (
-Cardiac dual-source CT was performed without intravenous contrast administration and under ECG-gating.
+Non-contrast ECG-gated cardiac CT for coronary artery calcium scoring was performed.
 
 Findings:
 - Total Calcium Score (Equivalent Agatston Score) is 0
@@ -696,13 +754,19 @@ Additional findings:
 - The cardiac valves are not calcified
 - The visualized thoracic aorta is normal
 - The visual lungs are clear
-- The visible bone is normal
+- The visualized bone is normal
 )"
   Paste(MyForm)
   SleepThenTab()
   MyForm := "
 (
 Total Calcium Score (Equivalent Agatston Score) is 0.
+
+No identifiable calcification.
+Minimal identifiable calcification.
+Mild calcification.
+Moderate calcification.
+Significant calcification.
 )"
   Paste(MyForm)
 }
@@ -744,10 +808,10 @@ RCA: right coronary artery;  LAD: left anterior descending artery;  LCX: left ci
 Recommended Quantitative Stenosis Grading:
 ( Adapted from SCCT Guidelines for the Interpretation and Reporting of Coronary Computed Tomographic Angiography, 2009 )
 - Grade 0  Normal: Absence of plaque and no luminal stenosis
-- Grade 1  Minimal: Plaque with < 25`% stenosis
-- Grade 2  Mild: 25`% - 49`% stenosis
-- Grade 3  Moderate: 50`% - 69`% stenosis
-- Grade 4  Severe: 70`% - 99`% stenosis
+- Grade 1  Minimal: Plaque with < 25% stenosis
+- Grade 2  Mild: 25% - 49% stenosis
+- Grade 3  Moderate: 50% - 69% stenosis
+- Grade 4  Severe: 70% - 99% stenosis
 - Grade 5  Occluded
 
 Remark: Some heart motion might mimic pseudo-stenotic lesions in Volume Rendering images, suggest curve MPR and source data correlation.
@@ -757,6 +821,93 @@ Remark: Some heart motion might mimic pseudo-stenotic lesions in Volume Renderin
   MyForm := "
 (
 No evidence of coronary stenosis or plaque by Coronary CT Angiography.
+)"
+  Paste(MyForm)
+}
+
+::cctnhi::
+{
+  MyForm := "
+(
+國健署低劑量CT肺癌篩檢 (without contrast):
+
+----
+LDCT Quality: [+] Good □Acceptable □Not Acceptable
+CTDIvol: _ mGy Total DLP: _ mGy*cm
+In comparison with the prior CT, Date (Y/M/D) _ □No prior chest CT available
+
+Lung nodule findings related to cancer screening
+詳細規範請參閱 Lung-RADS v2022
+
+□No lung nodule
+□Nodule with benign features.
+□Lung nodule(s) (<6mm) (選填 SE: , IM:   )
+□Juxtapleural nodule.
+□Lung nodule(s) (≧6mm or enlarging>1.5mm or new≧4mm): total number □1 □2 □3 □≥4, and described as follows:
+請依序描述最懷疑之肺結節(至多 3 個) (Describe the most suspicious 3 nodules in order)
+
+  □Lung nodule 1 (size, character and location)
+    Entire Nodule: ______mm
+    Density: □non-solid □part-solid (solid part: ___ mm) □solid
+    Lobe: (SE:___, IM:___) □RUL □RML □RLL □LUL □LLL
+    The nodule is □unchanged □enlarging (>1.5 mm) □newly found (≧4 mm) in follow-up □No prior chest CT comparison
+
+  □Lung nodule 2 (size, character and location)
+    Entire Nodule: ______mm
+    Density: □non-solid □part-solid (solid part: ___ mm) □solid
+    Lobe: (SE:___, IM:___) □RUL □RML □RLL □LUL □LLL
+    The nodule is □unchanged □enlarging (>1.5 mm) □newly found (≧4 mm) in follow-up □No prior chest CT comparison
+
+  □Lung nodule 3 (size, character and location)
+    Entire Nodule: ______mm
+    Density: □non-solid □part-solid (solid part: ___ mm) □solid
+    Lobe: (SE:___, IM:___) □RUL □RML □RLL □LUL □LLL
+    The nodule is □unchanged □enlarging (>1.5 mm) □newly found (≧4 mm) in follow-up □No prior chest CT comparison
+  □Lung nodules else □RUL □RML □RLL □LUL □LLL (SE:____________, IM:____________)
+
+□Airway nodule
+  □Subsegmental (Category 2)
+  □Segmental or more proximal
+    □Favors secretions (Category 2)
+    □At baseline (Category 4A)
+    □Stable or growing (Category 4B)
+
+□Atypical pulmonary cyst
+  □Category 3. Lobe: (SE: , IM: ) □RUL □RML □RLL □LUL □LLL
+  □Category 4A. Lobe: (SE: , IM: ) □RUL □RML □RLL □LUL □LLL
+  □Category 4B. Lobe: (SE: , IM: ) □RUL □RML □RLL □LUL □LLL
+
+□The pattern of lung nodules has a higher probability of metastases
+
+----
+Other Lung Findings (選填)
+□Emphysema □Bronchiectasis □Bronchitis/bronchiolitis □Tree-in-bud pattern
+□Centrilobular nodules □Old pulmonary TB □Interstitial lung disease (ILD) □Other____________
+
+Other Findings (選填)
+□Enlarged lymph nodes, location____________
+□Coronary artery calcification____________
+□Other significant abnormal chest findings ____________
+□Other significant abnormal abdominal or neck findings in this chest CT scan ____________
+
+----
+Overall recommendation
+Lung-RADS v2022 Category Descriptor
+  □Category 0: Incomplete.
+    □Prior chest CT examination being located for comparison.
+    □Part or all of lungs cannot be evaluated.
+    □Findings suggestive of an inflammatory or infectious process.
+    □Category 1: Negative.
+  □Category 2: Benign - Based on imaging features or indolent behavior.
+  □Category 3: Probably Benign - Based on imaging features or behavior.
+  □Category 4A: Suspicious.
+  □Category 4B: Very suspicious.
+  □Category 4X: Category 3 or 4 nodules with additional features or imaging findings that increase suspicion for lung cancer.
+
+----
+(選填)
+□Modifier S: May add to category 0-4 for clinically significant or potentially clinically significant findings unrelated to lung cancer.
+□請至門診就診
 )"
   Paste(MyForm)
 }

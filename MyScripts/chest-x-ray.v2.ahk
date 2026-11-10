@@ -16,7 +16,7 @@
 ::bcms::Borderline enlarged cardiac shadow, possibly supine position related.
 ::cm::cardiomegaly
 ::cm1::enlarged cardiac shadow.
-::cm2::Enlarged cardiac shadow. However, it could be due to supine.
+::cm2::Enlarged cardiac shadow. However, it could be due to the supine position.
 ;::np::No abnormal patch opacity in lung fields.
 ::nn::No nodular opacities (> 1cm) noted in both lung fields.
 ::cpok::Bilateral CP angles are clear and sharp.
@@ -96,7 +96,7 @@ Prominent lung markings at bilateral lowers, may be due to insufficient inspirat
     MyForm := "
 (
 Slightly enlarged cardiac shadow.
-Prominent lung markings at bilateral lowers, may be due to insufficient inspiration and/or supine. Clinical correlation is suggested.
+Prominent lung markings at bilateral lowers, may be due to insufficient inspiration and/or the supine position. Clinical correlation is suggested.
 
 )"
     Paste(MyForm)
@@ -105,12 +105,12 @@ Prominent lung markings at bilateral lowers, may be due to insufficient inspirat
 ::2::Increased linear opacity in both lower lungs, in favor of chronic inflammatory changes. {Enter}No cardiomegaly.+{Tab}No active lung lesion.
 ::3::No abnormal patch opacity in lung fields.{Enter}No cardiomegaly.{Enter}The bowel gas pattern is normal.+{Tab}Normal.
 ::4::Increased linear opacity and peribronchial thickening in both lung fields, r/o bronchiolitis.{Enter}No cardiomegaly.+{Tab}Suspicious bronchiolitis.
-::clnic::The condition of lung shows no obvious changes compared to the previous study.
+::clnic::The condition of the lung shows no significant change compared to the previous study.
 ::clat::Correlation with lateral view is suggested.
 ::ett0::Endotracheal tube in place.
 ::ett::Endotracheal tube in place, with the tip at an appropriate position.
 ::ett-c::Endotracheal tube in place. The tip is near the carina. Adjusting the depth is suggested.
-::ett-b::Endotracheal tube in place. The tip is in right main bronchus. Adjusting the depth is suggested.
+::ett-b::Endotracheal tube in place. The tip is in the right main bronchus. Adjusting the depth is suggested.
 ::ett-t::Endotracheal tube in place. The tip is in the upper trachea. Adjusting the depth is suggested.
 ::tr::Tracheostomy tube in place.
 ::ng::NG tube in place.
@@ -144,12 +144,12 @@ Prominent lung markings at bilateral lowers, may be due to insufficient inspirat
 ::spc0::Status post cholecystectomy.
 ::spc1::Status post cholecystectomy, with mild secondary dilatation of the biliary tract.
 ::sptae::Lipiodol retention in the liver, probably due to previous TACE.
-::p/tae::Lipiodol retention in liver.
+::p/tae::Lipiodol retention in the liver.
 ::ricvp::Central venous catheter in place via the right internal jugular vein, with the tip at the superior vena cava.
 ::licvp::Central venous catheter in place via the left internal jugular vein, with the tip at the superior vena cava.
 ::bicvp::Central venous catheters in place via both internal jugular veins, with the tips at the superior vena cava.
 ::rscvp::Central venous catheter in place via the right subclavian vein, with the tip at the superior vena cava.
-::lscvp::Central venous catheter in place via the right subclavian vein, with the tip at the superior vena cava.
+::lscvp::Central venous catheter in place via the left subclavian vein, with the tip at the superior vena cava.
 ::ridl::Double-lumen catheter in place via the right internal jugular vein.
 ::lidl::Double-lumen catheter in place via the left internal jugular vein.
 ::rsdl::Double-lumen catheter in place via the right subclavian vein.
@@ -186,8 +186,8 @@ Prominent lung markings at bilateral lowers, may be due to insufficient inspirat
 ::pe0::pulmonary edema
 ::mpe0::mild pulmonary edema
 ::clc::Increased interstitial markings in both lower lung fields, in favor of chronic inflammatory changes.
-::lla::Linear atelectasis of left lower lung.
-::rla::Linear atelectasis of right lower lung.
+::lla::Linear atelectasis of the left lower lung.
+::rla::Linear atelectasis of the right lower lung.
 ::bla::Linear atelectasis of bilateral lower lungs.
 ::plef::pleural effusion
 ::inef::interlobar effusion
@@ -267,7 +267,7 @@ Prominent lung markings at bilateral lowers, may be due to insufficient inspirat
 ::lrf1::Fractures of the left ribs.
 ::brf::Old fractures of the bilateral ribs.
 ::brf1::Fractures of the bilateral ribs.
-::rok::No obvious rib fracture.
+::rok::No displaced rib fracture.
 ::bcf::Old fractures of the bilateral clavicles.
 ::rcf::Old fracture of the right clavicle.
 ::lcf::Old fracture of the left clavicle.
@@ -277,9 +277,9 @@ Prominent lung markings at bilateral lowers, may be due to insufficient inspirat
 ::rdia0::Elevation of the right hemidiaphragm.
 ::ldia::Elevation of the left hemidiaphragm. Phrenic nerve palsy, diaphragmatic eventration, or intraabdominal process is considered.
 ::ldia0::Elevation of the left hemidiaphragm.
-::copd::Hyperinflation with flattening of both hemidiaphragms, suggestive the possibility of COPD.
+::copd::Hyperinflation with flattening of both hemidiaphragms, suggestive of the possibility of COPD.
 ::tta::Tortuous thoracic descending aorta.
-::mtta::Mild tortuous thoracic descending aorta.
+::mtta::Mildly tortuous thoracic descending aorta.
 ::bronchio::Increased linear opacity and peribronchial thickening over both lung fields, r/o bronchiolitis.
 ::ilo::increased linear opacity `
 ::ao::acinar opacity `
@@ -315,15 +315,15 @@ Prominent lung markings at bilateral lowers, may be due to insufficient inspirat
 ::llfg::A small calcified nodule over the left lung field, possibly a granuloma.
 ::lulfg::A small calcified nodule over the left upper lung field, possibly a granuloma.
 ::lllfg::A small calcified nodule over the left lower lung field, possibly a granuloma.
-::plbok::Post lung biopsy, and no obvious pneumothorax is noted.
+::plbok::Status post lung biopsy, without pneumothorax.
 ::aak::Atherosclerotic changes of the aortic knob.
 ::maak::Mild atherosclerotic changes of the aortic knob.
 ::rci::Anterior interposition of the colon to the liver reaching the under-surface of the right hemidiaphragm.
-::cpftl::Compression fracture of several lower T- and L-spine.
+::cpftl::Compression fractures of several lower thoracic and lumbar vertebrae.
 ::mw::Mediastinal widening, possibly due to tortuosity of the thoracic aorta. Clinical correlation is suggested.
-::rotb::Fibrilinear and nodular opacities in the right apical region, in favor of old TB.
-::lotb::Fibrilinear and nodular opacities in the left apical region, in favor of old TB.
-::botb::Fibrilinear and nodular opacities in both apical regions, in favor of old TB.
+::rotb::Fibrolinear and nodular opacities in the right apical region, in favor of old TB.
+::lotb::Fibrolinear and nodular opacities in the left apical region, in favor of old TB.
+::botb::Fibrolinear and nodular opacities in both apical regions, in favor of old TB.
 ::splm::status post left mastectomy.
 ::splpm::status post left partial mastectomy.
 ::sprm::status post right mastectomy.

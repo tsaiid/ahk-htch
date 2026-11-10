@@ -11,53 +11,58 @@
 ::l-ok1::No pulmonary nodule.
 ::l-ok2::The lung is unremarkable.
 ::b-ok::No osteolytic or osteoblastic lesion in the scanning range.
-::book::No obvious bowel wall thickening or significant bowel dilatation.
+::book::No abnormal bowel wall thickening or significant bowel dilatation.
 ::btok::No biliary tree dilatation.
 ::btok1::No CBD or IHD dilatation.
 ::gbok::No gallbladder distension or wall thickening.
 ::pdok::No pancreatic duct dilatation.{Enter}The main pancreatic duct shows no dilatation.
 ::giok::No abnormal bowel wall thickening.
+::adok::No definite adrenal mass or abnormal thickening of the adrenal limbs.
 ::acthcs::Several hepatic cysts, size up to  cm.{Left 4}
-::actgbs::A tiny gallbladder stone without obvious GB distention or wall thickening.
-::actgbss::Several gallbladder stones without obvious GB distention or wall thickening.
+::actgbs::A tiny gallbladder stone without gallbladder distention or wall thickening.
+::actgbss::Several gallbladder stones without gallbladder distention or wall thickening.
 ::actgbsg::High-attenuation material in the gallbladder with layering, in favor of GB sludge.
 ::actgba::Hourglass configuration of the gallbladder, suggestive of segmental adenomyomatosis.
 ::actncok::The liver, spleen, pancreas, adrenals, kidneys, and bowels are normal. Due to non-contrast study, the evaluation of solid organs is limited.
 ::bpleat::Bilateral pleural effusion with atelectasis of lower lungs.
-::actaps::A small wedge-shaped subcapsular arterial hyperenhancement at S_ of liver with isoenhancement in the portal venous and delay phases, in favor of AP shunting.
-::acthh::A -cm nodule in the S of liver, shows discontinuous, nodular, peripheral enhancement in arterial phase, and progressive peripheral enhancement with centripetal fill in in portal venous phase. Hepatic hemangioma is considered.
-::actrn::A -cm nodule in the S of liver, shows enhancement in arterial phase, and isodense in portal venous phase, in favor of regenerative nodule.
-::acthcc::A -cm nodule in the S of liver, shows arterial phase hyperenhancement, washout and enhancing capsule in portal venous phase, suggestive of hepatocellular carcinoma.
-::actraa::A __-cm fat-containing enhanced nodular lesion at the right adrenal gland, in favor of adenoma.
-::actlaa::A __-cm fat-containing enhanced nodular lesion at the left adrenal gland, in favor of adenoma.
+::actaps::A small wedge-shaped subcapsular arterial hyperenhancement at S_ of the liver with isoenhancement in the portal venous and delay phases, in favor of AP shunting.
+::acthh::A _ cm nodule in S of the liver demonstrates discontinuous, nodular, peripheral enhancement during the arterial phase, with progressive peripheral enhancement and centripetal fill-in during the portal venous phase. Findings are suggestive of a hepatic hemangioma.
+::actrn::A -cm nodule in the S of the liver, shows enhancement in the arterial phase, and isodense in the portal venous phase, in favor of regenerative nodule.
+::acthcc::A -cm nodule in the S of the liver, shows arterial phase hyperenhancement, washout and enhancing capsule in the portal venous phase, suggestive of hepatocellular carcinoma.
+::actraa::A  cm fat-containing enhanced nodular lesion in the right adrenal gland, in favor of adenoma.
+::actlaa::A  cm fat-containing enhanced nodular lesion in the left adrenal gland, in favor of adenoma.
 ::actckd::Atrophic changes of bilateral kidneys, in favor of chronic kidney disease.
 ::mactckd::Mild atrophic changes of bilateral kidneys, in favor of mild chronic kidney disease.
 ::actckd1::Atrophic changes of bilateral kidneys with some renal cysts, in favor of chronic kidney disease.
 ::mactckd1::Mild atrophic changes of bilateral kidneys with some renal cysts, in favor of chronic kidney disease.
 ::actrkaml::A __-cm fat-containing tumor at the right kidney, in favor of angiomyolipoma.
 ::actlkaml::A __-cm fat-containing tumor at the left kidney, in favor of angiomyolipoma.
-::actbkaml::Fat-containing tumors at the both kidneys, size up to __ cm, in favor of angiomyolipomas.
+::actbkaml::Fat-containing tumors in both kidneys, size up to __ cm, in favor of angiomyolipomas.
 ::actns::No evidence of high-attenuation stone along the urinary tracts.
 ::actbph::Enlarged prostate is noted, most likely benign prostatic hyperplasia.
+::actbphpsa::Enlarged prostate is noted, most likely benign prostatic hyperplasia. Clinical correlation and serum PSA level check are recommended.
 ::actbph1::Prostate enlargement with intravesical protrusion.
+::mactbph1::Mild prostate enlargement with intravesical protrusion.
 ::actbphc::Enlarged prostate with calcification is noted, most likely benign prostatic hyperplasia.
-::mactbph::Mild enlarged prostate is noted, most likely benign prostatic hyperplasia.
-::mactbphc::Mild enlarged prostate with calcification is noted, most likely benign prostatic hyperplasia.
+::mactbph::Mildly enlarged prostate is noted, most likely benign prostatic hyperplasia.
+::mactbphpsa::Mild prostate enlargement, favoring benign prostatic hyperplasia. Clinical correlation and serum PSA evaluation are suggested if clinically indicated.
+::mactbphc::Mildly enlarged prostate with calcification is noted, most likely benign prostatic hyperplasia.
+::actpcl::* Note: Evaluation of prostate gland and early-stage prostate cancer is limited on CT scan.
 ::aphe::arterial phase hyperenhancement
 ::actlok::No definite liver tumor. No abnormal enhanced parenchymal lesion.
-::actthad::Areas of liver parenchymal enhancement visible only during the hepatic artery phase, suggestive of transient hepatic attenuation differences (THAD).
+::actthad::Areas of liver parenchymal enhancement visualized only during the hepatic arterial phase, suggestive of transient hepatic attenuation differences (THAD).
 ::actfl::Diffusely decreased attenuation of the liver, suggestive of fatty liver.
 ::actmfl::Diffusely mildly decreased attenuation of the liver, suggestive of mild fatty liver.
 ::actc::Irregular surface of the liver with nodularity, indicating cirrhosis.
-::mactc::Mild irregular surface of the liver with nodularity, suspicious mild cirrhosis.
+::mactc::Mildly irregular surface of the liver with nodularity, suspicious for mild cirrhosis.
 ::actac::Wall thickening of the urinary bladder with perivesical fat stranding, suggestive of acute cystitis.
 ::mactac::Mild wall thickening of the urinary bladder with perivesical fat stranding, suggestive of acute cystitis.
-::actcc::Wall thickening of the urinary bladder with trabeculation without perivesical fat stranding, suggestive of chronic cystitis.
-::mactcc::mild wall thickening of the urinary bladder without perivesical fat stranding, suggestive of mild chronic cystitis.
+::actcc::Wall thickening of the urinary bladder, suspicious for chronic cystitis.
+::mactcc::mild wall thickening of the urinary bladder, suspicious for mild chronic cystitis.
 ::actccdd::Wall thickening of the urinary bladder without perivesical fat stranding. DDx: chronic cystitis, insufficient UB distention related changes.
 ::mactccdd::Mild wall thickening of the urinary bladder. DDx: chronic cystitis, insufficient UB distention related changes.
 ::nifa::No evidence of intraperitoneal free air.
-::na::No obvious ascites.
+::na::No significant ascites.
 ::actuf::A calcified nodule in the uterus, in favor of degenerated uterine fibroid.
 ::actufs::Several calcified nodules in the uterus, in favor of degenerated uterine fibroids.
 ::sph0::Status post hysterectomy.
@@ -77,8 +82,9 @@
 ::pcfs::pericholecystic fat stranding
 ::lkuok::The left kidney and ureter are unremarkable.
 ::rkuok::The right kidney and ureter are unremarkable.
-::ubok::No obvious urinary bladder wall thickening or perivesical fat stranding.
+::ubok::No urinary bladder wall thickening or perivesical fat stranding.
 ::guok::No urinary obstruction. No definite high-attenuation urinary tract stone.
+::guok1::No urinary tract obstruction. No definite hyperattenuating urinary tract calculus. No filling defect on CT urography.
 ::ubgb::Gas bubbles in the urinary bladder, probably due to recent examination. Clinical correlation is suggested.
 ::appok::the appendix is normal.
 ::appok1::No evidence of acute appendicitis.
@@ -86,6 +92,8 @@
 ::ntti::No definite traumatic intrathoracic injury.
 ::ntai::No definite traumatic intraabdominal injury.
 ::nttai::No definite traumatic intrathoracic or intraabdominal injury.
+::ntif::No definite intrathoracic infectious focus.
+::naif::No definite intraabdominal infectious focus.
 ::naaf::No definite acute intraabdominal findings.
 ::natf::No definite acute intrathoracic findings.
 ::nataf::No definite acute intrathoracic or intraabdominal findings.
@@ -95,21 +103,28 @@
 ::cdivs::colonic diverticulosis
 ::ffs::focal fatty sparing
 ::actluo::Mild left perirenal fat stranding, probably due to urinary obstruction. DDx: superimposed pyelonephritis.
+::actluo2::Mild left perirenal fat stranding and urinomas, probably due to urinary obstruction and/or forniceal rupture. DDx: superimposed pyelonephritis.
 ::actruo::Mild right perirenal fat stranding, probably due to urinary obstruction. DDx: superimposed pyelonephritis.
+::actruo2::Mild right perirenal fat stranding and urinomas, probably due to urinary obstruction and/or forniceal rupture. DDx: superimposed pyelonephritis.
+::laok::No evidence of liver or adrenal metastasis.
 ::acttrok:: {
   MyForm := "
 (
 No liver, spleen, or kidney traumatic injury.
+No evidence of intraperitoneal free air.
+No significant ascites.
 The gallbladder, spleen, pancreas, adrenals, urinary bladder, and bowels are unremarkable.
+The thoracic cage and bones appear intact.
 )"
   Paste(MyForm)
 }
 ::livok:: {
   MyForm := "
 (
-- No abnormal enhanced lesion or washout pattern noted.
-- No definite abnormal enhanced hepatic mass lesion with washout pattern noted.
-- No definite abnormal enhanced hepatic mass lesion with/without washout pattern noted.
+No definite hepatic space-occupying lesion demonstrating arterial-phase hyperenhancement or washout.
+No abnormal enhanced lesion or washout pattern.
+No definite abnormal enhanced hepatic mass lesion with washout pattern.
+No definite abnormal enhanced hepatic mass lesion with/without washout pattern.
 )"
   Paste(MyForm)
 }
@@ -158,7 +173,7 @@ GYN organ: Unremarkable
 
 No definite retroperitoneal lymphadenopathy identified.
 No evidence of intraperitoneal free air.
-No obvious ascites.
+No significant ascites.
 )"
   Paste(MyForm)
 }
@@ -180,7 +195,7 @@ GYN organ: Unremarkable
 
 No definite retroperitoneal lymphadenopathy identified.
 No evidence of intraperitoneal free air.
-No obvious ascites.
+No significant ascites.
 
 *PS. The evaluation is limited especially for solid organs and vascular structure due to absence of contrast enhancement.
 )"
@@ -215,7 +230,7 @@ Urinary bladder: Unremarkable
 
 No definite retroperitoneal lymphadenopathy identified.
 No evidence of intraperitoneal free air.
-No obvious ascites.
+No significant ascites.
 
 Lower thorax: Unremarkable
 )"
@@ -250,7 +265,7 @@ Urinary bladder: Unremarkable
 
 No definite retroperitoneal or mesenteric lymphadenopathy identified.
 No evidence of intraperitoneal free air.
-No obvious ascites.
+No significant ascites.
 
 Lower thorax: Unremarkable
 
@@ -282,8 +297,8 @@ REMARKS:
 ::actok2:: {
   MyForm := "
 (
-- No evidence of intraperitoneal free air.
-- No obvious ascites.
+No evidence of intraperitoneal free air.
+No significant ascites.
 )"
   Paste(MyForm)
 }
@@ -296,9 +311,10 @@ REMARKS:
   MyForm := "
 (
 No retroperitoneal or mesenteric lymphadenopathy.
-No pelvic, retroperitoneal or mesenteric lymphadenopathy.
+No pelvic, retroperitoneal, or mesenteric lymphadenopathy.
 No pelvic or retroperitoneal lymphadenopathy.
-No obvious intraabdominal lymphadenopathy.
+No significant intraabdominal lymphadenopathy.
+No pelvic lymphadenopathy.
 )"
   Paste(MyForm)
 }
@@ -340,7 +356,7 @@ A fecalith is noted at the middle portion of the appendix, with dilatation of th
 
 Small amount of ascites in the recto-vesical pouch.
 Small amount of ascites in the cul-de-sac.
-No obvious ascites is noted.
+No significant ascites.
 No evidence of intraperitoneal free air.
 
 The liver, gallbladder, spleen, pancreas, adrenals, kidneys, and urinary bladder are normal.
@@ -394,16 +410,15 @@ Contrast medium: Yes, 80 ml, 1-2 ml/sec, with 100 seconds scanning delay.
 Previous abdominal CT: none.
 
 FINDINGS:
-Presence of intraperitoneal free air with turbid ascites, predominantly at the upper abdomen, suggestive of hollow organ perforation.
+Large volume of intraperitoneal free air with turbid ascites, predominantly in the upper abdomen, suggestive of hollow viscus perforation.
 Abnormal wall thickness over the duodenal bulb region with loss of wall integrity. Perforated peptic ulcer is suspected.
 
-The liver, spleen, pancreas, adrenals, kidneys, and bowels are unremarkable.
-The lower abdomen and pelvis are unremarkable.
+The liver, spleen, pancreas, adrenals, and kidneys are unremarkable.
 No retroperitoneal or mesenteric lymphadenopathy.
 The lungs covered in the scanning range are unremarkable.
 
 IMPRESSION:
-Hollow organ perforation, suspicious perforated peptic ulcer.
+Hollow organ perforation. Perforated peptic ulcer may be suspected.
 )"
   Paste(MyForm)
 }
@@ -418,9 +433,9 @@ Scanning range: lower abdomen to symphysis, 5-mm contiguous scan.
 Previous abdominal CT: none.
 
 FINDINGS:
-- Mild wall thickening and submucosal edema in the the ascending colon, with mesocolic fat stranding, most likely diverticulitis.
+- Mild wall thickening and submucosal edema in the ascending colon, with mesocolic fat stranding, most likely diverticulitis.
 - Small amount of ascites in the pelvis and right paracolic gutter.
-- No obvious ascites.
+- No significant ascites.
 - No evidence of intraperitoneal free air.
 
 - The appendix is normal.
@@ -445,8 +460,8 @@ Scanning range: lower abdomen to symphysis, 5-mm contiguous scan.
 Previous abdominal CT: none.
 
 FINDINGS:
-- Several small diverticula noted in the the ascending and sigmoid colon.
-- Wall thickening and edema in the the ascending colon, with pericolic fat stranding, most likely diverticulitis.
+- Several small diverticula noted in the ascending and sigmoid colon.
+- Wall thickening and edema in the ascending colon, with pericolic fat stranding, most likely diverticulitis.
 - Small extraluminal free air is noted nearby, suggestive of perforation.
 - Several regional reactive lymph nodes.
 - Small amount of ascites in the right paracolic gutter.
@@ -482,11 +497,11 @@ Contrast medium: Yes, 80 ml, 1-2 ml/sec, with 100 seconds scanning delay.
 Previous abdominal CT: none.
 
 FINDINGS:
-A small fat-density ovoid structure adjacent to the descending colon (Se/Im: 4/55, 6/23), with a thin high-density rim, surrounding inflammatory fat stranding, and thickening of the adjacent peritoneum. The adjacent colonic wall thickening is minimal and the amount of fat inflammation is out of proportional to colonic wall thickening. Epiploic appendagitis is more favored than diverticulitis.
+A small fat-density ovoid structure adjacent to the descending colon (Se/Im: 4/55, 6/23), with a thin high-density rim, surrounding inflammatory fat stranding, and thickening of the adjacent peritoneum. The adjacent colonic wall thickening is minimal and the amount of fat inflammation is out of proportion to colonic wall thickening. Epiploic appendagitis is more favored than diverticulitis.
 
 The appendix is normal.
 No evidence of intraperitoneal free air.
-No obvious ascites.
+No significant ascites.
 
 The liver, gallbladder, spleen, pancreas, adrenals, and kidneys are unremarkable.
 No retroperitoneal or mesenteric lymphadenopathy.
@@ -669,8 +684,8 @@ Pancreas:
   > 4: pancreatic or peripancreatic fluid collection or peripancreatic fat necrosis
 - Pancreatic necrosis
   > 0: none
-  > 2: 30`% or less
-  > 4: more than 30`%
+  > 2: 30% or less
+  > 4: more than 30%
 - Extrapancreatic complications
   > 0: none
   > 2: one or more of pleural effusion, ascites, vascular complications, parenchymal complications and/or gastrointestinal involvement
@@ -779,7 +794,7 @@ Uterus: Unremarkable
 Ovaries: Unremarkable
 
 No pelvic, retroperitoneal or mesenteric lymphadenopathy.
-No obvious ascites.
+No significant ascites.
 
 Kidneys: Unremarkable
 Ureters: Unremarkable
@@ -826,7 +841,7 @@ GI tract:
 
 No pelvic, retroperitoneal or mesenteric lymphadenopathy.
 No evidence of intraperitoneal free air.
-No obvious ascites.
+No significant ascites.
 
 Lower thorax: Unremarkable
 Skeleton: No osteolytic nor osteoblastic lesion
@@ -895,9 +910,9 @@ FINDINGS:
 
 No definite bleeder or contrast extravasation identified in this study.
 No other apparent focal lesion noted at liver, spleen, pancreas and kidneys.
-The lower abdomen showed no significant unusual.
-No definite bowel dilatation or wall thickening noted.
-No intraabdominal lymphadenopathy noted.
+The lower abdomen showed no significant abnormality.
+No definite bowel dilatation or wall thickening.
+No intraabdominal lymphadenopathy.
 
 IMPRESSION:
 No active bleeder found.
@@ -998,7 +1013,7 @@ FINDINGS:
 %gender_specific_str%
 
 No evidence of intraperitoneal free air.
-No obvious ascites.
+No significant ascites.
 
 - Lymph node: No mediastinal, retroperitoneal, or mesenteric lymphadenopathy.
 
@@ -1061,7 +1076,7 @@ Scanning range: Liver to symphysis, 5-mm contiguous scan.
 Previous abdominal CT: none.
 
 FINDINGS:
-Urinary bladder: No obvious urinary bladder wall thickening or perivesical fat stranding. Gas bubbles in the urinary bladder, probably due to recent procedure. Clinical correlation is suggested. (* insufficient distention may limit the evaluation)
+Urinary bladder: No urinary bladder wall thickening or perivesical fat stranding. Gas bubbles in the urinary bladder, probably due to recent procedure. Clinical correlation is suggested. (* insufficient distention may limit the evaluation)
 
 Kidneys and ureters: Unremarkable
 
@@ -1078,7 +1093,7 @@ No definite pelvic, retroperitoneal, or mesenteric lymphadenopathy identified.
 Lower thorax: Unremarkable
 
 IMPRESSION:
-No obvious urinary bladder wall thickening or perivesical fat stranding. Gas bubbles in the urinary bladder, probably due to recent procedure. Clinical correlation is suggested.
+No urinary bladder wall thickening or perivesical fat stranding. Gas bubbles in the urinary bladder, probably due to recent procedure. Clinical correlation is suggested.
 )"
   Paste(MyForm)
 }
@@ -1131,8 +1146,8 @@ Bony metastases: None in the scanning range.
 
 M0: No distant metastasis (in this study).
 M1a: Metastasis confined to one site or organ is identified without peritoneal metastasis.
-M1b: Metastases to two or more site or organ is identified without peritoneal metastasis.
-M1c: Metastases to the peritoneal surface is identified alone or with other site or organ metastasis.
+M1b: Metastases to two or more sites or organs are identified without peritoneal metastasis.
+M1c: Metastases to the peritoneal surface are identified alone or with other site or organ metastases.
 
 NOTE: in case of mucinous-type of rectal tumor the involved lymph nodes may have fluid-like density.
 
@@ -1200,8 +1215,8 @@ Others:
 
 M0: No distant metastasis (in this study).
 M1a: Metastasis confined to one site or organ is identified without peritoneal metastasis.
-M1b: Metastases to two or more site or organ is identified without peritoneal metastasis.
-M1c: Metastases to the peritoneal surface is identified alone or with other site or organ metastasis.
+M1b: Metastases to two or more sites or organs are identified without peritoneal metastasis.
+M1c: Metastases to the peritoneal surface are identified alone or with other site or organ metastases.
 
 NOTE: in case of mucinous-type of rectal tumor the involved lymph nodes may have fluid-like density.
 )"
@@ -1237,7 +1252,7 @@ Contrast medium: Yes, 80 ml, 1-2 ml/sec, with 100 seconds scanning delay.
 Previous abdominal CT: none.
 
 FINDINGS:
-Enhanced mass lesion at the pyloric ring, causing gastric outlet obstruction and distended stomach with much residual food material. Gastric cancer is suspected. The tumor seems invade to the serosa [T4a].
+Enhanced mass lesion at the pyloric ring, causing gastric outlet obstruction and distended stomach with much residual food material. Gastric cancer is suspected. The tumor seems to invade the serosa [T4a].
 
 Numerous enlarged lymph nodes at the suprapyloric (5), infrapyloric (6), left gastric (7), common hepatic (8), celiac (9), retropancreatic (13), mesenteric root (14) stations, suggestive of regional metastatic lymphadenopathy. [N3b]
 
@@ -1267,7 +1282,7 @@ A relatively hypo-enhanced tubular lesion near the T9 right neuroforamen, probab
 
 The gallbladder, pancreas, kidneys, and urinary bladder are unremarkable.
 No evidence of intraperitoneal free air.
-No obvious ascites.
+No significant ascites.
 
 IMPRESSION:
 Gastric cancer, prepyloric antrum, with regional lymphadenopathy, causing gastric outlet obstruction.
@@ -1346,7 +1361,7 @@ FINDINGS:
 %gender_specific_str%
 
 No evidence of intraperitoneal free air.
-No obvious ascites.
+No significant ascites.
 
 - Lymph node: No mediastinal, retroperitoneal, or mesenteric lymphadenopathy.
 
@@ -1371,11 +1386,11 @@ Previous abdominal CT: none.
 FINDINGS:
 Diffuse gallbladder wall thickening and edematous changes with gallbladder stones, GB distention, and pericholecystic fat stranding are noted. Acute cholecystitis is considered.
 Diffuse gallbladder wall thickening and edematous changes with gallbladder stones and GB distention are noted. Acute cholecystitis is considered.
-Diffuse gallbladder wall thickening and edematous changes with pericholecystic fluid accumulation, and tiny gallbladder stones are noted. Even though, no obvious GB distention. Acute cholecystitis is still considered.
+Diffuse gallbladder wall thickening and edematous changes with pericholecystic fluid accumulation, and tiny gallbladder stones are noted. Despite the absence of GB distention, acute cholecystitis is still considered.
 Presence of a high-attenuation gallstone at the orifice of cystic duct, with distended gallbladder, diffuse gallbladder wall thickening and edematous changes, c/w acute calculus cholecystitis.
-Mildly distended gallbladder, with mild GB wall thickening. No obvious pericholecystic fluid accumulation. However, early changes of acute cholecystitis cannot be excluded. Correlate with sonography and Murphy sign is suggested.
+Mildly distended gallbladder, with mild GB wall thickening. No pericholecystic fluid accumulation. However, early changes of acute cholecystitis cannot be excluded. Correlation with sonography and Murphy's sign is suggested.
 
-Several gallbladder stones and mild GB distention. However, no obvious GB wall thickening or pericholecystic fat stranding. Acute cholecystitis may be less likely. Clinical and sonographic correlation is suggested.
+Several gallbladder stones and mild GB distention. However, without GB wall thickening or pericholecystic fat stranding, acute cholecystitis may be less likely. Clinical and sonographic correlation is suggested.
 
 No CBD or IHD dilatation.
 
@@ -1387,7 +1402,7 @@ The lungs covered in the scanning range are unremarkable.
 IMPRESSION:
 C/W acute cholecystitis.
 C/W acute calculus cholecystitis.
-Early changes of acute cholecystitis is suspected. Suggest correlate with sonography and Murphy sign.
+Early changes of acute cholecystitis are suspected. Suggest correlation with sonography and Murphy's sign.
 )"
   Paste(MyForm)
 }
@@ -1404,7 +1419,7 @@ Previous abdominal CT: none.
 FINDINGS:
 Large inspissated fecal material in the rectum and distal sigmoid colon, with bowel wall edema and perirectal fat stranding. Stercoral colitis is considered.
 No evidence of intraperitoneal free air.
-No obvious ascites.
+No significant ascites.
 
 status post Foley catheterization. The urinary bladder is not distended enough, and the evaluation is limited.
 
@@ -1434,7 +1449,7 @@ A clear cut transition level near the splenic flexure (boundary of SMA territory
 
 The appendix is normal.
 No evidence of intraperitoneal free air.
-No obvious ascites.
+No significant ascites.
 
 The liver, spleen, pancreas, adrenals, kidneys are unremarkable.
 No retroperitoneal or mesenteric lymphadenopathy.
@@ -1468,7 +1483,7 @@ The major mesenteric vessels are patent, without filling defect.
 DDx: Portal hypertensive gastropathy / enteropathy / colopathy, acute gastroenterocolitis, pseudomembranous colitis (may not involve stomach and small intestine). Clinical correlation is suggested.
 
 A few tiny gallbladder stones.
-Mild GB wall edema is noted, without GB distention, probably also secondary to the portal hypertension.
+Mild GB wall edema is noted, without GB distention, probably also secondary to portal hypertension.
 
 The adrenals and kidneys are unremarkable.
 s/p Foley catheterization.
@@ -1497,7 +1512,7 @@ FINDINGS:
 Dilated small bowel loops with air-fluid levels. No definite transitional zone is identified. Paralytic ileus is suspected.
 No bowel wall thickening.
 No evidence of intraperitoneal free air.
-No obvious ascites.
+No significant ascites.
 
 Dilated small bowel loops with small bowel feces sign, suggestive of bowel obstruction, with a transitional zone at the distal ileum (Se/Im: 4/72, 6/28), and collapse of its distal portion and the colon. Probably due to adhesion. No mass like lesion is noted.
 

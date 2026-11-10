@@ -5,11 +5,11 @@
 ; Comparisons
 ; need other string and date lib
 ::nic:: {
-  StringWithPrevExamDate("No obvious interval changes compared to the previous study")
+  StringWithPrevExamDate("No significant interval change compared to the previous study")
 }
 
 ::nip:: {
-  StringWithPrevExamDate("No obvious improvement compared to the previous study")
+  StringWithPrevExamDate("No significant improvement compared to the previous study")
 }
 
 ::mip:: {

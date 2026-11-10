@@ -12,7 +12,7 @@
 ;; Sono, Upper Abdomen
 ::slcpd::Heterogeneous hyperechoic liver parenchyma echo pattern, suspicious chronic parenchymal disease.
 ::slfl::Coarsening and hyperechoic echo pattern of the liver parenchyma, suggestive of fatty liver changes.
-::slfll::Coarsening and hyperechoic liver parenchyma echo pattern without focal lesion noted, in favor of fatty liver changes. It may mask lesions, especially in the deep region.
+::slfll::Coarsening and hyperechoic liver parenchyma echo pattern, without focal lesion noted, is in favor of fatty liver changes. It may mask lesions, especially in the deep region.
 ::slmfl::Slightly increased hyperechoic changes in the liver parenchyma, suggestive of mild fatty liver changes.
 ::slc::Irregular surface of the liver and coarsening changes of the parenchyma, indicating cirrhosis.
 ::slmc::Mildly irregular surface of the liver and coarsening changes of the parenchyma, indicating mild cirrhosis.
@@ -23,21 +23,21 @@
 ::sgbnnpo::Probably due to non-NPO status, the gallbladder is not distended enough for evaluation. However, no focal lesion is noted.
 ::subnf::The urinary bladder is not distended enough for evaluation. However, no focal lesion is noted.
 ::sgbsp::Absence of gallbladder, probably post cholecystectomy.
-::sgbp::A tiny echogenic polyp, __ cm in size, in the gallbladder noted. Cholesterol polyp is considered.
-::sgbps::Several tiny echogenic polyps, size up to __ cm, in the gallbladder noted. Cholesterol polyps are considered.
-::sgbs::A __-cm echogenic lesion in GB with acoustic shadow, in favor gallstone.
-::sgbss::Several echogenic lesions in GB with acoustic shadow, in favor gallstones.
-::sgbss1::Several echogenic lesions in GB with postural changes and acoustic shadow, in favor gallstones.
+::sgbp::A tiny echogenic polyp, __ cm in size, in the gallbladder. Cholesterol polyp is considered.
+::sgbps::Several tiny echogenic polyps, size up to __ cm, in the gallbladder. Cholesterol polyps are considered.
+::sgbs::A __-cm echogenic lesion in GB with acoustic shadow, in favor of a gallstone.
+::sgbss::Several echogenic lesions in GB with acoustic shadow, in favor of gallstones.
+::sgbss1::Several echogenic lesions in GB with postural changes and acoustic shadow, in favor of gallstones.
 ::sgba::Comet tail artifacts from the gallbladder wall, adenomyomatosis should be considered.
-::sgba1::Presence of tiny GB adenomyomatoses with RA (Rokitanski-Aschoff) sinus noted.
+::sgba1::Presence of tiny GB adenomyomatosis with RA (Rokitansky-Aschoff) sinuses.
 ::sgbcc::Mild gallbladder wall thickening, suspicious chronic cholecystitis.
-::srbcs::Several renal cysts in the both kidneys, size up to  cm.{Left 4}
+::srbcs::Several renal cysts in both kidneys, size up to  cm.{Left 4}
 ::srrc::A __-cm renal cyst in the right kidney.
 ::srrcs::Several renal cysts in the right kidney, size up to  cm.{Left 4}
 ::srlc::A __-cm renal cyst in the left kidney.
 ::srlcs::Several renal cysts in the left kidney, size up to  cm.{Left 4}
 ::spb::The pancreas can not be well evaluated because of gas blockage.
-::spaok::The visualized portion of pancreas is normal.
+::spaok::The visualized portion of the pancreas is normal.
 ::bsm::Borderline splenomegaly, size about  cm.{Left 4}
 ::rllv::right lobe of liver
 ::lllv::left lobe of liver
@@ -49,10 +49,10 @@
 
 ;; Sono, Lower Abdomen
 ::s-foley::status post Foley catheterization. The urinary bladder is not distended enough for evaluation.
-::sruus::A tiny stone at upper third of right ureter, with mild hydronephrosis.
-::srlus::A tiny stone at lower third of right ureter, with mild hydronephrosis and hydroureter.
-::sluus::A tiny stone at upper third of left ureter, with mild hydronephrosis.
-::sllus::A tiny stone at lower third of left ureter, with mild hydronephrosis and hydroureter.
+::sruus::A tiny stone at the upper third of the right ureter, with mild hydronephrosis.
+::srlus::A tiny stone at the lower third of the right ureter, with mild hydronephrosis and hydroureter.
+::sluus::A tiny stone at the upper third of the left ureter, with mild hydronephrosis.
+::sllus::A tiny stone at the lower third of the left ureter, with mild hydronephrosis and hydroureter.
 ::sscrok::The size and vascularity of bilateral testes and epididymides are within normal limits.
 
 ;; Sono, Thyroid
@@ -67,11 +67,12 @@
 ::btl::both thyroid lobes
 ::ltn::left thyroid nodule
 ::rtn::right thyroid nodule
+::btn::bilateral thyroid nodules
 ::stwnl::The sizes of thyroid gland are within normal limits.
 ::stlok::The left thyroid lobe is unremarkable.
 ::strok::The right thyroid lobe is unremarkable.
-::stblnok::Bilateral neck lymph nodes noted with hila, favored benign lymph nodes.
-::stblnok1::No definite bulky neck lymphadenopathy is noted.
+::stblnok::Bilateral neck lymph nodes with preserved hila are noted, favoring benign lymph nodes.
+::stblnok1::No definite bulky neck lymphadenopathy.
 ::stbrln::Some slightly enlarged lymph nodes with preserved hilar structure at both neck regions are noted, probably reactive lymph nodes.
 ::tr1::TI-RADS TR1, benign.
 ::tr2::TI-RADS TR2, not suspicious.
@@ -90,7 +91,7 @@
 ::stgd::{
     MyForm := "
 (
-The thyroid gland is diffusely enlarged and shows hyperechoic, heterogeneous echotexture, and demonstrate a thyroid inferno pattern on color Doppler. Graves disease may be suspected. DDx: other acute or subacute thyroiditis. Suggest correlate with Lab data.
+The thyroid gland is diffusely enlarged and shows hyperechoic, heterogeneous echotexture, and demonstrates a thyroid inferno pattern on color Doppler. Graves disease may be suspected. DDx: other acute or subacute thyroiditis. Suggest correlate with Lab data.
 )"
     Paste(MyForm)
 }
@@ -98,7 +99,7 @@ The thyroid gland is diffusely enlarged and shows hyperechoic, heterogeneous ech
 ::stgd1::{
     MyForm := "
 (
-The thyroid gland is diffusely enlarged and shows hyperechoic, heterogeneous echotexture, and demonstrate an increased vascularity pattern on color Doppler, suspicious thyroiditis.
+The thyroid gland is diffusely enlarged and shows hyperechoic, heterogeneous echotexture, and demonstrates an increased vascularity pattern on color Doppler, suspicious thyroiditis.
 )"
     Paste(MyForm)
 }
@@ -106,7 +107,7 @@ The thyroid gland is diffusely enlarged and shows hyperechoic, heterogeneous ech
 ::stgd2::{
     MyForm := "
 (
-The thyroid gland is diffusely enlarged and shows hyperechoic, heterogeneous echotexture. No obvious increased vascularity pattern is noted on color Doppler. Subacute thyroiditis may be suspected.
+The thyroid gland is diffusely enlarged and shows hyperechoic, heterogeneous echotexture. No abnormally increased vascularity on color Doppler. Subacute thyroiditis may be suspected.
 )"
     Paste(MyForm)
 }
@@ -114,7 +115,7 @@ The thyroid gland is diffusely enlarged and shows hyperechoic, heterogeneous ech
 ::stgd3::{
     MyForm := "
 (
-The thyroid gland size is within normal limits and shows hyperechoic, heterogeneous echotexture. No obvious increased vascularity pattern is noted on color Doppler. Chronic thyroiditis may be suspected.
+The thyroid gland size is within normal limits and shows hyperechoic, heterogeneous echotexture. No abnormally increased vascularity on color Doppler. Chronic thyroiditis may be suspected.
 )"
     Paste(MyForm)
 }
@@ -133,8 +134,8 @@ Small bilateral neck lymph nodes noted with hila, favored benign lymph nodes.
     MyForm := "
 (
 - The thyroid gland is slightly diffusely enlarged without focal lesion.
-- There is no abnormal flow pattern noted on color Doppler.
-- No definite bulky neck lymphadenopathy is noted.
+- There is no abnormal flow pattern on color Doppler.
+- No definite bulky neck lymphadenopathy.
 )"
     Paste(MyForm)
 }
@@ -143,10 +144,10 @@ Small bilateral neck lymph nodes noted with hila, favored benign lymph nodes.
     MyForm := "
 (
 - The thyroid gland is slightly diffusely enlarged.
-- There is no abnormal flow pattern noted on color Doppler.
+- There is no abnormal flow pattern on color Doppler.
 - Several tiny cystic, spongiform, and solid nodules in both thyroid lobes.
 - A few small cystic or spongiform nodules in both thyroid lobes, probably benign.
-- No definite bulky neck lymphadenopathy is noted.
+- No definite bulky neck lymphadenopathy.
 )"
     Paste(MyForm)
 }
@@ -155,8 +156,8 @@ Small bilateral neck lymph nodes noted with hila, favored benign lymph nodes.
     MyForm := "
 (
 - The thyroid sizes are within normal limits without focal lesion.
-- There is no abnormal flow pattern noted on color Doppler.
-- No definite bulky neck lymphadenopathy is noted.
+- There is no abnormal flow pattern on color Doppler.
+- No definite bulky neck lymphadenopathy.
 )"
     Paste(MyForm)
 }
@@ -165,9 +166,9 @@ Small bilateral neck lymph nodes noted with hila, favored benign lymph nodes.
     MyForm := "
 (
 - The thyroid sizes are within normal limits.
-- There is no abnormal flow pattern noted on color Doppler.
+- There is no abnormal flow pattern on color Doppler.
 - Several tiny cystic, spongiform, and solid nodules in both thyroid lobes. Because the sizes do not reach the lower limits in each TI-RADS category, FNA may not be recommended.
-- No definite bulky neck lymphadenopathy is noted.
+- No definite bulky neck lymphadenopathy.
 )"
     Paste(MyForm)
 }
@@ -193,14 +194,14 @@ Small bilateral neck lymph nodes noted with hila, favored benign lymph nodes.
 ::sbrlnok::Some right axillary lymph nodes with preserved hilar structure and no cortical thickening, in favor of benign nature.
 ::sbllnok::Some left axillary lymph nodes with preserved hilar structure and no cortical thickening, in favor of benign nature.
 ::sbblnok::Some bilateral axillary lymph nodes with preserved hilar structure and no cortical thickening, in favor of benign nature.
-::sbblnok1::No bulky hilum absent lymph node noted in both axillae.
+::sbblnok1::No bulky, hilum-absent lymph nodes are noted in both axillae.
 ::sbblnok2::No definite lymphadenopathy in both axillae.
 ::sbrs::A scar at the right breast.
 ::sbls::A scar at the left breast.
-::sbrc::Presence of an anechoic cyst at __ o'clock position of right breast, measuring about __ cm in size. Fibrocystic disease considered.
-::sblc::Presence of an anechoic cyst at __ o'clock position of left breast, measuring about __ cm in size. Fibrocystic disease considered.
-::sbrcs::Presence of several small anechoic cysts at right breast noted. Fibrocystic changes considered.
-::sblcs::Presence of several small anechoic cysts at left breast noted. Fibrocystic changes considered.
+::sbrc::Presence of an anechoic cyst at __ o'clock position of the right breast, measuring about __ cm in size. Fibrocystic disease considered.
+::sblc::Presence of an anechoic cyst at __ o'clock position of the left breast, measuring about __ cm in size. Fibrocystic disease considered.
+::sbrcs::Presence of several small anechoic cysts at the right breast noted. Fibrocystic changes considered.
+::sblcs::Presence of several small anechoic cysts at the left breast noted. Fibrocystic changes considered.
 ;::sbbcs::Presence of several small anechoic cysts at bilateral breasts noted. Fibrocystic changes considered.
 ::sbrfc::Small fibrocysts in the right breast.
 ::sblfc::Small fibrocysts in the left breast.
@@ -226,8 +227,8 @@ Small bilateral neck lymph nodes noted with hila, favored benign lymph nodes.
 ::sbb4c::ACR-BIRADS 5th ed., category 4c. Highly suspicious malignancy. Biopsy recommended.
 ::sbb5::ACR-BIRADS 5th ed., category 5. Highly suspicious malignancy. Biopsy recommended.
 ::sbb6::ACR-BIRADS 5th ed., category 6: Known biopsy-proven malignancy.
-::sbrfa::Presence of an oval, smooth-bordered, hypoechoic nodular lesion, measuring about __ x __ cm in size, at __ o'clock position of right breast, __ cm from the nipple. More likely benign nature such as fibroadenoma.
-::sblfa::Presence of an oval, smooth-bordered, hypoechoic nodular lesion, measuring about __ x __ cm in size, at __ o'clock position of left breast, __ cm from the nipple. More likely benign nature such as fibroadenoma.
+::sbrfa::Presence of an oval, smooth-bordered, hypoechoic nodular lesion, measuring about __ x __ cm in size, at __ o'clock position of the right breast, __ cm from the nipple. More likely benign nature such as fibroadenoma.
+::sblfa::Presence of an oval, smooth-bordered, hypoechoic nodular lesion, measuring about __ x __ cm in size, at __ o'clock position of the left breast, __ cm from the nipple. More likely benign nature such as fibroadenoma.
 ::sbrfas::Presence of several oval, smooth-bordered, hypoechoic nodular lesions, up to __ cm in size, in the right breast. More likely benign nature such as fibroadenomas.
 ::sblfas::Presence of several oval, smooth-bordered, hypoechoic nodular lesions, up to __ cm in size, in the left breast. More likely benign nature such as fibroadenomas.
 ::sbbfas::Presence of several oval, smooth-bordered, hypoechoic nodular lesions, up to __ cm in size, in both breasts. More likely benign nature such as fibroadenomas.
@@ -237,13 +238,13 @@ Small bilateral neck lymph nodes noted with hila, favored benign lymph nodes.
 ::sblok1::No focal lesion in the left breast.
 ::sbrok1::No focal lesion in the right breast.
 ::sbbok1::No focal lesion in both breasts.
-::sbrl::at __ o'clock position of right breast, __ cm from the nipple.
-::sbll::at __ o'clock position of left breast, __ cm from the nipple.
+::sbrl::at __ o'clock position of the right breast, __ cm from the nipple.
+::sbll::at __ o'clock position of the left breast, __ cm from the nipple.
 
 ::sbrca::{
     MyForm := "
 (
-An irregular, hypoechoic nodule, measuring about __ cm in size, is noted at right breast, __ o'clock position / __  cm from nipple.
+An irregular, hypoechoic nodule, measuring about __ cm in size, is noted at the right breast, __ o'clock position / __  cm from the nipple.
 Relatively increased intratumoral flow noted.
 Breast cancer is suspected.
 )"
@@ -253,7 +254,7 @@ Breast cancer is suspected.
 ::sblca::{
     MyForm := "
 (
-An irregular, hypoechoic nodule, measuring about __ cm in size, is noted at left breast, __ o'clock position / __  cm from nipple.
+An irregular, hypoechoic nodule, measuring about __ cm in size, is noted at the left breast, __ o'clock position / __  cm from the nipple.
 Relatively increased intratumoral flow noted.
 Breast cancer is suspected.
 )"
@@ -315,12 +316,12 @@ Breast cancer is suspected.
 
     MyForm := Format("
 (
-No obvious bulky retroperitoneal mass lesion.
+No bulky retroperitoneal mass lesion.
 
 Right renal size about {1}; left renal size about {2}.
-Normal size and echogenicity of bilateral kidneys without hydronephrosis nor nephrolithiasis noted.
+Normal size and echogenicity of bilateral kidneys without hydronephrosis nor nephrolithiasis.
 
-Normal appearance of urinary bladder. No stones nor sludge is noted.
+Normal appearance of the urinary bladder. No stones nor sludge is noted.
 
 )", RightKidney, LeftKidney)
 
@@ -338,18 +339,18 @@ Normal appearance of urinary bladder. No stones nor sludge is noted.
 
     MyForm := Format("
 (
-The visualized portion of pancreas is normal.
+The visualized portion of the pancreas is normal.
 
-Normal liver parenchyma echo pattern without focal lesion noted.
+Normal liver parenchyma echo pattern without focal lesion.
 
 The gallbladder is well distended with smooth wall.
-No abnormal dilatation of IHDs and CBD noted.
+No abnormal dilatation of IHDs and CBD.
 
-The visualized portion of spleen is normal. Spleen size about {1}.
+The visualized portion of the spleen is normal. Spleen size about {1}.
 
 Bilateral kidneys are normal in echogenicity.
 Right kidney size about {2}; left kidney size about {3}.
-No abnormal dilatation of bilateral urinary collecting systems noted.
+No abnormal dilatation of bilateral urinary collecting systems.
 )", Spleen, RightKidney, LeftKidney)
 
     Sleep(300) ; Probably more than enough. Depends on the system.
@@ -359,16 +360,16 @@ No abnormal dilatation of bilateral urinary collecting systems noted.
 ::sua0::{
     MyForm := "
 (
-Normal liver parenchyma echo pattern without focal lesion noted.
+Normal liver parenchyma echo pattern without focal lesion.
 
 The gallbladder is well distended with smooth wall.
-No abnormal dilatation of IHDs and CBD noted.
+No abnormal dilatation of IHDs and CBD.
 
-The visualized portion of spleen is normal.
-The visualized portion of pancreas is normal.
+The visualized portion of the spleen is normal.
+The visualized portion of the pancreas is normal.
 
 Bilateral kidneys are normal in size and echogenicity.
-No abnormal dilatation of bilateral urinary collecting systems noted.
+No abnormal dilatation of bilateral urinary collecting systems.
 )"
     Paste(MyForm)
 }
@@ -376,7 +377,7 @@ No abnormal dilatation of bilateral urinary collecting systems noted.
 ::suaok::{
     MyForm := "
 (
-No focal lesion in the liver, GB, spleen, kidney, and visible pancreas.
+No focal lesion in the liver, GB, spleen, kidney, and visualized pancreas.
 )"
     Paste(MyForm)
 }
@@ -384,7 +385,7 @@ No focal lesion in the liver, GB, spleen, kidney, and visible pancreas.
 ::suaok0::{
     MyForm := "
 (
-No focal lesion in upper abdomen survey, including liver, GB, spleen, kidney, and visible pancreas.
+No focal lesion in upper abdomen survey, including liver, GB, spleen, kidney, and visualized pancreas.
 The sizes, surfaces and echo pattern of both kidneys are WNL.
 )"
     Paste(MyForm)
@@ -393,7 +394,7 @@ The sizes, surfaces and echo pattern of both kidneys are WNL.
 ::suaok1::{
     MyForm := "
 (
-No focal lesion in the liver, GB, spleen, kidney, visible pancreas, and paraaortic region.
+No focal lesion in the liver, GB, spleen, kidney, visualized pancreas, and paraaortic region.
 The sizes, surfaces and echo pattern of both kidneys are WNL.
 )"
     Paste(MyForm)
@@ -418,7 +419,7 @@ The sizes, surfaces and echo pattern of both kidneys are WNL.
 (
 Transabdominal ultrasonography of the pelvis
 
-Well distended bladder. No focal lesion of the UB noted.
+Well distended bladder. No focal lesion of the UB.
 The uterus was measured as {1} x {2} x {3} cm in size.
 
 The endometrium was measured about {4} cm in thickness.
@@ -535,7 +536,7 @@ The prostate was measured about __ cc in volume.
     MyForm := "
 (
 Presence of convoluted vascular structure within bilateral hemiscrotums with back flow noted in Valsalva maneuver.
-More promient of the left/right, with the vascular diameter measuring up to __ cm in diameter.
+More prominent on the left/right, with the vascular diameter measuring up to __ cm in diameter.
 Varicoceles considered.
 
 Normal size of the testes. Normal epididymides.
@@ -547,11 +548,11 @@ Normal size of the testes. Normal epididymides.
     MyForm := "
 (
 The maximal thickness of uterine fundus is __ cm. The uterine cervix is __ cm thick.
-The endometrium was mild visible under sonography.
+The endometrium was faintly visualized under sonography.
 
 The volume of RT ovary is about __ ml, and LT is about __ ml.
 
-No obvious abnormal soft tissue mass noted under the sonography.
+No abnormal pelvic mass lesion on sonography.
 )"
     Paste(MyForm)
 }
@@ -562,8 +563,8 @@ No obvious abnormal soft tissue mass noted under the sonography.
 Color doppler evaluation measured at the segmental arteries of both kidneys shows:
 
 Normal perfusion of bilateral renal parenchyma.
-Normal size and echogenicit of both kidneys.
-Normal accleration time of bilateral renal segmental arteries, measuring between 30-60 msec, with the accleration index about 410-1330 cm/s2.
+Normal size and echogenicity of both kidneys.
+Normal acceleration time of bilateral renal segmental arteries, measuring between 30-60 msec, with the acceleration index about 410-1330 cm/s2.
 No evidence of upstream renal arterial stenosis.
 )"
     Paste(MyForm)
@@ -574,7 +575,7 @@ No evidence of upstream renal arterial stenosis.
 (
 Color doppler evaluation measured at the segmental arteries of both kidneys shows:
 
-Relatively prolonged accleration time of -- renal segmental arteries, measuring between 130-180 msec, with the accleration index about 90-100cm/s2. Tardus-parvus waves suspected. The possibility of ---. upstream renal arterial stenosis can not be R/O.
+Relatively prolonged acceleration time of -- renal segmental arteries, measuring between 130-180 msec, with the acceleration index about 90-100cm/s2. Tardus-parvus waves suspected. The possibility of ---. upstream renal arterial stenosis can not be R/O.
 Further evaluation is suggested.
 )"
     Paste(MyForm)
@@ -583,7 +584,7 @@ Further evaluation is suggested.
 ::scduk::{
     MyForm := "
 (
-Sono CDU Kideny:
+Sono CDU Kidney:
 
 - The kidney graft is at the left iliac fossa.
 - The maximum dimension of the kidney graft is about 13.4 cm.
@@ -591,7 +592,7 @@ Sono CDU Kideny:
 - Increased renal cortical echogenicity. Parenchymal abnormality may be suspected. Clinical correlation is suggested.
 - Preserved corticomedullary differentiation.
 - No hydronephrosis or peri-graft fluid collection.
-- Preserved renal blood flow without significant abnormal waveform pattern noted.
+- Preserved renal blood flow without significant abnormal waveform pattern.
 
 IMPRESSION:
 Good condition of the kidney graft.

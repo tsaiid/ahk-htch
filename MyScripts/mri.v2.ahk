@@ -12,7 +12,7 @@
 {
     MyForm := "
   (
-CHEST Heart¢AVessels MRI without and with contrast medium:
+CHEST Heart & Vessels MRI without and with contrast medium:
 
 INDICATION: ?
 
@@ -23,7 +23,7 @@ FINDINGS:
 - Normal myocardial thickness.
 - No myocardial perfusion defect.
 - No definite late gadolinium enhancement in the myocardium.
-- No obviously increased pericardial effusion.
+- No significant pericardial effusion.
 - LV ejection fraction: 70%.
   )"
     Paste(MyForm)

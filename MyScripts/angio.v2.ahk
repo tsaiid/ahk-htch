@@ -117,7 +117,7 @@ The follow-up celiac trunk angiography showed decreased hepatic flow. The cystic
 The angiocatheter and sheath were removed, and hemostasis of puncture site was achieved by manual compression with a Coreleader Chitosan wound dressing.
 
 The angiography of common hepatic artery and right hepatic artery was performed.
-No obvious contrast medium extravasation is noted.
+No definite contrast medium extravasation is noted.
 For prophylaxis of occult bleeding from right liver traumatic injury, embolization was performed with Gelfoam powders into the RHA.
 The follow-up celiac trunk angiography showed decreased right hepatic flow.
 The angiography of SMA shows no replaced right hepatic artery.
@@ -270,7 +270,7 @@ Selective embolization of the superior and inferior branches of right hepatic ar
 Selective embolization of the posterior branch of right hepatic artery was performed with mixture of 20 mg Doxorubicin and 10 ml Lipiodol.
 Gelfoam slurry were not used as the clinician requested.
 
-The follow-up common hepatic angiography showed decreased right hepatic arterial flow and no more visible tumor stain.
+The follow-up common hepatic angiography showed decreased right hepatic arterial flow and no more visualized tumor stain.
 The follow-up RHA angiography showed no more tumor stain.
 
 The angiocatheter and sheath were removed, and hemostasis of the puncture site was achieved by manual compression with a Coreleader Chitosan wound dressing.
@@ -312,8 +312,8 @@ The angiography of left hepatic artery shows a tumor stain at the S2 of liver.
 The main portal vein is patent in both celiac and superior mesenteric angiography.
 Selective embolization of the S2 hepatic arterial branch was performed with Doxorubicin-loaded TANDEM (100 um) (75 mg Doxorubicin in 2 ml TANDEM, add 3 ml contrast medium, total 1 ml injected).
 
-The follow-up common hepatic angiography showed decreased flow of the embolized branch and no more visible tumor stain.
-The follow-up left hepatic and proper hepatic angiography shows decreased obliteration of the embolized branch and no more visible tumor stain.
+The follow-up common hepatic angiography showed decreased flow of the embolized branch and no more visualized tumor stain.
+The follow-up left hepatic and proper hepatic angiography shows decreased obliteration of the embolized branch and no more visualized tumor stain.
 
 The angiocatheter and sheath were removed, and hemostasis of puncture site was achieved by manual compression with a Coreleader Chitosan wound dressing.
 
@@ -346,9 +346,9 @@ PROCEDURE AND FINDINGS:
 - The angiography of celiac trunk, common hepatic artery, and right hepatic artery show two tumor stains at S8 and S4a of liver.
 - The main portal vein is patent.
 - Selective embolization of the right hepatic artery was performed with mixture of 20 mg Doxorubicin and 4 ml Lipiodol, followed by Gelfoam slurry. Intentionally making reflux of embolizers for LHA embolization.
-- The follow-up common hepatic angiography showed decreased right hepatic arterial flow and no more visible tumor stain.
+- The follow-up common hepatic angiography showed decreased right hepatic arterial flow and no more visualized tumor stain.
 - The angiocatheter and sheath were removed, and hemostasis of puncture site was achieved by manual compression. The wound dressing was changed about 2 hours later. No subcutaneous hematoma but mild ecchymosis was noted.
-- The right radial artery was also checked using sonography. Small thrombi were noted with paritial occlusion. It will be rechecked next time.
+- The right radial artery was also checked using sonography. Small thrombi were noted with partial occlusion. It will be rechecked next time.
 
 RECOMMENDATION:
 - Close follow up the vital signs and consciousness.
@@ -374,8 +374,8 @@ Embolizer: DC beads 100-300 micrometer loaded with Doxorubicin 75 mg, Lipiodol, 
 PROCEDURE AND FINDINGS:
 - The angiography of celiac trunk, common hepatic artery, and right hepatic artery show two tumor stains at S1 and S8 of liver.
 - Selective embolization of the S1 tumor feeding artery was performed with DC beads loaded with Doxorubicin. About 6 ml Lipiodol was infused through the RHA. The S1 artery was embolized with Gelfoam slurry.
-- The right inferior phrenic artery also shows a feeding artery to the S1 tumor. It was selectively embolized with Lipiodol about 6 ml, followed by Gelform slurry.
-- The follow-up angiography shows no more visible tumor stain.
+- The right inferior phrenic artery also shows a feeding artery to the S1 tumor. It was selectively embolized with Lipiodol about 6 ml, followed by Gelfoam slurry.
+- The follow-up angiography shows no more visualized tumor stain.
 - The angiocatheter and sheath were removed, and hemostasis of puncture site was achieved by applying PreludeSYNC DISTAL radial compression device. The device was deflated about 30 minutes later. No subcutaneous hematoma was noted.
 
 RECOMMENDATION:
@@ -1052,8 +1052,8 @@ Procedure and Findings:
 
 Impression:
 PTCD was done.
-Left PTCD (8F pigtail with string lock, tip in the CBD) was done.
-Right PTCD (8F pigtail with string lock, tip in the CBD) was done.
+Left PTCD (8F pigtail without string lock, tip in the CBD) was done.
+Right PTCD (8F pigtail without string lock, tip in the CBD) was done.
 Right PTCD (8F pigtail with string lock and homemade side holes, tip in the duodenum) was done.
 )"
   Paste(MyForm)
@@ -1131,7 +1131,7 @@ FINDINGS:
 - After the examination, the port was flushed with heparinized saline.
 
 - The chemoport had been implanted at the left upper chest wall, and the catheter goes through left internal jugular vein with its tip at the SVC or in the RA.
-- By hand injection of contrast medium, initially, high resistence was encountered and no blood could be drawn. Under flouroscopy guidence, the Huber needle was adjusted. Then, the injection and blood drawing were smooth.
+- By hand injection of contrast medium, initially, high resistance was encountered and no blood could be drawn. Under fluoroscopy guidance, the Huber needle was adjusted. Then, the injection and blood drawing were smooth.
 - The venography shows patent Port-A catheter without stasis, backflow, or leakage of contrast medium.
 
 - The chemoport catheter forms a circle at the left internal jugular vein, with tip at the left innominate vein.
@@ -1171,12 +1171,12 @@ PROCEDURE AND FINDINGS:
 
 - Initially, right femoral artery was approached under US guidance. The angiography of celiac trunk shows patent CHA, PHA, RHA, and LHA.
 - The microcatheter could go forward to RHA and LHA 1st branch. However, the V-18 guide wire could not be steadily positioned, due to the acute angle of celiac trunk and tortuous CHA. Therefore, we shifted to right subclavian artery approach.
-- With subclavian approach, the V-18 guide wire could be steadily positioned with tip in the LHA. However, the Anthron P-U catheter could only advanced to the PHA. In order to prevent the side hole being located in the aorta, the catheter tip was placed in the splenic artery, while the side hole at proximal CHA or celiac trunk.
+- With subclavian approach, the V-18 guide wire could be steadily positioned with tip in the LHA. However, the Anthron P-U catheter could only advance to the PHA. In order to prevent the side hole being located in the aorta, the catheter tip was placed in the splenic artery, while the side hole at proximal CHA or celiac trunk.
 - To reduce the splenic flow, a .018 14-6 Nester coil was deployed to the splenic artery, with partial coil residing in the P-U catheter.
 - A small pocket was created at the right upper chest wall, where the port was fixed, and the catheter was connected to the port with a 2-cm subcutaneous tunnel tract. The wounds were closed with 3-0 Nylon.
 - The final angiography through the port confirmed its functionality, and 2000 IU/2 ml heparin was injected into the port.
 
-- Initially, right femoral artery was approached under US guidance. The angiography of celiac trunk and superior mesenteric artery show a replaced LHA from LGA, communication between celiac and SMA with pancreaticoduodenal artery. Then, CTHA and CTAP were performed to determined the communications.
+- Initially, right femoral artery was approached under US guidance. The angiography of celiac trunk and superior mesenteric artery show a replaced LHA from LGA, communication between celiac and SMA with pancreaticoduodenal artery. Then, CTHA and CTAP were performed to determine the communications.
 - These communications and the LGA were embolized with microcoils.
 - No definite right gastroepiploic artery and right gastric artery is identified in the angiography.
 - The Anthron P-U catheter was placed over the wire with tip in the common hepatic artery. (The tapered end was cut, because it could not reach deep enough for the side hole to be in the celiac trunk.)
@@ -1195,6 +1195,24 @@ IMPRESSION:
 A HAIC catheter was placed with tip at the CHA, and a port was implanted at the right anterior thigh.
 
 Single blood supply (blockage of SMA supply) for pancreatic cancer was achieved. HAIC catheter (tip at CHA) was placed, and port was implanted at the RLQ of abdomen.
+)"
+  Paste(MyForm)
+}
+
+::xachkhaicport:: {
+  MyForm := "
+(
+Angiography to check HAIC Port-A:
+
+PROCEDURES AND FINDINGS:
+- The HAIC port was implanted in the left upper chest wall, with the catheter coursing through the left subclavian artery and terminating in the common hepatic artery.
+- Under fluoroscopic guidance, a 1-inch Huber needle was inserted, and blood return was confirmed.
+- Hand injection and DSA angiography demonstrated no contrast extravasation at the port site, a patent catheter, and patent major hepatic arteries.
+- The port was flushed with 2,000 U of heparin.
+
+IMPRESSION:
+1. Successful insertion of the Huber needle.
+2. Patent HAIC port catheter with no contrast extravasation.
 )"
   Paste(MyForm)
 }

@@ -200,7 +200,7 @@ The bilateral lateral ventricles showed symmetrical without dilatation.
 
 The major dural venous sinuses are patent.
 
-The visible paranasal sinuses, mastoids and skull base are unremarkable.
+The visualized paranasal sinuses, mastoids and skull base are unremarkable.
 
 MRA shows several suspicious aneurysms at the right supraclinoid ICA, size up to 2.7 mm. Suggest correlate with DSA.
 
@@ -238,7 +238,7 @@ Presence of small area high signal intensity on T2WI noted over the left side ma
 No definite abnormal signal intensity mass lesion in the brain noted including supratentorial cerebral hemisphere and infratentorial cerebellum and brain stem region.
 
 The bilateral lateral ventricles show symmetrical without dilatation.
-The visible paranasal sinuses, mastoids and skull base are unremarkable.
+The visualized paranasal sinuses, mastoids and skull base are unremarkable.
 MRA shows no significant vascular stenosis in the major intracranial arteries or aneurysm near the circle of Willis region.
 
 Post contrast study showed no abnormal enhanced lesion in the brain and no abnormal leptomeningeal enhancement noted.
