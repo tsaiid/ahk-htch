@@ -32,9 +32,6 @@ GroupAdd "Login", "花蓮慈院上網認證"
 ; External Libraries
 #Include <WBGet.v2>
 #Include <Paste.v2>
-#Include <JSON.v2>
-#Include <WinHttpRequest.v2>
-#Include <AccV2.v2>
 #Include <ShowGUIatCurrScreenCenter.v2>
 
 ; Options
@@ -52,7 +49,6 @@ PRESERVE_CLIPBOARD := 0
 
 ;; My Own Lib
 #Include Hotstrings\lib\date.v2.ahk
-#Include Hotstrings\lib\string.v2.ahk
 #Include Hotstrings\lib\ris-common.v2.ahk
 
 #HotIf WinActive("ahk_group RIS")
