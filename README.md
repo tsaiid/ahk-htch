@@ -11,18 +11,18 @@
 
 - `AutoHotkey.v2.ahk`: AHK v2 主要入口，載入目前維護中的 scripts。
 - `Lib/`: 共用 AutoHotkey libraries。
-- `MyScripts/`: 報告範本、hotstrings、hotkeys 與自訂 helper scripts。
-- `MyScripts/hotkey/`: RIS / PACS 操作相關熱鍵。
-- `MyScripts/lib/`: 專案內部共用函式。
+- `Hotstrings/`: 各影像次專科與模板 hotstrings。
+- `Hotstrings/lib/`: 專案內部共用函式。
+- `Hotkeys/`: RIS / PACS 操作相關熱鍵。
 - `Utilities/compile-check.ps1`: AHK v2 驗證與選擇性編譯腳本。
-- `others/`: 其他輔助 scripts，例如 user script / user style。
+- `userscripts/`: WebRIS userscript 與輔助工具。
 
 ## 安裝與使用
 
 1. 安裝 AutoHotkey v2。
 2. 將本 repository 放在固定位置。
 3. 執行或建立捷徑指向 `AutoHotkey.v2.ahk`。
-4. 需要個人化設定時，可建立 `MyScripts/private.v2.ahk`。此檔案以 optional include 載入，未存在時不會影響主程式啟動。
+4. 需要個人化設定時，可建立 `Hotstrings/private.v2.ahk`。此檔案以 optional include 載入，未存在時不會影響主程式啟動。
 
 主要功能會在 `RIS` 視窗群組中啟用。視窗群組定義於 `AutoHotkey.v2.ahk`，目前包含 WebRIS、報告管理系統與相關院內系統視窗。
 
@@ -42,5 +42,5 @@ powershell -NoProfile -ExecutionPolicy Bypass -File Utilities\compile-check.ps1 
 
 ## 開發注意事項
 
-- 個人或院內私有設定應放在 `MyScripts/private.v2.ahk`，不要提交敏感資訊。
+- 個人或院內私有設定應放在 `Hotstrings/private.v2.ahk`，不要提交敏感資訊。
 - 修改 AHK code 後必須通過 `Utilities\compile-check.ps1`。

@@ -214,5 +214,6 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 
-MyScripts/private.ahk
-others/webris-ai-proxy.local.ps1
+Hotstrings/private.ahk
+userscripts/webris-ai-proxy.local.ps1
+.compile-check.*.ahk

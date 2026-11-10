@@ -37,61 +37,61 @@ ENABLE_KEY_COUNTER := 0
 PRESERVE_CLIPBOARD := 0
 
 ; Global Variables
-#Include MyScripts\vars.v2.ahk
+#Include Hotstrings\vars.v2.ahk
 
 ; RegEx Hotstrings
 ;; Bug: need to be included first ???
-#Include MyScripts\regex-hotstrings.v2.ahk
+#Include Hotstrings\regex-hotstrings.v2.ahk
 
-#Include *i MyScripts\private.v2.ahk
+#Include *i Hotstrings\private.v2.ahk
 
 ;; My Own Lib
-#Include MyScripts\lib\date.v2.ahk
-#Include MyScripts\lib\string.v2.ahk
-#Include MyScripts\lib\ris-common.v2.ahk
+#Include Hotstrings\lib\date.v2.ahk
+#Include Hotstrings\lib\string.v2.ahk
+#Include Hotstrings\lib\ris-common.v2.ahk
 
 #HotIf WinActive("ahk_group RIS")
   ;;; HotStrings
-#Include MyScripts\neuro.v2.ahk
+#Include Hotstrings\neuro.v2.ahk
 
-#Include MyScripts\ajcc.v2.ahk
+#Include Hotstrings\ajcc.v2.ahk
 
-#Include MyScripts\sono.v2.ahk
+#Include Hotstrings\sono.v2.ahk
 
-#Include MyScripts\chest-x-ray.v2.ahk
-#Include MyScripts\kub.v2.ahk
-#Include MyScripts\bone-x-ray.v2.ahk
-#Include MyScripts\other-x-ray.v2.ahk
-#Include MyScripts\comparisons.v2.ahk
-#Include MyScripts\sono-guide.v2.ahk
+#Include Hotstrings\chest-x-ray.v2.ahk
+#Include Hotstrings\kub.v2.ahk
+#Include Hotstrings\bone-x-ray.v2.ahk
+#Include Hotstrings\other-x-ray.v2.ahk
+#Include Hotstrings\comparisons.v2.ahk
+#Include Hotstrings\sono-guide.v2.ahk
 
-#Include MyScripts\abdomen-ct.v2.ahk
-#Include MyScripts\abdomen-mr.v2.ahk
-#Include MyScripts\chest-ct.v2.ahk
-#Include MyScripts\breast-mr.v2.ahk
+#Include Hotstrings\abdomen-ct.v2.ahk
+#Include Hotstrings\abdomen-mr.v2.ahk
+#Include Hotstrings\chest-ct.v2.ahk
+#Include Hotstrings\breast-mr.v2.ahk
 
-#Include MyScripts\ct-guide.v2.ahk
+#Include Hotstrings\ct-guide.v2.ahk
 
-#Include MyScripts\barium-enema.v2.ahk
-#Include MyScripts\esophagraphy.v2.ahk
-#Include MyScripts\ugi-small-intestine.v2.ahk
-#Include MyScripts\intravenous-pyelogram.v2.ahk
-#Include MyScripts\special.v2.ahk
-#Include MyScripts\angio.v2.ahk
+#Include Hotstrings\barium-enema.v2.ahk
+#Include Hotstrings\esophagraphy.v2.ahk
+#Include Hotstrings\ugi-small-intestine.v2.ahk
+#Include Hotstrings\intravenous-pyelogram.v2.ahk
+#Include Hotstrings\special.v2.ahk
+#Include Hotstrings\angio.v2.ahk
 
-#Include MyScripts\ms-mri.v2.ahk
-#Include MyScripts\ms-ct.v2.ahk
+#Include Hotstrings\ms-mri.v2.ahk
+#Include Hotstrings\ms-ct.v2.ahk
 
-#Include MyScripts\mri.v2.ahk
-#Include MyScripts\abbreviations.v2.ahk
-#Include MyScripts\others.v2.ahk
+#Include Hotstrings\mri.v2.ahk
+#Include Hotstrings\abbreviations.v2.ahk
+#Include Hotstrings\others.v2.ahk
 
-#Include MyScripts\bone-density.v2.ahk
+#Include Hotstrings\bone-density.v2.ahk
 
 #HotIf
 
 ; HotKeys Lib
-#Include MyScripts\hotkey\remapping-original-hotkeys.v2.ahk
+#Include Hotkeys\remapping-original-hotkeys.v2.ahk
 
 ; Define hotkeys
 #HotIf WinActive("ahk_group RIS")
