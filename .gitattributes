@@ -10,6 +10,7 @@
 *.js    text eol=lf
 *.styl  text eol=lf
 *.dic   text eol=lf
+*.svg   text eol=lf
 
 .gitattributes text eol=lf
 .gitignore     text eol=lf

@@ -1,6 +1,11 @@
 ; Settings
 #Requires AutoHotkey v2.0
 
+; Tray Icon
+if FileExist(A_ScriptDir "\assets\RisTools_icon.png") {
+    TraySetIcon(A_ScriptDir "\assets\RisTools_icon.png")
+}
+
 #Hotstring EndChars `t
 #Hotstring O
 SendMode "Input"

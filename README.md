@@ -16,6 +16,7 @@
 - `Hotkeys/`: RIS / PACS 操作相關熱鍵。
 - `Utilities/compile-check.ps1`: AHK v2 驗證與選擇性編譯腳本。
 - `userscripts/`: WebRIS userscript 與輔助工具。
+- `assets/`: Tray icon 與靜態資源。
 
 ## 安裝與使用
 

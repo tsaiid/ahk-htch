@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <!-- Tzu Chi Blue Gradient: Vibrant royal azure to deep ceremonial navy -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2478CD"/>
+      <stop offset="35%" stop-color="#14549E"/>
+      <stop offset="70%" stop-color="#0E3D78"/>
+      <stop offset="100%" stop-color="#082850"/>
+    </linearGradient>
+
+    <!-- Crisp Drop Shadow for Letter T -->
+    <filter id="letterShadow" x="-20%" y="-20%" width="150%" height="150%">
+      <feDropShadow dx="12" dy="18" stdDeviation="2" flood-color="#03162C" flood-opacity="0.92"/>
+    </filter>
+  </defs>
+
+  <!-- iOS-style Squircle Base (Apple 1024x1024 icon standard rx=225) -->
+  <rect x="0" y="0" width="1024" height="1024" rx="225" ry="225" fill="url(#bgGrad)"/>
+
+  <!-- High-legibility Bold Typography: Letter "T" (Tzu Chi) -->
+  <path d="M 136 96 L 888 96 L 888 270 L 632 270 L 632 916 L 392 916 L 392 270 L 136 270 Z"
+        fill="#FFFFFF"
+        filter="url(#letterShadow)"/>
+</svg>
