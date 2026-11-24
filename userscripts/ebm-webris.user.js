@@ -786,12 +786,30 @@
         });
     }
 
+    function formatAiRefineElapsedTime(elapsedMs) {
+        if (!Number.isFinite(elapsedMs) || elapsedMs < 0) return "";
+        const roundedMs = Math.round(elapsedMs);
+        if (roundedMs < 1000) {
+            return `${roundedMs} ms`;
+        }
+        return `${(elapsedMs / 1000).toFixed(2)} s`;
+    }
+
     async function callAiRefineProxy(selectedText) {
+        const startedAt = performance.now();
         const response = await postJsonWithGm(AI_REFINE_PROXY_URL, { text: selectedText });
+        const elapsedMs = performance.now() - startedAt;
         if (!response || typeof response.text !== "string") {
             throw new Error("AI proxy did not return text.");
         }
-        return response.text;
+        const model = typeof response.model === "string" && response.model.trim()
+            ? response.model.trim()
+            : "unknown";
+        return {
+            text: response.text,
+            model,
+            elapsedMs
+        };
     }
 
     function restoreSelectionRange(editor, range) {
@@ -877,7 +895,7 @@
         return Boolean(document.querySelector("#ebm-webris-ai-compare-dialog"));
     }
 
-    function showAiRefineComparisonDialog(editor, selectedRange, originalText, refinedText) {
+    function showAiRefineComparisonDialog(editor, selectedRange, originalText, refinedText, metadata = {}) {
         const existingDialog = document.querySelector("#ebm-webris-ai-compare-dialog");
         existingDialog?.remove();
         const editorStyle = window.getComputedStyle(editor);
@@ -917,8 +935,11 @@
         });
 
         const header = document.createElement("div");
-        header.textContent = "AI Refine";
         Object.assign(header.style, {
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            gap: "12px",
             padding: "12px 16px",
             fontSize: "16px",
             fontWeight: "600",
@@ -926,6 +947,29 @@
             background: "#ebe8e1",
             borderBottom: "1px solid #ddd8cf"
         });
+
+        const headerTitle = document.createElement("div");
+        headerTitle.textContent = "AI Refine";
+        header.appendChild(headerTitle);
+
+        const metaParts = [];
+        if (typeof metadata.model === "string" && metadata.model.trim()) {
+            metaParts.push(`Model: ${metadata.model.trim()}`);
+        }
+        const formattedElapsed = formatAiRefineElapsedTime(metadata.elapsedMs);
+        if (formattedElapsed) {
+            metaParts.push(formattedElapsed);
+        }
+        if (metaParts.length > 0) {
+            const headerMeta = document.createElement("div");
+            headerMeta.textContent = metaParts.join(" · ");
+            Object.assign(headerMeta.style, {
+                fontSize: "13px",
+                fontWeight: "500",
+                color: "#5f6e79"
+            });
+            header.appendChild(headerMeta);
+        }
 
         const body = document.createElement("div");
         Object.assign(body.style, {
@@ -1129,10 +1173,10 @@
             document.body.style.cursor = "wait";
             showAiRefineStatus("AI 潤色中...", 0);
 
-            const refinedText = await callAiRefineProxy(selectedText);
+            const { text: refinedText, model, elapsedMs } = await callAiRefineProxy(selectedText);
             const finalText = normalizeAiRefineResult(refinedText, selectedText, trailingNewlines);
 
-            showAiRefineComparisonDialog(editor, selectedRange, selectedText, finalText);
+            showAiRefineComparisonDialog(editor, selectedRange, selectedText, finalText, { model, elapsedMs });
             showAiRefineStatus(`AI 潤色完成，請確認是否採用\nOutput length: ${finalText.length}`);
         } catch (err) {
             console.error(err);
