@@ -759,7 +759,15 @@
                     });
 
                     if (response.status < 200 || response.status >= 300) {
-                        reject(new Error(response.responseText || `HTTP ${response.status}`));
+                        let errorMessage = response.responseText || `HTTP ${response.status}`;
+                        try {
+                            const parsedError = response.responseText ? JSON.parse(response.responseText) : null;
+                            if (parsedError && typeof parsedError.error === "string" && parsedError.error.trim()) {
+                                errorMessage = parsedError.error;
+                            }
+                        } catch {
+                        }
+                        reject(new Error(errorMessage));
                         return;
                     }
 
