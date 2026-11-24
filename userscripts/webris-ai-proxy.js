@@ -5,8 +5,8 @@ const http = require("node:http");
 const PORT = Number(process.env.WEBRIS_AI_PROXY_PORT || 8787);
 const HOST = process.env.WEBRIS_AI_PROXY_HOST || "127.0.0.1";
 const GOOGLE_API_KEY = process.env.GOOGLE_AI_API_KEY || process.env.GEMINI_API_KEY || "";
-const GOOGLE_MODEL = process.env.WEBRIS_AI_GOOGLE_MODEL || "gemma-4-31b-it";
-const DEFAULT_FALLBACK_MODELS = "gemini-2.5-flash-lite,gemini-2.5-flash";
+const GOOGLE_MODEL = process.env.WEBRIS_AI_GOOGLE_MODEL || "gemma-4-26b-a4b-it";
+const DEFAULT_FALLBACK_MODELS = "gemma-4-31b-it,gemini-3.5-flash-lite,gemini-3.8-flash";
 const RAW_FALLBACK_MODELS = process.env.WEBRIS_AI_FALLBACK_MODELS !== undefined
     ? process.env.WEBRIS_AI_FALLBACK_MODELS
     : DEFAULT_FALLBACK_MODELS;
@@ -194,7 +194,7 @@ function supportsThinkingLevel(model) {
     return /^(gemma-4|gemini-3)/i.test(model);
 }
 
-async function callGoogleModelOnce(model, prompt, requestId, attempt) {
+async function callGoogleModelOnce(model, prompt, requestId, attempt, includeThinking = true) {
     const url = `${GOOGLE_API_BASE_URL}/models/${encodeURIComponent(model)}:generateContent`;
     const startedAt = Date.now();
 
@@ -202,14 +202,19 @@ async function callGoogleModelOnce(model, prompt, requestId, attempt) {
         temperature: 0.3,
         topP: 0.95
     };
-    if (THINKING_LEVEL && !/^(off|none)$/i.test(THINKING_LEVEL) && supportsThinkingLevel(model)) {
+    const useThinking = includeThinking
+        && THINKING_LEVEL
+        && !/^(off|none)$/i.test(THINKING_LEVEL)
+        && supportsThinkingLevel(model);
+    if (useThinking) {
         generationConfig.thinkingConfig = { thinkingLevel: THINKING_LEVEL };
     }
 
     logRequest(requestId, "calling Google API", {
         model,
         attempt,
-        promptLength: prompt.length
+        promptLength: prompt.length,
+        thinkingLevel: useThinking ? THINKING_LEVEL : null
     });
 
     let upstream;
@@ -258,6 +263,13 @@ async function callGoogleModelOnce(model, prompt, requestId, attempt) {
 
     if (!upstream.ok) {
         const message = responseJson?.error?.message || responseText || `HTTP ${upstream.status}`;
+        if (upstream.status === 400 && useThinking && /thinking/i.test(message)) {
+            logRequest(requestId, "retrying model without thinkingConfig", {
+                model,
+                reason: message
+            });
+            return callGoogleModelOnce(model, prompt, requestId, attempt, false);
+        }
         const err = new HttpError(mapUpstreamStatus(upstream.status), `Google API failed: ${message}`);
         err.upstreamStatus = upstream.status;
         err.retryAfterMs = parseRetryAfterMs(upstream.headers.get("retry-after"));

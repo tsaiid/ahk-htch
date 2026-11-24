@@ -1,7 +1,7 @@
 param(
     [string]$ApiKey = "",
-    [string]$Model = "gemma-4-31b-it",
-    [string]$FallbackModels = "gemini-2.5-flash-lite,gemini-2.5-flash",
+    [string]$Model = "gemma-4-26b-a4b-it",
+    [string]$FallbackModels = "gemma-4-31b-it,gemini-3.5-flash-lite,gemini-3.8-flash",
     [int]$Port = 8787
 )
 
